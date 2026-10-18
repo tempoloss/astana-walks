@@ -1,0 +1,52 @@
+{
+ "domain": "khanshatyr.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:13:06+00:00",
+ "pages": [
+  "https://www.khanshatyr.com/ru/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Хан Шатыр",
+   "address": "г. Астана, пр. Туран 37",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (717) 257-26-26",
+   "opening_hours_raw": "ЕЖЕДНЕВНО: 10:00 — 22:00; Пт, Сб: 10:00 — 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00; Fr,Sa 10:00-23:00",
+   "description": null,
+   "url": "https://www.khanshatyr.com/ru/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://www.khanshatyr.com/ru/contacts",
+     "snippet": "г. Астана, пр. Туран 37",
+     "fetched_at": "2026-10-17T09:13:06+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.khanshatyr.com/ru/contacts",
+     "snippet": "ЕЖЕДНЕВНО: 10:00 — 22:00; Пт, Сб: 10:00 — 23:00",
+     "fetched_at": "2026-10-17T09:13:06+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.khanshatyr.com/ru/contacts",
+     "snippet": "+7 (717) 257-26-26",
+     "fetched_at": "2026-10-17T09:13:06+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://www.khanshatyr.com/ru/contacts",
+     "snippet": "Хан Шатыр",
+     "fetched_at": "2026-10-17T09:13:06+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75,
+   "hours_flags": []
+  }
+ ],
+ "notes": "The page lists a second schedule (administration, Дс-Жм 10:00-18:00 with lunch break); it is not the mall's visiting hours and is not used.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

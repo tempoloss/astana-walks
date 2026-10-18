@@ -1,0 +1,43 @@
+{
+ "domain": "darkside.bar",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://darkside.bar/"
+ ],
+ "branches": [
+  {
+   "name": "DARK SIDE BAR",
+   "address": "Бизнес центр Noble | Мангилик Ел 52/1, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 777 552 0052",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://darkside.bar/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://darkside.bar/",
+     "snippet": "DARK SIDE BAR"
+    },
+    {
+     "field": "address",
+     "url": "https://darkside.bar/",
+     "snippet": "Бизнес центр Noble | Мангилик Ел 52/1, Астана"
+    },
+    {
+     "field": "phone",
+     "url": "https://darkside.bar/",
+     "snippet": "+7777 552 0052"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Cocktail bar (robots allow): the header prints 'DARK SIDE BAR' with phone '+7777 552 0052' and the address block 'НАШ АДРЕС Бизнес центр Noble | Мангилик Ел 52/1, Астана' (also '+7 777 552 0052' form on the call CTA). No opening-hours text anywhere on the reachable page — hours not stored. Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

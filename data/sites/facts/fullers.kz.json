@@ -1,0 +1,151 @@
+{
+ "domain": "fullers.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:30+00:00",
+ "pages": [
+  "https://fullers.kz/astana-fullers_pub?locale=ru",
+  "https://fullers.kz/astana-botanical?locale=ru",
+  "https://fullers.kz/astana-green_line?locale=ru",
+  "https://fullers.kz/astana-astana-la_vie?locale=ru"
+ ],
+ "branches": [
+  {
+   "name": "Fuller's Pub",
+   "address": "г. Астана, ул. Желтоксан, 2т",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 704 23 23",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://fullers.kz/astana-fullers_pub?locale=ru",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://fullers.kz/astana-fullers_pub?locale=ru",
+     "snippet": "Fuller's Pub",
+     "fetched_at": "2026-10-17T09:29:27+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://fullers.kz/astana-fullers_pub?locale=ru",
+     "snippet": "г. Астана, ул. Желтоксан, 2т +7 708 704 23 23",
+     "fetched_at": "2026-10-17T09:29:27+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://fullers.kz/astana-fullers_pub?locale=ru",
+     "snippet": "г. Астана, ул. Желтоксан, 2т +7 708 704 23 23",
+     "fetched_at": "2026-10-17T09:29:27+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Fuller's Botanical Garden",
+   "address": "г. Астана, ул. Бухар Жырау, 28Б",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 777 690 90 99",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://fullers.kz/astana-botanical?locale=ru",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://fullers.kz/astana-botanical?locale=ru",
+     "snippet": "Fuller's Botanical Garden",
+     "fetched_at": "2026-10-17T09:29:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://fullers.kz/astana-botanical?locale=ru",
+     "snippet": "г. Астана, ул. Бухар Жырау, 28Б +7 777 690 90 99",
+     "fetched_at": "2026-10-17T09:29:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://fullers.kz/astana-botanical?locale=ru",
+     "snippet": "г. Астана, ул. Бухар Жырау, 28Б +7 777 690 90 99",
+     "fetched_at": "2026-10-17T09:29:28+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Fuller's Green Line",
+   "address": "Астана, Е-900, 4",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 776 992 26 86",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://fullers.kz/astana-green_line?locale=ru",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://fullers.kz/astana-green_line?locale=ru",
+     "snippet": "Fuller's Green Line",
+     "fetched_at": "2026-10-17T09:29:30+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://fullers.kz/astana-green_line?locale=ru",
+     "snippet": "Астана, Е-900, 4 +7 776 992 26 86",
+     "fetched_at": "2026-10-17T09:29:30+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://fullers.kz/astana-green_line?locale=ru",
+     "snippet": "Астана, Е-900, 4 +7 776 992 26 86",
+     "fetched_at": "2026-10-17T09:29:30+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Fuller's La Vie",
+   "address": "Астана, пр. Кошкарбаева, 1Б блок 6",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 775 992 99 96",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://fullers.kz/astana-astana-la_vie?locale=ru",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://fullers.kz/astana-astana-la_vie?locale=ru",
+     "snippet": "Fuller's La Vie",
+     "fetched_at": "2026-10-17T09:29:29+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://fullers.kz/astana-astana-la_vie?locale=ru",
+     "snippet": "Астана, пр. Кошкарбаева, 1Б блок 6 +7 775 992 99 96",
+     "fetched_at": "2026-10-17T09:29:29+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://fullers.kz/astana-astana-la_vie?locale=ru",
+     "snippet": "Астана, пр. Кошкарбаева, 1Б блок 6 +7 775 992 99 96",
+     "fetched_at": "2026-10-17T09:29:29+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Site prints no opening hours for any venue (menu is a PDF; the address link goes to 2GIS, an aggregator we must not crawl), so opening_hours stays None. Almaty venues (Pheasant Feather, 4YOU, Pub & Wine, Izumrud, Central Avenue) are not Astana — skipped.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

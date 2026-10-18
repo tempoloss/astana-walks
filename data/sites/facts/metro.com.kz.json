@@ -1,0 +1,9 @@
+{
+ "domain": "metro.com.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "www.metro.com.kz connection times out (WinError 10060; https also) => robots.txt unreachable => crawling not allowed; nothing stored for Metro Cash&Carry.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

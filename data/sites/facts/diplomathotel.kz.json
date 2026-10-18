@@ -1,0 +1,53 @@
+{
+ "domain": "diplomathotel.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:56:09+00:00",
+ "pages": [
+  "https://diplomathotel.kz/restoran/",
+  "https://diplomathotel.kz/kontakty/"
+ ],
+ "branches": [
+  {
+   "name": "Ресторан отеля Diplomat (El Gaucho)",
+   "address": "г. Астана. Улица Динмухамед Конаев, 29/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 476667",
+   "opening_hours_raw": "По будням: с 07:00 до 10:00",
+   "opening_hours_osm": "Mo-Fr 07:00-10:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://diplomathotel.kz/restoran/",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "https://diplomathotel.kz/restoran/",
+     "snippet": "По будням: с 07:00 до 10:00",
+     "fetched_at": "2026-10-17T09:55:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://diplomathotel.kz/kontakty/",
+     "snippet": "г. Астана. ​Улица Динмухамед Конаев, 29/1",
+     "fetched_at": "2026-10-17T09:56:09+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://diplomathotel.kz/kontakty/",
+     "snippet": "+7 (7172) 476667",
+     "fetched_at": "2026-10-17T09:56:09+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://diplomathotel.kz/restoran/",
+     "snippet": "Ресторан европейкой кухни \"El Gaucho\"",
+     "fetched_at": "2026-10-17T09:55:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The hotel restaurant (POI «Байтерек»; the current site names it «El Gaucho» — naming conflict left to join). Only published schedule = breakfasts: 'По будням: с 07:00 до 10:00' (weekday breakfasts; the weekend line 08:00-11:00 is a separate rule not included in raw). Restaurant dinner/lunch hours are not stated. Address/phone are the hotel's reservation contacts from /kontakty/ (a ZWSP inside the printed address is whitespace-normalised in the stored value). The old /ru/bars path 404s.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

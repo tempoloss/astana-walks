@@ -1,0 +1,52 @@
+{
+ "domain": "leprechaun.pub",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:27:11+00:00",
+ "pages": [
+  "https://leprechaun.pub/kontakty/"
+ ],
+ "branches": [
+  {
+   "name": "The Leprechaun (Pub Leprechaun)",
+   "address": "г. Астана, проспект Қабанбай батыра, 58Б корпус 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (771) 046-88-22",
+   "opening_hours_raw": "Ежедневно с 15:00 до 02:00",
+   "opening_hours_osm": "Mo-Su 15:00-02:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://leprechaun.pub/kontakty/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://leprechaun.pub/kontakty/",
+     "snippet": "г. Астана, проспект Қабанбай батыра, 58Б корпус 2",
+     "fetched_at": "2026-10-17T09:27:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://leprechaun.pub/kontakty/",
+     "snippet": "ТЕЛЕФОН: +7 (771) 046-88-22",
+     "fetched_at": "2026-10-17T09:27:11+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://leprechaun.pub/kontakty/",
+     "snippet": "Ежедневно с 15:00 до 02:00",
+     "fetched_at": "2026-10-17T09:27:11+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://leprechaun.pub/kontakty/",
+     "snippet": "Pub Leprechaun",
+     "fetched_at": "2026-10-17T09:27:11+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The home page's 'Принимаем заказы ежедневно 15:00 до 00:00' is the order/delivery window; the contacts page states the venue schedule 15:00-02:00 daily, which is stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

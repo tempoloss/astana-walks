@@ -1,0 +1,583 @@
+{
+ "source": "data.egov.kz",
+ "fetched_at": "2026-10-17T15:29:16+00:00",
+ "pages": [
+  "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D"
+ ],
+ "robots": "ok",
+ "stats": {
+  "rows_national": 11,
+  "rows_astana": 11,
+  "records": 11,
+  "with_geoposition": 2,
+  "marked_to_delete": 11
+ },
+ "records": [
+  {
+   "id": "gov/cson-pc/410a932685",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Алматы аудандық № 3 бөлімінің Даму секторы"
+   },
+   "address": {
+    "raw": "г.Астана ул.Кажымукана,8 а",
+    "street": "г.Астана ул.Кажымукана",
+    "house": "8а",
+    "key": "кажимукан",
+    "by_lang": {
+     "ru": "г.Астана ул.Кажымукана,8 а",
+     "kk": "Астана қ,Кажымукан көш.,8 а"
+    }
+   },
+   "phone_raw": "8701555 10 03",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана ул.Кажымукана,8 а\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"8701555 10 03\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620201; РГУ “УГД по Алматинскому району ДГД по городу Астана КГД МФ РК”",
+    "modified": "31.05.2018 17:12:03"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/6b9a8e29c7",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Алматы аудандық № 2 бөлімінің Казмедиа секторы"
+   },
+   "address": {
+    "raw": "г.Астана ул.Конаева,4",
+    "street": "г.Астана ул.Конаева",
+    "house": "4",
+    "key": "конаев",
+    "by_lang": {
+     "ru": "г.Астана ул.Конаева,4",
+     "kk": "Астана қ. Қонаев көш.,4"
+    }
+   },
+   "phone_raw": "87017770679",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана ул.Конаева,4\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87017770679\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620501; РГУ УГД по Есильскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "31.05.2016 11:17:29"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/505931361b",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Азиа парк Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Азиа парк Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Есіл аудандық № 2 бөлімінің Азиа парк секторы"
+   },
+   "address": {
+    "raw": "г. Астана, ул Кабанбай батыра,21",
+    "street": "ул Кабанбай батыра",
+    "house": "21",
+    "key": "кабанба батир",
+    "by_lang": {
+     "ru": "г. Астана, ул Кабанбай батыра,21",
+     "kk": "Астана қ.Қабанбай батыр көш.,21"
+    }
+   },
+   "phone_raw": "87017770679",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Азиа парк Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г. Астана, ул Кабанбай батыра,21\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87017770679\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": "51.089165,71.417368",
+    "tax_structure": "620501; РГУ УГД по Есильскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "30.11.2020 16:48:52"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/29c0f584b6",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Сарыарқа аудандық № 1 бөлімінің Сарыарқа ауданы бойынша мемлекеттік кірістер департаменті секторы"
+   },
+   "address": {
+    "raw": "г.Астана пр.Республики,52",
+    "street": "г.Астана пр.Республики",
+    "house": "52",
+    "key": "республик",
+    "by_lang": {
+     "ru": "г.Астана пр.Республики,52",
+     "kk": "Астана қ.Республика даңғ.,52"
+    }
+   },
+   "phone_raw": "87019955713",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана пр.Республики,52\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87019955713\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620301; РГУ УГД по Сарыаркинскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "31.05.2018 17:12:03"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/f10481678b",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Жилстройсбербанк Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Жилстройсбербанк Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Есіл аудандық № 1 бөлімінің Тұрғынүйжинақбанк секторы"
+   },
+   "address": {
+    "raw": "г.Астана ул. Сыганак, 29, ВП-3",
+    "street": "г.Астана ул. Сыганак, 29, ВП-3",
+    "house": null,
+    "key": "сиганак 29 вп 3",
+    "by_lang": {
+     "ru": "г.Астана ул. Сыганак, 29, ВП-3",
+     "kk": "Астана қ. Сығанақ көш.,29,ҚЖ-3"
+    }
+   },
+   "phone_raw": "8702741 87 13",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Жилстройсбербанк Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана ул. Сыганак, 29, ВП-3\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"8702741 87 13\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620501; РГУ УГД по Есильскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "31.05.2018 17:12:03"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/1bd9de2d80",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Специализированный отдел по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+   "names": {
+    "ru": "Специализированный отдел по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+    "kk": "«Азаматтарға арналған үкімет» мемлекеттік корпорациясы»коммерциялық емес акционерлік қоғамының Нұр-Сұлтан қаласы бойынша филиалының Халыққа қызмет көрсету бойынша Мамандандырылған бөлім"
+   },
+   "address": {
+    "raw": "г. Нур-Султан, ул. 20-40, д.2",
+    "street": "ул. 20-40",
+    "house": "2",
+    "key": "20 40",
+    "by_lang": {
+     "ru": "г. Нур-Султан, ул. 20-40, д.2",
+     "kk": "Нұр-Сұлтан қ., 20-40 көш., 2үй"
+    }
+   },
+   "phone_raw": null,
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Специализированный отдел по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г. Нур-Султан, ул. 20-40, д.2\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": "51.2075,71.318056",
+    "tax_structure": "620301; РГУ УГД по Сарыаркинскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "09.06.2020 10:52:51"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/eea492d990",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Алматы аудандық № 4 бөлімінің Нұр Отан секторы"
+   },
+   "address": {
+    "raw": "г.Астана ул. Кенесары, 25",
+    "street": "г.Астана ул. Кенесары",
+    "house": "25",
+    "key": "кенесар",
+    "by_lang": {
+     "ru": "г.Астана ул. Кенесары, 25",
+     "kk": "Астана қ.Кенесары көш.,25"
+    }
+   },
+   "phone_raw": "87018706970",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана ул. Кенесары, 25\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87018706970\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620301; РГУ УГД по Сарыаркинскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "31.05.2018 17:12:03"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/95465ce68f",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Сектор МИиР Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "names": {
+    "ru": "Сектор МИиР Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Астана қ. бойынша «Халыққа қызмет көрсету орталығы» департаментінің Есіл аудандық № 1 бөлімінің ИДМ секторы"
+   },
+   "address": {
+    "raw": "г.Астана ул. Кабанбай батыр, 32/1",
+    "street": "г.Астана ул. Кабанбай батыр",
+    "house": "32/1",
+    "key": "кабанба батир",
+    "by_lang": {
+     "ru": "г.Астана ул. Кабанбай батыр, 32/1",
+     "kk": "Астана қ.Қабанбай батыр көш.,32/1"
+    }
+   },
+   "phone_raw": "87172-75-45-40",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Сектор МИиР Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Астана ул. Кабанбай батыр, 32/1\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87172-75-45-40\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620501; РГУ УГД по Есильскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "31.05.2018 17:12:03"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/ad5930d12c",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+   "names": {
+    "ru": "Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+    "kk": "«Азаматтарға арналған үкімет» мемлекеттік корпорациясы»коммерциялық емес акционерлік қоғамының Нұр-Сұлтан қаласы бойынша филиалының Халыққа қызмет көрсету бойынша Сарыарқа ауданының № 6 бөлімі"
+   },
+   "address": {
+    "raw": "г. Нур-Султан, ул. Сейфуллина 22",
+    "street": "ул. Сейфуллина",
+    "house": "22",
+    "key": "сеифуллин",
+    "by_lang": {
+     "ru": "г. Нур-Султан, ул. Сейфуллина 22",
+     "kk": "Нұр-Сұлтан қ., Сейфуллина 22"
+    }
+   },
+   "phone_raw": null,
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г. Нур-Султан, ул. Сейфуллина 22\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620301; РГУ УГД по Сарыаркинскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "09.07.2019 12:59:05"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/2932c8145d",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана",
+   "names": {
+    "ru": "Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана",
+    "kk": "Азаматтарға арналған үкімет мемлекеттік корпорациясы коммерциялық емес акционерлік қоғамының Астана қаласы бойынша филиалының заңды тұлғаларға Халыққа қызмет көрсету орталығы"
+   },
+   "address": {
+    "raw": "ул. Туран 37/9 нп 30",
+    "street": "ул. Туран 37/9 нп",
+    "house": "30",
+    "key": "туран 37 9 нп",
+    "by_lang": {
+     "ru": "ул. Туран 37/9 нп 30",
+     "kk": "Тұран көшесі 37/9 нп 30"
+    }
+   },
+   "phone_raw": null,
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"ул. Туран 37/9 нп 30\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620501; РГУ УГД по Есильскому району ДГД по городу Астана КГД МФ РК",
+    "modified": "20.12.2023 11:35:19"
+   },
+   "fetched_at": null,
+   "geocode": null
+  },
+  {
+   "id": "gov/cson-pc/4dfbd5aa84",
+   "kind": "cson",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+   "name": "Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан",
+   "names": {
+    "ru": "Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан",
+    "kk": "«Азаматтарға арналған үкімет» МК КАҚ филиалы – Нур-Султан қ. бойынша «Халыққа қызмет көрсету орталығы» филиалы"
+   },
+   "address": {
+    "raw": "г.Нур-Султан ул. Желтоксан,25",
+    "street": "г.Нур-Султан ул. Желтоксан",
+    "house": "25",
+    "key": "нур султан желтоксан",
+    "by_lang": {
+     "ru": "г.Нур-Султан ул. Желтоксан,25",
+     "kk": "Нур-Султан қ.Желтоксан көш.,25"
+    }
+   },
+   "phone_raw": "87172558335",
+   "hours": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"NameRus\": \"Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан\"",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"AddressRus\": \"г.Нур-Султан ул. Желтоксан,25\"",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/api/detailed/ps_centers?source=%7B%22query%22%3A%20%7B%22match_phrase%22%3A%20%7B%22Region%22%3A%20%22710000000%22%7D%7D%2C%20%22size%22%3A%201000%2C%20%22from%22%3A%200%7D",
+     "snippet": "\"PhoneNumber\": \"87172558335\"",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "register": "ps_centers",
+    "display": true,
+    "marked_to_delete": true,
+    "geoposition": null,
+    "tax_structure": "620201; РГУ “УГД по Алматинскому району ДГД по городу Астана КГД МФ РК”",
+    "modified": "25.07.2019 20:09:28"
+   },
+   "fetched_at": null,
+   "geocode": null
+  }
+ ],
+ "notes": "ps_centers is a DISPLAY of ЦОН sectors: rows carry IsMarkedToDelete, only some have geoposition and one of those is ~4.3 km off its own address (Азиа парк). Cross-check of the gov4c.kz ЦОН records only; the geoposition values are kept in extra, never used for the map."
+}

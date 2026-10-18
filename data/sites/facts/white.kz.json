@@ -1,0 +1,448 @@
+{
+ "domain": "white.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:19+00:00",
+ "pages": [
+  "https://white.kz/contacts/"
+ ],
+ "branches": [
+  {
+   "name": "ЛЕТО café MANGILIK",
+   "address": "г. Астана, пр. Мангилик ел, 49 А, Dream City",
+   "lat": null,
+   "lon": null,
+   "phone": "+7702 707 0010",
+   "opening_hours_raw": "12:00-02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">ЛЕТО café MANGILIK</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7702 707 0010",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": ">г. Астана, пр. Мангилик ел, 49 А, Dream City <",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "GASTERIA THE ONE",
+   "address": "г.Астана Ул. Конаева 8/1, ЖК THE ONE",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 700 303 2000",
+   "opening_hours_raw": "ПН-ВС 09:00 - 00:00",
+   "opening_hours_osm": "Mo-Su 09:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">GASTERIA THE ONE</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7 700 303 2000",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": ">г.Астана Ул. Конаева 8/1, ЖК THE ONE<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "ПН-ВС 09:00 - 00:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "GASTERIA RIVIERA",
+   "address": "г. Астана ул. Амман 21А, ЖК Akbulak Riviera",
+   "lat": null,
+   "lon": null,
+   "phone": "+7708 888 14 44",
+   "opening_hours_raw": "пн-пт 9:00-00:00; сб-вс 10:00-01:00",
+   "opening_hours_osm": "Mo-Fr 09:00-24:00; Sa,Su 10:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">GASTERIA RIVIERA</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7708 888 14 44",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ул. Амман 21А, ЖК Akbulak Riviera<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "пн-пт 9:00-00:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "сб-вс 10:00-01:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "METIS",
+   "address": "г. Астана ул. Кабанбай б. 5/3, ЖК Avenue 5",
+   "lat": null,
+   "lon": null,
+   "phone": "+7701 222 0901",
+   "opening_hours_raw": "пн-чт 12:00-02:00; пт-сб 13:00-03:00; вс 13:00-02:00",
+   "opening_hours_osm": "Mo-Th 12:00-02:00; Fr,Sa 13:00-03:00; Su 13:00-02:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">METIS</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7701 222 0901",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ул. Кабанбай б. 5/3, ЖК Avenue 5<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "пн-чт 12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "пт-сб 13:00-03:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "вс 13:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "BUTLER",
+   "address": "г. Астана ТРЦ MEGA SILK WAY, Проспект Женис, 3",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 702 486 59 26",
+   "opening_hours_raw": "10:00-22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">BUTLER</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7 702 486 59 26",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ТРЦ MEGA SILK WAY<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "10:00-22:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "GASTERIA",
+   "address": "г. Астана пр. Туран 22/1, ЖК Grand Opera",
+   "lat": null,
+   "lon": null,
+   "phone": "+7700 770 0010",
+   "opening_hours_raw": "пн-пт 9:00-00:00; сб-вс 10:00-01:00",
+   "opening_hours_osm": "Mo-Fr 09:00-24:00; Sa,Su 10:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">GASTERIA</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7700 770 0010",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> пр. Туран 22/1, ЖК Grand Opera<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "пн-пт 9:00-00:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "сб-вс 10:00-01:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "ЛАПША CHINATOWN",
+   "address": "г. Астана ул. Нажимеденова 4, Блок D1-1, ЖК Highvill ishim",
+   "lat": null,
+   "lon": null,
+   "phone": "+7701 222 6001",
+   "opening_hours_raw": "12:00-02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">ЛАПША CHINATOWN</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7701 222 6001",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ул. Нажимеденова 4, Блок D1-1, ЖК Highvill ishim<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "ЛЕТО CAFÉ",
+   "address": "г.Астана ул. Достык 8Б, ЖК Landmark",
+   "lat": null,
+   "lon": null,
+   "phone": "+7700 505 0502",
+   "opening_hours_raw": "12:00-02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">ЛЕТО CAFÉ</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7700 505 0502",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ул. Достык 8Б, ЖК Landmark<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "ЛАПША TOKYO",
+   "address": "г. Астана ул. Кошкарбаева 8, блок Е1-1, ЖК Highvill",
+   "lat": null,
+   "lon": null,
+   "phone": "+7778 233 2233",
+   "opening_hours_raw": "12:00-02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">ЛАПША TOKYO</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7778 233 2233",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> ул. Кошкарбаева 8, блок Е1-1, ЖК Highvill<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "LA BELLE RESTAURANT&TERRACE",
+   "address": "г. Астана пр. Женис 3",
+   "lat": null,
+   "lon": null,
+   "phone": "+7777 999 2160",
+   "opening_hours_raw": "12:00-02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://white.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://white.kz/contacts/",
+     "snippet": "<div class=\"contacts__name\">LA BELLE RESTAURANT&TERRACE</div>",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://white.kz/contacts/",
+     "snippet": "+7777 999 2160",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://white.kz/contacts/",
+     "snippet": "> пр. Женис 3<",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://white.kz/contacts/",
+     "snippet": "12:00-02:00",
+     "fetched_at": "2026-10-17T09:33:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The page lists 13 branches; the 3 outside Астана (ЛЕТО café ALMATY, GASTERIA DUBAI, ЛАПША ALMATY) are skipped by the city line. Day-less schedules («12:00-02:00») stay in opening_hours_raw with hours_flags needs_days.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

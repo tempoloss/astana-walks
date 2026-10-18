@@ -1,0 +1,2227 @@
+{
+ "schema": 1,
+ "tz": "UTC+05:00",
+ "fetched_at": "2026-10-17T20:14:41+00:00",
+ "sources": {
+  "sxodim.com": {
+   "fetched_at": "2026-10-17T20:14:41+00:00",
+   "pages": 2,
+   "events": 24
+  },
+  "inastana.kz": {
+   "fetched_at": "2026-10-17T20:15:57+00:00",
+   "pages": 15,
+   "events": 1
+  },
+  "qazaqconcert.kz": {
+   "fetched_at": "2026-10-17T20:16:08+00:00",
+   "pages": 11,
+   "events": 9
+  },
+  "youticket.kz": {
+   "fetched_at": "2026-10-17T20:16:28+00:00",
+   "pages": 20,
+   "events": 0
+  },
+  "alem.ai": {
+   "fetched_at": "2026-10-17T20:16:29+00:00",
+   "pages": 1,
+   "events": 1
+  },
+  "t.me": {
+   "fetched_at": "2026-10-17T20:16:31+00:00",
+   "pages": 1,
+   "events": 0
+  }
+ },
+ "events": [
+  {
+   "id": "alem.ai:museum-of-singularity",
+   "source": "alem.ai",
+   "title": "Museum of Singularity",
+   "category": "museum",
+   "kind": "standing",
+   "start": null,
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": "10:00-18:30 Tue–Sun",
+   "hours_osm": "Tu-Su 10:00-18:30",
+   "price_text": "₸2,500",
+   "price_from": 2500,
+   "venue": {
+    "name": "Museum of Singularity",
+    "hall": null,
+    "address": "Mangilik El ave., B1 Astana, Kazakhstan",
+    "lat": 51.0892,
+    "lon": 71.4161,
+    "coords_source": "page",
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://alem.ai/en/",
+   "fetched_at": "2026-10-17T20:16:29+00:00",
+   "also_listed": [
+    {
+     "source": "youticket.kz",
+     "url": "https://youticket.kz/events/alem-ai"
+    }
+   ],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://alem.ai/en/",
+     "snippet": "Museum of Singularity",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://alem.ai/en/",
+     "snippet": "The Museum of Singularity is open: 10:00-18:30 Tue–Sun",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://alem.ai/en/",
+     "snippet": "Museum of Singularity",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://alem.ai/en/",
+     "snippet": "Mangilik El ave., B1 Astana, Kazakhstan [ 51.0892, 71.4161 ]",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    },
+    {
+     "field": "coords",
+     "url": "https://alem.ai/en/",
+     "snippet": "Mangilik El ave., B1 Astana, Kazakhstan [ 51.0892, 71.4161 ]",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://alem.ai/en/",
+     "snippet": "Admission ticket — ₸2,500",
+     "fetched_at": "2026-10-17T20:16:29+00:00"
+    }
+   ]
+  },
+  {
+   "id": "inastana.kz:8611:2727",
+   "source": "inastana.kz",
+   "title": "Mad Mozart в Астане",
+   "category": null,
+   "kind": "sessions",
+   "start": null,
+   "end": null,
+   "date_from": "2026-11-02",
+   "date_to": "2026-11-02",
+   "sessions": [
+    "2026-11-02T20:00:00+05:00"
+   ],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "10 000,00, 11 500,00, 13 500,00, 16 500,00, 23 000,00, 25 500,00",
+   "price_from": 10000,
+   "venue": {
+    "name": "Дворец «Жастар»",
+    "hall": null,
+    "address": null,
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://www.inastana.kz/afisha/8611/mad-mozart-v-astane",
+   "fetched_at": "2026-10-17T20:15:52+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://www.inastana.kz/afisha/8611/mad-mozart-v-astane",
+     "snippet": "Mad Mozart в Астане",
+     "fetched_at": "2026-10-17T20:15:52+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://www.inastana.kz/afisha/8611/mad-mozart-v-astane",
+     "snippet": "Дворец «Жастар»",
+     "fetched_at": "2026-10-17T20:15:52+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://www.inastana.kz/afisha/8611/mad-mozart-v-astane",
+     "snippet": "2 ноября 20:00",
+     "fetched_at": "2026-10-17T20:15:52+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://www.inastana.kz/afisha/8611/mad-mozart-v-astane",
+     "snippet": "10 000,00, 11 500,00, 13 500,00, 16 500,00, 23 000,00, 25 500,00",
+     "fetched_at": "2026-10-17T20:15:52+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:birlik-ueni",
+   "source": "qazaqconcert.kz",
+   "title": "«БІРЛІК ӘУЕНІ»",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-30T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.12235745300326,
+    "lon": 71.44194394145637,
+    "coords_source": "page",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/birlik-ueni",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [
+    {
+     "source": "youticket.kz",
+     "url": "https://youticket.kz/events/birlik-aueni"
+    }
+   ],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "«БІРЛІК ӘУЕНІ»",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/birlik-ueni",
+     "snippet": "Күні: 30.10.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "coords",
+     "url": "https://youticket.kz/events/birlik-aueni",
+     "snippet": "?q=51.12235745300326,71.44194394145637",
+     "fetched_at": "2026-10-17T20:16:15+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:bizdi-zrmeke_20260930160757",
+   "source": "qazaqconcert.kz",
+   "title": "«БІЗДІҢ ЖӘРМЕҢКЕ»",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-21T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/bizdi-zrmeke_20260930160757",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "«БІЗДІҢ ЖӘРМЕҢКЕ»",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/bizdi-zrmeke_20260930160757",
+     "snippet": "Күні: 21.10.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:muzikl-aldar-kse_20261008122806",
+   "source": "qazaqconcert.kz",
+   "title": "«АЛДАР КӨСЕ» МЮЗИКЛЫ",
+   "category": null,
+   "kind": "event",
+   "start": "2026-11-04T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/muzikl-aldar-kse_20261008122806",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "«АЛДАР КӨСЕ» МЮЗИКЛЫ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/muzikl-aldar-kse_20261008122806",
+     "snippet": "Күні: 04.11.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:muzyka-na-vse-vremena",
+   "source": "qazaqconcert.kz",
+   "title": "«МУЗЫКА НА ВСЕ ВРЕМЕНА»",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-28T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/muzyka-na-vse-vremena",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "«МУЗЫКА НА ВСЕ ВРЕМЕНА»",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/muzyka-na-vse-vremena",
+     "snippet": "Күні: 28.10.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:no13-komediasy",
+   "source": "qazaqconcert.kz",
+   "title": "«№13» КОМЕДИЯСЫ",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-31T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Камералық зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/no13-komediasy",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "«№13» КОМЕДИЯСЫ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Камералық зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/no13-komediasy",
+     "snippet": "Күні: 31.10.2026 Уақыты: 18:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:numori-novyj-ritm-korejskih-tradicij",
+   "source": "qazaqconcert.kz",
+   "title": "NUMORI: КОРЕЙ ДӘСТҮРІНІҢ ЖАҢА ЫРҒАҒЫ",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-26T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/numori-novyj-ritm-korejskih-tradicij",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "NUMORI: КОРЕЙ ДӘСТҮРІНІҢ ЖАҢА ЫРҒАҒЫ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/numori-novyj-ritm-korejskih-tradicij",
+     "snippet": "Күні: 26.10.2026 Уақыты: 18:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:saz-soul",
+   "source": "qazaqconcert.kz",
+   "title": "SAZ & SOUL",
+   "category": null,
+   "kind": "event",
+   "start": "2026-11-05T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/saz-soul",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "SAZ & SOUL",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/saz-soul",
+     "snippet": "Күні: 05.11.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:sulu-hor-koncert_20261008123148",
+   "source": "qazaqconcert.kz",
+   "title": "SULU: ХОР-КОНЦЕРТ",
+   "category": null,
+   "kind": "event",
+   "start": "2026-11-14T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Үлкен зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/sulu-hor-koncert_20261008123148",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "SULU: ХОР-КОНЦЕРТ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Үлкен зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/sulu-hor-koncert_20261008123148",
+     "snippet": "Күні: 14.11.2026 Уақыты: 18:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "qazaqconcert.kz:ueletip-n-salsa",
+   "source": "qazaqconcert.kz",
+   "title": "ӘУЕЛЕТІП ӘН САЛСА",
+   "category": null,
+   "kind": "event",
+   "start": "2026-10-22T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": null,
+   "price_from": null,
+   "venue": {
+    "name": "Qazaqstan ОКЗ",
+    "hall": "Камералық зал",
+    "address": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+    "lat": 51.1236,
+    "lon": 71.4414978,
+    "coords_source": "poi",
+    "poi_id": "overture/a4d7605b-b301-4a9c-baec-cc65c1b617ca",
+    "poi_name": "Қазақстан ОКЗ / ЦКЗ «Казахстан»",
+    "match": "name"
+   },
+   "url": "https://qazaqconcert.kz/poster/ueletip-n-salsa",
+   "fetched_at": "2026-10-17T20:15:58+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "ӘУЕЛЕТІП ӘН САЛСА",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "\"Qazaqstan\" ОКЗ",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://qazaqconcert.kz/posters",
+     "snippet": "Камералық зал",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/contacts",
+     "snippet": "Астана қаласы, Мәңгілік ел даңғылы, 10/1",
+     "fetched_at": "2026-10-17T09:25:25+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://qazaqconcert.kz/poster/ueletip-n-salsa",
+     "snippet": "Күні: 22.10.2026 Уақыты: 19:00",
+     "fetched_at": "2026-10-17T20:15:58+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:58585",
+   "source": "sxodim.com",
+   "title": "«Өліара» спектаклі",
+   "category": "«JAN» театрының қойылымдары",
+   "kind": "event",
+   "start": "2026-10-29T20:30:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 теңгеден бастап",
+   "price_from": 3000,
+   "venue": {
+    "name": "Жастар театры",
+    "hall": null,
+    "address": "к. Илияс Есенберлина, 10",
+    "lat": 51.190579,
+    "lon": 71.4057905,
+    "coords_source": "poi",
+    "poi_id": "way/30014040",
+    "poi_name": "Жастар театры",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/liara-spektakli",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "«Өліара» спектаклі",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 20:30, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 20:30, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 20:30, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 20:30, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:62395",
+   "source": "sxodim.com",
+   "title": "Пешая экскурсия по старому городу «По следам истории»",
+   "category": "Туры от Aomi Travel",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-09-27",
+   "date_to": "2026-11-29",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "7000 тенге (взрослый), 3500 тенге (детский, 5-14 лет)",
+   "price_from": 3500,
+   "venue": {
+    "name": "Русский драм. театр им. М. Горького",
+    "hall": null,
+    "address": "ул. Желтоксан, 11",
+    "lat": 51.1649933,
+    "lon": 71.4164505,
+    "coords_source": "poi",
+    "poi_id": "overture/074ed08c-3445-4299-a895-72e1a1d2d30a",
+    "poi_name": "gorkytheatre.kz",
+    "match": "address"
+   },
+   "url": "https://sxodim.com/astana/event/peshaya-ekskursiya-po-staromu-gorodu-po-sledam-istorii",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Пешая экскурсия по старому городу «По следам истории»",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "7000 тенге (взрослый), 3500 тенге (детский, 5-14 лет), 27 сентября - 29 ноября, Русский драм. театр им. М. Горького, ул. Желтоксан, 11",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "7000 тенге (взрослый), 3500 тенге (детский, 5-14 лет), 27 сентября - 29 ноября, Русский драм. театр им. М. Горького, ул. Желтоксан, 11",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "7000 тенге (взрослый), 3500 тенге (детский, 5-14 лет), 27 сентября - 29 ноября, Русский драм. театр им. М. Горького, ул. Желтоксан, 11",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "7000 тенге (взрослый), 3500 тенге (детский, 5-14 лет), 27 сентября - 29 ноября, Русский драм. театр им. М. Горького, ул. Желтоксан, 11",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:70651",
+   "source": "sxodim.com",
+   "title": "Сборный стендап (Stand Up Bar «Pozitiv»)",
+   "category": "Мероприятия в стендап-баре Pozitiv",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-10",
+   "date_to": "2026-10-24",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 3000 теңге",
+   "price_from": 3000,
+   "venue": {
+    "name": "Бар «Pozitiv»",
+    "hall": null,
+    "address": "ул. Габдуллина, 18",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/sbornyy-stendap-stand-up-bar-pozitiv-1",
+   "fetched_at": "2026-10-17T20:14:41+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/week",
+     "snippet": "Сборный стендап (Stand Up Bar «Pozitiv»)",
+     "fetched_at": "2026-10-17T20:14:41+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/week",
+     "snippet": "от 3000 теңге, 10 октября - 24 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:41+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/week",
+     "snippet": "от 3000 теңге, 10 октября - 24 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:41+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/week",
+     "snippet": "от 3000 теңге, 10 октября - 24 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:41+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/week",
+     "snippet": "от 3000 теңге, 10 октября - 24 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:41+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:73755",
+   "source": "sxodim.com",
+   "title": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+   "category": "Мероприятия в стендап-баре Pozitiv",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-18",
+   "date_to": "2026-11-01",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "2000 тенге",
+   "price_from": 2000,
+   "venue": {
+    "name": "Бар Pozitiv",
+    "hall": null,
+    "address": "ул. Габдуллина, 18",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/stendap-otkrytyy-mikrofon-stand-up-bar-pozitiv-1",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 тенге, 18 октября - 1 ноября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 тенге, 18 октября - 1 ноября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 тенге, 18 октября - 1 ноября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 тенге, 18 октября - 1 ноября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:74931",
+   "source": "sxodim.com",
+   "title": "Шоу с тарологом «Таро, смех и комики» (Stand Up Bar «Pozitiv»)",
+   "category": "Мероприятия в стендап-баре Pozitiv",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-25",
+   "date_to": "2026-10-25",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 тенге",
+   "price_from": 3000,
+   "venue": {
+    "name": "и 29 октября",
+    "hall": "Бар Pozitiv",
+    "address": "ул. Габдуллина, 18",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/shou-s-tarologom-taro-smeh-i-komiki-1",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Шоу с тарологом «Таро, смех и комики» (Stand Up Bar «Pozitiv»)",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 25 октября и 29 октября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 25 октября и 29 октября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 25 октября и 29 октября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 25 октября и 29 октября, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:75490",
+   "source": "sxodim.com",
+   "title": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+   "category": "Киноужины от VkusKino в Астане",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-18",
+   "date_to": "2026-11-28",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 23 000 тенге",
+   "price_from": 23000,
+   "venue": {
+    "name": "Ресторан Мята Green",
+    "hall": null,
+    "address": "ул. Сыганак, 17г",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/kinouzhin-s-multfilmom-ratatuy",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 23 000 тенге, 18 октября - 28 ноября, Ресторан Мята Green, ул. Сыганак, 17г",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 23 000 тенге, 18 октября - 28 ноября, Ресторан Мята Green, ул. Сыганак, 17г",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 23 000 тенге, 18 октября - 28 ноября, Ресторан Мята Green, ул. Сыганак, 17г",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 23 000 тенге, 18 октября - 28 ноября, Ресторан Мята Green, ул. Сыганак, 17г",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:75800",
+   "source": "sxodim.com",
+   "title": "Киноужин с фильмом «Гарри Поттер и Философский камень» от VkusKino в Астане",
+   "category": "Киноужины от VkusKino в Астане",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-15",
+   "date_to": "2026-11-26",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 26 500 тенге",
+   "price_from": 26500,
+   "venue": {
+    "name": "Ресторан Sozvezdie",
+    "hall": null,
+    "address": "ул. Керей, Жанибек хандар, 22/2",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Киноужин с фильмом «Гарри Поттер и Философский камень» от VkusKino в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 26 500 тенге, 15 октября - 26 ноября, Ресторан Sozvezdie, ул. Керей, Жанибек хандар, 22/2",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 26 500 тенге, 15 октября - 26 ноября, Ресторан Sozvezdie, ул. Керей, Жанибек хандар, 22/2",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 26 500 тенге, 15 октября - 26 ноября, Ресторан Sozvezdie, ул. Керей, Жанибек хандар, 22/2",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 26 500 тенге, 15 октября - 26 ноября, Ресторан Sozvezdie, ул. Керей, Жанибек хандар, 22/2",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:76905",
+   "source": "sxodim.com",
+   "title": "Мультимедийная выставка «Айвазовский. Ожившие полотна»",
+   "category": "Выставки и ярмарки",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-08-04",
+   "date_to": "2026-10-25",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 3000 тенге",
+   "price_from": 3000,
+   "venue": {
+    "name": "Мультимедийный музей Lumiere-Hall",
+    "hall": null,
+    "address": "пр. Абая, 8",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/multimediynaya-vystavka-ayvazovskiy-ozhivshie-polotna",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Мультимедийная выставка «Айвазовский. Ожившие полотна»",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 тенге, 4 августа - 25 октября, Мультимедийный музей Lumiere-Hall, пр. Абая, 8",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 тенге, 4 августа - 25 октября, Мультимедийный музей Lumiere-Hall, пр. Абая, 8",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 тенге, 4 августа - 25 октября, Мультимедийный музей Lumiere-Hall, пр. Абая, 8",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 тенге, 4 августа - 25 октября, Мультимедийный музей Lumiere-Hall, пр. Абая, 8",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77397",
+   "source": "sxodim.com",
+   "title": "«Мама!» спектаклі",
+   "category": "«JAN» театрының қойылымдары",
+   "kind": "event",
+   "start": "2026-10-29T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 теңгеден бастап",
+   "price_from": 3000,
+   "venue": {
+    "name": "Жастар театры",
+    "hall": null,
+    "address": "к. Илияс Есенберлина, 10",
+    "lat": 51.190579,
+    "lon": 71.4057905,
+    "coords_source": "poi",
+    "poi_id": "way/30014040",
+    "poi_name": "Жастар театры",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/mama-spektakli",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "«Мама!» спектаклі",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 18:00, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 18:00, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 18:00, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңгеден бастап, 29 октября в 18:00, Астана қаласы, Жастар театры, к. Илияс Есенберлина, 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77441",
+   "source": "sxodim.com",
+   "title": "SEBEPSIZ импровизация жобасы",
+   "category": "Мероприятия в стендап-баре Pozitiv",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-18",
+   "date_to": "2026-10-29",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "2000 теңге",
+   "price_from": 2000,
+   "venue": {
+    "name": "Бар «Pozitiv»",
+    "hall": null,
+    "address": "ул. Габдуллина, 18",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/sebepsiz-improvizaciya-zhobasy",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "SEBEPSIZ импровизация жобасы",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 теңге, 18 октября - 29 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 теңге, 18 октября - 29 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 теңге, 18 октября - 29 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "2000 теңге, 18 октября - 29 октября, Бар «Pozitiv», ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77443",
+   "source": "sxodim.com",
+   "title": "Шоу «Комики решают проблемы» в Астане",
+   "category": "Stand up",
+   "kind": "event",
+   "start": "2026-11-07T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 13 000 тенге",
+   "price_from": 13000,
+   "venue": {
+    "name": "The Bus",
+    "hall": null,
+    "address": "шоссе Коргалжын, 3",
+    "lat": 51.1453133,
+    "lon": 71.4072189,
+    "coords_source": "poi",
+    "poi_id": "overture/66b89b58-5f67-45ac-91c4-b2bd346bf1f0",
+    "poi_name": "TheBus.Astana",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/shou-komiki-reshayut-problemy-v-astane",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Шоу «Комики решают проблемы» в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 13 000 тенге, 7 ноября в 19:00, The Bus, шоссе Коргалжын, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 13 000 тенге, 7 ноября в 19:00, The Bus, шоссе Коргалжын, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 13 000 тенге, 7 ноября в 19:00, The Bus, шоссе Коргалжын, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 13 000 тенге, 7 ноября в 19:00, The Bus, шоссе Коргалжын, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77465",
+   "source": "sxodim.com",
+   "title": "Концерт «Добрые песни старого кино» в Астане",
+   "category": "Концерты",
+   "kind": "event",
+   "start": "2026-10-18T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 7000 тенге",
+   "price_from": 7000,
+   "venue": {
+    "name": "Государственная академическая филармония им. Е. Рахмадиева",
+    "hall": null,
+    "address": "ул. Кенесары, 32",
+    "lat": 51.1636794,
+    "lon": 71.4223498,
+    "coords_source": "poi",
+    "poi_id": "node/4916363251",
+    "poi_name": "Государственная академическая филармония им. Е. Рахмадиева",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/koncert-dobrye-pesni-starogo-kino-v-astane",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Концерт «Добрые песни старого кино» в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 тенге, 18 октября в 19:00, Государственная академическая филармония им. Е. Рахмадиева, ​ул. Кенесары, 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 тенге, 18 октября в 19:00, Государственная академическая филармония им. Е. Рахмадиева, ​ул. Кенесары, 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 тенге, 18 октября в 19:00, Государственная академическая филармония им. Е. Рахмадиева, ​ул. Кенесары, 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 тенге, 18 октября в 19:00, Государственная академическая филармония им. Е. Рахмадиева, ​ул. Кенесары, 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77486",
+   "source": "sxodim.com",
+   "title": "Сольный концерт IntroVert в Астане",
+   "category": "Концерты",
+   "kind": "event",
+   "start": "2026-12-13T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 6990 тенге",
+   "price_from": 6990,
+   "venue": {
+    "name": "The Bus Music Pub",
+    "hall": null,
+    "address": "Коргалжынское шоссе, 3",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/solnyy-koncert-introvert-v-astane",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Сольный концерт IntroVert в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6990 тенге, 13 декабря в 18:00, The Bus Music Pub, Коргалжынское шоссе, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6990 тенге, 13 декабря в 18:00, The Bus Music Pub, Коргалжынское шоссе, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6990 тенге, 13 декабря в 18:00, The Bus Music Pub, Коргалжынское шоссе, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6990 тенге, 13 декабря в 18:00, The Bus Music Pub, Коргалжынское шоссе, 3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77514",
+   "source": "sxodim.com",
+   "title": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+   "category": "Мероприятия в стендап-баре Pozitiv",
+   "kind": "event",
+   "start": "2026-10-18T22:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 тенге",
+   "price_from": 3000,
+   "venue": {
+    "name": "Бар Pozitiv",
+    "hall": null,
+    "address": "ул. Габдуллина, 18",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/shou-komiki-protiv-problem-stand-up-bar-pozitiv",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 22:00, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 22:00, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 22:00, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 22:00, Бар Pozitiv, ул. Габдуллина, 18",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77624",
+   "source": "sxodim.com",
+   "title": "Киноужин «Сумерки» от vkuskino в Астане",
+   "category": "Киноужины от VkusKino в Астане",
+   "kind": "run",
+   "start": null,
+   "end": null,
+   "date_from": "2026-10-18",
+   "date_to": "2026-11-22",
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 21 500 тенге",
+   "price_from": 21500,
+   "venue": {
+    "name": "Ресторан Ted",
+    "hall": null,
+    "address": "пр. Улы Дала, 39",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/kinouzhin-sumerki-ot-vkuskino-v-astane",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Киноужин «Сумерки» от vkuskino в Астане",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 21 500 тенге, 18 октября - 22 ноября, Ресторан Ted, пр. Улы Дала, 39",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 21 500 тенге, 18 октября - 22 ноября, Ресторан Ted, пр. Улы Дала, 39",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 21 500 тенге, 18 октября - 22 ноября, Ресторан Ted, пр. Улы Дала, 39",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 21 500 тенге, 18 октября - 22 ноября, Ресторан Ted, пр. Улы Дала, 39",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77641",
+   "source": "sxodim.com",
+   "title": "Трибьют-концерт The Beatles от группы Black Pelican",
+   "category": "Концерты",
+   "kind": "event",
+   "start": "2026-10-18T20:30:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 6000 тенге",
+   "price_from": 6000,
+   "venue": {
+    "name": "Harat’s Europe City",
+    "hall": null,
+    "address": "ул. Акмешит, 1/3",
+    "lat": 51.1624514,
+    "lon": 71.4187926,
+    "coords_source": "poi",
+    "poi_id": "node/12917089240",
+    "poi_name": "Harat's",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/tribyut-koncert-the-beatles-ot-gruppy-black-pelican",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Трибьют-концерт The Beatles от группы Black Pelican",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6000 тенге, 18 октября в 20:30, Harat’s Europe City, Астана, ул. Акмешит, 1/3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6000 тенге, 18 октября в 20:30, Harat’s Europe City, Астана, ул. Акмешит, 1/3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6000 тенге, 18 октября в 20:30, Harat’s Europe City, Астана, ул. Акмешит, 1/3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 6000 тенге, 18 октября в 20:30, Harat’s Europe City, Астана, ул. Акмешит, 1/3",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77646",
+   "source": "sxodim.com",
+   "title": "Киноклуб: «Фрида», 2002 г.",
+   "category": "Кинопоказы",
+   "kind": "event",
+   "start": "2026-10-18T16:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 тенге",
+   "price_from": 3000,
+   "venue": {
+    "name": "1.5 idea art gallery",
+    "hall": null,
+    "address": "мкр. Самал, 9",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/kinoklub-frida-2002-g",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Киноклуб: «Фрида», 2002 г.",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 16:00, 1.5 idea art gallery, мкр. Самал, 9",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 16:00, 1.5 idea art gallery, мкр. Самал, 9",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 16:00, 1.5 idea art gallery, мкр. Самал, 9",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 тенге, 18 октября в 16:00, 1.5 idea art gallery, мкр. Самал, 9",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77665",
+   "source": "sxodim.com",
+   "title": "Teztap интеллектуалдар ойыны – Тек суреттер",
+   "category": "Игры (квизы, мафия и другое)",
+   "kind": "event",
+   "start": "2026-10-18T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3000 теңге",
+   "price_from": 3000,
+   "venue": {
+    "name": "Рыба моей мечты",
+    "hall": null,
+    "address": "Бейбітшілік, 20/1",
+    "lat": 51.173011,
+    "lon": 71.419872,
+    "coords_source": "poi",
+    "poi_id": "node/4499897795",
+    "poi_name": "Рыба моей мечты",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/teztap-intellektualdar-oyyny-tek-suretter",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Teztap интеллектуалдар ойыны – Тек суреттер",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңге, 18 октября в 18:00, Рыба моей мечты, Бейбітшілік, 20/1",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңге, 18 октября в 18:00, Рыба моей мечты, Бейбітшілік, 20/1",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңге, 18 октября в 18:00, Рыба моей мечты, Бейбітшілік, 20/1",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3000 теңге, 18 октября в 18:00, Рыба моей мечты, Бейбітшілік, 20/1",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77697",
+   "source": "sxodim.com",
+   "title": "Акустический концерт группы Sary",
+   "category": "Концерты",
+   "kind": "event",
+   "start": "2026-10-18T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 7000 теңге",
+   "price_from": 7000,
+   "venue": {
+    "name": "Harat’s Ақбұлақ",
+    "hall": null,
+    "address": "Токпанов көш., 10",
+    "lat": 51.1384315,
+    "lon": 71.4583588,
+    "coords_source": "poi",
+    "poi_id": "overture/908c37d7-c5a1-4098-a781-ac1260fe42db",
+    "poi_name": "Harats Akbulak",
+    "match": "name"
+   },
+   "url": "https://sxodim.com/astana/event/akusticheskiy-koncert-gruppy-sary",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Акустический концерт группы Sary",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 теңге, 18 октября в 19:00, Harat’s Ақбұлақ, Токпанов көш., 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 теңге, 18 октября в 19:00, Harat’s Ақбұлақ, Токпанов көш., 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 теңге, 18 октября в 19:00, Harat’s Ақбұлақ, Токпанов көш., 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 7000 теңге, 18 октября в 19:00, Harat’s Ақбұлақ, Токпанов көш., 10",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77707",
+   "source": "sxodim.com",
+   "title": "Квиз, плиз! #803",
+   "category": "Игры (квизы, мафия и другое)",
+   "kind": "event",
+   "start": "2026-10-18T18:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "3500 теңге",
+   "price_from": 3500,
+   "venue": {
+    "name": "Garage Music Bar",
+    "hall": null,
+    "address": "ул. Кравцова, 6",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/kviz-pliz-803",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Квиз, плиз! #803",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3500 теңге, 18 октября в 18:00, Garage Music Bar, ул. Кравцова, 6",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3500 теңге, 18 октября в 18:00, Garage Music Bar, ул. Кравцова, 6",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3500 теңге, 18 октября в 18:00, Garage Music Bar, ул. Кравцова, 6",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "3500 теңге, 18 октября в 18:00, Garage Music Bar, ул. Кравцова, 6",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77765",
+   "source": "sxodim.com",
+   "title": "Вечеринка Dizngo carnival",
+   "category": "Вечеринки",
+   "kind": "event",
+   "start": "2026-10-31T22:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 5000 теңге",
+   "price_from": 5000,
+   "venue": {
+    "name": "Ресторан Piligrim",
+    "hall": null,
+    "address": "мкр. Самал, 12",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/vecherinka-dizngo-carnival",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Вечеринка Dizngo carnival",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 5000 теңге, 31 октября в 22:00, Ресторан Piligrim, мкр. Самал, 12",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 5000 теңге, 31 октября в 22:00, Ресторан Piligrim, мкр. Самал, 12",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 5000 теңге, 31 октября в 22:00, Ресторан Piligrim, мкр. Самал, 12",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 5000 теңге, 31 октября в 22:00, Ресторан Piligrim, мкр. Самал, 12",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77770",
+   "source": "sxodim.com",
+   "title": "Лекция Дархана Жагипарова в Өnergy Creative Hub: «Через тои к Apple»",
+   "category": "Образование",
+   "kind": "event",
+   "start": "2026-10-23T18:30:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "от 3000 теңге",
+   "price_from": 3000,
+   "venue": {
+    "name": "Өnergy Creative Hub",
+    "hall": "студия Content & Production",
+    "address": "пр. Кабанбай батыра, 53, блок 32",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/lekciya-darhana-zhagiparova-v-nergy-creative-hub-cherez-toi-k-apple",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Лекция Дархана Жагипарова в Өnergy Creative Hub: «Через тои к Apple»",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 теңге, 23 октября в 18:30, Өnergy Creative Hub, студия Content & Production, пр. Кабанбай батыра, 53, блок 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 теңге, 23 октября в 18:30, Өnergy Creative Hub, студия Content & Production, пр. Кабанбай батыра, 53, блок 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 теңге, 23 октября в 18:30, Өnergy Creative Hub, студия Content & Production, пр. Кабанбай батыра, 53, блок 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "от 3000 теңге, 23 октября в 18:30, Өnergy Creative Hub, студия Content & Production, пр. Кабанбай батыра, 53, блок 32",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77801",
+   "source": "sxodim.com",
+   "title": "Встреча с Канатом Нуровым «Управленческие решения — открытый разбор бизнес-кейсов»",
+   "category": "Бизнес",
+   "kind": "event",
+   "start": "2026-10-22T17:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "9900 теңге",
+   "price_from": 9900,
+   "venue": {
+    "name": "Abu Dhabi Plaza",
+    "hall": null,
+    "address": "ул. Сыганак, 60/4, 26-й этаж, Practic Office",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/vstrecha-s-kanatom-nurovym-upravlencheskie-resheniya-otkrytyy-razbor-biznes-keysov",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Встреча с Канатом Нуровым «Управленческие решения — открытый разбор бизнес-кейсов»",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "9900 теңге, 22 октября в 17:00, Abu Dhabi Plaza, ул. Сыганак, 60/4, 26-й этаж, Practic Office",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "9900 теңге, 22 октября в 17:00, Abu Dhabi Plaza, ул. Сыганак, 60/4, 26-й этаж, Practic Office",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "9900 теңге, 22 октября в 17:00, Abu Dhabi Plaza, ул. Сыганак, 60/4, 26-й этаж, Practic Office",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "9900 теңге, 22 октября в 17:00, Abu Dhabi Plaza, ул. Сыганак, 60/4, 26-й этаж, Practic Office",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  },
+  {
+   "id": "sxodim.com:77852",
+   "source": "sxodim.com",
+   "title": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+   "category": "Образование",
+   "kind": "event",
+   "start": "2026-10-19T19:00:00+05:00",
+   "end": null,
+   "date_from": null,
+   "date_to": null,
+   "sessions": [],
+   "hours_raw": null,
+   "hours_osm": null,
+   "price_text": "10 000 теңге",
+   "price_from": 10000,
+   "venue": {
+    "name": "Өnergy Creative Hub",
+    "hall": null,
+    "address": "Қабанбай батыр даңғылы, 53, 32-блок",
+    "lat": null,
+    "lon": null,
+    "coords_source": null,
+    "poi_id": null,
+    "poi_name": null,
+    "match": null
+   },
+   "url": "https://sxodim.com/astana/event/creative-talk-uanysh-beysek-kreativti-prodyuserleu",
+   "fetched_at": "2026-10-17T20:14:40+00:00",
+   "also_listed": [],
+   "evidence": [
+    {
+     "field": "title",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "when",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "10 000 теңге, 19 октября в 19:00, Өnergy Creative Hub, Қабанбай батыр даңғылы, 53, 32-блок",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "venue",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "10 000 теңге, 19 октября в 19:00, Өnergy Creative Hub, Қабанбай батыр даңғылы, 53, 32-блок",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "10 000 теңге, 19 октября в 19:00, Өnergy Creative Hub, Қабанбай батыр даңғылы, 53, 32-блок",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    },
+    {
+     "field": "price",
+     "url": "https://sxodim.com/astana/events/today",
+     "snippet": "10 000 теңге, 19 октября в 19:00, Өnergy Creative Hub, Қабанбай батыр даңғылы, 53, 32-блок",
+     "fetched_at": "2026-10-17T20:14:40+00:00"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "domain": "qazexpocongress.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:00+00:00",
+ "pages": [
+  "https://qazexpocongress.kz/ru/nur-alem/"
+ ],
+ "branches": [
+  {
+   "name": "Нұр Әлем (Nur Alem, сфера EXPO)",
+   "address": "010000, г. Астана, пр. Мангилик Ел 55/13",
+   "lat": null,
+   "lon": null,
+   "phone": "8 747 169 90 92",
+   "opening_hours_raw": "Вторник - Пятница с 10:00 до 20:00; Суббота - Воскресенье с 10:00 до 21:00",
+   "opening_hours_osm": "Tu-Fr 10:00-20:00; Sa,Su 10:00-21:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://qazexpocongress.kz/ru/nur-alem/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qazexpocongress.kz/ru/nur-alem/",
+     "snippet": "Музей энергии будущего",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazexpocongress.kz/ru/nur-alem/",
+     "snippet": "010000, г. Астана, пр. Мангилик Ел 55/13",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://qazexpocongress.kz/ru/nur-alem/",
+     "snippet": "График работы Вторник - Пятница с 10:00 до 20:00 касса с 10:00 до 19:00 Суббота - Воскресенье с 10:00 до 21:00",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://qazexpocongress.kz/ru/nur-alem/",
+     "snippet": "8 747 169 90 92",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The page still prints the working schedule (Вт-Пт 10-20, Сб-Вс 10-21, Пн — технический день) AND the notice 'С декабря 2024 года Музей энергии будущего завершил свою работу и прекратил прием посетителей' (здание занимает центр ИИ alem.ai). Hours are therefore stale-but-verbatim; join should weigh the closure notice. The cassa sub-schedule (10-19/10-20) and the Monday technical day sit inside the raw text but not in the OSM string.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

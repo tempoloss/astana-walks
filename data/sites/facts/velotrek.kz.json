@@ -1,0 +1,46 @@
+{
+ "domain": "velotrek.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:30:12+00:00",
+ "pages": [
+  "https://velotrek.kz/contacts/"
+ ],
+ "branches": [
+  {
+   "name": "Велотрек «Сарыарқа»",
+   "address": "Велотрек Сарыарқа, Қазақстан, Астана қаласы, Нұра ауданы, Қабанбай Батыр даңғылы, 45а ғимарат",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (7172) 707 173",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://velotrek.kz/contacts/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://velotrek.kz/contacts/",
+     "snippet": "Сарыарқа",
+     "fetched_at": "2026-10-17T09:30:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://velotrek.kz/contacts/",
+     "snippet": "Велотрек Сарыарқа, Қазақстан, Астана қаласы, Нұра ауданы, Қабанбай Батыр даңғылы, 45а ғимарат",
+     "fetched_at": "2026-10-17T09:30:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://velotrek.kz/contacts/",
+     "snippet": "телефоны 8 (7172) 707 173",
+     "fetched_at": "2026-10-17T09:30:12+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "The visiting-hours page is the citizens' reception schedule of the director/vice-directors (каб. 201/312), not facility opening hours; «Екі аптада бір рет, дүйсенбі күні — санитарлық күн» refers to the fitness club. No public hours published.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

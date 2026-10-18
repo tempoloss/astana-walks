@@ -1,0 +1,9 @@
+{
+ "domain": "katast.info",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "HTTP 404 on https://katast.info/ and http://www.katast.info (empty body); robots.txt absent (all allowed) but the parish site of Римско-Католический приход Матери Божией Неустанной Помощи is gone. No facts.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

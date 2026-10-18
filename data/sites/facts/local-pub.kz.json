@@ -1,0 +1,9 @@
+{
+ "domain": "local-pub.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt unreachable (HTTP 403) => crawling not allowed; nothing stored for Local Pub.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

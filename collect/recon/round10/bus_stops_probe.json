@@ -1,0 +1,23 @@
+{
+ "osm_bus_stop": {
+  "nodes": "879",
+  "ways": "0",
+  "relations": "0",
+  "total": "879"
+ },
+ "fetched": "2026-10-18",
+ "source": "overpass-api.de",
+ "note": "stops_stats says osm_stops_raw=0 => the layer build lost the OSM side (mirror/parse); the supply is here",
+ "bus_stop_with_name": {
+  "nodes": "508",
+  "ways": "0",
+  "relations": "0",
+  "total": "508"
+ },
+ "bus_stop_with_name_kk": {
+  "nodes": "23",
+  "ways": "0",
+  "relations": "0",
+  "total": "23"
+ }
+}

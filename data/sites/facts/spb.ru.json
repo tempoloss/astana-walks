@@ -1,0 +1,11 @@
+{
+ "domain": "spb.ru",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://evrasia.spb.ru/"
+ ],
+ "branches": [],
+ "notes": "spb.ru answers a redirect loop (TooManyRedirects), robots.txt unreachable => crawling not allowed per RFC 9309; the brand's evrasia.rest contacts page prints only the Санкт-Петербург HQ. Nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

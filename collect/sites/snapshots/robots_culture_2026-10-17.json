@@ -1,0 +1,55 @@
+{
+ "fetched_at": "2026-10-17",
+ "user_agent": "astana-walks/0.1 (hackathon; an8kk.sa@gmail.com)",
+ "results": [
+  {
+   "domain": "e-museum.kz",
+   "url": "https://e-museum.kz/robots.txt",
+   "status": 200,
+   "fetched_at": "2026-10-17",
+   "body_head": "User-agent: *\r\nDisallow: /wp-admin/\r\nAllow: /wp-admin/admin-ajax.php\r\n\r\nSitemap: https://e-museum.kz/sitemap.xml\r\nSitemap: https://e-museum.kz/sitemap.rss\n"
+  },
+  {
+   "domain": "akorda.kz",
+   "url": "https://akorda.kz/robots.txt",
+   "status": 200,
+   "fetched_at": "2026-10-17",
+   "body_head": "User-agent: *\nAllow: /"
+  },
+  {
+   "domain": "museumgold.kz",
+   "url": "https://museumgold.kz/robots.txt",
+   "status": 200,
+   "fetched_at": "2026-10-17",
+   "body_head": "User-agent: *\nAllow: /"
+  },
+  {
+   "domain": "bozok.kz",
+   "url": "https://bozok.kz/robots.txt",
+   "status": 200,
+   "fetched_at": "2026-10-17",
+   "body_head": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://bozok.kz/wp-sitemap.xml\n"
+  },
+  {
+   "domain": "museum-alzhir.kz",
+   "url": "https://museum-alzhir.kz/robots.txt",
+   "status": 403,
+   "fetched_at": "2026-10-17",
+   "body_head": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', f"
+  },
+  {
+   "domain": "astanamuseums.kz",
+   "url": "https://astanamuseums.kz/robots.txt",
+   "status": 0,
+   "fetched_at": "2026-10-17",
+   "body_head": "ConnectTimeout: timed out"
+  },
+  {
+   "domain": "botsad-nursultan.kz",
+   "url": "https://botsad-nursultan.kz/robots.txt",
+   "status": 0,
+   "fetched_at": "2026-10-17",
+   "body_head": "ConnectError: [Errno 11001] getaddrinfo failed"
+  }
+ ]
+}

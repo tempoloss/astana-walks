@@ -1,0 +1,9 @@
+{
+ "domain": "ronipizza.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "City-gate SPA: / selects a city (Астана/Узбекистан) client-side and every deep link returns HTTP 500; no address/hours rendered for the Astana outlet => nothing stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

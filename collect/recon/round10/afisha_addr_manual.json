@@ -1,0 +1,290 @@
+{
+ "rule": "manual adjudication, one substring probe (4+ letters, lowercase) per distinct street over BOTH registers; no folding, no prefixes, no matcher code — matcher iterations 10→17→20→18→19→16→0 proved RCA key is mixed-script/stemmed and needs a real normalizer",
+ "rows": [
+  {
+   "address": "пр. Абая, 8",
+   "probe": "абай",
+   "src": "RCA",
+   "rca": [
+    "Ақтасты",
+    "Абая"
+   ],
+   "rca_former": [
+    [
+     "Железнодорожный, улица Абай",
+     "Железнодорожный, улица Ақтасты"
+    ]
+   ],
+   "oa": [
+    "АБАЙ",
+    "БУРАБАЙ"
+   ],
+   "district": "Алматы"
+  },
+  {
+   "address": "ул. Керей, Жанибек хандар, 22/2",
+   "probe": "керей",
+   "src": "RCA",
+   "rca": [
+    "Керей, Жәнібек хандар",
+    "Керей, Жәнібек хандар"
+   ],
+   "rca_former": [
+    []
+   ],
+   "oa": [
+    "ДАУЛЕТКЕРЕЙ",
+    "КЕРЕЙ, ЖАНИБЕК ХАНДАР"
+   ],
+   "district": "Нұра"
+  },
+  {
+   "address": "ул. Сыганак, 17г",
+   "probe": "сыганак",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "СЫГАНАК"
+   ],
+   "district": null
+  },
+  {
+   "address": "ул. Сыганак, 60/4",
+   "probe": "сыганак",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "СЫГАНАК"
+   ],
+   "district": null
+  },
+  {
+   "address": "пр. Кабанбай батыра, 53",
+   "probe": "кабанбай",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "КАБАНБАЙ БАТЫРА"
+   ],
+   "district": null
+  },
+  {
+   "address": "ул. Желтоксан, 11",
+   "probe": "желтоксан",
+   "src": "RCA",
+   "rca": [
+    "Желтоксан"
+   ],
+   "rca_former": [
+    [
+     "Комсомольская"
+    ]
+   ],
+   "oa": [
+    "ЖЕЛТОКСАН"
+   ],
+   "district": "Сарыарка"
+  },
+  {
+   "address": "шоссе Коргалжын, 3",
+   "probe": "коргалж",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "КОРГАЛЖЫН"
+   ],
+   "district": null
+  },
+  {
+   "address": "ул. Кенесары, 32",
+   "probe": "кенесары",
+   "src": "RCA",
+   "rca": [
+    "Кенесары",
+    "Кенесары"
+   ],
+   "rca_former": [
+    [
+     "Карла Маркса"
+    ]
+   ],
+   "oa": [
+    "КЕНЕСАРЫ"
+   ],
+   "district": "Сарыарка"
+  },
+  {
+   "address": "Бейбітшілік, 20/1",
+   "probe": "бейбіт",
+   "src": "RCA",
+   "rca": [
+    "Бейбітшілік"
+   ],
+   "rca_former": [
+    [
+     "Мира"
+    ]
+   ],
+   "oa": [],
+   "district": "Сарыарка"
+  },
+  {
+   "address": "мкр. Самал, 9",
+   "probe": "самал",
+   "src": "NONE",
+   "rca": [],
+   "rca_former": [],
+   "oa": [],
+   "district": null
+  },
+  {
+   "address": "мкр. Самал, 12",
+   "probe": "самал",
+   "src": "NONE",
+   "rca": [],
+   "rca_former": [],
+   "oa": [],
+   "district": null
+  },
+  {
+   "address": "ул. Кравцова, 6",
+   "probe": "кравц",
+   "src": "RCA",
+   "rca": [
+    "Александра Кравцова",
+    "Александра Кравцова"
+   ],
+   "rca_former": [
+    [
+     "Нуринская"
+    ]
+   ],
+   "oa": [
+    "АЛЕКСАНДР КРАВЦОВ"
+   ],
+   "district": "Байконыр"
+  },
+  {
+   "address": "Mangilik El ave., B1",
+   "probe": "mangil",
+   "src": "NONE",
+   "rca": [],
+   "rca_former": [],
+   "oa": [],
+   "district": null
+  },
+  {
+   "address": "Коргалжынское шоссе, 3",
+   "probe": "коргалж",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "КОРГАЛЖЫН"
+   ],
+   "district": null
+  },
+  {
+   "address": "ул. Габдуллина, 18",
+   "probe": "габдулл",
+   "src": "RCA",
+   "rca": [
+    "Мәлік Ғабдуллин"
+   ],
+   "rca_former": [
+    [
+     "Малика Габдуллина"
+    ]
+   ],
+   "oa": [
+    "МАЛИКА ГАБДУЛЛИНА"
+   ],
+   "district": "Байконыр"
+  },
+  {
+   "address": "пр. Улы Дала, 39",
+   "probe": "улы дала",
+   "src": "NONE",
+   "rca": [],
+   "rca_former": [],
+   "oa": [],
+   "district": null
+  },
+  {
+   "address": "к. Илияс Есенберлина, 10",
+   "probe": "есенберл",
+   "src": "RCA",
+   "rca": [
+    "Ілияс Есенберлин"
+   ],
+   "rca_former": [
+    [
+     "Акжайык",
+     "Ильяс Есенберлин"
+    ]
+   ],
+   "oa": [
+    "ЕСЕНБЕРЛИН IЛИЯС"
+   ],
+   "district": "Сарыарка"
+  },
+  {
+   "address": "ул. Акмешит, 1/3",
+   "probe": "акмеш",
+   "src": "RCA",
+   "rca": [
+    "Ақмешіт",
+    "Ақмешіт"
+   ],
+   "rca_former": [
+    [
+     "№ 33"
+    ]
+   ],
+   "oa": [],
+   "district": "Есиль"
+  },
+  {
+   "address": "Токпанов көш., 10",
+   "probe": "токпанов",
+   "src": "RCA",
+   "rca": [
+    "Аскар Токпанов",
+    "Аскар Токпанов"
+   ],
+   "rca_former": [
+    [
+     "Аскара Токпанова"
+    ]
+   ],
+   "oa": [
+    "АСКАР ТОКПАНОВ"
+   ],
+   "district": "Алматы"
+  },
+  {
+   "address": "Қабанбай батыр даңғылы, 53",
+   "probe": "кабанбай",
+   "src": "OA",
+   "rca": [],
+   "rca_former": [],
+   "oa": [
+    "КАБАНБАЙ БАТЫРА"
+   ],
+   "district": null
+  },
+  {
+   "address": "Мәңгілік ел даңғылы, 10/1",
+   "probe": "мәңгілік",
+   "src": "NONE",
+   "rca": [],
+   "rca_former": [],
+   "oa": [],
+   "district": null
+  }
+ ]
+}

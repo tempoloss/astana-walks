@@ -1,0 +1,46 @@
+{
+ "domain": "zeid.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:32:47+00:00",
+ "pages": [
+  "http://zeid.kz"
+ ],
+ "branches": [
+  {
+   "name": "ZEID",
+   "address": "г. Астана, ул. Агыбай батыра, 99",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (775) 680-47-47",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://zeid.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://zeid.kz",
+     "snippet": "ZEID",
+     "fetched_at": "2026-10-17T09:32:47+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://zeid.kz",
+     "snippet": "г. Астана, ул. ​Агыбай батыра, 99",
+     "fetched_at": "2026-10-17T09:32:47+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://zeid.kz",
+     "snippet": "+7 (775) 680-47-47 (ресторан)",
+     "fetched_at": "2026-10-17T09:32:47+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "«Гостиница 24/7» is the hotel and «Пн-Вт до 01:00 Ср-Вс круглосуточно» is printed under the hotel phone; no unambiguous restaurant hours — none stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

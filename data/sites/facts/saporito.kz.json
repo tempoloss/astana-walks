@@ -1,0 +1,54 @@
+{
+ "domain": "saporito.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:22:35+00:00",
+ "pages": [
+  "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html"
+ ],
+ "branches": [
+  {
+   "name": "Saporito",
+   "address": "Астана, Ул. Кошкарбаева, 34, ЖК \"Туркестан\"",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(7172) 65-50-65",
+   "opening_hours_raw": "с 08:00 - 02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html",
+     "snippet": "Saporito",
+     "fetched_at": "2026-10-17T09:22:35+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html",
+     "snippet": "Ул. Кошкарбаева, 34, ЖК \"Туркестан\"",
+     "fetched_at": "2026-10-17T09:22:35+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html",
+     "snippet": "Время работы: с 08:00 - 02:00",
+     "fetched_at": "2026-10-17T09:22:35+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.saporito.kz/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.html",
+     "snippet": "Телефон: +7(7172) 65-50-65",
+     "fetched_at": "2026-10-17T09:22:35+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "'Время работы: с 08:00 - 02:00' names no days -> hours_flags needs_days, raw kept. The about page confirms 'Ежедневно с 08.00 утра' (breakfast) but the daily schedule itself is the contacts-page range. Second mobile phone +7(707) 555-02-99 (Моб.) also on the page; the landline is stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

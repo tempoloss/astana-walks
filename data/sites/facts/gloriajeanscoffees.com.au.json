@@ -1,0 +1,11 @@
+{
+ "domain": "gloriajeanscoffees.com.au",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.gloriajeanscoffees.com.au/store-finder"
+ ],
+ "branches": [],
+ "notes": "robots allow; the store-finder page ships the outlet list client-side (JS) — no Astana/Ramstore entry is present in the fetchable HTML (grep for 'Astana'/'Nur-Sultan' in the raw payload: none). No verbatim snippet to anchor the POI card title, so nothing stored.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

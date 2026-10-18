@@ -1,0 +1,3087 @@
+{
+ "domain": "happycake.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.happycake.kz/astana/stores/"
+ ],
+ "branches": [
+  {
+   "name": "Happy Cake — Астана, улица Ақмешіт 5A, ВП-2",
+   "address": "улица Ақмешіт 5A, ВП-2, Астана",
+   "lat": 51.118512,
+   "lon": 71.424171,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Ақмешіт 5A, ВП-2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Ақмешіт 5A, ВП-2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.118512,\"longitude\":71.424171}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Күйші Дина 13",
+   "address": "улица Күйші Дина 13, Астана",
+   "lat": 51.146174,
+   "lon": 71.469059,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Күйші Дина 13\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Күйші Дина 13\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.146174,\"longitude\":71.469059}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Жеңіс 17",
+   "address": "проспект Жеңіс 17, Астана",
+   "lat": 51.168216,
+   "lon": 71.412917,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Жеңіс 17\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Жеңіс 17\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.168216,\"longitude\":71.412917}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Төле би, 48",
+   "address": "улица Төле би, 48, Астана",
+   "lat": 51.131813,
+   "lon": 71.39756,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Төле би, 48\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Төле би, 48\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.131813,\"longitude\":71.39756}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Абая, 63",
+   "address": "проспект Абая, 63, Астана",
+   "lat": 51.170244,
+   "lon": 71.440702,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Абая, 63\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Абая, 63\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.170244,\"longitude\":71.440702}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Жұмекен Нәжімеденов, 4",
+   "address": "улица Жұмекен Нәжімеденов, 4, Астана",
+   "lat": 51.120282,
+   "lon": 71.458833,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Жұмекен Нәжімеденов, 4\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Жұмекен Нәжімеденов, 4\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.120282,\"longitude\":71.458833}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Ракымжан Кошкарбаев, 48",
+   "address": "проспект Ракымжан Кошкарбаев, 48, Астана",
+   "lat": 51.127972,
+   "lon": 71.495585,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Ракымжан Кошкарбаев, 48\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Ракымжан Кошкарбаев, 48\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.127972,\"longitude\":71.495585}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Аль-Фараби, 11",
+   "address": "проспект Аль-Фараби, 11, Астана",
+   "lat": 51.096996,
+   "lon": 71.4505,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Аль-Фараби, 11\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Аль-Фараби, 11\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.096996,\"longitude\":71.4505}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Шакарим Кудайбердыулы, 33",
+   "address": "проспект Шакарим Кудайбердыулы, 33, Астана",
+   "lat": 51.15343,
+   "lon": 71.507882,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Шакарим Кудайбердыулы, 33\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Шакарим Кудайбердыулы, 33\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.15343,\"longitude\":71.507882}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Туркестан, 16",
+   "address": "улица Туркестан, 16, Астана",
+   "lat": 51.106839,
+   "lon": 71.424775,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Туркестан, 16\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Туркестан, 16\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.106839,\"longitude\":71.424775}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Республики, 23",
+   "address": "проспект Республики, 23, Астана",
+   "lat": 51.164293,
+   "lon": 71.427253,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Республики, 23\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Республики, 23\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.164293,\"longitude\":71.427253}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кайым Мухамедханов, 6",
+   "address": "улица Кайым Мухамедханов, 6, Астана",
+   "lat": 51.139663,
+   "lon": 71.386747,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кайым Мухамедханов, 6\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кайым Мухамедханов, 6\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.139663,\"longitude\":71.386747}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Ракымжан Кошкарбаев 26",
+   "address": "проспект Ракымжан Кошкарбаев 26, Астана",
+   "lat": 51.125571,
+   "lon": 71.477208,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Ракымжан Кошкарбаев 26\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Ракымжан Кошкарбаев 26\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.125571,\"longitude\":71.477208}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Шәймерден Қосшығұлұлы, 9",
+   "address": "улица Шәймерден Қосшығұлұлы, 9, Астана",
+   "lat": 51.168633,
+   "lon": 71.389367,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Шәймерден Қосшығұлұлы, 9\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Шәймерден Қосшығұлұлы, 9\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.168633,\"longitude\":71.389367}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Сарайшык, 7",
+   "address": "улица Сарайшык, 7, Астана",
+   "lat": 51.135201,
+   "lon": 71.426615,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Сарайшык, 7\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Сарайшык, 7\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.135201,\"longitude\":71.426615}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Мангилик Ел, 49",
+   "address": "проспект Мангилик Ел, 49, Астана",
+   "lat": 51.096414,
+   "lon": 71.426329,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Мангилик Ел, 49\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Мангилик Ел, 49\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.096414,\"longitude\":71.426329}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кайрат Рыскулбеков, 16/3",
+   "address": "улица Кайрат Рыскулбеков, 16/3, Астана",
+   "lat": 51.158363,
+   "lon": 71.504791,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кайрат Рыскулбеков, 16/3\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кайрат Рыскулбеков, 16/3\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.158363,\"longitude\":71.504791}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Роза Багланова, 4",
+   "address": "улица Роза Багланова, 4, Астана",
+   "lat": 51.116405,
+   "lon": 71.394472,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Роза Багланова, 4\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Роза Багланова, 4\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.116405,\"longitude\":71.394472}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кенжебек Кумисбеков, 2",
+   "address": "улица Кенжебек Кумисбеков, 2, Астана",
+   "lat": 51.16278,
+   "lon": 71.401114,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кенжебек Кумисбеков, 2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кенжебек Кумисбеков, 2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.16278,\"longitude\":71.401114}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Улы Дала, 69",
+   "address": "проспект Улы Дала, 69, Астана",
+   "lat": 51.093252,
+   "lon": 71.446517,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Улы Дала, 69\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Улы Дала, 69\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.093252,\"longitude\":71.446517}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кенжебек Кумисбеков, 11",
+   "address": "улица Кенжебек Кумисбеков, 11, Астана",
+   "lat": 51.172282,
+   "lon": 71.397515,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кенжебек Кумисбеков, 11\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кенжебек Кумисбеков, 11\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.172282,\"longitude\":71.397515}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бауыржан Момышулы 6/1",
+   "address": "улица Бауыржан Момышулы 6/1, Астана",
+   "lat": 51.138094,
+   "lon": 71.474284,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бауыржан Момышулы 6/1\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бауыржан Момышулы 6/1\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.138094,\"longitude\":71.474284}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Женис, 65",
+   "address": "проспект Женис, 65, Астана",
+   "lat": 51.18502,
+   "lon": 71.408059,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Женис, 65\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Женис, 65\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.18502,\"longitude\":71.408059}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кайым Мухамедханов, 21/2",
+   "address": "улица Кайым Мухамедханов, 21/2, Астана",
+   "lat": 51.143069,
+   "lon": 71.381423,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кайым Мухамедханов, 21/2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кайым Мухамедханов, 21/2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.143069,\"longitude\":71.381423}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Ахмет Байтурсынулы, 39/3",
+   "address": "улица Ахмет Байтурсынулы, 39/3, Астана",
+   "lat": 51.119824,
+   "lon": 71.501946,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Ахмет Байтурсынулы, 39/3\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Ахмет Байтурсынулы, 39/3\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.119824,\"longitude\":71.501946}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Бауыржан Момышұлы, 2в",
+   "address": "проспект Бауыржан Момышұлы, 2в, Астана",
+   "lat": 51.133566,
+   "lon": 71.460561,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Бауыржан Момышұлы, 2в\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Бауыржан Момышұлы, 2в\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.133566,\"longitude\":71.460561}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Кабанбай батыр, 49а",
+   "address": "проспект Кабанбай батыр, 49а, Астана",
+   "lat": 51.100857,
+   "lon": 71.405432,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Кабанбай батыр, 49а\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Кабанбай батыр, 49а\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.100857,\"longitude\":71.405432}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Ильяса Омарова, 2",
+   "address": "улица Ильяса Омарова, 2, Астана",
+   "lat": 51.132537,
+   "lon": 71.368095,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Ильяса Омарова, 2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Ильяса Омарова, 2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.132537,\"longitude\":71.368095}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бейбитшилик, 32",
+   "address": "улица Бейбитшилик, 32, Астана",
+   "lat": 51.177195,
+   "lon": 71.418942,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бейбитшилик, 32 \""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бейбитшилик, 32 \"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.177195,\"longitude\":71.418942}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Сауран, 2",
+   "address": "улица Сауран, 2, Астана",
+   "lat": 51.125927,
+   "lon": 71.424239,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Сауран, 2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Сауран, 2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.125927,\"longitude\":71.424239}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Богенбай батыр, 53",
+   "address": "проспект Богенбай батыр, 53, Астана",
+   "lat": 51.17785,
+   "lon": 71.425513,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Богенбай батыр, 53\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Богенбай батыр, 53\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.17785,\"longitude\":71.425513}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кенесары, 82",
+   "address": "улица Кенесары, 82, Астана",
+   "lat": 51.16249,
+   "lon": 71.463402,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кенесары, 82\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кенесары, 82\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.16249,\"longitude\":71.463402}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Абылай хана, 38",
+   "address": "улица Абылай хана, 38, Астана",
+   "lat": 51.153778,
+   "lon": 71.486412,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Абылай хана, 38\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Абылай хана, 38\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.153778,\"longitude\":71.486412}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Алихан Бокейхан, 16/3",
+   "address": "улица Алихан Бокейхан, 16/3, Астана",
+   "lat": 51.104714,
+   "lon": 71.433573,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Алихан Бокейхан, 16/3\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Алихан Бокейхан, 16/3\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.104714,\"longitude\":71.433573}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Ахмета Байтурсынова 18",
+   "address": "улица Ахмета Байтурсынова 18, Астана",
+   "lat": 51.117477,
+   "lon": 71.512382,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Ахмета Байтурсынова 18\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Ахмета Байтурсынова 18\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.117477,\"longitude\":71.512382}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"23:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Молдагалиева 10",
+   "address": "улица Молдагалиева 10, Астана",
+   "lat": 51.124018,
+   "lon": 71.376575,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Молдагалиева 10\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Молдагалиева 10\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.124018,\"longitude\":71.376575}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Мангилик Ел 17",
+   "address": "улица Мангилик Ел 17, Астана",
+   "lat": 51.117268,
+   "lon": 71.433906,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Мангилик Ел 17\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Мангилик Ел 17\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.117268,\"longitude\":71.433906}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Ахмет Байтурсынулы 49",
+   "address": "улица Ахмет Байтурсынулы 49, Астана",
+   "lat": 51.117709,
+   "lon": 71.515706,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Ахмет Байтурсынулы 49\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Ахмет Байтурсынулы 49\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.117709,\"longitude\":71.515706}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Тауелсиздик 23",
+   "address": "проспект Тауелсиздик 23, Астана",
+   "lat": 51.144382,
+   "lon": 71.460505,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Тауелсиздик 23\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Тауелсиздик 23\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.144382,\"longitude\":71.460505}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бейбитшилик, 56",
+   "address": "улица Бейбитшилик, 56, Астана",
+   "lat": 51.185031,
+   "lon": 71.416433,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бейбитшилик, 56\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бейбитшилик, 56\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.185031,\"longitude\":71.416433}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кабанбай батыра, 6/2",
+   "address": "улица Кабанбай батыра, 6/2, Астана",
+   "lat": 51.145998,
+   "lon": 71.424033,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кабанбай батыра, 6/2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кабанбай батыра, 6/2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.145998,\"longitude\":71.424033}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Улы Дала 27",
+   "address": "улица Улы Дала 27, Астана",
+   "lat": 51.101298,
+   "lon": 71.39058,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Улы Дала 27\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Улы Дала 27\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.101298,\"longitude\":71.39058}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, Сагадат Нурмагамбетов 21",
+   "address": "Сагадат Нурмагамбетов 21, Астана",
+   "lat": 51.116951,
+   "lon": 71.483304,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, Сагадат Нурмагамбетов 21\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"Сагадат Нурмагамбетов 21\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.116951,\"longitude\":71.483304}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Республика, 4",
+   "address": "проспект Республика, 4, Астана",
+   "lat": 51.157811,
+   "lon": 71.430007,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Республика, 4\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Республика, 4\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.157811,\"longitude\":71.430007}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, проспект Богенбай батыр 34",
+   "address": "проспект Богенбай батыр 34, Астана",
+   "lat": 51.175156,
+   "lon": 71.409355,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, проспект Богенбай батыр 34\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"проспект Богенбай батыр 34\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.175156,\"longitude\":71.409355}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Биржан сал 2",
+   "address": "улица Биржан сал 2, Астана",
+   "lat": 51.192088,
+   "lon": 71.407702,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Биржан сал 2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Биржан сал 2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.192088,\"longitude\":71.407702}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Санжара Асфендиярова 3",
+   "address": "улица Санжара Асфендиярова 3, Астана",
+   "lat": 51.132508,
+   "lon": 71.378444,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Санжара Асфендиярова 3\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Санжара Асфендиярова 3\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.132508,\"longitude\":71.378444}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кенесары, 12",
+   "address": "улица Кенесары, 12, Астана",
+   "lat": 51.163194,
+   "lon": 71.411816,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 08:30-22:30",
+   "opening_hours_osm": "Mo-Su 08:30-22:30",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кенесары, 12 \""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кенесары, 12 \"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.163194,\"longitude\":71.411816}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"08:30\",\"closes\":\"22:30\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кошкарбаева 13",
+   "address": "улица Кошкарбаева 13, Астана",
+   "lat": 51.126308,
+   "lon": 71.48166,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кошкарбаева 13\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кошкарбаева 13\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.126308,\"longitude\":71.48166}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Петрова 1",
+   "address": "улица Петрова 1, Астана",
+   "lat": 51.1518,
+   "lon": 71.462185,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-21:00",
+   "opening_hours_osm": "Mo-Su 09:00-21:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Петрова 1\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Петрова 1\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.1518,\"longitude\":71.462185}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"21:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Туран 42",
+   "address": "улица Туран 42, Астана",
+   "lat": 51.114639,
+   "lon": 71.401171,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Туран 42\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Туран 42\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.114639,\"longitude\":71.401171}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Шокана Уалиханова 13",
+   "address": "улица Шокана Уалиханова 13, Астана",
+   "lat": 51.168165,
+   "lon": 71.439098,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Шокана Уалиханова 13\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Шокана Уалиханова 13\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.168165,\"longitude\":71.439098}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Омарова 23",
+   "address": "улица Омарова 23, Астана",
+   "lat": 51.139573,
+   "lon": 71.369784,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Омарова 23\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Омарова 23\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.139573,\"longitude\":71.369784}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Нажимеденова 15",
+   "address": "улица Нажимеденова 15, Астана",
+   "lat": 51.11396,
+   "lon": 71.511664,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Нажимеденова 15\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Нажимеденова 15\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.11396,\"longitude\":71.511664}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кабанбай батыра, 58б, корпус 5",
+   "address": "улица Кабанбай батыра, 58б, корпус 5, Астана",
+   "lat": 51.09524,
+   "lon": 71.40975,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кабанбай батыра, 58б, корпус 5\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кабанбай батыра, 58б, корпус 5\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.09524,\"longitude\":71.40975}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Шалкоде 2а",
+   "address": "улица Шалкоде 2а, Астана",
+   "lat": 51.122808,
+   "lon": 71.522066,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-21:00",
+   "opening_hours_osm": "Mo-Su 09:00-21:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Шалкоде 2а\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Шалкоде 2а\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.122808,\"longitude\":71.522066}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"21:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Туран 22",
+   "address": "улица Туран 22, Астана",
+   "lat": 51.140522,
+   "lon": 71.410756,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Туран 22\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Туран 22\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.140522,\"longitude\":71.410756}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Алихан Бокейхана 25е",
+   "address": "улица Алихан Бокейхана 25е, Астана",
+   "lat": 51.086466,
+   "lon": 71.429773,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Алихан Бокейхана 25е\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Алихан Бокейхана 25е\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.086466,\"longitude\":71.429773}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бухар жырау 26",
+   "address": "улица Бухар жырау 26, Астана",
+   "lat": 51.101802,
+   "lon": 71.40975,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бухар жырау 26\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бухар жырау 26\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.101802,\"longitude\":71.40975}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Сейфуллина 4/2",
+   "address": "улица Сейфуллина 4/2, Астана",
+   "lat": 51.168255,
+   "lon": 71.401791,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Сейфуллина 4/2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Сейфуллина 4/2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.168255,\"longitude\":71.401791}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Сыганак 52/1",
+   "address": "улица Сыганак 52/1, Астана",
+   "lat": 51.123764,
+   "lon": 71.416775,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Сыганак 52/1\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Сыганак 52/1\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.123764,\"longitude\":71.416775}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Турара Рыскулова 9а",
+   "address": "улица Турара Рыскулова 9а, Астана",
+   "lat": 51.084876,
+   "lon": 71.419964,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Турара Рыскулова 9а \""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Турара Рыскулова 9а \"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.084876,\"longitude\":71.419964}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Кордай 79а",
+   "address": "улица Кордай 79а, Астана",
+   "lat": 51.129592,
+   "lon": 71.50631,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Кордай 79а\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Кордай 79а\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.129592,\"longitude\":71.50631}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Коргалжынское шоссе 31",
+   "address": "улица Коргалжынское шоссе 31, Астана",
+   "lat": 51.148789,
+   "lon": 71.36355,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Коргалжынское шоссе 31\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Коргалжынское шоссе 31\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.148789,\"longitude\":71.36355}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Нажимеденова 26",
+   "address": "улица Нажимеденова 26, Астана",
+   "lat": 51.115605,
+   "lon": 71.492287,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Нажимеденова 26\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Нажимеденова 26\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.115605,\"longitude\":71.492287}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Конституции, 14",
+   "address": "улица Конституции, 14, Астана",
+   "lat": 51.196169,
+   "lon": 71.393688,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Конституции, 14\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Конституции, 14\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.196169,\"longitude\":71.393688}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Мухамедханова 19, НП 4",
+   "address": "улица Мухамедханова 19, НП 4, Астана",
+   "lat": 51.141189,
+   "lon": 71.384606,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Мухамедханова 19, НП 4\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Мухамедханова 19, НП 4\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.141189,\"longitude\":71.384606}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Будапешт, 1",
+   "address": "улица Будапешт, 1, Астана",
+   "lat": 51.06058,
+   "lon": 71.420664,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Будапешт, 1\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Будапешт, 1\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.06058,\"longitude\":71.420664}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Улы Дала 71",
+   "address": "улица Улы Дала 71, Астана",
+   "lat": 51.093136,
+   "lon": 71.44889,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Улы Дала 71\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Улы Дала 71\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.093136,\"longitude\":71.44889}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Тауелсиздик 34/2",
+   "address": "улица Тауелсиздик 34/2, Астана",
+   "lat": 51.138437,
+   "lon": 71.466541,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Тауелсиздик 34/2\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Тауелсиздик 34/2\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.138437,\"longitude\":71.466541}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бурабай 27а",
+   "address": "улица Бурабай 27а, Астана",
+   "lat": 51.150433,
+   "lon": 71.515742,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бурабай 27а\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бурабай 27а\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.150433,\"longitude\":71.515742}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Молдагалиева 3",
+   "address": "улица Молдагалиева 3, Астана",
+   "lat": 51.126324,
+   "lon": 71.363612,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Молдагалиева 3\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Молдагалиева 3\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.126324,\"longitude\":71.363612}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Бейбитшилик 23",
+   "address": "улица Бейбитшилик 23, Астана",
+   "lat": 51.171164,
+   "lon": 71.419398,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 09:00-22:00",
+   "opening_hours_osm": "Mo-Su 09:00-22:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Бейбитшилик 23\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Бейбитшилик 23\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.171164,\"longitude\":71.419398}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00\",\"closes\":\"22:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Айтеке Би, 3А",
+   "address": "улица Айтеке Би, 3А, Астана",
+   "lat": 50.987462,
+   "lon": 71.360585,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 10:00-21:00",
+   "opening_hours_osm": "Mo-Su 10:00-21:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Айтеке Би, 3А\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Айтеке Би, 3А\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":50.987462,\"longitude\":71.360585}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"21:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Happy Cake — Астана, улица Лесная поляна 15, ВП-23",
+   "address": "улица Лесная поляна 15, ВП-23, Астана",
+   "lat": 51.002066,
+   "lon": 71.374866,
+   "phone": "+7 707 777 1144",
+   "opening_hours_raw": "Mo-Su 10:00-21:00",
+   "opening_hours_osm": "Mo-Su 10:00-21:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"name\":\"Happy Cake — Астана, улица Лесная поляна 15, ВП-23\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"KZ\",\"addressLocality\":\"Астана\",\"streetAddress\":\"улица Лесная поляна 15, ВП-23\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.002066,\"longitude\":71.374866}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"telephone\":\"+7 707 777 1144\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.happycake.kz/astana/stores/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"21:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "JSON-LD Bakery items on the /astana/stores page (all addressLocality 'Астана'); per-card printed schedule 'ПН-ВС: с 10:00 до 22:00' and the shared order phone come from the same JSON-LD block. Coordinates kept only where the payload has them (flagship 51.184751,71.413833; ТРК Изумрудный 51.168023,71.430429).",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

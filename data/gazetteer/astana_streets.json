@@ -1,0 +1,7691 @@
+{
+ "source": "OpenAddresses KZ",
+ "url": "https://data.openaddresses.io/cache/uploads/sergiyprotsiv/5f6b95/kz.csv.zip",
+ "attribution": "Комитет по правовой статистике и специальным учетам Генеральной прокуратуры РК (через OpenAddresses, openaddresses.io)",
+ "license": "not stated by the source (OpenAddresses does not relicense the original data); state address register, Закон №401-V ст. 1 п. 5; attribution required",
+ "retrieved_at": "2026-10-17T12:19:25+00:00",
+ "file_last_modified": "Thu, 14 Aug 2025 09:12:22 GMT",
+ "zip_member": "kz.csv",
+ "snapshot_note": "zip member dated 2017-01; later street renames are absent",
+ "use": "address aliases / normalisation only; coordinates columns deliberately not stored",
+ "rows_country": 1248860,
+ "rows_astana": 20694,
+ "streets": 849,
+ "coordinates": false,
+ "items": [
+  {
+   "key": "1 ая алматинска",
+   "name": "1-АЯ АЛМАТИНСКАЯ",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "1 ии алматински",
+   "name": "1-ЫЙ АЛМАТИНСКИЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "150 лет абая",
+   "name": "150 ЛЕТ АБАЯ",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "191",
+   "name": "191",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "2 ая алматинска",
+   "name": "2-АЯ АЛМАТИНСКАЯ",
+   "aliases": [],
+   "addresses": 68,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "2 ои алматински",
+   "name": "2-ОЙ АЛМАТИНСКИЙ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "229",
+   "name": "229",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "23",
+   "name": "23",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "24",
+   "name": "24",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "26",
+   "name": "26",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "28",
+   "name": "28",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "3",
+   "name": "3 МИКРОРАЙОН",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "30",
+   "name": "30",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "34",
+   "name": "34",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "36",
+   "name": "36",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "40",
+   "name": "40",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "44",
+   "name": "44",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "48",
+   "name": "48",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "49",
+   "name": "49",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "497 км",
+   "name": "497 КМ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "52",
+   "name": "52",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "59",
+   "name": "59",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "68",
+   "name": "68",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "69",
+   "name": "69",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "70",
+   "name": "70",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "70 лет октябр",
+   "name": "70 ЛЕТ ОКТЯБРЯ",
+   "aliases": [],
+   "addresses": 44,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "77",
+   "name": "77",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "78",
+   "name": "78",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "8 март",
+   "name": "8 МАРТА",
+   "aliases": [],
+   "addresses": 28,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абаи",
+   "name": "АБАЙ",
+   "aliases": [],
+   "addresses": 350,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абат баитак",
+   "name": "АБАТ-БАЙТАК",
+   "aliases": [],
+   "addresses": 49,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абдигаппар дилманов",
+   "name": "АБДИГАППАР ДИЛМАНОВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абила хана",
+   "name": "АБЫЛАЙ ХАНА",
+   "aliases": [],
+   "addresses": 101,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абилхан кастеев",
+   "name": "АБИЛХАН КАСТЕЕВ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абирал",
+   "name": "АБЫРАЛЫ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "абубакир диваев",
+   "name": "АБУБАКИР ДИВАЕВ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "агадир",
+   "name": "АГАДЫРЬ",
+   "aliases": [],
+   "addresses": 48,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аганас",
+   "name": "АГАНАС",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "агиба батир",
+   "name": "АГЫБАЙ БАТЫР",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "адирн",
+   "name": "АДЫРНА",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "адолф янушкевич",
+   "name": "АДОЛЬФА ЯНУШКЕВИЧА",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аи тансик",
+   "name": "АЙ-ТАНСЫК",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аиганим",
+   "name": "АЙГАНЫМ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аигиржал",
+   "name": "АЙГЫРЖАЛ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аиголек",
+   "name": "АЙГОЛЕК",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аидарл",
+   "name": "АЙДАРЛЫ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аидархан турлибаев",
+   "name": "АЙДАРХАН ТУРЛЫБАЕВ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аидин",
+   "name": "АЙДЫН",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аии ди",
+   "name": "ЌАЙЫЊДЫ",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аиирта",
+   "name": "АЙЫРТАУ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аиман шолпан",
+   "name": "АЙМАН-ШОЛПАН",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аимауитов",
+   "name": "Ж. АЙМАУЫТОВА",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аинабулак",
+   "name": "АЙНАБУЛАК",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аинакол",
+   "name": "АЙНАКОЛ",
+   "aliases": [],
+   "addresses": 104,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аинатас",
+   "name": "АЙНАТАС",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аипар",
+   "name": "АЙПАРА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аиша бибi",
+   "name": "АЙША БИБI",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "академик рамазан сулеименов",
+   "name": "АКАДЕМИК РАМАЗАН СУЛЕЙМЕНОВ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "академик скрябин",
+   "name": "АКАДЕМИКА К.СКРЯБИНА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акан серi",
+   "name": "АКАН СЕРI",
+   "aliases": [],
+   "addresses": 51,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акарис",
+   "name": "АКАРЫС",
+   "aliases": [],
+   "addresses": 57,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбаста",
+   "name": "АКБАСТАУ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбаян",
+   "name": "АКБАЯН",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акберен",
+   "name": "АКБЕРЕН",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбида",
+   "name": "АКБИДАЙ",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбиик",
+   "name": "АКБИИК",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбокен",
+   "name": "АКБОКЕН",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акбуг",
+   "name": "АКБУГЫ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акдал",
+   "name": "АКДАЛА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжаила",
+   "name": "АКЖАЙЛАУ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжан",
+   "name": "АКЖАН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжар",
+   "name": "АКЖАР",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжелен",
+   "name": "АКЖЕЛЕН",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжелкен",
+   "name": "АКЖЕЛКЕН",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжол",
+   "name": "АКЖОЛ",
+   "aliases": [],
+   "addresses": 160,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акжунис",
+   "name": "АКЖУНИС",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акин сара",
+   "name": "АКЫН САРА",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акиртас",
+   "name": "АКЫРТАС",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккаиин",
+   "name": "АККАЙЫН",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккемер",
+   "name": "АККЕМЕР",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккент",
+   "name": "АККЕНТ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккербез",
+   "name": "АККЕРБЕЗ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккол",
+   "name": "АККОЛ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккорган",
+   "name": "АККОРГАН",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккулска",
+   "name": "АККУЛЬСКАЯ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккулски",
+   "name": "АККУЛЬСКИЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аккум",
+   "name": "АККУМ",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акма",
+   "name": "АКМАЯ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акмол",
+   "name": "АКМОЛА",
+   "aliases": [],
+   "addresses": 72,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акниет",
+   "name": "АКНИЕТ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акпан",
+   "name": "АКПАН",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акса",
+   "name": "АКСАЙ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акселе",
+   "name": "АКСЕЛЕУ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксенгiр",
+   "name": "АКСЕНГIР",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксу",
+   "name": "АКСУ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксу аюли",
+   "name": "АКСУ-АЮЛЫ",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксу жабагал",
+   "name": "АКСУ-ЖАБАГАЛЫ",
+   "aliases": [],
+   "addresses": 46,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксуат",
+   "name": "АКСУАТ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксуиек",
+   "name": "АКСУЙЕК",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксумб",
+   "name": "АКСУМБЕ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аксункар",
+   "name": "АКСУНКАР",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акта",
+   "name": "АКТАУ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "актамберд жира",
+   "name": "АКТАМБЕРДИ ЖЫРАУ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "актаст",
+   "name": "АКТАСТЫ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "актоб",
+   "name": "АКТОБЕ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "актоган",
+   "name": "АКТОГАН",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акшагил",
+   "name": "АКШАГЫЛ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "акшата",
+   "name": "АКШАТАУ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алакол",
+   "name": "АЛАКОЛЬ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алаш",
+   "name": "АЛАШ",
+   "aliases": [],
+   "addresses": 60,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "александр бараев",
+   "name": "АЛЕКСАНДР БАРАЕВ",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "александр затаевич",
+   "name": "АЛЕКСАНДРА ЗАТАЕВИЧА",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "александр княгинин",
+   "name": "АЛЕКСАНДРА КНЯГИНИНА",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "александр кравцов",
+   "name": "АЛЕКСАНДР КРАВЦОВ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алимхан ермеков",
+   "name": "АЛИМХАНА ЕРМЕКОВА",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алихан бокеихан",
+   "name": "АЛИХАН БОКЕЙХАН",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алия молдагулов",
+   "name": "АЛИЯ МОЛДАГУЛОВА",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алкатерек",
+   "name": "АЛКАТЕРЕК",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алке маргулан",
+   "name": "АЛКЕЙ МАРГУЛАН",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алконир",
+   "name": "АЛКОНЫР",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алмал",
+   "name": "АЛМАЛЫ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алмалик",
+   "name": "АЛМАЛЫК",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алмат",
+   "name": "АЛМАТЫ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алпамис",
+   "name": "АЛПАМЫС",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алпамис батир",
+   "name": "АЛПАМЫС БАТЫР",
+   "aliases": [],
+   "addresses": 65,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алтибакан",
+   "name": "АЛТЫБАКАН",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алтиндал",
+   "name": "АЛТЫНДАЛА",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алтинемел",
+   "name": "АЛТЫНЕМЕЛ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "алтинкум",
+   "name": "АЛТЫНКУМ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аманат",
+   "name": "АМАНАТ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "амангелд иманов",
+   "name": "АМАНГЕЛДЫ ИМАНОВ",
+   "aliases": [],
+   "addresses": 142,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аманкарага",
+   "name": "АМАНКАРАГАЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "амир кашаубаев",
+   "name": "АМИРЕ КАШАУБАЕВ",
+   "aliases": [],
+   "addresses": 51,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "амман",
+   "name": "АММАН",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "анарска",
+   "name": "АНАРСКАЯ",
+   "aliases": [],
+   "addresses": 68,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "анирака",
+   "name": "АНЫРАКАЙ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ануар алимжанов",
+   "name": "АНУАР АЛИМЖАНОВ",
+   "aliases": [],
+   "addresses": 69,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "араи",
+   "name": "АРАЙ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арал",
+   "name": "АРАЛ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аралкум",
+   "name": "АРАЛКУМ",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арасан",
+   "name": "АРАСАН",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арганат",
+   "name": "АРГАНАТЫ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ардагерлер",
+   "name": "АРДАГЕРЛЕР",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арикт",
+   "name": "АРЫКТЫ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аркаиим",
+   "name": "АРКАЙЫМ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аркалик",
+   "name": "АРКАЛЫК",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аркат",
+   "name": "АРКАТ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "армандастар",
+   "name": "АРМАНДАСТАР",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арна",
+   "name": "АРНА",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "арнаса",
+   "name": "АРНАСАЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аршал",
+   "name": "АРШАЛЫ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аршин",
+   "name": "АРШЫН",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "асан каиг",
+   "name": "АСАН КАЙГЫ",
+   "aliases": [],
+   "addresses": 112,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аскар токпанов",
+   "name": "АСКАР ТОКПАНОВ",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аскарта",
+   "name": "АСКАРТАУ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аспар",
+   "name": "АСПАРА",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "астрахански",
+   "name": "АСТРАХАНСКИЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атакент",
+   "name": "АТАКЕНТ",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атаконис",
+   "name": "АТАКОНЫС",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атамур",
+   "name": "АТАМУРА",
+   "aliases": [],
+   "addresses": 62,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атас",
+   "name": "АТАСУ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атбасарска",
+   "name": "АТБАСАРСКАЯ",
+   "aliases": [],
+   "addresses": 55,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атбасарски",
+   "name": "АТБАСАРСКИЙ",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "атира",
+   "name": "АТЫРАУ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аубакиров",
+   "name": "АУБАКИРОВА",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ауезов",
+   "name": "М. АУЕЗОВ",
+   "aliases": [
+    "М. АУЭЗОВА"
+   ],
+   "addresses": 78,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аули ата",
+   "name": "АУЛИЕ АТА",
+   "aliases": [],
+   "addresses": 76,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ахмет баитурсинул",
+   "name": "АХМЕТ БАЙТУРСЫНУЛЫ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ахмет жубанов",
+   "name": "АХМЕТ ЖУБАНОВ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ашутас",
+   "name": "АШУТАС",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ашхабадска",
+   "name": "АШХАБАДСКАЯ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ащиса",
+   "name": "АЩЫСАЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "аягоз",
+   "name": "АЯГОЗ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баганал",
+   "name": "БАГАНАЛЫ",
+   "aliases": [],
+   "addresses": 42,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баизак датк",
+   "name": "БАЙЗАК ДАТКА",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баиинкол",
+   "name": "БАЙЫНКОЛ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баииркум",
+   "name": "БАЙЫРКУМ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баиконур",
+   "name": "БАЙКОНУР",
+   "aliases": [],
+   "addresses": 42,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баканас",
+   "name": "БАКАНАС",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бакт",
+   "name": "БАКТЫ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бактиораз беисекбаев",
+   "name": "БАКТЫОРАЗ БЕЙСЕКБАЕВ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балаус",
+   "name": "БАЛАУСА",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балбирауин",
+   "name": "БАЛБЫРАУЫН",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баликт",
+   "name": "БАЛЫКТЫ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балканта",
+   "name": "БАЛКАНТАУ",
+   "aliases": [],
+   "addresses": 161,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балкаш",
+   "name": "БАЛКАШ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балтакол",
+   "name": "БАЛТАКОЛЬ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балтал",
+   "name": "БАЛТАЛЫ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "балуан шолак",
+   "name": "БАЛУАН ШОЛАК",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баркитбел",
+   "name": "БАРКЫТБЕЛ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баршин",
+   "name": "БАРШЫН",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баста",
+   "name": "БАСТАУ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бастоб",
+   "name": "БАСТОБЕ",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "батир баян",
+   "name": "БАТЫР БАЯН",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бауиржан момишул",
+   "name": "БАУЫРЖАН МОМЫШУЛЫ",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баян сулу",
+   "name": "БАЯН СУЛУ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баянауил",
+   "name": "БАЯНАУЫЛ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "баянта",
+   "name": "БАЯНТАУ",
+   "aliases": [],
+   "addresses": 48,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бегаз дандиба",
+   "name": "БЕГАЗЫ-ДАНДИБАЙ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "безимянна",
+   "name": "БЕЗЫМЯННАЯ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беиiмбет маилин",
+   "name": "БЕЙIМБЕТ МАЙЛИНА",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беибитшилик",
+   "name": "БЕЙБИТШИЛИК",
+   "aliases": [],
+   "addresses": 98,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беине",
+   "name": "БЕЙНЕУ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бекарис",
+   "name": "БЕКАРЫС",
+   "aliases": [],
+   "addresses": 47,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бекет ата",
+   "name": "БЕКЕТ АТА",
+   "aliases": [],
+   "addresses": 59,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бекета",
+   "name": "БЕКЕТАЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бекзат саттарханов",
+   "name": "БЕКЗАТ САТТАРХАНОВ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бекта",
+   "name": "БЕКТАУ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беласар",
+   "name": "БЕЛАСАР",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "белжаила",
+   "name": "БЕЛЖАЙЛАУ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "белкарага",
+   "name": "БЕЛКАРАГАЙ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беляков",
+   "name": "БЕЛЯКОВА",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "берек",
+   "name": "БЕРЕКЕ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "берел",
+   "name": "БЕРЕЛ",
+   "aliases": [],
+   "addresses": 64,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "берен",
+   "name": "БЕРЕН",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бесбалик",
+   "name": "БЕСБАЛЫК",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "беста",
+   "name": "БЕСТАУ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бестерек",
+   "name": "БЕСТЕРЕК",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бестоб",
+   "name": "БЕСТОБЕ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бесшалкар",
+   "name": "БЕСШАЛКАР",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бесшатир",
+   "name": "БЕСШАТЫР",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бигелдинов",
+   "name": "Т. БИГЕЛДИНОВ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бидаиик",
+   "name": "БИДАЙЫК",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "биржан сала",
+   "name": "БИРЖАН САЛА",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "биримжановтар",
+   "name": "БИРИМЖАНОВТАР",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бирлик",
+   "name": "БИРЛИК",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "богенба батир",
+   "name": "БОГЕНБАЙ БАТЫР",
+   "aliases": [],
+   "addresses": 240,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бозарал",
+   "name": "БОЗАРАЛ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бозбиик",
+   "name": "БОЗБИИК",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бозинген",
+   "name": "БОЗИНГЕН",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бозторга",
+   "name": "БОЗТОРГАЙ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бозшолак",
+   "name": "БОЗШОЛАК",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "боитумар",
+   "name": "БОЙТУМАР",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "болашак",
+   "name": "БОЛАШАК",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "борил",
+   "name": "БОРИЛИ",
+   "aliases": [],
+   "addresses": 49,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "борис ерзакович",
+   "name": "БОРИСА ЕРЗАКОВИЧА",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "босаг",
+   "name": "БОСАГА",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бостандик",
+   "name": "БОСТАНДЫК",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ботал",
+   "name": "БОТАЛЫ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "буктирм",
+   "name": "БУКТЫРМА",
+   "aliases": [],
+   "addresses": 71,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "булант",
+   "name": "БУЛАНТЫ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "булбул",
+   "name": "БУЛБУЛ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бураба",
+   "name": "БУРАБАЙ",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "бурилта",
+   "name": "БУРЫЛТАЙ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "васили бартолд",
+   "name": "ВАСИЛИЙ БАРТОЛЬД",
+   "aliases": [],
+   "addresses": 48,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "васили радлов",
+   "name": "ВАСИЛИЯ РАДЛОВА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "вишневского",
+   "name": "ВИШНЕВСКОГО",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "волгоградски",
+   "name": "ВОЛГОГРАДСКИЙ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "вячеславска",
+   "name": "ВЯЧЕСЛАВСКАЯ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "габиден мустафин",
+   "name": "ГАБИДЕНА МУСТАФИНА",
+   "aliases": [],
+   "addresses": 47,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "габит мусрепов",
+   "name": "ГАБИТА МУСРЕПОВА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гагарин",
+   "name": "ГАГАРИНА",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гастелло",
+   "name": "ГАСТЕЛЛО",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "геидар алиев",
+   "name": "ГЕЙДАРА АЛИЕВА",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "генерал сабир ракимов",
+   "name": "ГЕНЕРАЛ САБЫР РАКЫМОВ",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "герцен",
+   "name": "ГЕРЦЕНА",
+   "aliases": [],
+   "addresses": 113,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гете",
+   "name": "ГЕТЕ",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гогол",
+   "name": "ГОГОЛЯ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "горкого",
+   "name": "ГОРЬКОГО",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "григори потанин",
+   "name": "ГРИГОРИЙ ПОТАНИН",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "громово",
+   "name": "ГРОМОВОЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гулдал",
+   "name": "ГУЛДАЛА",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гулзар",
+   "name": "ГУЛЬЗАР",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "гумар караш",
+   "name": "ГУМАР КАРАШ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дални",
+   "name": "ДАЛЬНИЙ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дарабоз",
+   "name": "ДАРАБОЗ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дауилпаз",
+   "name": "ДАУЫЛПАЗ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "даулеткере",
+   "name": "ДАУЛЕТКЕРЕЙ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дегелен",
+   "name": "ДЕГЕЛЕН",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дегерес",
+   "name": "ДЕГЕРЕС",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "деу 3",
+   "name": "ДЭУ 3",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "джалил",
+   "name": "М. ДЖАЛИЛЯ",
+   "aliases": [],
+   "addresses": 61,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "домалак ана",
+   "name": "ДОМАЛАК АНА",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "домбирал",
+   "name": "ДОМБЫРАЛЫ",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "доспамбет жира",
+   "name": "ДОСПАМБЕТ ЖЫРАУ",
+   "aliases": [],
+   "addresses": 39,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "достик",
+   "name": "ДОСТЫК",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дубинин",
+   "name": "ДУБИНИНА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дулат бабатаиул",
+   "name": "ДУЛАТА БАБАТАЙУЛЫ",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дулиг",
+   "name": "ДУЛЫГА",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "дунаевского",
+   "name": "ДУНАЕВСКОГО",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "евгени брусиловски",
+   "name": "ЕВГЕНИЙ БРУСИЛОВСКИЙ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "егемен казакстан газет",
+   "name": "ЕГЕМЕН КАЗАКСТАН ГАЗЕТИ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "егинд",
+   "name": "ЕГИНДИ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "едiл",
+   "name": "ЕДIЛ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "екибастуз",
+   "name": "ЕКИБАСТУЗ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "елек",
+   "name": "ЕЛЕК",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "елим аи",
+   "name": "ЕЛИМ-АЙ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "елуба таибеков",
+   "name": "ЕЛУБАЯ ТАЙБЕКОВА",
+   "aliases": [],
+   "addresses": 83,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "енбекшилер",
+   "name": "ЕНБЕКШИЛЕР",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "енеса",
+   "name": "ЕНЕСАЙ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "енлик кебек",
+   "name": "ЕНЛИК-КЕБЕК",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ер кокш",
+   "name": "ЕР КОКШЕ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ер коса",
+   "name": "ЕР КОСАЙ",
+   "aliases": [],
+   "addresses": 52,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ер таргин",
+   "name": "ЕР ТАРГЫН",
+   "aliases": [],
+   "addresses": 54,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "еренкабирг",
+   "name": "ЕРЕНКАБЫРГА",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ертiс",
+   "name": "ЕРТIС",
+   "aliases": [],
+   "addresses": 60,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "есiл",
+   "name": "ЕСIЛ",
+   "aliases": [],
+   "addresses": 73,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "есенберлин iлияс",
+   "name": "ЕСЕНБЕРЛИН IЛИЯС",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "есил",
+   "name": "ЕСИЛ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "еста",
+   "name": "ЕСТАЙ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаhанш сеидалин",
+   "name": "ЖАHАНША СЕЙДАЛИН",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жабаев",
+   "name": "Ж. ЖАБАЕВА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жагажа",
+   "name": "ЖАГАЖАЙ",
+   "aliases": [],
+   "addresses": 72,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жазик",
+   "name": "ЖАЗЫК",
+   "aliases": [],
+   "addresses": 46,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаидарман",
+   "name": "ЖАЙДАРМАН",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаиик",
+   "name": "ЖАЙЫК",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаиилм",
+   "name": "ЖАЙЫЛМА",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаилаукол",
+   "name": "ЖАЙЛАУКОЛ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаисан",
+   "name": "ЖАЙСАН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жакип акпаев",
+   "name": "ЖАКЫП АКПАЕВ",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жалантос",
+   "name": "ЖАЛАНТОС",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жалаул",
+   "name": "ЖАЛАУЛЫ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жалин",
+   "name": "ЖАЛЫН",
+   "aliases": [],
+   "addresses": 68,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жамбил",
+   "name": "ЖАМБЫЛА",
+   "aliases": [],
+   "addresses": 67,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жан ожа батир",
+   "name": "ЖАНЌОЖА БАТЫР",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанажол",
+   "name": "ЖАНАЖОЛ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанаидар жирентаев",
+   "name": "ЖАНАЙДАРА ЖИРЕНТАЕВА",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанаконис",
+   "name": "ЖАНАКОНЫС",
+   "aliases": [],
+   "addresses": 56,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанаозен",
+   "name": "ЖАНАОЗЕН",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанарис",
+   "name": "ЖАНАРЫС",
+   "aliases": [],
+   "addresses": 49,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаната шарденов",
+   "name": "ЖАНАТАЯ ШАРДЕНОВА",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанатурмис",
+   "name": "ЖАНАТУРМЫС",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жангелдин",
+   "name": "ЖАНГЕЛДИН",
+   "aliases": [],
+   "addresses": 232,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанибек тархан",
+   "name": "ЖАНИБЕК ТАРХАН",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жанкент",
+   "name": "ЖАНКЕНТ",
+   "aliases": [],
+   "addresses": 157,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жансугiрул iлияс",
+   "name": "ЖАНСУГIРУЛЫ IЛИЯС",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаркаиин",
+   "name": "ЖАРКАЙЫН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаркент",
+   "name": "ЖАРКЕНТ",
+   "aliases": [],
+   "addresses": 46,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаркол",
+   "name": "ЖАРКОЛЬ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жароков",
+   "name": "ЖАРОКОВА",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жарсуат",
+   "name": "ЖАРСУАТ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жасиба",
+   "name": "ЖАСЫБАЙ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жасил",
+   "name": "ЖАСЫЛ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жауказин",
+   "name": "ЖАУКАЗЫН",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаханш досмухамедул",
+   "name": "ЖАХАНША ДОСМУХАМЕДУЛЫ",
+   "aliases": [],
+   "addresses": 37,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жаяу муса",
+   "name": "ЖАЯУ МУСА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жезд",
+   "name": "ЖЕЗДЫ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жезкиiк",
+   "name": "ЖЕЗКИIК",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жекебатир",
+   "name": "ЖЕКЕБАТЫР",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "желдирм",
+   "name": "ЖЕЛДИРМЕ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "железнодорожни",
+   "name": "ЖЕЛЕЗНОДОРОЖНЫЙ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "желма",
+   "name": "ЖЕЛМАЯ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "желтоксан",
+   "name": "ЖЕЛТОКСАН",
+   "aliases": [],
+   "addresses": 70,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "женис",
+   "name": "ЖЕНИС",
+   "aliases": [],
+   "addresses": 138,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жерек",
+   "name": "ЖЕРЕК",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жеруиик",
+   "name": "ЖЕРУЙЫК",
+   "aliases": [],
+   "addresses": 61,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жетiген",
+   "name": "ЖЕТIГЕН",
+   "aliases": [],
+   "addresses": 42,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жетис",
+   "name": "ЖЕТЫСУ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жетиса",
+   "name": "ЖЕТИСАЙ",
+   "aliases": [],
+   "addresses": 47,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жидеба",
+   "name": "ЖИДЕБАЙ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жидел",
+   "name": "ЖИДЕЛИ",
+   "aliases": [],
+   "addresses": 96,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жиембет жира",
+   "name": "ЖИЕМБЕТ ЖЫРАУ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жилибулак",
+   "name": "ЖЫЛЫБУЛАК",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жило",
+   "name": "ЖЫЛОЙ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жоламан",
+   "name": "ЖОЛАМАН",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жолимбетска",
+   "name": "ЖОЛЫМБЕТСКАЯ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жосал",
+   "name": "ЖОСАЛЫ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жубан ана",
+   "name": "ЖУБАН АНА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жуков",
+   "name": "ЖУКОВА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жумабек ташенов",
+   "name": "ЖУМАБЕК ТАШЕНОВ",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жумбактас",
+   "name": "ЖУМБАКТАС",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "жумекен нажимеденов",
+   "name": "ЖУМЕКЕН НАЖИМЕДЕНОВ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "загородни",
+   "name": "ЗАГОРОДНЫЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "заисан",
+   "name": "ЗАЙСАН",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "затаевич а",
+   "name": "ЗАТАЕВИЧА А.",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "зенг баба",
+   "name": "ЗЕНГИ БАБА",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "зенгир",
+   "name": "ЗЕНГИР",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "зерендi",
+   "name": "ЗЕРЕНДI",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "зорг",
+   "name": "ЗОРГЕ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ибира алтинсарин",
+   "name": "ЫБЫРАЙ АЛТЫНСАРИН",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "игилик",
+   "name": "ИГИЛИК",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "игишев",
+   "name": "ИГИШЕВ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "изобилни",
+   "name": "ИЗОБИЛЬНЫЙ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "икилас дукенул",
+   "name": "ЫКЫЛАС ДУКЕНУЛЫ",
+   "aliases": [],
+   "addresses": 55,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иле",
+   "name": "ИЛЕ",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иманак",
+   "name": "ИМАНАК",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иманбаево",
+   "name": "ИМАНБАЕВОЙ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иманжусип кутпанов",
+   "name": "ИМАНЖУСИПА КУТПАНОВА",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иманов а",
+   "name": "ИМАНОВ А.",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иманта",
+   "name": "ИМАНТАУ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "интал",
+   "name": "ЫНТАЛЫ",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "интимак",
+   "name": "ЫНТЫМАК",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "иргиз",
+   "name": "ЫРГЫЗ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ирис",
+   "name": "ЫРЫС",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "исата батир",
+   "name": "ИСАТАЙ БАТЫР",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кабанба батир",
+   "name": "КАБАНБАЙ БАТЫРА",
+   "aliases": [],
+   "addresses": 60,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кадиргал жалаиир",
+   "name": "КАДЫРГАЛИ ЖАЛАЙЫРИ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кажимукан",
+   "name": "КАЖЫМУКАН",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "казанат",
+   "name": "КАЗАНАТ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "казигурт",
+   "name": "КАЗЫГУРТ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "казтуган жира",
+   "name": "КАЗТУГАН ЖЫРАУ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каинар",
+   "name": "КАЙНАР",
+   "aliases": [],
+   "addresses": 47,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каиракт",
+   "name": "КАЙРАКТЫ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каират рискулбеков",
+   "name": "КАЙРАТА РЫСКУЛБЕКОВА",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "калампир",
+   "name": "КАЛАМПЫР",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "калб",
+   "name": "КАЛБА",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "камбар ата",
+   "name": "КАМБАР АТА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "камист",
+   "name": "КАМЫСТЫ",
+   "aliases": [],
+   "addresses": 114,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "камкал",
+   "name": "КАМКАЛЫ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "капал",
+   "name": "КАПАЛ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карагаил",
+   "name": "КАРАГАЙЛЫ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "караганд",
+   "name": "КАРАГАНДА-АСТАНА",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карагандинска",
+   "name": "КАРАГАНДИНСКАЯ",
+   "aliases": [],
+   "addresses": 98,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каражал",
+   "name": "КАРАЖАЛ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каражорг",
+   "name": "КАРАЖОРГА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каракум",
+   "name": "КАРАКУМ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карао",
+   "name": "КАРАОЙ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "караоткел",
+   "name": "КАРАОТКЕЛЬ",
+   "aliases": [],
+   "addresses": 47,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карас",
+   "name": "КАРАСУ",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "караса батир",
+   "name": "КАРАСАЙ БАТЫРА",
+   "aliases": [],
+   "addresses": 42,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карасаз",
+   "name": "КАРАСАЗ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карасакал еримбет",
+   "name": "КАРАСАКАЛ ЕРИМБЕТ",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карата турисов",
+   "name": "КАРАТАЙ ТУРЫСОВ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каратал",
+   "name": "КАРАТАЛ",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каратоб",
+   "name": "КАРАТОБЕ",
+   "aliases": [],
+   "addresses": 92,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карауил",
+   "name": "КАРАУЫЛ",
+   "aliases": [],
+   "addresses": 71,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карашаш ана",
+   "name": "КАРАШАШ АНА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карбишев",
+   "name": "КАРБЫШЕВА",
+   "aliases": [],
+   "addresses": 90,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каркабат",
+   "name": "КАРКАБАТ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каркар",
+   "name": "КАРКАРА",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "каркарал",
+   "name": "КАРКАРАЛЫ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кармакш",
+   "name": "КАРМАКШЫ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карталинска",
+   "name": "КАРТАЛИНСКАЯ",
+   "aliases": [],
+   "addresses": 152,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "карталинского",
+   "name": "КАРТАЛИНСКОГО",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кастек",
+   "name": "КАСТЕК",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "катаркол",
+   "name": "КАТАРКОЛЬ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "катченко",
+   "name": "КАТЧЕНКО",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кашаган",
+   "name": "КАШАГАН",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кеген",
+   "name": "КЕГЕН",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кеик батир",
+   "name": "КЕЙКИ БАТЫР",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "келес",
+   "name": "КЕЛЕС",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "келешек",
+   "name": "КЕЛЕШЕК",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кемел",
+   "name": "КЕМЕЛ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кенгiр",
+   "name": "КЕНГIР",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кендал",
+   "name": "КЕНДАЛА",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кенесар",
+   "name": "КЕНЕСАРЫ",
+   "aliases": [],
+   "addresses": 312,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кенжаила",
+   "name": "КЕНЖАЙЛАУ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кенжебек кумисбеков",
+   "name": "КЕНЖЕБЕК КУМИСБЕКОВ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кенса",
+   "name": "КЕНСАЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кента",
+   "name": "КЕНТАУ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кеншагил",
+   "name": "КЕНШАГЫЛ",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кеншилер",
+   "name": "КЕНШИЛЕР",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кербулак",
+   "name": "КЕРБУЛАК",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кере жанибек хандар",
+   "name": "КЕРЕЙ, ЖАНИБЕК ХАНДАР",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "керегетас",
+   "name": "КЕРЕГЕТАС",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кертолга",
+   "name": "КЕРТОЛГАУ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киевски",
+   "name": "КИЕВСКИЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киелиса",
+   "name": "КИЕЛИСАЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киз жибек",
+   "name": "КЫЗ ЖИБЕК",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизан",
+   "name": "КЫЗАН",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизбел",
+   "name": "КЫЗБЕЛ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилжар",
+   "name": "КЫЗЫЛЖАР",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилкениш",
+   "name": "КЫЗЫЛКЕНИШ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилкол",
+   "name": "КЫЗЫЛКОЛ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилкум",
+   "name": "КЫЗЫЛКУМ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизило",
+   "name": "КЫЗЫЛОЙ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилс",
+   "name": "КЫЗЫЛСУ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кизилтас",
+   "name": "КЫЗЫЛТАС",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киикт",
+   "name": "КИИКТИ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киим",
+   "name": "КИЙМА",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "киранки",
+   "name": "КЫРАНКИЯ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кират",
+   "name": "КЫРАТ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кириккиз",
+   "name": "КЫРЫККЫЗ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кобд",
+   "name": "КОБДА",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кобиз",
+   "name": "КОБЫЗ",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кобиланд батир",
+   "name": "КОБЫЛАНДЫ БАТЫР",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кожаберген жира",
+   "name": "КОЖАБЕРГЕН ЖЫРАУ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кожахметов",
+   "name": "КОЖАХМЕТОВА",
+   "aliases": [],
+   "addresses": 68,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "козибас",
+   "name": "КОЗЫБАСЫ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "козикош",
+   "name": "КОЗЫКОШ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокарал",
+   "name": "КОКАРАЛ",
+   "aliases": [],
+   "addresses": 66,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокжазик",
+   "name": "КОКЖАЗЫК",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокжелек",
+   "name": "КОКЖЕЛЕК",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокжид",
+   "name": "КОКЖИДЕ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокжиек",
+   "name": "КОКЖИЕК",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокил",
+   "name": "КОКИЛ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокора",
+   "name": "КОКОРАЙ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокпар",
+   "name": "КОКПАР",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокс",
+   "name": "КОКСУ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокса",
+   "name": "КОКСАЙ",
+   "aliases": [],
+   "addresses": 41,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коксенгир",
+   "name": "КОКСЕНГИР",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коктал",
+   "name": "КОКТАЛ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коктерек",
+   "name": "КОКТЕРЕК",
+   "aliases": [],
+   "addresses": 42,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коктоб",
+   "name": "КОКТОБЕ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коктомар",
+   "name": "КОКТОМАР",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кокшета",
+   "name": "КОКШЕТАУ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "колса",
+   "name": "КОЛСАЙ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "конираул",
+   "name": "КОНЫРАУЛЫ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кониролен",
+   "name": "КОНЫРОЛЕН",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "конституци",
+   "name": "КОНСТИТУЦИИ",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коргалжин",
+   "name": "КОРГАЛЖЫН",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "корда",
+   "name": "КОРДАЙ",
+   "aliases": [],
+   "addresses": 70,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коркит",
+   "name": "КОРКЫТ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "косалк",
+   "name": "КОСАЛКА",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "косигин",
+   "name": "КОСЫГИНА",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коскол",
+   "name": "КОСКОЛ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "космонавтов",
+   "name": "КОСМОНАВТОВ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "костана",
+   "name": "КОСТАНАЙ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кошек батир",
+   "name": "КОШЕК БАТЫР",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кошк кеменгерул",
+   "name": "КОШКЕ КЕМЕНГЕРУЛЫ",
+   "aliases": [],
+   "addresses": 123,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "коянд",
+   "name": "КОЯНДЫ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "крилов",
+   "name": "КРЫЛОВА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куишi дина",
+   "name": "КУЙШI ДИНА",
+   "aliases": [],
+   "addresses": 66,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кулагер",
+   "name": "КУЛАГЕР",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куланотпес",
+   "name": "КУЛАНОТПЕС",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кулибин",
+   "name": "КУЛИБИНА",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кулинд",
+   "name": "КУЛЫНДЫ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "култегин",
+   "name": "КУЛТЕГИН",
+   "aliases": [],
+   "addresses": 78,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "култоб",
+   "name": "КУЛТОБЕ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "култум акин",
+   "name": "КУЛТУМА АКЫН",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куляш баисеиитов",
+   "name": "КУЛЯШ БАЙСЕЙИТОВА",
+   "aliases": [
+    "КУЛЯШ.БАЙСЕЙИТОВА"
+   ],
+   "addresses": 153,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кумбел",
+   "name": "КУМБЕЛ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кумкент",
+   "name": "КУМКЕНТ",
+   "aliases": [],
+   "addresses": 55,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кумсуат",
+   "name": "КУМСУАТ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кунаев",
+   "name": "Д. КУНАЕВА",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кундизд",
+   "name": "КУНДЫЗДЫ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куншуак",
+   "name": "КУНШУАК",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куракт",
+   "name": "КУРАКТЫ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "курилисшилар",
+   "name": "КУРЫЛЫСШЫЛАР",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "курмангаз",
+   "name": "КУРМАНГАЗЫ",
+   "aliases": [],
+   "addresses": 53,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "куршiм",
+   "name": "КУРШIМ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кусжол",
+   "name": "КУСЖОЛЫ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кусмурин",
+   "name": "КУСМУРЫН",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "кусн корлан",
+   "name": "КУСНИ, КОРЛАН",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "лаил мажнун",
+   "name": "ЛАЙЛИ-МАЖНУН",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ленинградски",
+   "name": "ЛЕНИНГРАДСКИЙ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "лепсi",
+   "name": "ЛЕПСI",
+   "aliases": [],
+   "addresses": 61,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "лермонтов",
+   "name": "ЛЕРМОНТОВ",
+   "aliases": [],
+   "addresses": 79,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "лесна",
+   "name": "ЛЕСНАЯ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "лихачев",
+   "name": "ЛИХАЧЕВА",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ломоносов",
+   "name": "ЛОМОНОСОВА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "луи пастер",
+   "name": "ЛУИ ПАСТЕР",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "магжан жумабаев",
+   "name": "МАГЖАН ЖУМАБАЕВ",
+   "aliases": [],
+   "addresses": 67,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мади",
+   "name": "МАДИ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маибалик",
+   "name": "МАЙБАЛЫК",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маидаконир",
+   "name": "МАЙДАКОНЫР",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маикаиин",
+   "name": "МАЙКАЙЫН",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маикутов",
+   "name": "МАЙКУТОВА",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маиликент",
+   "name": "МАЙЛЫКЕНТ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маитоб",
+   "name": "МАЙТОБЕ",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "макаренко",
+   "name": "МАКАРЕНКО",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "макат",
+   "name": "МАКАТ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "макински",
+   "name": "МАКИНСКИЙ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "малаисар батир",
+   "name": "МАЛАЙСАРЫ БАТЫР",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "малахов",
+   "name": "МАЛАХОВА",
+   "aliases": [],
+   "addresses": 49,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "малиба",
+   "name": "МАЛЫБАЙ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "малик габдуллин",
+   "name": "МАЛИКА ГАБДУЛЛИНА",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маметов",
+   "name": "М. МАМЕТОВА",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "манас",
+   "name": "МАНАС",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маната",
+   "name": "МАНАТАУ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "манкент",
+   "name": "МАНКЕНТ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маралд",
+   "name": "МАРАЛДЫ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маржанс",
+   "name": "МАРЖАНСУ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мариям жагоркиз",
+   "name": "МАРИЯМ ЖАГОРКЫЗЫ",
+   "aliases": [],
+   "addresses": 28,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "марков",
+   "name": "МАРКОВА",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мартоб",
+   "name": "МАРТОБЕ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "масат",
+   "name": "МАСАТЫ",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маске",
+   "name": "МАСКЕУ",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "матросов а",
+   "name": "МАТРОСОВА А.",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "махтумкул",
+   "name": "МАХТУМКУЛИ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "машhур жусип копеиул",
+   "name": "МАШHУР ЖУСИП КОПЕЙУЛЫ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "машат",
+   "name": "МАШАТ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маяковского",
+   "name": "В. МАЯКОВСКОГО",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "маятас",
+   "name": "МАЯТАС",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "меде",
+   "name": "МЕДЕУ",
+   "aliases": [],
+   "addresses": 114,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мерген",
+   "name": "МЕРГЕН",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мере",
+   "name": "МЕРЕЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мерек",
+   "name": "МЕРЕКЕ",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "меркi",
+   "name": "МЕРКI",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "минарал",
+   "name": "МЫНАРАЛ",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "минжилк",
+   "name": "МЫНЖЫЛКЫ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мински",
+   "name": "МИНСКИЙ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "миржакип дулатов",
+   "name": "МЫРЖАКЫПА ДУЛАТОВА",
+   "aliases": [],
+   "addresses": 137,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мирзашол",
+   "name": "МЫРЗАШОЛ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мирзоян",
+   "name": "МИРЗОЯНА",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мирна",
+   "name": "МИРНАЯ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мирни",
+   "name": "МИРНЫЙ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "митченко",
+   "name": "МИТЧЕНКО",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "миял",
+   "name": "МИЯЛЫ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "моиилд",
+   "name": "МОЙЫЛДЫ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "моиинт",
+   "name": "МОЙЫНТЫ",
+   "aliases": [],
+   "addresses": 56,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "моинак",
+   "name": "МОЙНАК",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "моншакт",
+   "name": "МОНШАКТЫ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "морозов",
+   "name": "П. МОРОЗОВА",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мсп 463",
+   "name": "МСП 463",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мугалжар",
+   "name": "МУГАЛЖАР",
+   "aliases": [],
+   "addresses": 86,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "музбел",
+   "name": "МУЗБЕЛ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "музта",
+   "name": "МУЗТАУ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мукагал макатаев",
+   "name": "МУКАГАЛИ МАКАТАЕВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мукан тулебаев",
+   "name": "МУКАНА ТУЛЕБАЕВА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мунаишилар",
+   "name": "МУНАЙШЫЛАР",
+   "aliases": [],
+   "addresses": 41,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мурадел",
+   "name": "МУРАДЕЛИ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мурин жира",
+   "name": "МУРЫН ЖЫРАУ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мусабаев",
+   "name": "Т. МУСАБАЕВА",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мусоргского",
+   "name": "МУСОРГСКОГО",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мустаф шока",
+   "name": "МУСТАФА ШОКАЙ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мухамед хаидар дулат",
+   "name": "МУХАМЕД-ХАЙДАР ДУЛАТИ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мухамеджан тинишбаев",
+   "name": "МУХАМЕДЖАН ТЫНЫШБАЕВ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "мухамет салик бабажанов",
+   "name": "МУХАМЕТ-САЛЫК БАБАЖАНОВ",
+   "aliases": [],
+   "addresses": 26,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нагорна",
+   "name": "НАГОРНАЯ",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "назiр торекулул",
+   "name": "НАЗIР ТОРЕКУЛУЛЫ",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "наизатас",
+   "name": "НАЙЗАТАС",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нарин",
+   "name": "НАРЫН",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "наркескен",
+   "name": "НАРКЕСКЕН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "науриз",
+   "name": "НАУРЫЗ",
+   "aliases": [],
+   "addresses": 48,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "науризба батир",
+   "name": "НАУРЫЗБАЙ БАТЫР",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "науризим",
+   "name": "НАУРЫЗЫМ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "никола хлудов",
+   "name": "НИКОЛАЙ ХЛУДОВ",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нови",
+   "name": "НОВЫЙ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ногаил",
+   "name": "НОГАЙЛЫ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "норманди неман ескадриляс",
+   "name": "НОРМАНДИЯ-НЕМАН ЭСКАДРИЛЬЯСЫ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нура",
+   "name": "НУРА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нургис тлендиев",
+   "name": "НУРГИСЫ ТЛЕНДИЕВА",
+   "aliases": [
+    "НУРГИСА ТЛЕНДИЕВА"
+   ],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нуржол",
+   "name": "НУРЖОЛ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нурл",
+   "name": "НУРЛЫ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нурлижол",
+   "name": "НУРЛЫЖОЛ",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нуртас ондасинов",
+   "name": "НУРТАСА ОНДАСЫНОВА",
+   "aliases": [],
+   "addresses": 66,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "нурхан ахметбеков",
+   "name": "НУРХАН АХМЕТБЕКОВ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "обаган",
+   "name": "ОБАГАН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "огиланд",
+   "name": "ОГЫЛАНДЫ",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "одесски",
+   "name": "ОДЕССКИЙ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "озен",
+   "name": "ОЗЕН",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оижаила",
+   "name": "ОЙЖАЙЛАУ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оиил",
+   "name": "ОЙЫЛ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оисилкар",
+   "name": "ОЙСЫЛКАРА",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оитоган",
+   "name": "ОЙТОГАН",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "окжетпес",
+   "name": "ОКЖЕТПЕС",
+   "aliases": [],
+   "addresses": 124,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "олент",
+   "name": "ОЛЕНТИ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "омаров",
+   "name": "Ж. ОМАРОВА",
+   "aliases": [],
+   "addresses": 160,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ондирис",
+   "name": "ОНДИРИС",
+   "aliases": [],
+   "addresses": 54,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "орбулак",
+   "name": "ОРБУЛАК",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "орда",
+   "name": "ОРДА",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ордабас",
+   "name": "ОРДАБАСЫ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ордата",
+   "name": "ОРДАТАУ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ориc",
+   "name": "ОРИC",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оринбор",
+   "name": "ОРЫНБОР",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оркен",
+   "name": "ОРКЕН",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оркениет",
+   "name": "ОРКЕНИЕТ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "орликол",
+   "name": "ОРЛЫКОЛ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "орнек",
+   "name": "ОРНЕК",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "орхон",
+   "name": "ОРХОН",
+   "aliases": [],
+   "addresses": 52,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "оспан батир",
+   "name": "ОСПАН БАТЫР",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "островского",
+   "name": "ОСТРОВСКОГО",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "отикен",
+   "name": "ОТЫКЕН",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "отирар",
+   "name": "ОТЫРАР",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ошакт",
+   "name": "ОШАКТЫ",
+   "aliases": [],
+   "addresses": 27,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "павлов",
+   "name": "ПАВЛОВА",
+   "aliases": [],
+   "addresses": 28,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "панфилов",
+   "name": "ПАНФИЛОВА",
+   "aliases": [],
+   "addresses": 100,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "первомаиска",
+   "name": "ПЕРВОМАЙСКАЯ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "перов",
+   "name": "ПЕРОВА",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "петров",
+   "name": "ПЕТРОВА",
+   "aliases": [],
+   "addresses": 49,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "пионерска",
+   "name": "ПИОНЕРСКАЯ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "пушкин а",
+   "name": "ПУШКИНА А.",
+   "aliases": [],
+   "addresses": 88,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "радищев",
+   "name": "РАДИЩЕВА",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "радищев 2",
+   "name": "РАДИЩЕВА №2",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "радищев 3",
+   "name": "РАДИЩЕВА №3",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "разин",
+   "name": "С. РАЗИНА",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "разин 1",
+   "name": "С. РАЗИНА №1",
+   "aliases": [],
+   "addresses": 28,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "разин 2",
+   "name": "С. РАЗИНА №2",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ракимжан кошкарбаев",
+   "name": "РАКЫМЖАН КОШКАРБАЕВ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "рамазан",
+   "name": "РАМАЗАН",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "рауан",
+   "name": "РАУАН",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "республик",
+   "name": "РЕСПУБЛИКА",
+   "aliases": [],
+   "addresses": 134,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "родникова",
+   "name": "РОДНИКОВАЯ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "романтиков",
+   "name": "РОМАНТИКОВ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сабит муканов",
+   "name": "САБИТ МУКАНОВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "садвакасов",
+   "name": "САДВАКАСОВА",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "садова",
+   "name": "САДОВАЯ",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "садови",
+   "name": "САДОВЫЙ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саирам",
+   "name": "САЙРАМ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саккорган",
+   "name": "САККОРГАН",
+   "aliases": [],
+   "addresses": 22,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "салбурин",
+   "name": "САЛБУРЫН",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сандиктас",
+   "name": "САНДЫКТАС",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сараишик",
+   "name": "УЛ.САРАЙШЫК",
+   "aliases": [],
+   "addresses": 50,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саргул",
+   "name": "САРГУЛЬ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саржаила",
+   "name": "САРЖАЙЛАУ",
+   "aliases": [],
+   "addresses": 82,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сариагаш",
+   "name": "САРЫАГАШ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сариадир",
+   "name": "САРЫАДЫР",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сариарк",
+   "name": "САРЫАРКА",
+   "aliases": [],
+   "addresses": 66,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарибулак",
+   "name": "САРЫБУЛАК",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарикенгир",
+   "name": "САРЫКЕНГИР",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарикол",
+   "name": "САРЫКОЛ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарикум",
+   "name": "САРЫКУМ",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарин",
+   "name": "САРЫН",
+   "aliases": [],
+   "addresses": 46,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сариозен",
+   "name": "САРЫОЗЕН",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саритога",
+   "name": "САРЫТОГАЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саркан",
+   "name": "САРКАН",
+   "aliases": [],
+   "addresses": 45,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саркирам",
+   "name": "САРКЫРАМА",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сарта",
+   "name": "САРТАУ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сартубек",
+   "name": "САРТУБЕК",
+   "aliases": [],
+   "addresses": 37,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саумалкол",
+   "name": "САУМАЛКОЛЬ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сауран",
+   "name": "САУРАН",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "саян",
+   "name": "САЯН",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "севастополски",
+   "name": "СЕВАСТОПОЛЬСКИЙ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сеииткал мендешев",
+   "name": "СЕЙИТКАЛИ МЕНДЕШЕВ",
+   "aliases": [],
+   "addresses": 60,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сеифуллин",
+   "name": "С. СЕЙФУЛЛИН",
+   "aliases": [],
+   "addresses": 316,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сембинов",
+   "name": "СЕМБИНОВА",
+   "aliases": [],
+   "addresses": 44,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "семенов тяншанского",
+   "name": "СЕМЕНОВА-ТЯНЬШАНСКОГО",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "серекпаев",
+   "name": "СЕРЕКПАЕВА",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "серов",
+   "name": "СЕРОВА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "серпер",
+   "name": "СЕРПЕР",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сеченов",
+   "name": "СЕЧЕНОВА",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сиганак",
+   "name": "СЫГАНАК",
+   "aliases": [],
+   "addresses": 52,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сидик мухамеджанов",
+   "name": "СЫДЫК МУХАМЕДЖАНОВ",
+   "aliases": [],
+   "addresses": 121,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "силет",
+   "name": "СИЛЕТИ",
+   "aliases": [],
+   "addresses": 23,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сипир жира",
+   "name": "СЫПЫРА ЖЫРАУ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сирдари",
+   "name": "СЫРДАРИЯ",
+   "aliases": [],
+   "addresses": 64,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сирим батир",
+   "name": "СЫРЫМ БАТЫР",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сиримбет",
+   "name": "СЫРЫМБЕТ",
+   "aliases": [],
+   "addresses": 36,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "современников",
+   "name": "СОВРЕМЕННИКОВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "степан кубрин",
+   "name": "СТЕПАНА КУБРИНА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "суворов",
+   "name": "СУВОРОВА",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сугiр алiул",
+   "name": "СУГIР АЛIУЛЫ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "суиинба акин",
+   "name": "СУЙИНБАЙ АКЫН",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "султанбек кожанул",
+   "name": "СУЛТАНБЕК КОЖАНУЛЫ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "султанмахмут тораигиров",
+   "name": "СУЛТАНМАХМУТ ТОРАЙГЫРОВ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сулукол",
+   "name": "СУЛУКОЛЬ",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сулутал",
+   "name": "СУЛУТАЛ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сулутоб",
+   "name": "СУЛУТОБЕ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сулутор",
+   "name": "СУЛУТОР",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сумб",
+   "name": "СУМБЕ",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "суриков",
+   "name": "СУРИКОВА",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сусамир",
+   "name": "СУСАМЫР",
+   "aliases": [],
+   "addresses": 56,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "сутбулак",
+   "name": "СУТБУЛАК",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "суткент",
+   "name": "СУТКЕНТ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таибурил",
+   "name": "ТАЙБУРЫЛ",
+   "aliases": [],
+   "addresses": 45,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таиказан",
+   "name": "ТАЙКАЗАН",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таисоиган",
+   "name": "ТАЙСОЙГАН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таитоб",
+   "name": "ТАЙТОБЕ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "талапкерска",
+   "name": "ТАЛАПКЕРСКАЯ",
+   "aliases": [],
+   "addresses": 41,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "талас",
+   "name": "ТАЛАС",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "талгар",
+   "name": "ТАЛГАР",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "талд",
+   "name": "ТАЛДЫ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тамшал",
+   "name": "ТАМШАЛЫ",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "танбалитас",
+   "name": "ТАНБАЛЫТАС",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тараз",
+   "name": "ТАРАЗ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тарас шевченко",
+   "name": "ТАРАС ШЕВЧЕНКО",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тарбагата",
+   "name": "ТАРБАГАТАЙ",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тарлан",
+   "name": "ТАРЛАН",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тасбулак",
+   "name": "ТАСБУЛАК",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таскескен",
+   "name": "ТАСКЕСКЕН",
+   "aliases": [],
+   "addresses": 97,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таскудик",
+   "name": "ТАСКУДЫК",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тастак",
+   "name": "ТАСТАК",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тасшок",
+   "name": "ТАСШОКЫ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таттимбет",
+   "name": "ТАТТИМБЕТ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тауелсиздик",
+   "name": "ТАУЕЛСИЗДИК",
+   "aliases": [],
+   "addresses": 54,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "таха хусеин",
+   "name": "ТАХА ХУСЕЙН",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ташенов",
+   "name": "Ж. ТАШЕНОВ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ташкентска",
+   "name": "ТАШКЕНТСКАЯ",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "текес",
+   "name": "ТЕКЕС",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "телжан шонанул",
+   "name": "ТЕЛЖАН ШОНАНУЛЫ",
+   "aliases": [],
+   "addresses": 39,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "телконир",
+   "name": "ТЕЛКОНЫР",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "темiрказик",
+   "name": "ТЕМIРКАЗЫК",
+   "aliases": [],
+   "addresses": 58,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "темiрта",
+   "name": "ТЕМIРТАУ",
+   "aliases": [],
+   "addresses": 18,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тенгиз",
+   "name": "ТЕНГИЗ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тениз",
+   "name": "ТЕНИЗ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "терект",
+   "name": "ТЕРЕКТЫ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тесиктас",
+   "name": "ТЕСИКТАС",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "титов",
+   "name": "ТИТОВА",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тобил",
+   "name": "ТОБЫЛ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тобилгиса",
+   "name": "ТОБЫЛГЫСАЙ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "токтаров",
+   "name": "ТОКТАРОВА",
+   "aliases": [],
+   "addresses": 73,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "толага",
+   "name": "ТОЛАГАЙ",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "толстого",
+   "name": "ТОЛСТОГО",
+   "aliases": [],
+   "addresses": 43,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тонкерис",
+   "name": "ТОНКЕРИС",
+   "aliases": [],
+   "addresses": 44,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "торга",
+   "name": "ТОРГАЙ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тулеубаев",
+   "name": "ТУЛЕУБАЕВА",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тулеубаев 2",
+   "name": "ТУЛЕУБАЕВА №2",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тулкiбас",
+   "name": "ТУЛКIБАС",
+   "aliases": [],
+   "addresses": 52,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "тумар ханим",
+   "name": "ТУМАР ХАНЫМ",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "туран",
+   "name": "ТУРАН",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "турар рискулов",
+   "name": "ТУРАР РЫСКУЛОВ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "туркicтан",
+   "name": "ТУРКICТАН",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "уcтiрт",
+   "name": "УCТIРТ",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "уалитхан танашев",
+   "name": "УАЛИТХАН ТАНАШЕВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "узка",
+   "name": "УЗКАЯ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "укил ибира",
+   "name": "УКИЛИ ЫБЫРАЙ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "улан",
+   "name": "УЛАН",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "уланбел",
+   "name": "УЛАНБЕЛ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "улбик акин",
+   "name": "УЛБИКЕ АКЫН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "улита",
+   "name": "УЛЫТАУ",
+   "aliases": [],
+   "addresses": 55,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "улкен",
+   "name": "УЛКЕН",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "уралска",
+   "name": "УРАЛЬСКАЯ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "уралски",
+   "name": "УРАЛЬСКИЙ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "училищни",
+   "name": "УЧИЛИЩНЫЙ",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ушкар",
+   "name": "УШКАРА",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ушкиштар",
+   "name": "УШКЫШТАР",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ушконир",
+   "name": "УШКОНЫР",
+   "aliases": [],
+   "addresses": 25,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ушкопир",
+   "name": "УШКОПИР",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ушкулта субханбердин",
+   "name": "УШКУЛТАЙ СУБХАНБЕРДИНА",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "фахд бен абдулл азиз",
+   "name": "ФАХД БЕН АБДУЛЛ АЗИЗ",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "фестивални",
+   "name": "ФЕСТИВАЛЬНЫЙ",
+   "aliases": [],
+   "addresses": 6,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "халел досмухамедул",
+   "name": "ХАЛЕЛ ДОСМУХАМЕДУЛЫ",
+   "aliases": [],
+   "addresses": 86,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ханта",
+   "name": "ХАНТАУ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "хачатурян",
+   "name": "ХАЧАТУРЯНА",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "хмелницкого",
+   "name": "Б. ХМЕЛЬНИЦКОГО",
+   "aliases": [],
+   "addresses": 46,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "хусеин бен талал",
+   "name": "ХУСЕЙН БЕН ТАЛАЛ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "циолковского",
+   "name": "ЦИОЛКОВСКОГО",
+   "aliases": [],
+   "addresses": 29,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "чаиковского",
+   "name": "ЧАЙКОВСКОГО",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "челюскинцев",
+   "name": "ЧЕЛЮСКИНЦЕВ",
+   "aliases": [],
+   "addresses": 19,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "чехов",
+   "name": "ЧЕХОВА",
+   "aliases": [],
+   "addresses": 72,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "чехоев",
+   "name": "ЧЕХОЕВА",
+   "aliases": [],
+   "addresses": 32,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "чимкентски",
+   "name": "ЧИМКЕНТСКИЙ",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "чичерин",
+   "name": "ЧИЧЕРИНА",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шiдертi",
+   "name": "ШIДЕРТI",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шабал беисеково",
+   "name": "ШАБАЛ БЕЙСЕКОВОЙ",
+   "aliases": [],
+   "addresses": 28,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шабит",
+   "name": "ШАБЫТ",
+   "aliases": [],
+   "addresses": 4,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шаган",
+   "name": "ШАГАН",
+   "aliases": [],
+   "addresses": 14,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шагил",
+   "name": "ШАГЫЛ",
+   "aliases": [],
+   "addresses": 31,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шакарим кудаибердиул",
+   "name": "ШАКАРИМ КУДАЙБЕРДИУЛЫ",
+   "aliases": [],
+   "addresses": 40,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шакен аиманов",
+   "name": "ШАКЕН АЙМАНОВ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шакпак",
+   "name": "ШАКПАК",
+   "aliases": [],
+   "addresses": 39,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шалкар",
+   "name": "ШАЛКАР",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шалкииз жира",
+   "name": "ШАЛКИИЗ ЖЫРАУ",
+   "aliases": [],
+   "addresses": 30,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шалкод",
+   "name": "ШАЛКОДЕ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шамш калдаяков",
+   "name": "ШАМШИ КАЛДАЯКОВ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шангере бокеев",
+   "name": "ШАНГЕРЕЯ БОКЕЕВА",
+   "aliases": [],
+   "addresses": 88,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шантоб",
+   "name": "ШАНТОБЕ",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шапагат",
+   "name": "ШАПАГАТ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шара жиенкулов",
+   "name": "ШАРА ЖИЕНКУЛОВА",
+   "aliases": [],
+   "addresses": 100,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шарбаккол",
+   "name": "ШАРБАККОЛ",
+   "aliases": [],
+   "addresses": 1,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шарбакт",
+   "name": "ШАРБАКТЫ",
+   "aliases": [],
+   "addresses": 35,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шардар",
+   "name": "ШАРДАРА",
+   "aliases": [],
+   "addresses": 37,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шарин",
+   "name": "ШАРЫН",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шарл де голл",
+   "name": "ШАРЛЬ ДЕ ГОЛЛЬ",
+   "aliases": [],
+   "addresses": 3,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шаттик",
+   "name": "ШАТТЫК",
+   "aliases": [],
+   "addresses": 2,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шашу",
+   "name": "ШАШУ",
+   "aliases": [],
+   "addresses": 15,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шевченко",
+   "name": "ШЕВЧЕНКО",
+   "aliases": [],
+   "addresses": 10,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шеркал",
+   "name": "ШЕРКАЛА",
+   "aliases": [],
+   "addresses": 13,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шертер",
+   "name": "ШЕРТЕР",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шет",
+   "name": "ШЕТ",
+   "aliases": [],
+   "addresses": 5,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шиел",
+   "name": "ШИЕЛИ",
+   "aliases": [],
+   "addresses": 43,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шиликт",
+   "name": "ШИЛИКТЫ",
+   "aliases": [],
+   "addresses": 11,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шимбулак",
+   "name": "ШЫМБУЛАК",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шингирла",
+   "name": "ШЫНГЫРЛАУ",
+   "aliases": [],
+   "addresses": 24,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шингиста",
+   "name": "ШЫНГЫСТАУ",
+   "aliases": [],
+   "addresses": 17,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шинира",
+   "name": "ШЫНЫРАУ",
+   "aliases": [],
+   "addresses": 8,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шинтас",
+   "name": "ШЫНТАС",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шираил",
+   "name": "ШЫРАЙЛЫ",
+   "aliases": [],
+   "addresses": 12,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "ширшик",
+   "name": "ШЫРШЫК",
+   "aliases": [],
+   "addresses": 9,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шокан уалиханов",
+   "name": "ШОКАН УАЛИХАНОВ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шолохов",
+   "name": "ШОЛОХОВА",
+   "aliases": [],
+   "addresses": 21,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН",
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шопан ата",
+   "name": "ШОПАН АТА",
+   "aliases": [],
+   "addresses": 7,
+   "districts": [
+    "ЕСИЛЬСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шортандинска",
+   "name": "ШОРТАНДИНСКАЯ",
+   "aliases": [],
+   "addresses": 34,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шу",
+   "name": "ШУ",
+   "aliases": [],
+   "addresses": 72,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шубин",
+   "name": "ШУБИНА",
+   "aliases": [],
+   "addresses": 33,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шугил",
+   "name": "ШУГЫЛА",
+   "aliases": [],
+   "addresses": 20,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "шукшин",
+   "name": "ШУКШИНА",
+   "aliases": [],
+   "addresses": 16,
+   "districts": [
+    "АЛМАТИНСКИЙ РАЙОН"
+   ]
+  },
+  {
+   "key": "щорс",
+   "name": "ЩОРСА",
+   "aliases": [],
+   "addresses": 38,
+   "districts": [
+    "САРЫАРКИНСКИЙ РАЙОН"
+   ]
+  }
+ ]
+}

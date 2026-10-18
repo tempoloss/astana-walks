@@ -1,0 +1,9 @@
+{
+ "domain": "svolna.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:31:07+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "The p4 URL astana.svolna.kz answers HTTP 403 (WAF). The main svolna.kz contacts page gives 'ул. Туркестанская, 4' with restaurant/delivery phones but never names a city on this page — Астана is not stated in text, and the task forbids storing branch facts the page does not assert; nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

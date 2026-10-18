@@ -1,0 +1,155 @@
+[project]
+name = "astana-walks-app"
+version = "0.1.0"
+description = "RAG walking assistant for Astana"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "google-genai>=1.0",
+    "pydantic>=2.7",
+    "opening-hours-py>=1.0",
+    "tzdata",
+    "httpx>=0.27",
+    "rapidfuzz>=3.9",
+    "starlette>=1.8.0",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff",
+    "ty",
+    "import-linter",
+    "poethepoet",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["walks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-rs"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F", "I", "B", "UP", "SIM", "RUF", "ERA", "T20", "PT", "C4", "RET", "PIE", "TID",
+    # C901, PLR0911, PLR0912, PLR0913, PLR0915 run in `poe report` only (see below).
+]
+ignore = ["E501", "RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pylint]
+max-args = 8
+max-returns = 6
+max-branches = 12
+max-statements = 50
+
+[tool.ruff.lint.per-file-ignores]
+"walks/cli.py" = ["T20"]
+"walks/cli_layers.py" = ["T20"]
+"tests/**" = ["PLR2004", "PLR0913"]
+"scripts/**" = ["T20"]
+"eval/**" = ["T20"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+# Layering of the `walks` package, top to bottom; modules on one line do not import each other.
+# web/ and scripts/ sit outside the package and may import anything.
+[tool.importlinter]
+root_package = "walks"
+
+[[tool.importlinter.contracts]]
+name = "walks layers"
+type = "layers"
+containers = ["walks"]
+layers = [
+    "cli",
+    "cli_layers",
+    "dialog",
+    "dialog_named",
+    "dialog_asks",
+    "dialog_nlu | dialog_place | dialog_chips | dialog_extras | dialog_lead",
+    "demo_pin",
+    "pipeline",
+    "city_actions",
+    "followup | profile | demand | bookmarks",
+    "generate | intent | route | transit | walking | reqlog",
+    "card_notes",
+    "reasons",
+    "retrieve",
+    "asked",
+    "events",
+    "radius | shelter | stay | attributes | wishes",
+    "conditions",
+    "weather | sun | feedback | supply | visit_hours",
+    "hours | llm | presets | lexicon",
+    "llm_providers",
+    "lexicon_concepts",
+    "lexicon_extra",
+    "holidays | envcfg | lexicon_data | districts | colocated | kids | safety | quantities | names",
+    "dialog_types",
+    "models",
+    "i18n | dialog_text | dialog_strings",
+]
+
+[tool.poe.tasks]
+check = [
+    { cmd = "uv lock --check" },
+    { cmd = "ruff check ." },
+    { cmd = "ruff format --check ." },
+    { cmd = "lint-imports" },
+    { cmd = "python scripts/check_module_size.py" },
+    { cmd = "python scripts/check_leaks.py" },
+    { cmd = "pytest -q -rs" },
+]
+# Report-only (never blocks): complexity rules C901/PLR09xx flag ~17 working functions (retrieve._score,
+# intent.parse_rules, cli.main, ...); they are listed here and not enforced in `check`. Thresholds live in
+# [tool.ruff.lint.mccabe] / [tool.ruff.lint.pylint].
+report = [
+    { cmd = "ruff check . --select C901,PLR0911,PLR0912,PLR0913,PLR0915 --output-format concise --exit-zero" },
+    { cmd = "ty check", ignore_fail = true },
+]
+fix = [{ cmd = "ruff check --fix --exit-zero ." }, { cmd = "ruff format ." }]
+# State registries (collect/gov): the dataset check of the shipped data/poi.enriched.json (offline), from the repo root.
+gov-verify = { cmd = "uv run python -m collect.gov.verify --dataset data/poi.enriched.json", cwd = ".." }
+# Quality evaluation (offline: no network, no API quota): both datasets over eval/cases.json and over the held-out
+# eval/holdout_cases.json (results/*_holdout_*), the blind sets eval/holdout2_cases.json and eval/holdout3_cases.json
+# (results/*_holdout2_*, *_holdout3_*) and the abstention set eval/abstain_cases.json (results/*_abstain_*),
+# then the summaries, the comparisons, results/canonical.md and docs/scenarios.md.
+# LLM-mode runs are manual: `python -m eval.run_eval --mode llm --tz ...`.
+eval = [
+    { cmd = "python -m eval.run_eval --data ../data/poi.json --mode offline" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.enriched.json --mode offline" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.json --mode offline --cases eval/holdout_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.enriched.json --mode offline --cases eval/holdout_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.json --mode offline --cases eval/holdout2_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.enriched.json --mode offline --cases eval/holdout2_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.json --mode offline --cases eval/holdout3_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.enriched.json --mode offline --cases eval/holdout3_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.json --mode offline --cases eval/abstain_cases.json" },
+    { cmd = "python -m eval.run_eval --data ../data/poi.enriched.json --mode offline --cases eval/abstain_cases.json" },
+    { cmd = "python -m eval.report" },
+]
+# Opt-in, after `poe eval`: recomputes results/attribution.md (what the metric definitions, the code and the data swap
+# each changed). It re-runs the current code on the pre-swap dataset taken from git history (`git show 6a8cbc9:...`),
+# so it needs the full history; plain `poe eval` only embeds the committed file into canonical.md.
+eval-attribution = [{ cmd = "python -m eval.report --attribution" }]
+# Launch the web UI on http://localhost:8600 (scripts/demo.ps1 is the same thing for PowerShell).
+# demo: the local recording / rehearsal configuration (pinned time/weather/walking legs, replayed LLM answers, simulated
+# demand on «Город», Google-only chains = the defaults); the public stand does not run it (deploy/vps/README.md).
+# demo-offline: the same plus no network at all. jury: no environment at all, exactly what a fresh clone runs.
+demo = { cmd = "python -m web --port 8600", env = { WALKS_ENV = "demo", WALKS_DEMAND_SIM = "1", WALKS_DEMO_PIN = "1", WALKS_CACHE_PIN = "1", WALKS_AIR_DEMO = "1", LLM_CHAIN = "gemini:gemini-3.5-flash,gemini:gemini-flash-latest,gemini:gemini-2.5-flash,gemini:gemma-4-26b-a4b-it", LLM_INTENT_CHAIN = "gemini:gemini-2.5-flash-lite,gemini:gemini-3.5-flash-lite,gemini:gemma-4-26b-a4b-it" } }
+demo-offline = { cmd = "python -m web --port 8600", env = { WALKS_ENV = "demo", WALKS_DEMAND_SIM = "1", WALKS_DEMO_PIN = "1", WALKS_CACHE_PIN = "1", WALKS_OFFLINE = "1", LLM_CHAIN = "gemini:gemini-3.5-flash,gemini:gemini-flash-latest,gemini:gemini-2.5-flash,gemini:gemma-4-26b-a4b-it", LLM_INTENT_CHAIN = "gemini:gemini-2.5-flash-lite,gemini:gemini-3.5-flash-lite,gemini:gemma-4-26b-a4b-it" } }
+jury = { cmd = "python -m web --port 8600" }

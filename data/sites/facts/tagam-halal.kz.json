@@ -1,0 +1,217 @@
+{
+ "domain": "tagam-halal.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:22:49+00:00",
+ "pages": [
+  "https://tagam-halal.kz/astana",
+  "https://tagam-halal.kz"
+ ],
+ "branches": [
+  {
+   "name": "Тагам, Абая, 32",
+   "address": "Астана, Абая, 32",
+   "lat": null,
+   "lon": null,
+   "phone": "8 771 501 28 90",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Абая, 32 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Абая, 32 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 771 501 28 90",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Тагам, Жеңіс, 72",
+   "address": "Астана, Жеңіс, 72",
+   "lat": null,
+   "lon": null,
+   "phone": "8 771 501 28 82",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Жеңіс, 72 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Жеңіс, 72 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 771 501 28 82",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Тагам, Кенесары 8",
+   "address": "Астана, Кенесары 8",
+   "lat": null,
+   "lon": null,
+   "phone": "8 705 431 28 97",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Кенесары 8 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Кенесары 8 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 705 431 28 97",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Тагам, Конаева 2",
+   "address": "Астана, Конаева 2",
+   "lat": null,
+   "lon": null,
+   "phone": "8 705 553 55 65",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Конаева 2 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Конаева 2 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 705 553 55 65",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Тагам, Кунаева 14",
+   "address": "Астана, Кунаева 14",
+   "lat": null,
+   "lon": null,
+   "phone": "8 701 589 07 58",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Кунаева 14 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Кунаева 14 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 701 589 07 58",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Тагам, ул. Туран 46/1",
+   "address": "Астана, ул. Туран 46/1",
+   "lat": null,
+   "lon": null,
+   "phone": "8 771 136 14 83",
+   "opening_hours_raw": "Круглосуточно",
+   "opening_hours_osm": "24/7",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://tagam-halal.kz/astana",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "ул. Туран 46/1 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "ул. Туран 46/1 Режим работы: Круглосуточно 24/7",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://tagam-halal.kz/astana",
+     "snippet": "Номер службы доставки: 8 771 136 14 83",
+     "fetched_at": "2026-10-17T09:22:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Часы = собственная строка сети 'Режим работы: Круглосуточно 24/7' для каждого заведения; в raw оставлено 'Круглосуточно' (конвертируется в 24/7). Телефон — номер службы доставки конкретного заведения (не общий call-центр). Адреса напечатаны коротко ('Кенесары 8'), город добавлен префиксом; на странице распознано заведений: 6. 'Доставка Контакты KZ ENG' — навигация, из адреса вырезана.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

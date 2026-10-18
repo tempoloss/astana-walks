@@ -1,0 +1,3477 @@
+{
+ "source": "data.egov.kz",
+ "agency_id": "AVUvu_Wu99eXTcgzf9td",
+ "agency": "Астана қаласы әкімдігі",
+ "fetched_at": "2026-10-17T12:29:30+00:00",
+ "robots": "ok",
+ "endpoints": [
+  "/datasets/getdatasetsrecount",
+  "/datasets/getdatasetsre",
+  "/datasets/getmeta",
+  "/datasets/exportjson"
+ ],
+ "licence": "открытые данные госоргана РК, Закон №401-V (ст. 1 п. 5)",
+ "summary": {
+  "published_datasets": 52,
+  "enumerated": 52,
+  "with_coordinates": 0,
+  "empty": 0,
+  "rows_total": 667,
+  "with_working_hours_field": 1
+ },
+ "datasets": [
+  {
+   "slug": "103_informaciya_po_fontanam_g",
+   "title": "№732 Информация по фонтанам, находящимся в коммунальной собственности, в разрезе регионов",
+   "row_count": 6,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrgk",
+     "label": "наименование района города",
+     "type": "String"
+    },
+    {
+     "key": "nrgr",
+     "label": "наименование района города",
+     "type": "String"
+    },
+    {
+     "key": "kfk",
+     "label": "кол-во фонтана",
+     "type": "String"
+    },
+    {
+     "key": "kfr",
+     "label": "кол-во фонтана",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": " Аппарат акима районов г. Астаны",
+   "modified": "2026-07-08T04:50:47.958Z",
+   "url": "https://data.egov.kz/datasets/view?index=103_informaciya_po_fontanam_g"
+  },
+  {
+   "slug": "216_list_of_associations_of_p",
+   "title": "№673 Перечень объединений собственников имущества в разрезе регионов ",
+   "row_count": 52,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_ru",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_kaz",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "naselennogo_punkta_kaz",
+     "label": "Наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naselennogo_punkta_rus",
+     "label": "Наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_obiedinenie_ru",
+     "label": "Наименование объединение",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_obiedinenie_kaz",
+     "label": "Наименование объединение",
+     "type": "String"
+    },
+    {
+     "key": "iuridicheckii_adres_kaz",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "iuridicheckii_adres_ru",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "kontaktnyi_telefon",
+     "label": "Контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление Жилья и жилищной инспекции города АстанЫ",
+   "modified": "2025-09-11T05:37:13.639Z",
+   "url": "https://data.egov.kz/datasets/view?index=216_list_of_associations_of_p"
+  },
+  {
+   "slug": "216_register_of_issued_subsur",
+   "title": "№210 Реестр выданных лицензий на недропользование",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "kk",
+     "label": "комментарий",
+     "type": "String"
+    },
+    {
+     "key": "kr",
+     "label": "комментарий",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования города Астаны",
+   "modified": "2026-06-29T09:30:41.228Z",
+   "url": "https://data.egov.kz/datasets/view?index=216_register_of_issued_subsur"
+  },
+  {
+   "slug": "285_list_of_state_special_and",
+   "title": "№276 Перечень государственных специальных и интернатных организаций в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "Наименование",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "Наименование",
+     "type": "String"
+    },
+    {
+     "key": "adressr",
+     "label": "Место расположения",
+     "type": "String"
+    },
+    {
+     "key": "adressk",
+     "label": "Место расположения",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "Время работы",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "Время работы",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "opr",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "opk",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "nrk",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "nrr",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление образования города Астаны",
+   "modified": "2025-12-05T19:22:56.592Z",
+   "url": "https://data.egov.kz/datasets/view?index=285_list_of_state_special_and"
+  },
+  {
+   "slug": "317_list_of_state_polyclinics",
+   "title": "№305 Перечень государственных поликлиник в разрезе регионов",
+   "row_count": 7,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "rk",
+     "label": "район",
+     "type": "String"
+    },
+    {
+     "key": "rr",
+     "label": "район",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "pbmuk",
+     "label": "перечень бесплатных мед услуг",
+     "type": "String"
+    },
+    {
+     "key": "pbmur",
+     "label": "перечень бесплатных мед услуг",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление общественного здравохранения города Астаны",
+   "modified": "2026-06-30T10:52:25.174Z",
+   "url": "https://data.egov.kz/datasets/view?index=317_list_of_state_polyclinics"
+  },
+  {
+   "slug": "37_information_on_the_transfe",
+   "title": "№32 Информация по передаче государственного имущества в имущественный найм/аренду в разрезе ",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "ppk",
+     "label": "планируемые поступления",
+     "type": "String"
+    },
+    {
+     "key": "ppr",
+     "label": "планируемые поступления",
+     "type": "String"
+    },
+    {
+     "key": "vpk",
+     "label": "фактические поступления",
+     "type": "String"
+    },
+    {
+     "key": "vpr",
+     "label": "фактические поступления",
+     "type": "String"
+    },
+    {
+     "key": "pkmk",
+     "label": "площадь в квадратных метрах ",
+     "type": "String"
+    },
+    {
+     "key": "pkmr",
+     "label": "площадь в квадратных метрах ",
+     "type": "String"
+    },
+    {
+     "key": "kddk",
+     "label": "количество действующих догоров",
+     "type": "String"
+    },
+    {
+     "key": "kddr",
+     "label": "количество действующих догоров",
+     "type": "String"
+    },
+    {
+     "key": "pik",
+     "label": "процент исполнения",
+     "type": "String"
+    },
+    {
+     "key": "pir",
+     "label": "процент исполнения",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление активов и государственных закупок города  Нур-Султан\"",
+   "modified": "2026-07-07T06:12:10.657Z",
+   "url": "https://data.egov.kz/datasets/view?index=37_information_on_the_transfe"
+  },
+  {
+   "slug": "389__list_of_state_homes_for_",
+   "title": "№375 Перечень государственных домов инвалидов (центры социального обслуживания) в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressk",
+     "label": "юрид адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressr",
+     "label": "юрид адрес",
+     "type": "String"
+    },
+    {
+     "key": "vsk",
+     "label": "форма собственности",
+     "type": "String"
+    },
+    {
+     "key": "vsr",
+     "label": "форма собственности",
+     "type": "String"
+    },
+    {
+     "key": "sk",
+     "label": "специализация",
+     "type": "String"
+    },
+    {
+     "key": "sr",
+     "label": "специализация",
+     "type": "String"
+    },
+    {
+     "key": "okmk",
+     "label": "общее кол-во мест",
+     "type": "String"
+    },
+    {
+     "key": "okmr",
+     "label": "общее кол-во мест",
+     "type": "String"
+    },
+    {
+     "key": "ksmk",
+     "label": "кол-во свободных мест",
+     "type": "String"
+    },
+    {
+     "key": "ksmr",
+     "label": "кол-во свободных мест",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2026-06-30T09:38:23.821Z",
+   "url": "https://data.egov.kz/datasets/view?index=389__list_of_state_homes_for_"
+  },
+  {
+   "slug": "38_data_on_tenders_for_trust_",
+   "title": "№33 Данные о тендерах на доверительное управление объектов коммунальной собственности в разрезе регионов",
+   "row_count": 3,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименованиерегиона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименованиерегиона",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "местонахождения",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "местонахождения",
+     "type": "String"
+    },
+    {
+     "key": "kzk",
+     "label": "кол-во заявителей",
+     "type": "String"
+    },
+    {
+     "key": "kzr",
+     "label": "кол-во заявителей",
+     "type": "String"
+    },
+    {
+     "key": "dataprovk",
+     "label": "дата и время проведения торгов",
+     "type": "String"
+    },
+    {
+     "key": "dataprovedr",
+     "label": "дата и времся проведения торгов",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "название объекта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "название объекта",
+     "type": "String"
+    },
+    {
+     "key": "srokperedachik",
+     "label": "срок передачи",
+     "type": "String"
+    },
+    {
+     "key": "srokperedachir",
+     "label": "срок передачи",
+     "type": "String"
+    },
+    {
+     "key": "bsk",
+     "label": "балансовая стоимость",
+     "type": "String"
+    },
+    {
+     "key": "bsr",
+     "label": "балансовая стоимость",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление активов и государственных закупок города  Нур-Султан\"",
+   "modified": "2026-06-29T11:03:54.946Z",
+   "url": "https://data.egov.kz/datasets/view?index=38_data_on_tenders_for_trust_"
+  },
+  {
+   "slug": "390_memlekettik_balalar_uiler1",
+   "title": "№376 Перечень государственных детских домов в разрезе регионов",
+   "row_count": 2,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nddk",
+     "label": "наименование дет дома",
+     "type": "String"
+    },
+    {
+     "key": "nddr",
+     "label": "наименование десткого дома",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressk",
+     "label": "юр адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressr",
+     "label": "юр адрес",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Арыстанова Зауреш Сакеновна",
+   "modified": "2026-06-30T08:32:02.430Z",
+   "url": "https://data.egov.kz/datasets/view?index=390_memlekettik_balalar_uiler1"
+  },
+  {
+   "slug": "39_information_about_vacant_l1",
+   "title": "№34 Информация о свободных земельных участках в разрезе регионов",
+   "row_count": 10,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniekaz",
+     "label": "наименование",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanierus",
+     "label": "наименование",
+     "type": "String"
+    },
+    {
+     "key": "celevoenaznacheniekaz",
+     "label": "целевое назначение",
+     "type": "String"
+    },
+    {
+     "key": "celevoenaznachenierus",
+     "label": "целевое назначение",
+     "type": "String"
+    },
+    {
+     "key": "skaz",
+     "label": "площадь, гектар",
+     "type": "String"
+    },
+    {
+     "key": "srus",
+     "label": "площадь гектар",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление архитектуры, градостроительства и земельных отношений города Астаны",
+   "modified": "2026-10-16T04:36:17.423Z",
+   "url": "https://data.egov.kz/datasets/view?index=39_information_about_vacant_l1"
+  },
+  {
+   "slug": "40_data_on_land_plots_sold_fo",
+   "title": "№35 Данные о реализованных для коммерческих целей земельных участках в разрезе регионов",
+   "row_count": 6,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "mzuk",
+     "label": "месторасположение земельных участков",
+     "type": "String"
+    },
+    {
+     "key": "mzur",
+     "label": "месторасположение земельных участков",
+     "type": "String"
+    },
+    {
+     "key": "ksk",
+     "label": "кадастровая стоимость",
+     "type": "String"
+    },
+    {
+     "key": "ksr",
+     "label": "кадастровая стоимость",
+     "type": "String"
+    },
+    {
+     "key": "nk",
+     "label": "целевое назначение",
+     "type": "String"
+    },
+    {
+     "key": "nr",
+     "label": "целевое назначение",
+     "type": "String"
+    },
+    {
+     "key": "pzuk",
+     "label": "площадь земельных участков",
+     "type": "String"
+    },
+    {
+     "key": "pzur",
+     "label": "площадь земельных участков",
+     "type": "String"
+    },
+    {
+     "key": "psk",
+     "label": "продажная стоимость",
+     "type": "String"
+    },
+    {
+     "key": "psr",
+     "label": "продажная стоимость",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление архитектуры, градостроительства и земельных отношений города  Астаны",
+   "modified": "2026-07-07T05:34:19.322Z",
+   "url": "https://data.egov.kz/datasets/view?index=40_data_on_land_plots_sold_fo"
+  },
+  {
+   "slug": "41_distribution_of_the_land_f",
+   "title": "№36 Распределение земельного фонда по категориям земель в разрезе районов и городов областного значения ",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "eseptikkezenkaz",
+     "label": "отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "kalaataui(kaz)",
+     "label": "наименована города  ",
+     "type": "String"
+    },
+    {
+     "key": "kalazheri(kaz)",
+     "label": "площадь земли населенного пункта ",
+     "type": "String"
+    },
+    {
+     "key": "kalazheri(rus)",
+     "label": "площадь земли населенного пункта ",
+     "type": "String"
+    },
+    {
+     "key": "ayilsharzher(kaz)",
+     "label": "земли сельхоз назначения ",
+     "type": "String"
+    },
+    {
+     "key": "ormanzher(kaz)",
+     "label": "земли лесного фонда ",
+     "type": "String"
+    },
+    {
+     "key": "onerkasip(kaz)",
+     "label": "земли промышленности, транспорта, связи, обороны и иного  ",
+     "type": "String"
+    },
+    {
+     "key": "suzher(kaz)",
+     "label": "земли водного фонда ",
+     "type": "String"
+    },
+    {
+     "key": "zheruchasaudany(kaz)",
+     "label": "общая площадь земельного участка ",
+     "type": "String"
+    },
+    {
+     "key": "kalaataui(rus)",
+     "label": "наименована города  ",
+     "type": "String"
+    },
+    {
+     "key": "ayilsharzher(rus)",
+     "label": "земли сельхоз назначения ",
+     "type": "String"
+    },
+    {
+     "key": "suzher(rus)",
+     "label": "земли водного фонда ",
+     "type": "String"
+    },
+    {
+     "key": "eseptikkezenrus",
+     "label": "отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "ormanzher(rus)",
+     "label": "земли лесного фонда ",
+     "type": "String"
+    },
+    {
+     "key": "onerkasip(rus)",
+     "label": "земли промышленности, транспорта, связи, обороны и иного  ",
+     "type": "String"
+    },
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "zheruchasaudany(rus)",
+     "label": "общая площадь земельного участка ",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление архитектуры, градостроительства и земельных отношений города  Астаны",
+   "modified": "2025-08-18T05:09:44.961Z",
+   "url": "https://data.egov.kz/datasets/view?index=41_distribution_of_the_land_f"
+  },
+  {
+   "slug": "435_the_number_of_cattle_by_r",
+   "title": "№654 Сведения о качестве предоставления тепла в отопительный период в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "Отопительный период каз",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "Отопительный период рус",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "Наименование региона каз",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "stnvk",
+     "label": "Средняя температура нагрева воды каз",
+     "type": "String"
+    },
+    {
+     "key": "stnvr",
+     "label": "Средняя температура нагрева воды рус",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление по инвестициям и развитию предпринимательства города Астаны",
+   "modified": "2025-12-02T06:10:37.080Z",
+   "url": "https://data.egov.kz/datasets/view?index=435_the_number_of_cattle_by_r"
+  },
+  {
+   "slug": "68_nur-sultan_kalasynyn_auruh",
+   "title": "№304 Перечень государственных больниц в разрезе регионов",
+   "row_count": 11,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "eseptıkezenk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "eseptıkezenr",
+     "label": "отчетный период   ",
+     "type": "String"
+    },
+    {
+     "key": "onırdınatauyr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "onırdınatauyk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "mekemenınatauyk",
+     "label": "наименование учреждения  ",
+     "type": "String"
+    },
+    {
+     "key": "mekemenınatauyr",
+     "label": "наименование учреждения  ",
+     "type": "String"
+    },
+    {
+     "key": "tegınturlerık",
+     "label": "перечень медицинских услуг с указанием бесплатных видов",
+     "type": "String"
+    },
+    {
+     "key": "tegınturlerır",
+     "label": "перечень медицинских услуг с указанием бесплатных видов",
+     "type": "String"
+    },
+    {
+     "key": "ornalasqanjerık",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "ornalasqanjerır",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "bailanystelefonyk",
+     "label": "контактный телефон  ",
+     "type": "String"
+    },
+    {
+     "key": "bailanystelefonyr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": " ГУ \"Управление общественного здравоохранения города Астаны\"",
+   "modified": "2025-12-04T08:38:36.861Z",
+   "url": "https://data.egov.kz/datasets/view?index=68_nur-sultan_kalasynyn_auruh"
+  },
+  {
+   "slug": "694_energiyamen_zhabdyktau_ob",
+   "title": "№668 Сведения об объектах энергоснабжения в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrmk",
+     "label": "наименование и местонахождение региона",
+     "type": "String"
+    },
+    {
+     "key": "nrmr",
+     "label": "наименование и местонахождение региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование  объекта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressr",
+     "label": " юридический адрес",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": " ГУ «Управление энергетики города Астаны»",
+   "modified": "2026-06-30T06:35:03.717Z",
+   "url": "https://data.egov.kz/datasets/view?index=694_energiyamen_zhabdyktau_ob"
+  },
+  {
+   "slug": "695_gazben_zhabdyktau_obekti",
+   "title": "№669 Сведения об объектах газоснабжения в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "yuiriadressk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiriadressr",
+     "label": "юридический адрес",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": " ГУ «Управление энергетики города Астаны»",
+   "modified": "2026-06-30T06:11:02.868Z",
+   "url": "https://data.egov.kz/datasets/view?index=695_gazben_zhabdyktau_obekti"
+  },
+  {
+   "slug": "696_sumen_zhabdyktau_obektil",
+   "title": "№670 Сведения об объектах водоснабжения в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование объкта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "yuiridadressk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiridadressr",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "krk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление коммунального-хозяйства города Астаны»",
+   "modified": "2026-06-30T05:35:50.383Z",
+   "url": "https://data.egov.kz/datasets/view?index=696_sumen_zhabdyktau_obektil"
+  },
+  {
+   "slug": "697_su_buru_obektileri_tural",
+   "title": "№671 Сведения об объектах водоотведения в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование оъекта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "yuiridadressk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiridadressr",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "krk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление коммунального-хозяйства города Астаны»",
+   "modified": "2026-06-30T05:17:48.206Z",
+   "url": "https://data.egov.kz/datasets/view?index=697_su_buru_obektileri_tural"
+  },
+  {
+   "slug": "698__kokys_shygaru_obektiler",
+   "title": "№672 Сведения об объектах вывоза мусора в разрезе регионов",
+   "row_count": 3,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование  объекта",
+     "type": "String"
+    },
+    {
+     "key": "yuridadressk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuridadressr",
+     "label": " юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования  города Астаны",
+   "modified": "2026-06-30T04:12:29.882Z",
+   "url": "https://data.egov.kz/datasets/view?index=698__kokys_shygaru_obektiler"
+  },
+  {
+   "slug": "700_informaciya_o_tarifah_na_",
+   "title": "№674 Сведения об объектах вывоза мусора в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "datak",
+     "label": "дата утверждения тарифа",
+     "type": "String"
+    },
+    {
+     "key": "datar",
+     "label": "дата утверждения тарифа",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "kutk",
+     "label": "кем утвержден тариф",
+     "type": "String"
+    },
+    {
+     "key": "kutr",
+     "label": "кем утвержден тариф",
+     "type": "String"
+    },
+    {
+     "key": "tarivk",
+     "label": "тариф вывоза для юр лиц",
+     "type": "String"
+    },
+    {
+     "key": "tarivr",
+     "label": "тариф вывоза для юр лиц",
+     "type": "String"
+    },
+    {
+     "key": "tarivfizk",
+     "label": "тариф вывоза дя  физ лиц",
+     "type": "String"
+    },
+    {
+     "key": "tarivfizr",
+     "label": "тариф вывоза для физ лица",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования  города Нур-Султан",
+   "modified": "2026-06-29T11:29:27.740Z",
+   "url": "https://data.egov.kz/datasets/view?index=700_informaciya_o_tarifah_na_"
+  },
+  {
+   "slug": "705_information_on_the_planne",
+   "title": "№679 Сведения по планируемому сносу дачных участков в разрезе регионов",
+   "row_count": 163,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_ru",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_kaz",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieregiona_kaz",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieregiona_ru",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "data_planiruemogo_snosa_kaz",
+     "label": "Дата планируемого сноса",
+     "type": "String"
+    },
+    {
+     "key": "data_planiruemogo_snosa_ru",
+     "label": "Дата планиуремого сноса",
+     "type": "String"
+    },
+    {
+     "key": "mesto_dachnogo_uch_kaz",
+     "label": "Местонахождение дачного участка ",
+     "type": "String"
+    },
+    {
+     "key": "mesto_dachnogo_uch_rus",
+     "label": "Местонахождение дачного участка",
+     "type": "String"
+    },
+    {
+     "key": "sroki_provedenie_rabot_ru",
+     "label": "Сроки проведение работ",
+     "type": "String"
+    },
+    {
+     "key": "sroki_provedenie_rabot_kaz",
+     "label": "Сроки проведение работ",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление жилья и жилищной инспекции города  Астаны",
+   "modified": "2026-01-21T09:51:10.776Z",
+   "url": "https://data.egov.kz/datasets/view?index=705_information_on_the_planne"
+  },
+  {
+   "slug": "759_list_of_religious_buildin",
+   "title": "№733 Перечень культовых зданий в разрезе регионов",
+   "row_count": 32,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление по делам религии города Астаны»",
+   "modified": "2026-06-29T10:25:51.873Z",
+   "url": "https://data.egov.kz/datasets/view?index=759_list_of_religious_buildin"
+  },
+  {
+   "slug": "agroonerkasip_kesheninin_obek",
+   "title": "№415 Перечень объектов агропромышленного комплекса (в том числе мясоперерабатывающие предприятия, предприятия по производству продуктов в лесном и рыбном хозяйствах) в разрезе регионов",
+   "row_count": 4,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetny_period_na_kaz",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "otchetny_period_na_rus",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniе_regiona_na_kaz",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniе_regiona_na_rus",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniе_obekta_na_kz",
+     "label": "Наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniе_obekta_na_rus",
+     "label": "Наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "yuridicheckiy_adress_na_kaz",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuridicheckiyadress_na_rus",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "kontakt",
+     "label": "Контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление по инвестициям и развитию предпринимательства города Астаны",
+   "modified": "2025-12-04T04:08:01.411Z",
+   "url": "https://data.egov.kz/datasets/view?index=agroonerkasip_kesheninin_obek"
+  },
+  {
+   "slug": "astana_kalasynyn_perzenthana",
+   "title": "307. Перечень государственных родильных домов в разрезе регионов",
+   "row_count": 3,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "id",
+     "label": "id",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организацц",
+     "type": "String"
+    },
+    {
+     "key": "pbuk",
+     "label": "перечень бесплатных услуг",
+     "type": "String"
+    },
+    {
+     "key": "pbur",
+     "label": "перечень бесплатных услуг",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "местонахождения",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "местонахождения",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \" Управление общественного здравоохранения города Астаны\"",
+   "modified": "2026-06-29T09:16:12.010Z",
+   "url": "https://data.egov.kz/datasets/view?index=astana_kalasynyn_perzenthana"
+  },
+  {
+   "slug": "astana_kalasynyn_tilderdi_damy",
+   "title": "№734 Проводимые мероприятия по развитию и пропаганде языков в разрезе регионов",
+   "row_count": 23,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона ",
+     "type": "String"
+    },
+    {
+     "key": "nmk",
+     "label": "наименование мероприятия",
+     "type": "String"
+    },
+    {
+     "key": "nmr",
+     "label": "наименование мероприятий",
+     "type": "String"
+    },
+    {
+     "key": "ppk",
+     "label": "период проведения ",
+     "type": "String"
+    },
+    {
+     "key": "ppr",
+     "label": "период проведения",
+     "type": "String"
+    },
+    {
+     "key": "mpk",
+     "label": "место проведения",
+     "type": "String"
+    },
+    {
+     "key": "mpr",
+     "label": "место проведения",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление по развитию языков и архивного дела города Астаны",
+   "modified": "2025-12-02T05:27:37.852Z",
+   "url": "https://data.egov.kz/datasets/view?index=astana_kalasynyn_tilderdi_damy"
+  },
+  {
+   "slug": "bir_tereze_kagidaty_boiynsha_i",
+   "title": "Информация о деятельности Центра городских услуг iQala",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "informasıa",
+     "label": "Информация о деятельности Центра городских услуг iQala",
+     "type": "String"
+    },
+    {
+     "key": "informasıaru",
+     "label": "Информация о деятельности Центра городских услуг iQala",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление цифровизации и государственных услуг города Нур-Султан ",
+   "modified": "2024-01-08T05:32:48.068Z",
+   "url": "https://data.egov.kz/datasets/view?index=bir_tereze_kagidaty_boiynsha_i"
+  },
+  {
+   "slug": "information_on_the_total_amoun1",
+   "title": "№211  Сведения об общей сумме расходов на обучение казахстанских специалистов, научно-исследовательские, научно-технические и опытно-конструкторские работы на территории Республики Казахстан, на социально-экономическое развитие региона и развитие его инфраструктуры, социально-экономическую поддержку местного населения, произведенных недропользователем, по годам",
+   "row_count": 2,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie",
+     "label": "Наименование",
+     "type": "String"
+    },
+    {
+     "key": "god",
+     "label": " год",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования города Астаны",
+   "modified": "2025-12-01T18:17:03.665Z",
+   "url": "https://data.egov.kz/datasets/view?index=information_on_the_total_amoun1"
+  },
+  {
+   "slug": "list_of_deposits_by_region",
+   "title": "№209 Перечень месторождений  в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniekaz",
+     "label": "наименование ",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanierus",
+     "label": "наименование",
+     "type": "String"
+    },
+    {
+     "key": "godkaz",
+     "label": "год",
+     "type": "String"
+    },
+    {
+     "key": "godrus",
+     "label": "год",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования города Астаны",
+   "modified": "2026-03-18T04:00:36.230Z",
+   "url": "https://data.egov.kz/datasets/view?index=list_of_deposits_by_region"
+  },
+  {
+   "slug": "list_of_enterprises_for_the_pr",
+   "title": "№416 Перечень предприятий по производству плодоовощной продукции в разрезе регионов",
+   "row_count": 2,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetny_period_na_kaz",
+     "label": "Отчетный период на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniе_regiona_na_kaz",
+     "label": "Наименование региона на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_predpritia_na_ka",
+     "label": "Наименование предприятия на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "vid_proizvodimoy_produckii_n",
+     "label": "Вид производимой продукции на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "yuridicheckiy_adress_na_kaz",
+     "label": "Юридический адрес на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "kontakt",
+     "label": "Контактные телефоны ",
+     "type": "String"
+    },
+    {
+     "key": "el_poshta",
+     "label": "Адрес электронной почты ",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2025-12-04T05:09:13.504Z",
+   "url": "https://data.egov.kz/datasets/view?index=list_of_enterprises_for_the_pr"
+  },
+  {
+   "slug": "list_of_state_nursing_homes_r",
+   "title": "№374 Перечень государственных медико-социальных учреждений (организаций) для престарелых",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "sk",
+     "label": "специализация",
+     "type": "String"
+    },
+    {
+     "key": "sr",
+     "label": "специализация",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressk",
+     "label": "юр адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradressr",
+     "label": "юр адрес",
+     "type": "String"
+    },
+    {
+     "key": "vsk",
+     "label": "форма собственности",
+     "type": "String"
+    },
+    {
+     "key": "vsr",
+     "label": "форма собственности ",
+     "type": "String"
+    },
+    {
+     "key": "okmk",
+     "label": "общее кол-во мест",
+     "type": "String"
+    },
+    {
+     "key": "okmr",
+     "label": "общее кол-во мест",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "конктактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ksmk",
+     "label": "кол-во свободных мест",
+     "type": "String"
+    },
+    {
+     "key": "ksmr",
+     "label": "кол-во свободных мест",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Астаны",
+   "modified": "2026-06-30T10:26:09.036Z",
+   "url": "https://data.egov.kz/datasets/view?index=list_of_state_nursing_homes_r"
+  },
+  {
+   "slug": "list_of_state_organizations_of",
+   "title": "№277 Перечень государственных организаций дополнительного образования в разрезе регионов",
+   "row_count": 11,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование регоина",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "yuiradresk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradresr",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление образования города Астаны",
+   "modified": "2026-07-07T04:51:47.815Z",
+   "url": "https://data.egov.kz/datasets/view?index=list_of_state_organizations_of"
+  },
+  {
+   "slug": "madeniet_uiymdary",
+   "title": "№729 Перечень государственных учреждений культуры в разрезе регионов",
+   "row_count": 13,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_rus",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_na_kaz",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "yuridichedkiiadress_na_rus",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuridichedkiiadress_na_kaz",
+     "label": "Юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieregionarus",
+     "label": "Наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieregionakaz",
+     "label": "Наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieorganizatsiirus",
+     "label": "Наименование учреждения",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanieorganizatsiikaz",
+     "label": "Наименование учреждения",
+     "type": "String"
+    },
+    {
+     "key": "kontact_telrus",
+     "label": "Контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "kontact_telkaz",
+     "label": "Контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление культуры, архива и документации города Астаны",
+   "modified": "2026-07-03T10:14:03.648Z",
+   "url": "https://data.egov.kz/datasets/view?index=madeniet_uiymdary"
+  },
+  {
+   "slug": "memlekettik_bagdarlamalar_shen",
+   "title": "№600  Микрокредиты, выданные микрофинансовыми организациями региона, в разрезе государственных программ (по регионам)",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "god",
+     "label": "Год",
+     "type": "String"
+    },
+    {
+     "key": "naim_regiona_na_kaz",
+     "label": "Наименование региона на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "naim_regiona_na_rus",
+     "label": "Наименование региона на русском языке",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2026-01-13T04:37:39.123Z",
+   "url": "https://data.egov.kz/datasets/view?index=memlekettik_bagdarlamalar_shen"
+  },
+  {
+   "slug": "nur-sultan_kalasy_akimdiginin",
+   "title": "№382 Статистика безработных, обратившихся в Центр занятости населения, в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kbk",
+     "label": "количество безработных",
+     "type": "String"
+    },
+    {
+     "key": "kbr",
+     "label": "количество безработных",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Астаны",
+   "modified": "2026-10-05T08:12:05.347Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasy_akimdiginin"
+  },
+  {
+   "slug": "nur-sultan_kalasy_akimdiginin_2",
+   "title": "№125 Сведения по приватизации в разрезе регионов",
+   "row_count": 46,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "Наименование города",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "Наименование города",
+     "type": "String"
+    },
+    {
+     "key": "trok",
+     "label": "Вид объектов ",
+     "type": "String"
+    },
+    {
+     "key": "tror",
+     "label": "Вид объектов ",
+     "type": "String"
+    },
+    {
+     "key": "nrok",
+     "label": "Наименование реализованных объектов ",
+     "type": "String"
+    },
+    {
+     "key": "nror",
+     "label": "Наименование реализованных объектов ",
+     "type": "String"
+    },
+    {
+     "key": "kk",
+     "label": "Количество и тип реализованных объектов ",
+     "type": "String"
+    },
+    {
+     "key": "kr",
+     "label": "Количество и тип реализованных объектов ",
+     "type": "String"
+    },
+    {
+     "key": "mrk",
+     "label": "Метод реализации",
+     "type": "String"
+    },
+    {
+     "key": "mrr",
+     "label": "Метод реализации",
+     "type": "String"
+    },
+    {
+     "key": "srk",
+     "label": "Общая сумма",
+     "type": "String"
+    },
+    {
+     "key": "srr",
+     "label": "Общая сумма",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление активов и государственных закупок города  Астаны\"",
+   "modified": "2025-12-03T04:46:59.040Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasy_akimdiginin_2"
+  },
+  {
+   "slug": "nur-sultan_kalasy_boiynsha_isk",
+   "title": "№124 Информация о реализованных инвестиционных проектах в разрезе регионов",
+   "row_count": 8,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nripk",
+     "label": "Наименование реализованного инвестиционного проекта",
+     "type": "String"
+    },
+    {
+     "key": "nripr",
+     "label": "Наименование реализованного инвестиционного проекта",
+     "type": "String"
+    },
+    {
+     "key": "ipk",
+     "label": "Инициатор проекта",
+     "type": "String"
+    },
+    {
+     "key": "ipr",
+     "label": "Инициатор проекта",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "Местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "Местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "ptrurrk",
+     "label": "Перечень товаров, работ и услуг, реализуемых в рамках проекта",
+     "type": "String"
+    },
+    {
+     "key": "ptrurrr",
+     "label": "Перечень товаров, работ и услуг, реализуемых в рамках проекта",
+     "type": "String"
+    },
+    {
+     "key": "pmk",
+     "label": "Проектная мощность",
+     "type": "String"
+    },
+    {
+     "key": "pmr",
+     "label": "Проектная мощность",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2026-07-13T09:51:29.534Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasy_boiynsha_isk"
+  },
+  {
+   "slug": "nur-sultan_kalasynda_inzhenerl",
+   "title": "№677 Данные о строительстве инженерно-коммуникационной инфраструктуры в разрезе регионов",
+   "row_count": 3,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "ssk",
+     "label": "сроки строительства",
+     "type": "String"
+    },
+    {
+     "key": "ssr",
+     "label": "сроки строительства",
+     "type": "String"
+    },
+    {
+     "key": "nsik",
+     "label": "наименование строящейся инфраструктуры",
+     "type": "String"
+    },
+    {
+     "key": "nsir",
+     "label": "наименование строящейся инфраструктуры",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "месторасположение",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "месторасположение ",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ Управление топливно-энергетического комплекса и коммунального хозяйства города  Астаны",
+   "modified": "2026-07-08T03:51:37.392Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynda_inzhenerl"
+  },
+  {
+   "slug": "nur-sultan_kalasyndagy_turgyn_",
+   "title": "№676   Данные о строительстве жилых домов в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kolichestvok",
+     "label": "наименование строящегося объекта",
+     "type": "String"
+    },
+    {
+     "key": "kolichestvor",
+     "label": "наименование строящегося объекта",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление строительства и жилищной политики города  Астаны»",
+   "modified": "2025-12-08T03:26:16.270Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasyndagy_turgyn_"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn__turistik",
+   "title": "№731 Информация о туристских маршрутах в разрезе регионов",
+   "row_count": 62,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_kaz",
+     "label": "Отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyi_period_rus",
+     "label": "Отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_regiona_kaz",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_regiona_rus",
+     "label": "Наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_turmarshruta_kaz",
+     "label": "Наименование туристского маршрута",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_turmarshruta_rus",
+     "label": "Наименование туристского маршрута",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2025-12-04T10:39:21.816Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn__turistik"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_aleumetti",
+   "title": "№675 Данные о строительстве объектов социального назначения в разрезе регионов ",
+   "row_count": 13,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "Город/район",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "Город/район",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "Дата начала",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "Дата начала",
+     "type": "String"
+    },
+    {
+     "key": "ssk",
+     "label": "Дата завершения",
+     "type": "String"
+    },
+    {
+     "key": "ssr",
+     "label": "Дата завершения",
+     "type": "String"
+    },
+    {
+     "key": "nsor",
+     "label": "Наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "nsok",
+     "label": "Наименование объекта",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "Адрес месторасположения",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "Адрес месторасположения",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление строительства города Астаны»",
+   "modified": "2025-08-20T12:13:06.980Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_aleumetti"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_atauly_al",
+   "title": " №377 Статистика по получателям адресной социальной помощи в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kgpaspk",
+     "label": "количество граждан, получающих адресную социальную помощь",
+     "type": "String"
+    },
+    {
+     "key": "kgpaspr",
+     "label": "количество граждан, получающих адресную социальную помощь",
+     "type": "String"
+    },
+    {
+     "key": "svk",
+     "label": "сумма выплат (тыс.тенге)",
+     "type": "String"
+    },
+    {
+     "key": "svr",
+     "label": "сумма выплат (тыс.тенге)",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Астаны",
+   "modified": "2026-10-15T09:11:55.271Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_atauly_al"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_dispanser",
+   "title": "№306 Перечень государственных диспансеров в разрезе регионов",
+   "row_count": 4,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "pbmuk",
+     "label": "перечень бесплатных мед услуг",
+     "type": "String"
+    },
+    {
+     "key": "pbmur",
+     "label": "перечень  бесплатных мед услуг",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "месторасположение",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "месторасположение",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": " ГУ \"Управление общественного здравоохранения города Астаны\"",
+   "modified": "2026-07-07T11:29:09.995Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_dispanser"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_kasipkerl",
+   "title": "№119 Перечень организаций по поддержке предпринимательства в разрезе регионов",
+   "row_count": 2,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyy_period_na_kaz",
+     "label": "Отчетный период на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "otchetnyy_period_na_rus",
+     "label": "Отчетный период на русском языке",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_na_kaz",
+     "label": "Наименование на казахском языке языке",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanie_na_rus",
+     "label": "Наименование на русском языке языке",
+     "type": "String"
+    },
+    {
+     "key": "adress_na_kaz",
+     "label": "Адрес месторасположения на казахском языке",
+     "type": "String"
+    },
+    {
+     "key": "adress_na_rus",
+     "label": "Адрес месторасположения на русском языке",
+     "type": "String"
+    },
+    {
+     "key": "kontakt",
+     "label": "Контактные телефоны",
+     "type": "String"
+    },
+    {
+     "key": "el_poshta",
+     "label": "Адрес электронной почты",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астаны\"",
+   "modified": "2025-12-05T10:59:35.210Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_kasipkerl"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_tauar_ond",
+   "title": "№162 Перечень предприятий-товаропроизводителей в разрезе регионов",
+   "row_count": 100,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nptk",
+     "label": "наименование предприятия товаропроизводителя",
+     "type": "String"
+    },
+    {
+     "key": "nptr",
+     "label": "наименование предприятия товаропроизводителя",
+     "type": "String"
+    },
+    {
+     "key": "vpk",
+     "label": "вид продукции",
+     "type": "String"
+    },
+    {
+     "key": "vpr",
+     "label": "вид продукции",
+     "type": "String"
+    },
+    {
+     "key": "yuiradresk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuiradresr",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "aepk",
+     "label": "адрес электронной почты",
+     "type": "String"
+    },
+    {
+     "key": "aepr",
+     "label": "адрес электронной почты",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "контактный телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление по инвестициям и развитию предпринимательства города  Астана\"",
+   "modified": "2026-07-07T09:57:06.597Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_tauar_ond"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_turgyn_ui",
+   "title": "№378 Статистика по получателям жилищной помощи в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kgpjpk",
+     "label": "кол-во граждан получающих жил помощь",
+     "type": "String"
+    },
+    {
+     "key": "kgpjpr",
+     "label": "кол-во граждан получающих жил помощь",
+     "type": "String"
+    },
+    {
+     "key": "svk",
+     "label": "сумма выплат",
+     "type": "String"
+    },
+    {
+     "key": "svr",
+     "label": "cумма выплат",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Астаны",
+   "modified": "2026-10-15T09:30:47.043Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_turgyn_ui"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_uide_okit",
+   "title": "№379 Статистика по получателям возмещения затрат на обучение на дому детей с инвалидностью в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kgpvk",
+     "label": "кол-во граждан получающих возмещение",
+     "type": "String"
+    },
+    {
+     "key": "kgpvr",
+     "label": "кол-во граждан получающих возмещение",
+     "type": "String"
+    },
+    {
+     "key": "svk",
+     "label": "сумма выплат",
+     "type": "String"
+    },
+    {
+     "key": "svr",
+     "label": "сумма выплат",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Астаны",
+   "modified": "2026-10-15T09:36:03.127Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_uide_okit"
+  },
+  {
+   "slug": "nur-sultan_kalasynyn_zhastar_u",
+   "title": "№824  Перечень региональных молодежных организаций ",
+   "row_count": 12,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nok",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "nor",
+     "label": "наименование организации",
+     "type": "String"
+    },
+    {
+     "key": "yuidiradresk",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "yuidiradresr",
+     "label": "юридический адрес",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "контактный телефон",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "байланыс телефон",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ «Управление по вопросам молодежной политики города  Астаны»",
+   "modified": "2026-07-08T04:21:55.396Z",
+   "url": "https://data.egov.kz/datasets/view?index=nur-sultan_kalasynyn_zhastar_u"
+  },
+  {
+   "slug": "opendata-api-uri364",
+   "title": "№383 Статистика проведения ярмарок вакансий в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "nrk",
+     "label": "наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "nrr",
+     "label": " наименование региона",
+     "type": "String"
+    },
+    {
+     "key": "kpyavk",
+     "label": "кол-во провед.ярмарок вакансий",
+     "type": "String"
+    },
+    {
+     "key": "kpyavr",
+     "label": "кол-во провед.ярмарок вакансий",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление занятости и социальной защиты города Нур-Султан",
+   "modified": "2026-06-30T08:16:16.061Z",
+   "url": "https://data.egov.kz/datasets/view?index=opendata-api-uri364"
+  },
+  {
+   "slug": "sporttyk_keshender_turaly_dere1",
+   "title": "№730 Перечень государственных спортивных объектов в разрезе регионов",
+   "row_count": 7,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "fior",
+     "label": "ФИО руководителя",
+     "type": "String"
+    },
+    {
+     "key": "fiork",
+     "label": "ФИО руководителя",
+     "type": "String"
+    },
+    {
+     "key": "mr",
+     "label": "Место расположения",
+     "type": "String"
+    },
+    {
+     "key": "mk",
+     "label": "Место расположения",
+     "type": "String"
+    },
+    {
+     "key": "rrr",
+     "label": "Режим работы",
+     "type": "String"
+    },
+    {
+     "key": "rrk",
+     "label": "Режим работы",
+     "type": "String"
+    },
+    {
+     "key": "vsr",
+     "label": "Виды спорта",
+     "type": "String"
+    },
+    {
+     "key": "vsk",
+     "label": "Виды спорта",
+     "type": "String"
+    },
+    {
+     "key": "nsksr",
+     "label": "Наименование спортивного комплекса и стадиона",
+     "type": "String"
+    },
+    {
+     "key": "nsksk",
+     "label": "Наименование спортивного комплекса и стадиона",
+     "type": "String"
+    },
+    {
+     "key": "ktr",
+     "label": "Контактные телефоны",
+     "type": "String"
+    },
+    {
+     "key": "ktk",
+     "label": "Контактные телефоны",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление физической культуры и спорта города Астаны",
+   "modified": "2026-01-27T08:51:43.992Z",
+   "url": "https://data.egov.kz/datasets/view?index=sporttyk_keshender_turaly_dere1"
+  },
+  {
+   "slug": "zhalpytaralgan_paidaly_kazbala",
+   "title": "№208  Данные по добыче общераспространенных полезных ископаемых в разрезе регионов",
+   "row_count": 1,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "opk",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "opr",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "kk",
+     "label": "комментарий",
+     "type": "String"
+    },
+    {
+     "key": "kr",
+     "label": "комментарий",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "Управление охраны окружающей среды и природопользования города Астаны",
+   "modified": "2026-07-07T10:54:21.818Z",
+   "url": "https://data.egov.kz/datasets/view?index=zhalpytaralgan_paidaly_kazbala"
+  },
+  {
+   "slug": "zhol_kurylysy_obektileri_tura1",
+   "title": "№680 Перечень объектов строительства дорог в разрезе регионов",
+   "row_count": 22,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "periodkaz",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "periodrus",
+     "label": "отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniekaz",
+     "label": "наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanierus",
+     "label": "наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "obektkaz",
+     "label": "наименование объекта строительства дорог",
+     "type": "String"
+    },
+    {
+     "key": "obektrus",
+     "label": "наименование объекта строительства дорог",
+     "type": "String"
+    },
+    {
+     "key": "mestonahozhdenıekaz",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "mestonahozhdenıerus",
+     "label": "местонахождение",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление транспорта и развития дорожно-транспортной инфраструктуры города Астаны\" ",
+   "modified": "2026-06-15T05:19:05.152Z",
+   "url": "https://data.egov.kz/datasets/view?index=zhol_kurylysy_obektileri_tura1"
+  },
+  {
+   "slug": "zholdy_zhondeu_obektileri_tur",
+   "title": "№681 Перечень объектов ремонта дорог в разрезе регионов",
+   "row_count": 13,
+   "row_count_truncated": false,
+   "fields": [
+    {
+     "key": "id",
+     "label": "№",
+     "type": "String"
+    },
+    {
+     "key": "periodkaz",
+     "label": "отчетный период",
+     "type": "String"
+    },
+    {
+     "key": "periodrus",
+     "label": "отчетный период ",
+     "type": "String"
+    },
+    {
+     "key": "naimenovaniekaz",
+     "label": "наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "naimenovanierus",
+     "label": "наименование населенного пункта",
+     "type": "String"
+    },
+    {
+     "key": "obektkaz",
+     "label": "наименование объекта ремонта дорог",
+     "type": "String"
+    },
+    {
+     "key": "obektrus",
+     "label": "наименование объекта ремонта дорог",
+     "type": "String"
+    },
+    {
+     "key": "mestonahozhdenıekaz",
+     "label": "местонахождение",
+     "type": "String"
+    },
+    {
+     "key": "mestonahozhdenıerus",
+     "label": "местонахождение",
+     "type": "String"
+    }
+   ],
+   "has_coordinates": false,
+   "coordinate_fields": [],
+   "coordinates_in_rows": false,
+   "owner": "ГУ \"Управление транспорта и развития дорожно - транспортной инфраструктуры города Астаны\"",
+   "modified": "2026-06-15T05:42:41.354Z",
+   "url": "https://data.egov.kz/datasets/view?index=zholdy_zhondeu_obektileri_tur"
+  }
+ ]
+}

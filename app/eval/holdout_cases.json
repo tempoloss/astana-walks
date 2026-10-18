@@ -1,0 +1,876 @@
+[
+  {
+    "id": "h01-akorda-wk-beshbarmak",
+    "label": "Акорда · будни 13:00 · обычная погода · хочу поесть бешбармак",
+    "origin": {
+      "name": "Акорда",
+      "lat": 51.1258,
+      "lon": 71.4464
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Хочу поесть бешбармак",
+    "tz": false,
+    "axes": {
+      "origin": "akorda",
+      "when": "wk13",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife",
+        "kids_playground",
+        "park_garden",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Просят конкретное блюдо (национальная кухня): ресторан/кафе. Фастфуд и бар — не то, что имели в виду. Идеал — заведение казахской кухни, если оно есть в данных."
+    }
+  },
+  {
+    "id": "h02-nurly-fri-train",
+    "label": "Нурлы Жол вокзал · пт 17:00 · обычная погода · час до поезда, перекусить",
+    "origin": {
+      "name": "Нурлы Жол (вокзал)",
+      "lat": 51.1124,
+      "lon": 71.5317
+    },
+    "when": "2026-10-23T17:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "У меня час до поезда, где быстро перекусить рядом",
+    "tz": false,
+    "axes": {
+      "origin": "nurly",
+      "when": "fri17",
+      "weather": "normal",
+      "persona": "transit"
+    },
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "museum_gallery",
+        "kids_playground",
+        "sport",
+        "other",
+        "park_garden",
+        "attraction_landmark"
+      ],
+      "max_walk_min_one_way": 7,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Час до поезда: только очень близко (≤7 мин в одну сторону), маршрут туда-обратно с едой укладывается в 60 мин; никаких достопримечательностей и музеев."
+    }
+  },
+  {
+    "id": "h03-keruen-sat-date",
+    "label": "ТРЦ Керуен · сб 19:30 · обычная погода · свидание",
+    "origin": {
+      "name": "ТРЦ Керуен",
+      "lat": 51.1271,
+      "lon": 71.429
+    },
+    "when": "2026-10-24T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "куда пойти с девушкой вечером",
+    "tz": false,
+    "axes": {
+      "origin": "keruen",
+      "when": "sat19",
+      "weather": "normal",
+      "persona": "date"
+    },
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe",
+        "culture_theatre_cinema",
+        "entertainment",
+        "attraction_landmark",
+        "viewpoint",
+        "bar_nightlife",
+        "park_garden"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "kids_playground",
+        "sport",
+        "other",
+        "coworking_library"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 150,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Вечер субботы, романтика: ресторан, кафе, кино/театр, подсвеченная достопримечательность или набережная. Без фастфуда, детских площадок, спорта."
+    }
+  },
+  {
+    "id": "h04-lovers-sun-stroller",
+    "label": "Парк Влюблённых · вс 11:00 · обычная погода · с коляской и без алкоголя",
+    "origin": {
+      "name": "Парк Влюблённых",
+      "lat": 51.1315,
+      "lon": 71.4092
+    },
+    "when": "2026-10-18T11:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "гулять с коляской и без алкоголя",
+    "tz": false,
+    "axes": {
+      "origin": "lovers",
+      "when": "sun11",
+      "weather": "normal",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "cafe",
+        "kids_playground",
+        "museum_gallery",
+        "attraction_landmark",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "sport",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Два ограничения сразу: доступно для коляски и без алкоголя — бары/ночные заведения исключены, step-free; если доступность в данных не указана, это надо пометить.",
+      "step_free": true
+    }
+  },
+  {
+    "id": "h05-arena-tue-rain",
+    "label": "Астана Арена · будни 19:00 · дождь 4 мм/ч, +3 · переждать дождь",
+    "origin": {
+      "name": "Астана Арена",
+      "lat": 51.1084,
+      "lon": 71.4029
+    },
+    "when": "2026-10-20T19:00",
+    "weather_override": {
+      "apparent_c": 3.0,
+      "precip_mm": 4.0
+    },
+    "air_override": null,
+    "query": "где переждать дождь",
+    "tz": false,
+    "axes": {
+      "origin": "arena",
+      "when": "wk19",
+      "weather": "rain",
+      "persona": "weather"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "mall",
+        "museum_gallery",
+        "culture_theatre_cinema",
+        "entertainment",
+        "restaurant",
+        "coworking_library",
+        "fast_food"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground",
+        "attraction_landmark",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Сильный дождь: только крытые места рядом (≤10 мин). Парки/смотровые исключены."
+    }
+  },
+  {
+    "id": "h06-kenesary-sat-first-time",
+    "label": "ул. Кенесары · сб 12:00 · обычная погода · первый раз в городе, 2 часа",
+    "origin": {
+      "name": "ул. Кенесары (правый берег, старый город)",
+      "lat": 51.1647,
+      "lon": 71.4208
+    },
+    "when": "2026-10-24T12:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "я первый раз в Астане, хочу погулять часа два, что посмотреть",
+    "tz": false,
+    "axes": {
+      "origin": "kenesary",
+      "when": "sat12",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "park_garden",
+        "museum_gallery",
+        "viewpoint",
+        "cafe",
+        "restaurant",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "sport",
+        "other"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 150,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Турист, ~2 часа: достопримечательности, парк, музей, кафе в пределах 20 мин пешком; маршрут укладывается в 150 мин. Старый город (правый берег) беднее на POI — допустимо более дальнее, но не за пределами 20 мин."
+    }
+  },
+  {
+    "id": "h07-hazret-holiday-laptop",
+    "label": "Хазрет Султан · праздник 26.10 15:00 · обычная погода · английский запрос, поработать с ноутбуком",
+    "origin": {
+      "name": "Мечеть Хазрет Султан",
+      "lat": 51.1254,
+      "lon": 71.4721
+    },
+    "when": "2026-10-26T15:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "where can I work with a laptop",
+    "tz": false,
+    "axes": {
+      "origin": "hazret",
+      "when": "hol15",
+      "weather": "normal",
+      "persona": "work"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife",
+        "kids_playground",
+        "park_garden",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Запрос на английском: кафе/коворкинг с Wi‑Fi и розетками; на праздник «открыто» по OSM должно быть понижено до «неизвестно» с пометкой; Wi‑Fi/розетки заявлять только при наличии в данных.",
+      "needs_wifi_socket": true
+    }
+  },
+  {
+    "id": "h08-nu-wed-kk-kids",
+    "label": "Назарбаев Университет · будни 10:00 · обычная погода · казахский запрос: куда с ребёнком",
+    "origin": {
+      "name": "Назарбаев Университет",
+      "lat": 51.0921,
+      "lon": 71.3976
+    },
+    "when": "2026-10-21T10:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "баламен қайда баруға болады",
+    "tz": false,
+    "axes": {
+      "origin": "nu",
+      "when": "wk10",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "park_garden",
+        "museum_gallery",
+        "entertainment",
+        "mall",
+        "cafe",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "sport",
+        "other",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Запрос на казахском («куда можно пойти с ребёнком»): детские места/парк/интерактивный музей; бары не подходят."
+    }
+  },
+  {
+    "id": "h09-botsad-thu-typos",
+    "label": "Ботанический сад · будни 14:00 · обычная погода · запрос с опечатками: дёшево и быстро поесть",
+    "origin": {
+      "name": "Ботанический сад",
+      "lat": 51.1075,
+      "lon": 71.4171
+    },
+    "when": "2026-10-22T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "кде паесть дешево и быстра",
+    "tz": false,
+    "axes": {
+      "origin": "botsad",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "museum_gallery",
+        "park_garden",
+        "kids_playground",
+        "sport",
+        "other",
+        "attraction_landmark"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Опечатки «кде паесть дешево и быстра»: надо понять как «поесть быстро и недорого» — фастфуд/кафе/столовая; музеи и парки — мимо."
+    }
+  },
+  {
+    "id": "h10-opera-fri-night-out",
+    "label": "Астана Опера · пт 22:00 · обычная погода · выпить и потанцевать",
+    "origin": {
+      "name": "Астана Опера",
+      "lat": 51.1355,
+      "lon": 71.4107
+    },
+    "when": "2026-10-23T22:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "хочу выпить и потанцевать",
+    "tz": false,
+    "axes": {
+      "origin": "opera",
+      "when": "fri22",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "restaurant",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "park_garden",
+        "coworking_library",
+        "fast_food",
+        "other"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 120,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Позднее время: заведения, открытые в момент прихода (бар/клуб/развлечения). Закрытое на момент прихода — грубая ошибка; неизвестные часы помечать."
+    }
+  },
+  {
+    "id": "h11-akorda-holiday-cold-tea",
+    "label": "Акорда · праздник 16.12 14:00 · мороз −22 · погреться, горячий чай",
+    "origin": {
+      "name": "Акорда",
+      "lat": 51.1258,
+      "lon": 71.4464
+    },
+    "when": "2026-12-16T14:00",
+    "weather_override": {
+      "apparent_c": -22.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "где погреться и выпить горячего чая",
+    "tz": false,
+    "axes": {
+      "origin": "akorda",
+      "when": "hol14",
+      "weather": "cold",
+      "persona": "weather"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "mall",
+        "museum_gallery",
+        "culture_theatre_cinema",
+        "entertainment",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "attraction_landmark",
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 8,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Мороз −22 и праздник (День Независимости): крытое тёплое место очень близко (≤8 мин); часы «открыто» по OSM на праздник — только как «неизвестно»."
+    }
+  },
+  {
+    "id": "h12-keruen-sun-smog-air",
+    "label": "ТРЦ Керуен · вс 15:00 · смог PM2.5 90 · «хочу пройтись по свежему воздуху»",
+    "origin": {
+      "name": "ТРЦ Керуен",
+      "lat": 51.1271,
+      "lon": 71.429
+    },
+    "when": "2026-10-18T15:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 90.0
+    },
+    "query": "хочу пройтись по свежему воздуху",
+    "tz": false,
+    "axes": {
+      "origin": "keruen",
+      "when": "sun15",
+      "weather": "smog",
+      "persona": "weather"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "mall",
+        "museum_gallery",
+        "culture_theatre_cinema",
+        "entertainment",
+        "restaurant",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground",
+        "attraction_landmark",
+        "sport",
+        "other",
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Просьба противоречит условиям: при PM2.5 90 на улице гулять вредно. Хороший ответ — крытые варианты с честной пометкой про воздух, а не парк."
+    }
+  },
+  {
+    "id": "h13-nurly-tue-late-hungry",
+    "label": "Нурлы Жол вокзал · будни 23:30 · обычная погода · ночью, только приехал, голодный",
+    "origin": {
+      "name": "Нурлы Жол (вокзал)",
+      "lat": 51.1124,
+      "lon": 71.5317
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "куда пойти ночью, я только приехал и голодный",
+    "tz": false,
+    "axes": {
+      "origin": "nurly",
+      "when": "wk2330",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "fast_food",
+        "cafe",
+        "bar_nightlife",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "museum_gallery",
+        "park_garden",
+        "kids_playground",
+        "coworking_library",
+        "sport",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Ночь, нужна еда: работающее заведение (круглосуточный фастфуд/кафе/ресторан) рядом; закрытое на момент прихода недопустимо, неизвестные часы — с пометкой."
+    }
+  },
+  {
+    "id": "h14-kenesary-wed-dog",
+    "label": "ул. Кенесары · будни 08:30 · обычная погода · выгулять собаку",
+    "origin": {
+      "name": "ул. Кенесары (правый берег, старый город)",
+      "lat": 51.1647,
+      "lon": 71.4208
+    },
+    "when": "2026-10-21T08:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "выгулять собаку",
+    "tz": false,
+    "axes": {
+      "origin": "kenesary",
+      "when": "wk0830",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "forbidden_categories": [
+        "mall",
+        "bar_nightlife",
+        "restaurant",
+        "museum_gallery",
+        "fast_food",
+        "kids_playground",
+        "sport",
+        "other",
+        "coworking_library"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Парк/сквер/набережная рядом (≤12 мин); внутренние помещения для собаки не подходят."
+    }
+  },
+  {
+    "id": "h15-arena-sat-football",
+    "label": "Астана Арена · сб 16:30 · обычная погода · поиграть в футбол или побегать",
+    "origin": {
+      "name": "Астана Арена",
+      "lat": 51.1084,
+      "lon": 71.4029
+    },
+    "when": "2026-10-24T16:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "где можно поиграть в футбол или побегать",
+    "tz": false,
+    "axes": {
+      "origin": "arena",
+      "when": "sat1630",
+      "weather": "normal",
+      "persona": "sport"
+    },
+    "expected": {
+      "allowed_categories": [
+        "sport",
+        "park_garden",
+        "entertainment",
+        "kids_playground"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "mall",
+        "restaurant",
+        "museum_gallery",
+        "coworking_library",
+        "other"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Спортивный запрос: спортплощадка/стадион/парк для пробежки; кафе и ТРЦ — мимо. Если спортобъектов в данных нет — это пробел данных."
+    }
+  },
+  {
+    "id": "h16-lovers-tue-sunset",
+    "label": "Парк Влюблённых · будни 16:45 · обычная погода · смотреть на закат",
+    "origin": {
+      "name": "Парк Влюблённых",
+      "lat": 51.1315,
+      "lon": 71.4092
+    },
+    "when": "2026-10-20T16:45",
+    "weather_override": null,
+    "air_override": null,
+    "query": "где красиво смотреть на закат",
+    "tz": false,
+    "axes": {
+      "origin": "lovers",
+      "when": "wk1645",
+      "weather": "normal",
+      "persona": "viewpoint"
+    },
+    "expected": {
+      "allowed_categories": [
+        "viewpoint",
+        "park_garden",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife",
+        "mall",
+        "kids_playground",
+        "sport",
+        "other",
+        "coworking_library"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Закат около 17:45: смотровая/набережная/парк с видом в пределах 15 мин; помещения не подходят."
+    }
+  },
+  {
+    "id": "h17-saparzhai-tue-coffee",
+    "label": "Автовокзал Сапаржай · будни 12:00 · обычная погода · кофе (окраина, мало POI)",
+    "origin": {
+      "name": "Автовокзал Сапаржай",
+      "lat": 51.194,
+      "lon": 71.4117
+    },
+    "when": "2026-10-20T12:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Где здесь можно кофе выпить",
+    "tz": false,
+    "axes": {
+      "origin": "saparzhai",
+      "when": "wk12",
+      "weather": "normal",
+      "persona": "coffee"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "restaurant",
+        "mall",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "kids_playground",
+        "sport",
+        "other",
+        "museum_gallery",
+        "park_garden"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Окраина с редкой застройкой: хоть что-то кофейное/кафе в 15 мин либо честный пустой/расширенный ответ. Нарушения лимита ходьбы не допускаются."
+    }
+  },
+  {
+    "id": "h18-nu-tue-en-read",
+    "label": "Назарбаев Университет · будни 20:00 · обычная погода · английский запрос: тихо почитать, открыто допоздна",
+    "origin": {
+      "name": "Назарбаев Университет",
+      "lat": 51.0921,
+      "lon": 71.3976
+    },
+    "when": "2026-10-20T20:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "quiet place to read, open late",
+    "tz": false,
+    "axes": {
+      "origin": "nu",
+      "when": "wk20",
+      "weather": "normal",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "coworking_library",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "sport",
+        "other",
+        "park_garden"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Английский запрос: тихая библиотека/кафе; время вечернее — место должно быть открыто к приходу, неизвестные часы помечать."
+    }
+  },
+  {
+    "id": "h19-hazret-sun-kk-museum",
+    "label": "Хазрет Султан · вс 11:00 · обычная погода · казахский запрос: хочу в музей или на выставку",
+    "origin": {
+      "name": "Мечеть Хазрет Султан",
+      "lat": 51.1254,
+      "lon": 71.4721
+    },
+    "when": "2026-10-18T11:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Музей немесе көрмеге барғым келеді",
+    "tz": false,
+    "axes": {
+      "origin": "hazret",
+      "when": "sun11k",
+      "weather": "normal",
+      "persona": "culture"
+    },
+    "expected": {
+      "allowed_categories": [
+        "museum_gallery",
+        "culture_theatre_cinema",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife",
+        "kids_playground",
+        "sport",
+        "other",
+        "park_garden"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 150,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Запрос на казахском («хочу в музей или на выставку»): музей/галерея/культурное место; еда и парки — мимо."
+    }
+  },
+  {
+    "id": "h20-keruen-newyear-cold",
+    "label": "ТРЦ Керуен · Новый год 01.01 15:00 · мороз −15 · куда сходить, что открыто",
+    "origin": {
+      "name": "ТРЦ Керуен",
+      "lat": 51.1271,
+      "lon": 71.429
+    },
+    "when": "2027-01-01T15:00",
+    "weather_override": {
+      "apparent_c": -15.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "куда сходить на Новый год, что открыто",
+    "tz": false,
+    "axes": {
+      "origin": "keruen",
+      "when": "hol15ny",
+      "weather": "cold",
+      "persona": "holiday"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "mall",
+        "museum_gallery",
+        "entertainment",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "attraction_landmark",
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 90,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "1 января, мороз: крытые места ≤10 мин; «что открыто» — но в праздник OSM-часы ненадёжны, поэтому «открыто» нельзя утверждать, только «неизвестно» с пометкой."
+    }
+  }
+]

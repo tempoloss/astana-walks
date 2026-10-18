@@ -1,0 +1,52 @@
+{
+ "domain": "nmrk.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:00+00:00",
+ "pages": [
+  "https://nmrk.kz/ru/about-museum/contacts/"
+ ],
+ "branches": [
+  {
+   "name": "Национальный музей Республики Казахстан",
+   "address": "г. Астана, проспект Тауелсиздик 54",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 (91-90-35)",
+   "opening_hours_raw": "10:00 - 18:00 Вт-Вс",
+   "opening_hours_osm": "Tu-Su 10:00-18:00",
+   "description": null,
+   "url": "https://nmrk.kz/ru/about-museum/contacts/",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "https://nmrk.kz/ru/about-museum/contacts/",
+     "snippet": "Рабочее время Национального музея РК 10:00 - 18:00 Вт-Вс",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://nmrk.kz/ru/about-museum/contacts/",
+     "snippet": "Ресепшн: +7 7172 (91-90-35)",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://nmrk.kz/ru/about-museum/contacts/",
+     "snippet": "г. Астана, проспект Тауелсиздик 54",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://nmrk.kz/ru/about-museum/contacts/",
+     "snippet": "Национального музея РК",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Page also says 'Последний вторник месяца санитарный день' (closed on the last Tuesday of the month) and 'Касса: 10:00 - 17:00'; opening_hours_osm does not encode these exceptions.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

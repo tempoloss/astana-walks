@@ -1,0 +1,149 @@
+
+Layer: Mkrs (ID: 0)
+ ArcGIS REST Services Directory
+Login
+            | 
+Get Token
+Home
+  > 
+services
+  > 
+addr (MapServer)
+  > 
+Mkrs
+Help
+ | 
+API Reference
+JSON
+Layer: Mkrs (ID: 0)
+Name:
+ Mkrs 
+Display Field:
+ NAME 
+Type: 
+ Feature Layer 
+Geometry Type:
+ esriGeometryPolygon 
+Description: 
+Definition Expression: 
+ N/A 
+Copyright Text: 
+Default Visibility: false 
+MaxRecordCount: 
+ 1000
+Supported Query Formats: 
+ JSON, AMF
+Min Scale: 
+ 0
+Max Scale: 
+ 0
+Supports Advanced Queries: 
+ true
+Supports Statistics: 
+ true
+Has Labels: 
+ false
+Can Modify Layer: 
+ false
+Can Scale Symbols: 
+ false
+Use Standardized Queries: 
+ true
+Extent:
+XMin: -5120763.26769827
+YMin: -9997963.94301857
+XMax: 6120763.26769827
+YMax: 9997963.94301857
+	Spatial Reference: 
+32642
+ (32642)
+Drawing Info: 
+Renderer: 
+Simple Renderer:
+Symbol: 
+Style: 
+ esriSFSSolid 
+Color: 
+[246, 190, 250, 255]  
+Outline: 
+Style: 
+ esriSLSSolid 
+Color: 
+[110, 110, 110, 255]  
+Width: 
+ 0
+Label: 
+Description: 
+Transparency: 
+ 0 
+Labeling Info: 
+Advanced Query Capabilities: 
+Supports Statistics: true
+Supports OrderBy: true
+Supports Distinct: true
+Supports Pagination: false
+Supports TrueCurve: true
+HasZ: false 
+HasM: false 
+Has Attachments: 
+ false 
+HTML Popup Type: 
+ esriServerHTMLPopupTypeAsHTMLText 
+Type ID Field: 
+ null
+Fields: 
+OBJECTID
+(
+  type: esriFieldTypeOID
+  , 
+  alias: OBJECTID
+)
+NAME
+(
+  type: esriFieldTypeString
+  , 
+  alias: NAME
+  , 
+  length: 50
+)
+ID
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID
+)
+ID_REG
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_REG
+)
+SHAPE
+(
+  type: esriFieldTypeGeometry
+  , 
+  alias: SHAPE
+)
+SHAPE.AREA
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.AREA
+)
+SHAPE.LEN
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.LEN
+)
+ID_CITY
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_CITY
+)
+Supported Operations
+:
+Query
+Generate Renderer
+Return Updates

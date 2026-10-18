@@ -1,0 +1,26 @@
+{
+ "notes": {
+  "status": 200,
+  "open": 1,
+  "closed": 99,
+  "open_samples": [
+   "\"Нету, тут кафе чтоли\"\nThe place has gone or never existed. A user of Organic Ma"
+  ]
+ },
+ "inat_bbox": 394681868,
+ "inat_bbox_reuse": 394681876,
+ "created_by": {
+  "JOSM/1.5 (19481 en)": 34,
+  "iD 2.42.2": 24,
+  "StreetComplete 63.4": 16,
+  "StreetComplete 64.0-alpha2": 5,
+  "JOSM/1.5 (19613 en)": 3,
+  "JOSM/1.5 (19439 en)": 2,
+  "JOSM/1.5 (19555 ru)": 2,
+  "JOSM/1.5 (19439 ru)": 2,
+  "Every Door Android 7.1": 2,
+  "StreetComplete 64.0-beta2": 1,
+  "Vespucci 22.1.0.0": 1,
+  "osmtools/30252 (linux)": 1
+ }
+}

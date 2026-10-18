@@ -1,0 +1,38 @@
+{
+ "domain": "lask.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://lask.kz/contacts-complex/contacts/"
+ ],
+ "branches": [
+  {
+   "name": "LASK",
+   "address": "Астана қаласы, Тұран даңғылы, 59",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 70 71 73",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://lask.kz/contacts-complex/contacts/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://lask.kz/contacts-complex/contacts/",
+     "snippet": "Астана қаласы, Тұран даңғылы, 59"
+    },
+    {
+     "field": "phone",
+     "url": "https://lask.kz/contacts-complex/contacts/",
+     "snippet": "телефоны +7 (7172) 70 71 73"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.65
+  }
+ ],
+ "notes": "Contacts page prints «Мекен-жайы Астана қаласы, Тұран даңғылы, 59» and «Қабылдау бөлмесінің телефоны +7 (7172) 70 71 73». The 'Визит частары' page renders the schedule as an image and the 07:00-23:00 text on the fitness page is the 'Fitnes Qazaqstan' gym inside the complex — the complex's own hours are not printed verbatim; hours not stored. Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

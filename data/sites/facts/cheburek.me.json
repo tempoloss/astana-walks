@@ -1,0 +1,68 @@
+{
+ "domain": "cheburek.me",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:21:04+00:00",
+ "pages": [
+  "https://cheburek.me"
+ ],
+ "branches": [
+  {
+   "name": "ЧебурекМИ, ул. Богенбай батыра, 53 (Астана)",
+   "address": "ул. Богенбай батыра, 53",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://cheburek.me",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://cheburek.me",
+     "snippet": "ул. Богенбай батыра, 53",
+     "fetched_at": "2026-10-17T09:21:04+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://cheburek.me",
+     "snippet": "ЧебурекМИ",
+     "fetched_at": "2026-10-17T09:21:04+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "ЧебурекМИ, проспект Туран, 4/9 (Астана)",
+   "address": "проспект Туран, 4/9",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://cheburek.me",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://cheburek.me",
+     "snippet": "проспект Туран, 4/9",
+     "fetched_at": "2026-10-17T09:21:04+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://cheburek.me",
+     "snippet": "ЧебурекМИ",
+     "fetched_at": "2026-10-17T09:21:04+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The Kazakhstan section's 'Астана' tooltip menu lists the two outlet addresses above; the page carries no per-venue opening hours or phones (city block only lists addresses), so those fields stay None — never inferred. The remaining tooltip menus are Russian/Belarusian/KZ cities outside Astana.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

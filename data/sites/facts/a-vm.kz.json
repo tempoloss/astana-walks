@@ -1,0 +1,93 @@
+{
+ "domain": "a-vm.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:03+00:00",
+ "pages": [
+  "https://a-vm.kz/objects/bayterek/",
+  "https://a-vm.kz/objects/peace/"
+ ],
+ "branches": [
+  {
+   "name": "Байтерек",
+   "address": "бульвар Нуржол, 14",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 44-64-72",
+   "opening_hours_raw": "1 июня – 31 августа – с 10:00 до 22:00 1 сентября – 31 мая – с 10:00 до 21:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://a-vm.kz/objects/bayterek/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://a-vm.kz/objects/bayterek/",
+     "snippet": "Байтерек",
+     "fetched_at": "2026-10-17T09:02:02+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://a-vm.kz/objects/bayterek/",
+     "snippet": "Адрес: бульвар Нуржол, 14",
+     "fetched_at": "2026-10-17T09:02:02+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://a-vm.kz/objects/bayterek/",
+     "snippet": "1 июня – 31 августа – с 10:00 до 22:00 1 сентября – 31 мая – с 10:00 до 21:00",
+     "fetched_at": "2026-10-17T09:02:02+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://a-vm.kz/objects/bayterek/",
+     "snippet": "+7 (7172) 44-64-72",
+     "fetched_at": "2026-10-17T09:02:02+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.85
+  },
+  {
+   "name": "Дворец Мира и Согласия",
+   "address": "Проспект Тауелсиздик, 57",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 570 376",
+   "opening_hours_raw": "1 июня – 31 августа – с 10:00 до 20:00 1 сентября – 31 мая – с 10:00 до 18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://a-vm.kz/objects/peace/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://a-vm.kz/objects/peace/",
+     "snippet": "Мира и Согласия",
+     "fetched_at": "2026-10-17T09:02:03+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://a-vm.kz/objects/peace/",
+     "snippet": "Адрес: Проспект Тауелсиздик, 57",
+     "fetched_at": "2026-10-17T09:02:03+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://a-vm.kz/objects/peace/",
+     "snippet": "1 июня – 31 августа – с 10:00 до 20:00 1 сентября – 31 мая – с 10:00 до 18:00",
+     "fetched_at": "2026-10-17T09:02:03+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://a-vm.kz/objects/peace/",
+     "snippet": "+7 7172 570 376",
+     "fetched_at": "2026-10-17T09:02:03+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "Seasonal schedules (summer/winter ranges) cannot be expressed in opening_hours from this phrasing, so opening_hours_osm stays None and the verbatim text is kept (no days named at all: needs_days). Price lists (Байтерек 2500 ₸ и т. п.) are on the same pages but do not belong to the branch schema. The first phone is the venue's public number; «по коммерческим вопросам» numbers not stored. The museum inside the Пирамида has its own operator (astana-piramida.kz, crawled separately).",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

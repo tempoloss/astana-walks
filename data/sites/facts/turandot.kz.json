@@ -1,0 +1,40 @@
+{
+ "domain": "turandot.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.turandot.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Turandot",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Работаем с 12:00 до 00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.turandot.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.turandot.kz/",
+     "snippet": "content=\"Turandot\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.turandot.kz/",
+     "snippet": "Астане, Шымкенте и Караганде. Работаем с 12:00 до 00:00."
+    }
+   ],
+   "method": "html",
+   "confidence": 0.55
+  }
+ ],
+ "notes": "The restaurant chain site (Angular, robots allow) states in its meta description it operates in Алматы, Астана, Шымкент and Караганда and 'Работаем с 12:00 до 00:00' — chain-wide schedule kept raw (needs_days, 00:00 close). Its JSON-LD Restaurant card carries the Алматинский address (пр-т Абая, 157А) only; /contacts and /menu render city lists client-side and print no Astana street address — so no address stored; the hotline numbers (+7 771 709 99 00, +7 (777) 777-77-77) are chain-wide, not per-branch.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

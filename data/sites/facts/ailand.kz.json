@@ -1,0 +1,184 @@
+{
+ "domain": "ailand.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:00+00:00",
+ "pages": [
+  "https://ailand.kz/ru/schedule-ru/"
+ ],
+ "branches": [
+  {
+   "name": "Океанариум (ЦСО Ailand)",
+   "address": "г. Астана, ул. Шоссе Коргалжын 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 757 55 55, +7 7172 57 55 55",
+   "opening_hours_raw": "10:00 — 21:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://ailand.kz/ru/schedule-ru/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ОКЕАНАРИУМ",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ОКЕАНАРИУМ 10:00 — 21:00",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "г. Астана, ул. Шоссе Коргалжын 2",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "+7 708 757 55 55, +7 7172 57 55 55",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Джунгли (ЦСО Ailand)",
+   "address": "г. Астана, ул. Шоссе Коргалжын 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 757 55 55, +7 7172 57 55 55",
+   "opening_hours_raw": "12:00 — 20:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://ailand.kz/ru/schedule-ru/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ДЖУНГЛИ",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ДЖУНГЛИ 12:00 — 20:00",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "г. Астана, ул. Шоссе Коргалжын 2",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "+7 708 757 55 55, +7 7172 57 55 55",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Экзотариум (ЦСО Ailand)",
+   "address": "г. Астана, ул. Шоссе Коргалжын 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 757 55 55, +7 7172 57 55 55",
+   "opening_hours_raw": "10:00 — 20:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://ailand.kz/ru/schedule-ru/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ЭКЗОТАРИУМ",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "ЭКЗОТАРИУМ 10:00 — 20:00",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "г. Астана, ул. Шоссе Коргалжын 2",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "+7 708 757 55 55, +7 7172 57 55 55",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Колесо обозрения (ЦСО Ailand)",
+   "address": "г. Астана, ул. Шоссе Коргалжын 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 757 55 55, +7 7172 57 55 55",
+   "opening_hours_raw": "10:00-22:00 ПН-ЧТ; 10:00-00:00 ПТ-ВС",
+   "opening_hours_osm": "Mo-Th 10:00-22:00; Fr-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://ailand.kz/ru/schedule-ru/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "КОЛЕСО ОБОЗРЕНИЯ",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "КОЛЕСО ОБОЗРЕНИЯ 10:00-22:00 ПН-ЧТ",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "г. Астана, ул. Шоссе Коргалжын 2",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "+7 708 757 55 55, +7 7172 57 55 55",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ailand.kz/ru/schedule-ru/",
+     "snippet": "10:00-00:00 ПТ-ВС",
+     "fetched_at": "2026-10-17T09:02:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Четыре объекта одного развлекательного центра, у каждого своя строка расписания; 'работает без выходных' — заголовок без дней, поэтому day-less строки остаются raw (Океанариум 10:00 — 21:00, Экзотариум 10:00 — 20:00, Джунгли 12:00 — 20:00); Колесо обозрения даёт ПН-ЧТ/ПТ-ВС диапазоны и конвертируется (00:00 закрытие -> 24:00). Ограничение касс ('Билеты ... до 20:30') не хранится. Телефоны и адрес — общие номера/адрес центра из подвала той же страницы (не per-attraction). Парк аттракционов/Cosmo Arena без постоянного расписания.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

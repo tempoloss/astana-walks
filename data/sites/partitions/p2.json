@@ -1,0 +1,1107 @@
+{
+ "partition": "p2",
+ "weight": 156.0,
+ "items": [
+  {
+   "kind": "domain",
+   "domain": "shashlychok.kz",
+   "poi_count": 21,
+   "categories": {
+    "fast_food": 20,
+    "cafe": 1
+   },
+   "sample_names": [
+    "ШашлычОк",
+    "Шашлычок",
+    "Шашлычок Астана"
+   ],
+   "urls": [
+    "https://shashlychok.kz",
+    "http://shashlychok.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/12049030088",
+    "node/12049030089",
+    "node/12049030091",
+    "node/12049030092",
+    "node/12049030093",
+    "node/12049030094",
+    "node/12049030095",
+    "node/12049030096",
+    "node/12049030097",
+    "node/12049030099",
+    "node/12049030100",
+    "node/12049030101",
+    "node/12049030102",
+    "node/12049030103",
+    "node/12049030104",
+    "node/12049030105",
+    "node/12049030106",
+    "node/12049030107",
+    "node/12179661909",
+    "node/12179661910",
+    "overture/10dc7f4c-68e3-44bb-8a60-3bb44e8bbdc5"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "goodproject.kz",
+   "poi_count": 7,
+   "categories": {
+    "restaurant": 4,
+    "bar_nightlife": 2,
+    "cafe": 1
+   },
+   "sample_names": [
+    "Lilou",
+    "Eva",
+    "Malena",
+    "Selfie",
+    "Soul kitchen"
+   ],
+   "urls": [
+    "https://goodproject.kz",
+    "http://www.goodproject.kz",
+    "http://goodproject.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/10798920167",
+    "node/10798920168",
+    "node/10798945978",
+    "node/10798946230",
+    "node/12104374564",
+    "node/4929158878",
+    "overture/aeafb100-ac81-4b93-8e26-dcc99616e166"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "crepecafe.kz",
+   "poi_count": 5,
+   "categories": {
+    "cafe": 5
+   },
+   "sample_names": [
+    "CrepeCafe"
+   ],
+   "urls": [
+    "https://crepecafe.kz"
+   ],
+   "brands": [
+    "Crêpe Café"
+   ],
+   "poi_ids": [
+    "node/10559299807",
+    "node/10559341312",
+    "node/11345949789",
+    "node/13667384701",
+    "node/6408271985"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "papajohns.kz",
+   "poi_count": 4,
+   "categories": {
+    "fast_food": 4
+   },
+   "sample_names": [
+    "Papa John's",
+    "Papa Johns Pizza"
+   ],
+   "urls": [
+    "https://www.papajohns.kz",
+    "https://order.papajohns.kz/papajohnskazakhstan/10621",
+    "https://order.papajohns.kz/papajohnskazakhstan/11029"
+   ],
+   "brands": [
+    "Papa John's"
+   ],
+   "poi_ids": [
+    "overture/630dd7d3-41eb-4e4e-8694-2e34b9df6b95",
+    "overture/c287ff49-d1f6-465c-8a6a-7b41ec09895f",
+    "overture/c5d6367a-797c-46d7-8d5c-7abb9d816f06",
+    "overture/f2c59c84-dc79-4b8f-9e6b-6f676ceb54f0"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "oceanbasket.kz",
+   "poi_count": 3,
+   "categories": {
+    "restaurant": 3
+   },
+   "sample_names": [
+    "Ocean Basket",
+    "ocean basket"
+   ],
+   "urls": [
+    "https://oceanbasket.kz",
+    "http://www.oceanbasket.kz",
+    "http://oceanbasket.kz"
+   ],
+   "brands": [
+    "Ocean Basket"
+   ],
+   "poi_ids": [
+    "node/6404769885",
+    "node/6404773385",
+    "overture/a49c732b-6fb9-4161-b9a5-00669a8a78a5"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "americanarestaurants.com",
+   "poi_count": 2,
+   "categories": {
+    "fast_food": 2
+   },
+   "sample_names": [
+    "Hardee's"
+   ],
+   "urls": [
+    "https://www.americanarestaurants.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/536fa561-c38c-44e7-ad4a-31a98ef25a65",
+    "overture/b30bfd35-f4a4-4885-bce6-6172af6ae085"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "atamekenmap.kz",
+   "poi_count": 2,
+   "categories": {
+    "entertainment": 1,
+    "museum_gallery": 1
+   },
+   "sample_names": [
+    "Атамекен",
+    "«Карта Казахстана «Атамекен»"
+   ],
+   "urls": [
+    "http://atamekenmap.kz",
+    "https://atamekenmap.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/8ac37848-609b-4fb5-9ab2-c76a52562788",
+    "overture/95554f09-c92a-4889-a581-6b43aba78128"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "coffeeboom.kz",
+   "poi_count": 2,
+   "categories": {
+    "restaurant": 1,
+    "cafe": 1
+   },
+   "sample_names": [
+    "Coffee BOOM"
+   ],
+   "urls": [
+    "https://coffeeboom.kz"
+   ],
+   "brands": [
+    "Coffee BOOM"
+   ],
+   "poi_ids": [
+    "node/4286102095",
+    "overture/6fb348c5-c760-40c1-8afd-94b32cde5400"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "farsh-burger.kz",
+   "poi_count": 2,
+   "categories": {
+    "fast_food": 2
+   },
+   "sample_names": [
+    "Farsh"
+   ],
+   "urls": [
+    "https://farsh-burger.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/9490539960",
+    "node/9490539961"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "khanshatyr.com",
+   "poi_count": 2,
+   "categories": {
+    "cafe": 1,
+    "mall": 1
+   },
+   "sample_names": [
+    "Duman Cafe",
+    "Хан Шатыр"
+   ],
+   "urls": [
+    "http://khanshatyr.com/en/coffee-khan-1",
+    "http://www.khanshatyr.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/54049f29-ebe1-45e2-aba8-34ee6fe83474",
+    "way/460703779"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "pucha.kz",
+   "poi_count": 2,
+   "categories": {
+    "restaurant": 2
+   },
+   "sample_names": [
+    "Бухара",
+    "Ресторан \"Эпоха\""
+   ],
+   "urls": [
+    "http://rest.pucha.kz/buhara",
+    "http://rest.pucha.kz/epoxa"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4909151312",
+    "overture/51315c91-bcc1-4e72-b459-feb153aa6871"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "ronipizza.kz",
+   "poi_count": 2,
+   "categories": {
+    "fast_food": 2
+   },
+   "sample_names": [
+    "Roni Napoletana",
+    "Roni Pizza Napoletana"
+   ],
+   "urls": [
+    "https://ronipizza.kz"
+   ],
+   "brands": [
+    "Roni Pizza Napoletana - Gross Plaza"
+   ],
+   "poi_ids": [
+    "node/10171453644",
+    "node/10171453646"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "sze-astana.kz",
+   "poi_count": 2,
+   "categories": {
+    "cafe": 2
+   },
+   "sample_names": [
+    "Segafredo Zanetti Espresso"
+   ],
+   "urls": [
+    "http://sze-astana.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/a3b8d21e-42db-4e8f-b134-d80d7772ef37",
+    "overture/cb270470-7eee-42e6-8bd1-677fbdd0ec8f"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "ummet.kz",
+   "poi_count": 2,
+   "categories": {
+    "attraction_landmark": 2
+   },
+   "sample_names": [
+    "Mosque Abu Nasr Al-Farabi",
+    "Мечеть Абу Насыра аль-Фараби"
+   ],
+   "urls": [
+    "http://www.ummet.kz",
+    "http://ummet.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/000b49eb-11d3-43a4-b632-9b556a0bdf63",
+    "relation/16827715"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "1337.kz",
+   "poi_count": 1,
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "sample_names": [
+    "Студия 1337"
+   ],
+   "urls": [
+    "https://1337.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4529345494"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "6-45.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Restobar 6/45"
+   ],
+   "urls": [
+    "http://www.6-45.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4993935022"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "aisha-bibi.com",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Айша Биби Отель"
+   ],
+   "urls": [
+    "http://aisha-bibi.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/f7553d17-04d8-4778-882f-49c55e8bd2a3"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "apm.kz",
+   "poi_count": 1,
+   "categories": {
+    "mall": 1
+   },
+   "sample_names": [
+    "APM Music Land"
+   ],
+   "urls": [
+    "http://www.apm.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/784c8949-205b-499f-9ef1-6225e3d28258"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "astana-bayterek.kz",
+   "poi_count": 1,
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "sample_names": [
+    "Байтерек"
+   ],
+   "urls": [
+    "http://astana-bayterek.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/230401645"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "astanamall.com",
+   "poi_count": 1,
+   "categories": {
+    "mall": 1
+   },
+   "sample_names": [
+    "Astana Mall"
+   ],
+   "urls": [
+    "http://astanamall.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/240502747"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "baldaurenastana.kz",
+   "poi_count": 1,
+   "categories": {
+    "entertainment": 1
+   },
+   "sample_names": [
+    "Развлекательный центр Балдаурен"
+   ],
+   "urls": [
+    "http://baldaurenastana.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/ed25134c-4f91-471b-89af-6cf79ce7aebc"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "bapool.kz",
+   "poi_count": 1,
+   "categories": {
+    "sport": 1
+   },
+   "sample_names": [
+    "Barys Arena Pool"
+   ],
+   "urls": [
+    "http://bapool.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/de2325a7-6009-4c1e-acb9-052437a47cba"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "bi.group",
+   "poi_count": 1,
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "sample_names": [
+    "Grand Opera"
+   ],
+   "urls": [
+    "https://grandopera.bi.group"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/e171c19a-0ca0-4a8f-814e-e131d3f788b7"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "burger-astana.kz",
+   "poi_count": 1,
+   "categories": {
+    "fast_food": 1
+   },
+   "sample_names": [
+    "One More Burger"
+   ],
+   "urls": [
+    "https://burger-astana.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/98c1e767-437d-45e9-8dc8-772dd95c80ef"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "caparol.kz",
+   "poi_count": 1,
+   "categories": {
+    "entertainment": 1
+   },
+   "sample_names": [
+    "Caparol Center Astana"
+   ],
+   "urls": [
+    "http://caparol.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/ac527f58-ec07-40d3-b8fe-9019db3ba7cd"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "chi.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Chili Grill Bar Astana"
+   ],
+   "urls": [
+    "http://www.chi.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/397563b2-28e8-46d1-93b5-f65452147d44"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "congresscenter.kz",
+   "poi_count": 1,
+   "categories": {
+    "entertainment": 1
+   },
+   "sample_names": [
+    "Kongress-Tsentr Astana"
+   ],
+   "urls": [
+    "https://www.congresscenter.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/35a4b67c-61b5-454b-8d2e-5d0f25ef1a11"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "domprod.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Домашний продукт"
+   ],
+   "urls": [
+    "http://domprod.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4632918092"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "elipeli.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Eli•Peli ресторан/караоке"
+   ],
+   "urls": [
+    "http://elipeli.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/aecc978c-6698-4c0d-afcf-081e8e082c32"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "eurotrans.kz",
+   "poi_count": 1,
+   "categories": {
+    "transit_station": 1
+   },
+   "sample_names": [
+    "Eurotrans Group"
+   ],
+   "urls": [
+    "https://eurotrans.kz"
+   ],
+   "brands": [
+    "Eurotrans"
+   ],
+   "poi_ids": [
+    "overture/21f0d874-9fa6-4a74-9fc4-6c4c4e342d71"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "fullers.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Fuller's Pub"
+   ],
+   "urls": [
+    "http://www.fullers.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/5890174288"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "grammy.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Grammy"
+   ],
+   "urls": [
+    "http://grammy.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/6d25989f-69ad-4512-a7c9-e6d509f13a56"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "hg2astana.com",
+   "poi_count": 1,
+   "categories": {
+    "museum_gallery": 1
+   },
+   "sample_names": [
+    "Музей Сакена Сейфуллина"
+   ],
+   "urls": [
+    "http://www.hg2astana.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/240376692"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "indembastana.gov.in",
+   "poi_count": 1,
+   "categories": {
+    "culture_theatre_cinema": 1
+   },
+   "sample_names": [
+    "ICCR in Kazakhstan"
+   ],
+   "urls": [
+    "https://www.indembastana.gov.in/page/icc"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/0eeb7fac-a77f-496a-9ac2-e8ce688fdfee"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "kazbeef.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "KazBeef"
+   ],
+   "urls": [
+    "http://kazbeef.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/4a23fca9-1aab-41a9-a1f4-809fa0b4e184"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "keruencity.kz",
+   "poi_count": 1,
+   "categories": {
+    "mall": 1
+   },
+   "sample_names": [
+    "Торгово-развлекательный центр Keruenсity/Nur-Sultan"
+   ],
+   "urls": [
+    "http://www.keruencity.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/a6206477-2569-492f-b1a8-73bf3df4421e"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "kpcafe.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Кавказкая пленница"
+   ],
+   "urls": [
+    "http://kpcafe.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/2680126093"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "local-pub.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Local Pub"
+   ],
+   "urls": [
+    "http://www.local-pub.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/885c22ea-1718-42ed-9157-7371181718ea"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "mammamia.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Мамма Мия Астана"
+   ],
+   "urls": [
+    "http://www.mammamia.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/c9227086-5efc-431f-99c3-bf74eb9c9043"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "mokkirestaurant.com",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "MÖKKi"
+   ],
+   "urls": [
+    "http://mokkirestaurant.com"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/12041597369"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "ntc-daulet.kz",
+   "poi_count": 1,
+   "categories": {
+    "sport": 1
+   },
+   "sample_names": [
+    "National tennis center"
+   ],
+   "urls": [
+    "http://ntc-daulet.kz/index.php/ru/o-nas/obshchaya-informatsiya"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/ff1129ae-0f8b-4646-bf3f-fc8131858305"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "otdushi.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Отдуши BEER PUB"
+   ],
+   "urls": [
+    "http://www.otdushi.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/36e1b4c9-f2ec-49ab-a0ec-980cc954ad69"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "pizzahouse.kz",
+   "poi_count": 1,
+   "categories": {
+    "fast_food": 1
+   },
+   "sample_names": [
+    "Pizza House"
+   ],
+   "urls": [
+    "http://pizzahouse.kz"
+   ],
+   "brands": [
+    "Pizza House"
+   ],
+   "poi_ids": [
+    "overture/0abf66ee-3eef-49f6-a549-dd4ac971efdb"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "qaganat24.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "КАГАНАТ"
+   ],
+   "urls": [
+    "https://qaganat24.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4955087260"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "rabbit.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Hungry Rabbit"
+   ],
+   "urls": [
+    "http://rabbit.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/c8cd3543-38ea-4ff9-aeff-892bd8690d40"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "restocom.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Ресторан \"Кафе Целинников\""
+   ],
+   "urls": [
+    "http://restocom.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/e8691389-da20-4b1c-af44-9a1c5fc560df"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "rizargroup.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Mona"
+   ],
+   "urls": [
+    "http://rizargroup.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/2c580d0f-3381-42b3-9872-d97b9f349371"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "shampur.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Кафе Шампур"
+   ],
+   "urls": [
+    "http://www.shampur.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/450f04d1-1b4c-4942-832e-2d0d2fd7f059"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "skybeach.kz",
+   "poi_count": 1,
+   "categories": {
+    "sport": 1
+   },
+   "sample_names": [
+    "Sky Beach Club"
+   ],
+   "urls": [
+    "http://www.skybeach.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/f6f3ca82-1b92-4362-8834-a80a393371f2"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "stumari.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Стумари"
+   ],
+   "urls": [
+    "https://stumari.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/11898122969"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "tanukifamily.ru",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Тануки"
+   ],
+   "urls": [
+    "https://tanukifamily.ru"
+   ],
+   "brands": [
+    "ТАНУКИ"
+   ],
+   "poi_ids": [
+    "node/10211901020"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "thehop.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "The Hop"
+   ],
+   "urls": [
+    "http://thehop.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/13573038101"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "traktirmedved.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Трактир Медведь"
+   ],
+   "urls": [
+    "http://www.traktirmedved.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/9230e3da-3271-4ec1-97c7-a8d7fb70d9df"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "vechnoenebo.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Вечное небо Астана"
+   ],
+   "urls": [
+    "http://vechnoenebo.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/56b146bf-57a5-4ae5-a913-a4a7e36aa1af"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "xoroshden.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Хороший День"
+   ],
+   "urls": [
+    "https://xoroshden.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/3c384c16-530a-4bfc-91dd-490c509458fb"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "zakazbiletov.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Celentano retro bar"
+   ],
+   "urls": [
+    "http://zakazbiletov.kz/ru/events/5-astana/3-kontserty/19305-haddaway-dr-alban-v-astane"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/11920102269"
+   ]
+  }
+ ],
+ "domain_count": 56,
+ "manual_count": 0,
+ "poi_count": 100
+}

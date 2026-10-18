@@ -1,0 +1,1527 @@
+{
+  "summary": {
+    "tried": 69,
+    "left": 0,
+    "stopped": null,
+    "measured": 69,
+    "excluded": 0,
+    "not_measured": 0,
+    "rule_gap_cases": 4,
+    "llm_fixed": 1,
+    "llm_partial": 0,
+    "llm_worse": 2,
+    "holdout_rule_gap_cases": 4,
+    "holdout_llm_fixed": 1,
+    "used": [
+      "gemini:gemini-2.5-flash-lite",
+      "gemini:gemini-3.5-flash-lite"
+    ]
+  },
+  "public_only": true,
+  "rows": [
+    {
+      "case_id": "h01-akorda-wk-beshbarmak",
+      "set": "holdout",
+      "query": "Хочу поесть бешбармак",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "restaurant"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h02-nurly-fri-train",
+      "set": "holdout",
+      "query": "У меня час до поезда, где быстро перекусить рядом",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "fast_food",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h03-keruen-sat-date",
+      "set": "holdout",
+      "query": "куда пойти с девушкой вечером",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "restaurant",
+        "cafe",
+        "viewpoint",
+        "culture_theatre_cinema"
+      ],
+      "added_categories": [
+        "bar_nightlife",
+        "attraction_landmark"
+      ],
+      "added_flags": [
+        "night"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h04-lovers-sun-stroller",
+      "set": "holdout",
+      "query": "гулять с коляской и без алкоголя",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [
+        "kids_playground"
+      ],
+      "added_flags": [
+        "with_kids",
+        "quiet"
+      ],
+      "rule_gaps": [
+        "with_kids"
+      ],
+      "merged_gaps": [],
+      "fixed": true,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h05-arena-tue-rain",
+      "set": "holdout",
+      "query": "где переждать дождь",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "museum_gallery",
+        "mall",
+        "culture_theatre_cinema",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h06-kenesary-sat-first-time",
+      "set": "holdout",
+      "query": "я первый раз в Астане, хочу погулять часа два, что посмотреть",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h07-hazret-holiday-laptop",
+      "set": "holdout",
+      "query": "where can I work with a laptop",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h08-nu-wed-kk-kids",
+      "set": "holdout",
+      "query": "баламен қайда баруға болады",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "kids_playground",
+        "museum_gallery"
+      ],
+      "added_categories": [
+        "entertainment",
+        "park_garden"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h09-botsad-thu-typos",
+      "set": "holdout",
+      "query": "кде паесть дешево и быстра",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "restaurant",
+        "cafe",
+        "fast_food"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h10-opera-fri-night-out",
+      "set": "holdout",
+      "query": "хочу выпить и потанцевать",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "bar_nightlife"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h11-akorda-holiday-cold-tea",
+      "set": "holdout",
+      "query": "где погреться и выпить горячего чая",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h12-keruen-sun-smog-air",
+      "set": "holdout",
+      "query": "хочу пройтись по свежему воздуху",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "quiet"
+      ],
+      "rule_gaps": [
+        "categories"
+      ],
+      "merged_gaps": [
+        "categories"
+      ],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h13-nurly-tue-late-hungry",
+      "set": "holdout",
+      "query": "куда пойти ночью, я только приехал и голодный",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "restaurant",
+        "cafe",
+        "fast_food"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h14-kenesary-wed-dog",
+      "set": "holdout",
+      "query": "выгулять собаку",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h15-arena-sat-football",
+      "set": "holdout",
+      "query": "где можно поиграть в футбол или побегать",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "sport",
+        "park_garden"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h16-lovers-tue-sunset",
+      "set": "holdout",
+      "query": "где красиво смотреть на закат",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "viewpoint"
+      ],
+      "added_categories": [
+        "attraction_landmark"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h17-saparzhai-tue-coffee",
+      "set": "holdout",
+      "query": "Где здесь можно кофе выпить",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h18-nu-tue-en-read",
+      "set": "holdout",
+      "query": "quiet place to read, open late",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "coworking_library",
+        "cafe",
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [
+        "categories"
+      ],
+      "merged_gaps": [
+        "categories"
+      ],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h19-hazret-sun-kk-museum",
+      "set": "holdout",
+      "query": "Музей немесе көрмеге барғым келеді",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "h20-keruen-newyear-cold",
+      "set": "holdout",
+      "query": "куда сходить на Новый год, что открыто",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [],
+      "added_categories": [
+        "entertainment",
+        "attraction_landmark",
+        "bar_nightlife"
+      ],
+      "added_flags": [
+        "night"
+      ],
+      "rule_gaps": [
+        "categories"
+      ],
+      "merged_gaps": [
+        "categories"
+      ],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a01-leftbank-3am-museum",
+      "set": "abstain",
+      "query": "Хочу в музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a02-airport-lrt-2330-quiet-socket",
+      "set": "abstain",
+      "query": "Тихое кафе с розеткой, поработать",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a03-industrial-museum",
+      "set": "abstain",
+      "query": "Хочу в музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a04-leftbank-pool",
+      "set": "abstain",
+      "query": "Бассейн рядом",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "sport"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a05-nw-edge-cafe-socket",
+      "set": "abstain",
+      "query": "Кофе и розетка, поработать",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a06-se-edge-stroller-museum",
+      "set": "abstain",
+      "query": "Хочу в музей с коляской",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a07-nw-edge-museum",
+      "set": "abstain",
+      "query": "Хочу в музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "a08-leftbank-frost-playground",
+      "set": "abstain",
+      "query": "Прогулка с ребёнком, площадка",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "kids_playground"
+      ],
+      "added_categories": [
+        "park_garden"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "tz1",
+      "set": "main",
+      "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [
+        "mall"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "tz2",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "tz3",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "tz4",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "tz5",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-wk14-normal-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-wk14-cold-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-2.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-eve-normal-walk",
+      "set": "main",
+      "query": "Рядом с EXPO, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-night-normal-night",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-hol-smog-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "expo-wk14-normal-mobility",
+      "set": "main",
+      "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "msw-eve-cold-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "msw-wk14-smog-walk",
+      "set": "main",
+      "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "msw-night-cold-night",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [
+        "other"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [
+        "categories"
+      ],
+      "fixed": false,
+      "partial": false,
+      "worse": [
+        "categories"
+      ]
+    },
+    {
+      "case_id": "msw-hol-normal-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "msw-eve-normal-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "msw-wk14-cold-mobility",
+      "set": "main",
+      "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-eve-normal-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-hol-normal-walk",
+      "set": "main",
+      "query": "Рядом с Байтерек, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-wk14-cold-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-eve-smog-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-night-smog-night",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "baiterek-wk14-normal-mobility",
+      "set": "main",
+      "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "khan-eve-normal-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "khan-hol-cold-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "khan-eve-cold-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "khan-wk14-smog-walk",
+      "set": "main",
+      "query": "Рядом с Хан Шатыр, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [
+        "mall"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "khan-night-normal-night",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [
+        "other"
+      ],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [
+        "categories"
+      ],
+      "fixed": false,
+      "partial": false,
+      "worse": [
+        "categories"
+      ]
+    },
+    {
+      "case_id": "khan-eve-smog-mobility",
+      "set": "main",
+      "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "lrt-night-cold-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "lrt-hol-normal-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "lrt-eve-smog-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "lrt-wk14-cold-walk",
+      "set": "main",
+      "query": "Рядом с LRT Аэропорт, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "lrt-eve-normal-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-wk14-normal-walk",
+      "set": "main",
+      "query": "Рядом с домом, прогулка 30–60 мин",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-eve-normal-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-wk14-normal-quiet",
+      "set": "main",
+      "query": "Тихое место с кофе и розеткой",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-night-normal-night",
+      "set": "main",
+      "query": "Необычная ночная активность",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "museum_gallery",
+        "viewpoint",
+        "entertainment",
+        "bar_nightlife",
+        "culture_theatre_cinema",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-hol-smog-mobility",
+      "set": "main",
+      "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [
+        "with_kids"
+      ],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-eve-cold-tourist",
+      "set": "main",
+      "query": "Турист, 2 часа до вылета",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    },
+    {
+      "case_id": "left-wk14-smog-kids",
+      "set": "main",
+      "query": "С ребёнком: площадка или интерактивный музей",
+      "measured": true,
+      "counted": true,
+      "used": "gemini:gemini-3.5-flash-lite",
+      "cached": false,
+      "rule_categories": [
+        "museum_gallery",
+        "kids_playground"
+      ],
+      "added_categories": [],
+      "added_flags": [],
+      "rule_gaps": [],
+      "merged_gaps": [],
+      "fixed": false,
+      "partial": false,
+      "worse": []
+    }
+  ]
+}

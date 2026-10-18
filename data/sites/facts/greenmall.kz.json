@@ -1,0 +1,54 @@
+{
+ "domain": "greenmall.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:10:40+00:00",
+ "pages": [
+  "https://greenmall.kz/ru/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Green Mall",
+   "address": "г. Астана, ул. Сыганак д.17Б НП13",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(771)033-82-85",
+   "opening_hours_raw": "c 10:00 до 23:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://greenmall.kz/ru/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://greenmall.kz/ru/contacts",
+     "snippet": "Адрес: 010000, Республика Казахстан, район Есиль, г. Астана, ул. Сыганак д.17Б НП13",
+     "fetched_at": "2026-10-17T09:10:40+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://greenmall.kz/ru/contacts",
+     "snippet": "График работы ТРЦ: c 10:00 до 23:00",
+     "fetched_at": "2026-10-17T09:10:40+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://greenmall.kz/ru/contacts",
+     "snippet": "Ресепшн: +7(771)033-82-85",
+     "fetched_at": "2026-10-17T09:10:40+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://greenmall.kz/ru/contacts",
+     "snippet": "Green Mall",
+     "fetched_at": "2026-10-17T09:10:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Parking hours (круглосуточно) on the same page belong to the car park, not the mall.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

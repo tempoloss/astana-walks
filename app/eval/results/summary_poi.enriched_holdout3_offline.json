@@ -1,0 +1,127 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "offline",
+  "chain": [],
+  "cases": 24,
+  "cases_with_recs": 24,
+  "recs_total": 66,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 78.8,
+  "case_all_ok_rate": 58.3,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 91.7,
+  "diversity": 100.0,
+  "top1_ok_rate": 70.8,
+  "top1_open_rate": 62.5,
+  "unknown_hours_rec_share": 51.5,
+  "non_osm_rec_share": 45.5,
+  "avg_walk_min": 11.2,
+  "wifi_socket_in_data_share": 100.0,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 16.0,
+  "latency_ms_p90": 48.0,
+  "generation_ms_median": 0.0,
+  "generation_ms_p90": 1.0,
+  "model_link": {
+    "template": 24
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "walk_too_long": 5,
+    "category_not_allowed": 5,
+    "over_budget": 2
+  },
+  "padded_rec_share": 13.6,
+  "expanded_rec_share": 3.0,
+  "backfill_rec_share": 7.6,
+  "substituted_rec_share": 3.0,
+  "padded_case_share": 25.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [],
+  "failing_cases": [
+    {
+      "case_id": "h3-02",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h3-05",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-08",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h3-09",
+      "violations": [
+        "over_budget",
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h3-10",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-17",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-18",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-20",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h3-21",
+      "violations": [
+        "over_budget",
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h3-24",
+      "violations": [
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "holdout3",
+  "label": "offline",
+  "header": {
+    "label": "offline",
+    "mode": "offline",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "holdout3_cases.json",
+    "case_set": "holdout3",
+    "records": 24,
+    "git": "9fbe2fc",
+    "walking": "straight",
+    "generated_at": "2026-10-18T21:56:24+05:00"
+  }
+}

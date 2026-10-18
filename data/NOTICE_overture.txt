@@ -1,0 +1,40 @@
+NOTICE — Foursquare OS Places records in this repository (Apache License, Version 2.0)
+
+Where: `data/overture_places.json` (the 151 records of `places[]` whose `sources[0].dataset` is "Foursquare") and
+`data/poi.enriched.json` (45 records whose `overture_id` points at one of them: 28 Overture-only records and 17 OSM
+records that took a phone / website / brand from it; the fields are marked `field_sources.<field>.contributor =
+"Foursquare"`, `license = "Apache-2.0"`). Count date 2026-10-17, Overture release 2026-09-23.1.
+
+How the data reached us: not from Foursquare directly but through Overture Maps (places theme), which states
+(https://docs.overturemaps.org/attribution/, read 2026-10-17):
+  "Data from Foursquare. Copyright 2024 Foursquare Labs, Inc. All rights reserved. Available under Apache 2.0.
+   Foursquare data was transformed to the Overture schema. Changed: 2026-03-18. NOTICE.txt."
+The "NOTICE.txt" link of that page points to the page reproduced below.
+
+Notice of changes (Apache-2.0 section 4(b)): the Foursquare data was transformed to the Overture schema by Overture
+(see above); we then (collect/overture_places.py, collect/merge.py) cut it to the Astana bounding box, kept the
+fields we use, mapped the categories to our own, applied a confidence cut-off of 0.7, merged matching records with
+OpenStreetMap places and attached them to our own record structure. The files carrying these records are changed
+files and are not Foursquare's original data.
+
+License copy (Apache-2.0 section 4(a)): LICENSES/Apache-2.0.txt of this repository, also
+http://www.apache.org/licenses/LICENSE-2.0
+
+--- begin: NOTICE of the Foursquare OS Places dataset, verbatim from https://opensource.foursquare.com/places-notice-txt/
+--- (page text retrieved 2026-10-17; the page itself is headed "Foursquare OS Places Notice")
+
+Foursquare OS Places Notice
+© 2026 Foursquare Labs, Inc. All rights reserved.
+The Foursquare OS Places dataset (the “Data”) is licensed under the Apache License, Version 2.0 (the “License”). You may not use, modify, or distribute the Data except in compliance with the License.
+As set forth more fully in the License, if you use, modify, or distribute the Data, you must:
+– provide recipients with a copy of the License.
+– if applicable, include prominent notices to the extent you’ve changed the Data.
+– preserve attribution to Foursquare, including preserving the full content of this NOTICE.txt file.
+To ensure appropriate attribution to Foursquare, we recommend the following:
+– if using/distributing the Data in flat file form as-is or after making changes/modifications: include this NOTICE.txt file, which may be modified to include an additional notice of your changes/modifications, if any.
+– if using/distributing the Data in API form as-is or after making changes/modifications: include a copy of the content from this NOTICE.txt file prominently in your developer documentation for such API, which may be modified to include an additional notice of your changes/modifications, if any.
+You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, the Data distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
+We also encourage you to join our Placemaker community where you can contribute and provide suggestions to improve the accuracy of the Data for future releases for yourself and others.
+
+--- end of the Foursquare NOTICE.

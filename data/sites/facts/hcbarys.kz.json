@@ -1,0 +1,53 @@
+{
+ "domain": "hcbarys.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:56:09+00:00",
+ "pages": [
+  "http://www.hcbarys.kz/club/arena/contacts/",
+  "http://www.hcbarys.kz/club/arena/"
+ ],
+ "branches": [
+  {
+   "name": "Барыс Арена",
+   "address": "Астана қ., Тұран даңғылы, 57",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 61 34 41",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": "Көпфункционалды Барыс Арена әртүрлі спорт түрлерінен сайыс өткізе алады.",
+   "url": "http://www.hcbarys.kz/club/arena/contacts/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "http://www.hcbarys.kz/club/arena/contacts/",
+     "snippet": "Астана қ., Тұран даңғылы, 57",
+     "fetched_at": "2026-10-17T09:51:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.hcbarys.kz/club/arena/contacts/",
+     "snippet": "Телефон +7 7172 61 34 41",
+     "fetched_at": "2026-10-17T09:51:22+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://www.hcbarys.kz/club/arena/",
+     "snippet": "Барыс Арена",
+     "fetched_at": "2026-10-17T09:56:09+00:00"
+    },
+    {
+     "field": "description",
+     "url": "http://www.hcbarys.kz/club/arena/",
+     "snippet": "Көпфункционалды Барыс Арена әртүрлі спорт түрлерінен сайыс өткізе алады.",
+     "fetched_at": "2026-10-17T09:56:09+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Барыс Арена (ice palace). Phone = the arena administration's event contact printed on the contacts page (info@mtexm.com — the operating company). No arena opening hours are published (game-day schedule only); the 09:00-18:00 block on /school/contacts/ belongs to the hockey school office, not the arena, so hours stay None. The club itself (ХК «Барыс») is the tenant, the POI is the arena.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

@@ -1,0 +1,474 @@
+{
+ "domain": "hardees.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T11:55:23+00:00",
+ "pages": [
+  "https://www.hardees.kz/stores"
+ ],
+ "branches": [
+  {
+   "name": "Hardee`s Астана | Керуен",
+   "address": "улица Достык 9, Астана",
+   "lat": 51.1280172,
+   "lon": 71.4253271,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Керуен",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "улица Достык 9, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1280172\" data-lng=\"71.4253271\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | AGIP",
+   "address": "просп. Кабанбай Батыра 8, Астана",
+   "lat": 51.1459822,
+   "lon": 71.4223947,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+   "opening_hours_osm": "Mo-Th,Su 10:00-00:45; Fr,Sa 10:00-01:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | AGIP",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Кабанбай Батыра 8, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1459822\" data-lng=\"71.4223947\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Keruen city",
+   "address": "Кургальжинское ш. 1, Астана",
+   "lat": 51.1453291,
+   "lon": 71.414095,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Keruen city",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Кургальжинское ш. 1, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1453291\" data-lng=\"71.414095\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Respublika",
+   "address": "просп. Республики 7, Астана",
+   "lat": 51.1596851,
+   "lon": 71.4284693,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+   "opening_hours_osm": "Mo-Th,Su 10:00-00:45; Fr,Sa 10:00-01:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Respublika",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Республики 7, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1596851\" data-lng=\"71.4284693\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Манаса",
+   "address": "просп. Тауелсиздик 21, Астана",
+   "lat": 51.1456028,
+   "lon": 71.4594599,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 01:45 понедельник 10:00 - 01:45 вторник 10:00 - 01:45 среда 10:00 - 01:45 четверг 10:00 - 01:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+   "opening_hours_osm": "Mo-Su 10:00-01:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Манаса",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Тауелсиздик 21, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1456028\" data-lng=\"71.4594599\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 01:45 понедельник 10:00 - 01:45 вторник 10:00 - 01:45 среда 10:00 - 01:45 четверг 10:00 - 01:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Mega Expo",
+   "address": "просп. Кабанбай Батыра 62, Астана",
+   "lat": 51.088589982889,
+   "lon": 71.408705004785,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 22:45 понедельник 10:00 - 22:45 вторник 10:00 - 22:45 среда 10:00 - 22:45 четверг 10:00 - 22:45 пятница 10:00 - 22:45 суббота 10:00 - 00:00",
+   "opening_hours_osm": "Mo-Fr,Su 10:00-22:45; Sa 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Mega Expo",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Кабанбай Батыра 62, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.088589982889\" data-lng=\"71.408705004785\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 22:45 понедельник 10:00 - 22:45 вторник 10:00 - 22:45 среда 10:00 - 22:45 четверг 10:00 - 22:45 пятница 10:00 - 22:45 суббота 10:00 - 00:00",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Sauran",
+   "address": "улица Сауран 38, Астана",
+   "lat": 51.09827,
+   "lon": 71.413085,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 00:45 суббота 10:00 - 00:45",
+   "opening_hours_osm": "Mo-Su 10:00-00:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Sauran",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "улица Сауран 38, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.09827\" data-lng=\"71.413085\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 00:45 суббота 10:00 - 00:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Seifulina",
+   "address": "просп. Республики 34а, Астана",
+   "lat": 51.1731128,
+   "lon": 71.4260164,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+   "opening_hours_osm": "Mo-Th,Su 10:00-00:45; Fr,Sa 10:00-01:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Seifulina",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Республики 34а, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1731128\" data-lng=\"71.4260164\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 00:45 понедельник 10:00 - 00:45 вторник 10:00 - 00:45 среда 10:00 - 00:45 четверг 10:00 - 00:45 пятница 10:00 - 01:45 суббота 10:00 - 01:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Ncity",
+   "address": null,
+   "lat": 51.11634469738,
+   "lon": 71.39945059259,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Ncity",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.11634469738\" data-lng=\"71.39945059259\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardees Food City Astana",
+   "address": null,
+   "lat": 51.17141511239,
+   "lon": 71.375055201258,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:00 понедельник 10:00 - 23:00 вторник 10:00 - 23:00 среда 10:00 - 23:00 четверг 10:00 - 23:00 пятница 10:00 - 23:00 суббота 10:00 - 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardees Food City Astana",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.17141511239\" data-lng=\"71.375055201258\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:00 понедельник 10:00 - 23:00 вторник 10:00 - 23:00 среда 10:00 - 23:00 четверг 10:00 - 23:00 пятница 10:00 - 23:00 суббота 10:00 - 23:00",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Astana | Asia Park",
+   "address": null,
+   "lat": 51.127646891938,
+   "lon": 71.412567949074,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Astana | Asia Park",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.127646891938\" data-lng=\"71.412567949074\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:45 понедельник 10:00 - 23:45 вторник 10:00 - 23:45 среда 10:00 - 23:45 четверг 10:00 - 23:45 пятница 10:00 - 23:45 суббота 10:00 - 23:45",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Hardee`s Астана | Хан-Шатыр",
+   "address": "просп. Туран 37, Астана",
+   "lat": 51.1323713,
+   "lon": 71.403862,
+   "phone": null,
+   "opening_hours_raw": "воскресенье 10:00 - 23:00 понедельник 10:00 - 23:00 вторник 10:00 - 23:00 среда 10:00 - 23:00 четверг 10:00 - 23:00 пятница 10:00 - 23:00 суббота 10:00 - 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.hardees.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "Hardee`s Астана | Хан-Шатыр",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "просп. Туран 37, Астана",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "data-lat=\"51.1323713\" data-lng=\"71.403862\"",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.hardees.kz/stores",
+     "snippet": "воскресенье 10:00 - 23:00 понедельник 10:00 - 23:00 вторник 10:00 - 23:00 среда 10:00 - 23:00 четверг 10:00 - 23:00 пятница 10:00 - 23:00 суббота 10:00 - 23:00",
+     "fetched_at": "2026-10-17T11:51:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Branch cards = collapse blocks of the city filter 2410 ('Астана') on /stores; OSM carried 7 Astana POIs, the site currently lists 12 outlets. Hours = the 7-day 'С собой' (self pick-up) table, which is the venue schedule; the 'Доставка' table is delivery hours and is not used (same convention as the kfc.kz crawler on this platform). The table lists the days Sunday first and labels every row by its day name, which is what is parsed (the homepage JSON of the same stores numbers the days 1..7 in that Sunday-first order, so 'day 7' is Saturday, not Sunday: Mega Expo closes at 00:00 on Saturday and 22:45 on the other days); the row the platform bolds is today's, and the crawler checks it against the weekday of the fetch (UTC+5). The only phone on the page is the chain short number 7001 (tel:7001, not branch-specific) and is not stored.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

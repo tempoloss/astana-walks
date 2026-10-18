@@ -1,0 +1,80 @@
+{
+ "domain": "pizza-blues.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:24:10+00:00",
+ "pages": [
+  "https://www.pizza-blues.kz/kontactPB"
+ ],
+ "branches": [
+  {
+   "name": "Пицца Блюз, ул. Сатпаева, 11",
+   "address": "ул. Сатпаева, 11",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 747 1 344 526",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.pizza-blues.kz/kontactPB",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ФИЛИАЛ \"ПИЦЦА БЛЮЗ\" г.Астана",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ул. Сатпаева, 11",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ул. Сатпаева, 11 тел. +7 747 1 344 526",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Пицца Блюз, ул. Керей Жанибек хандар, 22",
+   "address": "ул. Керей Жанибек хандар, 22",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 747 1 205 280",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.pizza-blues.kz/kontactPB",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ФИЛИАЛ \"ПИЦЦА БЛЮЗ\" г.Астана",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ул. Керей Жанибек хандар, 22",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.pizza-blues.kz/kontactPB",
+     "snippet": "ул. Керей Жанибек хандар, 22 тел. +7 747 1 205 280",
+     "fetched_at": "2026-10-17T09:24:10+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Both phones are the branch's 'Телефоны доставки' lines printed next to each address in the Астана section. No opening hours anywhere on the site (menu/contact pages checked). The former central-office number 8 (7172) 344 526 duplicates the Сатпаева line and is not stored separately.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

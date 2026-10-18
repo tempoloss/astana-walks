@@ -1,0 +1,55 @@
+{
+ "domain": "tri-peskarya.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:50+00:00",
+ "pages": [
+  "http://tri-peskarya.kz/index.htm",
+  "http://tri-peskarya.kz/Контакты.htm"
+ ],
+ "branches": [
+  {
+   "name": "Три Пескаря",
+   "address": "Казахстан, г. Астана м-он Коктал 1 ул. Енлик - Кебек 11/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 300 390",
+   "opening_hours_raw": "с 12:00 до 01:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "http://tri-peskarya.kz/index.htm",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://tri-peskarya.kz/index.htm",
+     "snippet": "Три Пескаря",
+     "fetched_at": "2026-10-17T09:32:27+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://tri-peskarya.kz/index.htm",
+     "snippet": "Казахстан, г. Астана м-он Коктал 1 ул. Енлик - Кебек 11/1",
+     "fetched_at": "2026-10-17T09:32:27+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://tri-peskarya.kz/index.htm",
+     "snippet": "КАФЕ работает с 12:00 до 01:00",
+     "fetched_at": "2026-10-17T09:32:27+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://tri-peskarya.kz/Контакты.htm",
+     "snippet": "+7 (7172) 300 390",
+     "fetched_at": "2026-10-17T09:33:50+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The index also claims «Мы работаем круглосуточно!» (a slogan for the complex) while the cafe line says «ЛЕТНЕЕ И ЗИМНЕЕ КАФЕ работает с 12:00 до 01:00» — the explicit cafe schedule is stored weekday-unqualified (hours_flags needs_days), the slogan is not.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

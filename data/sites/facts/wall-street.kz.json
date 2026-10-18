@@ -1,0 +1,46 @@
+{
+ "domain": "wall-street.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:23:09+00:00",
+ "pages": [
+  "http://www.wall-street.kz/ru/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Wall Street",
+   "address": "г.Астана, Кабанбай батыра проспект, 60/20",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 701 969 00 04",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.wall-street.kz/ru/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.wall-street.kz/ru/kontakty",
+     "snippet": "Wall Street",
+     "fetched_at": "2026-10-17T09:23:09+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://www.wall-street.kz/ru/kontakty",
+     "snippet": "г.Астана, Кабанбай батыра проспект, 60/20",
+     "fetched_at": "2026-10-17T09:23:09+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.wall-street.kz/ru/kontakty",
+     "snippet": "+7 701 969 00 04",
+     "fetched_at": "2026-10-17T09:23:09+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Contacts page gives address and two phones (+7 701 969 00 04 booking, +7 700 555 23 23 partnerships); no opening-hours statement anywhere on the site, so none is stored. The name evidence is the restaurant brand repeated in the page text ('Найти проезд до Wall Street Restaurant').",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

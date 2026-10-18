@@ -1,0 +1,54 @@
+{
+ "method": "geosearch ggsradius=600 ggsnamespace=6 ggslimit=10 (cap, not total); retry x3 on too-busy",
+ "valid": true,
+ "rows": {
+  "Байтерек": {
+   "files": 10,
+   "lic": [
+    "CC BY 2.0",
+    "CC BY-SA 4.0"
+   ]
+  },
+  "Хан Шатыр": {
+   "files": 10,
+   "lic": [
+    "CC BY-SA 2.0"
+   ]
+  },
+  "Национальный музей": {
+   "files": 10,
+   "lic": [
+    "CC BY-SA 4.0",
+    "Public domain"
+   ]
+  },
+  "Астана Опера": {
+   "files": 10,
+   "lic": [
+    "CC BY 2.0",
+    "CC BY-SA 2.0",
+    "CC BY-SA 3.0"
+   ]
+  },
+  "МЕГА": {
+   "files": 2,
+   "lic": [
+    "CC BY-SA 4.0"
+   ]
+  },
+  "Атамекен": {
+   "files": 10,
+   "lic": [
+    "CC BY-SA 2.0",
+    "CC BY-SA 3.0",
+    "CC0"
+   ]
+  },
+  "Триумфальная арка": {
+   "files": 10,
+   "lic": [
+    "CC BY-SA 4.0"
+   ]
+  }
+ }
+}

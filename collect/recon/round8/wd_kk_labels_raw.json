@@ -1,0 +1,299 @@
+{
+ "endpoint": "wikidata wbgetentities props=labels|sitelinks",
+ "ids_checked": [
+  "Q136090752",
+  "Q96035145",
+  "Q800403",
+  "Q16433519",
+  "Q124371412",
+  "Q18405670",
+  "Q21843144",
+  "Q16632800",
+  "Q16538413",
+  "Q2986461",
+  "Q97168093",
+  "Q4230441",
+  "Q1916973",
+  "Q573362",
+  "Q1454511",
+  "Q4408858",
+  "Q25481641",
+  "Q4314789",
+  "Q4155890",
+  "Q671484",
+  "Q122526919",
+  "Q116177001",
+  "Q25500354",
+  "Q42422896",
+  "Q117835598",
+  "Q1073433",
+  "Q21371563",
+  "Q120868806",
+  "Q120868807",
+  "Q120868821",
+  "Q33811540",
+  "Q42768422",
+  "Q97166399",
+  "Q97496724"
+ ],
+ "entities": {
+  "Q136090752": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q96035145": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q800403": {
+   "labels": {
+    "language": "kk",
+    "value": "Астана 1"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Астана-1",
+    "badges": []
+   }
+  },
+  "Q16433519": {
+   "labels": {
+    "language": "kk",
+    "value": "Ақмола Облыстық Орыс Драма Театры"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "М. Горький атындағы мемлекеттік академиялық орыс драма театры",
+    "badges": []
+   }
+  },
+  "Q124371412": {
+   "labels": {
+    "language": "kk",
+    "value": "Ататүрік ескерткіш"
+   },
+   "sitelinks_kkwiki": null
+  },
+  "Q18405670": {
+   "labels": {
+    "language": "kk",
+    "value": "Қазақстан Республикасының Ұлттық музейі"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Қазақстан Республикасының Ұлттық музейі",
+    "badges": []
+   }
+  },
+  "Q21843144": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q16632800": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q16538413": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q2986461": {
+   "labels": {
+    "language": "kk",
+    "value": "Қажымұқан Мұңайтпасов атындағы стадион"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Қажымұқан Мұңайтпасов (стадион, Астана)",
+    "badges": []
+   }
+  },
+  "Q97168093": {
+   "labels": {
+    "language": "kk",
+    "value": "Константин-Елена шіркеуі"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Константин-Елена шіркеуі",
+    "badges": []
+   }
+  },
+  "Q4230441": {
+   "labels": {
+    "language": "kk",
+    "value": "Тың игерушілер сарайы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Астана (концерт залы)",
+    "badges": []
+   }
+  },
+  "Q1916973": {
+   "labels": {
+    "language": "kk",
+    "value": "МЕГА Астана"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "МЕГА Астана",
+    "badges": []
+   }
+  },
+  "Q573362": {
+   "labels": {
+    "language": "kk",
+    "value": "Қазақстан Орталық концерт залы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Қазақстан Орталық концерт залы",
+    "badges": []
+   }
+  },
+  "Q1454511": {
+   "labels": {
+    "language": "kk",
+    "value": "Атамекен (мұражай)"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Атамекен (мұражай)",
+    "badges": []
+   }
+  },
+  "Q4408858": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q25481641": {
+   "labels": {
+    "language": "kk",
+    "value": "«Отан қорғаушылар» мемориалы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Отан қорғаушылар (монумент)",
+    "badges": []
+   }
+  },
+  "Q4314789": {
+   "labels": {
+    "language": "kk",
+    "value": "ҚР Ұлттық академиялық кітапханасы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Қазақстан Республикасының Ұлттық академиялық кітапханасы",
+    "badges": []
+   }
+  },
+  "Q4155890": {
+   "labels": {
+    "language": "kk",
+    "value": "Тәуелсіздік Сарайы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Тәуелсіздік сарайы (Астана)",
+    "badges": []
+   }
+  },
+  "Q671484": {
+   "labels": {
+    "language": "kk",
+    "value": "Хан Шатыр"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Хан Шатыр",
+    "badges": []
+   }
+  },
+  "Q122526919": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q116177001": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q25500354": {
+   "labels": {
+    "language": "kk",
+    "value": "Тұңғыш Президент мұражайы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Қазақстан Республикасының Бірінші Президентінің мұражайы",
+    "badges": []
+   }
+  },
+  "Q42422896": {
+   "labels": {
+    "language": "kk",
+    "value": "Мәңгілік ел қақпасы"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Мәңгілік ел қақпасы",
+    "badges": []
+   }
+  },
+  "Q117835598": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q1073433": {
+   "labels": {
+    "language": "kk",
+    "value": "Абу-Даби Плаза"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Абу-Даби Плаза",
+    "badges": []
+   }
+  },
+  "Q21371563": {
+   "labels": {
+    "language": "kk",
+    "value": "Астана Опера (театр)"
+   },
+   "sitelinks_kkwiki": {
+    "site": "kkwiki",
+    "title": "Астана Опера",
+    "badges": []
+   }
+  },
+  "Q120868806": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q120868807": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q120868821": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q33811540": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q42768422": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q97166399": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  },
+  "Q97496724": {
+   "labels": null,
+   "sitelinks_kkwiki": null
+  }
+ }
+}

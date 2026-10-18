@@ -1,0 +1,46 @@
+{
+ "domain": "teatrkukol-ast.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:19+00:00",
+ "pages": [
+  "https://teatrkukol-ast.kz/ru/kontakty/"
+ ],
+ "branches": [
+  {
+   "name": "ГККП «Театр кукол» акимата города Астаны",
+   "address": "г.Астана, проспект Республики 3",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 43-96-24",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://teatrkukol-ast.kz/ru/kontakty/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://teatrkukol-ast.kz/ru/kontakty/",
+     "snippet": "ГККП \"Театр кукол\" акимата города Астаны",
+     "fetched_at": "2026-10-17T09:29:19+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://teatrkukol-ast.kz/ru/kontakty/",
+     "snippet": "г.Астана, проспект Республики 3",
+     "fetched_at": "2026-10-17T09:29:19+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://teatrkukol-ast.kz/ru/kontakty/",
+     "snippet": "+7 (7172) 43-96-24",
+     "fetched_at": "2026-10-17T09:29:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Официальный сайт театра; на контактах и по всему сайту нет ни графика работы, ни часов кассы — представления идут по афише (Календарь спектаклей), поэтому opening_hours не хранится. E-mail New@teatrkukol-ast.kz не входит в схему branch.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

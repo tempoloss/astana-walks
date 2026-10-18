@@ -1,0 +1,12 @@
+{
+ "queue": 12,
+ "with_address": 11,
+ "excluded_as_in_base": [
+  "Abu Dhabi Plaza"
+ ],
+ "note": "list built from data/events.json venues lacking poi_id, garbage (date-tail) names dropped; each row = name + street/house from the afisha info-line + source link — a ready OSM edit batch; Abu Dhabi Plaza excluded (already in base, its gap is the \"ТЦ \" prefix crosswalk of 20.3) — the one addressless row (Pozitiv) is reconstructible from its four event URLs (venue in the card title), counted separately",
+ "without_address": [
+  "Дворец «Жастар»"
+ ],
+ "without_address_note": "the addressless row is Дворец «Жастар» — the probable translation alias of 20.3 (Дворец Юность exists in the base); until that alias is verified it is NOT an OSM-add candidate: add-queue = 11"
+}

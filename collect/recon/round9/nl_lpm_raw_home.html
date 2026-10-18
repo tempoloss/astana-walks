@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Light pollution map</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="description" content="Interactive world light pollution map. The map uses NASA Black marble VIIRS, Sky brightness, Aurora prediction, observatories, clouds and SQM/SQC overlay contributed by users."/>
+	<meta name="keywords" content="svetlobno onesnaženje karta light pollution black marble map Aurora prediction astronomy telescopes dark observatories sky brightness SQM SQC"/>
+	<meta name="DC.Language" content="en" />
+	<meta name="DC.Description" content="Interactive world light pollution map. The map uses Black marble VIIRS VIIRS, Sky brightness, Aurora prediction, observatories, clouds and SQM/SQC overlay contributed by users." />
+	<meta id='viewport' content='width=device-width, initial-scale=1' name='viewport'/>
+	<meta name="referrer" content="no-referrer" />
+
+	<meta property="og:title" content="Light Pollution Map" />
+	<meta property="og:description" content="Interactive world light pollution map. The map uses NASA Black marble VIIRS, Sky brightness, Aurora prediction, observatories, clouds and SQM/SQC overlay contributed by users." />
+	<meta property="og:image" content="https://www.lightpollutionmap.info/icon-1024x1024.png" />
+	<meta property="og:url" content="https://www.lightpollutionmap.info/" />
+	<meta property="og:type" content="website" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="transparent">
+	<!-- iOS Safari -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="transparent">
+
+	<script src="assets/lib/jquery-3.7.1.min.js" type="text/javascript"></script>
+	<script src="assets/lib/jquery-ui.min.js" type="text/javascript"></script>	
+	<script src="assets/lib/ad_prebid.js" type="text/javascript"></script>
+    <script type="module" crossorigin src="./assets/index-CrNFzVzd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CA8HQZY4.css">
+  </head>
+  <body>
+	<div id="mapModal" style="z-index: 999999;position: fixed;top:0;left:0;width: 100%;height:100%;"></div>
+	<div id="mapContent">
+		<div id="loadingIcon" style="display:none;width: 33.33%;max-width: 150px;opacity: 0.8;z-index: 1000;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+			<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
+				<text id="loadingIconText" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="fill: #FF0000;font-family: Arial;font-weight: bold;stroke: #000000;stroke-width: 0.5px;font-size: 19px;">0%</text> 
+				<circle id="loadingIconCircle" cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" style="stroke:#FF0000" stroke-width="11" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(162 50 50)">
+					<animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="2s" begin="0s" repeatCount="indefinite"></animateTransform>
+				</circle>
+			</svg>
+		</div>
+		<div id="RightMenuContainer" class="scrollableNoThumb">
+			<div id="rightMenuButton" class="open">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="RightMenu" style="opacity:0;">
+				<h3>Layers</h3>
+				<div id="layerswitcher" style="position: relative;padding: 0px 0px 0px 8px;overflow-x: hidden;">
+					<div style="padding-bottom: 5px;padding-top: 5px;">Overlay <img title="VIIRS annual, VIIRS Trend, Sky brightness<br/>Cloud cover and Aurora raster overlays" style="cursor:pointer;width: 16px;margin-bottom: -4px;margin-left: 5px;" alt="Overlay help icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAp5JREFUeNpkU01IVFEU/t6972fG1JHGrLBso2WRSAshonIjFrZQ27QoEQza6K6gXYS0KKhWuijIjbZw0xhRoEagUhRWUIJSWuL4A44OzDjhjOO89zrnzjwZ68Jh5pzvO+d857x7NfxzSq+Fem3b7XBd1+eSr7FpWkpKrW99oLUzn0schauzr22o0dC04ca6cpyrKUMw4CMGJwPr8RQmpiIYmVzGtuteWOtvGdlVgJP3B6zhW1dqEEvZeDcTxczKH2xuOQj4JY4dLER99V6U+CQeDk5hNb6linABwQV06tzdfgqf5hN4Nr6EudUkuluqsPS4Hjap+L2WRN/EssKZx3xPuc4zd1ysxNivOL6E4yj060hnHAiRnc5nSewxpfrPuGkKMP+JE+qlUKdwHOd6+YEAvi4kiGjAZ+jK7r2ex8k7H+E3dVjk8y/jzGM+52XVQ7PC8TT8hlBdaSxkSPf3u6dV17P3P8OUWhYj33BcMJ/zGBe85XgqA8vSYRoSBhtJHpyMqAJCl9BzccaZx3wt9/1YAQVski1Ud2pAi3OhS7VfmLpQJnM7yTa0WYFXwE07tmNaNB/NlS1AoJdg5jp7vhACmQwpoDzlO6no0MpKDAW0bR+TVUdtRyLPSLdQxRlnHvM5D7mbWlF69cVCU8MJFBVZ2KZP2FQdQHNtcOfKtg/MqmSDiiQSW3jzdhrrzy8foYsU1gkPZxbfd42OyZ5LDcdRTEVG5xJ4NR1Tl4iao9hv0BgCG5Q8OvYDzOc8TwGf4pLzN9vkoTM9dbWHcbSyDEUFJrzHlNhM4+dcBJPfFmEvfeiKjT/qp/DGrsfERciqgq1Pb2v+YDMt0/QA2l/aTUZfRkM3HpA7y8n/vca8U0HGCxB5MYcs6snOf85/BRgAU2QTxLlxCL0AAAAASUVORK5CYII="/></div>					
+					<div>
+						<select style="width: 70px;margin-bottom: 5px;" id="overlaySelect" previousValue="SB2024">
+							<option value="VIIRS">VIIRS</option>
+							<option value="VIIRSTREND">VIIRS Trend</option>
+							<option value="SB" selected>Sky Brightness</option>
+							<option value="WA_2015">World Atlas 2015</option>
+							<option value="CloudCover">Clouds</option>
+							<option value="Aurora">Aurora forecast</option>
+						</select>
+						<select style="width: 50px;margin-bottom: 5px;" id="overlaySelectVIIRS">
+							<option value="2025" selected>2025</option>
+							<option value="2024">2024</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+						</select>
+						<select style="width: 50px;margin-bottom: 5px;" id="overlaySelectSB">
+							<option value="2025" selected>2025</option>
+							<option value="2024">2024</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+						</select>
+						<img id="optionsIconSB" state="off" style="cursor:pointer;width: 19px;margin-bottom: -5px;margin-left: 4px;transition: all 0.3s linear 0s;filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));" alt="Sky brightness settings icon" src="data:image/png;base64,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" />
+						<div id="lp_colorblind_ctrl" title="Toggle color blind<br/>friendly map style"><input style="vertical-align: middle;margin: -4px 4px 0px 5px;" type="checkbox" id="lp_colorblind_chkbox">Color blind</div>
+						<div id="CloudCover_controls" title="Start/Stop animation" style="display:none;margin: -5px 0px 0px 3px;top: 5px;position: relative;cursor:pointer;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAB1VJREFUeNqcV3tMlecZ/33Xc+EcQATktiJMUcTLrK4qdnbZui7GS6ppmtXOdmsbY5stncmyxDb4h2z7Z64dS+1M23XrGrsxg2KBtku31lal9cJmDbUFeijCEXQcsIDAuX3ft+f5LngOcBD3kR+B9/2e9/k99/cTMMtn9e6adPfc4id0UXpUh7jcMACDfvgR+EcAROgXRV17LTxw+ZXzh54ens25wq321+35U6noy653qerSzauKsLo0B2sWZEOVkkWjmoEzX4RwLtCPpn8HEYlGW/Ubofs/ev7HnYDN9DYJSHdXvfmioqq7frapAltXFkGjxa7rGnpHNIxE9aSX/aqIAr+E+XMkSPT/8ZYgat7+FLFo9KVT1VufoiXtdggolfuaLq9ZkJtf/YNVRF/AhathdA7GTVcL0wgaDuhXaZaCb+S7oGs69tW24Hygv+/0/k3FtB2bDQFlbVVD15P3VRTsvLsEHYMa/tMXBp0FkZULqVk7BHSCJAIr891YkCXh1RMdePW99t6PqjfPn0xCnmp5Y/eue5fkPUTKm3ui6B6KgcOtSLdOGMckh0hLbxj9owp23rOQvGEUiEJj9+n9m+9IJCElxrxyb92huxYVbtizpQLnglFcGYlDJu0SmS4KnOkWRFEkWJkvJKxP7JvvWBiO6LgRNbBxRS4uXv7Kp1ZsLOg5+fcmJzEdAsKKndWLMgpK/ljz2HpKMp3iHYNMbpQct9uQaEGlDZl8bIXDsHJCmArRBpNw0fv3VuShvuXKnRlFi/527eL7A6xYdFyfVry8btd3l5CkiPaBKCm/abkDiSxXZQn1H7TimT80waMqFBrZXE98L1lGMM9qozMVev/Rb5fBV7yijnVOEChauzXb43GXb6Q6/+J6zLSIY86JlAjSbVrf0hbEgcfX4ecvNMDrkmhNMPcmv+/AyZ8AeXXz6vlQFKWcdToEpMLKBx77zrJCRKhSB8biptvFFJDsUhinuFb/cA32/J5JyNSYRFNZSjlCiM4W6I/K8jwUkU5Y/EjW7d9xZ2kuKdfpxamuT3IpJxoJRajz7WtsQ9WOu/B0TQM8LoUOSh0OPpNlWcfKkhxIHv8O1s0E3Iaslq8oyTaTRWQrbgGLAHU/j4qa97uw96G1+Onzb8LjtsIhSSlkJSshlxVnwZBc5aybCcgGFa3HJSBGHUQSUlvvgJ8YFVEaEfB5XXilOYiqR9bjyQPHTU8oxCCV92LU0Dh5WSfrFmFVktm9hBlinwh+whqVo6qChhRZruLYxX784uFvYddv6s1EtcI4SdYseAN+n+xMJ0FO7KO8yHWequNxY5HNKWiYlrgU1TyYjVEo1eOGJemUnm5MbdWSISTNRjlxUyYXaIKRmkCCB6KGCBe5W7Bl15Zk4rk3PsRf9m6jCombq6IwlYBAi/1D0QkdJgFun6MRtkg08yA1AcutfJJGDlUVxZRdkpeGg7Un8Poz2xGmMc0ecXJlMgE36RiNRCb2Rcuf4x0dfUO0KdyyAiS7d8YN2Yx/cXYaXq87gTeqttOlRINO1ATyYipZD+n4pJO6MOlk3XxcPBzqbjjb1gufIsyiCiwCmihjXqYXdfUn8Nd92+kGZEDXretZSllikUYN+Fx7H8ZDlxtYNxMIB/7x8uHmtqvkUlBXm9kL7DONfBwTKfOP/RNH9pPyuD6j5Q58KndQjabiAALvvHyYdfOR0eGez66FQgOd/7rQhwzq7dzNJLtuk8DZQVZuWHYHjh1pwtFqtpz8yJcVCNPL2JDpzAxqO0dOdkCPjnUOkU7WLTnVoY0NXRpMX7zj+6tKzBKKczJOGq/Os2ZJATatW0iSVDW6dTecbhwnwkeGRShBDxw9j863Dj5yoy8QILFx5z6g08KYv6yy5KuYuvieZfPMmtaN6UnwOt8HJq7lMyk3E0/EnDQBz/65Gdd6Asfbjv/uNRK7zqk0QYD/6T3beCG+8L4H8+dmessK/RRr0SypKbceu1Ct74EZQJ5005zO8Ap4sfESWj4PDnx84OEfkWgfx3/ylYyvzXrwZO3bPVnr7y/MyfQuLvKbasw2PQs3J92cSLmHZl26FzjY0Ip3z3aEmn+9bQsd00MYto1OIsD+jPKcuXKq9p1g1vpt/cNxzzcXzSMrEu+DuHnvm27kUmhc1K7TqJrGwhp+efgczrR2D5LyrfxZQRjk8pvuUuqEIsJEgqdqm8ayl+ef6hgpy0z3oOJrPmvMJtW1BcmeEUzU4zLnDY41d+K3R1vQ1f5505nndu62lYcmX8tTfpgQ5hDycpduWFq66Se/ys3Nmb+uPB+VVAGleX7K6pszhQ/hVv7Jl4P4+FIvTn/Wi/GRoa5A0wvP/rf1w1bavmonXey2Ps0IFEHMJeR45xbO+/rG3Vu8+WXfE92+Et0wpswJI3Ljy9G+9ncDbx1qGBu4wnXeT+Db79jtfpol7is2kTRCOiGD4Em4USeGb5wwZCfZqK049v9+nE7nEZUHmj1Fp/s8jNvlFU1l8eTnfwIMACO7mmrCYs5wAAAAAElFTkSuQmCC" style="height:22px;"></div>
+						<div id="CloudCover_info" data-speed=100 style="cursor:pointer; margin: 0px 0px 0px 5px;top: -1px;position: relative;width: 40px;display: inline-block;font-family: monospace;font-stretch: extra-condensed;font-size: 17px;"></div>
+						<div id="Aurora_info" style="display:none;width: 100%;font-size: 11px;padding: 7px 0px 5px 1px;"></div>
+						<div class="slider-container" style="width: 284px;margin: 15px 4px 15px -2px;" title="Overlay transparency slider">
+							<input type="range" min="0" max="100" value="60" step="1" class="slider" id="overlay_tran_slider" style="background: linear-gradient(to right, #00000000, rgb(189, 189, 189) );">
+							<div class="slider-value" style="left: 169px;">60%</div>
+						</div>					
+					</div>
+					<div id="SBSettings" style="display:none;margin-top: -10px;">
+					
+						<div id="WaSettingsCont" style="position: relative;left: 0px;width: 283px;height: 90px;top: 0px;">	
+							<div style="position:absolute;left: 15px;">Sky brightness options</div>													
+							<div style="position:absolute;left: 15px;top:20px;">
+								<span style="font-size: 12px;padding-right: 20px;padding-left: 10px;" title="Show areas within specified range">SQM range</span>
+								<input id="SBMin" class="SBinput" type="text" value="15.00" min="10" max="22" step=".01" style="width: 48px;font: bold 14px monospace;margin-right: 10px;">
+								<span>-</span>
+								<input id="SBMax" class="SBinput" type="text" value="21.20" min="10" max="22" step=".01" style="width: 48px;font: bold 14px monospace;margin-left: 10px;" >
+								<input style="vertical-align: middle;    margin: -2px 0px 0px 18px;    height: 18px;    width: 18px;" type="checkbox" id="SBSettingsCheckbox1">
+							</div>
+							<div style="position:absolute;left: 15px;top:50px;" >
+								<div style="font-size: 12px;display: inline-block;position: absolute;padding-left: 11px;">Color</div>
+								<input type="color" id="SBColor" title="Color picker" value="#ff0000" style="border: none;width: 40px;height: 25px;cursor: pointer;padding: 0;background: none;left: 95px;top: -6px;">
+								<input style="vertical-align: middle;margin: -30px 0px 0px 204px;width: 18px;height: 18px;" type="checkbox" id="SBSettingsCheckbox2">
+							</div>
+							<div id="SBSettingsApply" title="Apply" class="ui-button" style="height: 20px;width: 50px;cursor: pointer;font-size: 12px;position: absolute;right: 0px;bottom: 0px; padding: 2px 4px 2px 4px;">
+								<span>Apply</span>
+							</div>	
+
+
+						</div>
+						
+						
+					</div>
+					<hr style="width: calc(100% - 10px);margin-left: 0px;">
+					<div style="padding-bottom: 5px;">Feature <img title="SQM (sky quality meter)<br/>SQM-L (with lense)<br/>SQM-LE (permanent installation with lense)<br/>SQC (sky quality camera)<br/>Observatories (amateur and professional)" style="cursor:pointer;width: 16px;margin-bottom: -4px;margin-left: 5px;" alt="Feature help icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAp5JREFUeNpkU01IVFEU/t6972fG1JHGrLBso2WRSAshonIjFrZQ27QoEQza6K6gXYS0KKhWuijIjbZw0xhRoEagUhRWUIJSWuL4A44OzDjhjOO89zrnzjwZ68Jh5pzvO+d857x7NfxzSq+Fem3b7XBd1+eSr7FpWkpKrW99oLUzn0schauzr22o0dC04ca6cpyrKUMw4CMGJwPr8RQmpiIYmVzGtuteWOtvGdlVgJP3B6zhW1dqEEvZeDcTxczKH2xuOQj4JY4dLER99V6U+CQeDk5hNb6linABwQV06tzdfgqf5hN4Nr6EudUkuluqsPS4Hjap+L2WRN/EssKZx3xPuc4zd1ysxNivOL6E4yj060hnHAiRnc5nSewxpfrPuGkKMP+JE+qlUKdwHOd6+YEAvi4kiGjAZ+jK7r2ex8k7H+E3dVjk8y/jzGM+52XVQ7PC8TT8hlBdaSxkSPf3u6dV17P3P8OUWhYj33BcMJ/zGBe85XgqA8vSYRoSBhtJHpyMqAJCl9BzccaZx3wt9/1YAQVski1Ud2pAi3OhS7VfmLpQJnM7yTa0WYFXwE07tmNaNB/NlS1AoJdg5jp7vhACmQwpoDzlO6no0MpKDAW0bR+TVUdtRyLPSLdQxRlnHvM5D7mbWlF69cVCU8MJFBVZ2KZP2FQdQHNtcOfKtg/MqmSDiiQSW3jzdhrrzy8foYsU1gkPZxbfd42OyZ5LDcdRTEVG5xJ4NR1Tl4iao9hv0BgCG5Q8OvYDzOc8TwGf4pLzN9vkoTM9dbWHcbSyDEUFJrzHlNhM4+dcBJPfFmEvfeiKjT/qp/DGrsfERciqgq1Pb2v+YDMt0/QA2l/aTUZfRkM3HpA7y8n/vca8U0HGCxB5MYcs6snOf85/BRgAU2QTxLlxCL0AAAAASUVORK5CYII="/></div>	
+					<div>								
+						<select multiple="multiple" style="width: 126px;margin-bottom: 5px;font-size:100%;" id="featureSelect" previousValue="SQM">
+							<option value="SQM">SQM</option>
+							<option value="SQML">SQM-L</option>
+							<option value="SQMLE">SQM-L(E/R/U)</option>
+							<option value="SQC">SQC</option>
+							<option value="Obs">Observatories</option>
+							<option value="IDSP">Dark sky parks</option>
+						</select>
+						<img id="optionsIconFeature" state="off" style="cursor:pointer;width: 19px;margin-bottom: -5px;margin-left: 4px;transition: all 0.3s linear 0s;filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));" alt="Feature settings icon" src="data:image/png;base64,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" />
+						<div id="lp_show_daynight" title="Toggle Day/Night Boundary<br/>Bands represent different twilight states" style="display:inline-block;font-size:68%;"><input style="vertical-align: middle;margin: -4px 4px 0px 5px;" type="checkbox" id="lp_show_daynight_chkbox">Show Day/Night</div>
+						<div class="slider-container" style="width: 284px;margin: 15px 4px 15px -2px;" title="Feature transparency slider">
+							<input type="range" min="0" max="100" value="85" step="1" class="slider" id="feature_tran_slider" style="background: linear-gradient(to right, #00000000, rgb(189, 189, 189) );">
+							<div class="slider-value" style="left: 229px;">85%</div>
+						</div>	
+					</div>	
+					<div id="featureSettings" style="display:none;margin-top: -15px;">
+					
+						<div id="SQMToolsCont" style="position:relative;left:0px;width:250px;height:95px;display:none;">																			
+							<div style="position:absolute;top: 5px;left: 15px;">SQM/SQC options</div>
+							<div style="position:absolute;top: 30px;left: 32px;">
+								Name<input id="SQMName" type="text" placeholder="Filter by name..." title="Wildcard string filter" style="margin-left: 31px;top: 0px;height: 18px;width: 182px;">
+							</div>								
+							<div style="position:absolute;top: 50px;left: 32px;">
+								Date<input id="SQMStartDate" type="text"  style="margin-left: 39px;top: 0px;width: 61px;height: 18px;font: bold 14px monospace;" readonly="readonly"><div style="margin-left: 140px;margin-top: -20px;">-</div><input id="SQMEndDate" type="text" style="margin-left: 155px;top: 0px;width: 61px;height: 18px;font: bold 14px monospace;"  readonly="readonly">
+							</div>
+							<div style="position:absolute;top: 70px;left: 32px;" title="Draw points by time measured instead of random order">
+								<input type="checkbox" id="SQMSortBySQM" style="vertical-align:middle;margin-left:237px;"><label for="SQMSortBySQM">Draw points by time measured</label>
+							</div>																
+						</div>
+						
+						<div id="ObsToolsCont" style="position:relative;left:0px;width:250px;height:175px;display:none;">														
+							<div style="position:absolute;top: 5px;left: 15px;">Observatories options <span style="color:#e03f3f;" id="ObsToolsLabel"></span></div>
+							<div style="position:absolute;top: 30px;left: 32px;">
+								Name<input id="ObsName" autocomp="off" type="text" placeholder="Find by name" title="Find observatory by its name" style="margin-left: 30px;top: 0px;height: 18px;width: 182px;">
+							</div>
+							<div style="position:absolute;top: 50px;left: 32px;">
+								MPC<input id="ObsMPCCode" type="text" placeholder="Find by MPC code" title="Find observatory by its MPC code" style="margin-left: 37px;top: 0px;height: 18px;width: 182px;">
+							</div>								
+							<div style="position:absolute;top: 70px;left: 31px;" title="Show observatories between specified SQM values">
+								SQM<input id="ObsLowSQM" type="text" style="margin-left: 37px;top: 0px;height: 18px;width: 47px;height: 18px;font: bold 14px monospace;" value="15.00"><div style="margin-left: 127px;margin-top: -20px;">-</div><input id="ObsHighSQM" type="text" style="margin-left: 143px;top: 0px;width: 47px;height: 18px;font: bold 14px monospace;" value="22.00">
+							</div>
+							<div style="position:absolute;top: 90px;left: 31px;width: 230px;">
+								<div>Show only 1m and larger</div><div style="float:right;"><input id="ObsLargeOnly" type="checkbox" title="Show only large observatories" style="top: -3px;height: 18px;width: 18px;"></div>
+							</div>
+							<div style="position:absolute;top: 110px;left: 31px;width: 230px;">
+								<div>Show only optical</div><div style="float:right;"><input id="ObsOpticalOnly" type="checkbox" title="Show only optical observatories" style="top: -3px;height: 18px;width: 18px;"></div>
+							</div>
+							<div style="position:absolute;top: 130px;left: 31px;width: 230px;">
+								<div>Show only radio</div><div style="float:right;"><input id="ObsRadioOnly" type="checkbox" title="Show only radio observatories" style="top: -3px;height: 18px;width: 18px;"></div>
+							</div>
+							<div style="position:absolute;top: 150px;left: 31px;width: 230px;">
+								<div>Show only MPC</div><div style="float:right;"><input id="ObsMPCOnly" type="checkbox" title="Show only MPC observatories" style="top: -3px;height: 18px;width: 18px;"></div>
+							</div>
+
+							<div id="unlck" style="position: absolute;top: 7px;left: 64px;width: 10px;height: 11px;;display: inline-block;"></div>	
+
+						</div>	
+						<div id="featureSettingsApply" title="Apply" class="ui-button" style="height: 20px;width: 50px;cursor: pointer;font-size: 12px;position: relative;float: right;padding: 2px 4px 2px 4px;margin: -4px 10px 8px 0px;">
+							<span>Apply</span>
+						</div>
+						<div id="featureSettingsReset" title="Reset to defaults" class="ui-button" style="display:none;height: 20px;width: 50px;cursor: pointer;font-size: 12px;position: relative;float: right;padding: 2px 4px 2px 4px;margin: -4px 4px 8px 0px;">
+							<span>Reset</span>
+						</div>	
+						
+					</div>
+	
+					<hr style="width: calc(100% - 10px);margin-left: 0px;">
+					<div style="padding-bottom: 5px;">Basemap <img title="Base maps" style="cursor:pointer;width: 16px;margin-bottom: -4px;margin-left: 5px;" alt="Basemap help icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAp5JREFUeNpkU01IVFEU/t6972fG1JHGrLBso2WRSAshonIjFrZQ27QoEQza6K6gXYS0KKhWuijIjbZw0xhRoEagUhRWUIJSWuL4A44OzDjhjOO89zrnzjwZ68Jh5pzvO+d857x7NfxzSq+Fem3b7XBd1+eSr7FpWkpKrW99oLUzn0schauzr22o0dC04ca6cpyrKUMw4CMGJwPr8RQmpiIYmVzGtuteWOtvGdlVgJP3B6zhW1dqEEvZeDcTxczKH2xuOQj4JY4dLER99V6U+CQeDk5hNb6linABwQV06tzdfgqf5hN4Nr6EudUkuluqsPS4Hjap+L2WRN/EssKZx3xPuc4zd1ysxNivOL6E4yj060hnHAiRnc5nSewxpfrPuGkKMP+JE+qlUKdwHOd6+YEAvi4kiGjAZ+jK7r2ex8k7H+E3dVjk8y/jzGM+52XVQ7PC8TT8hlBdaSxkSPf3u6dV17P3P8OUWhYj33BcMJ/zGBe85XgqA8vSYRoSBhtJHpyMqAJCl9BzccaZx3wt9/1YAQVski1Ud2pAi3OhS7VfmLpQJnM7yTa0WYFXwE07tmNaNB/NlS1AoJdg5jp7vhACmQwpoDzlO6no0MpKDAW0bR+TVUdtRyLPSLdQxRlnHvM5D7mbWlF69cVCU8MJFBVZ2KZP2FQdQHNtcOfKtg/MqmSDiiQSW3jzdhrrzy8foYsU1gkPZxbfd42OyZ5LDcdRTEVG5xJ4NR1Tl4iao9hv0BgCG5Q8OvYDzOc8TwGf4pLzN9vkoTM9dbWHcbSyDEUFJrzHlNhM4+dcBJPfFmEvfeiKjT/qp/DGrsfERciqgq1Pb2v+YDMt0/QA2l/aTUZfRkM3HpA7y8n/vca8U0HGCxB5MYcs6snOf85/BRgAU2QTxLlxCL0AAAAASUVORK5CYII="/></div>	
+					<div style="margin-bottom: 10px;">
+						<select style="width: 80px;margin-bottom: 5px;" id="basemapSelect">
+							<option value="LayerBingRoad" selected>Google Road map</option>
+							<option value="LayerBingHybrid">Google Satellite map</option>
+						</select>
+					</div>
+					<hr style="width: calc(100% - 10px);margin-left: 0px;">
+					<div id="lp_darkmode_ctrl" title="Toggle website dark/light theme" style="display: inline-block;font-size: 80%;line-height: 30px;"><input style="vertical-align: middle;margin: -4px 10px 0px 5px;" type="checkbox" id="lp_darkmode_chkbox"><label for="lp_darkmode_chkbox" style="cursor:pointer;">Dark mode</label></div>
+				</div>
+				<h3>Tools</h3>
+				<div id="tools">
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="geolocateButton"><label for="geolocateButton" id="geolocateButtonImage"></label><label for="geolocateButton" style="padding-left: 10px;cursor:pointer;">Geolocation</label></div>					
+					<div style="display: flex; align-items: center;position: relative;"><input class="toolIconInput" type="checkbox" id="rulerButton"><label for="rulerButton" id="rulerButtonImage"></label><label for="rulerButton" style="padding-left: 10px;cursor:pointer;">Measure distance</label><label title="Clear all measurements" id="rulerClearButtonImage"></label></div>
+					<div style="display: flex; align-items: center;"><div id="printButton" class="toolbarIcon"></div><label style="padding-left: 10px;">Print map to file</label></div>	
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="pointInfoButton"><label for="pointInfoButton" id="pointInfoButtonImage"></label><label for="pointInfoButton" style="padding-left: 10px;cursor:pointer;">Point information (default)</label></div>
+					<div style="display: flex; align-items: center;position: relative;"><input class="toolIconInput" type="checkbox" id="areaInfoButton"><label for="areaInfoButton" id="areaInfoButtonImage"></label><label for="areaInfoButton" style="padding-left: 10px;cursor:pointer;">Area (polygon) information</label><label for="polygon_upload_input" id="polygon_upload" title="Upload a custom GeoJSON/WKT polygon"></label><input id="polygon_upload_input" type="file" accept="*.txt,.wkt,.geojson" style="display:none;"/></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="areaInfoButton2"><label for="areaInfoButton2" id="areaInfoButton2Image"></label><label for="areaInfoButton2" style="padding-left: 10px;cursor:pointer;">Area (circle) information</label></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="areaInfoButton3"><label for="areaInfoButton3" id="areaInfoButton3Image"></label><label for="areaInfoButton3" style="padding-left: 10px;cursor:pointer;">Area (square) information</label></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="addSQMButton"><label for="addSQMButton" id="addSQMButtonImage"></label><label for="addSQMButton" style="padding-left: 10px;cursor:pointer;">Add SQM measurement</label></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="radiancePSFButton"><label for="radiancePSFButton" id="radiancePSFButtonImage"></label><label for="radiancePSFButton" style="padding-left: 10px;cursor:pointer;">Sky brightness simulation</label></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="closestDarkSiteButton"><label for="closestDarkSiteButton" id="closestDarkSiteButtonImage"></label><label for="closestDarkSiteButton" style="padding-left: 10px;cursor:pointer;">Find closest dark site</label></div>
+					<div style="display: flex; align-items: center;"><input class="toolIconInput" type="checkbox" id="moonWidgetButton"><label for="moonWidgetButton" id="moonWidgetButtonImage"></label><label for="moonWidgetButton" style="padding-left: 10px;cursor:pointer;">Moon widget (experimental)</label></div>
+					
+					<div style="display: flex; align-items: center;position: relative;"><input class="toolIconInput" type="checkbox" id="addMarkerButton"><label for="addMarkerButton" id="addMarkerButtonImage"></label><label for="addMarkerButton" style="padding-left: 10px;cursor:pointer;">Add a map marker</label><label title="Clear all markers" id="addMarkerClearButtonImage"></label></div>
+					<div style="display: flex; align-items: center;"><div id="statisticsButton" class="toolbarIcon" role="button" aria-haspopup="dialog" tabindex="0" title="Statistics"></div><span style="padding-left: 10px;">Statistics per country</span></div>
+					<hr style="width: calc(100% - 18px);">
+					<div id="lp_cursor_ctrl" title="Toggle VIIRS/SB hover value<br/>display (available at zoom level 8+)" style="opacity: 1;height: 41px;padding: 7px 0px 0px 0px;margin-bottom: 4px;"><label for="lp_cursor_chkbox">Show VIIRS/SB values on hover</label><input type="checkbox" id="lp_cursor_chkbox"></div>
+				</div>
+				<h3>Legend</h3>
+				<div id="legend" class="scrollable" style="height:auto;max-height: 400px;">
+					<img id="legend_overlay" style="width: 280px;" src="./assets/Legend_WA2015-DNVGN-S6.png"/>
+					<div id="legend_feature" style="width: 280px;"></div>
+				</div>
+				<h3>My locations</h3>
+				<div>
+					<div style="width: 100%;height: 38px;padding: 8px;">
+						<div style="cursor: pointer;float: left;">
+							<input id="myLocations_lock" type="checkbox" style="display: none;"><label id="myLocations_lock_label" for="myLocations_lock">Edit list</label>
+						</div>						
+						<div id="myLocations_download" title="Download My locations to CSV" style="cursor: pointer;float: right;background-image: url(./assets/download-zkwjkwjx.png);height: 18px;width: 18px;margin: -2px 0px 0px 6px;"></div>
+						<div id="myLocations_upload" title="Upload My locations CSV" style="cursor: pointer;float: right;background-image: url(./assets/upload-B3PE7Zft.png);height: 18px;width: 18px;margin: -2px 0px 0px 6px;"></div>
+						<div id="myLocations_clear_map" title="Remove pushpins on the map" style="cursor: pointer;float: right;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTEyLTA4VDA5OjQ1OjIxKzAxOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDI0LTEyLTIwVDE4OjM2OjA0KzAxOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyNC0xMi0yMFQxODozNjowNCswMTowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5YmE3NDYzZC0wNDA5LWY5NDMtOGNiNi1mNzg5MGNlYjJkZGIiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowMWE4YTY2Ny1jOWY4LTQ2NGItOWRjZS0zN2Y2ZTZjMTIxMGUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplNzBkNjFiYy1hZDljLWVmNGMtYTQzNi03MDA3NDUyZDNlMjYiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmU3MGQ2MWJjLWFkOWMtZWY0Yy1hNDM2LTcwMDc0NTJkM2UyNiIgc3RFdnQ6d2hlbj0iMjAyMy0xMi0wOFQwOTo0NToyMSswMTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphYTMyNjA5MS1iYmI3LTMwNDItYjVlZC00N2FmMGZiYzgxNmEiIHN0RXZ0OndoZW49IjIwMjMtMTItMDhUMDk6NDU6MjErMDE6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OWJhNzQ2M2QtMDQwOS1mOTQzLThjYjYtZjc4OTBjZWIyZGRiIiBzdEV2dDp3aGVuPSIyMDI0LTEyLTIwVDE4OjM2OjA0KzAxOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+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);height: 18px;width: 18px;margin: -2px 0px 0px 6px;background-size: contain;"></div>
+						<input id="myLocations_upload_input" type="file" accept=".csv" style="display:none;"/>
+						<div id="myLocations_new" style="display:none;cursor: pointer;position: relative;top: -2px;left: 18px;margin-left: 0px;">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC7klEQVR42oWTXUhUQRTH/+fO3t3VdVvXzwwqFCIQIgyhCMxdsoeQHqIVXaWHwLWELF8joqKgl6hQIVOhEN0ChaCXskRLqadKIjCCMPQhXfGjddeP3btzp7ljmfVQBw53uGfmd875zxnCX3a+t9HndXkatmbm+p26I9/6t2YkIpHo3HB0JdZxK9j2cvN++rVoDjd6dMa6yov3BQqyPUjyGLiZhJAxRnY4mBvfFqIY/TTWb5qi/mZNW3QD0NQT8jh0NlxZWlqyxhdBJKBJJxm1AKZJEHIhBMHJvHj67u2YwU3/ndqOqAKc7TnVV1GyO2CYcXkQ0DSBqdkY9hUcV9W9n36M7blumBJgmoCuZWDow+f+1rr7VXSqq8a3pyhnKGuLRqRhI/PsQgpNZS0K0DJ6DvlemwRAQYSELCyZYnxy3k+hB9XhvbtcQSJTZbYqsFqY/66hueyuAtwePYPsTKjs1mFVCWf4OBF/SA3dx2YKt+n5jAHflwg605UyRtKBCxVtCnDjxVno9oTSw+AGPG4BwwAmZ4wIBTsPmju3ppNuEziQdw4Hiw7hX/ZmYgSvp1tgpAhTkRVBJ9pLzJxM2TUlUVl4VQLK/wN4hSdfLssbcWAhKpup7tg/w/RYvm4DuJEBh80utZB3L7y4cqRTHbr8PAROi0qDRCoJssVVC4K7I1TX5Qtzmg1aytukDpYWlpAilYVrhx8pwKXBahlclIMFpLj01Ho1OuU+pJr2oz5b2tehlVVGNibArKuUTtyL6xW9auPFwTqY2noFFoBzgiudC762w68GqbazvE93RgKLS+wnQMgKMhAoblKAvvFWEFtWFVju3cLBE3n94dBIlQKc7Kz0JMT0sDtjuWRmjlmDoNr4ZUINkPUVKMjhiC+7xuyU6+8JDUQ3tlkQGepye6YDiSTJmdCwmlwPO+1CZjXhkN/4UkE/Q1p9d/2z349pswXvHfXp+mqDwxn3c8TUc2ZwRxJrruGU4ewInx744zn/ALy3QJLeO76zAAAAAElFTkSuQmCC" alt="add">
+							<div style="color: #454545;font-weight: bold;font-size: 12px;padding: 0px 0px 0px 5px;position: relative;right: 0px;top: -4px;margin-bottom: 0px;display: inline-block;">New</div>
+						</div>
+					</div>
+					<div id="myLocations" class="scrollable" style="max-height: 350px;overflow-y: auto;position: relative;top: -11px;left: 0px;width: 100%;"></div>
+				</div>
+				<h3 id="privacyPolicy"><label style="display: inline-block;cursor: pointer;"><div id="privacySettings"><div data-fuse-privacy-tool></div></div></label></h3>
+				<div>
+				</div>	
+				<h3>Help</h3>
+				<div>
+				</div>				
+			</div>
+			<div id="socialButtons" style="display:none;">		
+				<!-- Sharingbutton Link -->
+				<div class="resp-sharing-button__link" title="Create a short link of the current view">
+					<div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+						<g>
+							<path d="M 21.546875 10.9375 L 17.300781 15.179688 C 14.960938 17.523438 11.160156 17.523438 8.816406 15.179688 C 8.449219 14.8125 8.160156 14.398438 7.90625 13.972656 L 9.878906 12 C 9.972656 11.90625 10.089844 11.851562 10.199219 11.789062 C 10.335938 12.253906 10.574219 12.695312 10.9375 13.058594 C 12.109375 14.230469 14.011719 14.230469 15.179688 13.058594 L 19.421875 8.816406 C 20.59375 7.648438 20.59375 5.746094 19.421875 4.574219 C 18.253906 3.40625 16.351562 3.40625 15.179688 4.574219 L 13.671875 6.085938 C 12.449219 5.609375 11.128906 5.480469 9.847656 5.667969 L 13.058594 2.453125 C 15.402344 0.109375 19.203125 0.109375 21.546875 2.453125 C 23.886719 4.796875 23.886719 8.597656 21.546875 10.9375 Z M 10.328125 17.914062 L 8.816406 19.425781 C 7.648438 20.59375 5.746094 20.59375 4.574219 19.425781 C 3.40625 18.253906 3.40625 16.351562 4.574219 15.179688 L 8.816406 10.9375 C 9.988281 9.769531 11.890625 9.769531 13.058594 10.9375 C 13.425781 11.304688 13.664062 11.746094 13.800781 12.210938 C 13.914062 12.144531 14.027344 12.09375 14.121094 12 L 16.09375 10.027344 C 15.839844 9.601562 15.550781 9.1875 15.179688 8.816406 C 12.839844 6.476562 9.039062 6.476562 6.695312 8.816406 L 2.453125 13.058594 C 0.109375 15.402344 0.109375 19.203125 2.453125 21.546875 C 4.796875 23.886719 8.597656 23.886719 10.9375 21.546875 L 14.15625 18.332031 C 12.871094 18.519531 11.550781 18.390625 10.328125 17.914062 Z M 10.328125 17.914062 "></path>
+						</g>
+					</svg>
+					</div>
+					</div>
+				</div>			
+						
+				<!-- Sharingbutton Facebook -->
+				<div class="resp-sharing-button__link" title="Share on Facebook">
+					<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+						<g>
+							<path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+						</g>
+					</svg>
+					</div>
+					</div>
+				</div>
+		
+				<!-- Sharingbutton Twitter -->
+				<div class="resp-sharing-button__link" title="Share on Twitter">
+					<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+						<svg viewBox="0 0 290.27 300.25" width="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+							<path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+						  </svg>
+					</div>
+					</div>
+				</div>
+		
+				<!-- Sharingbutton Reddit -->
+				<div class="resp-sharing-button__link" title="Share on Reddit">
+					<div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
+					</div>
+					</div>
+				</div>
+		
+				<!-- Sharingbutton Tumblr -->
+				<div class="resp-sharing-button__link" title="Share on Tumblr">
+					<div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+						<g>
+							<path d="M13.5,0.5v5h5v4h-5v5.515c0,5.028,3.52,4.427,6,2.798v4.433c-6.728,3.172-12-0.064-12-4.255V9.5h-3V6.668 c0.903-0.293,2.245-0.714,2.889-1.261c0.646-0.551,1.162-1.208,1.551-1.976C9.331,2.664,9.6,1.686,9.746,0.5H13.5z"></path>
+						</g>
+					</svg>
+					</div>
+					</div>
+				</div>
+		
+				<!-- Sharingbutton Pinterest -->
+				<div class="resp-sharing-button__link" title="Share on Pinterest">
+					<div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+						<path d="M12.137,0.5C5.86,0.5,2.695,5,2.695,8.752c0,2.272,0.8 ,4.295,2.705,5.047c0.303,0.124,0.574,0.004,0.661-0.33 c0.062-0.231,0.206-0.816,0.271-1.061c0.088-0.331,0.055-0.446-0.19-0.736c-0.532-0.626-0.872-1.439-0.872-2.59 c0-3.339,2.498-6.328,6.505-6.328c3.548,0,5.497,2.168,5.497,5.063c0,3.809-1.687,7.024-4.189,7.024 c-1.382,0-2.416-1.142-2.085-2.545c0.397-1.675,1.167-3.479,1.167-4.688c0-1.081-0.58-1.983-1.782-1.983 c-1.413,0-2.548,1.461-2.548,3.42c0,1.247,0.422,2.09,0.422,2.09s-1.445,6.126-1.699,7.199c-0.505,2.137-0.076,4.756-0.04,5.02 c0.021,0.157,0.224,0.195,0.314,0.078c0.13-0.171,1.813-2.25,2.385-4.325c0.162-0.589,0.929-3.632,0.929-3.632 c0.459,0.876,1.801,1.646,3.228,1.646c4.247,0,7.128-3.871,7.128-9.053C20.5,4.15,17.182,0.5,12.137,0.5z"></path>
+					</svg>
+					</div>
+					</div>
+				</div>
+		
+				<!-- Sharingbutton LinkedIn -->
+				<div class="resp-sharing-button__link" title="Share on LinkedIn">
+					<div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+						<g>
+							<path d="M6.527,21.5h-5v-13h5V21.5z M4.018,6.5H3.988C2.478,6.5,1.5,5.318,1.5,4.019c0-1.329,1.008-2.412,2.547-2.412 c1.541,0,2.488,1.118,2.519,2.447C6.565,5.354,5.588,6.5,4.018,6.5z M15.527,12.5c-1.105,0-2,0.896-2,2v7h-5c0,0,0.059-12,0-13h5 v1.485c0,0,1.548-1.443,3.938-1.443c2.962,0,5.062,2.144,5.062,6.304V21.5h-5v-7C17.527,13.396,16.632,12.5,15.527,12.5z"></path>
+						</g>
+					</svg>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="map" class="map" title="">
+	
+			<div id="searchCont" style="position:absolute;left:10px;top:10px;z-index:2;width: calc(100% - 60px);max-width: 350px;display:none;" title="Search places or enter coordinates in 'lat, lon' format.">        
+				<div class="ui-widget">
+					<input id="searchBox" type="search" placeholder="Search places..." enterkeyhint="go" style="padding-left:0.5em;padding-top:0.3em;" />
+				</div>
+				<div id="searchResult" class="ui-widget" style="margin-top: 1em;">
+				</div>
+			</div>
+
+			<div id="coordinates" title="toggle decimal or deg/min/sec" ></div>
+			
+		</div>
+		<!-- left sidebar for ads -->
+		<div id="leftSidebarContainer">
+			<!-- GAM 71161633/LGHTPLLTNMP_lightpollutionmap/lhs_sidebar -->
+			<div data-fuse="23210154290"></div>
+		</div>	
+		<!-- footer for ads -->
+		<div id="footerContainer" style="padding: 0px 10px;">
+			<!-- GAM 71161633/LGHTPLLTNMP_lightpollutionmap/sticky_footer -->
+			<div data-fuse="23209195264"></div>
+		</div>
+	
+		<!-- Statistics modal -->
+		<div id="statisticsModal" style="display:none;">
+			<div id="statisticsModalOverlay"></div>
+			<div id="statisticsModalContent" role="dialog" aria-modal="true" aria-labelledby="statisticsModalTitle">
+				<h2 id="statisticsModalTitle">Statistics per country</h2>
+				<div class="stat-options">
+					<a class="stat-btn" id="viirsStats" href="/LP_Stats/" target="_blank" rel="noopener">VIIRS Statistics</a>
+					<a class="stat-btn" id="obsList" href="https://observatories.fyi/" target="_blank" rel="noopener">Observatory List</a>
+				</div>
+				<div id="statisticsModalClose" class="ol-popup-closer"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+  </body>
+</html>

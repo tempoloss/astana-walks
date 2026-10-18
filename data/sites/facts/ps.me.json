@@ -1,0 +1,43 @@
+{
+ "domain": "ps.me",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:28:48+00:00",
+ "pages": [
+  "https://fassbier.ps.me"
+ ],
+ "branches": [
+  {
+   "name": "FassBier",
+   "address": "Нур-Султан",
+   "lat": null,
+   "lon": null,
+   "phone": "+77780507683",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://menu.ps.me/Bf6FvmHKctA",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://fassbier.ps.me",
+     "snippet": "\"name\":\"FassBier\""
+    },
+    {
+     "field": "address",
+     "url": "https://fassbier.ps.me",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Нур-Султан\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://fassbier.ps.me",
+     "snippet": "\"telephone\":\"+77780507683\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "The venue's own page on the ps.me menu platform: JSON-LD Restaurant 'FassBier' with locality Нур-Султан and phone +77780507683; no street address and no opening hours in the HTML (menu is rendered client-side), so those stay None.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

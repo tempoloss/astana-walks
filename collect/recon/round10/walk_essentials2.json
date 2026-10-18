@@ -1,0 +1,34 @@
+{
+ "fetched": "2026-10-18",
+ "per_query_incremental": true,
+ "results": {
+  "pharm_all": {
+   "nodes": 182,
+   "ways": 1,
+   "total": 183,
+   "note": "identical query returned HTTP 400 four times in bg_62 (60-150 s apart), then 200 in a manual rerun - this mirror emits spurious 400 under load, do NOT read 400 as a deterministic parse error"
+  },
+  "pharm_hours": {
+   "err": "HTTP 400: <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html x"
+  },
+  "pharm_247": {
+   "err": "HTTP 502: # 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRetry your r"
+  },
+  "toilets_all": {
+   "err": "HTTP 400: <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html x"
+  },
+  "toilets_hours": {
+   "err": "HTTP 502: # 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRetry your r"
+  }
+ },
+ "queries": {
+  "pharm_all": "nwr[\"amenity\"=\"pharmacy\"](51.03,71.28,51.25,71.55)",
+  "pharm_hours": "nwr[\"amenity\"=\"pharmacy\"][\"opening_hours\"](51.03,71.28,51.25,71.55)",
+  "pharm_247": "nwr[\"amenity\"=\"pharmacy\"][\"opening_hours\"=\"24/7\"](51.03,71.28,51.25,71.55)",
+  "toilets_all": "nwr[\"amenity\"=\"toilets\"](51.03,71.28,51.25,71.55)",
+  "toilets_hours": "nwr[\"amenity\"=\"toilets\"][\"opening_hours\"](51.03,71.28,51.25,71.55)",
+  "streets_main": "way[\"highway\"~\"^(primary|secondary|tertiary)$\"](51.03,71.28,51.25,71.55)",
+  "streets_sidewalk": "way[\"highway\"~\"^(primary|secondary|tertiary)$\"][\"sidewalk\"~\"^(both|left|right|separate|yes)$\"](51.03,71.28,51.25,71.55)"
+ },
+ "cross_check_182": "matches §15.1 (amenity=pharmacy 182 nodes) exactly"
+}

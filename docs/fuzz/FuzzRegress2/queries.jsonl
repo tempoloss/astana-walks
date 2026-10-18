@@ -1,0 +1,60 @@
+{"id": "r01", "persona": "elderly", "lang": "ru", "origin": "opera", "lat": 51.1355, "lon": 71.4108, "time": "11:00", "q": "я пожилой человек, мне тяжело ходить по лестницам, куда можно спокойно сходить рядом"}
+{"id": "r03", "persona": "elderly", "lang": "ru", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "16:00", "q": "куда бы присесть недалеко, посидеть на скамейке, перекусить"}
+{"id": "r08", "persona": "courier", "lang": "ru", "origin": "aru_city", "lat": 51.122, "lon": 71.426, "time": "15:30", "q": "полчаса между заказами, где можно посидеть с телефоном, зарядить его"}
+{"id": "r09", "persona": "courier", "lang": "ru", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "16:00", "q": "где быстро поесть на бегу, у меня 20 минут"}
+{"id": "r11", "persona": "diet_vegetarian", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "13:00", "q": "ищу ресторан без мяса, я вегетарианка, желательно не фастфуд"}
+{"id": "r14", "persona": "diet_gluten", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4039, "time": "13:30", "q": "у меня целиакия, где поесть без глютена рядом"}
+{"id": "r16", "persona": "diet_kosher", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:00", "q": "где тут можно поесть кошерную еду"}
+{"id": "r18", "persona": "diet_halal_strict", "lang": "ru", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "12:30", "q": "только из мечети, нужна строго халяльная еда, свинину исключить полностью"}
+{"id": "r19", "persona": "sports_before", "lang": "ru", "origin": "arena", "lat": 51.1062, "lon": 71.409, "time": "17:00", "q": "через два часа матч на Астана Арене, где перекусить с друзьями до игры"}
+{"id": "r21", "persona": "sports_after", "lang": "ru", "origin": "arena", "lat": 51.1062, "lon": 71.409, "time": "21:30", "q": "матч только что закончился, где сейчас открыто поесть рядом со стадионом"}
+{"id": "r23", "persona": "family_toddlers", "lang": "ru", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "11:00", "q": "гуляю с малышом 2 лет, где детская площадка и рядом туалет с пеленальником"}
+{"id": "r24", "persona": "family_toddlers", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4039, "time": "15:00", "q": "где в ТРЦ можно с коляской погулять с ребёнком и покормить его"}
+{"id": "r27", "persona": "night_shift", "lang": "ru", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "03:30", "q": "смена до пяти утра, где ночью можно поесть горячего"}
+{"id": "r28", "persona": "night_shift", "lang": "ru", "origin": "arena", "lat": 51.1062, "lon": 71.409, "time": "04:00", "q": "что открыто в 4 утра, хочешь есть, работаю в ночную смену"}
+{"id": "r31", "persona": "vague", "lang": "ru", "origin": "nazarchen", "lat": 51.0894, "lon": 71.416, "time": "15:00", "q": "тот большой шатёр рядом, что это и можно ли туда зайти"}
+{"id": "r32", "persona": "vague", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "16:00", "q": "башня с шаром наверху, хочу подняться"}
+{"id": "r33", "persona": "vague", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:00", "q": "где-то видела юрту большую золотую, где она стоит?"}
+{"id": "r36", "persona": "vague", "lang": "ru", "origin": "nazarchen", "lat": 51.0894, "lon": 71.416, "time": "16:30", "q": "дерево жизни это что за памятник, далеко идти?"}
+{"id": "r37", "persona": "multistep", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "15:00", "q": "сначала поесть нормально, потом музей, успеть до 18:00, всё пешком"}
+{"id": "r38", "persona": "multistep", "lang": "ru", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "14:00", "q": "план на три часа: сначала мечеть посмотреть, потом поесть халяль, потом парк"}
+{"id": "r41", "persona": "followup", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:00", "q": "где поесть рядом", "follow": "а поближе"}
+{"id": "r42", "persona": "followup", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "13:00", "q": "куда сходить вечером", "follow": "а без алкоголя"}
+{"id": "r43", "persona": "followup", "lang": "ru", "origin": "aru_city", "lat": 51.122, "lon": 71.426, "time": "12:30", "q": "где недорого пообедать", "follow": "а если с ребёнком"}
+{"id": "r46", "persona": "followup", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4039, "time": "14:00", "q": "где посмотреть кино с детьми", "follow": "а на час дольше"}
+{"id": "r02", "persona": "elderly", "lang": "kk", "origin": "opera", "lat": 51.1355, "lon": 71.4108, "time": "10:30", "q": "картыгадан баспалдақпен жүру қиын, тыныш жүруге болатын орын бар ма"}
+{"id": "r10", "persona": "courier", "lang": "kk", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "17:00", "q": "жарты сағат бос уақытым бар, дәмді әрі арзан тамақ қайдан аламын"}
+{"id": "r13", "persona": "diet_vegetarian", "lang": "kk", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "12:30", "q": "ет жемейтін адамға мейрамхана керек, вегетариандық тағамдар бар жер"}
+{"id": "r22", "persona": "sports_after", "lang": "kk", "origin": "barys", "lat": 51.1182, "lon": 71.399, "time": "21:30", "q": "хоккей бітті, қазір ашық тұрған кафе немесе бар қайда бар"}
+{"id": "r25", "persona": "family_toddlers", "lang": "kk", "origin": "koktal_mall", "lat": 51.1942, "lon": 71.3361, "time": "12:00", "q": "баласымен ТРЦ-де уақыт өткізетін орын керек, ойнау алаңы бар жер"}
+{"id": "r29", "persona": "night_shift", "lang": "kk", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "03:00", "q": "түнгі ауысымнан кейін ашық тұрған дүкен немесе кафе қайда"}
+{"id": "r35", "persona": "vague", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "14:00", "q": "үстінде шар бар мұнара қайда, сол жаққа барғым келеді"}
+{"id": "r40", "persona": "multistep", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "15:30", "q": "алдымен түскі ас, сосын музей, сағат 18:00-ге дейін үлгеруім керек"}
+{"id": "r45", "persona": "followup", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:00", "q": "жақын жерде тамақ", "follow": "жақынырақ"}
+{"id": "r52", "persona": "elderly", "lang": "kk", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "15:00", "q": "ұзақ тұруға болатын, тыныш орын керек, дәрі ішу керек орынмен"}
+{"id": "r54", "persona": "diet_gluten", "lang": "kk", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "13:00", "q": "глютенге аллергиям бар, ондай тағамы жоқ мейрамхана қайда"}
+{"id": "r55", "persona": "diet_kosher", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:30", "q": "кошер тағам табылатын орын бар ма осы маңда"}
+{"id": "r56", "persona": "sports_before", "lang": "kk", "origin": "arena", "lat": 51.1062, "lon": 71.409, "time": "16:30", "q": "сометке дейін жанкүйерлермен ас ішетін орын керек"}
+{"id": "r58", "persona": "vague", "lang": "kk", "origin": "nazarchen", "lat": 51.0894, "lon": 71.416, "time": "17:00", "q": "сол үлкен шар ғимарат деген қандай орын, кіруге бола ма"}
+{"id": "r63", "persona": "elderly", "lang": "kk", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "12:00", "q": "қарт адамға ыңғайлы, отыратын орыны бар кафене қайда"}
+{"id": "r72", "persona": "courier", "lang": "kk", "origin": "koktal_mall", "lat": 51.1942, "lon": 71.3361, "time": "15:00", "q": "тапсырыс арасында 15 минут, жылдам кофе және телефонға розетка керек"}
+{"id": "r76", "persona": "diet_vegetarian", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4039, "time": "13:00", "q": "вегетариандық кафене немесе мейрамхана қай жерде"}
+{"id": "r84", "persona": "diet_halal_strict", "lang": "kk", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "13:30", "q": "халал тағам ғана ішемін, шошқа еті жоқ орын керек"}
+{"id": "r04", "persona": "student_en", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "13:00", "q": "finished classes, where can I grab a cheap lunch and study with wifi"}
+{"id": "r07", "persona": "student_en", "lang": "en", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "15:00", "q": "need a quiet place to write my thesis for a couple of hours, coffee would be nice"}
+{"id": "r12", "persona": "diet_vegetarian", "lang": "en", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4039, "time": "14:00", "q": "is there any vegetarian restaurant around Khan Shatyr, not just salads"}
+{"id": "r15", "persona": "diet_gluten", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "12:00", "q": "gluten free options anywhere near Baiterek tower?"}
+{"id": "r17", "persona": "diet_kosher", "lang": "en", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "13:00", "q": "looking for kosher food near the National Museum, any options at all"}
+{"id": "r20", "persona": "sports_before", "lang": "en", "origin": "arena", "lat": 51.1062, "lon": 71.409, "time": "17:30", "q": "match at Astana Arena tonight, where do fans eat and drink before the game?"}
+{"id": "r26", "persona": "family_toddlers", "lang": "en", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "16:30", "q": "toddler is getting cranky, need a playground and a cafe with a kids menu nearby"}
+{"id": "r30", "persona": "night_shift", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "04:30", "q": "night shift ends at 5, anything open for breakfast at 5 am around here?"}
+{"id": "r34", "persona": "vague", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "14:00", "q": "that sphere building from the expo, can you walk inside it?"}
+{"id": "r39", "persona": "multistep", "lang": "en", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "15:00", "q": "first lunch, then a museum, need to be done by 6 pm, everything walkable"}
+{"id": "r44", "persona": "followup", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "11:00", "q": "coffee near me", "follow": "something else please"}
+{"id": "r51", "persona": "diet_vegetarian", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "18:00", "q": "vegan dinner close to the expo area, sitting down preferred"}
+{"id": "r05", "persona": "student_zh_en", "lang": "zh_en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "18:30", "q": "附近有wifi的咖啡馆吗 我想复习功课 Does any cafe nearby have wifi for studying?"}
+{"id": "r06", "persona": "student_tr_en", "lang": "tr_en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "12:30", "q": "kahvaltı için bir yer var mı Where can I eat breakfast near the university?"}
+{"id": "r49", "persona": "student_zh_en", "lang": "zh_en", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "19:00", "q": "附近有什么好吃的吗 最好便宜点 Any good cheap food nearby?"}
+{"id": "r50", "persona": "student_tr_en", "lang": "tr_en", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "13:00", "q": "helal yemek nerede Where is halal food around the mosque?"}
+{"id": "r67", "persona": "student_zh_en", "lang": "zh_en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "12:00", "q": "我想吃汤面或者米饭 附近有吗 Looking for noodle soup or rice nearby"}
+{"id": "r68", "persona": "student_zh_en", "lang": "zh_en", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "20:00", "q": "图书馆几点关门 想找个晚上学习的咖啡厅 Need a late-night study cafe"}

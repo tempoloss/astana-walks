@@ -1,0 +1,9 @@
+{
+ "domain": "oceanbasket.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "Order SPA: the footer lists Astana street addresses (Кабанбай батыра 62, Сарайшык 7, Сыганак 17Б, Достык 9) but the API (/api/get_city) returns the delivery-zone centre only and hours text ('Заказы принимаются с 10:00 до 22:00') is site-wide order cutoff, not per-restaurant schedule; per-branch mapping unverifiable => nothing stored (rule: no inferred hours).",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

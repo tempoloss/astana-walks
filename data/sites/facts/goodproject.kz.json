@@ -1,0 +1,246 @@
+{
+ "domain": "goodproject.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:24:02+00:00",
+ "pages": [
+  "https://goodproject.kz/projects/selfie-astana/",
+  "https://goodproject.kz/projects/eva-wine-cafe/",
+  "https://goodproject.kz/projects/na-kryshe/",
+  "https://goodproject.kz/projects/malena-bar/",
+  "https://goodproject.kz/projects/lilou-bar/"
+ ],
+ "branches": [
+  {
+   "name": "Selfie",
+   "address": "г. Астана, ул. Достык, 16, Ритц Карлтон, 18 этаж",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (777) 000-05-15",
+   "opening_hours_raw": "ПН-ВС 12:00-00:00",
+   "opening_hours_osm": "Mo-Su 12:00-24:00",
+   "description": "Панорамный ресторан современной авторской кухни холдинга Good Project в партнёрстве с альянсом WRF.",
+   "url": "https://goodproject.kz/projects/selfie-astana/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://goodproject.kz/projects/selfie-astana/",
+     "snippet": "Selfie г. Астана",
+     "fetched_at": "2026-10-17T09:20:14+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://goodproject.kz/projects/selfie-astana/",
+     "snippet": "Контакты +7 (777) 000-05-15 г. Астана, ул. Достык, 16, Ритц Карлтон, 18 этаж Время работы: ПН-ВС 12:00-00:00 О нас",
+     "fetched_at": "2026-10-17T09:20:14+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://goodproject.kz/projects/selfie-astana/",
+     "snippet": "Контакты +7 (777) 000-05-15 г. Астана, ул. Достык, 16, Ритц Карлтон, 18 этаж Время работы: ПН-ВС 12:00-00:00 О нас",
+     "fetched_at": "2026-10-17T09:20:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://goodproject.kz/projects/selfie-astana/",
+     "snippet": "Время работы: ПН-ВС 12:00-00:00",
+     "fetched_at": "2026-10-17T09:20:14+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://goodproject.kz/projects/selfie-astana/",
+     "snippet": "Selfie г. Астана Панорамный ресторан современной авторской кухни холдинга Good Project в партнёрстве с альянсом WRF.",
+     "fetched_at": "2026-10-17T09:20:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Eva Wine Cafe",
+   "address": "г. Астана, ул. А. Байтурсынова 3, блок В-1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (705) 219-97-77",
+   "opening_hours_raw": "ВС-ЧТ 9:00-00:00 ПТ-СБ 9:00-01:00",
+   "opening_hours_osm": "Mo-Th,Su 09:00-24:00; Fr,Sa 09:00-01:00",
+   "description": "Философия Eva wine cafe — понятные и самобытные блюда comfort food, вызывающие эмоции, которыми хочется делиться, уютная атмосфера и гостеприимство команды.",
+   "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+     "snippet": "Eva Wine Cafe г. Астана",
+     "fetched_at": "2026-10-17T09:23:59+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+     "snippet": "Контакты +7 (705) 219-97-77 г. Астана, ул. А. Байтурсынова 3, блок В-1 Время работы: ВС-ЧТ 9:00-00:00 ПТ-СБ 9:00-01:00 О нас",
+     "fetched_at": "2026-10-17T09:23:59+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+     "snippet": "Контакты +7 (705) 219-97-77 г. Астана, ул. А. Байтурсынова 3, блок В-1 Время работы: ВС-ЧТ 9:00-00:00 ПТ-СБ 9:00-01:00 О нас",
+     "fetched_at": "2026-10-17T09:23:59+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+     "snippet": "Время работы: ВС-ЧТ 9:00-00:00 ПТ-СБ 9:00-01:00",
+     "fetched_at": "2026-10-17T09:23:59+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://goodproject.kz/projects/eva-wine-cafe/",
+     "snippet": "Eva Wine Cafe г. Астана Философия Eva wine cafe — понятные и самобытные блюда comfort food, вызывающие эмоции, которыми хочется делиться, уютная атмосфера и гостеприимство команды.",
+     "fetched_at": "2026-10-17T09:23:59+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "На крыше",
+   "address": "г. Астана, мкрн. Акбулак 3, ул.Жалаири 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(777)808-09-09",
+   "opening_hours_raw": "ВС-ЧТ: 12:00 – 01:00 ПТ-СБ: 12:00 – 02:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-01:00; Fr,Sa 12:00-02:00",
+   "description": "Первый в Астане панорамный ресторан с летней террасой “На Крыше” – уникальное место, где слилось воедино стильный интерьер, восхитительное меню и потрясающий вид на столицу.",
+   "url": "https://goodproject.kz/projects/na-kryshe/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://goodproject.kz/projects/na-kryshe/",
+     "snippet": "На Крыше г. Астана",
+     "fetched_at": "2026-10-17T09:24:00+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://goodproject.kz/projects/na-kryshe/",
+     "snippet": "Контакты +7(777)808-09-09 г. Астана, мкрн. Акбулак 3, ул.Жалаири 2 Время работы: ВС-ЧТ: 12:00 – 01:00 ПТ-СБ: 12:00 – 02:00 О нас",
+     "fetched_at": "2026-10-17T09:24:00+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://goodproject.kz/projects/na-kryshe/",
+     "snippet": "Контакты +7(777)808-09-09 г. Астана, мкрн. Акбулак 3, ул.Жалаири 2 Время работы: ВС-ЧТ: 12:00 – 01:00 ПТ-СБ: 12:00 – 02:00 О нас",
+     "fetched_at": "2026-10-17T09:24:00+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://goodproject.kz/projects/na-kryshe/",
+     "snippet": "Время работы: ВС-ЧТ: 12:00 – 01:00 ПТ-СБ: 12:00 – 02:00",
+     "fetched_at": "2026-10-17T09:24:00+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://goodproject.kz/projects/na-kryshe/",
+     "snippet": "На Крыше г. Астана Первый в Астане панорамный ресторан с летней террасой “На Крыше” – уникальное место, где слилось воедино стильный интерьер, восхитительное меню и потрясающий вид на столицу.",
+     "fetched_at": "2026-10-17T09:24:00+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Malena Bar",
+   "address": "г. Астана, Рақымжан Қошқарбаев 2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(777)715-99-77",
+   "opening_hours_raw": "ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00",
+   "opening_hours_osm": "Mo-Th,Su 15:00-01:00; Fr,Sa 15:00-02:00",
+   "description": "Tapas х Bar Friends only Уютный бар с уникальной атмосферой и безупречным музыкальным сопровождением, в котором представлена авторская коктейльная карта с обширным выбором напитков на любой вкус.",
+   "url": "https://goodproject.kz/projects/malena-bar/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://goodproject.kz/projects/malena-bar/",
+     "snippet": "Malena Bar г. Астана",
+     "fetched_at": "2026-10-17T09:24:01+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://goodproject.kz/projects/malena-bar/",
+     "snippet": "Контакты +7(777)715-99-77 г. Астана, Рақымжан Қошқарбаев 2 Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00 О нас",
+     "fetched_at": "2026-10-17T09:24:01+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://goodproject.kz/projects/malena-bar/",
+     "snippet": "Контакты +7(777)715-99-77 г. Астана, Рақымжан Қошқарбаев 2 Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00 О нас",
+     "fetched_at": "2026-10-17T09:24:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://goodproject.kz/projects/malena-bar/",
+     "snippet": "Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00",
+     "fetched_at": "2026-10-17T09:24:01+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://goodproject.kz/projects/malena-bar/",
+     "snippet": "Malena Bar г. Астана Tapas х Bar Friends only Уютный бар с уникальной атмосферой и безупречным музыкальным сопровождением, в котором представлена авторская коктейльная карта с обширным выбором напитков на любой вкус.",
+     "fetched_at": "2026-10-17T09:24:01+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Lilou Bar",
+   "address": "г. Астана, Керей Жанибек Хандар 32, БЦ Grey Plaza",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (701) 027-97-97",
+   "opening_hours_raw": "ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00",
+   "opening_hours_osm": "Mo-Th,Su 15:00-01:00; Fr,Sa 15:00-02:00",
+   "description": "Lilou Bar et Bistrot – первый коктейльный бар-бистро с панорамным видом сети Good Project.",
+   "url": "https://goodproject.kz/projects/lilou-bar/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://goodproject.kz/projects/lilou-bar/",
+     "snippet": "Lilou Bar г. Астана",
+     "fetched_at": "2026-10-17T09:24:02+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://goodproject.kz/projects/lilou-bar/",
+     "snippet": "Контакты +7 (701) 027-97-97 г. Астана, Керей Жанибек Хандар 32, БЦ Grey Plaza Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00 О нас",
+     "fetched_at": "2026-10-17T09:24:02+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://goodproject.kz/projects/lilou-bar/",
+     "snippet": "Контакты +7 (701) 027-97-97 г. Астана, Керей Жанибек Хандар 32, БЦ Grey Plaza Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00 О нас",
+     "fetched_at": "2026-10-17T09:24:02+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://goodproject.kz/projects/lilou-bar/",
+     "snippet": "Время работы: ПН-ЧТ: 15:00–01:00 ПТ-СБ: 15:00–02:00 ВС: 15:00–01:00",
+     "fetched_at": "2026-10-17T09:24:02+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://goodproject.kz/projects/lilou-bar/",
+     "snippet": "Lilou Bar г. Астана Lilou Bar et Bistrot – первый коктейльный бар-бистро с панорамным видом сети Good Project.",
+     "fetched_at": "2026-10-17T09:24:02+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "The holding also runs «Две реки» (goodproject.kz/projects/2-reki/) in Усть-Каменогорск — not Astana, skipped. «Soul kitchen» (a POI with this domain) is not listed on the site. Hours evidence = the per-venue footer; /contacts/ repeats addresses/phones without hours.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

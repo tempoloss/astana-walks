@@ -1,0 +1,250 @@
+{
+ "domain": "degirmen.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:54+00:00",
+ "pages": [
+  "https://degirmen.kz/filialy/"
+ ],
+ "branches": [
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, Абылайхана 32",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (705) 456-47-37",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, Абылайхана 32",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (705) 456-47-37",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, Республики 19",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (776) 529-80-23",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, Республики 19",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (776) 529-80-23",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, Кошкарбаева 29",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (702) 798-12-88",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, Кошкарбаева 29",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (702) 798-12-88",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, Кунаева 14",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (708) 377-77-78",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, Кунаева 14",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (708) 377-77-78",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, Кунаева 29",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (747) 656-42-69",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, Кунаева 29",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (747) 656-42-69",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г.Астана, ул.Сагадат Нурмагамбетова 23 НП15-16",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (707) 517-10-00",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г.Астана, ул.Сагадат Нурмагамбетова 23 НП15-16",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (707) 517-10-00",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Degirmen",
+   "address": "г. Астана, ул. Асфендиярова, 10, оф.14",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (702) 100-95-17",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://degirmen.kz/filialy/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "Degirmen",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "г. Астана, ул. Асфендиярова, 10, оф.14",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://degirmen.kz/filialy/",
+     "snippet": "8 (702) 100-95-17",
+     "fetched_at": "2026-10-17T09:29:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Only the Astana tab of the city tabs is used (7 points). No opening-hours text anywhere on the page — raw hours stay None. Points are unnamed; the chain name is used.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

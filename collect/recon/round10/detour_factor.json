@@ -1,0 +1,22 @@
+{
+ "method": "authoritative: decode_polyline6 from app.walks.walking (prod function) on data/walk_cache.json g-field; NOT key-endpoints (key ends are POI/road-snapped, gap median 34 m, p95 83 m — that is why some m < hav(key))",
+ "legs_with_polyline_endpoints_ge150m": 192,
+ "circuity_median": 1.43,
+ "p25": 1.3,
+ "p75": 1.7,
+ "p90": 2.46,
+ "min": 1.0,
+ "m_vs_polyline_length": "|m - |shape|| median 1.0 m, max 16 m => route meters are trustworthy",
+ "valhalla_speed_m_per_min": {
+  "median": 83.2,
+  "p25": 82.1,
+  "p75": 84.2,
+  "our_constant_WALK_M_PER_MIN": 75
+ },
+ "assumed_circuity": 1.3,
+ "reading": [
+  "true circuity in our sample exceeds the assumed 1.3: median 1.43 - legs are estimated ~9 % optimistic in distance; and Valhalla paces 83 m/min while we assume 75 (our time is conservative in the opposite direction); both from 192 short urban legs 16-17.10, not a long-distance factor",
+  "superseded: the first pass used m / haversine(KEY ends) and produced median 1.42 with impossible ratios down to 0.62 - quarantined by the same rule as bg_54"
+ ],
+ "fetched": "2026-10-18"
+}

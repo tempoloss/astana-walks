@@ -1,0 +1,52 @@
+{
+ "domain": "mastercoffee.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:44:34+00:00",
+ "pages": [
+  "https://mastercoffee.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Master Coffee (MASTER COFFEE TRADE, ИП)",
+   "address": "РК, г. Астана, переулок Жумабека Ташенова, дом 4/2, ВП 1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 778 161 30 33",
+   "opening_hours_raw": "Пн-Пт: 09:00-18:00, Сб: 10:00 - 16:00, Вс - выходной",
+   "opening_hours_osm": "Mo-Fr 09:00-18:00; Sa 10:00-16:00; Su off",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://mastercoffee.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://mastercoffee.kz/contacts",
+     "snippet": "MASTER COFFEE TRADE",
+     "fetched_at": "2026-10-17T09:30:15+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://mastercoffee.kz/contacts",
+     "snippet": "Фактический адрес: РК, г. Астана, переулок&nbsp; Жумабека Ташенова, дом 4/2, ВП 1.",
+     "fetched_at": "2026-10-17T09:30:15+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://mastercoffee.kz/contacts",
+     "snippet": "+7 778 161 30 33",
+     "fetched_at": "2026-10-17T09:30:15+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://mastercoffee.kz/contacts",
+     "snippet": "Пн-Пт: 09:00-18:00, Сб: 10:00 - 16:00, Вс - выходной",
+     "fetched_at": "2026-10-17T09:30:15+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Coffee roastery/coffee shop: /contacts prints (inside an escaped-JSON block) the Astana outlet of ИП \"MASTER COFFEE TRADE\": юридический адрес ул. Әлихан Бөкейхан 25 кв/офис 53 and фактический адрес переулок Жумабека Ташенова 4/2 ВП 1 (the physical one is stored), phone +7 778 161 30 33, график Пн-Пт 09:00-18:00, Сб 10:00-16:00, Вс выходной. This is the office/roastery, not the 'Master Coffee Capital Park' cafe; the site lists no other Astana addresses.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

@@ -1,0 +1,48 @@
+{
+ "domain": "esmeralda.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://esmeralda.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Esmeralda",
+   "address": "г. Астана ул. Б.Момышулы, 24/7",
+   "lat": null,
+   "lon": null,
+   "phone": "8 7171 49 72 55",
+   "opening_hours_raw": "ежедневно с 12:00 до 21:00",
+   "opening_hours_osm": "Mo-Su 12:00-21:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://esmeralda.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://esmeralda.kz/",
+     "snippet": "Esmeralda"
+    },
+    {
+     "field": "address",
+     "url": "http://esmeralda.kz/",
+     "snippet": "г. Астана ул. Б.Момышулы, 24/7 (пересечение с ул. Кордай)"
+    },
+    {
+     "field": "phone",
+     "url": "http://esmeralda.kz/",
+     "snippet": "8 7171 49 72 55"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://esmeralda.kz/",
+     "snippet": "ежедневно с 12:00 до 21:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Cafe on the HTTP home page (HTTPS uses a self-signed cert so https fetches fail; robots absent on http origin): contact block prints the Momysuly 24/7 address, phones '8 7171 49 72 55 , +7 778 96 83 747' (first kept) and 'ежедневно с 12:00 до 21:00' (Mo-Su via the keyword). Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

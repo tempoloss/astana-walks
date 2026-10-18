@@ -1,0 +1,114 @@
+{
+ "domain": "lepimivarim.ru",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:47+00:00",
+ "pages": [
+  "https://lepimivarim.ru/pelmennye/"
+ ],
+ "branches": [
+  {
+   "name": "Пельменная Великой Степи",
+   "address": "Астана, Проспект Кабанбай Батыра, д. 62, ТРЦ «Mega Silk Way»",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "пн-вс 10:00 — 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://lepimivarim.ru/pelmennye/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "<h2>Пельменная Великой Степи</h2>",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, Проспект Кабанбай Батыра, д. 62, ТРЦ «Mega Silk Way»",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, Проспект Кабанбай Батыра, д. 62, ТРЦ «Mega Silk Way»<br> пн-вс 10:00 — 23:00",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "ПЕЛЬМЕННАЯ В ШАТРЕ",
+   "address": "Астана, проспект Туран, д. 37, ТРЦ «Хан Шатыр»",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "пн-вс 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://lepimivarim.ru/pelmennye/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "<h2>ПЕЛЬМЕННАЯ В ШАТРЕ</h2>",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, проспект Туран, д. 37, ТРЦ «Хан Шатыр»",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, проспект Туран, д. 37, ТРЦ «Хан Шатыр»<br> пн-вс 10:00-23:00",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Пельменная на шелковом пути",
+   "address": "Астана, ул.Достык, д. 9, ТЦ «Керуен»",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "пн-вс 10:00 — 22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://lepimivarim.ru/pelmennye/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "<h2>Пельменная на шелковом пути</h2>",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, ул.Достык, д. 9, ТЦ «Керуен»",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://lepimivarim.ru/pelmennye/",
+     "snippet": "Астана, ул.Достык, д. 9, ТЦ «Керуен»<br> пн-вс 10:00 — 22:00",
+     "fetched_at": "2026-10-17T10:22:47+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Only the three 'Астана,' blocks of the пельменные list were stored; Russian-city branches are out of scope. The menu link labelled «Астана» is a PDF (Меги пельменная), no hours text there. Coordinates are not published on the page.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

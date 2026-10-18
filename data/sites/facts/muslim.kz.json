@@ -1,0 +1,11 @@
+{
+ "domain": "muslim.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.muslim.kz/ru"
+ ],
+ "branches": [],
+ "notes": "ДУМК portal: /ru pages carry the prayer-time widget (city 'Астана' is a selector value), the contacts path is 404 and the mosque address (Бейбітшілік пр.) is not printed on any reachable page — Hazrat Sultan mosque facts not harvestable first-party; no branches stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

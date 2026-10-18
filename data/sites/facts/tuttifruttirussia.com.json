@@ -1,0 +1,11 @@
+{
+ "domain": "tuttifruttirussia.com",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://tuttifruttirussia.com/"
+ ],
+ "branches": [],
+ "notes": "https origin answers a redirect loop (TooManyRedirects), robots.txt unreachable; the old RU chain site is dead. Nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "studio-mint.ru",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://nur-sultan.studio-mint.ru"
+ ],
+ "branches": [],
+ "notes": "Beget anti-bot stub: the host returns a 274-byte 'set_cookie + location.reload' page for every path, so no HTML content is crawlable without a browser. (The POI itself is an interior-design studio, category-mismatched as bar_nightlife.)",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

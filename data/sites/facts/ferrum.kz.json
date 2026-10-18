@@ -1,0 +1,52 @@
+{
+ "domain": "ferrum.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:25:16+00:00",
+ "pages": [
+  "http://ferrum.kz/contacts/"
+ ],
+ "branches": [
+  {
+   "name": "Ferrum Cafe",
+   "address": "Кошкарбаева 8, ЖК Хайвил, блок Е1-2",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 707 992 45 77",
+   "opening_hours_raw": "Вскр-Чт c 8:00 до 24:00, Пт-Сб с 8:00 до 2:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://ferrum.kz/contacts/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "http://ferrum.kz/contacts/",
+     "snippet": "Адрес: Кошкарбаева 8, ЖК Хайвил, блок Е1-2 Режим работы Ferrum Cafe",
+     "fetched_at": "2026-10-17T09:25:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://ferrum.kz/contacts/",
+     "snippet": "Режим работы Ferrum Cafe: Вскр-Чт c 8:00 до 24:00, Пт-Сб с 8:00 до 2:00 Режим работы доставки",
+     "fetched_at": "2026-10-17T09:25:16+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://ferrum.kz/contacts/",
+     "snippet": "Бронирование столиков: +7 707 992 45 77",
+     "fetched_at": "2026-10-17T09:25:16+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://ferrum.kz/contacts/",
+     "snippet": "FERRUM CAFE",
+     "fetched_at": "2026-10-17T09:25:16+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Single cafe; the page is titled 'Завтраки в Астане' and the address (Кошкарбаева 8, ЖК Хайвил) is in Астана. The separate delivery schedule ('Ежедневно с 8:00 до 23:00' / home-page 11:00-22:00 'по ЖК Highvill') is delivery-only and not stored. 'Вскр-Чт c 8:00 до 24:00, Пт-Сб с 8:00 до 2:00' uses abbreviations ('Вскр', 'Чт' as range parts) the hours parser cannot decode deterministically, so opening_hours_osm stays None while raw is kept verbatim.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

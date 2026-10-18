@@ -1,0 +1,9 @@
+{
+ "domain": "buddhabar-astana.com",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt readable but its last block is 'User-agent: * Disallow: /' (only Googlebot/Yandex-style agents are partly allowed) => every page of Buddha-Bar Astana is disallowed for astana-walks; nothing stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

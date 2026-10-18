@@ -1,0 +1,9 @@
+{
+ "domain": "rent-a-car.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:11:03+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "www.rent-a-car.kz — HTTP 403 на robots и на страницу (bot-wall); краул запрещён политикой.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

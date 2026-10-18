@@ -1,0 +1,731 @@
+{
+ "domain": "data.egov.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:11:03+00:00",
+ "pages": [
+  "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+  "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100"
+ ],
+ "branches": [
+  {
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+   "address": "г. Астана, ул. Джангильдина 9а",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 31-85-05",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г. Астана, \\nул. Джангильдина 9а\\n\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 31-85-05 \"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)",
+   "address": "г.Астана, пр. Тәуелсіздік, 2",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 36-93-50",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана, пр. Тәуелсіздік, 2\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 36-93-50\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Спорткомбинат «Даулет» акимата г. Астаны",
+   "address": "г.Астана, пр. Туран, 4/2",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 44-56-50",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"ГККП «Спорткомбинат «Даулет» акимата г. Астаны\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана, пр. Туран, 4/2\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 44-56-50\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Ледовый дворец «Алау» акимата города Астаны",
+   "address": "г.Астана, пр.Кабанбай батыра, 47",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 70-67-44",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"ГККП «Ледовый дворец «Алау» акимата города Астаны\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана, пр.Кабанбай батыра, 47\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 70-67-44\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+   "address": "г.Астана, Кажымукана, 7/1",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 57-84-53",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана, Кажымукана, 7/1\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 57-84-53\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "КГУ \"СДЮСШОР №8\" акимата города Астаны стадион имени Кажимукана Мунайтпасова",
+   "address": "г.Астана, ул.Кенесары, 14",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 39-01-37, 39-02-72",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана, ул.Кенесары, 14\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 39-01-37, 39-02-72\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Спорткомбинат Достык» акимата города Астаны \"Астана-Арена\"",
+   "address": "г.Астана , пр. Туран, 48",
+   "lat": null,
+   "lon": null,
+   "phone": "приемная: 702-701",
+   "opening_hours_raw": "08:30-18:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"nsksr\":\"ГККП «Спорткомбинат Достык» акимата города Астаны \\\"Астана-Арена\\\"\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"mr\":\"г.Астана , пр. Туран, 48\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"rrr\":\"08:30-18:00\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&version=v14&from=0&count=100",
+     "snippet": "\"ktr\":\"приемная: 702-701\"",
+     "fetched_at": "2026-10-17T09:04:12+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Государственная академическая филармония имени Еркегали Рахмадиева»",
+   "address": "г. Астана, ул. Кенесары, 32",
+   "lat": null,
+   "lon": null,
+   "phone": "75 22 00",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Государственная академическая филармония имени Еркегали Рахмадиева»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Кенесары, 32\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"75 22 00 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Музыкальный театр юного зрителя»",
+   "address": "г. Астана, ул. Омарова 47 б",
+   "lat": null,
+   "lon": null,
+   "phone": "57 25 48",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Музыкальный театр юного зрителя»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Омарова 47 б\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"57 25 48 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "КГУ «Инклюзивный театр «Қанаттылар»",
+   "address": "г. Астана, ул. И. Есенберлина, 10",
+   "lat": null,
+   "lon": null,
+   "phone": "7 705 110 10 16",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"КГУ «Инклюзивный театр «Қанаттылар»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. И. Есенберлина, 10\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"7 705 110 10 16\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "КГУ «Централизованная библиотечная система»",
+   "address": "г. Астана, ул. Ш. Кудайбердыулы, 25/3",
+   "lat": null,
+   "lon": null,
+   "phone": "99 51 52",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"КГУ «Централизованная библиотечная система»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Ш. Кудайбердыулы, 25/3\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"99 51 52 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Дирекция по проведению культурных мероприятий»",
+   "address": "г. Астана, пр. Туран, 2/6",
+   "lat": null,
+   "lon": null,
+   "phone": "+7775 536 46 00",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Дирекция по проведению культурных мероприятий»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"пр. Туран, 2/6\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"+7775 536 46 00\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Дворец «Жастар»",
+   "address": "г. Астана, пр. Республики, 34",
+   "lat": null,
+   "lon": null,
+   "phone": "32 80 91",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Дворец «Жастар»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"пр. Республики, 34\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"32 80 91 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Столичный цирк»",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": "24 42 08",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Столичный цирк»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"24 42 08 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Дирекция объединенных музеев»",
+   "address": "г. Астана, ул. Кабанбай батыра, 5",
+   "lat": null,
+   "lon": null,
+   "phone": "24 53 77",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Дирекция объединенных музеев»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Кабанбай батыра, 5\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"24 53 77 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Государственный академический русский театр драмы им. М. Горького»",
+   "address": "г. Астана, ул. Желтоксан 11,13",
+   "lat": null,
+   "lon": null,
+   "phone": "57 23 55",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Желтоксан 11,13\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"57 23 55\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Государственный театр танца «Наз»",
+   "address": "г. Астана, мкр. Коктал 1, ул. Алмалык д.1",
+   "lat": null,
+   "lon": null,
+   "phone": "30 02 87",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Государственный театр танца «Наз»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"мкр. Коктал 1, ул. Алмалык д.1\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"30 02 87 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Театр кукол»",
+   "address": "г. Астана, пр. Республики, 3",
+   "lat": null,
+   "lon": null,
+   "phone": "43 96 24",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Театр кукол»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"пр. Республики, 34\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"43 96 24 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Жастар театры»",
+   "address": "г. Астана, ул. Есенберлина, 10",
+   "lat": null,
+   "lon": null,
+   "phone": "38 01 08",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Жастар театры»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"ул. Есенберлина, 10\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"38 01 08 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ГККП «Государственный театр драмы и комедии имени Азербайжана Мамбетова»",
+   "address": "г. Астана, пр. Мәңгілік ел, 55/2",
+   "lat": null,
+   "lon": null,
+   "phone": "33 65 82",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"naimenovanieorganizatsiirus\":\"ГККП «Государственный театр драмы и комедии имени Азербайжана Мамбетова»\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"yuridichedkiiadress_na_rus\":\"пр. Мәңгілік ел, 55/2\"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=madeniet_uiymdary&version=v17&from=0&count=100",
+     "snippet": "\"kontact_telrus\":\"33 65 82 \"",
+     "fetched_at": "2026-10-17T09:04:11+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "Реестры акимата Астаны с портала data.egov.kz (keyless exportjson, версия со страницы датасета). Спорт (№730, Упр. спорта, 7 строк): rrr='режим работы' — служебные часы учреждений без дней недели (needs_days), телефон — приёмная ('приемная: 31-85-05', без кода города — как в источнике). Культура (№729, Упр. культуры, 13 строк): адрес юридический без города (префикс добавлен в value, сниппет — исходный), телефоны локальные. Координат в обоих датасетах нет. Часы не выдумываются: это время работы администрации спортшкол, не график посещений секций.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

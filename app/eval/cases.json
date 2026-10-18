@@ -1,0 +1,1746 @@
+[
+  {
+    "id": "tz1",
+    "label": "Mega Silk Way · будни 14:00 · обычная погода · прогулка 30–60 мин",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+    "tz": true,
+    "axes": {
+      "origin": "msw",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин."
+    }
+  },
+  {
+    "id": "tz2",
+    "label": "Байтерек · будни 14:00 · обычная погода · тихое кафе с розеткой",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Тихое место с кофе и розеткой",
+    "tz": true,
+    "axes": {
+      "origin": "baiterek",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые."
+    }
+  },
+  {
+    "id": "tz3",
+    "label": "Хан Шатыр · будни 14:00 · обычная погода · с ребёнком",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": true,
+    "axes": {
+      "origin": "khan",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения."
+    }
+  },
+  {
+    "id": "tz4",
+    "label": "LRT Аэропорт · будни 14:00 · обычная погода · турист",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": true,
+    "axes": {
+      "origin": "lrt",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин."
+    }
+  },
+  {
+    "id": "tz5",
+    "label": "Байтерек · будни 23:00 · обычная погода · необычная ночная активность",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T23:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Необычная ночная активность",
+    "tz": true,
+    "axes": {
+      "origin": "baiterek",
+      "when": "night",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются."
+    }
+  },
+  {
+    "id": "expo-wk14-normal-tourist",
+    "label": "EXPO · будни 14:00 · обычная погода · турист",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин."
+    }
+  },
+  {
+    "id": "expo-wk14-cold-kids",
+    "label": "EXPO · будни 14:00 · ощущается −25°C · с ребёнком",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "wk14",
+      "weather": "cold",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "expo-eve-normal-walk",
+    "label": "EXPO · будни 19:30, после заката · обычная погода · прогулка 30–60 мин",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Рядом с EXPO, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "expo-night-normal-night",
+    "label": "EXPO · будни 23:30 · обычная погода · необычная ночная активность",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Необычная ночная активность",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "night",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются."
+    }
+  },
+  {
+    "id": "expo-hol-smog-quiet",
+    "label": "EXPO · праздник (перенос Дня Республики), 14:00 · PM2.5 60 · тихое кафе с розеткой",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "hol",
+      "weather": "smog",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "expo-wk14-normal-mobility",
+    "label": "EXPO · будни 14:00 · обычная погода · маломобильный",
+    "origin": {
+      "name": "EXPO",
+      "lat": 51.089,
+      "lon": 71.416
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+    "tz": false,
+    "axes": {
+      "origin": "expo",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "step_free": true,
+      "notes": "Только места без wheelchair=no; если доступность не указана в данных — пометить; ближе 10 мин пешком."
+    }
+  },
+  {
+    "id": "msw-eve-cold-tourist",
+    "label": "Mega Silk Way · будни 19:30, после заката · ощущается −25°C · турист",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "eve",
+      "weather": "cold",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "msw-wk14-smog-walk",
+    "label": "Mega Silk Way · будни 14:00 · PM2.5 60 · прогулка 30–60 мин",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "wk14",
+      "weather": "smog",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. PM2.5 60: приоритет помещениям. В непогоду допустимы торговые центры как помещение вместо прогулки."
+    }
+  },
+  {
+    "id": "msw-night-cold-night",
+    "label": "Mega Silk Way · будни 23:30 · ощущается −25°C · необычная ночная активность",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Необычная ночная активность",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "night",
+      "weather": "cold",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "msw-hol-normal-kids",
+    "label": "Mega Silk Way · праздник (перенос Дня Республики), 14:00 · обычная погода · с ребёнком",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "hol",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой."
+    }
+  },
+  {
+    "id": "msw-eve-normal-quiet",
+    "label": "Mega Silk Way · будни 19:30, после заката · обычная погода · тихое кафе с розеткой",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "msw-wk14-cold-mobility",
+    "label": "Mega Silk Way · будни 14:00 · ощущается −25°C · маломобильный",
+    "origin": {
+      "name": "Mega Silk Way",
+      "lat": 51.089,
+      "lon": 71.407
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+    "tz": false,
+    "axes": {
+      "origin": "msw",
+      "when": "wk14",
+      "weather": "cold",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "step_free": true,
+      "notes": "Только места без wheelchair=no; если доступность не указана в данных — пометить; ближе 10 мин пешком. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "baiterek-eve-normal-tourist",
+    "label": "Байтерек · будни 19:30, после заката · обычная погода · турист",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "baiterek-hol-normal-walk",
+    "label": "Байтерек · праздник (перенос Дня Республики), 14:00 · обычная погода · прогулка 30–60 мин",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Рядом с Байтерек, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "hol",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой."
+    }
+  },
+  {
+    "id": "baiterek-wk14-cold-quiet",
+    "label": "Байтерек · будни 14:00 · ощущается −25°C · тихое кафе с розеткой",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "wk14",
+      "weather": "cold",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "baiterek-eve-smog-kids",
+    "label": "Байтерек · будни 19:30, после заката · PM2.5 60 · с ребёнком",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "eve",
+      "weather": "smog",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "baiterek-night-smog-night",
+    "label": "Байтерек · будни 23:30 · PM2.5 60 · необычная ночная активность",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Необычная ночная активность",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "night",
+      "weather": "smog",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "baiterek-wk14-normal-mobility",
+    "label": "Байтерек · будни 14:00 · обычная погода · маломобильный",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "step_free": true,
+      "notes": "Только места без wheelchair=no; если доступность не указана в данных — пометить; ближе 10 мин пешком."
+    }
+  },
+  {
+    "id": "khan-eve-normal-quiet",
+    "label": "Хан Шатыр · будни 19:30, после заката · обычная погода · тихое кафе с розеткой",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "khan-hol-cold-tourist",
+    "label": "Хан Шатыр · праздник (перенос Дня Республики), 14:00 · ощущается −25°C · турист",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "hol",
+      "weather": "cold",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "khan-eve-cold-kids",
+    "label": "Хан Шатыр · будни 19:30, после заката · ощущается −25°C · с ребёнком",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "eve",
+      "weather": "cold",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "khan-wk14-smog-walk",
+    "label": "Хан Шатыр · будни 14:00 · PM2.5 60 · прогулка 30–60 мин",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Рядом с Хан Шатыр, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "wk14",
+      "weather": "smog",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. PM2.5 60: приоритет помещениям. В непогоду допустимы торговые центры как помещение вместо прогулки."
+    }
+  },
+  {
+    "id": "khan-night-normal-night",
+    "label": "Хан Шатыр · будни 23:30 · обычная погода · необычная ночная активность",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Необычная ночная активность",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "night",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются."
+    }
+  },
+  {
+    "id": "khan-eve-smog-mobility",
+    "label": "Хан Шатыр · будни 19:30, после заката · PM2.5 60 · маломобильный",
+    "origin": {
+      "name": "Хан Шатыр",
+      "lat": 51.1324,
+      "lon": 71.4036
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+    "tz": false,
+    "axes": {
+      "origin": "khan",
+      "when": "eve",
+      "weather": "smog",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "step_free": true,
+      "notes": "Только места без wheelchair=no; если доступность не указана в данных — пометить; ближе 10 мин пешком. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "lrt-night-cold-tourist",
+    "label": "LRT Аэропорт · будни 23:30 · ощущается −25°C · турист",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "lrt",
+      "when": "night",
+      "weather": "cold",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "lrt-hol-normal-tourist",
+    "label": "LRT Аэропорт · праздник (перенос Дня Республики), 14:00 · обычная погода · турист",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "lrt",
+      "when": "hol",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой."
+    }
+  },
+  {
+    "id": "lrt-eve-smog-quiet",
+    "label": "LRT Аэропорт · будни 19:30, после заката · PM2.5 60 · тихое кафе с розеткой",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "lrt",
+      "when": "eve",
+      "weather": "smog",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "lrt-wk14-cold-walk",
+    "label": "LRT Аэропорт · будни 14:00 · ощущается −25°C · прогулка 30–60 мин",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Рядом с LRT Аэропорт, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "lrt",
+      "when": "wk14",
+      "weather": "cold",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м. В непогоду допустимы торговые центры как помещение вместо прогулки."
+    }
+  },
+  {
+    "id": "lrt-eve-normal-kids",
+    "label": "LRT Аэропорт · будни 19:30, после заката · обычная погода · с ребёнком",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "lrt",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "left-wk14-normal-walk",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 14:00 · обычная погода · прогулка 30–60 мин",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Рядом с домом, прогулка 30–60 мин",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint",
+        "cafe",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 45,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин."
+    }
+  },
+  {
+    "id": "left-eve-normal-kids",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 19:30, после заката · обычная погода · с ребёнком",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "eve",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно."
+    }
+  },
+  {
+    "id": "left-wk14-normal-quiet",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 14:00 · обычная погода · тихое кафе с розеткой",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Тихое место с кофе и розеткой",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "wk14",
+      "weather": "normal",
+      "persona": "quiet"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Кафе или коворкинг/библиотека; Wi-Fi и розетки заявлять только если они есть в данных, иначе пометить как не подтверждённые."
+    }
+  },
+  {
+    "id": "left-night-normal-night",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 23:30 · обычная погода · необычная ночная активность",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Необычная ночная активность",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "night",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "culture_theatre_cinema",
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint",
+        "mall",
+        "sport"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "other"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Места, открытые по данным в это время, либо честно помеченные «часы неизвестны»; закрытые не рекомендуются."
+    }
+  },
+  {
+    "id": "left-hol-smog-mobility",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · праздник (перенос Дня Республики), 14:00 · PM2.5 60 · маломобильный",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "hol",
+      "weather": "smog",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "step_free": true,
+      "notes": "Только места без wheelchair=no; если доступность не указана в данных — пометить; ближе 10 мин пешком. Праздник: «открыто» по OSM должно быть понижено до «неизвестно» с пометкой. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "left-eve-cold-tourist",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 19:30, после заката · ощущается −25°C · турист",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T19:30",
+    "weather_override": {
+      "apparent_c": -25.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Турист, 2 часа до вылета",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "eve",
+      "weather": "cold",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "museum_gallery",
+        "park_garden",
+        "cafe",
+        "restaurant",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "sport",
+        "other",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Короткий маршрут к достопримечательностям/кафе в пределах 15 мин пешком; на дорогу туда-обратно и пребывание уходит не больше 60 мин. После заката: открытые площадки ниже в рейтинге, освещение в данных неизвестно. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м."
+    }
+  },
+  {
+    "id": "left-wk14-smog-kids",
+    "label": "ЖК Highvill Ishim (левый берег, жилой квартал) · будни 14:00 · PM2.5 60 · с ребёнком",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-20T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 60.0
+    },
+    "query": "С ребёнком: площадка или интерактивный музей",
+    "tz": false,
+    "axes": {
+      "origin": "left",
+      "when": "wk14",
+      "weather": "smog",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment",
+        "park_garden",
+        "mall",
+        "cafe",
+        "restaurant",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. PM2.5 60: приоритет помещениям."
+    }
+  }
+]

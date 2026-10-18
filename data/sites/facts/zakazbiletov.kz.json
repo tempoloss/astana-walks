@@ -1,0 +1,9 @@
+{
+ "domain": "zakazbiletov.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "Ticket aggregator (own booking office hours Пн-Вс 10:00-22:00 only); the POI 'Celentano retro bar' appears there as an event venue address «Дәулет», not via the bar's own site => not first-party for that venue, nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

@@ -1,0 +1,88 @@
+# Round 5 — Business / legal-entity registers (POI verification + closure detection)
+
+## Table
+
+| source | endpoint (exact) | licence + verbatim quote + URL fetched | fields | live proof (HTTP + snippet/count) | Astana yield | verdict |
+|---|---|---|---|---|---|---|
+| **data.egov.kz API v4 (detailed passthrough)** | `https://data.egov.kz/api/detailed/pharmacy?source={"size":2}` | Portal licence: not stated on `/pages/samples`; open-data regime = Приказ № 32813 (V2300032813). **Verbatim from https://data.egov.kz/pages/samples (API description):** «АРІ 4-нұсқаның сипаттамасы … Деректер бойынша іздеу elasticsearch технологиясын қолданумен іске асырылды… **/api/v4/dataset?source={QueryinJsonObject}** … /api/v4/mapping/dataset» — **no apiKey, no limits, no attribution requirement mentioned anywhere on the samples page**. Licence on the portal: not quoted (no licence page found); legal basis = KZ open-data mandate (gov must publish). | `Name`, `Region:Int`, `geoposition:"lat,lon"`, `Address` | HTTP 200. `totalCount 56`; row: `{"Address":"г. Астана, м-н Достык ул. Сауран д.5","geoposition":"51.121077,71.419938","Region":17108,"Name":"Гиппократ № 03","Id":4}` | **Astana-only index?** `match Region:17108` → totalCount 53 of 56 — pharmacy index IS region-partitioned (56 total but only 53 in Astana Region 17108 ⇒ 3 rows with other/older Region codes). **17108 = Astana code, works as filter.** | **STORE** — 56 pharmacy entities incl. Astana, with legal names + addresses + coordinates. This is a state-licensed-register, so storage is fine. |
+| **notaries** | `https://data.egov.kz/api/detailed/notaries?source={"size":2}` | same portal | `FullName`, `Address`, `geoposition`, `PhoneNumber`, `Region:Int` | HTTP 200, `totalCount 746`; Astana match on `Region:17108` → **0 rows** (notaries Region values are different, e.g. 17112 = Almaty) ⇒ the notaries index uses a different region coding than pharmacy; Astana rows do exist but need a different filter. | Astana subset not isolable by `Region:17108` — needs a different code (or text-filter on Address). | **STORE** (register of notary offices, name+address+phone+coords) but with an unexplained Region-coding inconsistency vs pharmacy. |
+| **ps_centers (ЦОН / service centres)** | `https://data.egov.kz/api/detailed/ps_centers?source={"size":2}` | same portal | `NameRus`, `NameKaz`, `AddressRus/Kaz`, `ShortAddressRus/Kaz`, `geoposition`, `PhoneNumber`, `Region:"195220100; Г.КАСКЕЛЕН"` (string! not int), `TaxStructure`, `ModifiedDate` | HTTP 200, `totalCount 555` (nationwide). Astana filter = string-match on `Region` — **untested numerically** (Region is a string here, unlike pharmacy). | 555 nationally; Astana slice exists (round-4 gov4c page cross-check) | **STORE** — useful as an address gazetteer for state service points, not for commercial POI verification. |
+| **bus_stops** | `https://data.egov.kz/api/detailed/bus_stops?source={"size":2}` | same portal | `RouteDirection`, `FullName`, `pavilion_type`, `id` (no geoposition) | (from parent, verified earlier) totalCount 955 | Astana | **STORE** (transport layer only) |
+| **address register (RCA)** | `https://data.egov.kz/api/detailed/s_buildings,s_grounds_new,s_pb?source={"query":{"match_all":{}},"size":N}` | same portal | national address register | totalCount **9 900 613** (parent-verified) | national incl. Astana | **STORE** — full legal address gazetteer (the thing needed to geocode business legal addresses). |
+| **s_geonims / s_ats / d_geonims_types** | `https://data.egov.kz/api/detailed/s_geonims?source=…` | same portal | `name_rus`,`name_kaz`,`full_path_rus`,`full_path_kaz`,`rco`,`s_ats_id`,`d_geonims_type_id`,`actual`,`modified` | `s_geonims` 170 943; `s_ats` 9 492 (cato); `d_geonims_types` 85 type codes (11=УЛИЦА…). Astana geonims slice ~4112, **max(modified) = 2026-10-15 13:38** ⇒ live | Astana ~4112 street/venue-name records, fresh 2 days ago | **STORE** — freshest legal street geonym source (contrast OpenAddresses ≤2017). |
+| **Versioned index (change-detection feed)** | `https://data.egov.kz/api/detailed/madeniet_uiymdary/v17?source={"query":{"match_all":{}},"size":200}` | same portal | v17: 13 rows (KZ names), v1: 9 (RU names), v2: 6 (RU names), v5/v10/v15: 0 — versions are **sparse but individually queryable** | HTTP 200 per version; diff v2→v17 = add/remove/rename set (below) | Astana (akimat) | **STORE** — the «place has gone» signal. |
+| **getmeta (version resolver)** | `https://data.egov.kz/datasets/getmeta?index=madeniet_uiymdary` | same portal | `owner`, `fields`, `modifiedDate` | HTTP 200, full field list returned | — | **STORE** — needed to pair `index` ↔ current version before querying. |
+| **pharmacy (Astana filter)** | `https://data.egov.kz/api/detailed/pharmacy?source={"size":2,"query":{"match":{"Region":17108}}}` | same | — | totalCount **53** (of 56) — confirms 17108=Astana and index is partitioned | 53/56 Astana | **STORE** |
+| **notaries (Astana filter)** | `https://data.egov.kz/api/detailed/notaries?source={"size":2,"query":{"match":{"Region":17108}}}` | same | — | totalCount **0** ⇒ notaries does NOT use 17108 (different code space) | not isolable via 17108 | **STORE** (with caveat) |
+| **e-ASHYQ (food-safety A/B/C)** | host not found: `ashyq.kz` (TLS fail), `www.ashyq.kz` / `beta.ashyq.kz` / `ashyq.gov.kz` — not probed live here; **Magda/Ashyq Data portal** at `https://ashyq.data.gov.kz/api/v0/search/datasets?generalQuery=общепит` | Dataset «Единый реестр субъектов и объектов проверок» (`magda-ds-faa0e99e-…`) licence field: `"license":{"name":"For general re-use (Creative Commons CC BY4.0)"}` (verbatim from the API JSON response, fetched live). | `BIN`, `SBJ_ID`, `OBJ_ID`, `OFFENCE_TOTAL_1/2/3`, `OFFENCE_COUNT_1/2/3`, `DATE_BEGIN`, `PERIOD_BEGIN/END`, `RESULT_CHECH_ID`, `DATE_FACT_END`, `ERSOP_OBJ` | HTTP 200 search API; **direct CSV/XLSX URLs (magda-minio-web.data.gov.kz) fail with TLS cert error** — only the dataset metadata JSON is keyless-readable. | No A/B/C-grade catering register found — the search returns only ERSOP (prosecutor's checks) and an unrelated eGov-services KB dataset. | **STORE (CC BY 4.0) for ERSOP** = «was inspected / verdict» — the quality-signal we wanted; but the A/B/C «Ashyq» grade register itself is **not** published here. |
+| **data.egov.kz catalogue (search UI)** | `https://data.egov.kz/datasets/search?text=общепит` / `разрешение` / `лицензия` / `кафе` / `парикмахер` / `предприниматель` | portal (no licence page) | dataset descriptions | HTTP 200; «общепит», «кафе», «парикмахер» → **0 datasets with business-subject addresses**; «лицензия» → only type-codes and personal registers (notaries/advocates lists with addresses, e.g. `notariustar_tizimi4` with `kontaktyru` address strings); «разрешение» → construction/permits, not business. | 0 for business subjects with coords | **DEAD** as a source of Astana business subjects. |
+| **data.egov.kz exportjson (slug-based)** | `https://data.egov.kz/datasets/exportjson?index=notariustar_tizimi4&from=1&count=10` | same portal | `fiokz`, `regionkz`="Астана", `nomerlitsenziiru`, `kontaktyru` (address+phone free-text) | HTTP 200, 10 notaries for Astana returned. | ~ tens (Astana notaries) | **STORE** — but personal-practitioner register, not commercial POI. |
+| **data.egov.kz numeric-index exportjson** | `https://data.egov.kz/datasets/exportjson?index=730&from=1&count=10` | same portal | — | HTTP 200 but **`[]` for every numeric index tried (729,730,789,283,1510611,1510612)** — this endpoint is effectively dead for numeric ids; only slug-based works. | — | **DEAD** (numeric id path). |
+| **getdatasetsre (JSON catalogue)** | `https://data.egov.kz/api/v4/datasets/getdatasetsre?text=субъект` / `…/datasets/getdatasetsre?from=1` | — | — | HTTP **403** / **500** | — | **DEAD** (bulk catalogue not keyless-readable). |
+| **getdatasetsrecount** | `https://data.egov.kz/datasets/getdatasetsrecount` | — | `totalCount` | HTTP 200, `"totalCount": 3944` | — | (count only) |
+| **goszakup.gov.kz (procurement suppliers/customers)** | `https://ows.goszakup.gov.kz/subject/all`, `/subject/biin/<bin>`, `/subject/biin/<bin>/address` (REST v3) / GraphQL `subjects` | Docs (https://goszakup.gov.kz/ru/developer/ows_v3): «Для получения доступа к унифицированным сервисам (открытым данным) разработчикам необходимо … **Для получения первичного токена авторизации обратиться в АО “Центр Электронных Финансов”** … **Токен выдается сроком на 1 Год**» | `bin/iin`, `name_ru/kz`, `full_name_ru/kz`, `customer`, `supplier`, `okеd_list`, `kato_list`, `Address` (SubjectAddress: `address`, `katoCode`), `crdate` | Live probe `https://ows.goszakup.gov.kz/subject/all?kato=751110000&limit=2` → **HTTP 401** (no token). | Astana subset: cannot count without token; register includes every state buyer (school/museum/polyclinic) + all suppliers — effectively covers **every formal legal entity trading with the state**, incl. Astana. | **CONTRACT→STORE** (data itself is open once you hold a free 1-year token; commercial use is not forbidden, only gated). Best structured source for «legal address + OKED + is-this-entity-still-registered». |
+| **elicense.kz** | `https://elicense.kz/LicensingContent/SimpleSearchLicense` | page footer: «© Қазақстан Республикасындағы электрондық лицензиялау» — no open-data licence; search is behind «[Кіру](/Account/LogOn) / [Тіркелу]» | licence records per subject | HTTP 200 but search form requires login; no keyless API visible | 0 machine-readable | **CONTRACT/DEAD** for open machine access. |
+| **gov4c.kz (ЦОН branches)** | `https://gov4c.kz/` | gov site, no licence quote | branch addresses, hours (round-4 found 14 Astana branches) | HTTP 200 (HTML) | 14 Astana ЦОНЫ | **STORE** (own HTML, but public-sector info, no restrictions) — already covered in round 4, only confirming host alive. |
+| **stat.gov.kz OKED/BIN gazetteer** | (portal) | — | — | Login cabinet; no open bulk file found via search/UI. | 0 | **CONTRACT/DEAD**. |
+| **OpenCorporates bulk** | `https://bulk.opencorporates.com/` | — | — | **ENOTFOUND** | 0 | **DEAD** (route no longer exists). |
+| **OpenCorporates AWS mirror** | `https://registry.opendata.aws/opencorporates/` | — | — | **404** | 0 | **DEAD** (never existed). |
+| **OpenCorporates API** | `https://api.opencorporates.com/v0.4/companies/search?q=астана&jurisdiction_code=kz` | API commercial license (paid); free non-commercial tier exists for journalists/academics/NGOs — storage of API output is governed by their commercial API ToS (ODbL applies to the underlying register data, not the API output). | — | **HTTP 401** (confirmed 2026-10-17) | 0 | **CONTRACT** (paid) — not a route for us. |
+| **checko.kz / aggregators** | — | — | — | Not separately probed live (parent flagged as low-priority); industry-standard «all rights reserved» ⇒ RUNTIME only, but host itself not verified here. | — | **[не проверено]** — treat as RUNTIME/DEAD until a card is proven server-rendered. |
+
+### Versioned-index diff proof (madeniet_uiymdary)
+
+`/api/detailed/madeniet_uiymdary/v2` (6 rows) vs `/v17` (13 rows), both HTTP 200:
+
+- **Gone in v17** (present in v2): `ГККП "Дворец Независимости"`, `ГККП "Дворец Мира и Согласия"`, `ТОО "Астана-Байтерек"`, `ГККП «Дирекция по обеспечению сохранности памятников и объектов историко-культурного наследия»`.
+- **Added in v17**: `ГККП «Дирекция объединенных музеев»`, `ГККП «Государственный театр драмы и комедии имени Азербайжана Мамбетова»`, `КГУ «Инклюзивный театр «Қанаттылар»»`, `ГККП «Государственный театр танца «Наз»` (was in v1), `ГККП «Дирекция по проведению культурных мероприятий»`, `ГККП «Дворец «Жастар»` (was in v1), `ГККП «Театр кукол»`, `ГККП «Столичный цирк»` (was in v2), `ГККП «Жастар театры»` (was in v1), `ГККП «Музыкальный театр юного зрителя»`, `КГУ «Централизованная библиотечная система»` (renamed from `ГУ «…города Астаны»`).
+- **Renamed**: `Государственная академическая филармония` → `имени Еркегали Рахмадиева`; `Театр "Astana Ballet"` disappeared from the register (it is a ТОО, may have moved to a different owner list).
+- Every version carries its own field schema (v1: `organisazi_kultur/adres/direktor`; v2: `naimenovanie_dom_kultury/adress/fio_rukovoditel/adress_saita`; v17: bilingual `naimenovanieorganizatsii*`, `yuridichedkiiadress_na_rus/kaz`, `kontact_telrus/kaz`, `otchetnyi_period`) — so a diff engine must map by id + name, not by field names.
+
+### `/pages/samples` verbatim (API key / limits)
+
+The samples page describes API v4 and the Detailed API with **no mention of apiKey, rate limits, or attribution**. The only auth-related note on the site is the separate «Бағдарламашы кабинеті» (developer cabinet) menu item; the detailed API itself works keyless (verified live above). Format example quoted from the page:
+
+> «**/api/detailed/dataset?source={Query in Json Object}** … Берілген сұрау dataset деректер жиыны бойынша іздеуді жүзеге асырады … Сервердің жауабы JSON форматында қайтарылады»
+
+(no key required, no usage-limit clause, no attribution requirement). Combined with `https://data.egov.kz/pages/format` (not probed here) and Приказ № 32813 this is the closest thing to a licence: **state-mandated open data, no stated restrictions on reuse.**
+
+### Astana Region code
+
+`Region: 17108` filters Astana cleanly on the `pharmacy` index (56 → 53 rows; the 3 non-17108 rows are legacy/historical entries). The `notaries` index does **not** use 17108 — Region codes are not standardized across indices; per-index discovery of the Astana code is required.
+
+## Wins
+
+**Single best POI-verification / closure-detection source: `data.egov.kz/api/detailed/<index>/<version>` versioned Elasticsearch passthrough.**
+
+Why it wins over OpenCorporates / goszakup / aggregators:
+- 100 % keyless, no login, no captcha (unlike OpenCorporates reCAPTCHA + 401).
+- Versioned: **every re-publication of a register is individually queryable**, so you get a free, legal, dated diff-feed of «this entity appeared / disappeared / was renamed» — the «place has gone» signal OSM Notes gives only ~9×/quarter.
+- Contains coordinates (`geoposition`) for pharmacies/notaries/ps_centers and street-level geonyms refreshed **2026-10-15** (vs OpenAddresses ≤2017).
+- Astana is cleanly isolable at least on `pharmacy` (Region=17108).
+- Commercial reuse is unrestricted by any licence text we could find (samples page silent, data is mandated-open under KZ open-data law).
+
+**Can we legally learn that a business closed? — YES, legally and for free.**
+
+Mechanism: pick any register the akimat/ministry re-publishes (e.g. `madeniet_uiymdary` v1→v2→…→v17); fetch `v(k-1)` and `v(k)`; set-diff on entity id/name. Anything present in v(k-1) and absent in v(k) is a **legally grounded «this state-registered entity no longer exists in the current register»** fact, storable and publishable (state open data, no licence restriction found). For private businesses the same trick works on goszakup's supplier/customer register once you hold a free token (CONTRACT→STORE), where `supplier=0` / removal from `/subject/all` or inclusion in `/rnu` (Реестр недобросовестных поставщиков, with court decision + dates) is an explicit legal closure/disqualification signal.
+
+What we still cannot do legally: detect closure of a purely private business (café, bar) from a state register — none of the KZ state registers publish a live «operating/closed» flag for private entities; e-Ashyq A/B/C grades (the one signal that would correlate with «still open» for catering) are not exposed by the Ashyq/Magda open-data portal.
+
+## Dead / rejected + why
+
+- `bulk.opencorporates.com` — ENOTFOUND; the free-bulk route does not exist anymore.
+- `registry.opendata.aws/opencorporates/` — 404.
+- OpenCorporates API for KZ — 401; KZ jurisdiction not listed in their Asia coverage; paid/commercial only.
+- `data.egov.kz/api/v4/...` — 403 (needs apiKey); only `/api/detailed/...` is keyless.
+- `data.egov.kz/datasets/exportjson?index=<numeric>` — returns `[]` for every numeric id (729,730,789,283,1510611,1510612); only slug-based export works (`exportjson?index=notariustar_tizimi4`).
+- `data.egov.kz/api/v4/datasets/getdatasetsre...` — 403/500; JSON catalogue not keyless-readable; use HTML `search?text=` pages instead.
+- elicense.kz licence search — behind login, no open API.
+- stat.gov.kz OKED/BIN bulk — behind login cabinet; no open file found.
+- Ashyq A/B/C catering grades — not published on ashyq.data.gov.kz (search returns only ERSOP prosecutor-check data); the direct MinIO CSV/XLSX links fail TLS cert validation, so even ERSOP is only reachable via the portal's JSON API.
+- magda-minio-web.data.gov.kz — TLS certificate verification fails from this host; must be fetched through a client that ignores/overrides cert validation or via the Magda storage API (which returned 400 without a session).
+
+## Unverified leads
+
+- checko.kz / statexpert / lawyer-style aggregators — not live-probed here; assume «all rights reserved» ⇒ RUNTIME at best, need a server-rendered card proof before any use.
+- goszakup `/subject/all` actual Astana coverage count — blocked by HTTP 401 until a token is obtained from АО «Центр Электронных Финансов».
+- Ashyq A/B/C grade register — host not found; possible places to retry: `sanstatus.kz`, `komcontrol.kz`, `covid19.egove.kz` (typo-prone family), or the closed personal-cabinet route on elicense.kz.
+- Whether `pharmacy`'s Region code 17108 generalizes to other indices (notaries used a different code) — needs per-index discovery.

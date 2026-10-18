@@ -1,0 +1,11 @@
+{
+ "domain": "ainanan.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://ainanan.kz/ru/contacts"
+ ],
+ "branches": [],
+ "notes": "Site language-switch leaks Turkish into the RU page (branch header 'Анана Астанад' = 'Астанада'), so the labels were assigned from the printed addresses. Both Astana offices print the same schedule 'ПН-ПТ 09:00 - 18:00 | СБ, ВС - выходной'. The third block is ТОО legal data (no street) — skipped. No coordinates published.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

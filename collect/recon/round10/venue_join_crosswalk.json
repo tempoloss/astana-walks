@@ -1,0 +1,53 @@
+{
+ "method": "norm(NFKD, lowercase, «»\" stripped, ё=е) substring both-ways + difflib.get_close_matches(cutoff .75) over ALL names (name + names.kk/en/ru) of 2294 records",
+ "unmatched_total": 18,
+ "class_B_confirmed_missed_join": [
+  {
+   "venue": "Abu Dhabi Plaza",
+   "db": "ТЦ Abu Dhabi Plaza (mall)",
+   "note": "substring failed only due to 'ТЦ ' prefix - real crosswalk win"
+  }
+ ],
+ "class_B_probable_translation": [
+  {
+   "venue": "Дворец «Жастар»",
+   "db": "Дворец Юность (candidate)",
+   "note": "Zhastar=Yunost translation; difflib cannot catch cross-language aliases; manual verify"
+  }
+ ],
+ "class_A_absent": 15,
+ "class_A_list": [
+  "Бар «Pozitiv» x2",
+  "Бар Pozitiv x2",
+  "Мята Green",
+  "Sozvezdie",
+  "Lumiere-Hall",
+  "The Bus Music Pub",
+  "Ted",
+  "1.5 idea art gallery",
+  "Garage Music Bar",
+  "Piligrim",
+  "Өnergy Creative Hub x2",
+  "Museum of Singularity"
+ ],
+ "garbage_record": {
+  "id": "sxodim.com:74931",
+  "venue_name": "и 29 октября",
+  "evidence": "Шоу с тарологом «Таро, смех и комики» (Stand Up Bar «Pozitiv»)",
+  "cause": "split_venue ate date-range tail",
+  "fix": "post-22.10"
+ },
+ "today_recount": {
+  "raw": 11,
+  "unique_after_norm_dedup": 11,
+  "duplicates": [],
+  "note": "no double count of Pozitiv; deck number 11 stands"
+ },
+ "difflib_false_positives": [
+  "Ted->Sorte",
+  "Sozvezdie->Sorte",
+  "Piligrim->Im",
+  "note: Sozvezdie->Sorte, Ted->Sorte, Piligrim->Im rejected on manual name check"
+ ],
+ "sum_check": "1 confirmed join + 1 probable alias + 15 absent + 1 garbage = 18 (raw batch A14/B4; 3 B candidates are difflib false positives moved to A)"
+}

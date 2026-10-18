@@ -1,0 +1,1254 @@
+{
+ "source": "gov4c.kz",
+ "fetched_at": "2026-10-17T12:26:28+00:00",
+ "pages": {
+  "ru": "https://gov4c.kz/ru/contacts/speccony/287/",
+  "kk": "https://gov4c.kz/contacts/speccony/287/",
+  "en": "https://gov4c.kz/en/contacts/speccony/287/"
+ },
+ "page_status": {
+  "ru": 200,
+  "kk": 200,
+  "en": 200
+ },
+ "robots": "ok",
+ "records": [
+  {
+   "id": "gov/cson/0b38402435",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел района \"Есиль\"по обслуживанию населения",
+   "names": {
+    "ru": "Отдел района \"Есиль\"по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Есіл\" ауданының бөлім",
+    "en": "The department of the Yesil district for public services"
+   },
+   "address": {
+    "raw": "ул. Мангилик ел, 30",
+    "street": "ул. Мангилик ел",
+    "house": "30",
+    "key": "мангилик ел",
+    "by_lang": {
+     "ru": "ул. Мангилик ел, 30",
+     "kk": "Мәңгілік ел көшесі, 30",
+     "en": "Mangilik el street, 30"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 20:00 суббота с 09:00 до 13:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-13:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел района \"Есиль\"по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Мангилик ел, 30",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Есіл\" ауданының бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Мәңгілік ел көшесі, 30",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "The department of the Yesil district for public services",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Mangilik el street, 30",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 20:00 суббота с 09:00 до 13:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 1,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/b3bd3f326b",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел района \"Нұра\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел района \"Нұра\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша Нұра\" ауданының бөлім",
+    "en": "Отдел района \"Нұра\" по обслуживанию населения"
+   },
+   "address": {
+    "raw": "ул. Керей Жанибек хандар, 4",
+    "street": "ул. Керей Жанибек хандар",
+    "house": "4",
+    "key": "кере жанибек хандар",
+    "by_lang": {
+     "ru": "ул. Керей Жанибек хандар, 4",
+     "kk": "Керей Жәнібек хандар көшесі, 4",
+     "en": "Kerey Zhanibek khandar street, 4"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 20:00 суббота с 09:00 до 13:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-13:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел района \"Нұра\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Керей Жанибек хандар, 4",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша Нұра\" ауданының бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Керей Жәнібек хандар көшесі, 4",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Отдел района \"Нұра\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Kerey Zhanibek khandar street, 4",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 20:00 суббота с 09:00 до 13:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 2,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/7de171dfb8",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел №1 района \"Алматы\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел №1 района \"Алматы\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Алматы\" ауданының №1 бөлім",
+    "en": "Department №1 of the Almaty district for public services"
+   },
+   "address": {
+    "raw": "ул. К. Сатбаева, 25",
+    "street": "ул. К. Сатбаева",
+    "house": "25",
+    "key": "сатбаев",
+    "by_lang": {
+     "ru": "ул. К. Сатбаева, 25",
+     "kk": "К. Сатбаев көшесі, 25",
+     "en": "K. Satbaev street., 25"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел №1 района \"Алматы\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. К. Сатбаева, 25",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Алматы\" ауданының №1 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "К. Сатбаев көшесі, 25",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Department №1 of the Almaty district for public services",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "K. Satbaev street., 25",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 3,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/defdb11b78",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел №2 района \"Алматы\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел №2 района \"Алматы\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Алматы\" ауданының №2 бөлім",
+    "en": "Department №2 of the Almaty district for public services"
+   },
+   "address": {
+    "raw": "ул. Тауелсиздик, 16/1",
+    "street": "ул. Тауелсиздик",
+    "house": "16/1",
+    "key": "тауелсиздик",
+    "by_lang": {
+     "ru": "ул. Тауелсиздик, 16/1",
+     "kk": "Тәуелсіздік көшесі, 16/1",
+     "en": "Tauelsizdyk street, 16/1"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел №2 района \"Алматы\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Тауелсиздик, 16/1",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Алматы\" ауданының №2 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Тәуелсіздік көшесі, 16/1",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Department №2 of the Almaty district for public services",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Tauelsizdyk street, 16/1",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 4,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/69b99f42e2",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел района \"Байконыр\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел района \"Байконыр\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Байқоңыр\" ауданының бөлім",
+    "en": "Baikonur District Public Service Department"
+   },
+   "address": {
+    "raw": "ул. Иманова, 20",
+    "street": "ул. Иманова",
+    "house": "20",
+    "key": "иманов",
+    "by_lang": {
+     "ru": "ул. Иманова, 20",
+     "kk": "Иманов көшесі, 20",
+     "en": "Imanov street, 20"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел района \"Байконыр\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Иманова, 20",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Байқоңыр\" ауданының бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Иманов көшесі, 20",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Baikonur District Public Service Department",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Imanov street, 20",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 5,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/34b8e2af1c",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел №1 района \"Сарыарка\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел №1 района \"Сарыарка\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Сарыарқа\" ауданының №1 бөлім",
+    "en": "Department №1 of the Saryarka district for public services"
+   },
+   "address": {
+    "raw": "ул. Ермек Серкебаева, 13",
+    "street": "ул. Ермек Серкебаева",
+    "house": "13",
+    "key": "ермек серкебаев",
+    "by_lang": {
+     "ru": "ул. Ермек Серкебаева, 13",
+     "kk": "Ермек Серкебаев көшесі, 13",
+     "en": "Ermek Serkebayev street, 13"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел №1 района \"Сарыарка\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Ермек Серкебаева, 13",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Сарыарқа\" ауданының №1 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Ермек Серкебаев көшесі, 13",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Department №1 of the Saryarka district for public services",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Ermek Serkebayev street, 13",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 6,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/7913b2f37c",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел №2 района \"Сарыарка\" по обслуживанию населения",
+   "names": {
+    "ru": "Отдел №2 района \"Сарыарка\" по обслуживанию населения",
+    "kk": "Халыққа қызмет көрсету бойынша \"Сарыарқа\" ауданының №2 бөлім",
+    "en": "Department №2 of the Saryarka district for public services"
+   },
+   "address": {
+    "raw": "ул. Республика, 43",
+    "street": "ул. Республика",
+    "house": "43",
+    "key": "республик",
+    "by_lang": {
+     "ru": "ул. Республика, 43",
+     "kk": "Республика даңғылы, 43",
+     "en": "Respublika avenue, 43"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел №2 района \"Сарыарка\" по обслуживанию населения",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Республика, 43",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Сарыарқа\" ауданының №2 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Республика даңғылы, 43",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Department №2 of the Saryarka district for public services",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Respublika avenue, 43",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 7,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/270f4b34ee",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Специализированный отдел №1 города Астана",
+   "names": {
+    "ru": "Специализированный отдел №1 города Астана",
+    "kk": "Халыққа қызмет көрсету бойынша мамандандырылған №1 бөлім",
+    "en": "Specialized Department №1 of Astana city"
+   },
+   "address": {
+    "raw": "ул. С. Муканова, здание 2",
+    "street": "ул. С. Муканова",
+    "house": "2",
+    "key": "муканов",
+    "by_lang": {
+     "ru": "ул. С. Муканова, здание 2",
+     "kk": "С. Муканов көшесі, 2 ғимарат",
+     "en": "S. Mukanov street, building 2"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "Прием с понедельника по пятницу с 09:00 до 18:00,Выдача с понедельника по пятницу с 09:00 до 20:00 Прием Суббота с 09:00 до 12:00, Выдача с 09:00 до 13:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-12:00",
+    "note": "Выдача: Mo-Fr 09:00-20:00; Sa 09:00-13:00",
+    "flags": [
+     "two_schedules"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Специализированный отдел №1 города Астана",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. С. Муканова, здание 2",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша мамандандырылған №1 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "С. Муканов көшесі, 2 ғимарат",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Specialized Department №1 of Astana city",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "S. Mukanov street, building 2",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Прием с понедельника по пятницу с 09:00 до 18:00,Выдача с понедельника по пятницу с 09:00 до 20:00 Прием Суббота с 09:00 до 12:00, Выдача с 09:00 до 13:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 8,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/4347ea02eb",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Специализированный отдел №2 города Астана",
+   "names": {
+    "ru": "Специализированный отдел №2 города Астана",
+    "kk": "Халыққа қызмет көрсету бойынша мамандандырылған №2 бөлім",
+    "en": "Specialized Department №2 of Astana city"
+   },
+   "address": {
+    "raw": "ул. А 82, здание 8, блок «К» (здание вокзала Нурлы жол первый этаж)",
+    "street": "ул. А 82",
+    "house": "8",
+    "key": "а 82",
+    "by_lang": {
+     "ru": "ул. А 82, здание 8, блок «К» (здание вокзала Нурлы жол первый этаж)",
+     "kk": "А 82 көшесі, 8 ғимарат, «К» блогы (Нұрлы жол вокзалының ғимараты, бірінші қабат)",
+     "en": "А 82 street, building 8, block «К»(Nurly Zhol station building, ground floor)"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "Прием с понедельника по пятницу с 09:00 до 18:00,Выдача с понедельника по пятницу с 09:00 до 20:00 Прием Суббота с 09:00 до 12:00, Выдача с 09:00 до 13:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-12:00",
+    "note": "Выдача: Mo-Fr 09:00-20:00; Sa 09:00-13:00",
+    "flags": [
+     "two_schedules"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Специализированный отдел №2 города Астана",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. А 82, здание 8, блок «К» (здание вокзала Нурлы жол первый этаж)",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша мамандандырылған №2 бөлім",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "А 82 көшесі, 8 ғимарат, «К» блогы (Нұрлы жол вокзалының ғимараты, бірінші қабат)",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Specialized Department №2 of Astana city",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "А 82 street, building 8, block «К»(Nurly Zhol station building, ground floor)",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Прием с понедельника по пятницу с 09:00 до 18:00,Выдача с понедельника по пятницу с 09:00 до 20:00 Прием Суббота с 09:00 до 12:00, Выдача с 09:00 до 13:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 9,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/c62aaf7afe",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Миграционный отдел обслуживания населения города Астана",
+   "names": {
+    "ru": "Миграционный отдел обслуживания населения города Астана",
+    "kk": "Астана қаласының Халыққа қызмет көрсету басқармасының көші-қон басқармасы",
+    "en": "Migration Service Department of Astana city"
+   },
+   "address": {
+    "raw": "ул. А 82, блок «М» (здание вокзала Нурлы жол первый этаж, напротив СПЕЦОНа)",
+    "street": "ул. А 82",
+    "house": null,
+    "key": "а 82",
+    "by_lang": {
+     "ru": "ул. А 82, блок «М» (здание вокзала Нурлы жол первый этаж, напротив СПЕЦОНа)",
+     "kk": "А 82 көшесі, «М» блогы (Нұрлы жол вокзалының ғимараты, бірінші қабат, СПЕКОНға қарама-қарсы)",
+     "en": "А 82 street, block «М» (Nurly Zhol station building, ground floor, opposite the pavilion)"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Миграционный отдел обслуживания населения города Астана",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. А 82, блок «М» (здание вокзала Нурлы жол первый этаж, напротив СПЕЦОНа)",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Астана қаласының Халыққа қызмет көрсету басқармасының көші-қон басқармасы",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "А 82 көшесі, «М» блогы (Нұрлы жол вокзалының ғимараты, бірінші қабат, СПЕКОНға қарама-қарсы)",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Migration Service Department of Astana city",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "А 82 street, block «М» (Nurly Zhol station building, ground floor, opposite the pavilion)",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 10,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/19ca228714",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Сектор Отдела Байконурского района",
+   "names": {
+    "ru": "Сектор Отдела Байконурского района",
+    "kk": "Байқоңыр аудандық бөлімінің секторы",
+    "en": "Sector of the Baikonur District Department"
+   },
+   "address": {
+    "raw": "ул. Ондирис, 14А",
+    "street": "ул. Ондирис",
+    "house": "14а",
+    "key": "ондирис",
+    "by_lang": {
+     "ru": "ул. Ондирис, 14А",
+     "kk": "Өндіріс көшесі, 14А",
+     "en": "Ondiris street,14А"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Сектор Отдела Байконурского района",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Ондирис, 14А",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Байқоңыр аудандық бөлімінің секторы",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Өндіріс көшесі, 14А",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Sector of the Baikonur District Department",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Ondiris street,14А",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 11,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/7f93bac8f3",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Сектор для юридических лиц",
+   "names": {
+    "ru": "Сектор для юридических лиц",
+    "kk": "Заңды тұлғаларға арналған сектор",
+    "en": "The sector for legal entities"
+   },
+   "address": {
+    "raw": "ул. Б. Момышулы, 2/1",
+    "street": "ул. Б. Момышулы",
+    "house": "2/1",
+    "key": "момишул",
+    "by_lang": {
+     "ru": "ул. Б. Момышулы, 2/1",
+     "kk": "Б. Момышұлы көшесі, 2/1",
+     "en": "B. Momyshuly street, 2/1"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Сектор для юридических лиц",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Б. Момышулы, 2/1",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Заңды тұлғаларға арналған сектор",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Б. Момышұлы көшесі, 2/1",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "The sector for legal entities",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "B. Momyshuly street, 2/1",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 12,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/a7b22c2d22",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Отдел района Сарайшык",
+   "names": {
+    "ru": "Отдел района Сарайшык",
+    "kk": "Халыққа қызмет көрсету бойынша \"Сарайшык\" ауданының бөлімi",
+    "en": "Department of Saraishyk district"
+   },
+   "address": {
+    "raw": "ул. А 82, блок М",
+    "street": "ул. А 82",
+    "house": null,
+    "key": "а 82",
+    "by_lang": {
+     "ru": "ул. А 82, блок М",
+     "kk": "А 82 көшесі, М блогы",
+     "en": "А 82 street, block M"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Отдел района Сарайшык",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. А 82, блок М",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Халыққа қызмет көрсету бойынша \"Сарайшык\" ауданының бөлімi",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "А 82 көшесі, М блогы",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Department of Saraishyk district",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "А 82 street, block M",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 13,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/cson/1e3327115b",
+   "kind": "cson",
+   "source": "gov4c.kz",
+   "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+   "name": "Сектор цифровых услуг (выдача готовых СРТС и ВУ)",
+   "names": {
+    "ru": "Сектор цифровых услуг (выдача готовых СРТС и ВУ)",
+    "kk": "Цифрлық қызмет көрсету секторы (дайын СРТС және ВУ шығару)",
+    "en": "Digital services sector (issuance of ready-made VRC and DL)"
+   },
+   "address": {
+    "raw": "ул. Иманова, 20",
+    "street": "ул. Иманова",
+    "house": "20",
+    "key": "иманов",
+    "by_lang": {
+     "ru": "ул. Иманова, 20",
+     "kk": "Иманов көшесі, 20",
+     "en": "Imanov street, 20"
+    }
+   },
+   "phone_raw": null,
+   "hours": {
+    "raw": "С понедельника по пятницу с 09:00 до 18:00",
+    "scope": "venue",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "note": null,
+    "flags": []
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "Сектор цифровых услуг (выдача готовых СРТС и ВУ)",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "ул. Иманова, 20",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Цифрлық қызмет көрсету секторы (дайын СРТС және ВУ шығару)",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/contacts/speccony/287/",
+     "snippet": "Иманов көшесі, 20",
+     "fetched_at": "2026-10-17T12:20:11+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "name",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Digital services sector (issuance of ready-made VRC and DL)",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "address",
+     "url": "https://gov4c.kz/en/contacts/speccony/287/",
+     "snippet": "Imanov street, 20",
+     "fetched_at": "2026-10-17T12:16:56+00:00",
+     "lang": "en"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://gov4c.kz/ru/contacts/speccony/287/",
+     "snippet": "С понедельника по пятницу с 09:00 до 18:00",
+     "fetched_at": "2026-10-17T12:16:54+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "row": 14,
+    "branch": "Филиал по городу Астана"
+   },
+   "fetched_at": "2026-10-17T12:16:54+00:00",
+   "geocode": null
+  }
+ ],
+ "notes": "No per-branch phone on the page; no coordinates (join by address / OSM, collect.gov.geocode)."
+}

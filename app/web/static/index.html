@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>Анық — Астана</title>
+  <link rel="icon" href="/static/img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/vendor/maplibre-gl-6.14.0/maplibre-gl.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <link rel="stylesheet" href="/static/css/map.css">
+  <script type="module" src="/static/js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#composer-input" data-i18n="skip_to_input"></a>
+
+  <main>
+    <div id="map" class="map" role="region" data-i18n-aria="map_label"></div>
+    <div class="map-note glass" id="map-note" hidden></div>
+    <div class="map-attr" id="map-attr" aria-hidden="true"></div>
+
+    <section class="plate glass" id="plate">
+      <header class="top">
+        <a class="brand" href="#/" aria-label="Анық">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Анық</span>
+        </a>
+        <div class="qpill glass" id="qpill" hidden>
+          <button type="button" class="q-edit" id="q-edit"><span class="q-icon" aria-hidden="true"></span><span class="q-text" id="q-text"></span></button>
+          <button type="button" class="q-new" id="q-new"></button>
+        </div>
+        <nav class="tabs" data-i18n-aria="nav_label">
+          <a href="#/" data-view="assistant" data-i18n="nav_assistant"></a>
+          <a href="#/city" data-view="city" data-i18n="nav_city"></a>
+          <a href="#/data" data-view="data" data-i18n="nav_data"></a>
+          <button type="button" class="tab memory-open" data-i18n="nav_memory"></button>
+        </nav>
+        <div class="top-tools">
+          <button type="button" class="locate-bar" id="locate-bar" data-i18n-aria="loc_mine"></button>
+          <div class="lang-menu" id="lang-menu">
+            <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-pop" data-i18n-aria="lang_menu">
+              <span class="lang-globe" aria-hidden="true"></span><span class="lang-code" data-lang-code></span>
+            </button>
+            <div class="lang-pop" id="lang-pop" role="group" data-i18n-aria="lang_label" hidden>
+              <button type="button" data-lang="kk" lang="kk">Қазақша</button>
+              <button type="button" data-lang="ru" lang="ru">Русский</button>
+              <button type="button" data-lang="en" lang="en">English</button>
+            </div>
+          </div>
+          <button type="button" class="ghost icon menu-open" data-i18n-aria="nav_menu" aria-expanded="false" aria-controls="menu"></button>
+        </div>
+        <nav id="menu" class="menu glass" hidden>
+          <a href="#/" data-view="assistant" data-i18n="nav_assistant"></a>
+          <a href="#/city" data-view="city" data-i18n="nav_city"></a>
+          <a href="#/data" data-view="data" data-i18n="nav_data"></a>
+          <button type="button" class="memory-open" data-i18n="nav_memory"></button>
+        </nav>
+      </header>
+      <div class="plate-body" id="plate-body">
+        <div class="when" id="when" role="group"></div>
+      </div>
+    </section>
+
+    <section id="view-assistant" class="panel glass sheet" data-i18n-aria="nav_assistant">
+      <button type="button" class="sheet-handle" data-i18n-aria="sheet_toggle"><span></span></button>
+      <button type="button" class="sheet-mini" id="sheet-mini" hidden></button>
+      <div class="banner" id="banner" hidden></div>
+      <div class="scroll" id="thread-scroll">
+        <div class="hello" id="hello">
+          <h1 data-i18n="hello_title"></h1>
+          <p data-i18n="hello_text"></p>
+          <p class="label" data-i18n="starters_label"></p>
+          <div class="chips" id="starters"></div>
+          <div class="facts" id="facts"></div>
+        </div>
+        <ol class="thread" id="thread" aria-live="polite"></ol>
+      </div>
+      <form class="composer" id="composer" autocomplete="off">
+        <div class="where">
+          <span class="where-icon" aria-hidden="true"></span>
+          <span id="where-text"></span>
+          <button type="button" class="link" id="where-change" data-i18n="loc_change"></button>
+          <button type="button" class="link opts-toggle" id="opts-toggle" aria-expanded="false" data-i18n="opts_toggle"></button>
+        </div>
+        <div class="ask">
+          <textarea id="composer-input" rows="1" maxlength="600" data-i18n-placeholder="ask_placeholder" data-i18n-aria="ask_label"></textarea>
+          <button type="submit" class="send" data-i18n-aria="send"></button>
+        </div>
+      </form>
+    </section>
+
+    <section id="view-city" class="panel glass sheet" data-i18n-aria="nav_city" hidden>
+      <button type="button" class="sheet-handle" data-i18n-aria="sheet_toggle"><span></span></button>
+      <div class="scroll" id="city-scroll"></div>
+    </section>
+
+    <section id="view-data" class="page" data-i18n-aria="nav_data" hidden>
+      <div class="page-inner" id="data-root"></div>
+    </section>
+
+    <section class="legend glass" id="legend"></section>
+  </main>
+
+  <dialog id="location" class="sheet-dialog">
+    <form method="dialog" class="dialog-inner">
+      <header>
+        <h2 data-i18n="loc_title"></h2>
+        <button value="close" class="ghost icon close" data-i18n-aria="close"></button>
+      </header>
+      <div class="loc-marks" id="loc-marks"></div>
+      <div class="loc-list" id="loc-list"></div>
+      <div class="loc-actions">
+        <button type="button" class="secondary" id="loc-mine" data-i18n="loc_mine"></button>
+        <button type="button" class="secondary" id="loc-pick" data-i18n="loc_pick_map"></button>
+      </div>
+      <p class="fine" id="loc-status" data-i18n="loc_privacy"></p>
+    </form>
+  </dialog>
+
+  <dialog id="bookmark" class="sheet-dialog">
+    <form class="dialog-inner" id="bm-form" method="dialog" novalidate></form>
+  </dialog>
+
+  <div class="map-menu glass" id="map-menu" role="menu" hidden></div>
+
+  <dialog id="memory" class="sheet-dialog">
+    <div class="dialog-inner" id="memory-root"></div>
+  </dialog>
+</body>
+</html>

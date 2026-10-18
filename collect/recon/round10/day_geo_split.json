@@ -1,0 +1,91 @@
+{
+ "day": "2026-10-18",
+ "total": 15,
+ "singles": 7,
+ "runs": 8,
+ "geolinked": [
+  "sxodim.com:62395",
+  "sxodim.com:77465",
+  "sxodim.com:77641",
+  "sxodim.com:77665",
+  "sxodim.com:77697"
+ ],
+ "unlinked": [
+  {
+   "id": "sxodim.com:70651",
+   "venue": "Бар «Pozitiv»"
+  },
+  {
+   "id": "sxodim.com:73755",
+   "venue": "Бар Pozitiv"
+  },
+  {
+   "id": "sxodim.com:75490",
+   "venue": "Ресторан Мята Green"
+  },
+  {
+   "id": "sxodim.com:75800",
+   "venue": "Ресторан Sozvezdie"
+  },
+  {
+   "id": "sxodim.com:76905",
+   "venue": "Мультимедийный музей Lumiere-Hall"
+  },
+  {
+   "id": "sxodim.com:77441",
+   "venue": "Бар «Pozitiv»"
+  },
+  {
+   "id": "sxodim.com:77514",
+   "venue": "Бар Pozitiv"
+  },
+  {
+   "id": "sxodim.com:77624",
+   "venue": "Ресторан Ted"
+  },
+  {
+   "id": "sxodim.com:77646",
+   "venue": "1.5 idea art gallery"
+  },
+  {
+   "id": "sxodim.com:77707",
+   "venue": "Garage Music Bar"
+  }
+ ],
+ "chip_default_limit": 5,
+ "note": "nearby_events(limit=5) caps the chip; only 5 of the 15 city events are placeable",
+ "radius_measure": {
+  "DEFAULT_RADIUS_M": 1500,
+  "window_min": 180,
+  "limit": 5,
+  "points": {
+   "Байтерек (51.1283,71.4305)": 0,
+   "Атамекен (51.0413,71.4422)": 0,
+   "Хан Шатыр (51.1325,71.4039)": 0,
+   "old-town centroid (51.164,71.418)": 4
+  },
+  "geolinked_coords": [
+   [
+    51.165,
+    71.4165
+   ],
+   [
+    51.1637,
+    71.4223
+   ],
+   [
+    51.1625,
+    71.4188
+   ],
+   [
+    51.173,
+    71.4199
+   ],
+   [
+    51.1384,
+    71.4584
+   ]
+  ],
+  "method": "haversine-flat over day_geo_split.geolinked, same snapshot rule as nearby_events"
+ }
+}

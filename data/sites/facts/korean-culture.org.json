@@ -1,0 +1,47 @@
+{
+ "domain": "korean-culture.org",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:52+00:00",
+ "pages": [
+  "http://kaz.korean-culture.org/ru/10/contents/348",
+  "http://kaz.korean-culture.org/ru"
+ ],
+ "branches": [
+  {
+   "name": "Корейский культурный центр (Korean Cultural Center)",
+   "address": "г. Астана , ул. Иманова 13 , бизнес-центр «Нурсаулет-2», 1 этаж",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 901 - 113~5",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://kaz.korean-culture.org/ru/10/contents/348",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "http://kaz.korean-culture.org/ru/10/contents/348",
+     "snippet": "г. Астана , ул. Иманова 13 , бизнес-центр «Нурсаулет-2», 1 этаж",
+     "fetched_at": "2026-10-17T09:29:52+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://kaz.korean-culture.org/ru",
+     "snippet": "Корейский культурный центр",
+     "fetched_at": "2026-10-17T09:26:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://kaz.korean-culture.org/ru/10/contents/348",
+     "snippet": "+7 (7172) 901 - 113~5",
+     "fetched_at": "2026-10-17T09:29:52+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "The 'Наш адрес' page prints the address with irregular spacing (kept verbatim in the snippet). No opening-hours statement on the site; film-showing/course times live in news posts only. Факс +7 (7172) 901 - 116 not stored.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

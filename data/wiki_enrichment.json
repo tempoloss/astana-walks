@@ -1,0 +1,1408 @@
+{
+  "snapshot_date": "2026-10-16",
+  "licenses": {
+    "wikidata": "CC0-1.0",
+    "wikipedia": "CC-BY-SA-4.0",
+    "wikimedia_pageviews": "CC0-1.0"
+  },
+  "astana": {
+    "qid": "Q1520",
+    "labels": {
+      "en": "Astana",
+      "ru": "Астана",
+      "kk": "Астана"
+    }
+  },
+  "queries": {
+    "verify_astana": "PREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\nPREFIX p: <http://www.wikidata.org/prop/>\nPREFIX psv: <http://www.wikidata.org/prop/statement/value/>\nPREFIX wikibase: <http://wikiba.se/ontology#>\nPREFIX bd: <http://www.bigdata.com/rdf#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nSELECT ?lang ?label WHERE { wd:Q1520 rdfs:label ?label . BIND(LANG(?label) AS ?lang) FILTER(?lang IN (\"ru\",\"kk\",\"en\")) }",
+    "located_in_astana": "PREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\nPREFIX p: <http://www.wikidata.org/prop/>\nPREFIX psv: <http://www.wikidata.org/prop/statement/value/>\nPREFIX wikibase: <http://wikiba.se/ontology#>\nPREFIX bd: <http://www.bigdata.com/rdf#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nSELECT ?item ?lat ?lon (GROUP_CONCAT(DISTINCT ?t; separator=\",\") AS ?types) WHERE {\n  ?item wdt:P131* wd:Q1520 .\n  ?item p:P625/psv:P625 ?c . ?c wikibase:geoLatitude ?lat ; wikibase:geoLongitude ?lon .\n  OPTIONAL { ?item wdt:P31 ?type . BIND(STRAFTER(STR(?type), \"entity/\") AS ?t) }\n} GROUP BY ?item ?lat ?lon",
+    "bbox": "PREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\nPREFIX p: <http://www.wikidata.org/prop/>\nPREFIX psv: <http://www.wikidata.org/prop/statement/value/>\nPREFIX wikibase: <http://wikiba.se/ontology#>\nPREFIX bd: <http://www.bigdata.com/rdf#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nSELECT ?item ?lat ?lon (GROUP_CONCAT(DISTINCT ?t; separator=\",\") AS ?types) WHERE {\n  SERVICE wikibase:box {\n    ?item wdt:P625 ?loc .\n    bd:serviceParam wikibase:cornerSouthWest \"Point(71.25 50.98)\"^^geo:wktLiteral .\n    bd:serviceParam wikibase:cornerNorthEast \"Point(71.6 51.25)\"^^geo:wktLiteral .\n  }\n  ?item p:P625/psv:P625 ?c . ?c wikibase:geoLatitude ?lat ; wikibase:geoLongitude ?lon .\n  OPTIONAL { ?item wdt:P31 ?type . BIND(STRAFTER(STR(?type), \"entity/\") AS ?t) }\n} GROUP BY ?item ?lat ?lon"
+  },
+  "thresholds": {
+    "max_distance_m": 150.0,
+    "min_name_score": 88.0,
+    "ambiguity_margin": 5.0
+  },
+  "pageviews_period": "2026-09",
+  "counts": {
+    "pool_items": 240,
+    "pool_p131": 127,
+    "tag_matches": 29,
+    "matches_by_method": {
+      "tag": 29,
+      "sparql": 10,
+      "fuzzy": 5
+    },
+    "matched_pois": 44,
+    "matched_entities": 44,
+    "fuzzy_dropped": {
+      "no_candidate": 984,
+      "ambiguous": 0,
+      "claimed_by_better": 0
+    },
+    "entities_with_wikipedia": 24,
+    "entities_with_ru_extract": 20
+  },
+  "matches": {
+    "node/13081694249": {
+      "qid": "Q137551659",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13081694250": {
+      "qid": "Q137551660",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13081694251": {
+      "qid": "Q137551661",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13081694254": {
+      "qid": "Q137551664",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 5.3,
+      "name_score": 100.0
+    },
+    "node/13609204293": {
+      "qid": "Q137551668",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 0.5,
+      "name_score": 100.0
+    },
+    "node/13609204300": {
+      "qid": "Q137551666",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 1.0,
+      "name_score": 100.0
+    },
+    "node/13609226040": {
+      "qid": "Q137551663",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 5.6,
+      "name_score": 100.0
+    },
+    "node/13612447905": {
+      "qid": "Q137551678",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612447920": {
+      "qid": "Q137551676",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612447929": {
+      "qid": "Q137551675",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612447946": {
+      "qid": "Q137551674",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612447948": {
+      "qid": "Q137551673",
+      "method": "fuzzy",
+      "confidence": 0.98,
+      "distance_m": 12.0,
+      "name_score": 100.0
+    },
+    "node/13612447971": {
+      "qid": "Q137551672",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612447987": {
+      "qid": "Q137551671",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13612448021": {
+      "qid": "Q137551670",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/13676555260": {
+      "qid": "Q30642068",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/2681623412": {
+      "qid": "Q12572863",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 6.7,
+      "name_score": 100.0
+    },
+    "node/3803357022": {
+      "qid": "Q136090752",
+      "method": "fuzzy",
+      "confidence": 0.92,
+      "distance_m": 46.8,
+      "name_score": 100.0
+    },
+    "node/4020137343": {
+      "qid": "Q800403",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/4894937300": {
+      "qid": "Q18405670",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "node/4902164954": {
+      "qid": "Q42416691",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "relation/16002498": {
+      "qid": "Q120868819",
+      "method": "fuzzy",
+      "confidence": 0.99,
+      "distance_m": 0.5,
+      "name_score": 100.0
+    },
+    "relation/16827715": {
+      "qid": "Q1813417",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/1196402246": {
+      "qid": "Q104866948",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/1460537088": {
+      "qid": "Q573362",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/1460700597": {
+      "qid": "Q1454511",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/1531992955": {
+      "qid": "Q137551665",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 5.8,
+      "name_score": 100.0
+    },
+    "way/1547354180": {
+      "qid": "Q137551662",
+      "method": "sparql",
+      "confidence": 0.99,
+      "distance_m": 9.0,
+      "name_score": 100.0
+    },
+    "way/1547354198": {
+      "qid": "Q137551669",
+      "method": "sparql",
+      "confidence": 0.98,
+      "distance_m": 10.8,
+      "name_score": 100.0
+    },
+    "way/166197368": {
+      "qid": "Q2119741",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/166265821": {
+      "qid": "Q4408858",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/166267459": {
+      "qid": "Q1072092",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/230358855": {
+      "qid": "Q4314789",
+      "method": "sparql",
+      "confidence": 0.98,
+      "distance_m": 13.2,
+      "name_score": 100.0
+    },
+    "way/230401645": {
+      "qid": "Q804210",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/240376673": {
+      "qid": "Q25502203",
+      "method": "fuzzy",
+      "confidence": 0.98,
+      "distance_m": 11.7,
+      "name_score": 100.0
+    },
+    "way/240860325": {
+      "qid": "Q4494668",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/240873345": {
+      "qid": "Q4155890",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/460703779": {
+      "qid": "Q671484",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/499328449": {
+      "qid": "Q122526919",
+      "method": "sparql",
+      "confidence": 0.81,
+      "distance_m": 111.0,
+      "name_score": 100.0
+    },
+    "way/549307755": {
+      "qid": "Q42422896",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/69232075": {
+      "qid": "Q104866925",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/734514013": {
+      "qid": "Q120868822",
+      "method": "fuzzy",
+      "confidence": 0.99,
+      "distance_m": 0.3,
+      "name_score": 100.0
+    },
+    "way/762780007": {
+      "qid": "Q1073433",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    },
+    "way/917478479": {
+      "qid": "Q21371563",
+      "method": "tag",
+      "confidence": 1.0,
+      "distance_m": 0.0,
+      "name_score": null
+    }
+  },
+  "entities": {
+    "Q104866925": {
+      "labels": {
+        "en": "Jetisu Park",
+        "ru": "Жетысу"
+      },
+      "descriptions": {
+        "en": "urban park in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Jetisu Park",
+        "ru": "Жетысу (парк)"
+      },
+      "qid": "Q104866925",
+      "wikipedia": {
+        "ru": {
+          "title": "Жетысу (парк)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D1%82%D1%8B%D1%81%D1%83_%28%D0%BF%D0%B0%D1%80%D0%BA%29",
+          "extract": "Жетысу (каз. Жетісу), бывший парк Арай — парк в Есильском районе Астаны. Реконструирован в 2018 году. Название с казахского переводится как \"Семиречье\".\nПарк с юга ограничен улицей Сарайшык, с востока рекой Ишим, с запада и севера микрорайоном Чубары."
+        },
+        "en": {
+          "title": "Jetisu Park",
+          "url": "https://en.wikipedia.org/wiki/Jetisu_Park",
+          "extract": "The Jetisu Park (Kazakh: Жетісу саябағы, romanized: Jetısu saiabağy) is an urban park in the city of Astana. The name derives from the Zhetysu, an area in Almaty Region which the park is based on the historical and cultural landscape of the region. The park features fountains, bike lanes, and children's playground."
+        }
+      },
+      "pageviews": {
+        "ru": 40,
+        "en": 23
+      },
+      "popularity_pageviews": 63
+    },
+    "Q104866948": {
+      "labels": {
+        "en": "Botanical Garden",
+        "ru": "Астанинский ботанический сад",
+        "kk": "Ботаникалық бақ (Астана)"
+      },
+      "descriptions": {
+        "en": "Botanical Garden in Astana, Kazakhstan",
+        "ru": "Достойный парк в Астане"
+      },
+      "sitelinks": {
+        "en": "Astana Botanical Garden",
+        "kk": "Ботаникалық бақ (Астана)",
+        "ru": "Астанинский ботанический сад"
+      },
+      "qid": "Q104866948",
+      "wikipedia": {
+        "ru": {
+          "title": "Астанинский ботанический сад",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B1%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4",
+          "extract": "Астани́нский ботани́ческий сад — ботанический сад города Астана, находится в Есильском районе, в центральной части левобережья Ишима. Строительство сада началось в 2012 году, а открытие состоялось 2 июля 2018 года, приуроченное к 20-летию столицы Казахстана. Сад является филиалом Главного Ботанического сада в Алма-Ате.\nСад расположен в периметре улиц Туркестан, Орынбор, Кабанбай-батыра и Бухар-Жырау. На территории сада находятся 2 оранжереи с 222 вида, 76 сортов, форм, разновидностей растений, в которых круглый год поддерживается температурный режим в пределах 24-26°С."
+        },
+        "kk": {
+          "title": "Ботаникалық бақ (Астана)",
+          "url": "https://kk.wikipedia.org/wiki/%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B_%D0%B1%D0%B0%D2%9B_%28%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%29",
+          "extract": "Астананың ботаникалық бағы 2018 жылы құрылды.\nБотаникалық бақ ерекше қорғалатын табиғи аймақ болып саналады. Оның жалпы ауданы 89,177 гектар, соның ішінде: саябақ аймағы — 42,9 га болса, ғылыми ауданы — 46,3 га. Негізгі міндеті — сирек кездесетін және құрып кету қаупі өсімдіктерді сақтау.\nІшкі бөлігі биологиялық ғылыми жұмыстар жүргізуге, сырты спорттық-сауықтыру шараларына бағытталған. Онда саябақ зонасы, спорттық және балалар алаңдары, вело және жүгіруге арналған жолдар әрі фонтандары бар жасанды су тоғаны орналасқан.\nБақта екі жылыжай бар: тропикалық және суккулентті. Бақтан литопстар, непентес, банан, араукария, кумкват, цикад өсімдіктерін кездестіруге болады. Оранжереяның біріне фикус, лимон, драцен, апельсин, папоротник, пальма және басқа да тропикалық мемлекеттерден тасымалданған 1100 өсімдік отырғызылған. Әлемде сирек кездесетін коллекциялық кактустар мен гибридтер де бар. Жылыжай ішіндегі климат бірқалыпты, 18-20 градустың шамасында. Әр жылыжайдың аумағы 700 шаршы метр, жалпы 2 мыңнан аса өсімдік түрлері өсіп өнеді."
+        },
+        "en": {
+          "title": "Astana Botanical Garden",
+          "url": "https://en.wikipedia.org/wiki/Astana_Botanical_Garden",
+          "extract": "The Astana Botanical Garden (Kazakh: Астана ботаникалық бағы, romanized: Astana botanikalyq bağy) is the largest botanical garden in the city of Astana, Kazakhstan, which features a pond with fountains and three bridges. About 9,000 trees and shrubs from Europe, Asia and North America have been planted, with bicycle and jogging paths laid among the green areas. The Botanical Garden is also used as a venue for city celebrations."
+        }
+      },
+      "pageviews": {
+        "ru": 195,
+        "kk": 54,
+        "en": 70
+      },
+      "popularity_pageviews": 319
+    },
+    "Q1072092": {
+      "labels": {
+        "ru": "Алау",
+        "en": "Alau Ice Palace",
+        "kk": "Алау"
+      },
+      "descriptions": {
+        "en": "speed skating rink in Astana, Kazakhstan",
+        "ru": "Ледовый дворец в Астане, Казахстан"
+      },
+      "sitelinks": {
+        "en": "Alau Ice Palace",
+        "kk": "Алау (мұзайдыны сарайы)",
+        "ru": "Алау (ледовый дворец)"
+      },
+      "qid": "Q1072092",
+      "wikipedia": {
+        "ru": {
+          "title": "Алау (ледовый дворец)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B0%D1%83_%28%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86%29",
+          "extract": "Ледовый Дворец «Алау» — крытый конькобежный стадион в Астане, Казахстан. Спортивный комплекс, предназначенный для организации соревнований по конькобежному спорту и организации тренировок по мини-хоккею с мячом, хоккею с шайбой, шорт-треку, кёрлингу, фигурному катанию."
+        },
+        "kk": {
+          "title": "Алау (мұзайдыны сарайы)",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B0%D1%83_%28%D0%BC%D2%B1%D0%B7%D0%B0%D0%B9%D0%B4%D1%8B%D0%BD%D1%8B_%D1%81%D0%B0%D1%80%D0%B0%D0%B9%D1%8B%29",
+          "extract": "«Алау» мұзайдыны сарайы — Астанадағы жабық коньки тебу стадионы. Шорт-трек, хоккей, кёрлинг және мәнерлеп сырғанаудан жаттықтыру және спорт жарыстарын өткізу үшін арналған. «Алау» мұзайдыны сарайы әлемдегі коньки тебу статиондарының ішінде 17-орынды иемденеді.\nСтадион голландтық AD Sportwereld басылымының жариялауы бойынша әлемдегі коньки тебуге арналған стадиондардың арасында бірінші орынды алады. \nСонымен қатар қосымша фитнес орталығы да бар, онда футзал, т.б. ойындар өткізуге болады. Залдың 1 сағатын жалдау — 30000 теңге (соңғы 2012 жылғы қараша айы бойынша)."
+        },
+        "en": {
+          "title": "Alau Ice Palace",
+          "url": "https://en.wikipedia.org/wiki/Alau_Ice_Palace",
+          "extract": "The Alau Ice Palace (Kazakh: Алау Мұзайдыны сарайы; Alau Mūzaidyny Saraiy) is an 8,000-seat speed skating oval in Astana, Kazakhstan. It was ranked first among the world’s speed skating stadiums according to the Dutch AD Sportwereld publication’s ranking. As well as speed skating, it is also used for other sports and was opened in December 2011."
+        }
+      },
+      "pageviews": {
+        "ru": 118,
+        "kk": 11,
+        "en": 87
+      },
+      "popularity_pageviews": 216
+    },
+    "Q1073433": {
+      "labels": {
+        "ru": "Абу-Даби Плаза",
+        "en": "Abu Dhabi Plaza",
+        "kk": "Абу-Даби Плаза"
+      },
+      "descriptions": {
+        "en": "building complex in Kazakhstan",
+        "ru": "многофункциональный комплекс"
+      },
+      "sitelinks": {
+        "en": "Abu Dhabi Plaza",
+        "kk": "Абу-Даби Плаза",
+        "ru": "Абу-Даби Плаза"
+      },
+      "qid": "Q1073433",
+      "wikipedia": {
+        "ru": {
+          "title": "Абу-Даби Плаза",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%D0%9F%D0%BB%D0%B0%D0%B7%D0%B0",
+          "extract": "«Абу-Даби Плаза» (каз. Абу-Даби Плаза, англ. Abu Dhabi Plaza) — многофункциональный комплекс в Астане (Казахстан)."
+        },
+        "kk": {
+          "title": "Абу-Даби Плаза",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%D0%9F%D0%BB%D0%B0%D0%B7%D0%B0",
+          "extract": "Абу-Даби Плаза (ағылш. Abu Dhabi Plaza) — Қазақстанның елордасы Астана қаласында орналасқан көп функционалды кешен. Бүгінгі таңда Қазақстан мен Орталық Азиядағы ең биік ғимарат болып табылады.\nҒимараттың биіктігі — 311 метр, ал қабаттар саны — 75. «Абу-Даби Плаза» кешенінің жалпы аумағы 550 мың шаршы метрді құрайды. Кешенде: қонақ үй, фитнес залдар, кеңселер, пәтерлер, сауда орталығы, қысқы бақ және т.б. орналасады."
+        },
+        "en": {
+          "title": "Abu Dhabi Plaza",
+          "url": "https://en.wikipedia.org/wiki/Abu_Dhabi_Plaza",
+          "extract": "Abu Dhabi Plaza  (Kazakh: Абу-Даби Плаза, romanized: Abu-Dabi Plaza) is a mixed-use development complex in the very center of Astana, the capital of Kazakhstan. As of 2022, the tallest tower of Abu Dhabi Plaza at 310.8 metres (1,020 ft) is the tallest building in Kazakhstan and Central Asia."
+        }
+      },
+      "pageviews": {
+        "ru": 1630,
+        "kk": 68,
+        "en": 1902
+      },
+      "popularity_pageviews": 3600
+    },
+    "Q120868819": {
+      "labels": {
+        "ru": "Парк Жеруйык"
+      },
+      "descriptions": {},
+      "sitelinks": {
+        "ru": "Парк Жеруйык"
+      },
+      "qid": "Q120868819",
+      "wikipedia": {
+        "ru": {
+          "title": "Парк Жеруйык",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA_%D0%96%D0%B5%D1%80%D1%83%D0%B9%D1%8B%D0%BA",
+          "extract": "Парк Жеруйык (каз. Жерұйық саябағы; рус. земля обетованная) — городской парк в Алматинском районе города Астаны, расположенный на пересечении проспекта Б. Момышулы и улицы М. Жумабаева."
+        }
+      },
+      "pageviews": {
+        "ru": 39
+      },
+      "popularity_pageviews": 39
+    },
+    "Q120868822": {
+      "labels": {
+        "ru": "Линейный парк"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q120868822"
+    },
+    "Q122526919": {
+      "labels": {
+        "en": "Astana Ballet Theatre",
+        "ru": "Театр Астана Балет"
+      },
+      "descriptions": {
+        "en": "theatre in Astana, Kazakhstan"
+      },
+      "sitelinks": {},
+      "qid": "Q122526919"
+    },
+    "Q12572863": {
+      "labels": {
+        "kk": "Қазақ елі (монумент)",
+        "en": "Kazakh Eli monument",
+        "ru": "Казак ели (монумент)"
+      },
+      "descriptions": {
+        "en": "monument in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "kk": "Қазақ елі (монумент)",
+        "ru": "Казак ели (монумент)"
+      },
+      "qid": "Q12572863",
+      "wikipedia": {
+        "ru": {
+          "title": "Казак ели (монумент)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BA_%D0%B5%D0%BB%D0%B8_%28%D0%BC%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%29",
+          "extract": "«Казак ели» (каз. Қазақ елі, с казахского — «страна казахов») — памятник культуры и архитектуры, расположенный на площади Независимости в городе Астана. Памятник был открыт в 2009 году. Авторами памятника являются Сембигали Смагулов. Архитекторы памятника Саматбек Бокебай и Бактыбай Тайталиев."
+        },
+        "kk": {
+          "title": "Қазақ елі (монумент)",
+          "url": "https://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B_%D0%B5%D0%BB%D1%96_%28%D0%BC%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%29",
+          "extract": "«Қазақ елі» — Астана қаласында орналасқан мәдени-архитектуралық монумент. Монумент 2009-шы жылы ашылды. Монументтің авторлары - Сембіғали Смағұлов. Монументтің сәулетшілері - Саматбек Бөкебай, Бақтыбай Тайталиев."
+        }
+      },
+      "pageviews": {
+        "ru": 187,
+        "kk": 118
+      },
+      "popularity_pageviews": 305
+    },
+    "Q136090752": {
+      "labels": {
+        "ru": "Сороковая"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q136090752"
+    },
+    "Q137551659": {
+      "labels": {
+        "kk": "Әуежай",
+        "ru": "Аэропорт",
+        "en": "Airport"
+      },
+      "descriptions": {
+        "en": "light metro station in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Airport (Astana LRT)"
+      },
+      "qid": "Q137551659",
+      "wikipedia": {
+        "en": {
+          "title": "Airport (Astana LRT)",
+          "url": "https://en.wikipedia.org/wiki/Airport_%28Astana_LRT%29",
+          "extract": "Airport (Kazakh: Әуежай, romanized: Äuejai;  Russian: Аэропорт, romanized: Aeroport) is an elevated passenger light rapid transit (LRT) station of the Astana Light Metro that serves the international airport of Astana, Kazakhstan. The station opened as part of the Line 1 on 16 May 2026. It serves as one of the stations on the Line 1. This station provides access to the airport's Domestic Terminal - T2. It is approximately a 5-minute walk from Terminal 1. The station is also close to a number of bus routes.\nThe station along with the line is owned and operated by municipally owned City Transportation Systems. It operates services every 5 to 10 min between 06.00 and 23.00."
+        }
+      },
+      "pageviews": {
+        "en": 219
+      },
+      "popularity_pageviews": 219
+    },
+    "Q137551660": {
+      "labels": {
+        "en": "Atameken",
+        "ru": "Атамекен",
+        "kk": "Атамекен"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551660"
+    },
+    "Q137551661": {
+      "labels": {
+        "en": "Esil",
+        "kk": "Есіл",
+        "ru": "Есиль"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551661"
+    },
+    "Q137551662": {
+      "labels": {
+        "ru": "Мангилик ел",
+        "en": "Mangilik El",
+        "kk": "Мәңгілік ел"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551662"
+    },
+    "Q137551663": {
+      "labels": {
+        "kk": "Астана жұлдызы",
+        "ru": "Звезда Астаны",
+        "en": "Astana Juldyzy"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551663"
+    },
+    "Q137551664": {
+      "labels": {
+        "ru": "Нура",
+        "kk": "Нұра",
+        "en": "Nura"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551664"
+    },
+    "Q137551665": {
+      "labels": {
+        "ru": "Университет",
+        "en": "University",
+        "kk": "Университет"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551665"
+    },
+    "Q137551666": {
+      "labels": {
+        "en": "Uly Dala",
+        "kk": "Ұлы дала",
+        "ru": "Улы дала"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551666"
+    },
+    "Q137551668": {
+      "labels": {
+        "en": "Astana Arena",
+        "kk": "Астана Арена",
+        "ru": "Астана Арена"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551668"
+    },
+    "Q137551669": {
+      "labels": {
+        "en": "Martial Arts Palace",
+        "ru": "Дворец единоборств",
+        "kk": "Жекпе-жек сарайы"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551669"
+    },
+    "Q137551670": {
+      "labels": {
+        "ru": "Сыганак",
+        "kk": "Сығанақ",
+        "en": "Syganaq"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551670"
+    },
+    "Q137551671": {
+      "labels": {
+        "ru": "Байтерек",
+        "kk": "Бәйтерек",
+        "en": "Baiterek"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551671"
+    },
+    "Q137551672": {
+      "labels": {
+        "en": "House of Ministries",
+        "kk": "Министрліктер үйі",
+        "ru": "Дом министерств"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551672"
+    },
+    "Q137551673": {
+      "labels": {
+        "ru": "Национальный музей",
+        "kk": "Ұлттық музей",
+        "en": "National Museum"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551673"
+    },
+    "Q137551674": {
+      "labels": {
+        "ru": "Театр",
+        "kk": "Театр",
+        "en": "Theatre"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551674"
+    },
+    "Q137551675": {
+      "labels": {
+        "en": "Mynjyldyq Alley",
+        "ru": "Аллея Мынжылдык",
+        "kk": "Мыңжылдық аллеясы"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551675"
+    },
+    "Q137551676": {
+      "labels": {
+        "en": "Jibek Joly",
+        "ru": "Жибек жолы",
+        "kk": "Жібек жолы"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551676"
+    },
+    "Q137551678": {
+      "labels": {
+        "ru": "Нурлы жол",
+        "kk": "Нұрлы жол",
+        "en": "Nurly Jol"
+      },
+      "descriptions": {},
+      "sitelinks": {},
+      "qid": "Q137551678"
+    },
+    "Q1454511": {
+      "labels": {
+        "kk": "Атамекен (мұражай)",
+        "en": "Atameken miniature park"
+      },
+      "descriptions": {},
+      "sitelinks": {
+        "kk": "Атамекен (мұражай)"
+      },
+      "qid": "Q1454511",
+      "wikipedia": {
+        "kk": {
+          "title": "Атамекен (мұражай)",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BC%D0%B5%D0%BA%D0%B5%D0%BD_%28%D0%BC%D2%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B9%29",
+          "extract": "«Атамекен» Қазақстан картасы — Астана қаласында орналасқан ашық аспан астындағы мұражай.\nМұнда Қазақстанның барлық қалалары мен тарихи ескерткіштерінің кішірейтілген модельдері көрсетілген. 1,7 гектар жерді алып жатыр.\nЕкі бірдей футбол алаңының аумағын алып жатқан кешенде Қазақстандағы ең көрнекті деген 200-ден астам сәулет нысандары мен тарихи ескерткіштер, ормандар, таулар мен төбелер кескінделген."
+        }
+      },
+      "pageviews": {
+        "kk": 21
+      },
+      "popularity_pageviews": 21
+    },
+    "Q1813417": {
+      "labels": {
+        "ru": "Мечеть Нур Астана",
+        "en": "Nur-Astana Mosque",
+        "kk": "Нұр-Астана мешіті"
+      },
+      "descriptions": {
+        "en": "Mosque in Astana, Kazakhstan",
+        "ru": "мечеть в столице Казахстана"
+      },
+      "sitelinks": {
+        "en": "Nur-Astana Mosque",
+        "kk": "Әбу Насыр Әл-Фараби мешіті",
+        "ru": "Абу Насыра аль-Фараби (мечеть)"
+      },
+      "qid": "Q1813417",
+      "wikipedia": {
+        "ru": {
+          "title": "Абу Насыра аль-Фараби (мечеть)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D1%83_%D0%9D%D0%B0%D1%81%D1%8B%D1%80%D0%B0_%D0%B0%D0%BB%D1%8C-%D0%A4%D0%B0%D1%80%D0%B0%D0%B1%D0%B8_%28%D0%BC%D0%B5%D1%87%D0%B5%D1%82%D1%8C%29",
+          "extract": "Абу Насыра аль-Фараби (до 2021 — Мече́ть «Нур Астана́») — мечеть, расположенная в Астане. До открытия мечети Хазрет Султан являлась самой большой мечетью в Казахстане и в Центральной Азии. Мечеть имеет четыре минарета высотой по 62 метра, высота главного купола 43 метра, а общая площадь равна 3930 м². Конструкция выполнена из стекла, бетона, гранита и алюкобонда меры. В здании мечети могут молиться сразу до 5 000 человек.\nМечеть была построена при поддержке государства Катар, спроектированная ливанским зодчим Чарльзом Хафизой и построенная турецкой компанией «Пасинер». Строительство велось с 2002 по 2005 годы. Открытие состоялось 22 марта 2005 года в честь празднования Наурыза.\nВ ноябре 2021 г. на заседании Духовного управления мусульман Казахстана мечеть «Нур Астана» переименовали в «Абу Насыра аль-Фараби». Мечеть названа в честь мыслителя, учёного Аль-Фараби"
+        },
+        "kk": {
+          "title": "Әбу Насыр Әл-Фараби мешіті",
+          "url": "https://kk.wikipedia.org/wiki/%D3%98%D0%B1%D1%83_%D0%9D%D0%B0%D1%81%D1%8B%D1%80_%D3%98%D0%BB-%D0%A4%D0%B0%D1%80%D0%B0%D0%B1%D0%B8_%D0%BC%D0%B5%D1%88%D1%96%D1%82%D1%96",
+          "extract": "Әбу Насыр Әл-Фараби мешіті — Астана қаласының Есіл ауданында орналасқан мешіт, 2005 жылдың 2 наурызында ашылды.\nБастапқыда Нұр-Астана деп аталған мешіт 2021 жылдың қарашасынан бастап ғұлама Әбу Насыр Әл-Фараби есімімен аталатын болды.\nМешіт Катар мемлекетінің Әмірі шейх Хамад бин Халифа әл-Сәнидың қайтарымсыз сый ретінде бөлген қаржысына тұрғызылды."
+        },
+        "en": {
+          "title": "Nur-Astana Mosque",
+          "url": "https://en.wikipedia.org/wiki/Nur-Astana_Mosque",
+          "extract": "The Nur-Astana Mosque (Kazakh: Nur-Astana meshiti/Нұр-Астана мешіті; Russian: Мечеть «Нур Астана»), is a mosque in Astana, Kazakhstan. It is third largest mosque in Central Asia. The 40-meter (131-foot) height symbolizes the age of the Islamic prophet Muhammad when he received the revelations, and the height of the minarets are 63 meters (207 foot), the age Muhammad was when he died.\nThe mosque designed by Charles Hadife an architect based in Beirut Lebanon is located at the left riverbank in the city of Astana, construction first started in March 2005. The mosque was a gift in accordance with the agreement of the Kazakhstan President, Nursultan Nazarbayev and the Emir of Qatar, Hamad bin Khalifa. It has a capacity of 5,000 worshippers inside the mosque, including 2,000 for worshippers outside the mosque. The structure is made of glass, concrete, granite and alucobond measures."
+        }
+      },
+      "pageviews": {
+        "ru": 255,
+        "kk": 24,
+        "en": 208
+      },
+      "popularity_pageviews": 487
+    },
+    "Q18405670": {
+      "labels": {
+        "ru": "Национальный музей Республики Казахстан",
+        "kk": "Қазақстан Республикасының Ұлттық музейі",
+        "en": "National Museum of the Republic of Kazakhstan"
+      },
+      "descriptions": {
+        "en": "museum in Astana, Kazakhstan",
+        "ru": "музей в Астане, Казахстан"
+      },
+      "sitelinks": {
+        "en": "National Museum of the Republic of Kazakhstan",
+        "kk": "Қазақстан Республикасының Ұлттық музейі",
+        "ru": "Национальный музей Казахстана"
+      },
+      "qid": "Q18405670",
+      "wikipedia": {
+        "ru": {
+          "title": "Национальный музей Казахстана",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0",
+          "extract": "Национальный музей Республики Казахстан (каз. Қазақстан Республикасының Ұлттық мұражайы) — крупнейший музей Казахстана, основанный 2 июля 2013 года. Расположен в Астане."
+        },
+        "kk": {
+          "title": "Қазақстан Республикасының Ұлттық музейі",
+          "url": "https://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B%D1%81%D1%82%D0%B0%D0%BD_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%81%D1%8B%D0%BD%D1%8B%D2%A3_%D2%B0%D0%BB%D1%82%D1%82%D1%8B%D2%9B_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%D1%96",
+          "extract": "Қазақстан Республикасының Ұлттық музейі — Астана қаласында Тәуелсіздік алаңында орналасқан 2014 жылы 2 шілдеде ашылған мұражай. «Мәдени мұра» мемлекеттік бағдарламасы шеңберінде табылған көптеген құнды дүниелер Қазақстан Республикасы Ұлттық музейінің баға жетпес қорын құрайды. Музей «Мәдени мұра» мемлекеттік бағдарламасын іске асыру шеңберінде Қазақстан Республикасы Тұңғыш Президенті Нұрсұлтан Назарбаевтың тапсырмасы бойынша құрылды. Қазақстан Республикасының Үкіметінің 2014 жылғы 2 шілдеде «Қазақстан Республикасы Мәдениет министрлігі «Қазақстан Республикасы Ұлттық музейі» республикалық мемлекеттік мекемесін құру туралы» № 675 Қаулысы шықты. Ұлттық музейдің алғашқы директоры болып Дархан Қамзабекұлы Мыңбай тағайындалды."
+        },
+        "en": {
+          "title": "National Museum of the Republic of Kazakhstan",
+          "url": "https://en.wikipedia.org/wiki/National_Museum_of_the_Republic_of_Kazakhstan",
+          "extract": "The National Museum of the Republic of Kazakhstan (Kazakh: Қазақстан Республикасының Ұлттық музейі, romanized: Qazaqstan Respublikasynyñ Ūlttyq muzeiı), is located in Astana. When it was built in 2014, it was the largest museum in Central Asia. Made up of blue glass and white marble depicts Kazakhstan's history and culture from prehistoric times to the present. The priceless collection of the National Museum of the Republic of Kazakhstan is made up of numerous treasures that were made public as part of the governmental initiative \"Cultural Heritage.\" The museum's structure draws attention thanks to its distinctive outside shape. According to the Decree of the Head of the State Darkhan Mynbay has been appointed the Director of the National Museum of Kazakhstan."
+        }
+      },
+      "pageviews": {
+        "ru": 321,
+        "kk": 240,
+        "en": 241
+      },
+      "popularity_pageviews": 802
+    },
+    "Q2119741": {
+      "labels": {
+        "ru": "Дворец мира и согласия",
+        "en": "Palace of Peace and Reconciliation",
+        "kk": "Бейбітшілік және келісім сарайы"
+      },
+      "descriptions": {
+        "en": "Landmark structure, cultural centre and opera house in Astana",
+        "ru": "Нур-Султанский Дворец",
+        "kk": "Сарай \"Бейбітшілік мен Келісі\" - сарай в Астане,Казахстан.Само здание имеет треугольный вид а перед входом цветы"
+      },
+      "sitelinks": {
+        "en": "Palace of Peace and Reconciliation",
+        "kk": "Бейбітшілік және келісім сарайы",
+        "ru": "Дворец мира и согласия"
+      },
+      "qid": "Q2119741",
+      "wikipedia": {
+        "ru": {
+          "title": "Дворец мира и согласия",
+          "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%BC%D0%B8%D1%80%D0%B0_%D0%B8_%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%B8%D1%8F",
+          "extract": "Дворец мира и согласия (каз. Бейбітшілік және келісім сарайы) — здание пирамидальной формы, созданное архитектором Норманом Фостером в столице Казахстана — Астане для проведения Съезда лидеров мировых и традиционных религий."
+        },
+        "kk": {
+          "title": "Бейбітшілік және келісім сарайы",
+          "url": "https://kk.wikipedia.org/wiki/%D0%91%D0%B5%D0%B9%D0%B1%D1%96%D1%82%D1%88%D1%96%D0%BB%D1%96%D0%BA_%D0%B6%D3%99%D0%BD%D0%B5_%D0%BA%D0%B5%D0%BB%D1%96%D1%81%D1%96%D0%BC_%D1%81%D0%B0%D1%80%D0%B0%D0%B9%D1%8B",
+          "extract": "Бейбітшілік және келісім сарайы – Астана қаласының жергілікті маңызы бар тарих және мәдениет ескерткіштерінің мемлекеттік тізіміне енген сәулет өнері ескерткіші."
+        },
+        "en": {
+          "title": "Palace of Peace and Reconciliation",
+          "url": "https://en.wikipedia.org/wiki/Palace_of_Peace_and_Reconciliation",
+          "extract": "The Palace of Peace and Reconciliation (Kazakh: Бейбітшілік пен келісім сарайы, Beibıtşılık pen kelısım saraiy), also translated as the Pyramid of Peace and Accord, is a 62-metre-high (203 ft) pyramid in Astana, the capital of Kazakhstan, that serves as a non-denominational national spiritual centre and event venue. Designed by architectural practice Foster and Partners and developed in partnership with Aldar Properties, the Palace is surmounted by a modern stained glass apex by architectural artist Brian Clarke. The Palace was constructed to house the triennial Congress of Leaders of World and Traditional Religions, and completed in 2006."
+        }
+      },
+      "pageviews": {
+        "ru": 793,
+        "kk": 167,
+        "en": 1715
+      },
+      "popularity_pageviews": 2675
+    },
+    "Q21371563": {
+      "labels": {
+        "en": "Astana Opera",
+        "ru": "Астана опера",
+        "kk": "Астана Опера (театр)"
+      },
+      "descriptions": {
+        "en": "opera house in Astana, Kazakhstan",
+        "ru": "театр оперы и балета"
+      },
+      "sitelinks": {
+        "en": "Astana Opera",
+        "kk": "Астана Опера",
+        "ru": "Астана Опера"
+      },
+      "qid": "Q21371563",
+      "wikipedia": {
+        "ru": {
+          "title": "Астана Опера",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%D0%9E%D0%BF%D0%B5%D1%80%D0%B0",
+          "extract": "Государственный театр оперы и балета «Астана Опера» — театр в Астане, основанный по инициативе первого президента Казахстана Нурсултана Назарбаева. Здание театра, построенное в 2013 году, признано памятником архитектуры национального значения."
+        },
+        "kk": {
+          "title": "Астана Опера",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%D0%9E%D0%BF%D0%B5%D1%80%D0%B0",
+          "extract": "«Астана Опера» мемлекеттік опера және балет театры немесе Астана Опера — Қазақстандағы Астана қаласында орналасқан опера және балет театры."
+        },
+        "en": {
+          "title": "Astana Opera",
+          "url": "https://en.wikipedia.org/wiki/Astana_Opera",
+          "extract": "Astana Opera (Kazakh: Астана Oпера, romanized: Astana Opera) is an opera house in Astana, Kazakhstan, on the basis of an executive order of Nursultan Nazarbayev."
+        }
+      },
+      "pageviews": {
+        "ru": 406,
+        "kk": 49,
+        "en": 272
+      },
+      "popularity_pageviews": 727
+    },
+    "Q25502203": {
+      "labels": {
+        "kk": "Сәдуақас қажы Ғылмани мешіті",
+        "ru": "Садуакас кажы Гылмани (мечеть)"
+      },
+      "descriptions": {
+        "ru": "мечеть, расположенная в столице Казахстана городе Астана."
+      },
+      "sitelinks": {
+        "kk": "Сәдуақас қажы Ғылмани мешіті",
+        "ru": "Садуакас кажы Гылмани (мечеть)"
+      },
+      "qid": "Q25502203",
+      "wikipedia": {
+        "ru": {
+          "title": "Садуакас кажы Гылмани (мечеть)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B4%D1%83%D0%B0%D0%BA%D0%B0%D1%81_%D0%BA%D0%B0%D0%B6%D1%8B_%D0%93%D1%8B%D0%BB%D0%BC%D0%B0%D0%BD%D0%B8_%28%D0%BC%D0%B5%D1%87%D0%B5%D1%82%D1%8C%29",
+          "extract": "Садуакас кажы Гылмани (каз. Сәдуақас қажы Ғылмани мешіті) — мечеть, расположенная в столице Казахстана городе Астана. Мечеть Садуакас кажы Гылмани является первой построенной в Астане и одной из первых мечетей во всём Казахстане с момента независимости."
+        },
+        "kk": {
+          "title": "Сәдуақас қажы Ғылмани мешіті",
+          "url": "https://kk.wikipedia.org/wiki/%D0%A1%D3%99%D0%B4%D1%83%D0%B0%D2%9B%D0%B0%D1%81_%D2%9B%D0%B0%D0%B6%D1%8B_%D2%92%D1%8B%D0%BB%D0%BC%D0%B0%D0%BD%D0%B8_%D0%BC%D0%B5%D1%88%D1%96%D1%82%D1%96",
+          "extract": "Елордада орналасқан «Сәдуақас қажы Ғылмани» мешіті — еліміздегі тарихы тереңде жатқан мешіттердің бірі. Ақмолалық жамағат 1943-1944 жылдары Құсайын деген азаматтың екі бөлмелі шағын үйін сатып алып, жөндеп, мешіт еткен. Ол Ақмола өңіріндегі ең алғашқы мешіт болатын. Бұл мешіт жергілікті мұсылмандардың имандылыққа бет бұрып, өңірде Ислам дінінің қанат жаюы жолында жарты ғасырдан астам халық игілігіне пайдаланылды.\nЕліміз егемендік алып, сол кездегі Ақмола қаласы ел астанасы болғаннан кейін бұл өңірдің бет-бейнесінде адам айтса нанғысыз ғажайып өзгерістер болғаны белгілі. Сол өзгерістердің алғашқы легінде қаладағы ескі мешіт ауласында еңселі құлшылық ордасы бой көтерді."
+        }
+      },
+      "pageviews": {
+        "ru": 35,
+        "kk": 23
+      },
+      "popularity_pageviews": 58
+    },
+    "Q30642068": {
+      "labels": {
+        "en": "Astana Nurly Zhol station",
+        "ru": "Астана Нурлы Жол",
+        "kk": "Астана Нұрлы жол"
+      },
+      "descriptions": {
+        "en": "railway station in Astana opened 2017",
+        "ru": "новый вокзал Астаны, построенный в 2017 году"
+      },
+      "sitelinks": {
+        "en": "Astana-Nurly Zhol station",
+        "kk": "Астана Нұрлы жол",
+        "ru": "Астана Нурлы Жол"
+      },
+      "qid": "Q30642068",
+      "wikipedia": {
+        "ru": {
+          "title": "Астана Нурлы Жол",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%D0%9D%D1%83%D1%80%D0%BB%D1%8B_%D0%96%D0%BE%D0%BB",
+          "extract": "Астана Нурлы Жол (каз. Астана Нұрлы жол) — станция Казахстанских железных дорог и, наряду с вокзалом «Астана-1», один из двух железнодорожных вокзалов города Астана. После открытия в 2017 году стал основным вокзалом города."
+        },
+        "kk": {
+          "title": "Астана Нұрлы жол",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%D0%9D%D2%B1%D1%80%D0%BB%D1%8B_%D0%B6%D0%BE%D0%BB",
+          "extract": "«Астана Нұрлы жол» — Қазақстан Республикасының астанасы Астана қаласында орналасқан Қазақстан темір жолының теміржол вокзалы.\nЭКСПО 2017 көрмесіне дейінгі инфрақұрылымдық құрылыс аясында станция Мыңжылдық жолының жанында орналасқан, жаңа сыйымдылығы 35000 адам, 2017 жылдың 1 маусымында ашылды. 45 000 м² вокзал ғимаратының 110 000 м² жабық алаңы, 70 000 м² автотұрағы және ұзындығы 2 550 м темір жол платформалары бар. Оны түрік Tabanlıoğlu Architects компаниясы жобалаған. Дизайн MIPIM AR Future Projects байқауында бірінші орынды жеңіп алды. Қала атауын өзгерткеннен кейін станция Астана-Нұрлы жол болып аталды."
+        },
+        "en": {
+          "title": "Astana-Nurly Zhol station",
+          "url": "https://en.wikipedia.org/wiki/Astana-Nurly_Zhol_station",
+          "extract": "Astana-Nurly Zhol (Kazakh: Acтана-Нұрлы жол, Astana-Nurly Jol) is a main train station and bus station in Astana, the capital of Kazakhstan. As part of the infrastructure build up to Expo 2017, the station is located near Mynzhyldyk Alley with a new capacity of 35,000. It was opened on June 1, 2017.\nThe 45,000 ft² station building has an enclosed space of 110,000m², a 70,000m² car park and 2,550m long railway platforms. It was designed by the Turkish company Tabanlıoğlu Architects. The design was awarded first place in the MIPIM AR Future Projects Award.\nIn October 2018, a bus station named Saparjai-2 was opened inside the building. The total area of the parking lot for buses and cars is 8600 sq. m.\nFrom 2019-2022 the station was named  Nur-Sultan-Nurly Zhol after the city changed its name in March 2019."
+        }
+      },
+      "pageviews": {
+        "ru": 461,
+        "kk": 47,
+        "en": 239
+      },
+      "popularity_pageviews": 747
+    },
+    "Q4155890": {
+      "labels": {
+        "kk": "Тәуелсіздік Сарайы",
+        "ru": "Дворец Независимости (Нур-Султан)",
+        "en": "Palace of Independence"
+      },
+      "descriptions": {
+        "ru": "Дворец для официальных и общественных мероприятий в Астане, Казахстан",
+        "en": "palace for official and public events in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Palace of Independence (Astana)",
+        "kk": "Тәуелсіздік сарайы (Астана)",
+        "ru": "Дворец Независимости (Астана)"
+      },
+      "qid": "Q4155890",
+      "wikipedia": {
+        "ru": {
+          "title": "Дворец Независимости (Астана)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_%28%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%29",
+          "extract": "Дворец Независимости (каз. Тәуелсіздік Сарайы) — дворец в Астане. Во дворце проводятся официальные государственные мероприятия, форумы, совещания, встречи, съезды. Вместимость внутренних помещений, их техническое оснащение и комфорт в полной мере позволяют проводить и освещать события на высшем международном уровне. Наряду с официальными мероприятиями здесь проходят концерты, выставки, праздничные торжества."
+        },
+        "kk": {
+          "title": "Тәуелсіздік сарайы (Астана)",
+          "url": "https://kk.wikipedia.org/wiki/%D0%A2%D3%99%D1%83%D0%B5%D0%BB%D1%81%D1%96%D0%B7%D0%B4%D1%96%D0%BA_%D1%81%D0%B0%D1%80%D0%B0%D0%B9%D1%8B_%28%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%29",
+          "extract": "Тәуелсіздік сарайы — мемлекеттік ресми іс-шараларды, форумдарды, мәжілістерді, кездесулерді, съездерді өткізу орны болып табылады. Ғимараттың сыйымдылығы, техникалық жабдықталуы, жайлылығы іс-шараларды жоғары халықаралық деңгейде өткізуге және көрсетуге мүмкіндік береді. Ресми іс-шаралармен қатар концерттерді, көрмелерді, мерекелік жиындарды өткізуге барлық мүмкіндік бар."
+        },
+        "en": {
+          "title": "Palace of Independence (Astana)",
+          "url": "https://en.wikipedia.org/wiki/Palace_of_Independence_%28Astana%29",
+          "extract": "The Independence Palace (Kazakh: Тәуелсіздік Сарайы, Täuelsızdık Saraiy, [tʰæwʲelsɘzˈdɘk sɑrɑˈjɯ]), also known as the Palace of Independence, is a palace in Astana, Kazakhstan. It is used for official state functions, including forums, meetings and conventions. On December 15, 2008, the palace was officially opened to the public. Although construction continued until half a year later.\nThe outside of the palace is made out of blue glass with a lattice of white pipes. The building is shaped into a trapezoid. The halls of the palace include a gallery of applied art, the Museum of City History of Astana, and a four-dimensional cinema."
+        }
+      },
+      "pageviews": {
+        "ru": 198,
+        "kk": 32,
+        "en": 157
+      },
+      "popularity_pageviews": 387
+    },
+    "Q42416691": {
+      "labels": {
+        "ru": "Синагога Бейт Рахель Хабад Любавич",
+        "en": "Beit Rachel Chabad Lubavitch Synagogue"
+      },
+      "descriptions": {
+        "ru": "Самая большая синагога в Центральной Азии",
+        "en": "synagogue in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Beit Rachel Synagogue, Astana"
+      },
+      "qid": "Q42416691",
+      "wikipedia": {
+        "en": {
+          "title": "Beit Rachel Synagogue, Astana",
+          "url": "https://en.wikipedia.org/wiki/Beit_Rachel_Synagogue%2C_Astana",
+          "extract": "Beit Rachel Synagogue is a synagogue in Astana, Kazakhstan. Opened on September 7, 2004, it is the largest synagogue in Central Asia.\nIts opening ceremony was attended by President of Kazakhstan Nursultan Nazarbayev and Chief Ashkenazi Rabbi of Israel Yona Metzger. Its construction was funded by Kazakh-Israeli billionaire Alexander Mashkevitch. The synagogue is named after Rachel Joffe, mother of Alexander Mashkevich, leader of Kazakh Jewry and president of the EAJC. The Jakarta Post describes the synagogue, a rare example of its kind a Muslim-majority country, as \"a symbol of how a Muslim country can build and sustain a peaceful relationship between Islam and Judaism.\""
+        }
+      },
+      "pageviews": {
+        "en": 119
+      },
+      "popularity_pageviews": 119
+    },
+    "Q42422896": {
+      "labels": {
+        "ru": "Триумфальная арка Мангилик Ел",
+        "en": "Triumphal Arch Mangilik El",
+        "kk": "Мәңгілік ел қақпасы"
+      },
+      "descriptions": {
+        "ru": "монумент в Астане",
+        "en": "monument in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Mäñgılık El Triumphal Arch",
+        "kk": "Мәңгілік ел қақпасы"
+      },
+      "qid": "Q42422896",
+      "wikipedia": {
+        "kk": {
+          "title": "Мәңгілік ел қақпасы",
+          "url": "https://kk.wikipedia.org/wiki/%D0%9C%D3%99%D2%A3%D0%B3%D1%96%D0%BB%D1%96%D0%BA_%D0%B5%D0%BB_%D2%9B%D0%B0%D2%9B%D0%BF%D0%B0%D1%81%D1%8B",
+          "extract": "\"Мәңгiлiк Ел\" қақпасы— Астана қаласында орналасқан сәулеттік құрылыс. \nЕскерткішті тұрғызу идеясының авторы – Қазақстанның тұңғыш президенті Нұрсұлтан Назарбаев. Нысан 2011 жылы ел тәуелсіздігінің 20 жылдығына орай ашылды. Құрылымның биіктігі – 20 метр, ол тәуелсіздікке 20 жыл толғандығын білідіреді. Оның төбесіне бұралмалы баспалдақтар арқылы көтерілуге болады. Сырты гранит пен мәрмәрдән жасалған. Құрылыс кезінде тек жоғары сапалы материалдар қолданылды. \nБүйір қабырғалары ою-өрнектермен безендірілген. Төменгі жағында 4 көлемді мүсін орналасқан. Олар – қазақ халқының тарихына үлкен үлес қосқан адамдардың бейнесі. Біріншісі – Ақсақал мүсіні, ол даналықтың символы. Екіншісі – Әйел-ана, ол мейірімділік пен жылылықтың белгісі. Үшінші және төртінші мүсіндерде қазақ батырларының ерліктері бейнеленген. \n\nЖоғарғы жағының екі шетінде елтаңба суреттеліп, төбесінде ту бейнеленгені, ғимараттың ерекше мемлекеттік мәні бар екендігін көрсетеді. Бүйір бөліктерінде, бірлікпен пен қонақжайлықты білідіретін «Тай-Қазан» мүсіні орналасқан. Үстіңгі бөлігінде қазақ сарбаздарының қаруы «Қалқан» тұр. Ол сенімділіктің, тұрақтылықтың және сыртқы жаулардан қорғануға дайын болудың белгісі. \nҚұрылымды көруге келген көрермендер, бақылау алаңына көтерілмес бұрын, ел астанасының тарихымен танысуға және батырлардың керемет мүсіндерін тамашалауға мүмкіндік алады. Екі жағынан автомобиль жолдары өтуі себебінен, келушілерге ыңғайлы болу үшін жер асты өткелі қарастырылған. \nҚақпаның ішкі жағында, халықтың әртүрлі кезеңде жеткен жетістіктері туралы рельефтік жазулар бар. Қазақстанның тәуелсіз мемлекет болып қалыптасу тарихы мен қазақ халқының мұрасы, «Мәңгілік ел» қақпасының идеясына енген."
+        },
+        "en": {
+          "title": "Mäñgılık El Triumphal Arch",
+          "url": "https://en.wikipedia.org/wiki/M%C3%A4%C3%B1g%C4%B1l%C4%B1k_El_Triumphal_Arch",
+          "extract": "Mäñgılık El (Kazakh: Мәңгілік ел, lit. 'Eternal Nation') is a 20-meter-tall triumphal arch located in Astana, Kazakhstan. The monument was inaugurated on 16 December 2011, marking the 20th anniversary of Kazakhstan’s independence. It was initiated by the country’s first president, Nursultan Nazarbayev."
+        }
+      },
+      "pageviews": {
+        "kk": 569,
+        "en": 136
+      },
+      "popularity_pageviews": 705
+    },
+    "Q4314789": {
+      "labels": {
+        "ru": "Национальная академическая библиотека Казахстана",
+        "kk": "ҚР Ұлттық академиялық кітапханасы",
+        "en": "National Academic Library of the Republic of Kazakhstan"
+      },
+      "descriptions": {
+        "ru": "библиотека",
+        "en": "library in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "National Academic Library of the Republic of Kazakhstan",
+        "kk": "Қазақстан Республикасының Ұлттық академиялық кітапханасы",
+        "ru": "Национальная академическая библиотека Казахстана"
+      },
+      "qid": "Q4314789",
+      "wikipedia": {
+        "ru": {
+          "title": "Национальная академическая библиотека Казахстана",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0",
+          "extract": "«Национальная академическая библиотека Республики Казахстан» в городе Астана была создана постановлением Правительства РК от 23 апреля 2004 года за № 461. Главная цель - дальнейшее развитие информационной, образовательной и культурно-просветительной инфраструктуры столицы.\nОфициальное открытие Национальной Академической Библиотеки РК состоялось 10 июня 2004 года. \n10 сентября 2005 года библиотека приняла первых читателей.\nУслугами библиотеки ежегодно пользуются более 25 тысяч читателей.."
+        },
+        "kk": {
+          "title": "Қазақстан Республикасының Ұлттық академиялық кітапханасы",
+          "url": "https://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B%D1%81%D1%82%D0%B0%D0%BD_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%81%D1%8B%D0%BD%D1%8B%D2%A3_%D2%B0%D0%BB%D1%82%D1%82%D1%8B%D2%9B_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%D0%BB%D1%8B%D2%9B_%D0%BA%D1%96%D1%82%D0%B0%D0%BF%D1%85%D0%B0%D0%BD%D0%B0%D1%81%D1%8B",
+          "extract": "Қазақстан Республикасының Ұлттық академиялық кітапханасы (АҚРҰАК) - 2004 жылдың 23 сәуіріндегі ҚР Үкіметінің № 461 Қаулысымен құрылды.\n2004 жылғы 10 маусымда ҚР Президенті Н. Ә. Назарбаев пен Мәскеу мэрі Ю. М. Лужковтың қатысуымен кітапхананың салтанатты ашылу рәсімі өтті.\n2005 жылғы 10 қыркүйекте АҚРҰАК оқырмандарына өз есігін ашты. \nЖаңа кітапхана - жалпы алаңы 15 000 шаршы метрді құрайтын, қазіргі заманға сай 5 қабатты ғимарат. Мұнда тұтынушыларға бар жағдай жасалынған.\nҚазақстан Үкімтенің жаңа жобасы кітапхана процесстерін автоматтандырудың кешенді жүйесімен қатар, кітапхана ісіндегі жаңа технологияларды дамыту және ақпараттардың ұлттық электронды сақтау қоймасын құру үшін жаңа компьютерлік жабдықтармен жасақталған зияткерлік орталық құруға бағытталған. Бүгінде ҚР Ұлттық академиялық кітапханасында электронды ресурстарды 50 терабайттан петабайтқа дейін ұлғайтуға мүмкіндік беретін электронды сақтау қоймасы мен серверлер кешеніне арналған база құрылды. Кітапхана кітапханалық-библиографиялық процесстерді автоматтандыру деңгейі жөнінен республикамызда көшбасшылық орында. АҚРҰАК базасындағы «РАБИС» ақпараттық-библиографиялық жүйесінің автоматтандырылған негізгі үлгісі Қазақстанда алғаш рет ресми мақұлданды әрі жаңартылды. Бұл жүйе оқырмандарға қызмет көрсету процесіндегі бірегей логикалық тізбек бойынша жұмыс жасайды — оқырмандарды тіркеуден бастап, оларды әдебиеттер іздестіру мен тапсырыс беру, кітап беріліміне дейін бақылау.\nБүгінде кітапхана қызметін 15 мыңнан аса оқырман пайдалануда. Кітап қоры 380 000 жуық. Кітаптан бөлек, кітапханаға қазақ, орыс және басқа да шет тілдерінде 1500 аса атаумен отандық, шетелдік мерзімді басылымдар келіп түседі. Кітапхана өз пайдаланушыларына 15 толық мәтінді ғылыми мәліметтер базасын және әлемдік алпауыт ақпарат орталықтарының он-лайн каталогтарын ұсынады.\nАҚРҰАК кітапханашылары компьютер технологияларын қолдануды жетік меңгерген, электрондар тасқынындағы ғылыми ақпараттардан да хабардар, қызмет барысында қашықтағы мәліметтер базасын, виртуальді анықтама қызметін, құжаттарды электронда жеткізу секілді осы замандық қызмет көрсету түрлерін жиі қолданады. Сондай-ақ, кәсіби ақпаратты қажет ететін тұрғындарға қызмет көрсету үшін меншіктік ақпараттық мәліметтер базасын қалыптастыруда.\nАҚРҰАК еліміздің кітапханаларына арналған ақпараттандыру мен автоматтандыруды енгізу бойынша консалтингтік орталық құруды зор сеніммен қолға алуда әрі республикамыздың кітапханалық процесстеріне жаңа технологияларды енгізу саласындағы консалтингтік, болжалдау және талдау жұмыстарын жүзеге асыруда.\nАҚРҰАК мынадай алып ақпараттық жобалардың инициаторы әрі әзірлеушісі: «Қазақстанның Ұлттық Электронды Кітапханасы» (ҚазҰЭК), «Қазақстанның қашықтағы кітапханалық академиясы», «Қазақстан кітапханаларының бірегей ақпараттық желісі». АҚРҰАК мамандары «Қазақстан кітапханаларын жаңартудың 2007—2009 жылдарға арналған бағдарламасын» әзірлеуде белсенділік танытты.\nАҚРҰАК қызметіндегі басым бағыттардың бірі — халықаралық ынтымақтастықты дамыту. АҚРҰАК мынадай халықаралық үкіметтік, қоғамдық, кәсіби ұйымдармен белсенді ынтымақтасқан: ИФЛА, БАЕ, МБИАЦ, ЮНЕСКО, Француз Альянсы, Гете институты, Дүниежүзілік даму банкі, Азия даму банкі, ПРООН, НАТО және басқалар. ТМД елдерінің Ұлттық кітапханаларымен ынтымақтастық туралы Келісім жасалды. Атап айтсақ: Ресей, Әзірбайжан, Тәжікстан, Қырғызстан, Молдова, Белоруссия, Өзбекстан.\n«Адам құқықтары жөніндегі ашық сандық кітапхана», «Көпшілік құқықтық ақпараттар орталығы», Үнді мәдениет орталығы, Неміс оқу залы, Ақпараттық даму орталығы, НАТО кітапханасы және басқа да ұйымдармен бірлікте жобалар әзірледі және енгізді. Ынтымақтастық туралы бұл келісімдер кітапхана қызметтері мен ақпараттық ресурстарды әрі қарай электрондауға серпін беретін жаңа жобаларды дамытуды қарастырады.\n\nАҚРҰАК қызметі халықаралық дәрежеде аталып, ақпараттық қоғам қалыптастыруға өзіндік үлес қосқан әлем кітапханалары туралы түсінік беруді мақсат еткен ИФЛА «Success stories of libraries Building the Information Society» арнайы жобасында әлемдегі үздік кітапханалар тарихы ондығына енді."
+        },
+        "en": {
+          "title": "National Academic Library of the Republic of Kazakhstan",
+          "url": "https://en.wikipedia.org/wiki/National_Academic_Library_of_the_Republic_of_Kazakhstan",
+          "extract": "The National Academic Library of Kazakhstan is a national library specializing in academic publications. Built during the presidency of National Library of Kazakhstan, the structure resembles a Möbius strip."
+        }
+      },
+      "pageviews": {
+        "ru": 72,
+        "kk": 47,
+        "en": 19
+      },
+      "popularity_pageviews": 138
+    },
+    "Q4408858": {
+      "labels": {
+        "ru": "Сарыарка (велотрек)",
+        "en": "Republican Cycling Track"
+      },
+      "descriptions": {
+        "en": "sports venue in Kazakhstan",
+        "ru": "спортивное сооружение"
+      },
+      "sitelinks": {
+        "en": "Saryarka Velodrome",
+        "ru": "Сарыарка (велотрек)"
+      },
+      "qid": "Q4408858",
+      "wikipedia": {
+        "ru": {
+          "title": "Сарыарка (велотрек)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%80%D1%8B%D0%B0%D1%80%D0%BA%D0%B0_%28%D0%B2%D0%B5%D0%BB%D0%BE%D1%82%D1%80%D0%B5%D0%BA%29",
+          "extract": "Республиканский велотрек «Сарыарка» — спортивное сооружение в Астане (Казахстан), внешне напоминающее шлем велогонщика.\nВ 2009 году в проект велотрека была добавлена ледовая арена, на которой во время зимних Азиатских игр 2011 года были проведены соревнования по шорт-треку и фигурному катанию.\nРеспубликанский велотрек стоимостью порядка 20 миллиардов тенге.\nНеобычные формы сооружения сразу привлекают к себе внимание. Под его куполом и площадью в 20 тысяч квадратных метров — располагаются помимо самого велотрека также и волейбольные, баскетбольные, футбольные площадки, несколько бассейнов и фитнес-центров. Вместимость объекта составляет 9270 зрителей. В состав комплекса входит: велосипедный центр, гостиничный комплекс, учебный и оздоровительный комплексы.\n\nПосле Азиады его планируют использовать для проведения различных соревнований и спортивных сборов. Помимо этого, комплекс можно использовать для проведения концертов, конференций и т. д.\nПредназначен не только для велосипедного спорта, но и для конькобежного, шорт-трека, хоккея (имеется 2 корта), а также для кёрлинга и фигурного катания.\nВ 2011 году велотрек Астаны признан лучшим в мире."
+        },
+        "en": {
+          "title": "Saryarka Velodrome",
+          "url": "https://en.wikipedia.org/wiki/Saryarka_Velodrome",
+          "extract": "The Saryarka Velodrome (Kazakh: Сарыарқа велотрегі, Saryarqa velotregi; Russian: Велотрек Сарыарка, romanized: Velotrek Saryarka) is an indoor cycle-racing track or velodrome that is located in Astana, Kazakhstan."
+        }
+      },
+      "pageviews": {
+        "ru": 59,
+        "en": 123
+      },
+      "popularity_pageviews": 182
+    },
+    "Q4494668": {
+      "labels": {
+        "kk": "Әзірет Сұлтан мешіті",
+        "ru": "Хазрет Султан",
+        "en": "Khazret Sultan Mosque"
+      },
+      "descriptions": {
+        "ru": "соборная мечеть в Астане",
+        "en": "Mosque in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Hazrat Sultan Mosque",
+        "kk": "Әзірет Сұлтан мешіті",
+        "ru": "Хазрет Султан (мечеть)"
+      },
+      "qid": "Q4494668",
+      "wikipedia": {
+        "ru": {
+          "title": "Хазрет Султан (мечеть)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B7%D1%80%D0%B5%D1%82_%D0%A1%D1%83%D0%BB%D1%82%D0%B0%D0%BD_%28%D0%BC%D0%B5%D1%87%D0%B5%D1%82%D1%8C%29",
+          "extract": "Хазре́т Султа́н (каз. Әзірет Сұлтан мешіті) — мечеть в Астане. Памятник истории и культуры местного значения."
+        },
+        "kk": {
+          "title": "Әзірет Сұлтан мешіті",
+          "url": "https://kk.wikipedia.org/wiki/%D3%98%D0%B7%D1%96%D1%80%D0%B5%D1%82_%D0%A1%D2%B1%D0%BB%D1%82%D0%B0%D0%BD_%D0%BC%D0%B5%D1%88%D1%96%D1%82%D1%96",
+          "extract": "Әзірет Сұлтан мешіті – Астана қаласының жергілікті маңызы бар тарих және мәдениет ескерткіштерінің мемлекеттік тізіміне енген сәулет өнері ескерткіші."
+        },
+        "en": {
+          "title": "Hazrat Sultan Mosque",
+          "url": "https://en.wikipedia.org/wiki/Hazrat_Sultan_Mosque",
+          "extract": "The Hazrat Sultan Mosque (Kazakh: Äzıret Sūltan meşıtı/Әзірет Сұлтан мешіті; Russian: Хазрет Султан) is a Friday mosque in Astana, Kazakhstan."
+        }
+      },
+      "pageviews": {
+        "ru": 551,
+        "kk": 125,
+        "en": 329
+      },
+      "popularity_pageviews": 1005
+    },
+    "Q573362": {
+      "labels": {
+        "en": "Kazakhstan Central Concert Hall",
+        "kk": "Қазақстан Орталық концерт залы",
+        "ru": "Центральный концертный зал «Казахстан»"
+      },
+      "descriptions": {
+        "en": "concert hall in Astana, Kazakhstan"
+      },
+      "sitelinks": {
+        "en": "Kazakhstan Central Concert Hall",
+        "kk": "Қазақстан Орталық концерт залы",
+        "ru": "Казахстан (концертный зал)"
+      },
+      "qid": "Q573362",
+      "wikipedia": {
+        "ru": {
+          "title": "Казахстан (концертный зал)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD_%28%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D1%82%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B0%D0%BB%29",
+          "extract": "Центральный концертный зал «Казахстан» — концертный зал в городе Астана. Его также называют «Цветок пустыни». Спроектирован итальянским архитектором Манфреди Николетти. Является самой большой концертной площадкой в стране. Вместимость — 3500 гостей. Был открыт в 2009 году. До пандемии COVID-19 в нем проходило около ста массовых мероприятий в год."
+        },
+        "kk": {
+          "title": "Қазақстан Орталық концерт залы",
+          "url": "https://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B%D1%81%D1%82%D0%B0%D0%BD_%D0%9E%D1%80%D1%82%D0%B0%D0%BB%D1%8B%D2%9B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D1%82_%D0%B7%D0%B0%D0%BB%D1%8B",
+          "extract": "«Қазақстан» орталық концерт залы — алдыңғы қатарлы технологиялармен жабдықталған, әлемдік және отандық концерттерді, салтанатты іс-шаралар мен ресми кездесулерді, көрмелер мен конференцияларды өткізуге арналған ірі кешен.\nКонцерттік залды 2009 жылғы 16 желтоқсанда Елбасы Н.Ә. Назарбаев салтанатты түрде ашты. Бірегей, теңдесі жоқ кешенді құру идеясын Мемлекет басшысы ұсынған еді. Авторы әлемдегі белгілі жобалаушылардың бірі Манфреди Николетти болып табылатын «Қазақстан» Орталық концерт залының даңқы қазіргі күннің өзінде австралиядағы «Сидней» опера театрының атағымен бірдей.\n2016 жылдан бастап «Қазақстан» орталық концерт залында еліміздің ең ірі концерттік ұйымы – «Қазақконцерт» еңбек етуде.\nОсындай ерекше жоба ТМД мемлекеттерінің шеңберінде жоқ және бұл Қазақстан Республикасының маңызды архитектуралық құрылымдарының бірі болып табылады."
+        },
+        "en": {
+          "title": "Kazakhstan Central Concert Hall",
+          "url": "https://en.wikipedia.org/wiki/Kazakhstan_Central_Concert_Hall",
+          "extract": "The Central Concert Hall (Kazakh: «Qazaqstan» Ortalyq kontsert zaly; Russian: Центральный концертный зал «Казахстан») is a center for performing arts in Astana, the capital city of Kazakhstan. It was designed by Italian architect Manfredi Nicoletti and inaugurated by the President of Kazakhstan, Nursultan Nazarbayev, on the nation's Independence Day, 15 December, in 2009.\nThe building’s shape evokes the dynamism of a flower's petals. The building's external structure comprises a series of curved inclined walls made of concrete with a blue back painted glass panels cladding. Those structures protect the building's interior functions from Astana’s harsh weather.\nThe building features a thirty-meter-high foyer which extends over 3.000 square meters, which is intended to create an urban-scale internal public square that could welcome the citizens of Astana throughout the entire year. The building contains three different music halls. It also encloses restaurants, shops, and bars.\nThe main Concert hall for 3,500 seats is one of the biggest of its kind and is capable of hosting a multitude of different events, from classical to pop music, ballet and conferences thanks to its acoustic flexibility. This flexibility is produced by a system of acoustic curtains and a special false ceiling design called a black-hole, which absorbs most of the acoustic reflections of the hall.\nThe two smaller halls, of 400 and 200 seats respectively, have been designed to be flexible enough to host chamber music as well as cinema and conferences.\nThe International Astana Action Film Festival was held there in 2010."
+        }
+      },
+      "pageviews": {
+        "ru": 202,
+        "kk": 14,
+        "en": 158
+      },
+      "popularity_pageviews": 374
+    },
+    "Q671484": {
+      "labels": {
+        "en": "Khan Shatyr Entertainment Center",
+        "kk": "Хан Шатыр",
+        "ru": "Хан Шатыр"
+      },
+      "descriptions": {
+        "en": "building",
+        "ru": "торгово-развлекательный центр в столице Казахстана"
+      },
+      "sitelinks": {
+        "en": "Khan Shatyr Entertainment Center",
+        "kk": "Хан Шатыр",
+        "ru": "Хан Шатыр"
+      },
+      "qid": "Q671484",
+      "wikipedia": {
+        "ru": {
+          "title": "Хан Шатыр",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD_%D0%A8%D0%B0%D1%82%D1%8B%D1%80",
+          "extract": "«Хан Шатыр» (по-русски: ошибочно — «Ханский шатёр», правильно — «Хан среди шатров») — крупный торгово-развлекательный центр в столице Казахстана Астане.\nОткрытие состоялось 6 июля 2010 года в рамках празднования дня Астаны с участием президента Нурсултана Назарбаева. На торжественной церемонии открытия состоялся концерт итальянского тенора Андреа Бочелли.\nЯвляется самым большим «шатром» в мире, вошёл в десятку лучших мировых экозданий по версии журнала Forbes Style, вошёл в Книгу рекордов Гиннесса.\nЗдание спроектировано архитектурным бюро Нормана Фостера. Форма здания напоминает собой гигантский шатёр, имеет высоту 150 м (шпиль), сконструировано из сети стальных вант, на которых закреплено прозрачное полимерное покрытие, защищающее внутреннее пространство комплекса от резких температурных перепадов и создающее комфортный микроклимат.\n\nОбщая площадь «Хан Шатыра» — 127 тысяч квадратных метров. В ТРК размещены предприятия розничной торговли, общепита и развлекательные учреждения. Главной достопримечательностью «Хан Шатыра» является крытый курорт с искусственным песчаным пляжем, оснащённый системой климат-контроля поддерживающей температуру +35 градусов круглый год.\nНа месте «Хан Шатыра» раньше находилось ныне осушённое озеро Малый Талдыколь.\nВ 2014 году на National Geographic в рубрике Суперсооружения вышел материал про «Хан Шатыр»\nВ 2019 году 3 июня в пляжном клубе «Sky Beach Club» ТРЦ «Хан Шатыр» утонула 9-летняя девочка. В момент гибели ребёнка в бассейне находилось больше 30 детей.\nВ 2023 году в «Хан Шатыре» был пожар, который быстро потушили. Горела трансформаторная подстанция на 10 киловатт и кабельная шахта на нулевом этаже. Жертв и пострадавших в пожаре не было."
+        },
+        "kk": {
+          "title": "Хан Шатыр",
+          "url": "https://kk.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD_%D0%A8%D0%B0%D1%82%D1%8B%D1%80",
+          "extract": "Хан Шатыр — Астана қаласында орналасқан ірі ойын-сауық және сауда-саттық орталығы, 2010 жылы 6 шілдеде Астана күніне орай ашылған."
+        },
+        "en": {
+          "title": "Khan Shatyr Entertainment Center",
+          "url": "https://en.wikipedia.org/wiki/Khan_Shatyr_Entertainment_Center",
+          "extract": "Khan Shatyr (Kazakh: Хан Шатыр, romanized: Han Şatyr, lit. 'Grand Marquee') is a transparent tent-shaped Entertainment Center located in Astana, the capital city of Kazakhstan. Built in a neo-futurist style, the architectural project was unveiled by the first President of Kazakhstan Nursultan Nazarbayev on December 9, 2006.\nThe 90-metre (300 ft) high tent (150 m (490 ft) including the spire) has a 200-by-195-metre (656 ft × 640 ft) elliptical base covering 140,000 square metres (14 ha; 35 acres). Under the tent, an area larger than 10 football fields, is an urban-scale park, shopping and entertainment venue with squares and cobbled streets, a boating river, shopping centre, minigolf and indoor beach resort. The fabric roof is constructed from ETFE-cushions provided by Vector Foiltec, suspended on a network of cables strung from a central spire. The transparent material allows sunlight through which, in conjunction with the stack effect, air heating and cooling systems, is designed to maintain an internal temperature between 15–30 °C (59–86 °F) in the main space and 19–24 °C (66–75 °F) in the retail units, while outside the temperature varies between −35 and 35 °C (−31 and 95 °F) across the year.\nFollowing the construction of the Palace of Peace and Reconciliation (opened in 2006), a glass pyramid, the Khan Shatyr Entertainment Center was the second national project in Astana designed by UK architect Norman Foster (of Foster and Partners), (Partners in Charge Filo Russo and Peter Ridley), and UK engineers Buro Happold led by Mike Cook. Aldar Properties was a partner in the development. Construction documentation architects were Linea and Gultekin. The construction of the tent-city was the responsibility of the Turkish company Sembol.\nAfter a series of delays, the main mast was eventually erected in December 2008, and the whole complex was completed and opened on July 5, 2010, 70th birthday of Kazakhstan's president, Nursultan Nazarbayev. Andrea Bocelli gave a concert for the occasion, with guests including the President of Russia, Dmitry Medvedev; the President of Ukraine, Viktor Yanukovych; the President of Turkey, Abdullah Gül; the President of Belarus, Alexander Lukashenko; the President of Armenia, Serzh Sargsyan; the President of Tajikistan, Emomalii Rahmon; the President of Kyrgyzstan, Roza Otunbayeva; the Crown prince of Abu Dhabi, Mohammed bin Zayed Al Nahyan; and the King of Jordan, Abdullah II."
+        }
+      },
+      "pageviews": {
+        "ru": 1231,
+        "kk": 609,
+        "en": 985
+      },
+      "popularity_pageviews": 2825
+    },
+    "Q800403": {
+      "labels": {
+        "ru": "Астана",
+        "en": "Astana-1 station",
+        "kk": "Астана 1"
+      },
+      "descriptions": {
+        "en": "railway station",
+        "ru": "железнодорожная станция в городе Астана (Казахстан)",
+        "kk": "теміржол станциясы"
+      },
+      "sitelinks": {
+        "en": "Astana-1 station",
+        "kk": "Астана-1",
+        "ru": "Астана (станция)"
+      },
+      "qid": "Q800403",
+      "wikipedia": {
+        "ru": {
+          "title": "Астана (станция)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%28%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%29",
+          "extract": "Астана (каз. Астана-1) — железнодорожная станция Казахстанских железных дорог, расположенная в столице Казахстана, городе Астане. Здесь располагался главный железнодорожный вокзал города до ввода нового вокзала Нурлы Жол в 2017 году."
+        },
+        "kk": {
+          "title": "Астана-1",
+          "url": "https://kk.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0-1",
+          "extract": "Астана-1 — Қазақстанның елордасы Астана қаласында орналасқан, «Қазақстан темір жолы» АҚ-на тиесілі темір жол станциясы."
+        },
+        "en": {
+          "title": "Astana-1 station",
+          "url": "https://en.wikipedia.org/wiki/Astana-1_station",
+          "extract": "Astana-1 formerly Nur-Sultan-1, is a railway station in Astana, Kazakhstan. The original station can handle 7,000 travellers a day, as part of the infrastructure build up to Expo 2017 a new station, Astana-Nurly Zhol, is located near Mynzhyldyk Alley with a new capacity of 12,000.\nThe station was renamed to Nur-Sultan-1 after the city changed its name. On 17 September 2022, the name of the city was changed to Astana and the station name was changed."
+        }
+      },
+      "pageviews": {
+        "ru": 221,
+        "kk": 9,
+        "en": 196
+      },
+      "popularity_pageviews": 426
+    },
+    "Q804210": {
+      "labels": {
+        "ru": "Байтерек",
+        "kk": "Бәйтерек (монументі)",
+        "en": "Bayterek"
+      },
+      "descriptions": {
+        "en": "monument in Astana, Kazachstan",
+        "ru": "достопримечательность города"
+      },
+      "sitelinks": {
+        "en": "Baiterek (monument)",
+        "kk": "Бәйтерек (монумент)",
+        "ru": "Байтерек (монумент)"
+      },
+      "qid": "Q804210",
+      "wikipedia": {
+        "ru": {
+          "title": "Байтерек (монумент)",
+          "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82%D0%B5%D1%80%D0%B5%D0%BA_%28%D0%BC%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%29",
+          "extract": "«Байтере́к» (каз. Бәйтерек — тополь; полное название — «Астана-Байтерек») — монумент и смотровая башня в столице Казахстана — Астане. Монумент был построен как символ переноса столицы Казахстана в 1997 году. Входит в список памятников истории и культуры местного значения Астаны."
+        },
+        "kk": {
+          "title": "Бәйтерек (монумент)",
+          "url": "https://kk.wikipedia.org/wiki/%D0%91%D3%99%D0%B9%D1%82%D0%B5%D1%80%D0%B5%D0%BA_%28%D0%BC%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%29",
+          "extract": "Бәйтерек – Астана қаласындағы сәулет құрылыс кешені, сәулет өнерінің бірегей туындысы. Елорданың ең көрнекті ғимараттарының бірі."
+        },
+        "en": {
+          "title": "Baiterek (monument)",
+          "url": "https://en.wikipedia.org/wiki/Baiterek_%28monument%29",
+          "extract": "Baiterek (Kazakh: Бәйтерек, romanized: Bäiterek; \"tall poplar tree\") is a monument and observation tower in Astana, the capital city of Kazakhstan. A tourist attraction popular with foreign visitors and Kazakhs, it is emblematic of the city, which became capital of the country in 1997. The tower is located on Nurjol Boulevard, and is considered a symbol of post-independence Kazakhstan."
+        }
+      },
+      "pageviews": {
+        "ru": 3245,
+        "kk": 987,
+        "en": 1255
+      },
+      "popularity_pageviews": 5487
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+ "pinned": [
+  {
+   "id": "sxodim.com:62395",
+   "title": "Пешая экскурсия по старому городу «По следам истории»",
+   "lat": 51.1649933,
+   "lon": 71.4164505
+  },
+  {
+   "id": "sxodim.com:77465",
+   "title": "Концерт «Добрые песни старого кино» в Астане",
+   "lat": 51.1636794,
+   "lon": 71.4223498
+  },
+  {
+   "id": "sxodim.com:77641",
+   "title": "Трибьют-концерт The Beatles от группы Black Pelican",
+   "lat": 51.1624514,
+   "lon": 71.4187926
+  },
+  {
+   "id": "sxodim.com:77665",
+   "title": "Teztap интеллектуалдар ойыны – Тек суреттер",
+   "lat": 51.173011,
+   "lon": 71.419872
+  },
+  {
+   "id": "sxodim.com:77697",
+   "title": "Акустический концерт группы Sary",
+   "lat": 51.1384315,
+   "lon": 71.4583588
+  }
+ ],
+ "demo": {
+  "Байтерек": {
+   "resolved": [
+    "Байтерек",
+    "attraction_landmark",
+    51.1283,
+    71.4305
+   ],
+   "dists_m_5_pinned": [
+    2257,
+    3886,
+    3976,
+    4198,
+    5028
+   ],
+   "within_1500": 0
+  },
+  "Хан Шатыр": {
+   "resolved": [
+    "Хан Шатыр",
+    "mall",
+    51.1325,
+    71.4039
+   ],
+   "dists_m_5_pinned": [
+    3490,
+    3700,
+    3718,
+    3873,
+    4641
+   ],
+   "within_1500": 0
+  },
+  "Атамекен": {
+   "resolved": [
+    "Атамекен",
+    "entertainment",
+    51.1301,
+    71.4244
+   ],
+   "dists_m_5_pinned": [
+    2553,
+    3622,
+    3740,
+    3923,
+    4786
+   ],
+   "within_1500": 0
+  },
+  "old_town_centroid_4_of_5": {
+   "lat": 51.166,
+   "lon": 71.4194,
+   "dists_m_5_pinned": [
+    235,
+    335,
+    400,
+    777,
+    4109
+   ],
+   "within_1500": 4
+  }
+ },
+ "rule": "haversine-flat, radius 1500 m = DEFAULT_RADIUS_M; zero is distance-bound: any window/limit cannot add >0 beyond what distance allows",
+ "by_design": "no hits -> nearby_events returns None, chip stays silent (never says «событий нет»)"
+}

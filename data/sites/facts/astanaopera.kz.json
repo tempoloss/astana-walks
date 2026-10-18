@@ -1,0 +1,46 @@
+{
+ "domain": "astanaopera.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:36+00:00",
+ "pages": [
+  "https://astanaopera.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Астана Опера",
+   "address": "Қазақстан, Астана, Д. Қонаев көшесі, 1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 709 600",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://astanaopera.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://astanaopera.kz/contacts",
+     "snippet": "«Астана Опера» мемлекеттік опера және балет театры",
+     "fetched_at": "2026-10-17T09:33:36+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://astanaopera.kz/contacts",
+     "snippet": "Қазақстан, Астана, Д. Қонаев көшесі, 1",
+     "fetched_at": "2026-10-17T09:33:36+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://astanaopera.kz/contacts",
+     "snippet": "Телефон +7 (7172) 709 600",
+     "fetched_at": "2026-10-17T09:33:36+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "The page publishes box-office hours («Кассаның жұмыс уақыты»: Жұмыс күндері 10:00—19:00, Демалыс күндері 10:00—18:00) and the box-office phone — ticket-office schedule, not the theatre's visiting hours, so opening_hours is not stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

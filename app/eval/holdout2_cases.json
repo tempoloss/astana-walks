@@ -1,0 +1,999 @@
+[
+  {
+    "id": "h2-01-hazret-morning-walk",
+    "label": "Мечеть Хазрет Султан · будни 08:00 · обычная погода · прогулка перед работой",
+    "origin": {
+      "name": "Мечеть Хазрет Султан",
+      "lat": 51.1254495,
+      "lon": 71.4721422
+    },
+    "when": "2026-10-20T08:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "У меня час до пар, куда можно сходить рядом с мечетью, прогуляться",
+    "tz": false,
+    "axes": {
+      "origin": "hazret",
+      "when": "wk08",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "cafe",
+        "viewpoint"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 30,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Спокойная прогулка утром: набережная, парк или достопримечательность в пешей доступности; бары и фастфуд неуместны."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-02-hazret-halal-dinner",
+    "label": "Мечеть Хазрет Султан · суббота 19:00 · обычная погода · halal dinner на 4 человек",
+    "origin": {
+      "name": "Мечеть Хазрет Султан",
+      "lat": 51.1254495,
+      "lon": 71.4721422
+    },
+    "when": "2026-10-24T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "halal dinner for 4 people nearby, preferably not fast food",
+    "tz": false,
+    "axes": {
+      "origin": "hazret",
+      "when": "we19",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 200,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Полноценный ужин, не фастфуд и не бар; halal не подтверждать, если нет данных, — честно сказать, что не проверено; часы работы вечером в субботу нужны."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-03-asiapark-family-day",
+    "label": "ТРЦ Азия Парк · воскресенье 13:00 · обычная погода · выходной с детьми",
+    "origin": {
+      "name": "ТРЦ Азия Парк",
+      "lat": 51.1280624,
+      "lon": 71.4116334
+    },
+    "when": "2026-10-25T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "балалармен демалыс күні неде өткіземіз, жақын жерде",
+    "tz": false,
+    "axes": {
+      "origin": "asiapark",
+      "when": "we13",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "kids_playground",
+        "entertainment",
+        "cafe",
+        "fast_food",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 100,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Выходной с детьми рядом с ТРЦ: детская площадка, развлечения, еда; ответ можно частично на казахском, категории должны совпадать."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-04-asiapark-cold-indoor",
+    "label": "ТРЦ Азия Парк · будни 19:00 · −22°C · спрятаться от мороза",
+    "origin": {
+      "name": "ТРЦ Азия Парк",
+      "lat": 51.1280624,
+      "lon": 71.4116334
+    },
+    "when": "2026-10-22T19:00",
+    "weather_override": {
+      "apparent_c": -22.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Мороз −22, где погреться и поужинать рядом, только не далеко идти",
+    "tz": false,
+    "axes": {
+      "origin": "asiapark",
+      "when": "wk19",
+      "weather": "cold",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "restaurant",
+        "cafe",
+        "fast_food",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 8,
+      "budget_min": 150,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "При −22°C на улице предлагать только крытые места в нескольких минутах пешком; парки и смотровые площадки запрещены."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-05-piramida-tourist-hour",
+    "label": "Дворец Мира и Согласия (Пирамида) · будни 13:00 · обычная погода · час между парами",
+    "origin": {
+      "name": "Дворец Мира и Согласия (Пирамида)",
+      "lat": 51.123123,
+      "lon": 71.4634559
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Пирамида маңында екі сағатта не көруге болады, жаяу жүріп",
+    "tz": false,
+    "axes": {
+      "origin": "piramida",
+      "when": "wk13",
+      "weather": "normal",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "museum_gallery",
+        "attraction_landmark",
+        "park_garden",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "entertainment",
+        "sport"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 30,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Короткий визит на 1 час: музей, достопримечательность или парк рядом; часы работы музеев нужно проверить или честно пометить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-06-piramida-stroller-accessible",
+    "label": "Дворец Мира и Согласия (Пирамида) · будни 15:00 · обычная погода · прогулка с коляской",
+    "origin": {
+      "name": "Дворец Мира и Согласия (Пирамида)",
+      "lat": 51.123123,
+      "lon": 71.4634559
+    },
+    "when": "2026-10-21T15:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "гуляю с коляской, нужно без лестниц и с пандусами, куда пойти рядом",
+    "tz": false,
+    "axes": {
+      "origin": "piramida",
+      "when": "wk15",
+      "weather": "normal",
+      "persona": "mobility"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "mall",
+        "museum_gallery",
+        "cafe",
+        "kids_playground"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "sport"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Мобильность с коляской: без лестниц; доступность конкретных мест скорее всего неизвестна — помечать как неподтверждённое, не утверждать."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-07-natmuseum-rain",
+    "label": "Национальный музей РК · будни 14:00 · дождь · переждать и с пользой",
+    "origin": {
+      "name": "Национальный музей Республики Казахстан",
+      "lat": 51.1182297,
+      "lon": 71.4693823
+    },
+    "when": "2026-10-23T14:00",
+    "weather_override": {
+      "apparent_c": 6.0,
+      "precip_mm": 3.5
+    },
+    "air_override": null,
+    "query": "Жаңбыр жауып тұр, Ұлттық музей маңында қайда бірер сағат отырып күтемін?",
+    "tz": false,
+    "axes": {
+      "origin": "natmuseum",
+      "when": "wk14",
+      "weather": "rain",
+      "persona": "tourist"
+    },
+    "expected": {
+      "allowed_categories": [
+        "museum_gallery",
+        "cafe",
+        "mall",
+        "culture_theatre_cinema",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 80,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Дождь — только крытые варианты рядом с музеем; сам музей логичный первый кандидат, часы работы вторника уточнить или пометить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-08-natmuseum-evening-date",
+    "label": "Национальный музей РК · пятница 19:00 · обычная погода · свидание без бара",
+    "origin": {
+      "name": "Национальный музей Республики Казахстан",
+      "lat": 51.1182297,
+      "lon": 71.4693823
+    },
+    "when": "2026-10-23T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Date tonight but no bars please, somewhere calm and pretty near the National Museum",
+    "tz": false,
+    "axes": {
+      "origin": "natmuseum",
+      "when": "wk19",
+      "weather": "normal",
+      "persona": "date"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "park_garden",
+        "viewpoint",
+        "attraction_landmark",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 150,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Спокойный вечер без алкоголя: кафе, набережная, театр; в 19:00 в пятницу музей уже закрыт — часы работы проверить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-09-nurzhol-wind-shelter",
+    "label": "Водно-зелёный бульвар · будни 13:00 · ветер и холод · спрятаться от ветра",
+    "origin": {
+      "name": "Водно-зелёный бульвар",
+      "lat": 51.1290207,
+      "lon": 71.4228412
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": {
+      "apparent_c": -8.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "В Астане дикая ветрища, где спрятаться от ветра и пообедать недалеко от бульвара",
+    "tz": false,
+    "axes": {
+      "origin": "nurzhol",
+      "when": "wk13",
+      "weather": "cold",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "mall",
+        "fast_food",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 100,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Сильный ветер и −8°C по ощущению: крытое место на обед; открытый бульвар как цель — плохой ответ."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-10-nurzhol-smog-laptop",
+    "label": "Водно-зелёный бульвар · будни 14:00 · смог PM2.5 80 · поработать с ноутбуком",
+    "origin": {
+      "name": "Водно-зелёный бульвар",
+      "lat": 51.1290207,
+      "lon": 71.4228412
+    },
+    "when": "2026-10-26T14:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 80.0
+    },
+    "query": "Ауа лас болып тұр, ноутбукпен үш сағат жұмыс істеуге қолайлы кафе керек, жақын жерде",
+    "tz": false,
+    "axes": {
+      "origin": "nurzhol",
+      "when": "wk14",
+      "weather": "smog",
+      "persona": "work"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "PM2.5 80 — воздух плохой, только помещения; три часа работы — кафе или коворкинг; Wi-Fi/розетки заявлять только из данных."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-11-astanamall-budget-lunch",
+    "label": "Астана Молл · будни 13:00 · обычная погода · дёшево и быстро поесть",
+    "origin": {
+      "name": "Астана Молл",
+      "lat": 51.1400776,
+      "lon": 71.466133
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "кде паесть дешево и быстра рядом с Астана Молл",
+    "tz": false,
+    "axes": {
+      "origin": "astanamall",
+      "when": "wk13",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 25,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Запрос с опечатками, суть — быстрый недорогой обед рядом с ТРЦ; фудкорт и кафе в ТРЦ — идеальный ответ."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-12-astanamall-late-night",
+    "label": "Астана Молл · воскресенье 23:00 · обычная погода · что открыто ночью",
+    "origin": {
+      "name": "Астана Молл",
+      "lat": 51.1400776,
+      "lon": 71.466133
+    },
+    "when": "2026-10-25T23:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "что вообще открыто в 11 вечера воскресенья рядом, поесть или погулять",
+    "tz": false,
+    "axes": {
+      "origin": "astanamall",
+      "when": "we23",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "restaurant",
+        "bar_nightlife",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "coworking_library"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 50,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "23:00 воскресенья: большинство закрыто; нужно опираться на часы работы из данных, а не на догадки, и помечать неизвестные."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-13-station-transit-lunch",
+    "label": "Железнодорожный вокзал Астана-1 · будни 13:00 · обычная погода · перекус до поезда",
+    "origin": {
+      "name": "Железнодорожный вокзал Астана-1",
+      "lat": 51.1947659,
+      "lon": 71.4090914
+    },
+    "when": "2026-10-22T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Пойызға дейін бір сағат уақытым бар, вокзал маңында тез тамақтанатын жер қайда?",
+    "tz": false,
+    "axes": {
+      "origin": "station",
+      "when": "wk13",
+      "weather": "normal",
+      "persona": "transit"
+    },
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "museum_gallery",
+        "sport"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 25,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Окно в 1 час до поезда: только близкая еда, без долгих посещений; часы работы проверить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-14-station-cold-wait",
+    "label": "Железнодорожный вокзал Астана-1 · будни 08:00 · −22°C · согреться и кофе",
+    "origin": {
+      "name": "Железнодорожный вокзал Астана-1",
+      "lat": 51.1947659,
+      "lon": 71.4090914
+    },
+    "when": "2026-10-21T08:00",
+    "weather_override": {
+      "apparent_c": -22.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "Рано утром на морозе жду поезд, где можно погреться с кофе недалеко от вокзала",
+    "tz": false,
+    "axes": {
+      "origin": "station",
+      "when": "wk08",
+      "weather": "cold",
+      "persona": "transit"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 8,
+      "budget_min": 25,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "8 утра, −22°C: крытое место с кофе максимум в 8 минутах; что открыто в это время — проверить по данным."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-15-momyshuly-park-weekend-walk",
+    "label": "Парк Бауыржана Момышұлы · суббота 11:00 · обычная погода · семейная прогулка",
+    "origin": {
+      "name": "Парк Бауыржана Момышұлы",
+      "lat": 51.1325679,
+      "lon": 71.4570035
+    },
+    "when": "2026-10-24T11:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Куда сходить с ребёнком в субботу днём, чтобы и погулять, и поесть рядом",
+    "tz": false,
+    "axes": {
+      "origin": "centralpark",
+      "when": "we11",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "kids_playground",
+        "entertainment",
+        "cafe",
+        "fast_food",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 50,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Суббота, день, ребёнок: парк и площадка логичны, еда рядом обязательна; бары исключены."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-16-momyshuly-park-laptop-work",
+    "label": "Парк Бауыржана Момышұлы · среда 19:00 · обычная погода · поработать 3 часа",
+    "origin": {
+      "name": "Парк Бауыржана Момышұлы",
+      "lat": 51.1325679,
+      "lon": 71.4570035
+    },
+    "when": "2026-10-21T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Need a quiet place to work on my laptop for about three hours tonight near Momyshuly park, ideally with a socket",
+    "tz": false,
+    "axes": {
+      "origin": "centralpark",
+      "when": "wk19",
+      "weather": "normal",
+      "persona": "work"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "restaurant"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "needs_wifi_socket": true,
+      "notes": "Вечер среды, 3 часа работы: тихое кафе или коворкинг; в 19:00 вокруг парка варианты нужно проверять на часы работы."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-17-medu-between-classes",
+    "label": "Казахский медицинский университет (КазГМУ) · будни 13:00 · обычная погода · час между парами",
+    "origin": {
+      "name": "Казахский национальный медицинский университет (Астана)",
+      "lat": 51.18148,
+      "lon": 71.4158613
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Жұлдызаралық уақытта арзан әрі дәмді тамақтанатын жер қайда, университет маңында?",
+    "tz": false,
+    "axes": {
+      "origin": "medu",
+      "when": "wk13",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "restaurant",
+        "park_garden",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 25,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Студенческий бюджет и окно в час: дешёвая еда или короткая прогулка; бар в обед между парами — плохой ответ."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-18-medu-smog-indoor-evening",
+    "label": "Казахский медицинский университет (КазГМУ) · будни 19:00 · смог PM2.5 80 · крытый отдых",
+    "origin": {
+      "name": "Казахский национальный медицинский университет (Астана)",
+      "lat": 51.18148,
+      "lon": 71.4158613
+    },
+    "when": "2026-10-26T19:00",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 80.0
+    },
+    "query": "Воздух ужасный, куда пойти вечером в помещении рядом, не сидеть в общаге",
+    "tz": false,
+    "axes": {
+      "origin": "medu",
+      "when": "wk19",
+      "weather": "smog",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "mall",
+        "culture_theatre_cinema",
+        "entertainment",
+        "restaurant"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Смог вечером: только крытый досуг; парки и смотровые — нельзя; часы работы кинотеатров/ТРЦ вечером проверить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-19-koktal-private-sector-weekend",
+    "label": "Частный сектор Коктал-2 (окраина, правый берег) · суббота 10:00 · обычная погода · куда выбраться семьёй",
+    "origin": {
+      "name": "Массив Коктал-2 (частный сектор, правый берег)",
+      "lat": 51.1942364,
+      "lon": 71.3361409
+    },
+    "when": "2026-10-24T10:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Живём в частном секторе на Коктале, куда выбраться с семьёй в субботу, не очень далеко",
+    "tz": false,
+    "axes": {
+      "origin": "koktal2",
+      "when": "we10",
+      "weather": "normal",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "kids_playground",
+        "mall",
+        "entertainment",
+        "cafe",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 80,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "Окраина, правый берег: семья с детьми в субботу утром; допускается чуть больший радиус, честно сообщать про расстояние."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-20-koktal-private-sector-dinner",
+    "label": "Частный сектор Коктал-2 (окраина, правый берег) · пятница 19:00 · обычная погода · ужин недалеко от дома",
+    "origin": {
+      "name": "Массив Коктал-2 (частный сектор, правый берег)",
+      "lat": 51.1942364,
+      "lon": 71.3361409
+    },
+    "when": "2026-10-23T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Бесінбі күні кешке жақсы кешкі ас ішейтін жер керек, Көктал маңында тұрамын",
+    "tz": false,
+    "axes": {
+      "origin": "koktal2",
+      "when": "wk19",
+      "weather": "normal",
+      "persona": "food"
+    },
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe",
+        "mall",
+        "fast_food"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 150,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Пятничный ужин для взрослого из частного сектора: ресторан или кафе; пешком может не быть вариантов — честно сказать и предложить авто/транзит."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-21-kokzhiek-street-holiday",
+    "label": "Көкжиек көшесі (частный сектор, Сарыарқа) · гос. праздник 28 октября 13:00 · обычная погода · прогулка в праздник",
+    "origin": {
+      "name": "Улица Көкжиек (частный сектор, Сарыарқа)",
+      "lat": 51.1783393,
+      "lon": 71.3337208
+    },
+    "when": "2026-10-28T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Сегодня праздник, выходной. Куда сходить днём недалеко, погулять и поесть",
+    "tz": false,
+    "axes": {
+      "origin": "kokzhiek",
+      "when": "holiday13",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "cafe",
+        "restaurant",
+        "mall",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Государственный праздник (День Республики, 28 октября): музеи и кафе могут работать по особому графику — часы работы обязательно помечать, если неизвестны."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-22-kokzhiek-street-cold-kids",
+    "label": "Көкжиек көшесі (частный сектор, Сарыарқа) · воскресенье 15:00 · −22°C · с ребёнком в мороз",
+    "origin": {
+      "name": "Улица Көкжиек (частный сектор, Сарыарқа)",
+      "lat": 51.1783393,
+      "lon": 71.3337208
+    },
+    "when": "2026-10-25T15:00",
+    "weather_override": {
+      "apparent_c": -22.0,
+      "precip_mm": 0.0
+    },
+    "air_override": null,
+    "query": "It is minus 22 outside and my kid is bored, where can we go somewhere warm and indoor nearby?",
+    "tz": false,
+    "axes": {
+      "origin": "kokzhiek",
+      "when": "we15",
+      "weather": "cold",
+      "persona": "kids"
+    },
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "kids_playground",
+        "entertainment",
+        "cafe",
+        "fast_food",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 80,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Мороз и ребёнок: крытые развлекательные места и ТРЦ; уличные площадки и парки — исключить."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-23-botanical-garden-en-walk",
+    "label": "Ботанический сад · суббота 10:00 · обычная погода · tourist walk, English query",
+    "origin": {
+      "name": "Ботанический сад Астаны",
+      "lat": 51.1075465,
+      "lon": 71.417092
+    },
+    "when": "2026-10-24T10:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "I am staying near the botanical garden, where can I take a nice walk and grab breakfast for cheap?",
+    "tz": false,
+    "axes": {
+      "origin": "botgarden",
+      "when": "we10",
+      "weather": "normal",
+      "persona": "walk"
+    },
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "cafe",
+        "fast_food",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 30,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "English query, Saturday morning: garden walk plus inexpensive breakfast nearby; answering in English or Russian is fine, categories must fit."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  },
+  {
+    "id": "h2-24-asiapark-mixed-typo-night",
+    "label": "ТРЦ Азия Парк · четверг 23:00 · обычная погода · сленг и опечатки, ночной перекус",
+    "origin": {
+      "name": "ТРЦ Азия Парк",
+      "lat": 51.1280624,
+      "lon": 71.4116334
+    },
+    "when": "2026-10-22T23:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "чё открито в 11 рядом с Азией парком, жрать хоцца ченить",
+    "tz": false,
+    "axes": {
+      "origin": "asiapark",
+      "when": "wk23",
+      "weather": "normal",
+      "persona": "night"
+    },
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "bar_nightlife"
+      ],
+      "forbidden_categories": [
+        "kids_playground",
+        "coworking_library"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 25,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Сленг с опечатками, поздний вечер: найти еду в 23:00 по данным о часах работы; не выдумывать «открыто», если часы неизвестны."
+    },
+    "author": "blind-glm",
+    "written_at": "2026-10-17T12:00:00+06:00"
+  }
+]

@@ -1,0 +1,790 @@
+{
+ "stats": {
+  "generated_at": "2026-10-17T19:28:26+00:00",
+  "cson_found": 25,
+  "sport_records": 7,
+  "geocoded": 19,
+  "geocode_status": {
+   "unmapped": 13,
+   "matched_poi": 3,
+   "matched_osm": 16
+  },
+  "geocode_methods": {
+   "poi_name_address": 2,
+   "osm_address": 8,
+   "poi_name": 1,
+   "osm_name_address": 5,
+   "osm_name": 3
+  },
+  "unmapped": 13,
+  "unmapped_records": [
+   {
+    "record_id": "gov/sport/3fbde80ea6",
+    "kind": "sport_facility",
+    "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+    "address": "г. Астана, ул. Джангильдина 9а",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Джангильдина, 9а (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Әліби Жангелдин / Әліби Жангелдин"
+   },
+   {
+    "record_id": "gov/sport/0328447a3e",
+    "kind": "sport_facility",
+    "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+    "address": "г.Астана, Кажымукана, 7/1",
+    "reason": "no OSM element with address Кажымукана, 7/1 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан"
+   },
+   {
+    "record_id": "gov/cson/4347ea02eb",
+    "kind": "cson",
+    "name": "Специализированный отдел №2 города Астана",
+    "address": "ул. А 82, здание 8, блок «К» (здание вокзала Нурлы жол первый этаж)",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. А 82, 8 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson/c62aaf7afe",
+    "kind": "cson",
+    "name": "Миграционный отдел обслуживания населения города Астана",
+    "address": "ул. А 82, блок «М» (здание вокзала Нурлы жол первый этаж, напротив СПЕЦОНа)",
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson/19ca228714",
+    "kind": "cson",
+    "name": "Сектор Отдела Байконурского района",
+    "address": "ул. Ондирис, 14А",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Ондирис, 14а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Ондирис / Ондирис"
+   },
+   {
+    "record_id": "gov/cson/a7b22c2d22",
+    "kind": "cson",
+    "name": "Отдел района Сарайшык",
+    "address": "ул. А 82, блок М",
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson-pc/410a932685",
+    "kind": "cson",
+    "name": "Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул.Кажымукана,8 а",
+    "reason": "no OSM element with address г.Астана ул.Кажымукана, 8а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан"
+   },
+   {
+    "record_id": "gov/cson-pc/6b9a8e29c7",
+    "kind": "cson",
+    "name": "Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул.Конаева,4",
+    "reason": "no OSM element with address г.Астана ул.Конаева, 4 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Дінмұхамед Қонаев / Дінмұхамед Қонаев"
+   },
+   {
+    "record_id": "gov/cson-pc/29c0f584b6",
+    "kind": "cson",
+    "name": "Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана пр.Республики,52",
+    "reason": "no OSM element with address г.Астана пр.Республики, 52 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)"
+   },
+   {
+    "record_id": "gov/cson-pc/eea492d990",
+    "kind": "cson",
+    "name": "Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул. Кенесары, 25",
+    "reason": "no OSM element with address г.Астана ул. Кенесары, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Кенесары / Кенесары"
+   },
+   {
+    "record_id": "gov/cson-pc/ad5930d12c",
+    "kind": "cson",
+    "name": "Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+    "address": "г. Нур-Султан, ул. Сейфуллина 22",
+    "reason": "no OSM element with address ул. Сейфуллина, 22 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Сәкен Сейфуллин / Сәкен Сейфуллин"
+   },
+   {
+    "record_id": "gov/cson-pc/2932c8145d",
+    "kind": "cson",
+    "name": "Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана",
+    "address": "ул. Туран 37/9 нп 30",
+    "reason": "no OSM element with address ул. Туран 37/9 нп, 30 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)"
+   },
+   {
+    "record_id": "gov/cson-pc/4dfbd5aa84",
+    "kind": "cson",
+    "name": "Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан",
+    "address": "г.Нур-Султан ул. Желтоксан,25",
+    "reason": "no OSM element with address г.Нур-Султан ул. Желтоксан, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Желтоксан / Желтоқсан"
+   }
+  ],
+  "attached_to_existing_pois": 3,
+  "new_pois": 10,
+  "new_pois_by_category": {
+   "other": 10
+  },
+  "actions": {
+   "cson:created": 10,
+   "cson:geocoded_not_created": 4,
+   "cson:kept_unmapped": 11,
+   "sport_facility:attached": 3,
+   "sport_facility:geocoded_not_created": 2,
+   "sport_facility:kept_unmapped": 2
+  },
+  "fields_filled_on_existing": {
+   "admin_hours": 3,
+   "address_kk": 1,
+   "address": 1
+  },
+  "admin_hours_pois": 3,
+  "poi_total_before": 2316,
+  "poi_total_after": 2326,
+  "hours_day_qualified_before": 514,
+  "hours_day_qualified_after": 524,
+  "licence": "открытые данные госоргана РК, Закон №401-V (ст. 1 п. 5: свободное использование, обработка, повторная публикация)",
+  "address_kk_pois": 6,
+  "catalog": {
+   "agency": "Астана қаласы әкімдігі",
+   "published_datasets": 52,
+   "enumerated": 52,
+   "with_coordinates": 0,
+   "empty": 0,
+   "rows_total": 667,
+   "with_working_hours_field": 1
+  }
+ },
+ "records": [
+  {
+   "record_id": "gov/sport/3fbde80ea6",
+   "kind": "sport_facility",
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Джангильдина, 9а (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Әліби Жангелдин / Әліби Жангелдин",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/sport/20f26f7d87",
+   "kind": "sport_facility",
+   "name": "С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)",
+   "geocode": {
+    "status": "matched_poi",
+    "lat": 51.1539909,
+    "lon": 71.4556787,
+    "method": "poi_name_address",
+    "ref": "way/240485199",
+    "ref_name": "Толкын",
+    "name_score": 100.0,
+    "candidates": 1,
+    "reason": null,
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "attached",
+   "poi_id": "way/240485199"
+  },
+  {
+   "record_id": "gov/sport/0de9c70446",
+   "kind": "sport_facility",
+   "name": "ГККП «Спорткомбинат «Даулет» акимата г. Астаны",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1533355,
+    "lon": 71.4193123,
+    "method": "osm_address",
+    "ref": "way/242364773",
+    "ref_name": "Национальный теннисный центр \"Даулет\"",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/sport/61fc4660f6",
+   "kind": "sport_facility",
+   "name": "ГККП «Ледовый дворец «Алау» акимата города Астаны",
+   "geocode": {
+    "status": "matched_poi",
+    "lat": 51.1048776,
+    "lon": 71.4050693,
+    "method": "poi_name_address",
+    "ref": "way/166267459",
+    "ref_name": "Ледовый дворец Алау",
+    "name_score": 100.0,
+    "candidates": 1,
+    "reason": null,
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "attached",
+   "poi_id": "way/166267459"
+  },
+  {
+   "record_id": "gov/sport/0328447a3e",
+   "kind": "sport_facility",
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address Кажымукана, 7/1 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/sport/26eb47138e",
+   "kind": "sport_facility",
+   "name": "КГУ \"СДЮСШОР №8\" акимата города Астаны стадион имени Кажимукана Мунайтпасова",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1626848,
+    "lon": 71.4125385,
+    "method": "osm_address",
+    "ref": "way/503596292",
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/sport/8fbbff2f95",
+   "kind": "sport_facility",
+   "name": "ГККП «Спорткомбинат Достык» акимата города Астаны \"Астана-Арена\"",
+   "geocode": {
+    "status": "matched_poi",
+    "lat": 51.1082,
+    "lon": 71.4026,
+    "method": "poi_name",
+    "ref": "wikidata/Q746559",
+    "ref_name": "Астана Арена",
+    "name_score": 100.0,
+    "candidates": 1,
+    "reason": null,
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "attached",
+   "poi_id": "wikidata/Q746559"
+  },
+  {
+   "record_id": "gov/cson/0b38402435",
+   "kind": "cson",
+   "name": "Отдел района \"Есиль\"по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1081502,
+    "lon": 71.4327114,
+    "method": "osm_address",
+    "ref": "way/506032632",
+    "ref_name": "Astana Partners",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/0b38402435"
+  },
+  {
+   "record_id": "gov/cson/b3bd3f326b",
+   "kind": "cson",
+   "name": "Отдел района \"Нұра\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.11672,
+    "lon": 71.4042085,
+    "method": "osm_address",
+    "ref": "way/1076838601",
+    "ref_name": "ОК",
+    "name_score": null,
+    "candidates": 2,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/b3bd3f326b"
+  },
+  {
+   "record_id": "gov/cson/7de171dfb8",
+   "kind": "cson",
+   "name": "Отдел №1 района \"Алматы\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1414612,
+    "lon": 71.474569,
+    "method": "osm_address",
+    "ref": "way/240564814",
+    "ref_name": "Нұр Отау",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/7de171dfb8"
+  },
+  {
+   "record_id": "gov/cson/defdb11b78",
+   "kind": "cson",
+   "name": "Отдел №2 района \"Алматы\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1473015,
+    "lon": 71.4600902,
+    "method": "osm_address",
+    "ref": "way/227450474",
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/defdb11b78"
+  },
+  {
+   "record_id": "gov/cson/69b99f42e2",
+   "kind": "cson",
+   "name": "Отдел района \"Байконыр\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1635848,
+    "lon": 71.4388223,
+    "method": "osm_name_address",
+    "ref": "way/240391761",
+    "ref_name": "ЦОН Байконурского района",
+    "name_score": null,
+    "candidates": 1,
+    "reason": null,
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/69b99f42e2"
+  },
+  {
+   "record_id": "gov/cson/34b8e2af1c",
+   "kind": "cson",
+   "name": "Отдел №1 района \"Сарыарка\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1670805,
+    "lon": 71.3886639,
+    "method": "osm_address",
+    "ref": "way/322211035",
+    "ref_name": "Торговый дом \"Дияр\"",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/34b8e2af1c"
+  },
+  {
+   "record_id": "gov/cson/7913b2f37c",
+   "kind": "cson",
+   "name": "Отдел №2 района \"Сарыарка\" по обслуживанию населения",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1736339,
+    "lon": 71.4245305,
+    "method": "osm_name_address",
+    "ref": "way/30637540",
+    "ref_name": "Центр обслуживания населения по Сарыаркинскому Району",
+    "name_score": null,
+    "candidates": 1,
+    "reason": null,
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/7913b2f37c"
+  },
+  {
+   "record_id": "gov/cson/270f4b34ee",
+   "kind": "cson",
+   "name": "Специализированный отдел №1 города Астана",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.2076766,
+    "lon": 71.318281,
+    "method": "osm_name_address",
+    "ref": "way/259043617",
+    "ref_name": "Специализированный ЦОН №1",
+    "name_score": null,
+    "candidates": 2,
+    "reason": null,
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/270f4b34ee"
+  },
+  {
+   "record_id": "gov/cson/4347ea02eb",
+   "kind": "cson",
+   "name": "Специализированный отдел №2 города Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. А 82, 8 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson/c62aaf7afe",
+   "kind": "cson",
+   "name": "Миграционный отдел обслуживания населения города Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson/19ca228714",
+   "kind": "cson",
+   "name": "Сектор Отдела Байконурского района",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Ондирис, 14а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Ондирис / Ондирис",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson/7f93bac8f3",
+   "kind": "cson",
+   "name": "Сектор для юридических лиц",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1302352,
+    "lon": 71.4594294,
+    "method": "osm_address",
+    "ref": "way/240860223",
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 1,
+    "reason": "OSM element with the registry's house number and street; its name (if any) is not matched",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/7f93bac8f3"
+  },
+  {
+   "record_id": "gov/cson/a7b22c2d22",
+   "kind": "cson",
+   "name": "Отдел района Сарайшык",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson/1e3327115b",
+   "kind": "cson",
+   "name": "Сектор цифровых услуг (выдача готовых СРТС и ВУ)",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1635848,
+    "lon": 71.4388223,
+    "method": "osm_name_address",
+    "ref": "way/240391761",
+    "ref_name": "ЦОН Байконурского района",
+    "name_score": null,
+    "candidates": 1,
+    "reason": null,
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "created",
+   "poi_id": "gov/cson/1e3327115b"
+  },
+  {
+   "record_id": "gov/cson-pc/410a932685",
+   "kind": "cson",
+   "name": "Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address г.Астана ул.Кажымукана, 8а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/6b9a8e29c7",
+   "kind": "cson",
+   "name": "Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address г.Астана ул.Конаева, 4 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Дінмұхамед Қонаев / Дінмұхамед Қонаев",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/505931361b",
+   "kind": "cson",
+   "name": "Сектор Азиа парк Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1192283,
+    "lon": 71.4188363,
+    "method": "osm_name",
+    "ref": "node/2389205825",
+    "ref_name": "Центр обслуживания населения района Есиль",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "ЦОН-named element without an address tag",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/29c0f584b6",
+   "kind": "cson",
+   "name": "Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address г.Астана пр.Республики, 52 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/f10481678b",
+   "kind": "cson",
+   "name": "Сектор Жилстройсбербанк Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1192283,
+    "lon": 71.4188363,
+    "method": "osm_name",
+    "ref": "node/2389205825",
+    "ref_name": "Центр обслуживания населения района Есиль",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "ЦОН-named element without an address tag",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/1bd9de2d80",
+   "kind": "cson",
+   "name": "Специализированный отдел по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.2076766,
+    "lon": 71.318281,
+    "method": "osm_name_address",
+    "ref": "way/259043617",
+    "ref_name": "Специализированный ЦОН №1",
+    "name_score": null,
+    "candidates": 2,
+    "reason": null,
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/eea492d990",
+   "kind": "cson",
+   "name": "Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address г.Астана ул. Кенесары, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Кенесары / Кенесары",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/95465ce68f",
+   "kind": "cson",
+   "name": "Сектор МИиР Отдел №1 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+   "geocode": {
+    "status": "matched_osm",
+    "lat": 51.1192283,
+    "lon": 71.4188363,
+    "method": "osm_name",
+    "ref": "node/2389205825",
+    "ref_name": "Центр обслуживания населения района Есиль",
+    "name_score": null,
+    "candidates": 1,
+    "reason": "ЦОН-named element without an address tag",
+    "license": "ODbL 1.0, © OpenStreetMap contributors",
+    "fetched_at": "2026-10-17T12:31:28+00:00"
+   },
+   "action": "geocoded_not_created",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/ad5930d12c",
+   "kind": "cson",
+   "name": "Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address ул. Сейфуллина, 22 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Сәкен Сейфуллин / Сәкен Сейфуллин",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/2932c8145d",
+   "kind": "cson",
+   "name": "Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address ул. Туран 37/9 нп, 30 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  },
+  {
+   "record_id": "gov/cson-pc/4dfbd5aa84",
+   "kind": "cson",
+   "name": "Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан",
+   "geocode": {
+    "status": "unmapped",
+    "lat": null,
+    "lon": null,
+    "method": null,
+    "ref": null,
+    "ref_name": null,
+    "name_score": null,
+    "candidates": 0,
+    "reason": "no OSM element with address г.Нур-Султан ул. Желтоксан, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Желтоксан / Желтоқсан",
+    "license": null,
+    "fetched_at": null
+   },
+   "action": "kept_unmapped",
+   "poi_id": null
+  }
+ ]
+}

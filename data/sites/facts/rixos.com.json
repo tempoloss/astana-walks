@@ -1,0 +1,43 @@
+{
+ "domain": "rixos.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.rixos.com/hotel-resort/rixos-president-astana"
+ ],
+ "branches": [
+  {
+   "name": "Rixos President Astana",
+   "address": "Kunayeva 7, 010000 ASTANA",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172245050",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.rixos.com/hotel-resort/rixos-president-astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.rixos.com/hotel-resort/rixos-president-astana",
+     "snippet": "\"name\": \"Rixos President Astana\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.rixos.com/hotel-resort/rixos-president-astana",
+     "snippet": "\"address\": \"PostalAddress Kunayeva 7, 010000 ASTANA 010000 KZ\""
+    },
+    {
+     "field": "phone",
+     "url": "https://www.rixos.com/hotel-resort/rixos-president-astana",
+     "snippet": "\"telephone\": \"+7 7172245050\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Official hotel page: the JSON-LD Hotel card prints name, 'address: PostalAddress Kunayeva 7, 010000 ASTANA' and telephone +7 7172245050. The F&B blocks ('The Irish Pub', 'Akşam Restaurant' and two room cards) are only names + marketing text on this page — no per-outlet hours/phones are printed, so the two outlet rows are stored as name-only entries (their POI join works via the same-site rule). Coordinates not on the page; check-in/out times are room policy, not opening hours.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

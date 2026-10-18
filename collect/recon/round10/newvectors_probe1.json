@@ -1,0 +1,77 @@
+{
+ "notes": {
+  "status": 200,
+  "err": "Expecting value: line 1 column 1 (char 0)",
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<osm version=\"0.6\" generator=\"OpenStreetMap server\" copyright=\"OpenStreetMap and contributors\" attribution=\"htt"
+ },
+ "changesets": {
+  "status": 200,
+  "n": 100,
+  "with_comment": 100,
+  "samples": [
+   "Navajo name added",
+   "Danish name",
+   "Road fixes near Astana",
+   "Road fixes near Astana",
+   "Road fixes near Astana",
+   "Road fixes near Astana"
+  ]
+ },
+ "inat_all": 7372864,
+ "inat_reuse": 394681716,
+ "mapillary": {
+  "status": 0,
+  "err": "Expecting value: line 1 column 1 (char 0)",
+  "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+ },
+ "appstore_apps": [
+  [
+   "2GIS: Map, Navigation, Tracker",
+   481627348,
+   511600
+  ],
+  [
+   "Instagram",
+   389801252,
+   983859
+  ],
+  [
+   "TikTok - Videos, Music & LIVE",
+   835599320,
+   453430
+  ],
+  [
+   "Yandex Maps & Navigator",
+   313877526,
+   67702
+  ],
+  [
+   "Yandex Navi – navigation, maps",
+   474500851,
+   118553
+  ],
+  [
+   "2GIS: Map, Navigation, Tracker",
+   481627348,
+   511600
+  ]
+ ],
+ "appstore_reviews": {
+  "status": 200,
+  "id": 389801252,
+  "n": 49,
+  "samples": [
+   "Some problem with savings :: Every time I remove a post or Reel from my Saved folder, the app jumps all the w",
+   "Все круто :: Применяю в своей профессии",
+   "Не справедливо :: Мой приватный инстаграм в котором был только я и не было публикации с 2017 года ",
+   "advertising :: After the update, it became IMPOSSIBLE to view reels and stories. I understand t"
+  ]
+ },
+ "gtfs_repos": [
+  [
+   "Mrithula742/Bussure",
+   0,
+   "2026-09-30"
+  ]
+ ]
+}

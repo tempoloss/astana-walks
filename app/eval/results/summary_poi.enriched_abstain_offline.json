@@ -1,0 +1,136 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "offline",
+  "chain": [],
+  "cases": 8,
+  "cases_with_recs": 8,
+  "recs_total": 15,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 100.0,
+  "case_all_ok_rate": 50.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 50.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 100.0,
+  "top1_open_rate": 25.0,
+  "unknown_hours_rec_share": 73.3,
+  "non_osm_rec_share": 60.0,
+  "avg_walk_min": 29.7,
+  "wifi_socket_in_data_share": 0.0,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 6.0,
+  "latency_ms_p90": 38.0,
+  "generation_ms_median": 0.0,
+  "generation_ms_p90": 0.0,
+  "model_link": {
+    "template": 8
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "over_budget": 4
+  },
+  "padded_rec_share": 60.0,
+  "expanded_rec_share": 40.0,
+  "backfill_rec_share": 0.0,
+  "substituted_rec_share": 20.0,
+  "padded_case_share": 75.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": 100.0,
+  "abstained_cases": 0,
+  "silent_mismatch_cases": 0,
+  "abstain_detail": [
+    {
+      "case_id": "a01-leftbank-3am-museum",
+      "n_recs": 3,
+      "labelled_recs": 0,
+      "silent": {}
+    },
+    {
+      "case_id": "a02-airport-lrt-2330-quiet-socket",
+      "n_recs": 3,
+      "labelled_recs": 0,
+      "silent": {}
+    },
+    {
+      "case_id": "a03-industrial-museum",
+      "n_recs": 1,
+      "labelled_recs": 1,
+      "silent": {}
+    },
+    {
+      "case_id": "a04-leftbank-pool",
+      "n_recs": 1,
+      "labelled_recs": 1,
+      "silent": {}
+    },
+    {
+      "case_id": "a05-nw-edge-cafe-socket",
+      "n_recs": 2,
+      "labelled_recs": 2,
+      "silent": {}
+    },
+    {
+      "case_id": "a06-se-edge-stroller-museum",
+      "n_recs": 1,
+      "labelled_recs": 1,
+      "silent": {}
+    },
+    {
+      "case_id": "a07-nw-edge-museum",
+      "n_recs": 1,
+      "labelled_recs": 1,
+      "silent": {}
+    },
+    {
+      "case_id": "a08-leftbank-frost-playground",
+      "n_recs": 3,
+      "labelled_recs": 3,
+      "silent": {}
+    }
+  ],
+  "ai_detail": [],
+  "failing_cases": [
+    {
+      "case_id": "a03-industrial-museum",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "a04-leftbank-pool",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "a06-se-edge-stroller-museum",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "a07-nw-edge-museum",
+      "violations": [
+        "over_budget"
+      ]
+    }
+  ],
+  "case_set": "abstain",
+  "label": "offline",
+  "header": {
+    "label": "offline",
+    "mode": "offline",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "abstain_cases.json",
+    "case_set": "abstain",
+    "records": 8,
+    "git": "9fbe2fc",
+    "walking": "straight",
+    "generated_at": "2026-10-18T21:56:26+05:00"
+  }
+}

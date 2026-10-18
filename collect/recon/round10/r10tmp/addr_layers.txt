@@ -1,0 +1,627 @@
+
+All Layers and Tables (addr)
+ ArcGIS REST Services Directory
+Login
+            | 
+Get Token
+Home
+  > 
+services
+  > 
+addr (MapServer)
+  > 
+All Layers and Tables
+Help
+ | 
+API Reference
+JSON
+All Layers and Tables (addr)
+Layers: 
+Layer: 
+Mkrs
+ (0)
+Name:
+ Mkrs 
+Display Field:
+ NAME 
+Type: 
+ Feature Layer 
+Geometry Type:
+ esriGeometryPolygon 
+Description: 
+Definition Expression: 
+ N/A 
+Copyright Text: 
+Default Visibility: false 
+MaxRecordCount: 
+ 1000
+Supported Query Formats: 
+ JSON, AMF
+Min Scale: 
+ 0
+Max Scale: 
+ 0
+Supports Advanced Queries: 
+ true
+Supports Statistics: 
+ true
+Has Labels: 
+ false
+Can Modify Layer: 
+ false
+Can Scale Symbols: 
+ false
+Use Standardized Queries: 
+ true
+Extent:
+XMin: -5120763.26769827
+YMin: -9997963.94301857
+XMax: 6120763.26769827
+YMax: 9997963.94301857
+	Spatial Reference: 
+32642
+ (32642)
+Drawing Info: 
+Renderer: 
+Simple Renderer:
+Symbol: 
+Style: 
+ esriSFSSolid 
+Color: 
+[246, 190, 250, 255]  
+Outline: 
+Style: 
+ esriSLSSolid 
+Color: 
+[110, 110, 110, 255]  
+Width: 
+ 0
+Label: 
+Description: 
+Transparency: 
+ 0 
+Labeling Info: 
+Advanced Query Capabilities: 
+Supports Statistics: true
+Supports OrderBy: true
+Supports Distinct: true
+Supports Pagination: false
+Supports TrueCurve: true
+HasZ: false 
+HasM: false 
+Has Attachments: 
+ false 
+HTML Popup Type: 
+ esriServerHTMLPopupTypeAsHTMLText 
+Type ID Field: 
+ null
+Fields: 
+OBJECTID
+(
+  type: esriFieldTypeOID
+  , 
+  alias: OBJECTID
+)
+NAME
+(
+  type: esriFieldTypeString
+  , 
+  alias: NAME
+  , 
+  length: 50
+)
+ID
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID
+)
+ID_REG
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_REG
+)
+SHAPE
+(
+  type: esriFieldTypeGeometry
+  , 
+  alias: SHAPE
+)
+SHAPE.AREA
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.AREA
+)
+SHAPE.LEN
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.LEN
+)
+ID_CITY
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_CITY
+)
+Layer: 
+Streets
+ (1)
+Name:
+ Streets 
+Display Field:
+ NAME 
+Type: 
+ Feature Layer 
+Geometry Type:
+ esriGeometryPolyline 
+Description: 
+Definition Expression: 
+ N/A 
+Copyright Text: 
+Default Visibility: false 
+MaxRecordCount: 
+ 1000
+Supported Query Formats: 
+ JSON, AMF
+Min Scale: 
+ 0
+Max Scale: 
+ 0
+Supports Advanced Queries: 
+ true
+Supports Statistics: 
+ true
+Has Labels: 
+ false
+Can Modify Layer: 
+ false
+Can Scale Symbols: 
+ false
+Use Standardized Queries: 
+ true
+Extent:
+XMin: -5120763.26769827
+YMin: -9997963.94301857
+XMax: 6120763.26769827
+YMax: 9997963.94301857
+	Spatial Reference: 
+32642
+ (32642)
+Drawing Info: 
+Renderer: 
+Simple Renderer:
+Symbol: 
+Style: 
+ esriSLSSolid 
+Color: 
+[0, 135, 133, 255]  
+Width: 
+ 1
+Label: 
+Description: 
+Transparency: 
+ 0 
+Labeling Info: 
+Advanced Query Capabilities: 
+Supports Statistics: true
+Supports OrderBy: true
+Supports Distinct: true
+Supports Pagination: false
+Supports TrueCurve: true
+HasZ: false 
+HasM: false 
+Has Attachments: 
+ false 
+HTML Popup Type: 
+ esriServerHTMLPopupTypeAsHTMLText 
+Type ID Field: 
+ null
+Fields: 
+OBJECTID
+(
+  type: esriFieldTypeOID
+  , 
+  alias: OBJECTID
+)
+NAME
+(
+  type: esriFieldTypeString
+  , 
+  alias: NAME
+  , 
+  length: 50
+)
+ID
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID
+)
+ID_REG
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_REG
+)
+ID_MKR
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_MKR
+)
+SHAPE
+(
+  type: esriFieldTypeGeometry
+  , 
+  alias: SHAPE
+)
+SHAPE.LEN
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.LEN
+)
+ID_CITY
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_CITY
+)
+Layer: 
+Buildings
+ (2)
+Name:
+ Buildings 
+Display Field:
+ NAME 
+Type: 
+ Feature Layer 
+Geometry Type:
+ esriGeometryPoint 
+Description: 
+Definition Expression: 
+ N/A 
+Copyright Text: 
+Default Visibility: false 
+MaxRecordCount: 
+ 1000
+Supported Query Formats: 
+ JSON, AMF
+Min Scale: 
+ 0
+Max Scale: 
+ 0
+Supports Advanced Queries: 
+ true
+Supports Statistics: 
+ true
+Has Labels: 
+ false
+Can Modify Layer: 
+ false
+Can Scale Symbols: 
+ false
+Use Standardized Queries: 
+ true
+Extent:
+XMin: -941267.0172
+YMin: 0
+XMax: 1535059.9675
+YMax: 6090592.845
+	Spatial Reference: 
+32642
+ (32642)
+Drawing Info: 
+Renderer: 
+Simple Renderer:
+Symbol: 
+Style: 
+ esriSMSCircle 
+Color: 
+[0, 173, 61, 255]  
+Size: 
+ 4.0 
+Angle: 
+ 0.0 
+XOffset: 
+ 0 
+YOffset: 
+ 0 
+Outline: 
+[0, 0, 0, 255] 
+Width: 
+ 1
+Label: 
+Description: 
+Transparency: 
+ 0 
+Labeling Info: 
+Advanced Query Capabilities: 
+Supports Statistics: true
+Supports OrderBy: true
+Supports Distinct: true
+Supports Pagination: false
+Supports TrueCurve: true
+HasZ: false 
+HasM: false 
+Has Attachments: 
+ false 
+HTML Popup Type: 
+ esriServerHTMLPopupTypeAsHTMLText 
+Type ID Field: 
+ null
+Fields: 
+NAME
+(
+  type: esriFieldTypeString
+  , 
+  alias: NAME
+  , 
+  length: 50
+)
+ID
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID
+)
+ID_REG
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_REG
+)
+ID_MKR
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_MKR
+)
+ID_STREET
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_STREET
+)
+NOTE
+(
+  type: esriFieldTypeString
+  , 
+  alias: NOTE
+  , 
+  length: 100
+)
+NOTE_2
+(
+  type: esriFieldTypeString
+  , 
+  alias: NOTE_2
+  , 
+  length: 100
+)
+NOTE_3
+(
+  type: esriFieldTypeString
+  , 
+  alias: NOTE_3
+  , 
+  length: 100
+)
+ID_ORDER
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_ORDER
+)
+X_POINT
+(
+  type: esriFieldTypeInteger
+  , 
+  alias: X_POINT
+)
+Y_POINT
+(
+  type: esriFieldTypeInteger
+  , 
+  alias: Y_POINT
+)
+OBJECTID
+(
+  type: esriFieldTypeOID
+  , 
+  alias: OBJECTID
+)
+SHAPE
+(
+  type: esriFieldTypeGeometry
+  , 
+  alias: SHAPE
+)
+ID_CITY
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: ID_CITY
+)
+Layer: 
+Regions
+ (3)
+Name:
+ Regions 
+Display Field:
+ NAME 
+Type: 
+ Feature Layer 
+Geometry Type:
+ esriGeometryPolygon 
+Description: 
+Definition Expression: 
+ N/A 
+Copyright Text: 
+Default Visibility: false 
+MaxRecordCount: 
+ 1000
+Supported Query Formats: 
+ JSON, AMF
+Min Scale: 
+ 0
+Max Scale: 
+ 0
+Supports Advanced Queries: 
+ true
+Supports Statistics: 
+ true
+Has Labels: 
+ false
+Can Modify Layer: 
+ false
+Can Scale Symbols: 
+ false
+Use Standardized Queries: 
+ true
+Extent:
+XMin: -869937.5345390493
+YMin: 4955090.836849759
+XMax: -862411.8648030963
+YMax: 4970472.807864296
+	Spatial Reference: 
+32642
+ (32642)
+Drawing Info: 
+Renderer: 
+Simple Renderer:
+Symbol: 
+Style: 
+ esriSFSSolid 
+Color: 
+[0, 255, 255, 255]  
+Outline: 
+Style: 
+ esriSLSDashDot 
+Color: 
+[0, 255, 255, 255]  
+Width: 
+ 1
+Label: 
+Description: 
+Transparency: 
+ 0 
+Labeling Info: 
+Advanced Query Capabilities: 
+Supports Statistics: true
+Supports OrderBy: true
+Supports Distinct: true
+Supports Pagination: false
+Supports TrueCurve: true
+HasZ: false 
+HasM: false 
+Has Attachments: 
+ false 
+HTML Popup Type: 
+ esriServerHTMLPopupTypeAsHTMLText 
+Type ID Field: 
+ null
+Fields: 
+OBJECTID
+(
+  type: esriFieldTypeOID
+  , 
+  alias: OBJECTID
+)
+NAME
+(
+  type: esriFieldTypeString
+  , 
+  alias: name
+  , 
+  length: 100
+)
+ID
+(
+  type: esriFieldTypeInteger
+  , 
+  alias: ID
+)
+TYPE
+(
+  type: esriFieldTypeString
+  , 
+  alias: type
+  , 
+  length: 8
+)
+ID_OBL
+(
+  type: esriFieldTypeInteger
+  , 
+  alias: ID_OBL
+)
+SHAPE
+(
+  type: esriFieldTypeGeometry
+  , 
+  alias: SHAPE
+)
+CITY_CENTER
+(
+  type: esriFieldTypeString
+  , 
+  alias: CITY_CENTER
+  , 
+  length: 50
+)
+CODE
+(
+  type: esriFieldTypeString
+  , 
+  alias: CODE
+  , 
+  length: 8
+)
+RCO
+(
+  type: esriFieldTypeString
+  , 
+  alias: RCO
+  , 
+  length: 20
+)
+CATO
+(
+  type: esriFieldTypeString
+  , 
+  alias: CATO
+  , 
+  length: 10
+)
+CITY_CENTER_EN
+(
+  type: esriFieldTypeString
+  , 
+  alias: CITY_CENTER_EN
+  , 
+  length: 50
+)
+CITY_CENTER_KZ
+(
+  type: esriFieldTypeString
+  , 
+  alias: CITY_CENTER_KZ
+  , 
+  length: 50
+)
+SHAPE.AREA
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.AREA
+)
+SHAPE.LEN
+(
+  type: esriFieldTypeDouble
+  , 
+  alias: SHAPE.LEN
+)

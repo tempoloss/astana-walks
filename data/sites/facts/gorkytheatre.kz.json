@@ -1,0 +1,52 @@
+{
+ "domain": "gorkytheatre.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:38:41+00:00",
+ "pages": [
+  "http://gorkytheatre.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Государственный Академический русский театр драмы им. М.Горького",
+   "address": "Астана қ., Желтоқсан к.-сі 11, 13",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 57-23-75",
+   "opening_hours_raw": "Сейсенбі-жексенбі: 10:00-21:00",
+   "opening_hours_osm": "Tu-Su 10:00-21:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://gorkytheatre.kz/contacts",
+   "evidence": [
+    {
+     "field": "phone",
+     "url": "http://gorkytheatre.kz/contacts",
+     "snippet": "Касса: +7 (7172) 57-23-75",
+     "fetched_at": "2026-10-17T09:38:41+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://gorkytheatre.kz/contacts",
+     "snippet": "Сейсенбі-жексенбі: 10:00-21:00",
+     "fetched_at": "2026-10-17T09:38:41+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://gorkytheatre.kz/contacts",
+     "snippet": "Астана қ., Желтоқсан к.-сі 11, 13",
+     "fetched_at": "2026-10-17T09:38:41+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://gorkytheatre.kz/contacts",
+     "snippet": "Государственный Академический русский театр драмы им. М.Горького",
+     "fetched_at": "2026-10-17T09:38:41+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Hours are the box-office (Касса) schedule 'Сейсенбі-жексенбі' = Tue-Sun 10:00-21:00 with a lunch break 14:00-15:00 (not encoded in OSM); performance times are per-show, not a facility schedule. Page mixes KZ/RU labels; KZ weekday names convert via the hours parser's kk stems.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

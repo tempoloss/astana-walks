@@ -1,0 +1,60 @@
+{
+ "domain": "yakitoriya.ru",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:39:13+00:00",
+ "pages": [
+  "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza"
+ ],
+ "branches": [
+  {
+   "name": "Якитория (ТЦ «Абу-Даби Плаза»)",
+   "address": "г. Астана, Сыганак, д.16/5",
+   "lat": 51.1219,
+   "lon": 71.428,
+   "phone": "8 (7172) 40-20-51",
+   "opening_hours_raw": "с 10:00 до 22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+     "snippet": "Якитория",
+     "fetched_at": "2026-10-17T09:39:13+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+     "snippet": "г. Астана, Сыганак, д.16/5",
+     "fetched_at": "2026-10-17T09:39:13+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+     "snippet": "Телефон: 8 (7172) 40-20-51",
+     "fetched_at": "2026-10-17T09:39:13+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+     "snippet": "Часы работы: с 10:00 до 22:00",
+     "fetched_at": "2026-10-17T09:39:13+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://yakitoriya.ru/restaurants/nur-sultan-astana-tc-abu-dabi-plaza",
+     "snippet": "\\u0022lat\\u0022: 51.1219, \\u0022lon\\u0022: 71.428",
+     "fetched_at": "2026-10-17T09:39:13+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The city selector of the delivery site lists «Астана (ТЦ \"Абу-Даби Плаза\")» as a restaurant of the network; «Бронь столов принимается ежедневно» is about bookings, not the schedule, so the 10:00-22:00 line stays weekday-unqualified.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

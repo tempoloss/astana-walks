@@ -1,0 +1,794 @@
+{
+ "domain": "kfc.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:09:39+00:00",
+ "pages": [
+  "https://kfc.kz/stores"
+ ],
+ "branches": [
+  {
+   "name": "KFC Астана | Ncity",
+   "address": "Turan Ave, 020000 Astana, Kazakhstan",
+   "lat": 51.116390158138,
+   "lon": 71.399327210976,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-22:00 вторник 10:00-22:00 среда 10:00-22:00 четверг 10:00-22:00 пятница 10:00-22:00 суббота 10:00-22:00 воскресенье 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Ncity",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.116390158138\" data-lng=\"71.399327210976\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"Turan Ave, 020000 Astana, Kazakhstan\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-22:00 вторник 10:00-22:00 среда 10:00-22:00 четверг 10:00-22:00 пятница 10:00-22:00 суббота 10:00-22:00 воскресенье 10:00-22:00",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Азия Парк",
+   "address": "просп. Кабанбай батыра, 21, Нур-Султан, Казахстан",
+   "lat": 51.1276814,
+   "lon": 71.4126055,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Азия Парк",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1276814\" data-lng=\"71.4126055\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"просп. Кабанбай батыра, 21, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Астраханка",
+   "address": "Акан серы, 71/1, Нур-Султан, Казахстан",
+   "lat": 51.1818125,
+   "lon": 71.3753125,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Астраханка",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1818125\" data-lng=\"71.3753125\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"Акан серы, 71/1, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Богенбай",
+   "address": "просп. Богенбай батыра, 19, Нур-Султан, Казахстан",
+   "lat": 51.1753113,
+   "lon": 71.4023113,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Богенбай",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1753113\" data-lng=\"71.4023113\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"просп. Богенбай батыра, 19, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Встреча",
+   "address": "Abylay Khan Ave, Astana 020000, Kazakhstan",
+   "lat": 51.153526901164,
+   "lon": 71.486842216264,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Встреча",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.153526901164\" data-lng=\"71.486842216264\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"Abylay Khan Ave, Astana 020000, Kazakhstan\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Голден Кей",
+   "address": "просп. Женис, 67, Нур-Султан, Казахстан",
+   "lat": 51.1858131,
+   "lon": 71.4077365,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Голден Кей",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1858131\" data-lng=\"71.4077365\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"просп. Женис, 67, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Грин",
+   "address": "ул. Шокана Валиханова, 20а, Нур-Султан, Казахстан",
+   "lat": 51.171598116994,
+   "lon": 71.439411327018,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:50",
+   "opening_hours_osm": "Mo-Sa 10:00-23:45; Su 10:00-23:50",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Грин",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.171598116994\" data-lng=\"71.439411327018\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"ул. Шокана Валиханова, 20а, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:50",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Керуен",
+   "address": "ул. Достык, 9, Нур-Султан, Казахстан",
+   "lat": 51.1281274,
+   "lon": 71.4253555,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Керуен",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1281274\" data-lng=\"71.4253555\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"ул. Достык, 9, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Магнум Едиль",
+   "address": "Едил, 26, Нур-Султан, Казахстан",
+   "lat": 51.1443936,
+   "lon": 71.527887,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Магнум Едиль",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1443936\" data-lng=\"71.527887\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​Едил, 26, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Манаса",
+   "address": "проспект Тәуелсіздік, 18, Нур-Султан, Казахстан",
+   "lat": 51.145822754969,
+   "lon": 71.4610279,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Манаса",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.145822754969\" data-lng=\"71.4610279\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​проспект Тәуелсіздік, 18, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Мега Астана",
+   "address": "шоссе Қорғалжын, 1, Нур-Султан, Казахстан",
+   "lat": 51.145531830676,
+   "lon": 71.414052706798,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Мега Астана",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.145531830676\" data-lng=\"71.414052706798\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​​шоссе Қорғалжын, 1, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Мега Экспо",
+   "address": "проспект Кабанбай батыр, 62",
+   "lat": 51.088593110147,
+   "lon": 71.409014781676,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:00 вторник 10:00-23:00 среда 10:00-23:00 четверг 10:00-23:00 пятница 10:00-23:00 суббота 10:00-23:00 воскресенье 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Мега Экспо",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.088593110147\" data-lng=\"71.409014781676\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"проспект Кабанбай батыр, 62\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:00 вторник 10:00-23:00 среда 10:00-23:00 четверг 10:00-23:00 пятница 10:00-23:00 суббота 10:00-23:00 воскресенье 10:00-23:00",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Мечта",
+   "address": "Амман, 14, Нур-Султан, Казахстан",
+   "lat": 51.1493125,
+   "lon": 71.4453125,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Мечта",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1493125\" data-lng=\"71.4453125\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​Амман, 14, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Номад",
+   "address": "ул. Ханов Керея и Жанибека, 12, Нур-Султан, Казахстан",
+   "lat": 51.1148916,
+   "lon": 71.4165817,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Номад",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1148916\" data-lng=\"71.4165817\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"ул. Ханов Керея и Жанибека, 12, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Оазис",
+   "address": "проспект Бауыржан Момышұлы, 27/1, Нур-Султан, Казахстан",
+   "lat": 51.142208871356,
+   "lon": 71.484681163507,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:00 вторник 10:00-23:00 среда 10:00-23:00 четверг 10:00-23:00 пятница 10:00-23:00 суббота 10:00-23:00 воскресенье 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Оазис",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.142208871356\" data-lng=\"71.484681163507\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​проспект Бауыржан Момышұлы, 27/1, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:00 вторник 10:00-23:00 среда 10:00-23:00 четверг 10:00-23:00 пятница 10:00-23:00 суббота 10:00-23:00 воскресенье 10:00-23:00",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Республика",
+   "address": "проспект Республики, 7, Нур-Султан, Казахстан",
+   "lat": 51.1601934,
+   "lon": 71.428315,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Республика",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1601934\" data-lng=\"71.428315\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​проспект Республики, 7, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Сарыарка",
+   "address": "проспект Тұран, 24, Нур-Султан, Казахстан",
+   "lat": 51.1384269,
+   "lon": 71.4105431,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:30 вторник 10:00-23:30 среда 10:00-23:30 четверг 10:00-23:30 пятница 10:00-23:30 суббота 10:00-23:30 воскресенье 10:00-23:30",
+   "opening_hours_osm": "Mo-Su 10:00-23:30",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Сарыарка",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1384269\" data-lng=\"71.4105431\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​проспект Тұран, 24, Нур-Султан, Казахстан\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:30 вторник 10:00-23:30 среда 10:00-23:30 четверг 10:00-23:30 пятница 10:00-23:30 суббота 10:00-23:30 воскресенье 10:00-23:30",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Сыганак",
+   "address": "Syganak St 3, Astana 020000, Kazakhstan",
+   "lat": 51.131957753577,
+   "lon": 71.370874683992,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Сыганак",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.131957753577\" data-lng=\"71.370874683992\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"Syganak St 3, Astana 020000, Kazakhstan\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Фуд Сити Астана",
+   "address": null,
+   "lat": 51.171546286758,
+   "lon": 71.375401206221,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Фуд Сити Астана",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.171546286758\" data-lng=\"71.375401206221\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "KFC Астана | Хан Шатыр",
+   "address": "проспект Тұран, 37, Нур-Султан, Казахстан",
+   "lat": 51.1322975,
+   "lon": 71.4033994,
+   "phone": null,
+   "opening_hours_raw": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+   "opening_hours_osm": "Mo-Su 10:00-23:45",
+   "description": null,
+   "url": "https://kfc.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://kfc.kz/stores",
+     "snippet": "KFC Астана | Хан Шатыр",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-lat=\"51.1322975\" data-lng=\"71.4033994\"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://kfc.kz/stores",
+     "snippet": "data-address=\"​проспект Тұран, 37, Нур-Султан, Казахстан \"",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://kfc.kz/stores",
+     "snippet": "понедельник 10:00-23:45 вторник 10:00-23:45 среда 10:00-23:45 четверг 10:00-23:45 пятница 10:00-23:45 суббота 10:00-23:45 воскресенье 10:00-23:45",
+     "fetched_at": "2026-10-17T09:09:39+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Hours = the 'Еженедельные часы самовывоза' (weekly pick-up) table of each card, which equals the card's 'Часы работы'; delivery hours ('Часы Доставки') are a different table and are not used. Phone on the page is the chain call-centre short number 7797 (not branch-specific) and is not stored.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

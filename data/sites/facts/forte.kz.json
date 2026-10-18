@@ -1,0 +1,46 @@
+{
+ "domain": "forte.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:26:19+00:00",
+ "pages": [
+  "https://forte.kz/ru/news/forte-kulanshi-art-space-predstavyalet-vystavku-qazyna-araly"
+ ],
+ "branches": [
+  {
+   "name": "Forte Kulanshi Art Space",
+   "address": "г. Астана, ул. Достык 8/1",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "ежедневно с 10:00 до 20:00",
+   "opening_hours_osm": "Mo-Su 10:00-20:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://forte.kz/ru/news/forte-kulanshi-art-space-predstavyalet-vystavku-qazyna-araly",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://forte.kz/ru/news/forte-kulanshi-art-space-predstavyalet-vystavku-qazyna-araly",
+     "snippet": "Адрес: г. Астана, ул. Достык 8/1",
+     "fetched_at": "2026-10-17T09:26:19+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://forte.kz/ru/news/forte-kulanshi-art-space-predstavyalet-vystavku-qazyna-araly",
+     "snippet": "Режим работы: ежедневно с 10:00 до 20:00",
+     "fetched_at": "2026-10-17T09:26:19+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://forte.kz/ru/news/forte-kulanshi-art-space-predstavyalet-vystavku-qazyna-araly",
+     "snippet": "Forte Kulanshi Art Space",
+     "fetched_at": "2026-10-17T09:26:19+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Часы заявлены в анонсе текущей выставки на официальном сайте ForteBank (оператора площадки): 'ежедневно с 10:00 до 20:00'. Более ранний релиз той же площадки указывает 'с 9:00 ч. до 20:00 ч.' — взят свежий (okt-2026). Собственного домена у галереи нет (Instagram @forte.kulanshi.artspace — не хранится). Вход бесплатный — в анонсах, но без явной строки прайса в карточку не кладём.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

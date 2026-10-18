@@ -1,0 +1,259 @@
+{
+ "domain": "ritzcarlton.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:04+00:00",
+ "pages": [
+  "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/"
+ ],
+ "branches": [
+  {
+   "name": "The Ritz-Carlton, Astana",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172-734 000",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"The Ritz-Carlton, Astana\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 7172-734 000 \""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Mökki",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172-734000",
+   "opening_hours_raw": "Mo-Su 07:00-24:00",
+   "opening_hours_osm": "Mo-Su 07:00-24:00",
+   "description": "Embodies elegance, offering a perfect combination of traditional Italian cuisine with a touch of modernity, carefully prepared by our Italian Chef. Mokki is a place of constant activity, designed to foster connections and enjoyment among guests.",
+   "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Mökki\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 7172-734000 \""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00:00\",\"closes\":\"00:00:00\"}]"
+    },
+    {
+     "field": "description",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"description\":\"Embodies elegance, offering a perfect combination of traditional Italian cuisine with a touch of modernity, carefully prepared by our Italian Chef. Mokki is a place of constant activity, designed to foster connections and enjoyment among guests.\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Өzen",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172-734000",
+   "opening_hours_raw": "Mo-Su 09:00-24:00",
+   "opening_hours_osm": "Mo-Su 09:00-24:00",
+   "description": "Adjacent to the main entrance of the hotel, Өzen will offer the finest selection of organic produce, welcoming guests and local residents. Designed to reflect its namesake, “river,” it is a destination for light meals, coffee, Afternoon Tea and cocktails.",
+   "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Өzen\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 7172-734000 \""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"09:00:00\",\"closes\":\"00:00:00\"}]"
+    },
+    {
+     "field": "description",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"description\":\"Adjacent to the main entrance of the hotel, Өzen will offer the finest selection of organic produce, welcoming guests and local residents. Designed to reflect its namesake, “river,” it is a destination for light meals, coffee, Afternoon Tea and cocktails.\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Mökki Terrace",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172-7710832579",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": "Summer dining in a dramatic setting that overlooks the city’s iconic Baiterek monument. The sun-soaked luxury terrace of our Astana bar is perfect for a morning latte, a glass of Chardonnay or a sunset cocktail.Open May through September.",
+   "url": "http://www.opentable.com/restaurant/profile/53429/reserve?restref=53429",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Mökki Terrace\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 7172-7710832579 \""
+    },
+    {
+     "field": "description",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"description\":\"Summer dining in a dramatic setting that overlooks the city’s iconic Baiterek monument. The sun-soaked luxury terrace of our Astana bar is perfect for a morning latte, a glass of Chardonnay or a sunset cocktail.Open May through September.\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Selfie",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 777-0000 515",
+   "opening_hours_raw": "Mo-Su 12:00-24:00",
+   "opening_hours_osm": "Mo-Su 12:00-24:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Selfie\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 777-0000 515\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"12:00:00\",\"closes\":\"00:00:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Rooftop",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 771-777 36 68",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": "ROOFTOP at The Ritz-Carlton, Astana: the pinnacle of exclusivity. Private glass dome, fine European cuisine, and peerless panoramic views of the capital's heart. A sanctuary for timeless elegance.",
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Rooftop\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"telephone\":\"+7 771-777 36 68 \""
+    },
+    {
+     "field": "description",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"description\":\"ROOFTOP at The Ritz-Carlton, Astana: the pinnacle of exclusivity. Private glass dome, fine European cuisine, and peerless panoramic views of the capital's heart. A sanctuary for timeless elegance.\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Өzen Terrace",
+   "address": "16 Dostyk Street, Astana",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"name\":\"Өzen Terrace\""
+    },
+    {
+     "field": "address",
+     "url": "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Dostyk Street\",\"addressLocality\":\"Astana\",\"addressRegion\":\"\",\"addressCountry\":\"Kazakhstan\",\"postalCode\":\"010016\"}"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Objects = the LocalBusiness/FoodEstablishment JSON-LD of the dining page (hotel, Mökki, Өzen, Selfie, terraces, Rooftop); the POI «Ozen» maps to «Өzen» (Mo-Su 09:00-24:00). 'Mökki Terrace'/'Rooftop' publish no openingHours (seasonal venues) — address/phone only. Addresses are the hotel's single location (16 Dostyk Street = пр. Достык 16); Mökki's 07:00-24:00 is the restaurant's schedule, the 24/7 mentions on the overview page are spa/in-room dining for guests and are not used.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

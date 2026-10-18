@@ -1,0 +1,9 @@
+{
+ "domain": "talangallery.com",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "talangallery.com: expired TLS certificate (https) and http robots.txt unreachable => crawling not allowed per RFC 9309; nothing stored for Talan Gallery.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

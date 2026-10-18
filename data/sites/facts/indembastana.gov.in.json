@@ -1,0 +1,9 @@
+{
+ "domain": "indembastana.gov.in",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "HTTP 403 (WAF blocks our UA) on /page/icc; robots.txt absent but the page itself is unfetchable => no evidence, nothing stored for ICCR in Kazakhstan.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

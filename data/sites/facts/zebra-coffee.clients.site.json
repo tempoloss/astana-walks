@@ -1,0 +1,52 @@
+{
+ "domain": "zebra-coffee.clients.site",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:11:21+00:00",
+ "pages": [
+  "https://zebra-coffee.clients.site/"
+ ],
+ "branches": [
+  {
+   "name": "Zebra coffee",
+   "address": "Астана, Мұхтар Әуезов көшесі, 17",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 705 725 1980",
+   "opening_hours_raw": "Понедельник 07:30–23:00; Вторник 07:30–23:00; Среда 07:30–23:00; Четверг 07:30–23:00; Пятница 07:30–23:00; Суббота 07:30–23:00; Воскресенье 07:30–23:00",
+   "opening_hours_osm": "Mo-Su 07:30-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://zebra-coffee.clients.site/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://zebra-coffee.clients.site/",
+     "snippet": "Zebra coffee",
+     "fetched_at": "2026-10-17T09:06:49+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://zebra-coffee.clients.site/",
+     "snippet": "\\\"day\\\":\\\"Понедельник\\\",\\\"isToday\\\":false,\\\"hours\\\":[\\\"07:30–23:00\\\"]",
+     "fetched_at": "2026-10-17T09:06:49+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://zebra-coffee.clients.site/",
+     "snippet": "Астана, Мұхтар Әуезов көшесі, 17",
+     "fetched_at": "2026-10-17T09:06:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://zebra-coffee.clients.site/",
+     "snippet": "+7 705 725 1980",
+     "fetched_at": "2026-10-17T09:06:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Расписание — инлайн-JSON страницы (readableSchedule, дни по-русски, единый интервал все 7 дней -> Mo-Su 07:30-23:00); сниппет — дословный экранированный фрагмент JSON. Ссылка 'Открыто' — статус на момент запроса, не часы. zebracoffee.kz редиректит на этот clients.site; адрес без lat/lng.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

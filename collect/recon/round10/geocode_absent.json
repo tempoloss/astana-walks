@@ -1,0 +1,113 @@
+{
+ "method": "Nominatim search, countrycodes=kz, limit=2, 1.2 s spacing, custom UA (policy 1 req/s); query = name minus generic prefix + card address + Астана",
+ "results": {
+  "Бар Pozitiv": {
+   "hit": null
+  },
+  "Ресторан Мята Green": {
+   "hit": null
+  },
+  "Ресторан Sozvezdie": {
+   "hit": [
+    51.09482,
+    71.43726
+   ],
+   "type": "residential",
+   "disp": "Созвездие, Есіл ауданы, Астана, 010000, Қазақстан"
+  },
+  "Мультимедийный музей Lumiere-Hall": {
+   "hit": null
+  },
+  "Ресторан Ted": {
+   "hit": null
+  },
+  "1.5 idea art gallery": {
+   "hit": null
+  },
+  "Garage Music Bar": {
+   "hit": [
+    51.15788,
+    71.44286
+   ],
+   "type": "restaurant",
+   "disp": "Гараж, 6, Александр Кравцов көшесі, Байқоңыр ауданы, Астана, 010000, Қ"
+  },
+  "Museum of Singularity": {
+   "hit": null
+  }
+ },
+ "address_pass": {
+  "method": "q = \"Астана, \"+адрес из info-строки карточки (не вывеска)",
+  "results": {
+   "1.5 idea art gallery": {
+    "query": "Астана, мкр. Самал, 9",
+    "hit": null
+   },
+   "Garage Music Bar": {
+    "query": "Астана, ул. Кравцова, 6",
+    "hit": [
+     51.15772,
+     71.44208
+    ],
+    "type": "yes",
+    "disp": "6, Александр Кравцов көшесі, Байқоңыр ауданы, Астана, 010000, Қазақста"
+   },
+   "Museum of Singularity": {
+    "query": "Астана, Mangilik El ave., B1 Astana, Kazakhstan",
+    "hit": null
+   },
+   "The Bus Music Pub": {
+    "query": "Астана, Коргалжынское шоссе, 3",
+    "hit": null
+   },
+   "Бар «Pozitiv»": {
+    "query": "Астана, ул. Габдуллина, 18",
+    "hit": [
+     51.16524,
+     71.43213
+    ],
+    "type": "apartments",
+    "disp": "18, Мәлік Ғабдуллин көшесі, Байқоңыр ауданы, Астана, 010000, Қазақстан"
+   },
+   "Мультимедийный музей Lumiere-Hall": {
+    "query": "Астана, пр. Абая, 8",
+    "hit": null
+   },
+   "Ресторан Piligrim": {
+    "query": "Астана, мкр. Самал, 12",
+    "hit": null
+   },
+   "Ресторан Sozvezdie": {
+    "query": "Астана, ул. Керей, Жанибек хандар, 22/2",
+    "hit": null
+   },
+   "Ресторан Ted": {
+    "query": "Астана, пр. Улы Дала, 39",
+    "hit": null
+   },
+   "Ресторан Мята Green": {
+    "query": "Астана, ул. Сыганак, 17г",
+    "hit": [
+     51.13041,
+     71.39151
+    ],
+    "type": "apartments",
+    "disp": "Зеленый квартал, 17Г, Сығанақ көшесі, Нұра ауданы, Астана, 010000, Қаз"
+   },
+   "Өnergy Creative Hub": {
+    "query": "Астана, пр. Кабанбай батыра, 53, блок 32",
+    "hit": null
+   }
+  },
+  "hits": 3,
+  "of": 11,
+  "street_or_building_level": 3,
+  "note": "address resolves to street/house level; that is an approximate pin for the chip, NOT a POI node - §20.6 keeps the OSM-add conclusion",
+  "breakdown": {
+   "hits_total": 3,
+   "venue_poi_hits": 0,
+   "building_or_street_number_hits": 3,
+   "detail": "Garage hit type=yes is a house-number point (6, Кравцов көшесі), not the restaurant; Pozitiv and Myata Green are apartments. The restaurant POI was only ever found in the sign-text pass (1 hit). So the address pass proves the STREET and the HOUSE exist while the venue node does not — usable as approximate pin for the chip post-22.10, and it does not shrink the OSM add-queue."
+  }
+ }
+}

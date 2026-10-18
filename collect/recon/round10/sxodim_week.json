@@ -1,0 +1,210 @@
+{
+ "catalog_unique": 28,
+ "catalog_sources": {
+  "week": 25,
+  "today": 23,
+  "union": 28
+ },
+ "details_ok": 28,
+ "details_err": 0,
+ "details_no_jsonld": 0,
+ "events_7d": 15,
+ "events_today": 10,
+ "per_date_counts": {
+  "2026-08-04": 1,
+  "2026-09-27": 2,
+  "2026-10-10": 2,
+  "2026-10-15": 1,
+  "2026-10-16": 1,
+  "2026-10-18": 10,
+  "2026-10-19": 1,
+  "2026-10-20": 1,
+  "2026-10-22": 1,
+  "2026-10-23": 2,
+  "2026-10-25": 1,
+  "2026-10-29": 2,
+  "2026-10-31": 1,
+  "2026-11-07": 1,
+  "2026-12-13": 1
+ },
+ "week_window": "[2026-10-18, 2026-10-25)",
+ "sample": [
+  {
+   "date": "2026-10-18",
+   "name": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+   "venue": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "Киноужин «Сумерки» от vkuskino в Астане",
+   "venue": "Киноужин «Сумерки» от vkuskino в Астане"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "SEBEPSIZ импровизация жобасы",
+   "venue": "SEBEPSIZ импровизация жобасы"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+   "venue": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)"
+  },
+  {
+   "date": "2026-10-18T18:00:00+05:00",
+   "name": "Квиз, плиз! #803",
+   "venue": "Квиз, плиз! #803"
+  },
+  {
+   "date": "2026-10-18T18:00:00+05:00",
+   "name": "Teztap интеллектуалдар ойыны – Тек суреттер",
+   "venue": "Teztap интеллектуалдар ойыны – Тек суреттер"
+  },
+  {
+   "date": "2026-10-18T19:00:00+05:00",
+   "name": "Акустический концерт группы Sary",
+   "venue": "Акустический концерт группы Sary"
+  },
+  {
+   "date": "2026-10-18T19:00:00+05:00",
+   "name": "Концерт «Добрые песни старого кино» в Астане",
+   "venue": "Концерт «Добрые песни старого кино» в Астане"
+  },
+  {
+   "date": "2026-10-18T20:30:00+05:00",
+   "name": "Трибьют-концерт The Beatles от группы Black Pelican",
+   "venue": "Трибьют-концерт The Beatles от группы Black Pelican"
+  },
+  {
+   "date": "2026-10-18T22:00:00+05:00",
+   "name": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+   "venue": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)"
+  },
+  {
+   "date": "2026-10-19T19:00:00+05:00",
+   "name": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+   "venue": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»"
+  },
+  {
+   "date": "2026-10-20",
+   "name": "Импровизация с залом (Stand Up Bar «Pozitiv»)",
+   "venue": "Импровизация с залом (Stand Up Bar «Pozitiv»)"
+  }
+ ],
+ "week_full": [
+  {
+   "date": "2026-10-18",
+   "name": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+   "slug": "kinouzhin-s-multfilmom-ratatuy"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "Киноужин «Сумерки» от vkuskino в Астане",
+   "slug": "kinouzhin-sumerki-ot-vkuskino-v-astane"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "SEBEPSIZ импровизация жобасы",
+   "slug": "sebepsiz-improvizaciya-zhobasy"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+   "slug": "stendap-otkrytyy-mikrofon-stand-up-bar-pozitiv-1"
+  },
+  {
+   "date": "2026-10-18T18:00:00+05:00",
+   "name": "Квиз, плиз! #803",
+   "slug": "kviz-pliz-803"
+  },
+  {
+   "date": "2026-10-18T18:00:00+05:00",
+   "name": "Teztap интеллектуалдар ойыны – Тек суреттер",
+   "slug": "teztap-intellektualdar-oyyny-tek-suretter"
+  },
+  {
+   "date": "2026-10-18T19:00:00+05:00",
+   "name": "Акустический концерт группы Sary",
+   "slug": "akusticheskiy-koncert-gruppy-sary"
+  },
+  {
+   "date": "2026-10-18T19:00:00+05:00",
+   "name": "Концерт «Добрые песни старого кино» в Астане",
+   "slug": "koncert-dobrye-pesni-starogo-kino-v-astane"
+  },
+  {
+   "date": "2026-10-18T20:30:00+05:00",
+   "name": "Трибьют-концерт The Beatles от группы Black Pelican",
+   "slug": "tribyut-koncert-the-beatles-ot-gruppy-black-pelican"
+  },
+  {
+   "date": "2026-10-18T22:00:00+05:00",
+   "name": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+   "slug": "shou-komiki-protiv-problem-stand-up-bar-pozitiv"
+  },
+  {
+   "date": "2026-10-19T19:00:00+05:00",
+   "name": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+   "slug": "creative-talk-uanysh-beysek-kreativti-prodyuserleu"
+  },
+  {
+   "date": "2026-10-20",
+   "name": "Импровизация с залом (Stand Up Bar «Pozitiv»)",
+   "slug": "improvizaciya-s-zalom-stand-up-bar-pozitiv"
+  },
+  {
+   "date": "2026-10-22T17:00:00+05:00",
+   "name": "Встреча с Канатом Нуровым «Управленческие решения — открытый разбор бизнес-кейсов»",
+   "slug": "vstrecha-s-kanatom-nurovym-upravlencheskie-resheniya-otkrytyy-razbor-biznes-keysov"
+  },
+  {
+   "date": "2026-10-23",
+   "name": "Pozitiv стендап (Stand Up Bar «Pozitiv»)",
+   "slug": "pozitiv-stendap-stand-up-bar-pozitiv"
+  },
+  {
+   "date": "2026-10-23T18:30:00+05:00",
+   "name": "Лекция Дархана Жагипарова в Өnergy Creative Hub: «Через тои к Apple»",
+   "slug": "lekciya-darhana-zhagiparova-v-nergy-creative-hub-cherez-toi-k-apple"
+  }
+ ],
+ "overlap_19_5": 0,
+ "venue_crosscheck": {
+  "method": "match JSON-LD startDate (date,time) against opera 2026-10-18 15:00, ballet 2026-10-24 18:00, qazaqconcert 2026-10-21 19:00 & 2026-10-22 19:00",
+  "matches": [],
+  "note": "sxodim catalog contains zero events at these (date,time); also zero text hits for opera/ballet/qazaqconcert across all 28 detail pages -> sxodim COMPLEMENTS the three big venues, does not duplicate them. Caveat: JSON-LD location.name on sxodim just repeats the event title, so venue identity is not machine-readable from JSON-LD."
+ },
+ "data_quality": {
+  "start_date_missing_time": 14,
+  "location_name_equals_title": 28,
+  "pct": 53.6
+ },
+ "jsonld_evidence_first5": [
+  {
+   "slug": "akusticheskiy-koncert-gruppy-sary",
+   "jsonld": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u0410\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0433\\u0440\\u0443\\u043f\\u043f\\u044b Sary\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/akusticheskiy-koncert-gruppy-sary\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/10\\/05\\/optimized\\/10b2788820a83421f0cb266ead46b203_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"18 \\u043e\\u043a\\u0442\\u044f\\u0431\\u0440\\u044f \\u0433\\u0440\\u0443\\u043f\\u043f\\u0430 sary \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u043d\\u0430 \\u0430\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435. \\u0410\\u0432\\u0442\\u043e\\u0440\\u0441\\u043a\\u0438\\u0439 Q-Rock \\u043d\\u0430 \\u043a\\u0430\\u0437\\u0430\\u0445\\u0441\\u043a\\u043e\\u043c \\u044f\\u0437\\u044b\\u043a\\u0435 \\u043f\\u0440\\u043e\\u0437\\u0432\\u0443\\u0447\\u0438\\u0442 \\u0432 \\u043a\\u0430\\u043c\\u0435\\u0440\\u043d\\u043e\\u043c \\u0444\\u043e\\u0440\\u043c\\u0430\\u0442\\u0435 \\u2014 \\u0441 \\u043e\\u0441\\u043e\\u0431\\u044b\\u043c \\u0432\\u043d\\u0438\\u043c\\u0430\\u043d\\u0438\\u0435\\u043c \\u043a \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c, \\u043c\\u0435\\u043b\\u043e\\u0434\\u0438\\u044f\\u043c \\u0438 \\u044d\\u043c\\u043e\\u0446\\u0438\\u044f\\u043c.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u0410\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0433\\u0440\\u0443\\u043f\\u043f\\u044b Sary\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/akusticheskiy-koncert-gruppy-sary\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"Harat\\u2019s \\u0410\\u049b\\u0431\\u04b1\\u043b\\u0430\\u049b, \\u0422\\u043e\\u043a\\u043f\\u0430\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448., 10\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 7000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-10-05T12:32:40+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/kontserty\\/akusticheskiy-koncert-gruppy-sary\\/tickets\"\n    },\n    \"startDate\": \"2026-10-18T19:00:00+05:00\"\n}"
+  },
+  {
+   "slug": "chernyy-stendap-stand-up-bar-pozitiv",
+   "jsonld": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f \\u00ab\\u0427\\u0435\\u0440\\u043d\\u043e-\\u0431\\u0435\\u043b\\u044b\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438\\u00bb (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/chernyy-stendap-stand-up-bar-pozitiv\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/09\\/07\\/optimized\\/5a9b6f67780b33c9d7b6f9c0493e088a_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"\\u0413\\u043e\\u0442\\u043e\\u0432\\u044b \\u0443\\u0441\\u043b\\u044b\\u0448\\u0430\\u0442\\u044c \\u0441\\u0432\\u0435\\u0436\\u0438\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438, \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u0435 \\u0435\\u0449\\u0451 \\u043d\\u0435 \\u0437\\u0432\\u0443\\u0447\\u0430\\u043b\\u0438 \\u0441\\u043e \\u0441\\u0446\\u0435\\u043d\\u044b? \\u0422\\u043e\\u0433\\u0434\\u0430 \\u0432\\u0430\\u043c \\u043d\\u0430 \\u043f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f! \\u041a\\u043e\\u043c\\u0438\\u043a\\u0438 \\u0442\\u0435\\u0441\\u0442\\u0438\\u0440\\u0443\\u044e\\u0442 \\u043d\\u043e\\u0432\\u044b\\u0439 \\u043c\\u0430\\u0442\\u0435\\u0440\\u0438\\u0430\\u043b \\u2013 \\u0447\\u0442\\u043e-\\u0442\\u043e \\u0432\\u0437\\u043b\\u0435\\u0442\\u0438\\u0442, \\u0447\\u0442\\u043e-\\u0442\\u043e \\u043d\\u0435\\u0442, \\u043d\\u043e \\u0442\\u043e\\u0447\\u043d\\u043e \\u0431\\u0443\\u0434\\u0435\\u0442 \\u0441\\u043c\\u0435\\u0448\\u043d\\u043e, \\u0436\\u0438\\u0432\\u043e \\u0438 \\u043d\\u0435\\u043f\\u0440\\u0435\\u0434\\u0441\\u043a\\u0430\\u0437\\u0443\\u0435\\u043c\\u043e.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f \\u00ab\\u0427\\u0435\\u0440\\u043d\\u043e-\\u0431\\u0435\\u043b\\u044b\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438\\u00bb (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/chernyy-stendap-stand-up-bar-pozitiv\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0411\\u0430\\u0440 Pozitiv, \\u0443\\u043b. \\u0413\\u0430\\u0431\\u0434\\u0443\\u043b\\u043b\\u0438\\u043d\\u0430, 18\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 2000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2025-03-31T18:22:29+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/meropriyatiya-v-stendap-bare-pozitiv\\/chernyy-stendap-stand-up-bar-pozitiv\\/tickets\"\n    },\n    \"startDate\": \"2026-10-16\",\n    \"endDate\": \"2026-10-28\"\n}"
+  },
+  {
+   "slug": "creative-talk-uanysh-beysek-kreativti-prodyuserleu",
+   "jsonld": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"Creative Talk \\u2013 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/10\\/16\\/optimized\\/e842c1e0ec8c6f18a6870e5cd452a2e5_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"19 \\u049b\\u0430\\u0437\\u0430\\u043d \\u043a\\u04af\\u043d\\u0456 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\\u0434\\u0430\\u0493\\u044b \\u04e8nergy Creative Hub-\\u0442\\u0430 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a\\u043f\\u0435\\u043d \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb \\u0442\\u0430\\u049b\\u044b\\u0440\\u044b\\u0431\\u044b\\u043d\\u0434\\u0430 \\u0448\\u044b\\u0493\\u0430\\u0440\\u043c\\u0430\\u0448\\u044b\\u043b\\u044b\\u049b \\u043a\\u0435\\u0437\\u0434\\u0435\\u0441\\u0443 \\u04e9\\u0442\\u0435\\u0434\\u0456.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"Creative Talk \\u2013 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u04e8nergy Creative Hub, \\u049a\\u0430\\u0431\\u0430\\u043d\\u0431\\u0430\\u0439 \\u0431\\u0430\\u0442\\u044b\\u0440 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 53, 32-\\u0431\\u043b\\u043e\\u043a\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 10000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-10-16T15:31:01+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/obrazovanie\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\\/tickets\"\n    },\n    \"startDate\": \"2026-10-19T19:00:00+05:00\",\n    \"endDate\": \"2026-10-19T20:30:00+05:00\"\n}"
+  },
+  {
+   "slug": "improvizaciya-s-zalom-stand-up-bar-pozitiv",
+   "jsonld": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u0418\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/09\\/24\\/optimized\\/a9869df7a3f2db2a71768b226cae77b6_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"Standup\\u00a0bar\\u00a0Pozitiv\\u00a0\\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043d\\u0430 \\u0438\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044e \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c, \\u0433\\u0434\\u0435 \\u043a\\u043e\\u043c\\u0435\\u0434\\u0438\\u044f \\u0434\\u0435\\u043b\\u0430\\u0435\\u0442\\u0441\\u044f \\u0432 \\u043c\\u043e\\u043c\\u0435\\u043d\\u0442\\u0435. \\u0418\\u0441\\u043a\\u0440\\u043e\\u043c\\u0435\\u0442\\u043d\\u044b\\u0435 \\u043a\\u043e\\u043c\\u0438\\u043a\\u0438 \\u043f\\u043e\\u0434\\u043d\\u0438\\u043c\\u0443\\u0442 \\u0432\\u0430\\u043c \\u043d\\u0430\\u0441\\u0442\\u0440\\u043e\\u0435\\u043d\\u0438\\u0435 \\u0438\\u00a0\\u043f\\u043e\\u0434\\u0430\\u0440\\u044f\\u0442 \\u043c\\u0430\\u0441\\u0441\\u0443 \\u0440\\u0430\\u0434\\u043e\\u0441\\u0442\\u043d\\u044b\\u0445 \\u044d\\u043c\\u043e\\u0446\\u0438\\u0439.\\u00a0\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u0418\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0411\\u0430\\u0440 Pozitiv, \\u0443\\u043b. \\u0413\\u0430\\u0431\\u0434\\u0443\\u043b\\u043b\\u0438\\u043d\\u0430, 18\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 3000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2025-11-04T13:43:17+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/meropriyatiya-v-stendap-bare-pozitiv\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\\/tickets\"\n    },\n    \"startDate\": \"2026-10-20\",\n    \"endDate\": \"2026-10-27\"\n}"
+  },
+  {
+   "slug": "kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane",
+   "jsonld": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u041a\\u0438\\u043d\\u043e\\u0443\\u0436\\u0438\\u043d \\u0441 \\u0444\\u0438\\u043b\\u044c\\u043c\\u043e\\u043c \\u00ab\\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440 \\u0438 \\u0424\\u0438\\u043b\\u043e\\u0441\\u043e\\u0444\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0430\\u043c\\u0435\\u043d\\u044c\\u00bb \\u043e\\u0442 VkusKino \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/04\\/16\\/optimized\\/a29e5bfe5616269132ce2f9d6f1bd644_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"vkuskino \\u043f\\u0440\\u0438\\u0432\\u043e\\u0437\\u0438\\u0442 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440\\u043e\\u043c\\u0430\\u043d\\u0438\\u044e \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0443, \\u0433\\u0434\\u0435 \\u043c\\u0438\\u0440 \\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440\\u0430 \\u043e\\u0436\\u0438\\u0432\\u0430\\u0435\\u0442 \\u043d\\u0435 \\u0442\\u043e\\u043b\\u044c\\u043a\\u043e \\u043d\\u0430 \\u044d\\u043a\\u0440\\u0430\\u043d\\u0435, \\u043d\\u043e \\u0438 \\u043f\\u0440\\u044f\\u043c\\u043e \\u0443 \\u0432\\u0430\\u0441 \\u043d\\u0430 \\u0442\\u0430\\u0440\\u0435\\u043b\\u043a\\u0435, \\u0441 \\u0431\\u043b\\u044e\\u0434\\u0430\\u043c\\u0438, \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u0435 \\u043f\\u043e\\u044f\\u0432\\u043b\\u044f\\u044e\\u0442\\u0441\\u044f \\u0441\\u0438\\u043d\\u0445\\u0440\\u043e\\u043d\\u043d\\u043e \\u0441\\u043e \\u0441\\u0446\\u0435\\u043d\\u0430\\u043c\\u0438 \\u0444\\u0438\\u043b\\u044c\\u043c\\u0430!\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u041a\\u0438\\u043d\\u043e\\u0443\\u0436\\u0438\\u043d \\u0441 \\u0444\\u0438\\u043b\\u044c\\u043c\\u043e\\u043c \\u00ab\\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440 \\u0438 \\u0424\\u0438\\u043b\\u043e\\u0441\\u043e\\u0444\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0430\\u043c\\u0435\\u043d\\u044c\\u00bb \\u043e\\u0442 VkusKino \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d Sozvezdie, \\u0443\\u043b.  \\u041a\\u0435\\u0440\\u0435\\u0439, \\u0416\\u0430\\u043d\\u0438\\u0431\\u0435\\u043a \\u0445\\u0430\\u043d\\u0434\\u0430\\u0440, 22\\/2\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 26500,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-04-16T16:21:54+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/vkuskino\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\\/tickets\"\n    },\n    \"startDate\": \"2026-10-15\",\n    \"endDate\": \"2026-11-26\"\n}"
+  }
+ ],
+ "verdict": "Да: подневная подсказка дёшево выводится из ОДНОГО листа + K детальных GET. /astana/events/today отдаёт 23 карточки без видимых дат, но union с /week даёт 28 уникальных slug; 28 GET (~30 c при 1 req/s, 0 ошибок, ретраи не понадобились) по JSON-LD startDate дают ровно 10 событий на 18.10 ('10 из 23 сегодня') и 15 на неделю [18.10–25.10) ('15 в ближайшую неделю'). Достаточно K=23 (лист today) для «сегодня» и K=28 для недели. Оговорки: у части событий startDate без времени; location.name = копия названия, площадки машиночитаемо не опознать; крупные залы (опера 18.10 15:00, балет 24.10 18:00, qazaqconcert 21/22.10 19:00) в sxodim отсутствуют полностью (overlap_19_5=0) — sxodim дополняет, а не дублирует их, поэтому 'X из 23 сегодня' честно только как покрытие sxodim-каталога, не города.",
+ "artifacts": [
+  "collect/recon/round10/week_listing.html",
+  "collect/recon/round10/today_listing.html",
+  "collect/recon/round10/details_raw.json",
+  "collect/recon/round10/sxodim_week.json"
+ ]
+}

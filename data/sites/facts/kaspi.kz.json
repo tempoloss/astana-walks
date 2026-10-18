@@ -1,0 +1,11 @@
+{
+ "domain": "kaspi.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://kaspi.kz/"
+ ],
+ "branches": [],
+ "notes": "kaspi.kz is the super-app platform (bank/marketplace/travel); no Astana street address or opening hours printed on the fetchable pages — nothing stored (the POI is a marketplace storefront).",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

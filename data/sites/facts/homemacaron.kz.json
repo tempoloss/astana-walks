@@ -1,0 +1,33 @@
+{
+ "domain": "homemacaron.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://homemacaron.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Home Macaron",
+   "address": "г. Астана, пр. Кабанбай батыра 58Б, корпус 7 (ЖК ЭкспоБульвар-5)",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://homemacaron.kz/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://homemacaron.kz/",
+     "snippet": "пр. КАБАНБАЙ БАТЫРА 58Б, корпус 7"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  }
+ ],
+ "notes": "Site-builder page (visible text is JS-rendered): the address 'г. Астана пр. КАБАНБАЙ БАТЫРА 58Б, корпус 7 (ЖК ЭкспоБульвар-5) вход с ул. Г.Алиева' is stored in the page's embedded JSON block (snippet matched in the raw HTML view). Phone/hours not present in verbatim HTML text — address only.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

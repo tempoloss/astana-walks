@@ -1,0 +1,3113 @@
+[
+  {
+    "osm_id": null,
+    "name": "Sarytogai",
+    "lat": 51.042905252237496,
+    "lon": 71.42560161251365,
+    "tags": {},
+    "gtfs_ids": [
+      "0116b4d3-b09f-4091-8e8d-3363907905fa"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Saryarka",
+    "lat": 51.139146,
+    "lon": 71.409255,
+    "tags": {},
+    "gtfs_ids": [
+      "01a3134a-4649-496d-b4fa-aea764a50a8b"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ministerstvo oborony",
+    "lat": 51.12595381886344,
+    "lon": 71.43062644976045,
+    "tags": {},
+    "gtfs_ids": [
+      "0241ba8f-1c7d-43c8-a2e1-39086ac6f078"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Detskii sad Karlygash",
+    "lat": 51.07101538085358,
+    "lon": 71.41783477700184,
+    "tags": {},
+    "gtfs_ids": [
+      "024dc66b-2cc2-4c58-9482-caa7068d6eb2"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Ekspo-Plaza",
+    "lat": 51.0939087,
+    "lon": 71.4045112,
+    "tags": {},
+    "gtfs_ids": [
+      "0354d63f-65ad-4bef-b2e1-b79439bb9f31"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Il'iasa Esenberlina",
+    "lat": 51.1892869,
+    "lon": 71.4137662,
+    "tags": {},
+    "gtfs_ids": [
+      "04530e5f-9e64-4ae3-a962-589640451d45"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Karkaralinskoe shosse",
+    "lat": 51.067075,
+    "lon": 71.401264,
+    "tags": {},
+    "gtfs_ids": [
+      "04fd1fc3-b800-465a-be89-5367e0313d21"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kazakhstan temir zholy",
+    "lat": 51.131714867879,
+    "lon": 71.424825989754,
+    "tags": {},
+    "gtfs_ids": [
+      "06232fac-a185-48c0-8ac7-70a493306087"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ledovyi dvorets Alau",
+    "lat": 51.1007236,
+    "lon": 71.4068324,
+    "tags": {},
+    "gtfs_ids": [
+      "068882a1-be66-4fce-b012-98a2dd51acc8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Stela Zvezda Astany",
+    "lat": 51.073524,
+    "lon": 71.396747,
+    "tags": {},
+    "gtfs_ids": [
+      "06eee664-f6eb-43f7-ac6a-de0d6e693a27"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Birzhan sal",
+    "lat": 51.190696721868,
+    "lon": 71.40867294591281,
+    "tags": {},
+    "gtfs_ids": [
+      "09b35dc0-2e95-4c03-b488-5eda1557f68b"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Stella Zvezda Astany",
+    "lat": 51.0743025,
+    "lon": 71.3975068,
+    "tags": {},
+    "gtfs_ids": [
+      "0a75a06f-8e5d-48f2-ac85-8211908d4c41"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Teatr Zhastar",
+    "lat": 51.189325,
+    "lon": 71.407519,
+    "tags": {},
+    "gtfs_ids": [
+      "0dfeaf23-1068-4a93-9666-5cc804d389a1"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Teatr Astana Opera",
+    "lat": 51.136214,
+    "lon": 71.408445,
+    "tags": {},
+    "gtfs_ids": [
+      "1100a1f5-0017-4d32-a284-74289da87c19"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Nazarbaev universitet",
+    "lat": 51.089197,
+    "lon": 71.402369,
+    "tags": {},
+    "gtfs_ids": [
+      "12cabd75-d75d-4b82-8364-770c7812d47f"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "zh/m Prigorodnyi",
+    "lat": 51.0426454,
+    "lon": 71.4311203,
+    "tags": {},
+    "gtfs_ids": [
+      "13a79ef8-965a-440a-be79-13f1aa3b7e6f"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Finansovyi tsentr",
+    "lat": 51.11695,
+    "lon": 71.434479,
+    "tags": {},
+    "gtfs_ids": [
+      "13c38731-1a07-40f0-a7ad-01c8539e2870"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Nova city",
+    "lat": 51.091371108291966,
+    "lon": 71.44904483921448,
+    "tags": {},
+    "gtfs_ids": [
+      "13d3a76f-5cc8-4d6f-8b5a-335beea7eb5c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kafe Kazygurt",
+    "lat": 51.191766027692616,
+    "lon": 71.33329068771074,
+    "tags": {},
+    "gtfs_ids": [
+      "14c30498-4bf5-4b7c-84fb-3a8838e8f2e2"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Akan Sery",
+    "lat": 51.181973977787,
+    "lon": 71.37328390498533,
+    "tags": {},
+    "gtfs_ids": [
+      "1547f9fc-9cdb-4452-80b1-1de805d07791"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "K'arlyg'ash balabak'shasy",
+    "lat": 51.1097834,
+    "lon": 71.4324027,
+    "tags": {},
+    "gtfs_ids": [
+      "1552b0e1-bb57-49dc-b4cb-557a39df06b4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Moskovskaia",
+    "lat": 51.182389,
+    "lon": 71.4095289,
+    "tags": {},
+    "gtfs_ids": [
+      "15829acf-630a-4f13-9472-b6f8a679e0a8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa  Dinmukhameda Kunaeva",
+    "lat": 51.132429151498,
+    "lon": 71.419176988836,
+    "tags": {},
+    "gtfs_ids": [
+      "160e90a6-0ebf-42f5-801d-bc26323a7705"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Keruen",
+    "lat": 51.1271237132846,
+    "lon": 71.42309511260679,
+    "tags": {},
+    "gtfs_ids": [
+      "17cc4828-7b49-4d27-bad3-8dce5b9803d4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Politekhnicheskii kolledzh",
+    "lat": 51.1773011,
+    "lon": 71.4184919,
+    "tags": {},
+    "gtfs_ids": [
+      "180c6cec-9a94-4a62-a902-168555638d9c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zharkyn",
+    "lat": 51.08850116536807,
+    "lon": 71.44498162665293,
+    "tags": {},
+    "gtfs_ids": [
+      "188e1c69-e5de-4a89-abf0-b1bd3e0880cc"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kladbishche",
+    "lat": 51.185614435003686,
+    "lon": 71.35814821522924,
+    "tags": {},
+    "gtfs_ids": [
+      "18e674ae-467c-4bf9-b5e9-6747a27c958b"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Shugyla",
+    "lat": 51.186013677553625,
+    "lon": 71.35458807996658,
+    "tags": {},
+    "gtfs_ids": [
+      "18e751ea-9e23-49dd-9275-4559c1ed40b0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Arnasai",
+    "lat": 51.041854,
+    "lon": 71.432969,
+    "tags": {},
+    "gtfs_ids": [
+      "19d56c0b-6421-4f46-8ec3-2781ee8b93ec"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Milanskii kvartal",
+    "lat": 51.1423416137695,
+    "lon": 71.4453125,
+    "tags": {},
+    "gtfs_ids": [
+      "1cebd4f9-b4db-4bed-8f51-5a5b7f3ab5e3"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Orynbor Towers",
+    "lat": 51.0881047,
+    "lon": 71.4245778,
+    "tags": {},
+    "gtfs_ids": [
+      "1d53ab9f-c7f4-4aa4-b0f0-633962560cfa"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "K'artaly",
+    "lat": 51.18328805464409,
+    "lon": 71.36832656597443,
+    "tags": {},
+    "gtfs_ids": [
+      "2045b211-161c-475d-8e29-b5dcba8d5c88"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sredniaia shkola No. 18",
+    "lat": 51.17548306787644,
+    "lon": 71.39804998850084,
+    "tags": {},
+    "gtfs_ids": [
+      "20608557-4a9c-433d-89cb-c0dd527618d3"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs KeruenCity",
+    "lat": 51.143451,
+    "lon": 71.410961,
+    "tags": {},
+    "gtfs_ids": [
+      "21a7b5b4-3e01-4457-91da-b8cc6ac14bbd"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Nauryz48",
+    "lat": 51.20168568523773,
+    "lon": 71.33698941157755,
+    "tags": {},
+    "gtfs_ids": [
+      "220c90dc-c8e4-422b-98b5-d856f2eec1d1"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zh/d vokzal Astana 1",
+    "lat": 51.195,
+    "lon": 71.408,
+    "tags": {},
+    "gtfs_ids": [
+      "24da8f75-2dc4-4a5d-becc-2898122eaae5"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Stadion Astana-Arena",
+    "lat": 51.106637,
+    "lon": 71.408628,
+    "tags": {},
+    "gtfs_ids": [
+      "25160f65-5b76-42df-8126-ba7e0dca32d0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ulitsa Karasu",
+    "lat": 51.20053675217712,
+    "lon": 71.33146497827295,
+    "tags": {},
+    "gtfs_ids": [
+      "26d4ae3b-1b99-47f1-a819-0e4f77899d96"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Narodnyi bank",
+    "lat": 51.16592521313496,
+    "lon": 71.42741371688713,
+    "tags": {},
+    "gtfs_ids": [
+      "27123abe-5a4f-4116-b048-4e2d32d8a104"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Arnasai",
+    "lat": 51.041765,
+    "lon": 71.433817,
+    "tags": {},
+    "gtfs_ids": [
+      "28407e90-671f-482f-95f4-c692dd4d1e90"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sarytogai",
+    "lat": 51.0459788,
+    "lon": 71.4312831,
+    "tags": {},
+    "gtfs_ids": [
+      "28764497-a568-434f-83dd-932a3c91e199"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Dom ministerstv",
+    "lat": 51.129665748498,
+    "lon": 71.438057141919,
+    "tags": {},
+    "gtfs_ids": [
+      "2ca9397c-8bbe-40c0-9a6d-545216696cfe"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mechet' Abu Nasyr al-Farabi",
+    "lat": 51.12747896082728,
+    "lon": 71.41923971432102,
+    "tags": {},
+    "gtfs_ids": [
+      "2dc158f2-0a35-4643-9ac2-4cc3fa09036a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tarbagatai",
+    "lat": 51.1992016089265,
+    "lon": 71.33253419309649,
+    "tags": {},
+    "gtfs_ids": [
+      "2dd9aae5-9429-4599-9e2b-19909c7551da"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ul.Ybyrai Altynsarina",
+    "lat": 51.187289,
+    "lon": 71.407598,
+    "tags": {},
+    "gtfs_ids": [
+      "32457954-89fb-4c6d-8184-f67abcac80a8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Respublikanskii diagnosticheskii tsentr",
+    "lat": 51.1266414855444,
+    "lon": 71.40603802713036,
+    "tags": {},
+    "gtfs_ids": [
+      "33611474-3457-4f2a-919d-82064f2d8e54"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Park Astana",
+    "lat": 51.152474,
+    "lon": 71.4123438,
+    "tags": {},
+    "gtfs_ids": [
+      "35914827-e837-47c4-93ce-d92d1d09d291"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "per. Taitobe",
+    "lat": 51.18708691151863,
+    "lon": 71.33564891835546,
+    "tags": {},
+    "gtfs_ids": [
+      "35cfa9fd-fcd4-49d3-98c5-2ee1aab26358"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Shugyla",
+    "lat": 51.18315929424949,
+    "lon": 71.35122112599142,
+    "tags": {},
+    "gtfs_ids": [
+      "374a1eba-3bff-4242-854e-4043b5a0dd8c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "monument Baiterek",
+    "lat": 51.130015,
+    "lon": 71.434369,
+    "tags": {},
+    "gtfs_ids": [
+      "379d5591-eb02-45b1-b0b7-8407edfe55b4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sredniaia shkola No. 18",
+    "lat": 51.17585228262476,
+    "lon": 71.39873748216235,
+    "tags": {},
+    "gtfs_ids": [
+      "3943eb59-f7df-4bc8-a03b-57ec0f53839b"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "prospekt Tlendieva",
+    "lat": 51.1792857933539,
+    "lon": 71.38321235359834,
+    "tags": {},
+    "gtfs_ids": [
+      "3a8b16e7-e35d-4891-99dc-179197ec2b6e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zhanibek Tarkhana",
+    "lat": 51.1603409,
+    "lon": 71.4285696,
+    "tags": {},
+    "gtfs_ids": [
+      "3abac3ba-87c0-480c-aa39-fc3ec081e9c6"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Gostinitsa Bakhyt",
+    "lat": 51.19402700372381,
+    "lon": 71.32210101291399,
+    "tags": {},
+    "gtfs_ids": [
+      "3c018a79-d48f-4d34-8f87-e5e6746013a9"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zharkyn",
+    "lat": 51.088733725184106,
+    "lon": 71.44419210601382,
+    "tags": {},
+    "gtfs_ids": [
+      "3db7fef2-0573-4884-af46-8d0986364f93"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kanal Nura-Esil'",
+    "lat": 51.05996347269038,
+    "lon": 71.41264815638745,
+    "tags": {},
+    "gtfs_ids": [
+      "3e758949-78d7-4c07-b00b-e81d572481ee"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Park Astana",
+    "lat": 51.1531116,
+    "lon": 71.4127808,
+    "tags": {},
+    "gtfs_ids": [
+      "3f01777a-d987-4808-83e3-80e0193ebb62"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Medeu",
+    "lat": 51.1834920085524,
+    "lon": 71.3647279589701,
+    "tags": {},
+    "gtfs_ids": [
+      "439de39e-eed6-49be-9fc7-e232cc3c3f84"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kanal Nura-Esil'",
+    "lat": 51.06046711783695,
+    "lon": 71.41223537793292,
+    "tags": {},
+    "gtfs_ids": [
+      "4614db92-63be-4042-bc5a-4f82ce5d47fe"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Akan Sery",
+    "lat": 51.1811852643432,
+    "lon": 71.37524602642249,
+    "tags": {},
+    "gtfs_ids": [
+      "49f207a4-a4d2-44ee-983a-8f330bf0375c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mikroraion Samal",
+    "lat": 51.15735543102864,
+    "lon": 71.42943772524505,
+    "tags": {},
+    "gtfs_ids": [
+      "4aed197d-2627-48aa-9191-4b45ed52ddbb"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kanal Nura-Esil'",
+    "lat": 51.0617062565548,
+    "lon": 71.414540446622,
+    "tags": {},
+    "gtfs_ids": [
+      "4b830103-8b6e-4273-aedc-b4ca2c34dda8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sportivnyi kompleks ABYROY",
+    "lat": 51.1697536,
+    "lon": 71.4080971,
+    "tags": {},
+    "gtfs_ids": [
+      "4cc233c3-db14-4e65-b96b-91271c045f99"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Promenad Ekspo",
+    "lat": 51.092836,
+    "lon": 71.426175,
+    "tags": {},
+    "gtfs_ids": [
+      "4ef6c8ac-8173-4c76-b194-918e3c3d876f"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Bukhar zhyrau",
+    "lat": 51.100996,
+    "lon": 71.429179,
+    "tags": {},
+    "gtfs_ids": [
+      "4efbf1dc-b4dc-46a4-9f0b-70f8d73ff6b2"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Meditsinskii universitet Astana",
+    "lat": 51.18070299651373,
+    "lon": 71.41718793734093,
+    "tags": {},
+    "gtfs_ids": [
+      "4fddb84f-fb97-43b8-a619-e667607dc9de"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Prospekt Saryarka",
+    "lat": 51.174294,
+    "lon": 71.406421,
+    "tags": {},
+    "gtfs_ids": [
+      "50768bd6-38ce-4f3d-943d-a11b456905d2"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mikroraion Samal",
+    "lat": 51.158010208850655,
+    "lon": 71.42966715476112,
+    "tags": {},
+    "gtfs_ids": [
+      "527f6d97-4b07-45e8-b2d8-794dbc40075b"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Aq-Jol",
+    "lat": 51.04938026082487,
+    "lon": 71.43015536518286,
+    "tags": {},
+    "gtfs_ids": [
+      "54623320-dd0b-452c-9ee8-9cf89671b8b0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Karakat",
+    "lat": 51.08954066114963,
+    "lon": 71.4375556699916,
+    "tags": {},
+    "gtfs_ids": [
+      "5d11962d-6412-4c7c-984d-f4ee5eb63859"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mezhdunarodnyi aeroport",
+    "lat": 51.0283122,
+    "lon": 71.4623786,
+    "tags": {},
+    "gtfs_ids": [
+      "5dafe705-9a04-4727-a75e-7ed2195cfe2a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Politekhnicheskii kolledzh",
+    "lat": 51.17573,
+    "lon": 71.418487,
+    "tags": {},
+    "gtfs_ids": [
+      "5ea2fd87-18be-448c-ba4a-011ed7449f1e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Stadion Astana-Arena",
+    "lat": 51.1084605,
+    "lon": 71.40968,
+    "tags": {},
+    "gtfs_ids": [
+      "609457bf-32ed-4cae-8bc4-56c755311af4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Svechki",
+    "lat": 51.17539633324927,
+    "lon": 71.40838738181083,
+    "tags": {},
+    "gtfs_ids": [
+      "6315f075-d165-40b9-b97c-aa60a49512d0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zh/d vokzal Astana 1",
+    "lat": 51.1947805,
+    "lon": 71.4091279,
+    "tags": {},
+    "gtfs_ids": [
+      "63220f3a-eeb2-41ce-9cae-7157668360e9"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Narodnyi bank",
+    "lat": 51.167332,
+    "lon": 71.426572,
+    "tags": {},
+    "gtfs_ids": [
+      "639393f6-22fb-4ab6-a13d-98f9131736b2"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs KeruenCity",
+    "lat": 51.143945,
+    "lon": 71.411519,
+    "tags": {},
+    "gtfs_ids": [
+      "666cc2b2-73dc-4d32-afd1-1ce0b6280dd8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mu'sa dukeni",
+    "lat": 51.20025948812925,
+    "lon": 71.33688297418169,
+    "tags": {},
+    "gtfs_ids": [
+      "66c67c6a-c5f7-4176-9d11-f2c8510ec6aa"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kafe Sulukol'",
+    "lat": 51.18512276135868,
+    "lon": 71.3528443759532,
+    "tags": {},
+    "gtfs_ids": [
+      "69d3a2a0-c1c5-4c40-9930-6f7f2fa2ae2a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tarbagatai",
+    "lat": 51.200851465106936,
+    "lon": 71.3324804277106,
+    "tags": {},
+    "gtfs_ids": [
+      "6a6d9880-7a1a-4598-acba-a3408eef739e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sarybulak",
+    "lat": 51.17680182248764,
+    "lon": 71.39435418502224,
+    "tags": {},
+    "gtfs_ids": [
+      "6c7bf549-6c5b-4078-bfbf-22027216c209"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "K'arlyg'ash balabak'shasy",
+    "lat": 51.108050533972666,
+    "lon": 71.4310605225266,
+    "tags": {},
+    "gtfs_ids": [
+      "6cb18f4c-19a8-4fce-9bd3-f4b918a13d8a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kazakhstan temir zholy",
+    "lat": 51.131257724733,
+    "lon": 71.426563795971,
+    "tags": {},
+    "gtfs_ids": [
+      "6de59510-6e48-4efa-8459-b2c0d2766247"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Shkola-litsei No. 15",
+    "lat": 51.178385,
+    "lon": 71.410055,
+    "tags": {},
+    "gtfs_ids": [
+      "731aaea7-faff-4e78-b247-ae0f180e0052"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kladbishche",
+    "lat": 51.1848232789926,
+    "lon": 71.35934473401416,
+    "tags": {},
+    "gtfs_ids": [
+      "77be7d79-bc6c-4c3d-a629-42529171f5da"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Agrotekhnicheskii universitet",
+    "lat": 51.186782,
+    "lon": 71.415691,
+    "tags": {},
+    "gtfs_ids": [
+      "782c5de3-4a10-4129-9dfb-8f19e6c95a25"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Amman",
+    "lat": 51.15066250426209,
+    "lon": 71.44443845599713,
+    "tags": {},
+    "gtfs_ids": [
+      "7e094e15-7fe2-424d-be5d-c650a7eaac09"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Aktobe",
+    "lat": 51.19803194321285,
+    "lon": 71.32954210029943,
+    "tags": {},
+    "gtfs_ids": [
+      "80f1899c-9a53-40c5-8e75-a2f6c1d74d82"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "sredniaia shkola No. 24",
+    "lat": 51.0419725292984,
+    "lon": 71.4275539102721,
+    "tags": {},
+    "gtfs_ids": [
+      "83a76452-75bb-411e-851e-9e07da361031"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "E 495",
+    "lat": 51.0748255,
+    "lon": 71.4191817,
+    "tags": {},
+    "gtfs_ids": [
+      "83e469fd-55cf-4299-8bb7-1307181ae453"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kardiokhirurgicheskaia klinika",
+    "lat": 51.12697142240576,
+    "lon": 71.41346238166176,
+    "tags": {},
+    "gtfs_ids": [
+      "870084cf-ed0b-4bbd-bea0-368b5bce2425"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "zh/m Koktal-2",
+    "lat": 51.196567631964726,
+    "lon": 71.32780341455846,
+    "tags": {},
+    "gtfs_ids": [
+      "887d0f28-1fde-47b7-88f4-2ceff1144fbf"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "per. Taitobe",
+    "lat": 51.18698587437736,
+    "lon": 71.3364987698196,
+    "tags": {},
+    "gtfs_ids": [
+      "88c76eb3-8629-453b-968f-d1aeaf15937f"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "prospekt Tlendieva",
+    "lat": 51.180032406360205,
+    "lon": 71.38172306878802,
+    "tags": {},
+    "gtfs_ids": [
+      "8be4569f-b109-4c67-aa6b-10e7e1ff0a1a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ledovyi dvorets Alau",
+    "lat": 51.100272,
+    "lon": 71.406344,
+    "tags": {},
+    "gtfs_ids": [
+      "8d5505db-a9f3-4d54-9b9e-bfd7f6e60265"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Orynbor Towers",
+    "lat": 51.09064819347975,
+    "lon": 71.4298936575537,
+    "tags": {},
+    "gtfs_ids": [
+      "8eb3db61-5a0c-420d-80cf-f2b44eb9676a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "AO Kazmunaigaz",
+    "lat": 51.134901,
+    "lon": 71.41477,
+    "tags": {},
+    "gtfs_ids": [
+      "8f799508-4fac-4e5a-8fda-b24e19000780"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa A. Moldagulovoi",
+    "lat": 51.1846227,
+    "lon": 71.4083684,
+    "tags": {},
+    "gtfs_ids": [
+      "905e2f9c-80ce-4887-a0b1-44ad9636f3a6"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Biznes tsentr Marden",
+    "lat": 51.17090726261565,
+    "lon": 71.42187490281339,
+    "tags": {},
+    "gtfs_ids": [
+      "90bbca78-c461-4348-9ec8-4911c68a3ae3"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Triumfal'naia arka Mangilik El",
+    "lat": 51.10488336936517,
+    "lon": 71.43071880091824,
+    "tags": {},
+    "gtfs_ids": [
+      "9230cadb-e2b9-4939-8b6f-8be6d9da92c8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "UDP",
+    "lat": 51.096743609202704,
+    "lon": 71.42762093877424,
+    "tags": {},
+    "gtfs_ids": [
+      "93f2e175-bd6e-43d4-8498-a0b68fa24560"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Detskii sad Balbulak",
+    "lat": 51.0445846248775,
+    "lon": 71.4271008652745,
+    "tags": {},
+    "gtfs_ids": [
+      "953d5019-5468-4971-8712-6648eda53cfe"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ardagerler",
+    "lat": 51.18474312769264,
+    "lon": 71.34276675301597,
+    "tags": {},
+    "gtfs_ids": [
+      "97f5041a-4317-40ea-ae45-e45b2bc1d54e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Budapesht",
+    "lat": 51.0783226321179,
+    "lon": 71.39844854977864,
+    "tags": {},
+    "gtfs_ids": [
+      "97fe4589-8e42-4006-b28b-a0fdb7f06199"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Zhanakonys",
+    "lat": 51.1884213368695,
+    "lon": 71.33176118744055,
+    "tags": {},
+    "gtfs_ids": [
+      "98026c8f-db24-493d-84e2-b5570fdf37d5"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Babataiuly",
+    "lat": 51.18562388563353,
+    "lon": 71.34072758121034,
+    "tags": {},
+    "gtfs_ids": [
+      "980c8049-de1b-4b86-8f4a-c32728cb33d8"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Promenad Ekspo",
+    "lat": 51.093429,
+    "lon": 71.425912,
+    "tags": {},
+    "gtfs_ids": [
+      "98d1a5a7-9d18-4401-bc23-d018dc3e432d"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Shkola-litsei No. 15",
+    "lat": 51.179925,
+    "lon": 71.410194,
+    "tags": {},
+    "gtfs_ids": [
+      "9c39bef4-78ba-41cc-af86-4e9cec3e06dd"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Akzhaik",
+    "lat": 51.1120133191131,
+    "lon": 71.4324578982736,
+    "tags": {},
+    "gtfs_ids": [
+      "9e25e9c9-dd52-4436-ac0d-af6804369476"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "sredniaia shkola No. 24",
+    "lat": 51.0417836474827,
+    "lon": 71.4285087766178,
+    "tags": {},
+    "gtfs_ids": [
+      "9ee1bf93-fd79-4c3c-a63c-dae21572b98a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Astana EKSPO",
+    "lat": 51.0846022,
+    "lon": 71.423319,
+    "tags": {},
+    "gtfs_ids": [
+      "9f845f42-9eac-4e28-8502-fc9922b6c923"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Khan Shatyr",
+    "lat": 51.13359623269936,
+    "lon": 71.40685196337553,
+    "tags": {},
+    "gtfs_ids": [
+      "a10b4fa3-0b47-4297-b29b-4d16b670ca00"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Detskii sad Balbulak",
+    "lat": 51.0445357926555,
+    "lon": 71.4286482514086,
+    "tags": {},
+    "gtfs_ids": [
+      "a4e48b15-9424-41b4-92a1-8331bbdd6863"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tsentral'nyi gospital'",
+    "lat": 51.08336752476138,
+    "lon": 71.40059277310509,
+    "tags": {},
+    "gtfs_ids": [
+      "a57b56fd-5f03-4ce5-bbef-6bcc23035352"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tsentral'nyi gospital'",
+    "lat": 51.081376,
+    "lon": 71.399555,
+    "tags": {},
+    "gtfs_ids": [
+      "a63cf9b0-b800-4694-9701-ff96efc9a37d"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sadovodcheskoe obshchestvo Aviator",
+    "lat": 51.0548706,
+    "lon": 71.4213864,
+    "tags": {},
+    "gtfs_ids": [
+      "a6d09382-75f3-4706-85e8-2a5b775af30c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Detskii sad Karlygash-2",
+    "lat": 51.07175029326442,
+    "lon": 71.4186724325044,
+    "tags": {},
+    "gtfs_ids": [
+      "a78b2c1d-ec83-4c0d-90b1-97d4136ebaae"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Keruen",
+    "lat": 51.12647514318365,
+    "lon": 71.42513542689518,
+    "tags": {},
+    "gtfs_ids": [
+      "a7c336fd-6ada-4818-a1c2-ae38f89d9d64"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Park Atatiurk",
+    "lat": 51.152195,
+    "lon": 71.437263,
+    "tags": {},
+    "gtfs_ids": [
+      "acabcf72-2a19-4891-979d-01cbd346878d"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Astana EKSPO",
+    "lat": 51.0855001,
+    "lon": 71.4230402,
+    "tags": {},
+    "gtfs_ids": [
+      "ad14c406-b8c8-49e6-8ed4-426612e851e7"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Ekspo-Plaza",
+    "lat": 51.0924187,
+    "lon": 71.4034923,
+    "tags": {},
+    "gtfs_ids": [
+      "ad8964a3-38aa-4ec7-be27-55d4fa8437de"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tsentr neirokhirurgii",
+    "lat": 51.1235329,
+    "lon": 71.413003,
+    "tags": {},
+    "gtfs_ids": [
+      "af31f517-9fae-414c-918f-82aba623f587"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Saryarka",
+    "lat": 51.139728,
+    "lon": 71.409835,
+    "tags": {},
+    "gtfs_ids": [
+      "b199b336-fc58-47ca-bf2e-34f180c3c111"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ul. Zhanadariia",
+    "lat": 51.04704157208384,
+    "lon": 71.43116576882497,
+    "tags": {},
+    "gtfs_ids": [
+      "b27e4484-f45f-490f-b75f-d3c0c5f01eba"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Shkola Zerde",
+    "lat": 51.1651186,
+    "lon": 71.4089916,
+    "tags": {},
+    "gtfs_ids": [
+      "b2feffc5-c000-486c-9e55-99734f884cb0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mechet' Al'zhan Ana",
+    "lat": 51.041761,
+    "lon": 71.437795,
+    "tags": {},
+    "gtfs_ids": [
+      "b42cb534-1201-4a4d-9b60-3774280e24fa"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sarybulak",
+    "lat": 51.17696399665304,
+    "lon": 71.39276713176517,
+    "tags": {},
+    "gtfs_ids": [
+      "b545b42e-bf63-4971-88da-0034cf57c6d3"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Gostinitsa Bakhyt",
+    "lat": 51.19395165254147,
+    "lon": 71.32608362297202,
+    "tags": {},
+    "gtfs_ids": [
+      "b92ef832-a347-4211-9b54-0edf29047e57"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sadovodcheskoe obshchestvo Aviator",
+    "lat": 51.05462397432345,
+    "lon": 71.42189604140914,
+    "tags": {},
+    "gtfs_ids": [
+      "bc1ee4e3-ab3a-4b4f-81cd-46eba42d01df"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Family Park",
+    "lat": 51.06427638090455,
+    "lon": 71.40615727523895,
+    "tags": {},
+    "gtfs_ids": [
+      "bc3e6bd7-08c3-470f-9c82-e483399884de"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Karkaralinskoe shosse",
+    "lat": 51.06813494929981,
+    "lon": 71.39996701455095,
+    "tags": {},
+    "gtfs_ids": [
+      "bf5784b8-65f2-46b7-824e-78e29e38f3d1"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Tsentr neirokhirurgii",
+    "lat": 51.122751,
+    "lon": 71.412388,
+    "tags": {},
+    "gtfs_ids": [
+      "bf58aae9-f17c-4eb5-b280-bd59ef34e7d4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Komfort taun",
+    "lat": 51.08860909112646,
+    "lon": 71.44868975486412,
+    "tags": {},
+    "gtfs_ids": [
+      "bffe93af-d0f5-4216-84e9-55893d7beefd"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Alibi Zhangel'dina",
+    "lat": 51.1729313,
+    "lon": 71.4195984,
+    "tags": {},
+    "gtfs_ids": [
+      "c07d5a37-7945-403c-83a0-a6a84c87944c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "E 319",
+    "lat": 51.0660456,
+    "lon": 71.4160309,
+    "tags": {},
+    "gtfs_ids": [
+      "c3484f80-419a-4ea3-9355-c33104abab7e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Dvorets edinoborstv im. Zhaksylyka Ushkempirova",
+    "lat": 51.1137412,
+    "lon": 71.4108454,
+    "tags": {},
+    "gtfs_ids": [
+      "c885bb33-9730-4071-9429-8ad8e56f4a7e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Keleshek",
+    "lat": 51.19078530654348,
+    "lon": 71.33363293842872,
+    "tags": {},
+    "gtfs_ids": [
+      "c901486e-6e2a-4bc5-a56b-ebe54673e704"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Kardiokhirurgicheskaia klinika",
+    "lat": 51.127682,
+    "lon": 71.413143,
+    "tags": {},
+    "gtfs_ids": [
+      "cac60a34-335b-43a0-aeb1-8d57a154facc"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "K'artaly",
+    "lat": 51.18221342546384,
+    "lon": 71.37000604315571,
+    "tags": {},
+    "gtfs_ids": [
+      "cb356626-5f8b-4acd-82b4-d01a06d43b3f"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Ekspo Siti",
+    "lat": 51.082013,
+    "lon": 71.421862,
+    "tags": {},
+    "gtfs_ids": [
+      "cb455c22-433c-415c-9dc6-4b38f567d97a"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Dvorets edinoborstv",
+    "lat": 51.112486,
+    "lon": 71.410926,
+    "tags": {},
+    "gtfs_ids": [
+      "cb981230-114b-4e6e-97a2-9234afcc4418"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Nazarbaev universitet",
+    "lat": 51.08988094333154,
+    "lon": 71.40294098607305,
+    "tags": {},
+    "gtfs_ids": [
+      "ccd5e97f-c483-4209-96d7-8d64466fdc26"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Family Park",
+    "lat": 51.063899,
+    "lon": 71.406409,
+    "tags": {},
+    "gtfs_ids": [
+      "ccf9d9ab-2a88-4d8f-aa7d-4d3b7eaf7a50"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Prospekt Saryarka",
+    "lat": 51.173858,
+    "lon": 71.407056,
+    "tags": {},
+    "gtfs_ids": [
+      "ce8054ef-6b41-439f-b763-a770a69cf95d"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Teatr Astana Opera",
+    "lat": 51.13572746333679,
+    "lon": 71.40775769677329,
+    "tags": {},
+    "gtfs_ids": [
+      "d124d339-88ed-42e4-8593-838cbad37811"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Bol'nitsa Meditsinskogo tsentra UDP RK",
+    "lat": 51.0780728,
+    "lon": 71.4203477,
+    "tags": {},
+    "gtfs_ids": [
+      "d14ef85c-0e16-4e07-ba92-b1eef3a17499"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Zhumabeka Tashenova",
+    "lat": 51.152045,
+    "lon": 71.443195,
+    "tags": {},
+    "gtfs_ids": [
+      "d32c99c4-e064-4c62-a74e-fdfd54f9341c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Orynbor Towers",
+    "lat": 51.09019476242609,
+    "lon": 71.4328729145832,
+    "tags": {},
+    "gtfs_ids": [
+      "d341a88a-9c13-4e35-9a89-10090402b94c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Sportivnyi kompleks ABYROY",
+    "lat": 51.1686558,
+    "lon": 71.407836,
+    "tags": {},
+    "gtfs_ids": [
+      "d46249b9-2884-4b23-be59-9e5f54f49c89"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Biznes tsentr Asyl-Tau",
+    "lat": 51.11906056660345,
+    "lon": 71.41206247980513,
+    "tags": {},
+    "gtfs_ids": [
+      "d59b3173-0b00-4498-8684-00131374163c"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Amangel'dy Imanova",
+    "lat": 51.161684,
+    "lon": 71.428652,
+    "tags": {},
+    "gtfs_ids": [
+      "d78e223c-3a67-42db-91eb-12858d261cb0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Il'iasa Esenberlina",
+    "lat": 51.189515,
+    "lon": 71.412379,
+    "tags": {},
+    "gtfs_ids": [
+      "d81e04ca-9213-4363-b2d1-34580954fc9e"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Korgalzhinskaia trassa",
+    "lat": 51.148229,
+    "lon": 71.412726,
+    "tags": {},
+    "gtfs_ids": [
+      "da885f37-5bc2-43d5-b95c-ef82447df886"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ul. Bukhar zhyrau",
+    "lat": 51.098826,
+    "lon": 71.4277518,
+    "tags": {},
+    "gtfs_ids": [
+      "daee5445-ae51-4bce-89ef-291e7c3b9ae0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Bol'nitsa Meditsinskogo tsentra UDP RK",
+    "lat": 51.0760551,
+    "lon": 71.4202701,
+    "tags": {},
+    "gtfs_ids": [
+      "ddc8cb38-d19d-43a5-8f21-eb761485ed15"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Titova",
+    "lat": 51.183248582162506,
+    "lon": 71.34847676618949,
+    "tags": {},
+    "gtfs_ids": [
+      "ddfa4130-2d84-47ca-9601-6141a4e1a792"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Meditsinskii universitet Astana",
+    "lat": 51.18281833714914,
+    "lon": 71.4167922032089,
+    "tags": {},
+    "gtfs_ids": [
+      "de17c14c-a026-47c4-9c55-d1729bf48ce6"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa A. Moldagulovoi",
+    "lat": 51.185903,
+    "lon": 71.408547,
+    "tags": {},
+    "gtfs_ids": [
+      "df129513-5202-4119-963f-1090546d183d"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Amman",
+    "lat": 51.14913804772117,
+    "lon": 71.44483251441223,
+    "tags": {},
+    "gtfs_ids": [
+      "e0b23f68-0123-40e5-ac0d-71b4af6b7274"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Amangel'dy Imanova",
+    "lat": 51.163984,
+    "lon": 71.427507,
+    "tags": {},
+    "gtfs_ids": [
+      "e0edfbd5-454b-49aa-bd3f-9f55d679c2a4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Medeu",
+    "lat": 51.18470444749203,
+    "lon": 71.36281917819714,
+    "tags": {},
+    "gtfs_ids": [
+      "e26b277d-07e2-4a9a-8ac5-a8268eef6ddd"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TD Daulet",
+    "lat": 51.1928527,
+    "lon": 71.4079089,
+    "tags": {},
+    "gtfs_ids": [
+      "e6719284-431b-4c10-bb30-4f2e99de2f98"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Orynbor Towers",
+    "lat": 51.0898113,
+    "lon": 71.4245711,
+    "tags": {},
+    "gtfs_ids": [
+      "e80c5cc3-6d22-4bb2-8697-2c901ad33137"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Triumfal'naia arka Mangilik El",
+    "lat": 51.1038871,
+    "lon": 71.4295126,
+    "tags": {},
+    "gtfs_ids": [
+      "e9a3808a-45e7-4f39-9379-763d701979e7"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa  Dinmukhameda Kunaeva",
+    "lat": 51.132835188837,
+    "lon": 71.41794819554,
+    "tags": {},
+    "gtfs_ids": [
+      "e9dc4756-2990-4fa3-a0b8-a04d6312f913"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mechet' Al'zhan Ana",
+    "lat": 51.041884,
+    "lon": 71.438528,
+    "tags": {},
+    "gtfs_ids": [
+      "eb69b78a-a836-40b3-8ca7-a7b8aaed7ec6"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Dom Ministerstv",
+    "lat": 51.1287312958661,
+    "lon": 71.4389091285894,
+    "tags": {},
+    "gtfs_ids": [
+      "ec4e66cb-d30e-4e6a-9539-3051048f84da"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Biznes tsentr Asyl-Tau",
+    "lat": 51.117798,
+    "lon": 71.411521,
+    "tags": {},
+    "gtfs_ids": [
+      "edca5c3c-a4bf-4aad-b25a-fa60e056cb86"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Karakat",
+    "lat": 51.089233245941,
+    "lon": 71.43961173818919,
+    "tags": {},
+    "gtfs_ids": [
+      "ee853e2c-e631-45a9-8f2d-be48c4c9da88"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Ekspo Siti",
+    "lat": 51.080955,
+    "lon": 71.421862,
+    "tags": {},
+    "gtfs_ids": [
+      "ef859046-109a-4362-9339-ca295f511796"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "NK Kazmunaigaz",
+    "lat": 51.13435060403942,
+    "lon": 71.41487597180254,
+    "tags": {},
+    "gtfs_ids": [
+      "f10f105d-68d2-4a07-a64c-3570d19da0ff"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Finansovyi tsentr",
+    "lat": 51.118202,
+    "lon": 71.435278,
+    "tags": {},
+    "gtfs_ids": [
+      "f3a7aefe-7c9f-4391-8091-7df545584ac0"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "TRTs Khan Shatyr",
+    "lat": 51.1311545,
+    "lon": 71.4065528,
+    "tags": {},
+    "gtfs_ids": [
+      "f4570762-f53c-463c-89a4-87f4e916d5a3"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ulitsa Karasu",
+    "lat": 51.200426687006505,
+    "lon": 71.33076771758407,
+    "tags": {},
+    "gtfs_ids": [
+      "f4d06a9d-8db0-4730-b026-249312e0dbe5"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "ZhK Akzhaik",
+    "lat": 51.114246,
+    "lon": 71.433985,
+    "tags": {},
+    "gtfs_ids": [
+      "f5fa8abd-4d11-4331-9424-0c9638a34de4"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Agrotekhnicheskii universitet",
+    "lat": 51.18741276666992,
+    "lon": 71.41535943203712,
+    "tags": {},
+    "gtfs_ids": [
+      "f61c6540-7d01-4563-a8a6-ef667d64ea20"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Park Atatiurk",
+    "lat": 51.1519050100361,
+    "lon": 71.43877488322552,
+    "tags": {},
+    "gtfs_ids": [
+      "f86c97bc-80c0-4a7e-bbc0-4dbff06148ab"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "E 319",
+    "lat": 51.0672733,
+    "lon": 71.4171086,
+    "tags": {},
+    "gtfs_ids": [
+      "fc4e269d-3cc0-46fd-87b7-4ae1ac9e2361"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulytau",
+    "lat": 51.19553087377446,
+    "lon": 71.32675914734659,
+    "tags": {},
+    "gtfs_ids": [
+      "fe63a582-29bc-419b-8a03-5c1757b45e87"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Ulitsa Kenesary",
+    "lat": 51.161876,
+    "lon": 71.409894,
+    "tags": {},
+    "gtfs_ids": [
+      "fe69c59f-7223-46c9-baf4-bc76f8e829ab"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Teatr Zhastar",
+    "lat": 51.190469,
+    "lon": 71.406632,
+    "tags": {},
+    "gtfs_ids": [
+      "fe76afde-d448-4bbd-8aa5-7b753031d460"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "Mu'sa dukeni",
+    "lat": 51.20019995904532,
+    "lon": 71.33617625429603,
+    "tags": {},
+    "gtfs_ids": [
+      "fe9d6168-9e62-41bb-be9e-15853bdcfdfd"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  },
+  {
+    "osm_id": null,
+    "name": "K'azak'kontsert im. Rozy Baglanovoi",
+    "lat": 51.1258281,
+    "lon": 71.4381327,
+    "tags": {},
+    "gtfs_ids": [
+      "ffe7ac12-5298-4f2b-83e5-894509a544ed"
+    ],
+    "sources": [
+      {
+        "source": "zenodo_gtfs",
+        "licence": "CC-BY-4.0",
+        "fetched_at": "2026-10-17T17:30:13+05:00"
+      }
+    ]
+  }
+]

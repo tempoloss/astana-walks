@@ -1,0 +1,318 @@
+{
+ "domain": "im.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:30:53+00:00",
+ "pages": [
+  "https://im.kz/sitemap.xml",
+  "https://im.kz/restaurants/mamyr",
+  "https://im.kz/restaurants/kabanbaj-batyra",
+  "https://im.kz/restaurants/mega-alma-ata",
+  "https://im.kz/restaurants/abaya",
+  "https://im.kz/restaurants/buhar-zhyrau",
+  "https://im.kz/restaurants/dinamo",
+  "https://im.kz/restaurants/bajkonur",
+  "https://im.kz/restaurants/atakent",
+  "https://im.kz/restaurants/aksaj",
+  "https://im.kz/restaurants/kenesary",
+  "https://im.kz/restaurants/evraziya",
+  "https://im.kz/restaurants/adk",
+  "https://im.kz/restaurants/keruen",
+  "https://im.kz/restaurants/sab",
+  "https://im.kz/restaurants/trassa-m36",
+  "https://im.kz/restaurants/mega-silk-way",
+  "https://im.kz/restaurants/alatau",
+  "https://im.kz/restaurants/park-pervogo-prezidenta",
+  "https://im.kz/restaurants/45-kvartal",
+  "https://im.kz/restaurants/satpaeva",
+  "https://im.kz/restaurants/mega-park",
+  "https://im.kz/restaurants/imanova",
+  "https://im.kz/restaurants/park-seifullina",
+  "https://im.kz/restaurants/Dostykplaza"
+ ],
+ "branches": [
+  {
+   "name": "Астана Кабанбай батыра",
+   "address": "г. Астана, пр. Кабанбай батыра, 26",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (707) 834 95 26",
+   "opening_hours_raw": "07:00 — 01:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/kabanbaj-batyra",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/kabanbaj-batyra",
+     "snippet": "г. Астана, пр. Кабанбай батыра, 26 +7",
+     "fetched_at": "2026-10-17T10:23:51+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://im.kz/restaurants/kabanbaj-batyra",
+     "snippet": "+7 (707) 834 95 26",
+     "fetched_at": "2026-10-17T10:23:51+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/kabanbaj-batyra",
+     "snippet": "07:00 — 01:00",
+     "fetched_at": "2026-10-17T10:23:51+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/kabanbaj-batyra",
+     "snippet": "<title>Астана Кабанбай батыра",
+     "fetched_at": "2026-10-17T10:23:51+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана Кенесары",
+   "address": "г. Астана, пр. Сарыарка, 9 \"Д\"",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (707) 804-03-15",
+   "opening_hours_raw": "07:00 — 23:45",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/kenesary",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/kenesary",
+     "snippet": "г. Астана, пр. Сарыарка, 9 \"Д\" +7",
+     "fetched_at": "2026-10-17T10:30:08+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://im.kz/restaurants/kenesary",
+     "snippet": "+7 (707) 804-03-15",
+     "fetched_at": "2026-10-17T10:30:08+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/kenesary",
+     "snippet": "07:00 — 23:45",
+     "fetched_at": "2026-10-17T10:30:08+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/kenesary",
+     "snippet": "<title>Астана Кенесары",
+     "fetched_at": "2026-10-17T10:30:08+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана Евразия",
+   "address": "г. Астана, Петрова 24Г",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (707) 927-37-45",
+   "opening_hours_raw": "07:00 — 00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/evraziya",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/evraziya",
+     "snippet": "г. Астана, Петрова 24Г +7",
+     "fetched_at": "2026-10-17T10:30:09+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://im.kz/restaurants/evraziya",
+     "snippet": "+7 (707) 927-37-45",
+     "fetched_at": "2026-10-17T10:30:09+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/evraziya",
+     "snippet": "07:00 — 00:00",
+     "fetched_at": "2026-10-17T10:30:09+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/evraziya",
+     "snippet": "<title>Астана Евразия",
+     "fetched_at": "2026-10-17T10:30:09+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана Керуен",
+   "address": "г. Астана, ул. Достык 9, ТРЦ \"Керуен\"",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "10:00 — 00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/keruen",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/keruen",
+     "snippet": "г. Астана, ул. Достык 9, ТРЦ \"Керуен\" +7",
+     "fetched_at": "2026-10-17T10:30:11+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/keruen",
+     "snippet": "10:00 — 00:00",
+     "fetched_at": "2026-10-17T10:30:11+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/keruen",
+     "snippet": "<title>Астана Керуен",
+     "fetched_at": "2026-10-17T10:30:11+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана САБ",
+   "address": "г. Астана, пр., Богенбай батыра 49, уг. ул. Ауезова",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "07:00 — 00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/sab",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/sab",
+     "snippet": "г. Астана, пр., Богенбай батыра 49, уг. ул. Ауезова +7",
+     "fetched_at": "2026-10-17T10:30:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/sab",
+     "snippet": "07:00 — 00:00",
+     "fetched_at": "2026-10-17T10:30:12+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/sab",
+     "snippet": "<title>Астана САБ",
+     "fetched_at": "2026-10-17T10:30:12+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана Трасса M36",
+   "address": "г. Астана, Район «Байқоңыр», ул. Ɵндiрiс 96",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (717) 264-38-75",
+   "opening_hours_raw": "08:00 — 23:45",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/trassa-m36",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/trassa-m36",
+     "snippet": "г. Астана, Район «Байқоңыр», ул. Ɵндiрiс 96 +7",
+     "fetched_at": "2026-10-17T10:30:13+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://im.kz/restaurants/trassa-m36",
+     "snippet": "+7 (717) 264-38-75",
+     "fetched_at": "2026-10-17T10:30:13+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/trassa-m36",
+     "snippet": "08:00 — 23:45",
+     "fetched_at": "2026-10-17T10:30:13+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/trassa-m36",
+     "snippet": "<title>Астана Трасса M36",
+     "fetched_at": "2026-10-17T10:30:13+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана Mega Silk Way",
+   "address": "г. Астана, Кабанбай Батыра 62, ТРЦ \"Mega Silk Way\", 2-этаж, зона фудкорта.",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (747) 203-32-20",
+   "opening_hours_raw": "10:00 — 00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://im.kz/restaurants/mega-silk-way",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://im.kz/restaurants/mega-silk-way",
+     "snippet": "г. Астана, Кабанбай Батыра 62, ТРЦ \"Mega Silk Way\", 2-этаж, зона фудкорта. +7",
+     "fetched_at": "2026-10-17T10:30:14+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://im.kz/restaurants/mega-silk-way",
+     "snippet": "+7 (747) 203-32-20",
+     "fetched_at": "2026-10-17T10:30:14+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://im.kz/restaurants/mega-silk-way",
+     "snippet": "10:00 — 00:00",
+     "fetched_at": "2026-10-17T10:30:14+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://im.kz/restaurants/mega-silk-way",
+     "snippet": "<title>Астана Mega Silk Way",
+     "fetched_at": "2026-10-17T10:30:14+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Branch list = the sitemap's /restaurants/<slug> pages (own SSR); pages with an Almaty address are skipped. Hours lines ('07:00 — 01:00') name no days -> raw only (needs_days); a second line on the same card is the technical break (e.g. '04:00 — 05:00') and is not stored. Coordinates are rendered by a JS map only, no lat/lng in HTML.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

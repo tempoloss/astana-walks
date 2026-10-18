@@ -1,0 +1,92 @@
+{
+ "domain": "sushiman.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:35:53+00:00",
+ "pages": [
+  "https://sushiman.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Sushiman (Астана, улица Шыганак, 1/1)",
+   "address": "Астана, улица Шыганак, 1/1",
+   "lat": 51.160235,
+   "lon": 71.400452,
+   "phone": null,
+   "opening_hours_raw": "ежедневно 10:00-22:59",
+   "opening_hours_osm": "Mo-Su 10:00-22:59",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://sushiman.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"name\":\"Астана, улица Шыганак, 1/1\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"name\":\"Астана, улица Шыганак, 1/1\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"lat\":\"51.160235\",\"lng\":\"71.400452\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"days\":[[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"]]",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Sushiman (Астана, Кабанбай батыра, 58б)",
+   "address": "Астана, Кабанбай батыра, 58б",
+   "lat": 51.095727,
+   "lon": 71.406103,
+   "phone": null,
+   "opening_hours_raw": "ежедневно 10:00-22:59",
+   "opening_hours_osm": "Mo-Su 10:00-22:59",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://sushiman.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"name\":\"Астана, Кабанбай батыра, 58б\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"name\":\"Астана, Кабанбай батыра, 58б\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"lat\":\"51.095727\",\"lng\":\"71.406103\"",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://sushiman.kz/",
+     "snippet": "\"days\":[[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"],[\"10:00\",\"22:59\"]]",
+     "fetched_at": "2026-10-17T09:35:53+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "Homepage serves the Астана city (title «Sushiman Астана»); both points share the weekly 10:00-22:59 `days` array. Phones absent from the payload.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

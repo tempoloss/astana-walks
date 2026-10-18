@@ -1,0 +1,151 @@
+{
+  "dataset": "poi",
+  "mode": "llm",
+  "chain": [
+    "gemini:gemini-3.5-flash",
+    "gemini:gemini-flash-latest",
+    "gemini:gemini-2.5-flash",
+    "gemini:gemma-4-26b-a4b-it",
+    "gemini:gemma-4-31b-it"
+  ],
+  "cases": 5,
+  "cases_with_recs": 5,
+  "recs_total": 14,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 85.7,
+  "case_all_ok_rate": 80.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 100.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 80.0,
+  "top1_open_rate": 80.0,
+  "unknown_hours_rec_share": 35.7,
+  "non_osm_rec_share": 0.0,
+  "avg_walk_min": 3.8,
+  "wifi_socket_in_data_share": 66.7,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 22916.0,
+  "latency_ms_p90": 36380.0,
+  "generation_ms_median": 16771.0,
+  "generation_ms_p90": 30100.0,
+  "model_link": {
+    "template": 4,
+    "gemini:gemma-4-26b-a4b-it": 1
+  },
+  "llm_chain_failed": 4,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "category_forbidden": 1,
+    "category_not_allowed": 1
+  },
+  "padded_rec_share": 14.3,
+  "expanded_rec_share": 0.0,
+  "backfill_rec_share": 14.3,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 20.0,
+  "padding_derived_recs": 14,
+  "padding_missing_fields": [
+    "recs[].padding"
+  ],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [
+    {
+      "case_id": "tz1",
+      "model_link": "template",
+      "by_ai": false,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-3.5-flash-lite",
+      "n_recs": 3,
+      "top1": "Mega Silk Way (mall)",
+      "open_claim_in_text": false,
+      "category_violation": true,
+      "honest_ok": true,
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ],
+      "total_ms": 36380,
+      "generation_ms": 30100
+    },
+    {
+      "case_id": "tz2",
+      "model_link": "template",
+      "by_ai": false,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-3.5-flash-lite",
+      "n_recs": 3,
+      "top1": "Фаттуш (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 22602,
+      "generation_ms": 16771
+    },
+    {
+      "case_id": "tz3",
+      "model_link": "gemini:gemma-4-26b-a4b-it",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-3.5-flash-lite",
+      "n_recs": 2,
+      "top1": "Детская площадка (kids_playground)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 14004,
+      "generation_ms": 8374
+    },
+    {
+      "case_id": "tz4",
+      "model_link": "template",
+      "by_ai": false,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-3.5-flash-lite",
+      "n_recs": 3,
+      "top1": "Starbucks (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 22916,
+      "generation_ms": 16651
+    },
+    {
+      "case_id": "tz5",
+      "model_link": "template",
+      "by_ai": false,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-3.5-flash-lite",
+      "n_recs": 3,
+      "top1": "CrepeCafe (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 32904,
+      "generation_ms": 27883
+    }
+  ],
+  "failing_cases": [
+    {
+      "case_id": "tz1",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "main",
+  "label": "llm-gemini-only",
+  "header": {
+    "label": "llm-gemini-only",
+    "legacy": true
+  }
+}

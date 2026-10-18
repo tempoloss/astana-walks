@@ -1,0 +1,54 @@
+{
+ "domain": "grammy.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:27:54+00:00",
+ "pages": [
+  "http://grammy.kz"
+ ],
+ "branches": [
+  {
+   "name": "Grammy",
+   "address": "Астана, проспект Туран, 30 (здание Fitness Palace)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 279-000 +7 (701) 1000 703",
+   "opening_hours_raw": "с 18:00 до 06:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "http://grammy.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://grammy.kz",
+     "snippet": "Grammy — 2017",
+     "fetched_at": "2026-10-17T09:27:54+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://grammy.kz",
+     "snippet": "Адрес Астана, проспект Туран, 30 (здание Fitness Palace) РЕЖИМ РАБОТЫ: с 18:00 до 06:00 Контакты +7 (7172) 279-000 +7 (701) 1000 703",
+     "fetched_at": "2026-10-17T09:27:54+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://grammy.kz",
+     "snippet": "Адрес Астана, проспект Туран, 30 (здание Fitness Palace) РЕЖИМ РАБОТЫ: с 18:00 до 06:00 Контакты +7 (7172) 279-000 +7 (701) 1000 703",
+     "fetched_at": "2026-10-17T09:27:54+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://grammy.kz",
+     "snippet": "РЕЖИМ РАБОТЫ: с 18:00 до 06:00",
+     "fetched_at": "2026-10-17T09:27:54+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The page states 'РЕЖИМ РАБОТЫ: с 18:00 до 06:00' without naming days; the schedule stays in opening_hours_raw, hours_flags marks it 'needs_days' (no day-less OSM conversion). No branch list — one venue only.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

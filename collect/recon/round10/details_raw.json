@@ -1,0 +1,394 @@
+[
+ {
+  "slug": "akusticheskiy-koncert-gruppy-sary",
+  "url": "https://sxodim.com/astana/event/akusticheskiy-koncert-gruppy-sary",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Акустический концерт группы Sary",
+    "startDate": "2026-10-18T19:00:00+05:00",
+    "venue": "Акустический концерт группы Sary",
+    "raw": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u0410\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0433\\u0440\\u0443\\u043f\\u043f\\u044b Sary\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/akusticheskiy-koncert-gruppy-sary\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/10\\/05\\/optimized\\/10b2788820a83421f0cb266ead46b203_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"18 \\u043e\\u043a\\u0442\\u044f\\u0431\\u0440\\u044f \\u0433\\u0440\\u0443\\u043f\\u043f\\u0430 sary \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u043d\\u0430 \\u0430\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435. \\u0410\\u0432\\u0442\\u043e\\u0440\\u0441\\u043a\\u0438\\u0439 Q-Rock \\u043d\\u0430 \\u043a\\u0430\\u0437\\u0430\\u0445\\u0441\\u043a\\u043e\\u043c \\u044f\\u0437\\u044b\\u043a\\u0435 \\u043f\\u0440\\u043e\\u0437\\u0432\\u0443\\u0447\\u0438\\u0442 \\u0432 \\u043a\\u0430\\u043c\\u0435\\u0440\\u043d\\u043e\\u043c \\u0444\\u043e\\u0440\\u043c\\u0430\\u0442\\u0435 \\u2014 \\u0441 \\u043e\\u0441\\u043e\\u0431\\u044b\\u043c \\u0432\\u043d\\u0438\\u043c\\u0430\\u043d\\u0438\\u0435\\u043c \\u043a \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c, \\u043c\\u0435\\u043b\\u043e\\u0434\\u0438\\u044f\\u043c \\u0438 \\u044d\\u043c\\u043e\\u0446\\u0438\\u044f\\u043c.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u0410\\u043a\\u0443\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439 \\u043a\\u043e\\u043d\\u0446\\u0435\\u0440\\u0442 \\u0433\\u0440\\u0443\\u043f\\u043f\\u044b Sary\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/akusticheskiy-koncert-gruppy-sary\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"Harat\\u2019s \\u0410\\u049b\\u0431\\u04b1\\u043b\\u0430\\u049b, \\u0422\\u043e\\u043a\\u043f\\u0430\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448., 10\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 7000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-10-05T12:32:40+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/kontserty\\/akusticheskiy-koncert-gruppy-sary\\/tickets\"\n    },\n    \"startDate\": \"2026-10-18T19:00:00+05:00\"\n}"
+   }
+  ]
+ },
+ {
+  "slug": "chernyy-stendap-stand-up-bar-pozitiv",
+  "url": "https://sxodim.com/astana/event/chernyy-stendap-stand-up-bar-pozitiv",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Проверочный стендап «Черно-белые шутки» (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-16",
+    "venue": "Проверочный стендап «Черно-белые шутки» (Stand Up Bar «Pozitiv»)",
+    "raw": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f \\u00ab\\u0427\\u0435\\u0440\\u043d\\u043e-\\u0431\\u0435\\u043b\\u044b\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438\\u00bb (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/chernyy-stendap-stand-up-bar-pozitiv\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/09\\/07\\/optimized\\/5a9b6f67780b33c9d7b6f9c0493e088a_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"\\u0413\\u043e\\u0442\\u043e\\u0432\\u044b \\u0443\\u0441\\u043b\\u044b\\u0448\\u0430\\u0442\\u044c \\u0441\\u0432\\u0435\\u0436\\u0438\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438, \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u0435 \\u0435\\u0449\\u0451 \\u043d\\u0435 \\u0437\\u0432\\u0443\\u0447\\u0430\\u043b\\u0438 \\u0441\\u043e \\u0441\\u0446\\u0435\\u043d\\u044b? \\u0422\\u043e\\u0433\\u0434\\u0430 \\u0432\\u0430\\u043c \\u043d\\u0430 \\u043f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f! \\u041a\\u043e\\u043c\\u0438\\u043a\\u0438 \\u0442\\u0435\\u0441\\u0442\\u0438\\u0440\\u0443\\u044e\\u0442 \\u043d\\u043e\\u0432\\u044b\\u0439 \\u043c\\u0430\\u0442\\u0435\\u0440\\u0438\\u0430\\u043b \\u2013 \\u0447\\u0442\\u043e-\\u0442\\u043e \\u0432\\u0437\\u043b\\u0435\\u0442\\u0438\\u0442, \\u0447\\u0442\\u043e-\\u0442\\u043e \\u043d\\u0435\\u0442, \\u043d\\u043e \\u0442\\u043e\\u0447\\u043d\\u043e \\u0431\\u0443\\u0434\\u0435\\u0442 \\u0441\\u043c\\u0435\\u0448\\u043d\\u043e, \\u0436\\u0438\\u0432\\u043e \\u0438 \\u043d\\u0435\\u043f\\u0440\\u0435\\u0434\\u0441\\u043a\\u0430\\u0437\\u0443\\u0435\\u043c\\u043e.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043e\\u0447\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0435\\u043d\\u0434\\u0430\\u043f \\u00ab\\u0427\\u0435\\u0440\\u043d\\u043e-\\u0431\\u0435\\u043b\\u044b\\u0435 \\u0448\\u0443\\u0442\\u043a\\u0438\\u00bb (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/chernyy-stendap-stand-up-bar-pozitiv\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0411\\u0430\\u0440 Pozitiv, \\u0443\\u043b. \\u0413\\u0430\\u0431\\u0434\\u0443\\u043b\\u043b\\u0438\\u043d\\u0430, 18\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 2000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2025-03-31T18:22:29+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/meropriyatiya-v-stendap-bare-pozitiv\\/chernyy-stendap-stand-up-bar-pozitiv\\/tickets\"\n    },\n    \"startDate\": \"2026-10-16\",\n    \"endDate\": \"2026-10-28\"\n}"
+   }
+  ]
+ },
+ {
+  "slug": "creative-talk-uanysh-beysek-kreativti-prodyuserleu",
+  "url": "https://sxodim.com/astana/event/creative-talk-uanysh-beysek-kreativti-prodyuserleu",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+    "startDate": "2026-10-19T19:00:00+05:00",
+    "venue": "Creative Talk – Қуаныш Бейсек «Креативті продюсерлеу»",
+    "raw": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"Creative Talk \\u2013 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/10\\/16\\/optimized\\/e842c1e0ec8c6f18a6870e5cd452a2e5_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"19 \\u049b\\u0430\\u0437\\u0430\\u043d \\u043a\\u04af\\u043d\\u0456 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\\u0434\\u0430\\u0493\\u044b \\u04e8nergy Creative Hub-\\u0442\\u0430 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a\\u043f\\u0435\\u043d \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb \\u0442\\u0430\\u049b\\u044b\\u0440\\u044b\\u0431\\u044b\\u043d\\u0434\\u0430 \\u0448\\u044b\\u0493\\u0430\\u0440\\u043c\\u0430\\u0448\\u044b\\u043b\\u044b\\u049b \\u043a\\u0435\\u0437\\u0434\\u0435\\u0441\\u0443 \\u04e9\\u0442\\u0435\\u0434\\u0456.\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"Creative Talk \\u2013 \\u049a\\u0443\\u0430\\u043d\\u044b\\u0448 \\u0411\\u0435\\u0439\\u0441\\u0435\\u043a \\u00ab\\u041a\\u0440\\u0435\\u0430\\u0442\\u0438\\u0432\\u0442\\u0456 \\u043f\\u0440\\u043e\\u0434\\u044e\\u0441\\u0435\\u0440\\u043b\\u0435\\u0443\\u00bb\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u04e8nergy Creative Hub, \\u049a\\u0430\\u0431\\u0430\\u043d\\u0431\\u0430\\u0439 \\u0431\\u0430\\u0442\\u044b\\u0440 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 53, 32-\\u0431\\u043b\\u043e\\u043a\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 10000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-10-16T15:31:01+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/obrazovanie\\/creative-talk-uanysh-beysek-kreativti-prodyuserleu\\/tickets\"\n    },\n    \"startDate\": \"2026-10-19T19:00:00+05:00\",\n    \"endDate\": \"2026-10-19T20:30:00+05:00\"\n}"
+   }
+  ]
+ },
+ {
+  "slug": "improvizaciya-s-zalom-stand-up-bar-pozitiv",
+  "url": "https://sxodim.com/astana/event/improvizaciya-s-zalom-stand-up-bar-pozitiv",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Импровизация с залом (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-20",
+    "venue": "Импровизация с залом (Stand Up Bar «Pozitiv»)",
+    "raw": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u0418\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/09\\/24\\/optimized\\/a9869df7a3f2db2a71768b226cae77b6_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"Standup\\u00a0bar\\u00a0Pozitiv\\u00a0\\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043d\\u0430 \\u0438\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044e \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c, \\u0433\\u0434\\u0435 \\u043a\\u043e\\u043c\\u0435\\u0434\\u0438\\u044f \\u0434\\u0435\\u043b\\u0430\\u0435\\u0442\\u0441\\u044f \\u0432 \\u043c\\u043e\\u043c\\u0435\\u043d\\u0442\\u0435. \\u0418\\u0441\\u043a\\u0440\\u043e\\u043c\\u0435\\u0442\\u043d\\u044b\\u0435 \\u043a\\u043e\\u043c\\u0438\\u043a\\u0438 \\u043f\\u043e\\u0434\\u043d\\u0438\\u043c\\u0443\\u0442 \\u0432\\u0430\\u043c \\u043d\\u0430\\u0441\\u0442\\u0440\\u043e\\u0435\\u043d\\u0438\\u0435 \\u0438\\u00a0\\u043f\\u043e\\u0434\\u0430\\u0440\\u044f\\u0442 \\u043c\\u0430\\u0441\\u0441\\u0443 \\u0440\\u0430\\u0434\\u043e\\u0441\\u0442\\u043d\\u044b\\u0445 \\u044d\\u043c\\u043e\\u0446\\u0438\\u0439.\\u00a0\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u0418\\u043c\\u043f\\u0440\\u043e\\u0432\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0441 \\u0437\\u0430\\u043b\\u043e\\u043c (Stand Up Bar \\u00abPozitiv\\u00bb)\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0411\\u0430\\u0440 Pozitiv, \\u0443\\u043b. \\u0413\\u0430\\u0431\\u0434\\u0443\\u043b\\u043b\\u0438\\u043d\\u0430, 18\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 3000,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2025-11-04T13:43:17+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/meropriyatiya-v-stendap-bare-pozitiv\\/improvizaciya-s-zalom-stand-up-bar-pozitiv\\/tickets\"\n    },\n    \"startDate\": \"2026-10-20\",\n    \"endDate\": \"2026-10-27\"\n}"
+   }
+  ]
+ },
+ {
+  "slug": "kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane",
+  "url": "https://sxodim.com/astana/event/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Киноужин с фильмом «Гарри Поттер и Философский камень» от VkusKino в Астане",
+    "startDate": "2026-10-15",
+    "venue": "Киноужин с фильмом «Гарри Поттер и Философский камень» от VkusKino в Астане",
+    "raw": "{\n    \"@context\": \"http:\\/\\/schema.org\",\n    \"@type\": \"Event\",\n    \"name\": \"\\u041a\\u0438\\u043d\\u043e\\u0443\\u0436\\u0438\\u043d \\u0441 \\u0444\\u0438\\u043b\\u044c\\u043c\\u043e\\u043c \\u00ab\\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440 \\u0438 \\u0424\\u0438\\u043b\\u043e\\u0441\\u043e\\u0444\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0430\\u043c\\u0435\\u043d\\u044c\\u00bb \\u043e\\u0442 VkusKino \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435\",\n    \"eventAttendanceMode\": \"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\n    \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\",\n    \"eventStatus\": \"https:\\/\\/schema.org\\/EventScheduled\",\n    \"image\": [\n        \"https:\\/\\/sxodim.com\\/uploads\\/posts\\/2026\\/04\\/16\\/optimized\\/a29e5bfe5616269132ce2f9d6f1bd644_1522x570-q-85.jpg\"\n    ],\n    \"description\": \"vkuskino \\u043f\\u0440\\u0438\\u0432\\u043e\\u0437\\u0438\\u0442 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440\\u043e\\u043c\\u0430\\u043d\\u0438\\u044e \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0443, \\u0433\\u0434\\u0435 \\u043c\\u0438\\u0440 \\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440\\u0430 \\u043e\\u0436\\u0438\\u0432\\u0430\\u0435\\u0442 \\u043d\\u0435 \\u0442\\u043e\\u043b\\u044c\\u043a\\u043e \\u043d\\u0430 \\u044d\\u043a\\u0440\\u0430\\u043d\\u0435, \\u043d\\u043e \\u0438 \\u043f\\u0440\\u044f\\u043c\\u043e \\u0443 \\u0432\\u0430\\u0441 \\u043d\\u0430 \\u0442\\u0430\\u0440\\u0435\\u043b\\u043a\\u0435, \\u0441 \\u0431\\u043b\\u044e\\u0434\\u0430\\u043c\\u0438, \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u0435 \\u043f\\u043e\\u044f\\u0432\\u043b\\u044f\\u044e\\u0442\\u0441\\u044f \\u0441\\u0438\\u043d\\u0445\\u0440\\u043e\\u043d\\u043d\\u043e \\u0441\\u043e \\u0441\\u0446\\u0435\\u043d\\u0430\\u043c\\u0438 \\u0444\\u0438\\u043b\\u044c\\u043c\\u0430!\",\n    \"location\": {\n        \"@context\": \"http:\\/\\/schema.org\",\n        \"@type\": \"Place\",\n        \"name\": \"\\u041a\\u0438\\u043d\\u043e\\u0443\\u0436\\u0438\\u043d \\u0441 \\u0444\\u0438\\u043b\\u044c\\u043c\\u043e\\u043c \\u00ab\\u0413\\u0430\\u0440\\u0440\\u0438 \\u041f\\u043e\\u0442\\u0442\\u0435\\u0440 \\u0438 \\u0424\\u0438\\u043b\\u043e\\u0441\\u043e\\u0444\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0430\\u043c\\u0435\\u043d\\u044c\\u00bb \\u043e\\u0442 VkusKino \\u0432 \\u0410\\u0441\\u0442\\u0430\\u043d\\u0435\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/event\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\",\n        \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430\",\n            \"streetAddress\": \"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d Sozvezdie, \\u0443\\u043b.  \\u041a\\u0435\\u0440\\u0435\\u0439, \\u0416\\u0430\\u043d\\u0438\\u0431\\u0435\\u043a \\u0445\\u0430\\u043d\\u0434\\u0430\\u0440, 22\\/2\"\n        }\n    },\n    \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": 26500,\n        \"priceCurrency\": \"KZT\",\n        \"availability\": \"https:\\/\\/schema.org\\/InStock\",\n        \"validFrom\": \"2026-04-16T16:21:54+05:00\",\n        \"url\": \"https:\\/\\/sxodim.com\\/astana\\/vkuskino\\/kinouzhin-s-filmom-garri-potter-i-filosofskiy-kamen-ot-vkuskino-v-astane\\/tickets\"\n    },\n    \"startDate\": \"2026-10-15\",\n    \"endDate\": \"2026-11-26\"\n}"
+   }
+  ]
+ },
+ {
+  "slug": "kinouzhin-s-multfilmom-ratatuy",
+  "url": "https://sxodim.com/astana/event/kinouzhin-s-multfilmom-ratatuy",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+    "startDate": "2026-10-18",
+    "venue": "Киноужин с мультфильмом «Рататуй» от VkusKino в Астане",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "kinouzhin-sumerki-ot-vkuskino-v-astane",
+  "url": "https://sxodim.com/astana/event/kinouzhin-sumerki-ot-vkuskino-v-astane",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Киноужин «Сумерки» от vkuskino в Астане",
+    "startDate": "2026-10-18",
+    "venue": "Киноужин «Сумерки» от vkuskino в Астане",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "koncert-dobrye-pesni-starogo-kino-v-astane",
+  "url": "https://sxodim.com/astana/event/koncert-dobrye-pesni-starogo-kino-v-astane",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Концерт «Добрые песни старого кино» в Астане",
+    "startDate": "2026-10-18T19:00:00+05:00",
+    "venue": "Концерт «Добрые песни старого кино» в Астане",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "kviz-pliz-803",
+  "url": "https://sxodim.com/astana/event/kviz-pliz-803",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Квиз, плиз! #803",
+    "startDate": "2026-10-18T18:00:00+05:00",
+    "venue": "Квиз, плиз! #803",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "lekciya-darhana-zhagiparova-v-nergy-creative-hub-cherez-toi-k-apple",
+  "url": "https://sxodim.com/astana/event/lekciya-darhana-zhagiparova-v-nergy-creative-hub-cherez-toi-k-apple",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Лекция Дархана Жагипарова в Өnergy Creative Hub: «Через тои к Apple»",
+    "startDate": "2026-10-23T18:30:00+05:00",
+    "venue": "Лекция Дархана Жагипарова в Өnergy Creative Hub: «Через тои к Apple»",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "liara-spektakli",
+  "url": "https://sxodim.com/astana/event/liara-spektakli",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "«Өліара» спектаклі",
+    "startDate": "2026-10-29T20:30:00+05:00",
+    "venue": "«Өліара» спектаклі",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "mama-spektakli",
+  "url": "https://sxodim.com/astana/event/mama-spektakli",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "«Мама!» спектаклі",
+    "startDate": "2026-10-29T18:00:00+05:00",
+    "venue": "«Мама!» спектаклі",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "multimediynaya-vystavka-ayvazovskiy-ozhivshie-polotna",
+  "url": "https://sxodim.com/astana/event/multimediynaya-vystavka-ayvazovskiy-ozhivshie-polotna",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Мультимедийная выставка «Айвазовский. Ожившие полотна»",
+    "startDate": "2026-08-04",
+    "venue": "Мультимедийная выставка «Айвазовский. Ожившие полотна»",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "obzornaya-ekskursiya-po-gorodu-lyubimaya-astana",
+  "url": "https://sxodim.com/astana/event/obzornaya-ekskursiya-po-gorodu-lyubimaya-astana",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Обзорная экскурсия по городу «Любимая Астана»",
+    "startDate": "2026-09-27",
+    "venue": "Обзорная экскурсия по городу «Любимая Астана»",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "peshaya-ekskursiya-po-staromu-gorodu-po-sledam-istorii",
+  "url": "https://sxodim.com/astana/event/peshaya-ekskursiya-po-staromu-gorodu-po-sledam-istorii",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Пешая экскурсия по старому городу «По следам истории»",
+    "startDate": "2026-09-27",
+    "venue": "Пешая экскурсия по старому городу «По следам истории»",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "pozitiv-stendap-stand-up-bar-pozitiv",
+  "url": "https://sxodim.com/astana/event/pozitiv-stendap-stand-up-bar-pozitiv",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Pozitiv стендап (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-23",
+    "venue": "Pozitiv стендап (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "sbornyy-stendap-stand-up-bar-pozitiv-1",
+  "url": "https://sxodim.com/astana/event/sbornyy-stendap-stand-up-bar-pozitiv-1",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Сборный стендап (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-10",
+    "venue": "Сборный стендап (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "seanstau-zil-shou-zhobasy-stand-up-bar-pozitiv",
+  "url": "https://sxodim.com/astana/event/seanstau-zil-shou-zhobasy-stand-up-bar-pozitiv",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "«Сеанстау» әзіл шоу жобасы (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-10",
+    "venue": "«Сеанстау» әзіл шоу жобасы (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "sebepsiz-improvizaciya-zhobasy",
+  "url": "https://sxodim.com/astana/event/sebepsiz-improvizaciya-zhobasy",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "SEBEPSIZ импровизация жобасы",
+    "startDate": "2026-10-18",
+    "venue": "SEBEPSIZ импровизация жобасы",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "shou-komiki-protiv-problem-stand-up-bar-pozitiv",
+  "url": "https://sxodim.com/astana/event/shou-komiki-protiv-problem-stand-up-bar-pozitiv",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-18T22:00:00+05:00",
+    "venue": "Шоу «Комики против проблем» (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "shou-komiki-reshayut-problemy-v-astane",
+  "url": "https://sxodim.com/astana/event/shou-komiki-reshayut-problemy-v-astane",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Шоу «Комики решают проблемы» в Астане",
+    "startDate": "2026-11-07T19:00:00+05:00",
+    "venue": "Шоу «Комики решают проблемы» в Астане",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "shou-s-tarologom-taro-smeh-i-komiki-1",
+  "url": "https://sxodim.com/astana/event/shou-s-tarologom-taro-smeh-i-komiki-1",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Шоу с тарологом «Таро, смех и комики» (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-25",
+    "venue": "Шоу с тарологом «Таро, смех и комики» (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "solnyy-koncert-introvert-v-astane",
+  "url": "https://sxodim.com/astana/event/solnyy-koncert-introvert-v-astane",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Сольный концерт IntroVert в Астане",
+    "startDate": "2026-12-13T18:00:00+05:00",
+    "venue": "Сольный концерт IntroVert в Астане",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "stendap-otkrytyy-mikrofon-stand-up-bar-pozitiv-1",
+  "url": "https://sxodim.com/astana/event/stendap-otkrytyy-mikrofon-stand-up-bar-pozitiv-1",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+    "startDate": "2026-10-18",
+    "venue": "Стендап «Открытый микрофон» (Stand Up Bar «Pozitiv»)",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "teztap-intellektualdar-oyyny-tek-suretter",
+  "url": "https://sxodim.com/astana/event/teztap-intellektualdar-oyyny-tek-suretter",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Teztap интеллектуалдар ойыны – Тек суреттер",
+    "startDate": "2026-10-18T18:00:00+05:00",
+    "venue": "Teztap интеллектуалдар ойыны – Тек суреттер",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "tribyut-koncert-the-beatles-ot-gruppy-black-pelican",
+  "url": "https://sxodim.com/astana/event/tribyut-koncert-the-beatles-ot-gruppy-black-pelican",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Трибьют-концерт The Beatles от группы Black Pelican",
+    "startDate": "2026-10-18T20:30:00+05:00",
+    "venue": "Трибьют-концерт The Beatles от группы Black Pelican",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "vecherinka-dizngo-carnival",
+  "url": "https://sxodim.com/astana/event/vecherinka-dizngo-carnival",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Вечеринка Dizngo carnival",
+    "startDate": "2026-10-31T22:00:00+05:00",
+    "venue": "Вечеринка Dizngo carnival",
+    "raw": null
+   }
+  ]
+ },
+ {
+  "slug": "vstrecha-s-kanatom-nurovym-upravlencheskie-resheniya-otkrytyy-razbor-biznes-keysov",
+  "url": "https://sxodim.com/astana/event/vstrecha-s-kanatom-nurovym-upravlencheskie-resheniya-otkrytyy-razbor-biznes-keysov",
+  "status": "OK",
+  "attempts": 1,
+  "events": [
+   {
+    "name": "Встреча с Канатом Нуровым «Управленческие решения — открытый разбор бизнес-кейсов»",
+    "startDate": "2026-10-22T17:00:00+05:00",
+    "venue": "Встреча с Канатом Нуровым «Управленческие решения — открытый разбор бизнес-кейсов»",
+    "raw": null
+   }
+  ]
+ }
+]

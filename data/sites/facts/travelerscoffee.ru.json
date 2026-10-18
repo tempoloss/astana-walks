@@ -1,0 +1,11 @@
+{
+ "domain": "travelerscoffee.ru",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://travelerscoffee.ru/"
+ ],
+ "branches": [],
+ "notes": "robots.txt check: HTTP 522 Cloudflare parking page; every earlier probe fetch was 'disallowed by robots.txt' — domain does not serve its old content. No first-party Astana facts reachable.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

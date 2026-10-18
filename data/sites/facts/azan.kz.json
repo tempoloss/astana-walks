@@ -1,0 +1,11 @@
+{
+ "domain": "azan.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://azan.kz"
+ ],
+ "branches": [],
+ "notes": "Portal of the DUMK (prayer-time schedules per city incl. Астана); it publishes no venue page with address/opening hours for мечеть Садуакас кажы Гылмани — prayer times are not facility hours. Site search is Disallowed in robots.txt. No branches.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

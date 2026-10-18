@@ -1,0 +1,74 @@
+{
+ "partition": "p2",
+ "weight": 6.0,
+ "items": [
+  {
+   "domain": "akorda.kz",
+   "poi_ids": [
+    "wikidata/Q413579"
+   ],
+   "names": [
+    "Ак орда (резиденция)"
+   ],
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [
+    "Q413579"
+   ],
+   "robots": "allowed (User-agent: * Allow: /)",
+   "notes": "domains from: wikidata_p856; wikidata Q413579",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "poi_count": 1,
+   "status": "collected"
+  },
+  {
+   "domain": "botsad-nursultan.kz",
+   "poi_ids": [
+    "way/1196402246"
+   ],
+   "names": [
+    "Ботанический сад"
+   ],
+   "categories": {
+    "park_garden": 1
+   },
+   "wikidata_ids": [
+    "Q104866948"
+   ],
+   "robots": "unreachable (DNS does not resolve; the POI's OSM domain astanabotsad.kz is already assigned)",
+   "notes": "domains from: wikidata_p856; wikidata Q104866948",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "poi_count": 1,
+   "status": "dead"
+  },
+  {
+   "domain": "museumgold.kz",
+   "poi_ids": [
+    "wikidata/Q4146879"
+   ],
+   "names": [
+    "Государственный музей золота и драгоценных металлов"
+   ],
+   "categories": {
+    "museum_gallery": 1
+   },
+   "wikidata_ids": [
+    "Q4146879"
+   ],
+   "robots": "allowed (User-agent: * Allow: /)",
+   "notes": "domains from: wikidata_p856; wikidata Q4146879",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "poi_count": 1,
+   "status": "collected"
+  }
+ ],
+ "domain_count": 3,
+ "poi_count": 3
+}

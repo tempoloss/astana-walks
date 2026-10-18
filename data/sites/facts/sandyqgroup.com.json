@@ -1,0 +1,14 @@
+{
+ "domain": "sandyqgroup.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "http://www.sandyqgroup.com",
+  "https://sandyqgroup.com/",
+  "https://sandyqgroup.com/contacts/",
+  "https://sandyqgroup.com/for-partners"
+ ],
+ "branches": [],
+ "notes": "Sandyq Group brands page: the JSON-LD of /sandyq/ and /tary/ describes the Алматы venues (address 'Алматы') — dropped per the Astana-only rule. /contacts/ renders accordion contacts whose body is empty in HTML. /for-partners mentions one Astana outlet by name only ('6. Tary Europe city 📍 г. Астана' in a new-openings list) without address, phone or hours, which is not enough for a branch record.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

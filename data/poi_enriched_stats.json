@@ -1,0 +1,2839 @@
+{
+ "before": {
+  "total": 1488,
+  "count_per_category": {
+   "cafe": 328,
+   "restaurant": 176,
+   "fast_food": 123,
+   "bar_nightlife": 109,
+   "museum_gallery": 10,
+   "attraction_landmark": 88,
+   "viewpoint": 1,
+   "park_garden": 177,
+   "kids_playground": 336,
+   "entertainment": 5,
+   "mall": 51,
+   "culture_theatre_cinema": 25,
+   "coworking_library": 11,
+   "sport": 23,
+   "transit_station": 25,
+   "other": 0
+  },
+  "pct_opening_hours_total": 23.2,
+  "pct_real_description": 0.1,
+  "pct_derived_description": 99.9,
+  "pct_website": 13.1
+ },
+ "after": {
+  "total": 2294,
+  "count_per_category": {
+   "cafe": 580,
+   "restaurant": 398,
+   "fast_food": 168,
+   "bar_nightlife": 243,
+   "museum_gallery": 18,
+   "attraction_landmark": 115,
+   "viewpoint": 1,
+   "park_garden": 191,
+   "kids_playground": 328,
+   "entertainment": 45,
+   "mall": 70,
+   "culture_theatre_cinema": 44,
+   "coworking_library": 18,
+   "sport": 36,
+   "transit_station": 29,
+   "other": 10
+  },
+  "pct_opening_hours_total": 23.4,
+  "pct_opening_hours_per_category": {
+   "cafe": 39.7,
+   "restaurant": 22.1,
+   "fast_food": 54.2,
+   "bar_nightlife": 27.6,
+   "museum_gallery": 22.2,
+   "attraction_landmark": 5.2,
+   "viewpoint": 0.0,
+   "park_garden": 1.0,
+   "kids_playground": 0.3,
+   "entertainment": 6.7,
+   "mall": 17.1,
+   "culture_theatre_cinema": 22.7,
+   "coworking_library": 44.4,
+   "sport": 8.3,
+   "transit_station": 3.4,
+   "other": 100.0
+  },
+  "pct_real_description": 2.3,
+  "pct_real_description_by_source": {
+   "osm": 0.1,
+   "wikipedia": 2.2
+  },
+  "pct_derived_description": 97.7,
+  "pct_real_description_per_category": {
+   "cafe": 0.0,
+   "restaurant": 0.3,
+   "fast_food": 0.0,
+   "bar_nightlife": 0.0,
+   "museum_gallery": 33.3,
+   "attraction_landmark": 14.8,
+   "viewpoint": 0.0,
+   "park_garden": 3.1,
+   "kids_playground": 0.0,
+   "entertainment": 2.2,
+   "mall": 5.7,
+   "culture_theatre_cinema": 18.2,
+   "coworking_library": 5.6,
+   "sport": 13.9,
+   "transit_station": 10.3,
+   "other": 0.0
+  },
+  "pct_website": 30.0,
+  "pct_phone": 41.2
+ },
+ "per_source_counts": {
+  "osm_only": 1312,
+  "overture_only": 669,
+  "osm_and_overture": 189,
+  "wikidata_only": 13,
+  "with_wikidata": 76,
+  "with_wikipedia_article": 51,
+  "with_popularity_pageviews": 24,
+  "official_site_only": 133,
+  "with_official_site": 242,
+  "state_registry_only": 10,
+  "with_state_registry": 13,
+  "with_wikivoyage": 21
+ },
+ "wikidata_matches_by_method": {
+  "tag": 29,
+  "sparql": 10,
+  "fuzzy": 5,
+  "wikipedia_list": 19,
+  "source": 13
+ },
+ "osm_overture_matched": 186,
+ "overture": {
+  "release": "2026-09-23.1",
+  "total": 8590,
+  "cutoff": 0.7,
+  "passing_cutoff": 2802,
+  "dropped_unusable": 0,
+  "dropped_by_cutoff": 5788,
+  "overture_only_added": 669,
+  "overture_only_other_not_added": 1914,
+  "non_poi_demoted": {
+   "by_reason_passing_cutoff": {
+    "residential_complex": 36,
+    "historic_site_unverified": 14,
+    "school_education": 1
+   },
+   "by_reason_all_usable": {
+    "residential_complex": 95,
+    "historic_site_unverified": 64,
+    "school_education": 4,
+    "legal_entity": 1,
+    "real_estate_construction": 1
+   },
+   "demoted_from_category_passing_cutoff": {
+    "attraction_landmark": 50,
+    "coworking_library": 1
+   },
+   "examples": [
+    {
+     "id": "f17511d0-b38a-4be9-8e5b-d09f814c6a78",
+     "name": "HighVill Astana",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.9411
+    },
+    {
+     "id": "b5ff8535-177c-4fe6-a4a1-233b21178bf8",
+     "name": "ЖК Коркем",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.9264
+    },
+    {
+     "id": "fb8add92-5410-4e76-b4ad-aa40bed7ab90",
+     "name": "L.N. Gumilyov Eurasian National University",
+     "from": "coworking_library",
+     "reason": "school_education",
+     "primary": "library",
+     "confidence": 0.8
+    },
+    {
+     "id": "5e7fa5f8-0fb4-4e35-a4d4-2d78b1d1aef8",
+     "name": "Nova City",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.8564
+    },
+    {
+     "id": "9e678e43-b49f-4c99-9f05-c6cefe44931b",
+     "name": "ЖК Северное Сияние",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.9244
+    },
+    {
+     "id": "f2206961-4384-4585-b1d8-8ed341b594ca",
+     "name": "Астана Су Арнасы",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.8496
+    },
+    {
+     "id": "382cf91c-982c-457c-b45b-0906f648220b",
+     "name": "ЖК Времена года - Осень",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.8864
+    },
+    {
+     "id": "758121a3-2f70-4114-9d7b-a72d188dd65d",
+     "name": "Самал, д. 6",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.8094
+    },
+    {
+     "id": "7d1f001c-2bdf-4ede-a264-02e8b9393b19",
+     "name": "ЖК Capital Park",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.8669
+    },
+    {
+     "id": "8047ffe5-cc7b-4b76-98e7-618d26c0eaea",
+     "name": "Urban",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.8051
+    },
+    {
+     "id": "b526995c-617b-4415-9598-93798fec4e53",
+     "name": "\"ЖК \"Барыс\"\"",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.8631
+    },
+    {
+     "id": "43579392-cca9-4d59-9385-3ef7c6598c7c",
+     "name": "Astana, Kz",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.781
+    },
+    {
+     "id": "f3a8327f-77df-4d7b-925b-7c57a2de2164",
+     "name": "ZhK Megapolis",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.8438
+    },
+    {
+     "id": "c3dd148e-8b55-40df-af1f-b8041bdf120f",
+     "name": "ул. Габита Мусрепова",
+     "from": "attraction_landmark",
+     "reason": "historic_site_unverified",
+     "primary": "historic_site",
+     "confidence": 0.7758
+    },
+    {
+     "id": "79ea7a66-624d-4690-a11f-1cd734df787e",
+     "name": "\"ЖК \"Премьера!\"\"",
+     "from": "attraction_landmark",
+     "reason": "residential_complex",
+     "primary": "historic_site",
+     "confidence": 0.8418
+    }
+   ]
+  },
+  "chain_duplicates": {
+   "merged_into_osm": 3,
+   "absorbed_by_already_matched_osm": 1,
+   "by": {
+    "name": 4
+   },
+   "examples": [
+    {
+     "osm_id": "node/10976892637",
+     "osm_name": "Starbucks",
+     "osm_category": "cafe",
+     "overture_id": "cb7d45f2-581f-4c72-9383-1fae80798ff5",
+     "overture_name": "Starbucks",
+     "overture_category": "cafe",
+     "distance_m": 238,
+     "by": "name",
+     "absorbed": false
+    },
+    {
+     "osm_id": "node/9047331875",
+     "osm_name": "Starbucks",
+     "osm_category": "cafe",
+     "overture_id": "d10ba25c-7914-4961-bd0b-d7a5c7bdd2c7",
+     "overture_name": "Starbucks",
+     "overture_category": "cafe",
+     "distance_m": 191,
+     "by": "name",
+     "absorbed": false
+    },
+    {
+     "osm_id": "node/14107301089",
+     "osm_name": "Korean House",
+     "osm_category": "restaurant",
+     "overture_id": "5a3a52f0-acf5-492b-918c-82cf989c3513",
+     "overture_name": "Korean House",
+     "overture_category": "restaurant",
+     "distance_m": 179,
+     "by": "name",
+     "absorbed": false
+    },
+    {
+     "osm_id": "way/230358855",
+     "osm_name": "Национальная академическая библиотека Республики Казахстан",
+     "osm_category": "coworking_library",
+     "overture_id": "01356b49-f519-4846-b582-9ffbf7cb2e13",
+     "overture_name": "Национальная Академическая библиотека Республики Казахстан",
+     "overture_category": "coworking_library",
+     "distance_m": 11,
+     "by": "name",
+     "absorbed": true
+    }
+   ]
+  },
+  "match_rate_by_confidence": {
+   "0.1-0.2": {
+    "records": 10,
+    "matched_osm": 0,
+    "match_rate_pct": 0.0
+   },
+   "0.2-0.3": {
+    "records": 78,
+    "matched_osm": 2,
+    "match_rate_pct": 2.6
+   },
+   "0.3-0.4": {
+    "records": 104,
+    "matched_osm": 7,
+    "match_rate_pct": 6.7
+   },
+   "0.4-0.5": {
+    "records": 160,
+    "matched_osm": 12,
+    "match_rate_pct": 7.5
+   },
+   "0.5-0.6": {
+    "records": 319,
+    "matched_osm": 13,
+    "match_rate_pct": 4.1
+   },
+   "0.6-0.7": {
+    "records": 309,
+    "matched_osm": 27,
+    "match_rate_pct": 8.7
+   },
+   "0.7-0.8": {
+    "records": 334,
+    "matched_osm": 37,
+    "match_rate_pct": 11.1
+   },
+   "0.8-0.9": {
+    "records": 265,
+    "matched_osm": 41,
+    "match_rate_pct": 15.5
+   },
+   "0.9-1.0": {
+    "records": 270,
+    "matched_osm": 95,
+    "match_rate_pct": 35.2
+   }
+  },
+  "new_taxonomy_or_name_rule_records": 9,
+  "by_name_rule": {
+   "kids_leisure_name": 3,
+   "mall_name": 2,
+   "leisure_name": 1
+  }
+ },
+ "description_source_counts": {
+  "osm": 2,
+  "wikipedia": 50,
+  "derived": 2242
+ },
+ "release": "2026-09-23.1",
+ "wiki_places": {
+  "snapshot_date": "2026-10-16",
+  "candidates": 245,
+  "classified": 65,
+  "places": 55,
+  "per_category": {
+   "attraction_landmark": 23,
+   "coworking_library": 1,
+   "culture_theatre_cinema": 11,
+   "mall": 3,
+   "museum_gallery": 6,
+   "park_garden": 6,
+   "sport": 4,
+   "viewpoint": 1
+  },
+  "nominatim_lookups": 10,
+  "nominatim_accepted": 2,
+  "dropped": {
+   "no_coordinates": 8,
+   "outside_astana": 1,
+   "no_label": 0,
+   "organisation": 1
+  },
+  "already_in_dataset": 18,
+  "enriched_existing_records": 19,
+  "duplicates_not_enriched": 5,
+  "new_records": 13,
+  "new_by_category": {
+   "park_garden": 1,
+   "attraction_landmark": 6,
+   "culture_theatre_cinema": 3,
+   "museum_gallery": 2,
+   "sport": 1
+  },
+  "enriched_rows": [
+   {
+    "qid": "Q104866885",
+    "name": "Триатлон парк Астана",
+    "category": "park_garden",
+    "coord_source": "wikidata_p625",
+    "record": "way/1363058986",
+    "record_name": "Триатлон парк",
+    "distance_m": 93,
+    "score": 75
+   },
+   {
+    "qid": "Q116177001",
+    "name": "MEGA Silk-way",
+    "category": "mall",
+    "coord_source": "wikipedia_coordinates",
+    "record": "way/499328514",
+    "record_name": "Mega Silk Way",
+    "distance_m": 70,
+    "score": 100
+   },
+   {
+    "qid": "Q117835598",
+    "name": "Ырыскелды кажы",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "way/577099472",
+    "record_name": "Ырыскелді Қажы мешіті",
+    "distance_m": 10,
+    "score": 79
+   },
+   {
+    "qid": "Q124371412",
+    "name": "Atatürk Monument",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "overture/ad5d249f-902b-48f4-9be0-7baed8a5db67",
+    "record_name": "Ататүрік ескерткіші",
+    "distance_m": 27,
+    "score": 97
+   },
+   {
+    "qid": "Q12530274",
+    "name": "Казахский музыкально-драматический театр имени К. Куанышбаева",
+    "category": "culture_theatre_cinema",
+    "coord_source": "wikidata_p625",
+    "record": "way/917348929",
+    "record_name": "Государственный Академический казахский музыкально-драматический театр им. К. Куанышбаева",
+    "distance_m": 22,
+    "score": 78
+   },
+   {
+    "qid": "Q12561825",
+    "name": "Музей Сакена Сейфуллина",
+    "category": "museum_gallery",
+    "coord_source": "wikipedia_coordinates",
+    "record": "way/240376692",
+    "record_name": "Музей Сакена Сейфуллина",
+    "distance_m": 4,
+    "score": 100
+   },
+   {
+    "qid": "Q141434865",
+    "name": "Keruen",
+    "category": "mall",
+    "coord_source": "nominatim",
+    "record": "way/108096984",
+    "record_name": "Керуен",
+    "distance_m": 2,
+    "score": 100
+   },
+   {
+    "qid": "Q16433519",
+    "name": "Русский драматический театр им. М. Горького",
+    "category": "culture_theatre_cinema",
+    "coord_source": "wikidata_p625",
+    "record": "node/455447680",
+    "record_name": "Русский Академический театр драмы им М.Горького",
+    "distance_m": 10,
+    "score": 80
+   },
+   {
+    "qid": "Q16538413",
+    "name": "Собор Божией Матери Неустанной Помощи (Астана)",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "overture/4526660e-f803-4294-9cf7-8c885860b2f2",
+    "record_name": "Our Lady of Perpetual Help Cathedral",
+    "distance_m": 22,
+    "score": 78
+   },
+   {
+    "qid": "Q16632800",
+    "name": "Барыс Арена",
+    "category": "sport",
+    "coord_source": "wikidata_p625",
+    "record": "overture/2bd70b97-1e65-4c3d-acd7-a85a9f3c5e54",
+    "record_name": "Барыс Арена",
+    "distance_m": 46,
+    "score": 100
+   },
+   {
+    "qid": "Q1916973",
+    "name": "MEGA Astana",
+    "category": "mall",
+    "coord_source": "wikidata_p625",
+    "record": "overture/fb4b5ac4-d697-4a63-90a7-52cef753c0d0",
+    "record_name": "ТРЦ \"Мега Центр Астана\"",
+    "distance_m": 26,
+    "score": 100
+   },
+   {
+    "qid": "Q21843144",
+    "name": "Астанинский цирк",
+    "category": "culture_theatre_cinema",
+    "coord_source": "wikidata_p625",
+    "record": "node/5126825313",
+    "record_name": "Столичный Цирк",
+    "distance_m": 7,
+    "score": 84
+   },
+   {
+    "qid": "Q25481641",
+    "name": "Монумент защитникам Отечества (Нур-Султан)",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "way/215529755",
+    "record_name": "Родина-Мать",
+    "distance_m": 6,
+    "score": 79
+   },
+   {
+    "qid": "Q25500354",
+    "name": "Музей Первого Президента Республики Казахстан",
+    "category": "museum_gallery",
+    "coord_source": "wikidata_p625",
+    "record": "way/51431624",
+    "record_name": "Музей первого президента РК Н. А. Назарбаева",
+    "distance_m": 48,
+    "score": 71
+   },
+   {
+    "qid": "Q2986461",
+    "name": "Стадион им. Хаджимукана Мунайтпасова",
+    "category": "sport",
+    "coord_source": "wikidata_p625",
+    "record": "overture/978227af-2132-45dd-9cc8-189b682b7146",
+    "record_name": "Стадион им. Мунайтпасова",
+    "distance_m": 186,
+    "score": 78
+   },
+   {
+    "qid": "Q4230441",
+    "name": "концертный зал \"Астана\"",
+    "category": "culture_theatre_cinema",
+    "coord_source": "wikidata_p625",
+    "record": "overture/e2027d7d-34f1-4286-891e-d036d220db4b",
+    "record_name": "Концертный Зал Астана",
+    "distance_m": 29,
+    "score": 100
+   },
+   {
+    "qid": "Q42422250",
+    "name": "Парк Влюбленных (Астана)",
+    "category": "park_garden",
+    "coord_source": "wikidata_p625",
+    "record": "way/37884583",
+    "record_name": "Парк влюбленных",
+    "distance_m": 24,
+    "score": 82
+   },
+   {
+    "qid": "Q96035145",
+    "name": "Казахская национальная академия музыки",
+    "category": "culture_theatre_cinema",
+    "coord_source": "wikidata_p625",
+    "record": "node/3824846563",
+    "record_name": "Органный зал Национальной академии музыки РК",
+    "distance_m": 9,
+    "score": 74
+   },
+   {
+    "qid": "Q97168093",
+    "name": "Константино-Еленинский собор",
+    "category": "attraction_landmark",
+    "coord_source": "wikipedia_coordinates",
+    "record": "overture/ddc0afc3-dae9-46c8-ba18-9da09e4c99a8",
+    "record_name": "Константино-Еленинский собор",
+    "distance_m": 45,
+    "score": 100
+   }
+  ],
+  "duplicate_rows": [
+   {
+    "qid": "Q113675887",
+    "name": "Центральная мечеть города Астаны",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "relation/18901938",
+    "record_name": "Мечеть Нурсултан",
+    "distance_m": 79,
+    "score": 63
+   },
+   {
+    "qid": "Q1899549",
+    "name": "Кафедральный собор в честь Успения Пресвятой Богородицы",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "overture/99b40dbd-078b-487b-a567-d39c5bde9285",
+    "record_name": "Успенский православный кафедральный собор",
+    "distance_m": 20,
+    "score": 63
+   },
+   {
+    "qid": "Q42423152",
+    "name": "Этно-мемориальный комплекс Атамекен",
+    "category": "attraction_landmark",
+    "coord_source": "nominatim",
+    "record": "way/1460700597",
+    "record_name": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+    "distance_m": 40,
+    "score": 80
+   },
+   {
+    "qid": "Q48780885",
+    "name": "Площадь Независимости (Нур-Султан)",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "way/240873345",
+    "record_name": "Дворец Независимости",
+    "distance_m": 209,
+    "score": 88
+   },
+   {
+    "qid": "Q85758095",
+    "name": "Круглая площадь (Астана)",
+    "category": "attraction_landmark",
+    "coord_source": "wikidata_p625",
+    "record": "overture/05a08159-b2a2-4ff3-acb9-c36938feb90e",
+    "record_name": "Дөңгелек алаң / Круглая Площадь / Round Square",
+    "distance_m": 36,
+    "score": 62
+   }
+  ]
+ },
+ "coord_quality": {
+  "overture_records_on_collapsed_points": 689,
+  "collapsed_point_clusters": 14,
+  "params": {
+   "cluster_min": 8,
+   "share_max": 0.4,
+   "ref_min": 5,
+   "far_m": 2000.0
+  },
+  "address_far_nominees_geocoded": 15,
+  "geocoder_verdicts": {
+   "address_far": 13,
+   "unverified": 2
+  },
+  "overture_only_dropped": 28,
+  "dropped_by_reason": {
+   "collapsed_point": 15,
+   "address_far": 13
+  },
+  "overture_only_flagged_kept": 1,
+  "examples_dropped": [
+   {
+    "name": "Bar & Grill",
+    "category": "bar_nightlife",
+    "confidence": 0.973,
+    "address": "Астана, Қабанбай батыр даңғылы 19/1",
+    "reason": "collapsed_point",
+    "records_on_point": 16,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Family Bakery",
+    "category": "restaurant",
+    "confidence": 0.9571,
+    "address": "Астана, Ұлы Дала проспект 27/3",
+    "reason": "address_far",
+    "records_on_point": null,
+    "street_ref_distance_m": 2158,
+    "geocoder_distance_m": 6904
+   },
+   {
+    "name": "Мята Сауран",
+    "category": "restaurant",
+    "confidence": 0.9192,
+    "address": "Астана, Сауран көшесі 10б",
+    "reason": "collapsed_point",
+    "records_on_point": 158,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Stove bakery",
+    "category": "cafe",
+    "confidence": 0.9106,
+    "address": "Целиноград ауданы, Ахмет Байтұрсынов көшесі 1",
+    "reason": "collapsed_point",
+    "records_on_point": 158,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Starbucks Казахстан",
+    "category": "cafe",
+    "confidence": 0.8821,
+    "address": "Астана, Кургальджинское шоссе, д. 1",
+    "reason": "collapsed_point",
+    "records_on_point": 40,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Bozoq Museum",
+    "category": "museum_gallery",
+    "confidence": 0.875,
+    "address": "Астана, Бозок, проспект Абая 98Б",
+    "reason": "address_far",
+    "records_on_point": null,
+    "street_ref_distance_m": 3034,
+    "geocoder_distance_m": 6523
+   },
+   {
+    "name": "Lugano итальянский ресторан",
+    "category": "restaurant",
+    "confidence": 0.8719,
+    "address": "Целиноград ауданы, Абай көшесі 1",
+    "reason": "address_far",
+    "records_on_point": null,
+    "street_ref_distance_m": 4574,
+    "geocoder_distance_m": 16882
+   },
+   {
+    "name": "Семейный ресторан «Вокруг Света»",
+    "category": "restaurant",
+    "confidence": 0.8706,
+    "address": "Астана, улица Сыганак 16",
+    "reason": "collapsed_point",
+    "records_on_point": 118,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Лагман Шах",
+    "category": "cafe",
+    "confidence": 0.87,
+    "address": "Целиноград ауданы, 2-ші шағын аудан 26",
+    "reason": "collapsed_point",
+    "records_on_point": 158,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Ресторан Kubbe",
+    "category": "restaurant",
+    "confidence": 0.8594,
+    "address": "Астана, Kunaeva, 7",
+    "reason": "collapsed_point",
+    "records_on_point": 158,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   },
+   {
+    "name": "Starbucks",
+    "category": "cafe",
+    "confidence": 0.85,
+    "address": "Astana, TC Khan Shatyr, Туран 37",
+    "reason": "address_far",
+    "records_on_point": null,
+    "street_ref_distance_m": 5716,
+    "geocoder_distance_m": 6469
+   },
+   {
+    "name": "Green Park Astana",
+    "category": "park_garden",
+    "confidence": 0.8092,
+    "address": "Астана, Косшы",
+    "reason": "collapsed_point",
+    "records_on_point": 40,
+    "street_ref_distance_m": null,
+    "geocoder_distance_m": null
+   }
+  ]
+ },
+ "relevance": {
+  "v1": {
+   "total": 2178,
+   "per_category": {
+    "cafe": 469,
+    "restaurant": 406,
+    "fast_food": 158,
+    "bar_nightlife": 247,
+    "museum_gallery": 25,
+    "attraction_landmark": 116,
+    "viewpoint": 1,
+    "park_garden": 199,
+    "kids_playground": 336,
+    "entertainment": 32,
+    "mall": 73,
+    "culture_theatre_cinema": 35,
+    "coworking_library": 18,
+    "sport": 34,
+    "transit_station": 29,
+    "other": 0
+   },
+   "kids_playground_outdoor": 336,
+   "kids_indoor": 1,
+   "indoor_places": 652,
+   "with_opening_hours": 345,
+   "pct_opening_hours": 15.8,
+   "pct_opening_hours_museum_gallery": 4.0,
+   "with_real_description": 23,
+   "pct_real_description": 1.1
+  },
+  "now": {
+   "total": 2183,
+   "per_category": {
+    "cafe": 464,
+    "restaurant": 391,
+    "fast_food": 158,
+    "bar_nightlife": 243,
+    "museum_gallery": 25,
+    "attraction_landmark": 127,
+    "viewpoint": 1,
+    "park_garden": 198,
+    "kids_playground": 328,
+    "entertainment": 45,
+    "mall": 75,
+    "culture_theatre_cinema": 45,
+    "coworking_library": 18,
+    "sport": 36,
+    "transit_station": 29,
+    "other": 0
+   },
+   "kids_playground_outdoor": 328,
+   "kids_indoor": 13,
+   "indoor_places": 672,
+   "with_opening_hours": 346,
+   "pct_opening_hours": 15.8,
+   "pct_opening_hours_museum_gallery": 4.0,
+   "with_real_description": 52,
+   "pct_real_description": 2.4
+  },
+  "sample_new": [
+   {
+    "id": "wikidata/Q4146879",
+    "name": "Государственный музей золота и драгоценных металлов",
+    "category": "museum_gallery",
+    "source": "wikidata",
+    "sources": [
+     "wikidata"
+    ],
+    "lat": 51.157,
+    "lon": 71.4313,
+    "coord_source": "wikidata",
+    "confidence": null,
+    "basis": "wikidata_class=Q33506",
+    "description": "Государственный музей золота и драгоценных металлов – музей ювелирного искусства в городе Астана. Государственный музей золота и драгоценных металлов был основан в 1990 году в Алма-Ате."
+   },
+   {
+    "id": "node/12508539014",
+    "name": "Kidburg",
+    "category": "entertainment",
+    "source": "osm",
+    "sources": [
+     "osm",
+     "overture"
+    ],
+    "lat": 51.1221686,
+    "lon": 71.4291085,
+    "coord_source": "osm",
+    "confidence": 0.9059,
+    "basis": "leisure=indoor_play",
+    "description": "Детский игровой центр «Kidburg» по адресу Астана, Сығанақ көшесі, 60/5. Часы работы: Mo-Su 10:00-22:00."
+   },
+   {
+    "id": "node/5101392526",
+    "name": "Дворец торжеств «Салтанат сарайы»",
+    "category": "culture_theatre_cinema",
+    "source": "osm",
+    "sources": [
+     "osm"
+    ],
+    "lat": 51.1502265,
+    "lon": 71.4235139,
+    "coord_source": "osm",
+    "confidence": null,
+    "basis": "amenity=community_centre",
+    "description": "Дворец / центр культуры «Дворец торжеств «Салтанат сарайы»» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны."
+   },
+   {
+    "id": "node/2712544656",
+    "name": "Фонтан \"Дерево жизни\"",
+    "category": "attraction_landmark",
+    "source": "osm",
+    "sources": [
+     "osm"
+    ],
+    "lat": 51.1662318,
+    "lon": 71.415324,
+    "coord_source": "osm",
+    "confidence": null,
+    "basis": "amenity=fountain",
+    "description": "Фонтан «Фонтан \"Дерево жизни\"» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны."
+   },
+   {
+    "id": "wikidata/Q104866684",
+    "name": "Президентский парк (Нур-Султан)",
+    "category": "park_garden",
+    "source": "wikidata",
+    "sources": [
+     "wikidata"
+    ],
+    "lat": 51.116667,
+    "lon": 71.45,
+    "coord_source": "wikidata",
+    "confidence": null,
+    "basis": "wikidata_class=Q22698",
+    "description": "Президентский парк (каз. Президенттік саябақ) — парк в Сарайшыкском районе Астаны. Парк располагается вокруг здания Дворца мира и согласия."
+   },
+   {
+    "id": "way/1108448985",
+    "name": "Лыжная база",
+    "category": "sport",
+    "source": "osm",
+    "sources": [
+     "osm"
+    ],
+    "lat": 51.1543647,
+    "lon": 71.4131641,
+    "coord_source": "osm",
+    "confidence": null,
+    "basis": null,
+    "description": "Спортивный клуб «Лыжная база» по адресу Астана. Подробности (часы работы, контакты) в OpenStreetMap не указаны."
+   },
+   {
+    "id": "node/4387005493",
+    "name": "Eagilik - Books & Coffee",
+    "category": "cafe",
+    "source": "osm",
+    "sources": [
+     "osm",
+     "overture"
+    ],
+    "lat": 51.1676079,
+    "lon": 71.4382766,
+    "coord_source": "osm",
+    "confidence": 0.77,
+    "basis": null,
+    "description": "Книжный магазин-кафе «Eagilik - Books & Coffee» в Астане. Есть Wi-Fi."
+   },
+   {
+    "id": "overture/a6206477-2569-492f-b1a8-73bf3df4421e",
+    "name": "Торгово-развлекательный центр Keruenсity/Nur-Sultan",
+    "category": "mall",
+    "source": "overture",
+    "sources": [
+     "overture"
+    ],
+    "lat": 51.1453514,
+    "lon": 71.4139709,
+    "coord_source": "overture",
+    "confidence": 0.8561,
+    "basis": "overture_category=arts_and_entertainment",
+    "description": "Торговый центр «Торгово-развлекательный центр Keruenсity/Nur-Sultan» по адресу Астана. Часы работы и подробности в Overture Maps не указаны."
+   },
+   {
+    "id": "wikidata/Q85787940",
+    "name": "National Military-Patriotic Center of the Armed Forces of Kazakhstan",
+    "category": "museum_gallery",
+    "source": "wikidata",
+    "sources": [
+     "wikidata"
+    ],
+    "lat": 51.1559167,
+    "lon": 71.4315278,
+    "coord_source": "wikidata",
+    "confidence": null,
+    "basis": "wikidata_class=Q16735822",
+    "description": "The National Military-Patriotic Center of the Armed Forces of Kazakhstan (Kazakh: Қазақстан Қарулы Күштерінің Ұлттық әскери-патриоттық орталығы, ҰӘПО, romanized: Qazaqstan Qaruly Küşterınıñ Ūlttyq äskeri-patriottyq ortalyğy, ŪÄPO; Russian: Национальный военно-патриотический центр Вооруженных Сил Казахстан, НВПЦ, romanized: Natsional'nyy voenno-patrioticheskiy tsentr Vooruzhennykh Sil Kazakhstan, NVPTs) is a museum of the Armed Forces of Kazakhstan."
+   },
+   {
+    "id": "overture/329aec0c-b4a5-4566-ad32-44e224f782f8",
+    "name": "Спорткомплекс Алатау",
+    "category": "entertainment",
+    "source": "overture",
+    "sources": [
+     "overture"
+    ],
+    "lat": 51.1516953,
+    "lon": 71.4512024,
+    "coord_source": "overture",
+    "confidence": 0.7228,
+    "basis": "overture_category=pool_billiards",
+    "description": "Место для развлечений «Спорткомплекс Алатау» по адресу Астана. Часы работы и подробности в Overture Maps не указаны."
+   }
+  ],
+  "new_total": 36,
+  "new_by_source": {
+   "osm": 14,
+   "overture": 9,
+   "wikidata": 13
+  },
+  "dropped_v1_ids": 31,
+  "dropped_v1_by_coordinates": 28,
+  "dropped_v1_replaced": 3,
+  "dropped_v1_replaced_names": [
+   "Astana Music Hall",
+   "Eagilik - Books and Coffee",
+   "Kidburg"
+  ]
+ },
+ "official_sites": {
+  "generated_at": "2026-10-17T19:28:20+00:00",
+  "poi_total_before": 2183,
+  "poi_total_after": 2316,
+  "new_pois": 133,
+  "new_pois_by_category": {
+   "cafe": 116,
+   "fast_food": 10,
+   "restaurant": 7
+  },
+  "new_pois_by_domain": {
+   "happycake.kz": 74,
+   "coffeeboom.kz": 31,
+   "hardees.kz": 5,
+   "starbucks.com.kz": 4,
+   "abr.kz": 4,
+   "shashlychok.kz": 4,
+   "edagoroda.kz": 3,
+   "crepecafe.kz": 2,
+   "plov.kz": 2,
+   "rafe.kz": 2,
+   "sushiman.kz": 1,
+   "kfc.kz": 1
+  },
+  "new_pois_skipped": {
+   "no first-party coordinates": 133,
+   "duplicate of an existing POI (<= 75 m, similar name)": 24,
+   "no usable name": 8,
+   "duplicate of an earlier new POI (<= 75 m, similar name)": 4
+  },
+  "hours_day_qualified_before": 346,
+  "hours_day_qualified_after": 514,
+  "hours_pct_before": 15.85,
+  "hours_pct_after": 22.19,
+  "hours_new_on_existing_pois": 41,
+  "hours_new_on_new_pois": 127,
+  "hours_unqualified_pois": 20,
+  "hours_unqualified_on_existing": 16,
+  "hours_conflicts": 31,
+  "hours_conflicts_prefer": {
+   "official_site": 31
+  },
+  "hours_confirmed_same": 7,
+  "price_text_pois": 3,
+  "pois_matched": 133,
+  "matched_by_method": {
+   "coords+name": 54,
+   "domain+address": 16,
+   "domain+name": 53,
+   "domain_unique": 4,
+   "register_name_address": 1,
+   "coords+domain": 5
+  },
+  "branches_verified": 435,
+  "branches_unmatched": 302,
+  "filled_on_existing": {
+   "address": 59,
+   "opening_hours": 41,
+   "opening_hours_official": 38,
+   "hours_unqualified": 16,
+   "description_official": 14,
+   "phone": 11,
+   "price_text": 3
+  },
+  "join_conflicts": {
+   "opening_hours": 31,
+   "phone": 68,
+   "address": 67,
+   "description": 1
+  },
+  "verify": {
+   "branches_dropped_robots": 0,
+   "branches_in": 435,
+   "branches_out": 435,
+   "evidence_ok": 1722,
+   "evidence_total": 1722,
+   "facts_hours_osm": 282,
+   "facts_hours_raw": 348,
+   "hours_flag_ambiguous_24h": 4,
+   "hours_flag_needs_days": 44
+  },
+  "by_domain_top20": [
+   {
+    "domain": "happycake.kz",
+    "branches": 75,
+    "matched_pois": 1,
+    "new_hours": 1,
+    "new_pois": 74,
+    "new_pois_with_hours": 74,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "coffeeboom.kz",
+    "branches": 59,
+    "matched_pois": 0,
+    "new_hours": 0,
+    "new_pois": 31,
+    "new_pois_with_hours": 30,
+    "hours_conflicts": 0,
+    "hours_unqualified": 1
+   },
+   {
+    "domain": "kfc.kz",
+    "branches": 20,
+    "matched_pois": 16,
+    "new_hours": 4,
+    "new_pois": 1,
+    "new_pois_with_hours": 1,
+    "hours_conflicts": 10,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "hardees.kz",
+    "branches": 12,
+    "matched_pois": 7,
+    "new_hours": 5,
+    "new_pois": 5,
+    "new_pois_with_hours": 5,
+    "hours_conflicts": 2,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "starbucks.com.kz",
+    "branches": 13,
+    "matched_pois": 7,
+    "new_hours": 1,
+    "new_pois": 4,
+    "new_pois_with_hours": 4,
+    "hours_conflicts": 4,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "shashlychok.kz",
+    "branches": 10,
+    "matched_pois": 6,
+    "new_hours": 1,
+    "new_pois": 4,
+    "new_pois_with_hours": 4,
+    "hours_conflicts": 5,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "abr.kz",
+    "branches": 9,
+    "matched_pois": 5,
+    "new_hours": 0,
+    "new_pois": 4,
+    "new_pois_with_hours": 4,
+    "hours_conflicts": 4,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "white.kz",
+    "branches": 10,
+    "matched_pois": 5,
+    "new_hours": 0,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 1,
+    "hours_unqualified": 1
+   },
+   {
+    "domain": "edagoroda.kz",
+    "branches": 7,
+    "matched_pois": 2,
+    "new_hours": 0,
+    "new_pois": 3,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 5
+   },
+   {
+    "domain": "crepecafe.kz",
+    "branches": 5,
+    "matched_pois": 3,
+    "new_hours": 0,
+    "new_pois": 2,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "goodproject.kz",
+    "branches": 5,
+    "matched_pois": 5,
+    "new_hours": 0,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 2,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "rafe.kz",
+    "branches": 4,
+    "matched_pois": 2,
+    "new_hours": 1,
+    "new_pois": 2,
+    "new_pois_with_hours": 2,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "e-museum.kz",
+    "branches": 4,
+    "matched_pois": 3,
+    "new_hours": 1,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 2
+   },
+   {
+    "domain": "papajohns.kz",
+    "branches": 4,
+    "matched_pois": 3,
+    "new_hours": 3,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "qaganat24.kz",
+    "branches": 3,
+    "matched_pois": 3,
+    "new_hours": 2,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "satgroup.kz",
+    "branches": 6,
+    "matched_pois": 2,
+    "new_hours": 2,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "plov.kz",
+    "branches": 2,
+    "matched_pois": 0,
+    "new_hours": 0,
+    "new_pois": 2,
+    "new_pois_with_hours": 2,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "sushiman.kz",
+    "branches": 2,
+    "matched_pois": 1,
+    "new_hours": 1,
+    "new_pois": 1,
+    "new_pois_with_hours": 1,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   },
+   {
+    "domain": "im.kz",
+    "branches": 7,
+    "matched_pois": 1,
+    "new_hours": 0,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 1
+   },
+   {
+    "domain": "ritzcarlton.com",
+    "branches": 7,
+    "matched_pois": 1,
+    "new_hours": 1,
+    "new_pois": 0,
+    "new_pois_with_hours": 0,
+    "hours_conflicts": 0,
+    "hours_unqualified": 0
+   }
+  ]
+ },
+ "state_registry": {
+  "generated_at": "2026-10-17T19:28:26+00:00",
+  "cson_found": 25,
+  "sport_records": 7,
+  "geocoded": 19,
+  "geocode_status": {
+   "unmapped": 13,
+   "matched_poi": 3,
+   "matched_osm": 16
+  },
+  "geocode_methods": {
+   "poi_name_address": 2,
+   "osm_address": 8,
+   "poi_name": 1,
+   "osm_name_address": 5,
+   "osm_name": 3
+  },
+  "unmapped": 13,
+  "unmapped_records": [
+   {
+    "record_id": "gov/sport/3fbde80ea6",
+    "kind": "sport_facility",
+    "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+    "address": "г. Астана, ул. Джангильдина 9а",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Джангильдина, 9а (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Әліби Жангелдин / Әліби Жангелдин"
+   },
+   {
+    "record_id": "gov/sport/0328447a3e",
+    "kind": "sport_facility",
+    "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+    "address": "г.Астана, Кажымукана, 7/1",
+    "reason": "no OSM element with address Кажымукана, 7/1 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан"
+   },
+   {
+    "record_id": "gov/cson/4347ea02eb",
+    "kind": "cson",
+    "name": "Специализированный отдел №2 города Астана",
+    "address": "ул. А 82, здание 8, блок «К» (здание вокзала Нурлы жол первый этаж)",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. А 82, 8 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson/c62aaf7afe",
+    "kind": "cson",
+    "name": "Миграционный отдел обслуживания населения города Астана",
+    "address": "ул. А 82, блок «М» (здание вокзала Нурлы жол первый этаж, напротив СПЕЦОНа)",
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson/19ca228714",
+    "kind": "cson",
+    "name": "Сектор Отдела Байконурского района",
+    "address": "ул. Ондирис, 14А",
+    "reason": "the OSM address query failed (mirror): this address was NOT checked; no OSM element with address ул. Ондирис, 14а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Ондирис / Ондирис"
+   },
+   {
+    "record_id": "gov/cson/a7b22c2d22",
+    "kind": "cson",
+    "name": "Отдел района Сарайшык",
+    "address": "ул. А 82, блок М",
+    "reason": "no house number in the register address; no OSM element named for it; street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Мұхамеджан Тынышбайұлы / Мұхамеджан Тынышбайұлы"
+   },
+   {
+    "record_id": "gov/cson-pc/410a932685",
+    "kind": "cson",
+    "name": "Сектор Даму Отдела №3 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул.Кажымукана,8 а",
+    "reason": "no OSM element with address г.Астана ул.Кажымукана, 8а (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Қажымұқан / Қажымұқан"
+   },
+   {
+    "record_id": "gov/cson-pc/6b9a8e29c7",
+    "kind": "cson",
+    "name": "Сектор Казмедиа Отдела №2 Есильского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул.Конаева,4",
+    "reason": "no OSM element with address г.Астана ул.Конаева, 4 (or a ЦОН-named one); street absent from the 2017 OpenAddresses gazetteer; street in the RCA register: Дінмұхамед Қонаев / Дінмұхамед Қонаев"
+   },
+   {
+    "record_id": "gov/cson-pc/29c0f584b6",
+    "kind": "cson",
+    "name": "Сектор Департамент Государственных доходов района Сарыарка города Астана Отдела № 6 Сарыаркинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана пр.Республики,52",
+    "reason": "no OSM element with address г.Астана пр.Республики, 52 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)"
+   },
+   {
+    "record_id": "gov/cson-pc/eea492d990",
+    "kind": "cson",
+    "name": "Сектор Нур Отан Отдел №4 Алматинского района Департамента Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Астана",
+    "address": "г.Астана ул. Кенесары, 25",
+    "reason": "no OSM element with address г.Астана ул. Кенесары, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Кенесары / Кенесары"
+   },
+   {
+    "record_id": "gov/cson-pc/ad5930d12c",
+    "kind": "cson",
+    "name": "Отдел № 6 Сарыаркинского района по обслуживанию населения филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Нур-Султан",
+    "address": "г. Нур-Султан, ул. Сейфуллина 22",
+    "reason": "no OSM element with address ул. Сейфуллина, 22 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Сәкен Сейфуллин / Сәкен Сейфуллин"
+   },
+   {
+    "record_id": "gov/cson-pc/2932c8145d",
+    "kind": "cson",
+    "name": "Центр обслуживания населения юридических лиц филиала некоммерческого акционерного общества «Государственная корпорация «Правительство для граждан» по городу Астана",
+    "address": "ул. Туран 37/9 нп 30",
+    "reason": "no OSM element with address ул. Туран 37/9 нп, 30 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street not in the RCA register (2026-10 snapshot)"
+   },
+   {
+    "record_id": "gov/cson-pc/4dfbd5aa84",
+    "kind": "cson",
+    "name": "Филиал Центр обслуживания населения - филиала НАО ГК Правительство для граждан по г.Нур-Султан",
+    "address": "г.Нур-Султан ул. Желтоксан,25",
+    "reason": "no OSM element with address г.Нур-Султан ул. Желтоксан, 25 (or a ЦОН-named one); street present in the 2017 OpenAddresses gazetteer; street in the RCA register: Желтоксан / Желтоқсан"
+   }
+  ],
+  "attached_to_existing_pois": 3,
+  "new_pois": 10,
+  "new_pois_by_category": {
+   "other": 10
+  },
+  "actions": {
+   "cson:created": 10,
+   "cson:geocoded_not_created": 4,
+   "cson:kept_unmapped": 11,
+   "sport_facility:attached": 3,
+   "sport_facility:geocoded_not_created": 2,
+   "sport_facility:kept_unmapped": 2
+  },
+  "fields_filled_on_existing": {
+   "admin_hours": 3,
+   "address_kk": 1,
+   "address": 1
+  },
+  "admin_hours_pois": 3,
+  "poi_total_before": 2316,
+  "poi_total_after": 2326,
+  "hours_day_qualified_before": 514,
+  "hours_day_qualified_after": 524,
+  "licence": "открытые данные госоргана РК, Закон №401-V (ст. 1 п. 5: свободное использование, обработка, повторная публикация)",
+  "address_kk_pois": 6,
+  "catalog": {
+   "agency": "Астана қаласы әкімдігі",
+   "published_datasets": 52,
+   "enumerated": 52,
+   "with_coordinates": 0,
+   "empty": 0,
+   "rows_total": 667,
+   "with_working_hours_field": 1
+  }
+ },
+ "duplicates": {
+  "poi_total_before": 2326,
+  "poi_total_after": 2294,
+  "records_merged_away": 32,
+  "clusters": 23,
+  "kind_pins": 3,
+  "by_category": {
+   "attraction_landmark": 12,
+   "culture_theatre_cinema": 1,
+   "mall": 5,
+   "museum_gallery": 7,
+   "park_garden": 7
+  },
+  "absorbed_from_bucket": {
+   "official_site_only": 0,
+   "osm_and_overture": -17,
+   "osm_only": 21,
+   "overture_only": 27,
+   "state_registry_only": 0,
+   "wikidata_only": 1
+  },
+  "absorbed_by_origin": {
+   "osm": 10,
+   "overture": 21,
+   "wikidata": 1
+  },
+  "overture_pins_taken_over": {
+   "osm": 17,
+   "overture": 6
+  },
+  "kept_by_origin": {
+   "official_site": 133,
+   "osm": 1491,
+   "overture": 648,
+   "state_registry": 10,
+   "wikidata": 12
+  },
+  "records_before_by_origin": {
+   "official_site": 133,
+   "osm": 1501,
+   "overture": 669,
+   "state_registry": 10,
+   "wikidata": 13
+  },
+  "link_rules": {
+   "colocated": 3,
+   "kind_pin": 3,
+   "name": 29,
+   "worship": 1
+  },
+  "not_merged_outside_scope": {
+   "pairs_by_category": {
+    "coworking_library": 3,
+    "entertainment": 2,
+    "sport": 1,
+    "transit_station": 1
+   },
+   "examples": [
+    "Читальный зал ЕНУ | Library ENU (name, 5 m)",
+    "Концертный Зал Астана | Конгресс-холл / Congress Hall (colocated, 19 m)",
+    "Library ENU | Библиотека ЕНУ (name, 20 m)",
+    "Нурлы Жол | Железнодорожный вокзал Нурлы-Жол (name, 20 m)",
+    "Читальный зал ЕНУ | Библиотека ЕНУ (name, 20 m)",
+    "Fame City Entertainment Centre | Fame City (name, 31 m)"
+   ]
+  }
+ },
+ "wikivoyage": {
+  "stats": {
+   "listings_en": 52,
+   "filled_wdid": 30,
+   "filled_opening_hours": 12,
+   "unmatched": 59,
+   "filled_price_text": 5,
+   "filled_name": 32,
+   "filled_description_voyage": 6,
+   "filled_kind+near": 2,
+   "filled_opening_hours_voyage": 3,
+   "listings_without_fields": 62,
+   "listings_it": 51,
+   "filled_coords+name": 2,
+   "listings_he": 39,
+   "listings_pl": 14,
+   "listings_ru": 31,
+   "poi_total_before": 2294,
+   "poi_total_after": 2294
+  },
+  "meta": {
+   "generated_at": "2026-10-17T19:28:28+00:00",
+   "editions": {
+    "en": {
+     "title": "Astana",
+     "pageid": 1775,
+     "snapshot_date": "2026-10-17",
+     "listings": 52
+    },
+    "it": {
+     "title": "Astana",
+     "pageid": 2233,
+     "snapshot_date": "2026-10-17",
+     "listings": 51
+    },
+    "he": {
+     "title": "אסטנה",
+     "pageid": 3339,
+     "snapshot_date": "2026-10-17",
+     "listings": 39
+    },
+    "pl": {
+     "title": "Astana",
+     "pageid": 294,
+     "snapshot_date": "2026-10-17",
+     "listings": 14
+    },
+    "ru": {
+     "title": "Астана",
+     "pageid": 6257,
+     "snapshot_date": "2026-10-17",
+     "listings": 31
+    }
+   },
+   "rules": {
+    "wdid": "listing wikidata id = poi wikidata_id",
+    "name": "name_score >= 60 within 150 m",
+    "coords+name": "see/do listing, category-compatible poi within 40 m sharing a name token",
+    "kind+near": "a listing that names only a kind of venue, a poi of that kind within 40 m",
+    "false_pair_rule": "eat/drink listings need the name score; see/do pairs under 60 need <= 40 m, a see-family category and a shared name token that names the venue (not a kind word, not boilerplate, not a word venues of >= 2 other categories carry); different wikidata ids are never a pair"
+   }
+  },
+  "radius_pairs": [
+   {
+    "edition": "en",
+    "listing": "Zher Ana",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/4109068593",
+    "poi_name": "Жер-ана (Томирис)",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 0.4,
+    "name_score": 67,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Triumphal arch",
+    "listing_alt": "Триумфальная арка",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/549307755",
+    "poi_name": "Триумфальная арка Мангилик Ел",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 3.1,
+    "name_score": 74,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Assumption Cathedral",
+    "listing_alt": "Свято-Успенский кафедральный собор",
+    "wikidata": "Q1899549",
+    "section": "see",
+    "poi": "overture/99b40dbd-078b-487b-a567-d39c5bde9285",
+    "poi_name": "Свято-Успенский кафедральный собор",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 13.9,
+    "name_score": 100,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Grand Mosque of Astana",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "relation/18901938",
+    "poi_name": "Мечеть Нурсултан",
+    "poi_category": "attraction_landmark",
+    "rule": "kind+near",
+    "distance_m": 4.5,
+    "name_score": 53,
+    "fields": [
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "The Military Historical Museum of the Armed Forces of the Republic of Kazakhstan",
+    "listing_alt": "Қазақстан Республикасы қарулы күштерінің Әскери-Тарихи музеиі",
+    "wikidata": null,
+    "section": "see",
+    "poi": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+    "poi_name": "Военно-исторический музей",
+    "poi_category": "museum_gallery",
+    "rule": "name",
+    "distance_m": 5.0,
+    "name_score": 74,
+    "fields": [
+     "hours",
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Lovers' park",
+    "listing_alt": "Ғашықтар саябағы",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/37884583",
+    "poi_name": "Парк влюбленных",
+    "poi_category": "park_garden",
+    "rule": "name",
+    "distance_m": 21.2,
+    "name_score": 100,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Presidential Park",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/112177946",
+    "poi_name": "Президентский парк",
+    "poi_category": "park_garden",
+    "rule": "name",
+    "distance_m": 116.7,
+    "name_score": 86,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Kinopark 8",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/5586173121",
+    "poi_name": "Сарыарка",
+    "poi_category": "culture_theatre_cinema",
+    "rule": "name",
+    "distance_m": 27.9,
+    "name_score": 89,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Astana Circus",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/5126825313",
+    "poi_name": "Столичный Цирк",
+    "poi_category": "culture_theatre_cinema",
+    "rule": "name",
+    "distance_m": 19.7,
+    "name_score": 71,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Melnitsa",
+    "listing_alt": "Windmill",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "overture/0777beb8-fc25-4c6a-8ab7-228fb95b39b3",
+    "poi_name": "Мельница",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 17.2,
+    "name_score": 100,
+    "fields": [
+     "hours",
+     "price"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Line Brew",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/4290625693",
+    "poi_name": "Line Brew",
+    "poi_category": "bar_nightlife",
+    "rule": "name",
+    "distance_m": 17.2,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Turfan",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/2389981591",
+    "poi_name": "Турфан",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 68.8,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Sunduk",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "overture/c7c061bc-3b61-41ba-bf99-d6b161152610",
+    "poi_name": "Сундук",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 28.8,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Saksaul",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/4953253121",
+    "poi_name": "Саксаул",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 8.4,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "en",
+    "listing": "Sattj",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/5787558957",
+    "poi_name": "Сәтті",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 20.7,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Zher Ana",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/4109068593",
+    "poi_name": "Жер-ана (Томирис)",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 0.4,
+    "name_score": 67,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Arco di Trionfo",
+    "listing_alt": "Триумфальная арка",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/549307755",
+    "poi_name": "Триумфальная арка Мангилик Ел",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 3.1,
+    "name_score": 74,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Cattedrale dell'Assunzione",
+    "listing_alt": "Свято-Успенский кафедральный собор",
+    "wikidata": "Q1899549",
+    "section": "see",
+    "poi": "overture/99b40dbd-078b-487b-a567-d39c5bde9285",
+    "poi_name": "Свято-Успенский кафедральный собор",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 13.9,
+    "name_score": 100,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Museo storico delle Forze Armate della Repubblica del Kazakistan",
+    "listing_alt": "Қазақстан Республикасы қарулы күштерінің Әскери-Тарихи музеиі",
+    "wikidata": null,
+    "section": "see",
+    "poi": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+    "poi_name": "Военно-исторический музей",
+    "poi_category": "museum_gallery",
+    "rule": "coords+name",
+    "distance_m": 5.0,
+    "name_score": 56,
+    "fields": [
+     "hours",
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Parco degli amanti",
+    "listing_alt": "Ғашықтар саябағы",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/37884583",
+    "poi_name": "Парк влюбленных",
+    "poi_category": "park_garden",
+    "rule": "name",
+    "distance_m": 21.2,
+    "name_score": 100,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Fusion night club",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/5913715461",
+    "poi_name": "Fusion",
+    "poi_category": "bar_nightlife",
+    "rule": "name",
+    "distance_m": 16.9,
+    "name_score": 67,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Line Brew",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/4290625693",
+    "poi_name": "Line Brew",
+    "poi_category": "bar_nightlife",
+    "rule": "name",
+    "distance_m": 7.6,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Turfan",
+    "listing_alt": "Турфан",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/2389981591",
+    "poi_name": "Турфан",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 68.8,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Sunduk Ресторан",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "overture/c7c061bc-3b61-41ba-bf99-d6b161152610",
+    "poi_name": "Сундук",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 28.8,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "listing": "Saksaul",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/4953253121",
+    "poi_name": "Саксаул",
+    "poi_category": "restaurant",
+    "rule": "name",
+    "distance_m": 8.4,
+    "name_score": 100,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "he",
+    "listing": "אסטנה ארנה",
+    "listing_alt": "Астана Арена",
+    "wikidata": null,
+    "section": "see",
+    "poi": "wikidata/Q746559",
+    "poi_name": "Астана Арена",
+    "poi_category": "sport",
+    "rule": "name",
+    "distance_m": 67.1,
+    "name_score": 100,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "he",
+    "listing": "Fusion night club",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "eat",
+    "poi": "node/5913715461",
+    "poi_name": "Fusion",
+    "poi_category": "bar_nightlife",
+    "rule": "name",
+    "distance_m": 16.9,
+    "name_score": 67,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Wieża Bajterek",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/230401645",
+    "poi_name": "Байтерек",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 4.4,
+    "name_score": 73,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Chan Szatyr",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/460703779",
+    "poi_name": "Хан Шатыр",
+    "poi_category": "mall",
+    "rule": "name",
+    "distance_m": 31.9,
+    "name_score": 86,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Muzeum Narodowe Republiki Kazachstanu",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/4894937300",
+    "poi_name": "Национальный музей Республики Казахстан",
+    "poi_category": "museum_gallery",
+    "rule": "name",
+    "distance_m": 69.2,
+    "name_score": 67,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Meczet Sułtana Khazret",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/240860325",
+    "poi_name": "мечеть \"Хазрет Султан\"",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 47.4,
+    "name_score": 88,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Atameken Mapa Kazachstanu",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/1460700597",
+    "poi_name": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+    "poi_category": "museum_gallery",
+    "rule": "name",
+    "distance_m": 31.8,
+    "name_score": 76,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "listing": "Pomnik kazachskiego Eli",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "node/2681623412",
+    "poi_name": "Қазақ елі",
+    "poi_category": "attraction_landmark",
+    "rule": "name",
+    "distance_m": 6.6,
+    "name_score": 63,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "listing": "Сфера Nur Alem",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "overture/f156787e-136d-4047-9f5e-8ae04ed039bb",
+    "poi_name": "Nur Alem Museum of Future Energy",
+    "poi_category": "museum_gallery",
+    "rule": "coords+name",
+    "distance_m": 20.8,
+    "name_score": 56,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "listing": "Центральная мечеть",
+    "listing_alt": "",
+    "wikidata": "Q113675887",
+    "section": "see",
+    "poi": "relation/18901938",
+    "poi_name": "Мечеть Нурсултан",
+    "poi_category": "attraction_landmark",
+    "rule": "kind+near",
+    "distance_m": 24.6,
+    "name_score": 0,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "listing": "Этно-мемориальный комплекс «Карта Казахстана \"Атамекен\"»",
+    "listing_alt": "",
+    "wikidata": null,
+    "section": "see",
+    "poi": "way/1460700597",
+    "poi_name": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+    "poi_category": "museum_gallery",
+    "rule": "name",
+    "distance_m": 8.5,
+    "name_score": 100,
+    "fields": [
+     "price",
+     "description"
+    ]
+   }
+  ],
+  "unmatched": [
+   {
+    "edition": "en",
+    "name": "KazMunayGas Palace",
+    "section": "see",
+    "wikidata": "Q1417227",
+    "lat": 51.131237,
+    "lon": 71.412166,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "The Triumph of Astana",
+    "section": "see",
+    "wikidata": "Q475139",
+    "lat": 51.140222,
+    "lon": 71.414952,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Shabyt palace",
+    "section": "see",
+    "wikidata": "Q60446898",
+    "lat": 51.122697,
+    "lon": 71.472754,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Parliament building",
+    "section": "see",
+    "wikidata": "Q2995409",
+    "lat": 51.127677,
+    "lon": 71.441497,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "National education academy",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.127509,
+    "lon": 71.439609,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Emerald towers",
+    "section": "see",
+    "wikidata": "Q1073439",
+    "lat": 51.130719,
+    "lon": 71.422394,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Expo 2017 buildings",
+    "section": "see",
+    "wikidata": "Q19858174",
+    "lat": 51.0892333,
+    "lon": 71.4163604,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "National archives",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.128001,
+    "lon": 71.427101,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Building of ministers",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.1252,
+    "lon": 71.4391,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Circus fountain",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.14594,
+    "lon": 71.420112,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Giant lizards sculptures",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.138739,
+    "lon": 71.409658,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Ramstore Bridge",
+    "section": "see",
+    "wikidata": "Q28402868",
+    "lat": 51.15185,
+    "lon": 71.428037,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Pedestrian bridge",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.1566338,
+    "lon": 71.4259108,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Ak Bulak sauna Complex",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.026941,
+    "lon": 71.461344,
+    "fields": [
+     "hours",
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Duman",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.148062,
+    "lon": 71.416223,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Cafe Shymkent",
+    "section": "eat",
+    "wikidata": null,
+    "lat": 51.1745,
+    "lon": 71.4384,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Rafe",
+    "section": "eat",
+    "wikidata": null,
+    "lat": 51.1612,
+    "lon": 71.4146,
+    "fields": [
+     "hours",
+     "price"
+    ]
+   },
+   {
+    "edition": "en",
+    "name": "Ali Babas",
+    "section": "eat",
+    "wikidata": null,
+    "lat": 51.1626309,
+    "lon": 71.4220903,
+    "fields": [
+     "hours",
+     "price"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Palazzo KazMunayGas",
+    "section": "see",
+    "wikidata": "Q1417227",
+    "lat": 51.131237,
+    "lon": 71.412166,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Trionfo di Astana",
+    "section": "see",
+    "wikidata": "Q475139",
+    "lat": 51.140222,
+    "lon": 71.414952,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Palazzo Shabyt",
+    "section": "see",
+    "wikidata": "Q60446898",
+    "lat": 51.122697,
+    "lon": 71.472754,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Archivio nazionale del Kazakistan",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.128001,
+    "lon": 71.427101,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Senato parlamento del Kazakistan",
+    "section": "see",
+    "wikidata": "Q2995409",
+    "lat": 51.127677,
+    "lon": 71.441497,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Accademia nazionale dell'Educazione",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.127509,
+    "lon": 71.439609,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Casa dei Ministri del Governo del Kazakistan",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.1252,
+    "lon": 71.4391,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Torri di smeraldo",
+    "section": "see",
+    "wikidata": "Q1073439",
+    "lat": 51.130719,
+    "lon": 71.422394,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Expo 2017",
+    "section": "see",
+    "wikidata": "Q19858174",
+    "lat": 51.0892333,
+    "lon": 71.4163604,
+    "fields": [
+     "hours",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Fontana del circo",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.14594,
+    "lon": 71.420112,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Lucertole giganti",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.138739,
+    "lon": 71.409658,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Ponte Ramstore",
+    "section": "see",
+    "wikidata": "Q28402868",
+    "lat": 51.15185,
+    "lon": 71.428037,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Ponte pedonale",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.1566338,
+    "lon": 71.4259108,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Parco Presidenziale",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.124203,
+    "lon": 71.456585,
+    "fields": [
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Duman",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.148062,
+    "lon": 71.416223,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Ak Bulak sauna",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.026941,
+    "lon": 71.461344,
+    "fields": [
+     "price",
+     "description"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Circo di Astana",
+    "section": "eat",
+    "wikidata": null,
+    "lat": 51.145203,
+    "lon": 71.419097,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "it",
+    "name": "Ali Babas",
+    "section": "eat",
+    "wikidata": null,
+    "lat": 51.1626309,
+    "lon": 71.4220903,
+    "fields": [
+     "hours",
+     "price"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Wojskowe Muzeum Historyczne Sił Zbrojnych Republiki Kazachstanu",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.155913,
+    "lon": 71.431365,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Pałac Pokoju i Pojednania",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.123056,
+    "lon": 71.463611,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Duman",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.148062,
+    "lon": 71.416223,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Meczet Nur-Astana",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.2175,
+    "lon": 71.695833,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Pałac Shabyt",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.122697,
+    "lon": 71.472754,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Pałac Niepodległości",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.122222,
+    "lon": 71.470833,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Muzeum Pierwszego Prezydenta Republiki Kazachstanu",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.1663169,
+    "lon": 71.4187769,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "pl",
+    "name": "Alzhir, Muzeum Pamięci Ofiar Represji Politycznej i Totalitaryzmu",
+    "section": "see",
+    "wikidata": null,
+    "lat": 51.0781387,
+    "lon": 70.9693175,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Айленд",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Площадь \"Казак Ели\"",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Астана Арена",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Центральная площадь Целинограда",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Дворец Жастар",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Государственная филармония",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Театр \"Жастар\"",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Demalys Promenade",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Набережная",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Центральный городской парк культуры и отдыха",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Ботанический сад",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Астана балет театр",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Ледовый дворец \"Алау\"",
+    "section": "see",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "description"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Sunday",
+    "section": "eat",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "hours"
+    ]
+   },
+   {
+    "edition": "ru",
+    "name": "Chili Peppers",
+    "section": "eat",
+    "wikidata": null,
+    "lat": null,
+    "lon": null,
+    "fields": [
+     "hours"
+    ]
+   }
+  ]
+ }
+}

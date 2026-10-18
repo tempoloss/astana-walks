@@ -1,0 +1,9 @@
+{
+ "domain": "hilton.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:17:12+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "Hilton answers HTTP 403 (bot wall) to the Astana dining/hotel pages with our UA; robots.txt itself is readable. probe status 0",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

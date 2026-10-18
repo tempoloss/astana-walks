@@ -1,0 +1,118 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "offline",
+  "chain": [],
+  "cases": 20,
+  "cases_with_recs": 20,
+  "recs_total": 58,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 77.6,
+  "case_all_ok_rate": 60.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 80.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 85.0,
+  "top1_open_rate": 70.0,
+  "unknown_hours_rec_share": 58.6,
+  "non_osm_rec_share": 51.7,
+  "avg_walk_min": 6.9,
+  "wifi_socket_in_data_share": 0.0,
+  "route_stop_closed_cases": 1,
+  "latency_ms_median": 14.5,
+  "latency_ms_p90": 35.0,
+  "generation_ms_median": 0.0,
+  "generation_ms_p90": 1.0,
+  "model_link": {
+    "template": 20
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "category_not_allowed": 6,
+    "category_forbidden": 3,
+    "walk_too_long": 2,
+    "over_budget": 1
+  },
+  "padded_rec_share": 24.1,
+  "expanded_rec_share": 0.0,
+  "backfill_rec_share": 19.0,
+  "substituted_rec_share": 5.2,
+  "padded_case_share": 35.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [],
+  "failing_cases": [
+    {
+      "case_id": "h02-nurly-fri-train",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed",
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h05-arena-tue-rain",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h09-botsad-thu-typos",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h11-akorda-holiday-cold-tea",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h13-nurly-tue-late-hungry",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h14-kenesary-wed-dog",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h16-lovers-tue-sunset",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h20-keruen-newyear-cold",
+      "violations": [
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "holdout",
+  "label": "offline",
+  "header": {
+    "label": "offline",
+    "mode": "offline",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "holdout_cases.json",
+    "case_set": "holdout",
+    "records": 20,
+    "git": "9fbe2fc",
+    "walking": "straight",
+    "generated_at": "2026-10-18T21:56:20+05:00"
+  }
+}

@@ -1,0 +1,52 @@
+{
+ "domain": "rabiya.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:35:51+00:00",
+ "pages": [
+  "http://rabiya.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Rabiya",
+   "address": "г.Астана Правый берег, ЖК \"Highwill\" ул. А.Байтурсынова",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Время работы: вс-чт: 11.00-01.00; пт-сб: 11.00-02.00",
+   "opening_hours_osm": "Mo-Th,Su 11:00-01:00; Fr,Sa 11:00-02:00",
+   "hours_flags": [],
+   "description": "Rabiya - ресторан узбекской и европейской кухни в Астане",
+   "url": "http://rabiya.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://rabiya.kz/",
+     "snippet": "Rabiya",
+     "fetched_at": "2026-10-17T09:35:51+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://rabiya.kz/",
+     "snippet": "г.Астана Правый берег, ЖК \"Highwill\" ул. А.Байтурсынова",
+     "fetched_at": "2026-10-17T09:35:51+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://rabiya.kz/",
+     "snippet": "Время работы: вс-чт: 11.00-01.00; пт-сб: 11.00-02.00",
+     "fetched_at": "2026-10-17T09:35:51+00:00"
+    },
+    {
+     "field": "description",
+     "url": "http://rabiya.kz/",
+     "snippet": "Rabiya - ресторан узбекской и европейской кухни в Астане",
+     "fetched_at": "2026-10-17T09:35:51+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "The header line «Время работы : с 11.00 до 02.00» agrees with the weekly schedule; the address street carries no house number on the site.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

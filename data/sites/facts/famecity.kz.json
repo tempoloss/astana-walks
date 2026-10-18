@@ -1,0 +1,52 @@
+{
+ "domain": "famecity.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:46:04+00:00",
+ "pages": [
+  "http://www.famecity.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Fame City Entertainment Centre",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": "8 (701) 883 96 29",
+   "opening_hours_raw": "Часы работы - ежедневно с 11:00 до 22:00",
+   "opening_hours_osm": "Mo-Su 11:00-22:00",
+   "hours_flags": [],
+   "description": "Самые современные аттракционы, лучшие игровые автоматы, карусели, детская и игровая комнаты ждут вас на 4-м этаже торгово-развлекательного центра «Хан Шатыр»",
+   "url": "http://www.famecity.kz/",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "http://www.famecity.kz/",
+     "snippet": "Часы работы - ежедневно с 11:00 до 22:00",
+     "fetched_at": "2026-10-17T09:15:33+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.famecity.kz/",
+     "snippet": "8 (701) 883 96 29",
+     "fetched_at": "2026-10-17T09:15:33+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://www.famecity.kz/",
+     "snippet": "Fame City — удивительный мир развлечений",
+     "fetched_at": "2026-10-17T09:15:33+00:00"
+    },
+    {
+     "field": "description",
+     "url": "http://www.famecity.kz/",
+     "snippet": "<meta name=\"description\" content=\"Самые современные аттракционы, лучшие игровые автоматы, карусели, детская и игровая комнаты ждут вас на 4-м этаже торгово-развлекательного центра «Хан Шатыр»",
+     "fetched_at": "2026-10-17T09:15:33+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "No street address in the text: the meta description places the centre 'на 4-м этаже торгово-развлекательного центра «Хан Шатыр»'. The page's only coordinates are the centre of an embedded 2GIS firmsonmap widget (2GIS data, not the venue's own), so they are NOT stored; the record has hours/phone/description only (address empty).",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

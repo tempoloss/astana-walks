@@ -1,0 +1,12 @@
+{
+ "domain": "eurasia-cinema7.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://eurasia-cinema7.kz",
+  "https://eurasia-cinema7.kz/index.php?view=contacts"
+ ],
+ "branches": [],
+ "notes": "Template site of кинотеатр «Eurasia Cinema7»: /index.php?view=contacts prints the placeholders 'Касса кинотеатра:', 'Адрес', 'Email' with EMPTY values (the <a> tags carry no text), and the home page sends the schedule to Kino.kz (an aggregator). No verbatim address/hours -> notes, no branches.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

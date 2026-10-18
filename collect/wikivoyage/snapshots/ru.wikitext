@@ -1,0 +1,668 @@
+{{pagebanner}}
+'''Астана''' (прежние названия: Акмола,  Целиноград, Нур-Султан) находится на [[Северный Казахстан|севере Казахстана]], столица [[Казахстан]]а (с декабря 1998 г.), второй по величине город страны. 
+
+В результате масштабной трансформации стоимостью миллиарды долларов Астана ныне представляет собой интересную смесь старой советской архитектуры с современными зданиями, построенными по проектам Нормана Фостера и других ведущих архитекторов мира. Астана растёт, но всё же пока не может предложить удобства и развлечения западных столиц и прежнего столичного города, [[Алматы]], хотя и имеет свои привлекательные стороны. 
+{{geo|51.16686|71.42143|map=city|zoom=13}}
+
+==Понять==
+{{citybar
+| city=Астана
+| citylocal= {{lang|kk|Астана}} 
+| arm= Emblem of Nur-Sultan.svg
+| image= Talan Towers 9.jpg
+| caption= Монумент «Байтерек»
+| website=http://www.astana.kz/ru/
+| callingcode= +7 7172
+| timezone= UTC+6
+| monumentlist= Астана
+}}
+Первые поселения на пересечении торговых путей появлялись в этом месте ещё в бронзовом веке, но город ведёт свою официальную историю с 1830 года - когда полковником Фёдором Шубиным на реке Ишим был основан казачий форпост Акмолинск - для защиты северных областей Казахстана от набегов с юга. Акмолинск нарекли окружным центром, он сохранял свой неброский статус до середины XX века, когда началась хрущёвская кампания по освоению целины. Город стал центром и символом покорения степи человеком, в честь чего в 1961 году сменил название на Целиноград. В 1992 году ему было возвращено историческое название, только уже по-казахски - Акмола. Колоссальные перемены в жизни города начались в 1994 году, когда Верховный Совет Казахстана принял постановление о переносе столицы из Алма-Аты в Акмолу. Фактически это произошло только к 1998 году, тогда же город был вновь переименован - в Астану.
+
+С тех пор Астана - один из самых динамично развивающихся городов на территории бывшего Советского Союза. За 20 лет численность населения Астаны подскочила почти в три раза. Вчерашний глубоко провинциальный город очутился в центре деловой, культурной и политической жизни, в него хлынули финансовые потоки, закипело массовое строительство ультрасовременных зданий и кварталов, которые должны стать лицом Казахстана для приезжающих в город гостей. Главным очагом строительства стал административно-деловой район на бульваре Нуржол, к проектированию которого приложил руку знаменитый японский архитектор Кисё Курокава. Географически Астана оказалась разделена на два больших города - старый Целиноград на севере с жилыми кварталами преимущественно советской застройки (коренные жители по старинке его так и называют - Целиноград или Старый город) и новый город на юге с небоскрёбами, развлекательными и торговыми центрами, ресторанами, мечетями и новейшими жилыми комплексами. А с вершины башни Байтерек южнее Астаны уже открываются взору бескрайние степные просторы, которые продолжают быстро застраиваться. В 2019 году, после формального ухода Нурсултана Назарбаева с поста главы государства, город был переименован в Нур-Султан, а в 2022 году переименован обратно
+
+[[File:Ak Orda Presidential Palace by night 05.jpg|thumb|upright=1.35|Президентский дворец (Акорда)]]
+Несмотря на высокие темпы роста и статус, Астана ещё не скоро обгонит по масштабам крупнейший город Казахстана - Алматы. Но, как и все молодые столицы, являет собой редкое сочетание качеств: у города уже столичный лоск и солидность, однако пока нет той надменности, шума и капризной невоздержанности, присущих гигантским мегаполисам. Астана удобна для туристов из России отсутствием языкового барьера - русский язык остаётся широко в ходу наравне с казахским (достаточно упомянуть, что кино в кинотеатрах Астаны демонстрируется всегда на русском языке).
+
+==Как добраться==
+
+===На самолёте===
+{{listing|type=go| lat=51.0283 | long=71.4624 | wdid=
+| name=Международный аэропорт «Нурсултан Назарбаев» | alt=IATA:NQZ | image=
+| address= | directions=
+| url=http://www.astanaairport.kz | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2019-04-07
+| description=Расположен в 10-15 км к югу от города. Терминал 1 обслуживает международные рейсы, Т2 - внутренние. Просторный новый аэровокзальный комплекс содержит необходимую инфраструктуру, включая капсульный отель. В публичной зоне Т1 делать нечего, две кофейни по краям и сувенирный магазин, в чистой несколько сосредоточенных на верхнем этаже кафетериев и кафе, в зале вылета притаившийся в углу книжный магазинчик и традиционные дьюти-фри, которые для вылетающих в РФ и РБ очевидно недоступны. Цены на такси до города 1500-2000 тенге, строится монорельс, но он придет в аэропорт еще нескоро.
+}}
+
+===На поезде===
+{{listing|type=go| lat=51.195466 | long=71.409521 |wdid=Q800403
+| name= Астана-1 | alt= | image=Astana Railway Station 2014.jpg
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-05
+| description=
+}}
+{{listing|type=go| lat= 51.112058 | long=71.531645 |wdid=Q30642068
+| name= Астана Нурлы Жол | alt= | image=Astana Nurly Jol 2018.jpg
+| address= | directions= на восточной окраине
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-05
+| description= 
+}}
+
+===На автомобиле===
+
+===На автобусе===
+{{listing|type=go| lat=51.1941 | long=71.4118 |wdid= Q104864810
+| name= Автовокзал «Сапаржай» | alt= | image= Автостанция Сапаржай - panoramio.jpg
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2025-10-11
+| description=
+}}
+
+===На корабле===
+
+==Транспорт==
+Только автобусы. Стоимость проезда: в обычных 110 тенге при оплате QR-кодом через казахстанские банки или мобильные операторы или смарт-картой, 180 тенге наличными водителю, в экспрессах 180 тенге по QR-коду или смарт-карте, 250 тенге наличными (2023). Смарт-карта стоит 1000 тенге (2023), и продается в автоматах, в том числе на вокзале и в аэропорту.
+
+Такси: действуют все основные приложения: InDriver, ЯндексТакси, Uber (работает российское приложение, а не международное), maxim. Также есть городские службы такси.
+
+Карты: как и обычно в Казахстане, подробнее всего 2Gis. Яндекс Карты хуже по детализации, но показывают автобусы на карте. Оба приложения не знают про экспресс-маршруты.
+
+==Достопримечательности==
+===Новый город===
+[[File:KazMunayGas 01.jpg|thumb|upright=1.35|Современная архитектура Астаны]]
+[[File:Nur-Astana Mosque 1.jpg|thumb|upright=1.35|Мечеть Нур-Астана]]
+{{listing|type=see| lat=51.12825 | long=71.430472 | wdid=Q804210
+| name=Монумент Байтерек | alt= | image=Bayterek by night 01.jpg
+| address= | directions=
+| url=https://www.baiterek.gov.kz/ru | facebook= | vkontakte=
+| phone=+77172446472
+| email=
+| hours=09:00–21:00 | price=
+| lastedit=2024-06-10
+| description=Возведенный в период с 1996 по 2002 год монумент, напоминающий кубок или чупа-чупс со смотровой площадкой на высоте 97 м. Красивый вид сверху, особенно ночью. Главная достопримечательность столицы
+}}
+{{listing|type=see| lat=51.125 | long=71.472222 | wdid=Q4494668
+| name=Мечеть Хазрет Султан | alt=Әзірет Сұлтан мешіті | image=Khazret Sultan Mosque 2 (cropped).jpg
+| address=просп. Тауелсиздик, 48 | directions=
+| url=http://www.muslim.kz | facebook= | vkontakte=
+| phone=+77172280018
+| email=
+| hours= | price=
+| lastedit=2024-04-09
+| description=Огромная мечеть 2012 года с гигантским куполом и 4 минаретами. Должно быть самая красивая в центральной Азии
+}}
+{{listing|type=see| lat=51.126561 | long=71.415737 | wdid=Q1813417
+| name=Мечеть Нур Астана | alt=Астана Мешіті | image=
+| address=просп. Кабанбай Батыра, 36 | directions=
+| url=http://ummet.kz/ | facebook= | vkontakte=
+| phone=+77172446165
+| email=
+| hours= | price=
+| lastedit=2024-05-09
+| description=Очень приятная зелёная территория. Мечеть Нур Астана недавно переименовали в мечеть имени Абу - Насыра Аль Фараби, но многие по прежнему называют её старым названием
+}}
+{{listing|type=see| lat=51.122778 | long=71.441667 | wdid=Q573362
+| name=Центральный концертный зал Казахстан | alt= | image=Казахстан ЦКЗ 2011 02.jpg
+| address=просп. Мангилик Ел, 10/1 | directions=
+| url=http://www.qazaqconcert.kz/ | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2022-11-18
+| description=
+}}
+{{listing|type=see| lat=51.089366 | long=71.416177 | wdid=
+| name=Сфера Nur Alem | alt= | image=
+| address=просп. Мангилик Ел, 55 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-02
+| description=Место проведения выставки "EXPO 2017". Когда проводилась выставка здание было главным павильоном. На данный момент в сфере находится музей энергии будущего. Лучше не ходить на праздниках по двум причинам: 1) Много народу и большие очереди 2) Некоторые очень интересные экспонаты по праздникам не работают. На территории расположилась аллея мира и согласия вдоль которой интересные детские площадки, музыкальный фонтан и стела по центру. Также на территории есть множество прогулочных зон с конструкциями символизирующие энергии будущего о которых рассказывается в музее. Также присутствуют театр, рестораны и бар. Кстати говоря на территорию Нур Алема на праздниках наоборот стоит сходить, так как к празднику её очень красиво и интересно украшают
+}}
+{{listing|type=see| lat=51.072879 | long=71.410787 | wdid=Q113675887
+| name=Центральная мечеть | alt= | image=
+| address=просп. Мангилик Ел, 65 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-02
+| description=Самая большая мечеть в Казахстане. Впечатляет своим размером. Имеет большой внутренний двор. Территория огромная, с хорошим благоустройством.
+}}
+{{listing|type=see| lat=51.123113 | long=71.463714 |wdid=Q2119741
+| name= Дворец мира и согласия | alt= | image=
+| address= просп. Тауелсиздик, 57 | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-12
+| description=
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Айленд | alt= | image=
+| address=Коргальджинское шоссе 2 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-02
+| description=Айленд- развлекательный комплекс состоящий из самого отдалённого от моря океанариума в мире в котором плавают даже русалки, огромного аквапарка со множеством горок и бассейнов, театра животных аниматроников "Джунгли", экзотариума с самыми разными животными со всего мира и даже комнаты для кормления рыб с бутылочек. На территории расположена детская площадка, различные аттракционы среди которых самое большое в центральной Азии колесо обозрения высотой в 62 метра
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Площадь "Казак Ели" | alt= | image=
+| address= улица Ж. Омарова | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-24
+| description="Казак Ели" переводится на Русский как "Казахский народ". Площадь посвящена независимости Казахстана. На площади есть монумент "Казак Ели" и Стена мира на которой написано слово "Мир" на 51 языке
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Астана Арена | alt= | image=
+| address=Проспект Туран 48 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-25
+| description=Самый большой футбольный стадион в Астане
+}}
+
+=== Старый город ===
+{{listing|type=see| lat= | long= | wdid=
+| name=Центральная площадь Целинограда | alt=Старая площадь | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-07
+| description=Главная площадь старого города перед акиматом, Бывшим ЦУМом и государственной филармонией
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Дворец Жастар | alt=Жастар Сарайы | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-06
+| description=Дворец культуры старого города
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Государственная филармония | alt=Бывший конгресс холл | image=
+| address=Ул.Кенесары 32 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-09
+| description=Бывший дворец целинников и конгресс холл
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Театр "Жастар" | alt=Молодёжный театр | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-13
+| description=Главный театр старого города
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Demalys Promenade | alt=Пешеходная улица Азербайжана Мамбетова | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-13
+| description=Вдоль променада много старых зданий с имперских времён. Можно узнать историю зданий по табличкам и QR кодам или просто полюбоваться ими. Хорошее благоустройство
+}}
+{{listing|type=see| lat= | long= | wdid=
+| name=Дворец школьников имени Махамбета Отемисулы | alt= Бывший Дом пионеров | image=
+| address=Улица Азербайжана Мамбетова 1 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-12
+| description=
+}}
+
+==Чем заняться==
+{{listing|type=do| lat=51.118168 | long=71.469311 |wdid=Q18405670
+| name= Национальный музей | alt= | image=
+| address= просп. Тауелсиздик, 54 | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-12
+| description=
+}}
+{{listing|type=do| lat=51.135351 | long=71.410819 | wdid=Q21371563
+| name=Астана Опера | alt= | image=Астана Опера - panoramio.JPG
+| address=ул. Кунаева, 1 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2025-03-27
+| description=
+}}
+{{listing|type=do| lat=51.114611 | long=71.442197 |wdid=
+| name= Назарбаев-центр | alt= | image=
+| address= ул. Алихана Бокейханова, 1А | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-12
+| description=
+}}
+[[File:Этно-мемориальный комплекс «Карта Казахстана Атамекен».JPG|thumb|Этно-мемориальный комплекс «Карта Казахстана Атамекен»]]
+{{listing|type=do| lat=51.1493019 | long=71.417959 | wdid=
+| name=Этно-мемориальный комплекс «Карта Казахстана "Атамекен"» | alt= | image=
+| address=Коргалжынское шоссе, 2/1 | directions=
+| url=http://atamekenmap.kz/ | facebook= | vkontakte=
+| phone=+7 (7172) 245-272
+| email=atameken2011@mail.ru
+| hours= | price=входной билет 400 тенге, фотосъёмка 300 тенге, экскурсия от 200 тенге (2022)
+| lastedit=2022-04-20
+| description=Небольшой парк, где все основные достопримечательности Казахстана показаны в миниатюре. Очень познавательно для знакомства со страной. Есть дополнительные экспозиции: историческая и модель современного Нур-Султана. Можно заказать экскурсию, в том числе на русском языке. А можно просто ходить и изучать миниатюры, благо все они сопровождаются исчерпывающими подписями.
+}}
+{{listing|type=do| lat=51.1557 | long=71.4653 | wdid=Q16632800
+| name=Барыс Арена | alt= | image=Barys Arena 2014-03-15.JPG
+| address=просп. Туран 57 | directions=
+| url=https://www.hcbarys.kz/ | facebook= | vkontakte=
+| phone=+77172613519
+| email=
+| hours= | price=
+| lastedit=2022-11-18
+| description=10 дорожек, 50 метров, не шумно, очень чисто.
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Набережная | alt= | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-07
+| description=Место где отдыхают горожане
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Центральный городской парк культуры и отдыха | alt=Столичный парк | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-02
+| description=Самый первый в городе парк. В парке есть главная аллея которая длится от летнего амфитеатра до городских курантов. Вдоль аллеи очень много кафе, благоустроенных зон и интересных фонтанов. Тут сделали искусственную реку с лебедями вокруг которой очень много аттракционов, для кого-то это даже чересчур. В центральном парке есть два колеса обозрения, одно у левой набережной, другое у развлекательного центра "Ailand", он тоже на территории парка и вокруг него много аттракционов. Есть пляж, но лучше там не купаться, река грязная. Велодорожки по почти всему парку. Много спорткомплексов, которые раньше были павильонами
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Ботанический сад | alt=Ботаникалык саябак | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-24
+| description=Один из крупнейших парков Астаны в котором посажены растения со всего мира. Есть искусственное озеро с поющим фонтаном и ещё один поющий фонтан в форме казана. Сад новый, деревья пока ещё не подросли и не отбрасывают тень, но лет через 10-15 ботанический сад будет правда ботаническим
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Новый дворец школьников | alt= | image=
+| address=Проспект Бауыржана Момышулы 5 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-24
+| description=
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Астана балет театр | alt= | image=
+| address=Проспект Улы Дала 9 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-25
+| description=Новый театр открытый к выставке "EXPO 2017". Второй по размерам театр Астаны
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Дворец независимости | alt= | image=
+| address=Проспект Тауелсиздик 52 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-25
+| description=
+}}
+{{listing|type=do| lat= | long= | wdid=
+| name=Ледовый дворец "Алау" | alt= | image=
+| address=Проспект Кабанбай Батыра 47 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-06-10
+| description=Очень большой каток, на территории есть небольшой отель
+}}
+
+==Покупки==
+{{listing|type=buy| lat=51.12776 | long=71.42528 | wdid=
+| name=ТРЦ "Керуен" | alt=Keruen | image=
+| address=Улица Достык 9 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-18
+| description=Один из самых элитных торговых комплексов города, супермаркет, бутики, большой фудкорт на верхнем этаже, кинотеатр и развлекательный центр "Керуен парк"
+}}
+{{listing|type=buy| lat=51.132222 | long=71.403889 | wdid=Q671484
+| name=ТРЦ "Хан Шатыр" | alt=Khan Shatyr | image=Stamps of Kazakhstan, 2010-08.jpg
+| address=просп. Туран, 37 | directions=
+| url=http://www.khanshatyr.com | facebook= | vkontakte=
+| phone=+77172572626
+| email=
+| hours==10:00–22:00 суббота 10:00-18:00 | price=
+| lastedit=2024-04-07
+| description=Самый большой в мире шатёр. Гордость и достопримечательность столицы. Много магазинов одежды. Фудкорты очень заставлены, кушать будете в тесноте. Напоминающий палатку современный торговый центр с более чем 200 магазинами, ресторанами, кинотеатром и развлекательными центрами.
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Мега силквей" | alt=Mega Silkway | image=
+| address=Проспект Кабанбай Батыра 62 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=Находится возле выставочного центра " Нур алем ". Возможно самый большой ТРЦ Астаны - это спорный момент. В Мега силквей всего 2 этажа и огромный холл, проходящий через всё здание и вмещающий в себя огромное разнообразие магазинов одежды, ресторанов, кафе, фаст-фудов, 2 развлекательных центра и каток. Скульптуры акробатов, фонтаны, радужные люстры, красивые узоры и маленькие птицы сопровождают посетителей торгового центра. Красиво наряжают к праздникам
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Керуен сити" | alt=KeruenSity | image=
+| address=Коргальжинское шоссе 1 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=На 1 и 2 этаже находятся в основном бутики и магазины одежды. На 2 этаже фудкорт, развлекательный центр "Керуен парк" и кинотеатр "Кинопарк". На 4 этаже идёт продолжение фудкорта и скала для скалолазания
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Сарыарка" | alt=Saryarka | image=
+| address=Проспект Туран 24 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Азия парк" | alt=Asia Park | image=
+| address=Проспект Кабанбай Батыра 21 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Абу Даби плаза" | alt=Abu Dhabi Plaza | image=
+| address=Улица Сыганак 60/5 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=Находится на первых двух этажах комплекса "Abu Dhabi Plaza"
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Аружан" | alt=Arujan | image=
+| address=Ул. Илияс Жансугирулы 8/1 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Астана молл" | alt=Astana Mall | image=
+| address=Проспект Тауелсиздик 34 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Эллингтон молл" | alt=Ellington Mall | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=Пока строящийся огромный ТРЦ. Вероятно, станет самым большим в столице а то и вовсе во всём Казахстане
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Талан Галлери" | alt=Talan Gallery | image=
+| address=Улица Достык 16 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=Очень красивый ТРЦ. Он находится на первых 3 этажах комплекса "Talan Towers". Этот ТРЦ не для обычных людей. Тут все дорого, богато. Обычные люди сюда конечно ходят, но всё же это самый элитный ТРЦ Астаны. "Talan Gallery" объединяет под своей крышей 30 бутиков продающих дорогую одежду, кинотеатр высшего класса, семейное кафе Римбамбель которое можно даже назвать развлекательным центром, несколько кафе и Итальянский салон красоты, тоже высшего класса
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Евразия" | alt=Eurasia | image=
+| address=Улица Петрова 24 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-07
+| description=Один из первых торговых центров в городе. Разделён на 3 части: Евразия 1, Евразия 2 и Евразия 3.
+}}
+{{listing|type=buy| lat= | long= | wdid=
+| name=ТРЦ "Грин молл" | alt=Green Mall | image=
+| address=Улица Сыганак 17п | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-05-15
+| description=Этот ТРЦ расположен внизу ЖК "Зелёный квартал" и как можно понять по названию, в ТРЦ много зелени и зелёного цвета. На территории также много зелени и даже есть набережная озера Талдыколь.
+}}
+
+==Еда==
+
+===Дёшево===
+{{listing|type=eat| lat=51.12774 | long=71.42279 | wdid=
+| name=Столовая «Каганат» | alt= | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2019-04-11
+| description=Бюджетная круглосуточная столовая с легким налетом национальной кухни.
+}}
+
+===Средней стоимости===
+{{listing|type=eat| lat= | long= 
+| name=Sunday | alt=Sunday кафе | image=
+| address=Есильский район,улица Кунаева,12/1,ЖК Водно Зеленый Бульвар | directions=
+| url= | facebook= | vkontakte=
+| phone=+7 (7172) 755277 | email= | skype=
+| hours=11:00 - 00:00 | price=
+| lastedit=2016-06-15
+| description=
+}}
+{{listing|type=eat| lat= | long= 
+| name=Chili Peppers | alt=пиццерия Chili Peppers | image=
+| address=Сарайшык, 34 | directions=
+| url=http://www.cafeastana.kz | facebook= | vkontakte=https://vk.com/cafeastana
+| phone=+7 702 222 80 80 | email= | skype=
+| hours=12:00 - 1:00 | price=
+| lastedit=2016-06-15
+| description=
+}}
+
+===Дорого===
+
+==Ночная жизнь==
+
+==Где остановиться==
+===Дёшево===
+{{listing|type=sleep| lat= | long= 
+| name=Ай-Са | alt=гостиничный комплекс Ай-Са | image=
+| address=Алимжанова, 54 | directions=
+| url= | facebook= | vkontakte=
+| phone=+7 (7172) 21‒12‒11 | email= | skype=
+| hours=Круглосуточо | price=
+| lastedit=2016-06-15
+| description=
+}}
+
+===Средней стоимости===
+{{listing|type=sleep| lat= | long= | wdid=
+| name=Elite Apart-Hotel | alt= | image=
+| address=Кошкарбаева, 10/1 | directions=
+| url=http://eliteapart.kz | facebook= | vkontakte=
+| phone=+7–778–778–78–74
+| email=
+| hours=Круглосуточно | price=
+| lastedit=2024-05-15
+| description=4-звёздочный, необычный отель, находится прямо в ЖК Higiivill и расположен прямо в центре города
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=Best Western Plus Astana Hotel | alt= | image=
+| address=ул. Достык, д.13А | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2019-04-11
+| description=
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=Hampton by Hilton Astana Triumphai Arch | alt= | image=
+| address=Проспект Мангилик ел 43А | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours=Круглосуточно | price=
+| lastedit=2024-05-09
+| description=3 - звёздочный
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=Апарт-отель YE'S Astana | alt= | image=
+| address=Туркicтан 16, Астана 010000 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours=Круглосуточно | price=
+| lastedit=2024-05-15
+| description=4-звёздочный, находится у ботанического сада
+}}
+
+===Дорого===
+{{listing|type=sleep| lat= | long= 
+| name=Rixos President Astana | alt= | image=
+| address=Кунаева, 7 | directions=
+| url=http://presidentastana.rixos.com/ | facebook=https://www.facebook.com/rixosastana | vkontakte=
+| phone=+7 (7172) 24 50 50 | email= | skype=
+| hours=Круглосуточо | price=
+| lastedit=2016-06-15
+| description=
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=Atlas | alt= | image=
+| address=ул. Гёте, 12/1 | directions=
+| url= | facebook= | vkontakte=
+| phone=+7 (778) 699-76-26, +7 (777) 036-86-93
+| email=
+| hours=Круглосуточно | price=
+| lastedit=2021-05-27
+| description= Гостиница расположена рядом с ж/д вокзалом и автовокзалом. 
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=The Ritz-Carlton | alt= | image=
+| address=Ул. Достык 16 | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours=Круглосуточно | price=
+| lastedit=2024-05-15
+| description=5-звёздочный, рядом с центром города
+}}
+{{listing|type=sleep| lat= | long= | wdid=
+| name=The Veil | alt= | image=
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone=
+| email=
+| hours= | price=
+| lastedit=2024-04-06
+| description=4-звёздочный
+}}
+
+==Связь==
+
+==Меры предосторожности==
+
+==Окрестности==
+Национальные парки [[Бурабай]] (Боровое), [[Национальный парк Кокшетау|Кокшетау]] и [[Буйратау]].
+{{listing|type=vicinity| lat=51.078831 | long=70.972538 |wdid=
+| name= Музей-мемориал жертв политических репрессий и тоталитаризма «АЛЖИР» | alt= 
+| image= Gulag ALZHIR in Astana, Kazakhstan, Monument to the victims 01.jpg
+| address= с. Акмол (Малиновка), ул. Линейная, 2Б | directions= 40 км к западу от Астаны
+| url= https://museum-alzhir.kz/ru/ | facebook= | vkontakte=
+| phone= | email= 
+| hours=  | price=
+| lastedit=2023-05-09
+| description=
+}}
+{{listing|type=vicinity| lat=50.590183| long=70.022660 |wdid=Q1046294 |unesco=yes
+| name= Коргалжынский заповедник | alt= | image=New Born Saiga in Korgalzhyn Reserve.jpg
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-09
+| description= посещение возможно только с экскурсией
+}}
+{{listing|type=vicinity| lat=52.384048 | long=73.048988 |wdid=
+| name= Селетинский каньон | alt= | image=Sileti River - Bestobe Canyon.jpg
+| address= | directions=
+| url= | facebook= | vkontakte=
+| phone= | email= 
+| hours= | price=
+| lastedit=2023-05-09
+| description=
+}}
+{{footer|ispartof=Северный Казахстан|type=Город|status=Скелет}}

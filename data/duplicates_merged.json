@@ -1,0 +1,1031 @@
+{
+ "stats": {
+  "poi_total_before": 2326,
+  "poi_total_after": 2294,
+  "records_merged_away": 32,
+  "clusters": 23,
+  "kind_pins": 3,
+  "by_category": {
+   "attraction_landmark": 12,
+   "culture_theatre_cinema": 1,
+   "mall": 5,
+   "museum_gallery": 7,
+   "park_garden": 7
+  },
+  "absorbed_from_bucket": {
+   "official_site_only": 0,
+   "osm_and_overture": -17,
+   "osm_only": 21,
+   "overture_only": 27,
+   "state_registry_only": 0,
+   "wikidata_only": 1
+  },
+  "absorbed_by_origin": {
+   "osm": 10,
+   "overture": 21,
+   "wikidata": 1
+  },
+  "overture_pins_taken_over": {
+   "osm": 17,
+   "overture": 6
+  },
+  "kept_by_origin": {
+   "official_site": 133,
+   "osm": 1491,
+   "overture": 648,
+   "state_registry": 10,
+   "wikidata": 12
+  },
+  "records_before_by_origin": {
+   "official_site": 133,
+   "osm": 1501,
+   "overture": 669,
+   "state_registry": 10,
+   "wikidata": 13
+  },
+  "link_rules": {
+   "colocated": 3,
+   "kind_pin": 3,
+   "name": 29,
+   "worship": 1
+  },
+  "not_merged_outside_scope": {
+   "pairs_by_category": {
+    "coworking_library": 3,
+    "entertainment": 2,
+    "sport": 1,
+    "transit_station": 1
+   },
+   "examples": [
+    "Читальный зал ЕНУ | Library ENU (name, 5 m)",
+    "Концертный Зал Астана | Конгресс-холл / Congress Hall (colocated, 19 m)",
+    "Library ENU | Библиотека ЕНУ (name, 20 m)",
+    "Нурлы Жол | Железнодорожный вокзал Нурлы-Жол (name, 20 m)",
+    "Читальный зал ЕНУ | Библиотека ЕНУ (name, 20 m)",
+    "Fame City Entertainment Centre | Fame City (name, 31 m)"
+   ]
+  }
+ },
+ "rules": {
+  "wikidata": "same Wikidata id, <= 500 m",
+  "name": "names agree (ru/kk/en/translit), <= 120 m (parks 300 m; the same street address 300 m)",
+  "colocated": "<= 20 m and one identity word in common",
+  "worship": "mosque / synagogue / church-cathedral of the same faith <= 30 m",
+  "kind_pin": "bare Overture pin named only by its kind, <= 250 m from a same-kind record",
+  "never": "different Wikidata ids, chain branches (same brand), series names (>= 3 records), generated names, different categories, cluster > 350 m"
+ },
+ "clusters": [
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/3197090967",
+   "survivor_name": "Алие Молдагуловой",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/e77bc3be-7fd1-4bca-9452-46c8843ee917",
+     "name": "Памятник Алия Молдагуловой",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 83.2
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 83.2,
+     "a": "node/3197090967",
+     "b": "overture/e77bc3be-7fd1-4bca-9452-46c8843ee917"
+    }
+   ]
+  },
+  {
+   "category": "culture_theatre_cinema",
+   "survivor": "overture/3739893f-c978-49d9-97c8-6327389379ce",
+   "survivor_name": "IMAX Кинопарк7",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "node/4506675474",
+     "name": "IMAX Кинопарк7",
+     "category": "culture_theatre_cinema",
+     "source": "osm",
+     "sources": [
+      "osm",
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 27.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 27.3,
+     "a": "node/4506675474",
+     "b": "overture/3739893f-c978-49d9-97c8-6327389379ce"
+    }
+   ],
+   "renamed_from": "Kinopark 7"
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/455447676",
+   "survivor_name": "Жамбыл",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/f89184cc-42ef-4820-ae30-d48c50307b68",
+     "name": "Памятник Жамбылу Жабаеву",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 55.8
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 55.8,
+     "a": "node/455447676",
+     "b": "overture/f89184cc-42ef-4820-ae30-d48c50307b68"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "overture/5c29ecc2-d278-413a-b337-a6fa1ab61e71",
+   "survivor_name": "Храм во имя святого преподобного Серафима Саровского",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "node/4592650389",
+     "name": "Храм во имя святого преподобного Серафима Саровского",
+     "category": "attraction_landmark",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 76.7
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 76.7,
+     "a": "node/4592650389",
+     "b": "overture/5c29ecc2-d278-413a-b337-a6fa1ab61e71"
+    }
+   ],
+   "renamed_from": "Храм Серафима Саровского"
+  },
+  {
+   "category": "mall",
+   "survivor": "way/241090093",
+   "survivor_name": "Рахмет ТЦ",
+   "origins": [
+    "osm"
+   ],
+   "absorbed": [
+    {
+     "id": "node/4900149827",
+     "name": "Рахмет",
+     "category": "mall",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 16.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 16.3,
+     "a": "node/4900149827",
+     "b": "way/241090093"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/4902164954",
+   "survivor_name": "Бейт Рахель Хабад Любавич",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/1446b979-6758-4302-a4d6-13b1e70dc16a",
+     "name": "Beit Rachel Synagogue",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 60.2
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 60.2,
+     "a": "node/4902164954",
+     "b": "overture/1446b979-6758-4302-a4d6-13b1e70dc16a"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "overture/4526660e-f803-4294-9cf7-8c885860b2f2",
+   "survivor_name": "Римско-Католический Приход Матери Божией Неустанной Помощи",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "node/4902165007",
+     "name": "Римско-Католический Приход Матери Божией Неустанной Помощи",
+     "category": "attraction_landmark",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 18.6
+    },
+    {
+     "id": "overture/e91139d7-7cf8-404b-8607-249ccbe8ae77",
+     "name": "Католический кафедральный собор Девы Марии",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 20.4
+    }
+   ],
+   "links": [
+    {
+     "rule": "colocated",
+     "distance_m": 3.5,
+     "a": "node/4902165007",
+     "b": "overture/e91139d7-7cf8-404b-8607-249ccbe8ae77"
+    },
+    {
+     "rule": "name",
+     "distance_m": 18.6,
+     "a": "node/4902165007",
+     "b": "overture/4526660e-f803-4294-9cf7-8c885860b2f2"
+    },
+    {
+     "rule": "worship",
+     "distance_m": 20.4,
+     "a": "overture/4526660e-f803-4294-9cf7-8c885860b2f2",
+     "b": "overture/e91139d7-7cf8-404b-8607-249ccbe8ae77"
+    }
+   ],
+   "renamed_from": "Our Lady of Perpetual Help Cathedral"
+  },
+  {
+   "category": "mall",
+   "survivor": "way/499328514",
+   "survivor_name": "Mega Silk Way",
+   "origins": [
+    "osm"
+   ],
+   "absorbed": [
+    {
+     "id": "node/4965336822",
+     "name": "Мега Силк Вей",
+     "category": "mall",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 16.5
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 16.5,
+     "a": "node/4965336822",
+     "b": "way/499328514"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/560695842",
+   "survivor_name": "А. С. Пушкину",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/8bf386bd-337a-42d0-a169-398114439809",
+     "name": "Памятник Пушкину",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 91.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 91.3,
+     "a": "node/560695842",
+     "b": "overture/8bf386bd-337a-42d0-a169-398114439809"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "relation/16827715",
+   "survivor_name": "Мечеть Абу Насыра аль-Фараби",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/000b49eb-11d3-43a4-b632-9b556a0bdf63",
+     "name": "Mosque Abu Nasr Al-Farabi",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 15.1
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 15.1,
+     "a": "overture/000b49eb-11d3-43a4-b632-9b556a0bdf63",
+     "b": "relation/16827715"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "way/262166875",
+   "survivor_name": "Сквер шахматистов",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/152d3ff4-a09f-4f15-82ec-8e8ccf2b65d2",
+     "name": "Шахматшылар гүл бағы / Сквер шахматистов",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 2.0
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 2.0,
+     "a": "overture/152d3ff4-a09f-4f15-82ec-8e8ccf2b65d2",
+     "b": "way/262166875"
+    }
+   ]
+  },
+  {
+   "category": "mall",
+   "survivor": "overture/218b3a27-c463-4c31-b51c-47e91e79ee97",
+   "survivor_name": "KeruenCity",
+   "origins": [
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/a6206477-2569-492f-b1a8-73bf3df4421e",
+     "name": "Торгово-развлекательный центр Keruenсity/Nur-Sultan",
+     "category": "mall",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 34.1
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 34.1,
+     "a": "overture/218b3a27-c463-4c31-b51c-47e91e79ee97",
+     "b": "overture/a6206477-2569-492f-b1a8-73bf3df4421e"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "relation/16002498",
+   "survivor_name": "Парк Жеруйык",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/2367cb05-eb03-40f1-bddf-a1da63b2243d",
+     "name": "Жерұйық саябағы / Парк Жеруйык",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 264.2
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 264.2,
+     "a": "overture/2367cb05-eb03-40f1-bddf-a1da63b2243d",
+     "b": "relation/16002498"
+    }
+   ]
+  },
+  {
+   "category": "mall",
+   "survivor": "overture/4d2a37ab-a4d7-4c8a-abfe-4fcca724c6e5",
+   "survivor_name": "Азия Парк",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "way/239713764",
+     "name": "Азия Парк",
+     "category": "mall",
+     "source": "osm",
+     "sources": [
+      "osm",
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 41.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 41.3,
+     "a": "overture/4d2a37ab-a4d7-4c8a-abfe-4fcca724c6e5",
+     "b": "way/239713764"
+    }
+   ],
+   "renamed_from": "Asia Park Mall"
+  },
+  {
+   "category": "museum_gallery",
+   "survivor": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+   "survivor_name": "Военно-исторический музей",
+   "origins": [
+    "osm",
+    "overture",
+    "wikidata"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/7972273c-f99e-4cd9-b552-c94b2a59adde",
+     "name": "ҚР ҚК Әскери-тарихи музейі",
+     "category": "museum_gallery",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 253.6
+    },
+    {
+     "id": "way/1239171353",
+     "name": "Военно-исторический музей",
+     "category": "museum_gallery",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 104.0
+    },
+    {
+     "id": "way/240391776",
+     "name": "Государственный военно-исторический музей",
+     "category": "museum_gallery",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 37.5
+    },
+    {
+     "id": "wikidata/Q85787940",
+     "name": "National Military-Patriotic Center of the Armed Forces of Kazakhstan",
+     "category": "museum_gallery",
+     "source": "wikidata",
+     "sources": [
+      "wikidata"
+     ],
+     "wikidata_id": "Q85787940",
+     "distance_m": 52.2
+    }
+   ],
+   "links": [
+    {
+     "rule": "colocated",
+     "distance_m": 16.1,
+     "a": "way/240391776",
+     "b": "wikidata/Q85787940"
+    },
+    {
+     "rule": "name",
+     "distance_m": 37.5,
+     "a": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+     "b": "way/240391776"
+    },
+    {
+     "rule": "name",
+     "distance_m": 67.1,
+     "a": "way/1239171353",
+     "b": "way/240391776"
+    },
+    {
+     "rule": "name",
+     "distance_m": 104.0,
+     "a": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+     "b": "way/1239171353"
+    },
+    {
+     "rule": "name",
+     "distance_m": 253.6,
+     "a": "overture/7972273c-f99e-4cd9-b552-c94b2a59adde",
+     "b": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298"
+    }
+   ],
+   "renamed_from": "Военно-Исторический музей ВС РК"
+  },
+  {
+   "category": "mall",
+   "survivor": "way/242373768",
+   "survivor_name": "ТД Гульжан",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/82d2acbd-8bf8-4df8-b20e-073751634479",
+     "name": "ТЦ Гульжан",
+     "category": "mall",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 79.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 79.3,
+     "a": "overture/82d2acbd-8bf8-4df8-b20e-073751634479",
+     "b": "way/242373768"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "way/1460702136",
+   "survivor_name": "Парк Ататюрка",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/83631389-880d-47c4-956e-17e69b38b555",
+     "name": "Парк Ата Тюрк Астана",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 197.9
+    },
+    {
+     "id": "way/502046662",
+     "name": "парк «Ататюрк»",
+     "category": "park_garden",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 18.2
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 18.2,
+     "a": "way/1460702136",
+     "b": "way/502046662"
+    },
+    {
+     "rule": "name",
+     "distance_m": 197.9,
+     "a": "overture/83631389-880d-47c4-956e-17e69b38b555",
+     "b": "way/1460702136"
+    },
+    {
+     "rule": "name",
+     "distance_m": 216.1,
+     "a": "overture/83631389-880d-47c4-956e-17e69b38b555",
+     "b": "way/502046662"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/4892204728",
+   "survivor_name": "Мустафе Кемалю Ататюрку",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/89904b3b-d3fb-4283-8228-4702e22f7428",
+     "name": "Atatürk Heykeli Astana",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 77.1
+    },
+    {
+     "id": "overture/ad5d249f-902b-48f4-9be0-7baed8a5db67",
+     "name": "Ататүрік ескерткіші",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": "Q124371412",
+     "distance_m": 28.1
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 28.1,
+     "a": "node/4892204728",
+     "b": "overture/ad5d249f-902b-48f4-9be0-7baed8a5db67"
+    },
+    {
+     "rule": "name",
+     "distance_m": 50.3,
+     "a": "overture/89904b3b-d3fb-4283-8228-4702e22f7428",
+     "b": "overture/ad5d249f-902b-48f4-9be0-7baed8a5db67"
+    },
+    {
+     "rule": "name",
+     "distance_m": 77.1,
+     "a": "node/4892204728",
+     "b": "overture/89904b3b-d3fb-4283-8228-4702e22f7428"
+    }
+   ]
+  },
+  {
+   "category": "museum_gallery",
+   "survivor": "way/1460700597",
+   "survivor_name": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/95554f09-c92a-4889-a581-6b43aba78128",
+     "name": "«Карта Казахстана «Атамекен»",
+     "category": "museum_gallery",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 18.3
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 18.3,
+     "a": "overture/95554f09-c92a-4889-a581-6b43aba78128",
+     "b": "way/1460700597"
+    }
+   ]
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "overture/99b40dbd-078b-487b-a567-d39c5bde9285",
+   "survivor_name": "Свято-Успенский кафедральный собор",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "way/240592107",
+     "name": "Свято-Успенский кафедральный собор",
+     "category": "attraction_landmark",
+     "source": "osm",
+     "sources": [
+      "osm"
+     ],
+     "wikidata_id": null,
+     "distance_m": 16.0
+    }
+   ],
+   "links": [
+    {
+     "rule": "colocated",
+     "distance_m": 16.0,
+     "a": "overture/99b40dbd-078b-487b-a567-d39c5bde9285",
+     "b": "way/240592107"
+    }
+   ],
+   "renamed_from": "Успенский православный кафедральный собор"
+  },
+  {
+   "category": "museum_gallery",
+   "survivor": "overture/d8618d37-bebb-42da-b23d-0f9009deead7",
+   "survivor_name": "Historical Museum Astana",
+   "origins": [
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/dd3617a1-a856-439a-919d-306b4f7c1c9e",
+     "name": "Kazakistan Tarihi Müzesi @astana",
+     "category": "museum_gallery",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 35.1
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 35.1,
+     "a": "overture/d8618d37-bebb-42da-b23d-0f9009deead7",
+     "b": "overture/dd3617a1-a856-439a-919d-306b4f7c1c9e"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "way/112456426",
+   "survivor_name": "Парк имени Бауыржана Момышулы",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/e11a4bbd-4cee-4be2-812a-9baba18a4eb9",
+     "name": "Парк им. Б. Момышулы",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 205.8
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 205.8,
+     "a": "overture/e11a4bbd-4cee-4be2-812a-9baba18a4eb9",
+     "b": "way/112456426"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "way/69232075",
+   "survivor_name": "Парк Жетысу",
+   "origins": [
+    "osm",
+    "overture"
+   ],
+   "absorbed": [
+    {
+     "id": "overture/e1b9312b-33f3-4ded-8464-7d6335852203",
+     "name": "Jetisy Park",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 177.9
+    }
+   ],
+   "links": [
+    {
+     "rule": "name",
+     "distance_m": 177.9,
+     "a": "overture/e1b9312b-33f3-4ded-8464-7d6335852203",
+     "b": "way/69232075"
+    }
+   ]
+  },
+  {
+   "category": "park_garden",
+   "survivor": "relation/15957444",
+   "survivor_name": "Парк Астана",
+   "absorbed": [
+    {
+     "id": "overture/185e484c-93c6-44a6-bd45-017b02eff78a",
+     "name": "«Астана» саябағы / Парк «Астана» / Astana Park",
+     "category": "park_garden",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 60.9
+    }
+   ],
+   "links": [
+    {
+     "rule": "kind_pin",
+     "distance_m": 60.9,
+     "a": "relation/15957444",
+     "b": "overture/185e484c-93c6-44a6-bd45-017b02eff78a"
+    }
+   ],
+   "origins": [
+    "overture"
+   ],
+   "kind_pins": 1
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/4902164954",
+   "survivor_name": "Бейт Рахель Хабад Любавич",
+   "absorbed": [
+    {
+     "id": "overture/98bf92e8-152d-4230-9e71-097500eaef91",
+     "name": "синагога",
+     "category": "attraction_landmark",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 111.1
+    }
+   ],
+   "links": [
+    {
+     "rule": "kind_pin",
+     "distance_m": 111.1,
+     "a": "node/4902164954",
+     "b": "overture/98bf92e8-152d-4230-9e71-097500eaef91"
+    }
+   ],
+   "origins": [
+    "overture"
+   ],
+   "kind_pins": 1
+  },
+  {
+   "category": "museum_gallery",
+   "survivor": "node/4894937300",
+   "survivor_name": "Национальный музей Республики Казахстан",
+   "absorbed": [
+    {
+     "id": "overture/d8618d37-bebb-42da-b23d-0f9009deead7",
+     "name": "Historical Museum Astana",
+     "category": "museum_gallery",
+     "source": "overture",
+     "sources": [
+      "overture"
+     ],
+     "wikidata_id": null,
+     "distance_m": 194.5
+    }
+   ],
+   "links": [
+    {
+     "rule": "kind_pin",
+     "distance_m": 194.5,
+     "a": "node/4894937300",
+     "b": "overture/d8618d37-bebb-42da-b23d-0f9009deead7"
+    }
+   ],
+   "origins": [
+    "overture"
+   ],
+   "kind_pins": 1
+  }
+ ],
+ "kind_pin_rows": [
+  {
+   "category": "park_garden",
+   "survivor": "relation/15957444",
+   "survivor_name": "Парк Астана",
+   "absorbed": "overture/185e484c-93c6-44a6-bd45-017b02eff78a",
+   "absorbed_name": "«Астана» саябағы / Парк «Астана» / Astana Park",
+   "source": "overture",
+   "sources": [
+    "overture"
+   ],
+   "rule": "kind_pin",
+   "distance_m": 60.9
+  },
+  {
+   "category": "attraction_landmark",
+   "survivor": "node/4902164954",
+   "survivor_name": "Бейт Рахель Хабад Любавич",
+   "absorbed": "overture/98bf92e8-152d-4230-9e71-097500eaef91",
+   "absorbed_name": "синагога",
+   "source": "overture",
+   "sources": [
+    "overture"
+   ],
+   "rule": "kind_pin",
+   "distance_m": 111.1
+  },
+  {
+   "category": "museum_gallery",
+   "survivor": "node/4894937300",
+   "survivor_name": "Национальный музей Республики Казахстан",
+   "absorbed": "overture/d8618d37-bebb-42da-b23d-0f9009deead7",
+   "absorbed_name": "Historical Museum Astana",
+   "source": "overture",
+   "sources": [
+    "overture"
+   ],
+   "rule": "kind_pin",
+   "distance_m": 194.5
+  }
+ ]
+}

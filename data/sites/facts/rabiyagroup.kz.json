@@ -1,0 +1,9 @@
+{
+ "domain": "rabiyagroup.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:31:07+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt unreachable (DNS/connection error) => crawling not allowed per RFC 9309; nothing stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

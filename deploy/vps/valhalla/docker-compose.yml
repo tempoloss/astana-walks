@@ -1,0 +1,51 @@
+# Self-hosted Valhalla for the public stand: pedestrian routing over an Astana-only extract.
+# Tiles are built once by update.sh (never at container start: use_tiles_ignore_pbf=True); this file only serves them.
+# Run through update.sh (first install and every refresh); by hand: docker compose -f docker-compose.yml up -d
+name: anyq-valhalla
+
+services:
+  valhalla:
+    # Pinned by tag AND digest (valhalla-scripted 3.9.1). Change both together, then run update.sh.
+    image: ghcr.io/valhalla/valhalla-scripted:3.9.1@sha256:6238809f9dc3057743d70a20efd3911ec38e458bfa13a0601909b58f68dfd956
+    container_name: anyq-valhalla
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8002:8002" # loopback only: the app on the same host is the only client
+    volumes:
+      - /var/lib/anyq-valhalla/data:/custom_files
+    environment:
+      use_tiles_ignore_pbf: "True" # serve the tiles that update.sh built, never rebuild on start
+      serve_tiles: "True"
+      force_rebuild: "False"
+      build_tar: "True"
+      # nothing is built or downloaded at start: pedestrian legs need neither admin / timezone databases
+      # (a clipped extract would only give half-correct borders) nor elevation nor default-speeds downloads
+      build_admins: "False"
+      build_time_zones: "False"
+      build_elevation: "False"
+      build_transit: "False"
+      use_default_speeds_config: "False"
+      traffic_name: ""
+      server_threads: "2"
+    mem_limit: 768m
+    memswap_limit: 768m # no swap on the host anyway: a runaway process is killed, the neighbours are not
+    cpus: 1.5
+    pids_limit: 256
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8002/status"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

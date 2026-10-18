@@ -1,0 +1,45 @@
+{
+ "local_lit_json": {
+  "file": "data/city/lit.json",
+  "source": "collect/city/roads.py (mail.ru Overpass mirror)",
+  "ways_total": 956,
+  "lit_yes": 858,
+  "lit_no": 98,
+  "footway_like_in_lit_json": 580
+ },
+ "overpass_footway_probe": {
+  "bbox": [
+   51.1,
+   71.39,
+   51.16,
+   71.47
+  ],
+  "highway": "footway|path|pedestrian",
+  "mirror_used": "overpass-api.de (maps.mail.ru mirror returned 504 on all 2026-10-18 probes)",
+  "footways_total": 6539,
+  "footways_with_lit": 233,
+  "footways_lit_yes": 198,
+  "footways_lit_no": 35,
+  "coverage_pct": 3.56,
+  "gap_pct": 96.44,
+  "fetched_at": "2026-10-18T11:23:16Z"
+ },
+ "pixel_math": {
+  "viirs_dnb_native_resolution_m": 750,
+  "astana_bbox_km": {
+   "e": "71.28-71.55 (~18.9 km at 51.1N)",
+   "n": "51.03-51.25 (~24.5 km)"
+  },
+  "pixels_across_bbox": "~25 x 32 = ~800 pixels for the whole city bbox",
+  "main_avenue_20km": "20000/750 ~= 27 pixels end-to-end; 1 pixel = 0.5625 km^2 ~= 7-8 city blocks; a 20 m wide street covers ~2.7% of one pixel -> street-level lit/no cannot be resolved",
+  "saturation": "DNB saturates under bright urban cores (Black Marble collection-2 products ship saturation/quality flags); city-center pixels often maxed -> weak within-city discrimination"
+ },
+ "verdict": "(b) OSM lit gap is 96.4% on the center-bbox pedestrian network (233/6539 tagged). VIIRS at 750 m gives ZERO street-level routing signal (27 px along a 20 km avenue), but district-level 'known brightness' context is defensible post-22.10 via the clean license path: NASA Black Marble (CC0/public domain, 'no restrictions on use' per Earthdata guidance) or EOG VNL annual composite (CC BY 4.0). Do NOT store from lightpollutionmap.info (no ToS page; aggregator credit + World Atlas overlay is CC BY-NC); pull source granules directly. lucentglobe.com is a detergent-sheet shop, not a nightlights vendor.",
+ "licenses": {
+  "viirs_nasa_blackmarble": "CC0 / public domain. Quote (earthdata.nasa.gov data-use-guidance, saved nl_blackmarble_datause.txt): \"Unless the content is marked with a use restriction or license, data provided from a NASA-led mission are licensed as Creative Commons Zero (CC0). While there are no restrictions on the use of these data, data users are very strongly urged to cite the data used in their work products.\"",
+  "viirs_eog_vnl": "CC BY 4.0. Quote (eogdata.mines.edu/products/vnl/, saved nl_eog_vnl_license.txt): \"Many of the VIIRS Nighttime Lights data are available under Creative Commons Attribution 4.0 International license.\"",
+  "lightpollutionmap": "No formal ToS (all /About/* paths 404). Quote (lightpollutionmap.info/help.html, saved nl_lightpollutionmap_tos.txt): \"The use of data from www.lightpollutionmap.info should be credited to 'Jurij Stare, www.lightpollutionmap.info'. If VIIRS/Sky Brightness data is used or displayed it should also include 'NASA's Black Marble nighttime lights product'.\" Site itself suggests downloading raw VNP46A4/VJ146A4 from NASA \"under CC0 license\". World Atlas overlay component is CC BY-NC 4.0 -> not storable for a commercial DB.",
+  "lucent_globe": "Not a nightlights data product. Quote (lucentglobe.com, saved nl_lucentglobe_license.txt): \"© 2025, Lucent Globe. | Terms of Service | Privacy Policy\" — an Australian laundry/dishwashing detergent-sheets e-commerce shop; /license and /licensing are 404."
+ },
+ "license_rule_check": "Both usable paths (CC0, CC BY 4.0) satisfy the adopted storable rule (ODbL/CC0/CC BY with attribution); the only NC-contaminated candidate is lightpollutionmap's World Atlas overlay -> excluded."
+}

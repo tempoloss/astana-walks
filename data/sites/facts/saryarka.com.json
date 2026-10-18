@@ -1,0 +1,52 @@
+{
+ "domain": "saryarka.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:20+00:00",
+ "pages": [
+  "http://saryarka.com/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "ТРЦ «Сарыарка»",
+   "address": "город Астана, пр. Туран, 24",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 701 081 02 27",
+   "opening_hours_raw": "Магазины: 1,2,3 этажи 10:00 - 22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://saryarka.com/kontakty",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "http://saryarka.com/kontakty",
+     "snippet": "город Астана, пр. Туран, 24",
+     "fetched_at": "2026-10-17T09:29:20+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://saryarka.com/kontakty",
+     "snippet": "Телефон: +7 701 081 02 27",
+     "fetched_at": "2026-10-17T09:29:20+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://saryarka.com/kontakty",
+     "snippet": "Магазины: 1,2,3 этажи 10:00 - 22:00",
+     "fetched_at": "2026-10-17T09:29:20+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://saryarka.com/kontakty",
+     "snippet": "ТРЦ Сарыарка",
+     "fetched_at": "2026-10-17T09:29:20+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Mall hours = 'Магазины: 1,2,3 этажи 10:00 - 22:00' (no weekday names → hours_flags needs_days, raw kept). Same block also lists tenant schedules (гардероб 11:00-21:00, кафе/бары/рестораны 10:00-24:00, кинотеатр 10:00-03:00, супермаркет Вкусмарт 10:00-22:00) and a paid 24h underground car park — not stored for the mall itself.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

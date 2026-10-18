@@ -1,0 +1,11 @@
+{
+ "domain": "kinopark.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:35:53+00:00",
+ "pages": [
+  "https://www.kinopark.kz/ru"
+ ],
+ "branches": [],
+ "notes": "kinopark.kz renders the cinema/city list client-side (Next.js): /ru/company/cinemas and /ru/sitemap carry only cinema names («Kinopark 9 IMAX Saryarqa», «Kinopark 7 Keruencity», «Kinoplexx 7 Sary-arka»…) without addresses or opening hours; afisha.api.kinopark.kz exposes no public cinemas endpoint; the only JSON-LD blocks are Organization/BreadcrumbList. No first-party branch facts to store for the 4 Astana POIs.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

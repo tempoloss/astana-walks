@@ -1,0 +1,9 @@
+{
+ "domain": "easyfood.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "kalbi.easyfood.kz: TLS certificate hostname mismatch (https) and protocol error (http) => robots.txt unreachable => crawling not allowed; the apex easyfood.kz (readable robots) is an empty JS SPA shell with no KAL'BI facts; nothing stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

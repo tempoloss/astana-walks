@@ -1,0 +1,180 @@
+{
+ "domain": "orgs.biz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:28:40+00:00",
+ "pages": [
+  "https://costacoffeekz.orgs.biz"
+ ],
+ "branches": [
+  {
+   "name": "Costa Coffee, ТРЦ Mega Astana",
+   "address": "ТРЦ Mega Astana",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "ТРЦ Mega Astana",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "Costa Coffee, пр. Республики, 7",
+   "address": "пр. Республики, 7",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "пр. Республики, 7",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "Costa Coffee, Торговый центр Керуен",
+   "address": "Торговый центр Керуен",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Торговый центр Керуен",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "Costa Coffee, БЦ Москва",
+   "address": "БЦ Москва",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "БЦ Москва",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "Costa Coffee, ТЦ Asia Park",
+   "address": "ТЦ Asia Park",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "ТЦ Asia Park",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "Costa Coffee, Казмедиа Центр (ул. Кунаева, 4).",
+   "address": "Казмедиа Центр (ул. Кунаева, 4).",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://costacoffeekz.orgs.biz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Costa Coffee в Астане: - ТРЦ Mega Astana, - пр. Республики, 7 - Торговый центр Керуен - БЦ Москва - ТЦ Asia Park - Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://costacoffeekz.orgs.biz",
+     "snippet": "Казмедиа Центр (ул. Кунаева, 4).",
+     "fetched_at": "2026-10-17T09:28:40+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  }
+ ],
+ "notes": "Outlets per the company's own list: ТРЦ Mega Astana, пр. Республики 7, Торговый центр Керуен, БЦ Москва, ТЦ Asia Park, Казмедиа Центр (ул. Кунаева 4) — mall/building names serve as the published location (only two carry street addresses). The site is a frozen 2017-2018 orgs.biz constructor page: no opening hours, no branch phones (the '20:00 до 22:00' occurrence is a dated 2017 tea-promo post, not a schedule). The canonical costacoffee.kz is unreachable, this is the only first-party source on hand.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

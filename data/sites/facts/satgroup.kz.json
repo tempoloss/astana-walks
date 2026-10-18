@@ -1,0 +1,252 @@
+{
+ "domain": "satgroup.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:21:17+00:00",
+ "pages": [
+  "http://satgroup.kz"
+ ],
+ "branches": [
+  {
+   "name": "GRAMMY",
+   "address": "г. Астана, пр. Туран, 30 (здание Fitness Palace)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(7172) 279-000, 8 701 100 0703",
+   "opening_hours_raw": "18.00 – 06.00 ежедневно",
+   "opening_hours_osm": "Mo-Su 18:00-06:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "GRAMMY",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "г. Астана, пр. Туран, 30 (здание Fitness Palace)",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7(7172) 279-000, 8 701 100 0703",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "18.00 – 06.00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "BREWERY",
+   "address": "пр. Туран, 30 (зд. Fitness Palace)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 56-77- 11, 8 702 888 1159",
+   "opening_hours_raw": "12.00 – 02.00 ежедневно",
+   "opening_hours_osm": "Mo-Su 12:00-02:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "BREWERY",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "Адрес: пр. Туран, 30 (зд. Fitness Palace)",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7 (7172) 56-77- 11, 8 702 888 1159",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "12.00 – 02.00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "ARNAU",
+   "address": "пр. Туран, 30 (зд. Fitness Palace)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 279-111, 8 701 100 0704",
+   "opening_hours_raw": "12.00 – 01.00 ежедневно",
+   "opening_hours_osm": "Mo-Su 12:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "ARNAU",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "Адрес: пр. Туран, 30 (зд. Fitness Palace)",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7 (7172) 279-111, 8 701 100 0704",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "12.00 – 01.00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "SUNDUK",
+   "address": "г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 222-444, +7701 070707 2",
+   "opening_hours_raw": "12:00 - 01:00 ежедневно",
+   "opening_hours_osm": "Mo-Su 12:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "SUNDUK",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "Адрес: г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7 (7172) 222-444, +7701 070707 2",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "12:00 - 01:00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "BUTCHER’S",
+   "address": "г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 222-666, +7701 070707 4",
+   "opening_hours_raw": "12:00 - 01:00 ежедневно",
+   "opening_hours_osm": "Mo-Su 12:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "BUTCHER’S",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "Адрес: г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7 (7172) 222-666, +7701 070707 4",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "12:00 - 01:00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "BUNO",
+   "address": "г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 222 444, +7701 070707 3",
+   "opening_hours_raw": "12:00 - 01:00 ежедневно",
+   "opening_hours_osm": "Mo-Su 12:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://satgroup.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://satgroup.kz",
+     "snippet": "BUNO",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://satgroup.kz",
+     "snippet": "Адрес: г. Астана, ул. Жанибек и Керей ханов, 14/2 (уг. ул. Сауран), ЖК «Arnau Premium»",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://satgroup.kz",
+     "snippet": "+7 (7172) 222 444, +7701 070707 3",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://satgroup.kz",
+     "snippet": "12:00 - 01:00 ежедневно",
+     "fetched_at": "2026-10-17T09:21:17+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Intro «сеть ресторанов в г. Астана» + six blocks (GRAMMY/BREWERY/ARNAU at пр. Туран 30 Fitness Palace; SUNDUK/BUTCHER’S/BUNO at ул. Жанибек и Керей ханов 14/2). The Fitness Palace address lines omit the city token; the intro places them in Astana. Cuisine lines are not stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

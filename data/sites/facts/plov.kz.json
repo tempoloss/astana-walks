@@ -1,0 +1,92 @@
+{
+ "domain": "plov.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:25+00:00",
+ "pages": [
+  "https://plov.kz/rumi_astana"
+ ],
+ "branches": [
+  {
+   "name": "RUMI (г.Астана, Кабанбай Батыра, 62)",
+   "address": "г.Астана, Кабанбай Батыра, 62",
+   "lat": 51.089204,
+   "lon": 71.406696,
+   "phone": null,
+   "opening_hours_raw": "ежедневно 10:00-00:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://plov.kz/rumi_astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"name\":\"г.Астана, Кабанбай Батыра, 62\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"name\":\"г.Астана, Кабанбай Батыра, 62\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"lat\":\"51.089204\",\"lng\":\"71.406696\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"days\":[[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "RUMI (г. Астана, Петрова, 28)",
+   "address": "г. Астана, Петрова, 28",
+   "lat": 51.150354,
+   "lon": 71.476854,
+   "phone": null,
+   "opening_hours_raw": "ежедневно 10:00-00:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://plov.kz/rumi_astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"name\":\"г. Астана, Петрова, 28\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"name\":\"г. Астана, Петрова, 28\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"lat\":\"51.150354\",\"lng\":\"71.476854\"",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://plov.kz/rumi_astana",
+     "snippet": "\"days\":[[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:33:25+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "The plov.kz city page for Astana embeds each restaurant as {name=address, lat, lng, weekly days}; the uniform 10:00-00:00 schedule converts to Mo-Su 10:00-24:00. Phones are absent from the payload.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

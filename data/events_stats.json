@@ -1,0 +1,90 @@
+{
+ "verify": {
+  "events_ok": 37,
+  "evidence_ok": 188,
+  "evidence_total": 188
+ },
+ "dropped_expired": 1,
+ "sources": {
+  "sxodim.com": {
+   "ok": true,
+   "pages": 2,
+   "fetched_at": "2026-10-17T20:14:41+00:00",
+   "robots": "ok",
+   "skipped": {
+    "no_date": 1,
+    "no_venue": 2
+   },
+   "notes": [],
+   "parsed": 24,
+   "events_kept": 24
+  },
+  "inastana.kz": {
+   "ok": true,
+   "pages": 15,
+   "fetched_at": "2026-10-17T20:15:57+00:00",
+   "robots": "ok",
+   "skipped": {},
+   "notes": [],
+   "parsed": 1,
+   "events_kept": 1
+  },
+  "qazaqconcert.kz": {
+   "ok": true,
+   "pages": 11,
+   "fetched_at": "2026-10-17T20:16:08+00:00",
+   "robots": "ok",
+   "skipped": {},
+   "notes": [],
+   "parsed": 9,
+   "events_kept": 9
+  },
+  "youticket.kz": {
+   "ok": true,
+   "pages": 20,
+   "fetched_at": "2026-10-17T20:16:28+00:00",
+   "robots": "ok",
+   "skipped": {
+    "not_astana_or_unparsed": 17
+   },
+   "notes": [],
+   "parsed": 2,
+   "events_kept": 0
+  },
+  "alem.ai": {
+   "ok": true,
+   "pages": 1,
+   "fetched_at": "2026-10-17T20:16:29+00:00",
+   "robots": "absent",
+   "skipped": {},
+   "notes": [],
+   "parsed": 1,
+   "events_kept": 1
+  },
+  "t.me": {
+   "ok": true,
+   "pages": 1,
+   "fetched_at": "2026-10-17T20:16:31+00:00",
+   "robots": "absent",
+   "skipped": {},
+   "notes": [],
+   "parsed": 1,
+   "events_kept": 0
+  }
+ },
+ "events": 35,
+ "retained_from_previous": 0,
+ "kinds": {
+  "standing": 1,
+  "sessions": 1,
+  "event": 24,
+  "run": 9
+ },
+ "venue_joined": 17,
+ "venue_joined_by_name": 16,
+ "venue_joined_by_address": 1,
+ "with_coordinates": 18,
+ "coordinates_from_page": 2,
+ "without_coordinates": 17,
+ "merged_duplicates": 2
+}

@@ -1,0 +1,46 @@
+{
+ "domain": "yms.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:36:49+00:00",
+ "pages": [
+  "https://yms.kz/rus/contacts"
+ ],
+ "branches": [
+  {
+   "name": "YouMe Sushi",
+   "address": "Амангельды Иманова улица, 16",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 707 707 47 47",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://yms.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://yms.kz/rus/contacts",
+     "snippet": "Амангельды Иманова улица, 16",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://yms.kz/rus/contacts",
+     "snippet": "+7 707 707 47 47",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://yms.kz/rus/contacts",
+     "snippet": "YouMe Sushi Иманова",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Single pickup point listed ('Адреса наших кафе' — one cafe, Иманова 16; the city selector defaults to Астана). The 'Loading...' Yandex-map block renders coordinates client-side, none in HTML. No working hours text on the contacts page -> no opening_hours.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "thechef.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://thechef.kz/"
+ ],
+ "branches": [],
+ "notes": "DNS does not resolve (apex and www); domain dead.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

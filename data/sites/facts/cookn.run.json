@@ -1,0 +1,11 @@
+{
+ "domain": "cookn.run",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:42+00:00",
+ "pages": [
+  "https://ast.cookn.run/contacts?city=ast"
+ ],
+ "branches": [],
+ "notes": "the Astana page publishes «Біздің мекенжайымыз: Астана,» with an empty address and a bare «+7» phone placeholder, no opening hours; route links point to 2GIS/Yandex Maps (aggregators) — nothing verifiable to store",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

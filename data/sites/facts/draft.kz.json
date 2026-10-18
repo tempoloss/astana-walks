@@ -1,0 +1,9 @@
+{
+ "domain": "draft.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:15:12+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "SSL protocol failure on repeated probes. robots.txt/page unreachable per RFC 9309 (disallowed by robots.txt)",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

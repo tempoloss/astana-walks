@@ -1,0 +1,48 @@
+{
+ "domain": "centralmarket.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://www.centralmarket.kz/"
+ ],
+ "branches": [
+  {
+   "name": "Центральный Рынок Астаны",
+   "address": "шоссе Алаш, 15",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 707 913 00 00",
+   "opening_hours_raw": "10:00 - 20:00 ежедневно",
+   "opening_hours_osm": "Mo-Su 10:00-20:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.centralmarket.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.centralmarket.kz/",
+     "snippet": "Центральный Рынок Астаны"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://www.centralmarket.kz/",
+     "snippet": "10:00 - 20:00 ежедневно"
+    },
+    {
+     "field": "address",
+     "url": "http://www.centralmarket.kz/",
+     "snippet": "\"streetAddress\":\"15 шоссе Алаш\""
+    },
+    {
+     "field": "phone",
+     "url": "http://www.centralmarket.kz/",
+     "snippet": "\"telephone\":\"+77079130000\""
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Homepage LocalBusiness JSON-LD carries addressLocality 'Астана' / streetAddress '15 шоссе Алаш' / telephone +77079130000; the visible header prints '10:00 - 20:00 ежедневно БЕЗ ВЫХОДНЫХ' (converts to Mo-Su via the 'ежедневно' keyword). Additional phones (8 701 976 97 57, 8 701 525 63 39) are market offices. No coordinates in the LD block.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

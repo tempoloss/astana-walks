@@ -1,0 +1,48 @@
+{
+ "domain": "qazgrill.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://qazgrill.kz/contacty/"
+ ],
+ "branches": [
+  {
+   "name": "QazGrill",
+   "address": "Астана, А.Бокейхана, 28",
+   "lat": null,
+   "lon": null,
+   "phone": "8 (771) 264-2777",
+   "opening_hours_raw": "Рабочие дни: Без выходных",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://qazgrill.kz/contacty/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qazgrill.kz/contacty/",
+     "snippet": "QazGrill"
+    },
+    {
+     "field": "address",
+     "url": "https://qazgrill.kz/contacty/",
+     "snippet": "Астана, А.Бокейхана, 28"
+    },
+    {
+     "field": "phone",
+     "url": "https://qazgrill.kz/contacty/",
+     "snippet": "8 (771) 264-2777"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://qazgrill.kz/contacty/",
+     "snippet": "Рабочие дни: Без выходных"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "Grill-equipment store: /contacty prints 'Адрес Астана, А.Бокейхана, 28', two phones (8 771 264-2777, 8 705 777-2134 — first kept) and 'Рабочие дни: Без выходных' — a no-days statement kept raw (needs_days flag), not converted to OSM. No coordinates published.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

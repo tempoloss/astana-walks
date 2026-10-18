@@ -1,0 +1,46 @@
+{
+ "domain": "kaztheatre.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:43:22+00:00",
+ "pages": [
+  "https://kaztheatre.kz/kk/page/bailanys-2"
+ ],
+ "branches": [
+  {
+   "name": "Государственный Академический казахский музыкально-драматический театр им. К. Куанышбаева",
+   "address": "Астана қаласы, Қалибек Қуанышбаев көшесі, 8/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 24 83 23",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://kaztheatre.kz/kk/page/bailanys-2",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://kaztheatre.kz/kk/page/bailanys-2",
+     "snippet": "Астана қаласы, Қалибек Қуанышбаев көшесі, 8/1",
+     "fetched_at": "2026-10-17T09:43:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://kaztheatre.kz/kk/page/bailanys-2",
+     "snippet": "+7 7172 24 83 23",
+     "fetched_at": "2026-10-17T09:43:22+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://kaztheatre.kz/kk/page/bailanys-2",
+     "snippet": "«Қалибек Қуанышбаев атындағы Қазақ ұлттық музыкалық драма театры» РМҚК",
+     "fetched_at": "2026-10-17T09:43:22+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The contacts page lists the ticket office (+7 7172 24 83 23, also +7 778 464 12 95) and reception (+7 7172 27 02 35); only the box-office number is stored. No visiting/box-office hours text on the site, so no opening_hours.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

@@ -1,0 +1,582 @@
+[
+  {
+    "case_id": "h2-01-hazret-morning-walk",
+    "field": "budget_min",
+    "verdict": "debatable",
+    "reason": "States «час» (60); 30 is half — defensible only as conservative floor"
+  },
+  {
+    "case_id": "h2-01-hazret-morning-walk",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min one-way fits «рядом» and the stated hour"
+  },
+  {
+    "case_id": "h2-01-hazret-morning-walk",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Parks, landmarks, cafe, viewpoints suit a calm morning stroll"
+  },
+  {
+    "case_id": "h2-01-hazret-morning-walk",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bars at 08:00 and fast food unfit a walk request"
+  },
+  {
+    "case_id": "h2-02-hazret-halal-dinner",
+    "field": "budget_min",
+    "verdict": "debatable",
+    "reason": "No time stated; dinner implies ~90-150 min; 200 only as whole-evening reading"
+  },
+  {
+    "case_id": "h2-02-hazret-halal-dinner",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "20 min one-way matches «nearby» for a dinner"
+  },
+  {
+    "case_id": "h2-02-hazret-halal-dinner",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Restaurant/cafe answer «halal dinner» correctly"
+  },
+  {
+    "case_id": "h2-02-hazret-halal-dinner",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Fast food excluded by query; bar unfit halal dinner"
+  },
+  {
+    "case_id": "h2-03-asiapark-family-day",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Weekend family day out — 100-min floor plausible"
+  },
+  {
+    "case_id": "h2-03-asiapark-family-day",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «жақын жерде» with kids"
+  },
+  {
+    "case_id": "h2-03-asiapark-family-day",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Mall, playgrounds, entertainment, food, museum suit kids weekend"
+  },
+  {
+    "case_id": "h2-03-asiapark-family-day",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bars unsuitable for weekend with children"
+  },
+  {
+    "case_id": "h2-04-asiapark-cold-indoor",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Warm-up plus dinner — 150-min floor plausible"
+  },
+  {
+    "case_id": "h2-04-asiapark-cold-indoor",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "8 min matches «только не далеко идти» at −22°C"
+  },
+  {
+    "case_id": "h2-04-asiapark-cold-indoor",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "All allowed categories are indoor warming/food options"
+  },
+  {
+    "case_id": "h2-04-asiapark-cold-indoor",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Parks and viewpoints punishing at −22°C"
+  },
+  {
+    "case_id": "h2-05-piramida-tourist-hour",
+    "field": "budget_min",
+    "verdict": "inconsistent",
+    "reason": "Query says «екі сағат» (2 hours); author read it as one hour",
+    "suggested_value": 120
+  },
+  {
+    "case_id": "h2-05-piramida-tourist-hour",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "12 min suits «маңында… жаяу» sightseeing loop"
+  },
+  {
+    "case_id": "h2-05-piramida-tourist-hour",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Museums, landmarks, parks, cafe answer «не көруге болады»"
+  },
+  {
+    "case_id": "h2-05-piramida-tourist-hour",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar, entertainment, sport off for daytime sightseeing walk"
+  },
+  {
+    "case_id": "h2-06-piramida-stroller-accessible",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Stroller walk — 60-min floor reasonable"
+  },
+  {
+    "case_id": "h2-06-piramida-stroller-accessible",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «рядом», tolerable with stroller"
+  },
+  {
+    "case_id": "h2-06-piramida-stroller-accessible",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Flat parks, malls, museums, cafes suit stroller outing"
+  },
+  {
+    "case_id": "h2-06-piramida-stroller-accessible",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar and sport venues irrelevant with a stroller"
+  },
+  {
+    "case_id": "h2-07-natmuseum-rain",
+    "field": "budget_min",
+    "verdict": "debatable",
+    "reason": "«Бірер сағат» ≈ 60; 80-min floor exceeds stated wait"
+  },
+  {
+    "case_id": "h2-07-natmuseum-rain",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "10 min matches «маңында» in rain"
+  },
+  {
+    "case_id": "h2-07-natmuseum-rain",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Covered sit-able places fit waiting out rain"
+  },
+  {
+    "case_id": "h2-07-natmuseum-rain",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Outdoor spots useless in rain"
+  },
+  {
+    "case_id": "h2-08-natmuseum-evening-date",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Evening date — 150-min floor plausible"
+  },
+  {
+    "case_id": "h2-08-natmuseum-evening-date",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "20 min matches «near the National Museum»"
+  },
+  {
+    "case_id": "h2-08-natmuseum-evening-date",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Calm pretty date: cafes, park, viewpoint, theatre fit"
+  },
+  {
+    "case_id": "h2-08-natmuseum-evening-date",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bars excluded by user; fast food unfit a date"
+  },
+  {
+    "case_id": "h2-09-nurzhol-wind-shelter",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Lunch with wind shelter — 100-min floor plausible"
+  },
+  {
+    "case_id": "h2-09-nurzhol-wind-shelter",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "10 min matches «недалеко» in strong wind"
+  },
+  {
+    "case_id": "h2-09-nurzhol-wind-shelter",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Indoor lunch options; museum doubles as shelter"
+  },
+  {
+    "case_id": "h2-09-nurzhol-wind-shelter",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Exposed outdoor spots banned in −8°C wind"
+  },
+  {
+    "case_id": "h2-10-nurzhol-smog-laptop",
+    "field": "budget_min",
+    "verdict": "inconsistent",
+    "reason": "States «үш сағат» (3 hours); 60 is a third of stated time",
+    "suggested_value": 180
+  },
+  {
+    "case_id": "h2-10-nurzhol-smog-laptop",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "12 min fits «жақын жерде» with bad air"
+  },
+  {
+    "case_id": "h2-10-nurzhol-smog-laptop",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Cafe asked explicitly; coworking/mall plausible for work"
+  },
+  {
+    "case_id": "h2-10-nurzhol-smog-laptop",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Outdoor and bar wrong for smog laptop session"
+  },
+  {
+    "case_id": "h2-11-astanamall-budget-lunch",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "«Быстро поесть» — 25-min floor fits"
+  },
+  {
+    "case_id": "h2-11-astanamall-budget-lunch",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "10 min matches «рядом» for quick lunch"
+  },
+  {
+    "case_id": "h2-11-astanamall-budget-lunch",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Fast food, cafe, restaurant, mall answer cheap quick lunch"
+  },
+  {
+    "case_id": "h2-11-astanamall-budget-lunch",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar irrelevant at lunchtime"
+  },
+  {
+    "case_id": "h2-12-astanamall-late-night",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Night eat-or-walk — 50-min floor plausible"
+  },
+  {
+    "case_id": "h2-12-astanamall-late-night",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «рядом» at 23:00"
+  },
+  {
+    "case_id": "h2-12-astanamall-late-night",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Late food, nightlife, lit landmarks fit eat-or-walk"
+  },
+  {
+    "case_id": "h2-12-astanamall-late-night",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Playground and coworking pointless at 23:00 Sunday"
+  },
+  {
+    "case_id": "h2-13-station-transit-lunch",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "«Бір сағат» window; 25-min floor leaves train-return buffer"
+  },
+  {
+    "case_id": "h2-13-station-transit-lunch",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "10 min matches «маңында» and one-hour deadline"
+  },
+  {
+    "case_id": "h2-13-station-transit-lunch",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Food-focused set matches «тез тамақтану»"
+  },
+  {
+    "case_id": "h2-13-station-transit-lunch",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar, museum, sport waste the hour before a train"
+  },
+  {
+    "case_id": "h2-14-station-cold-wait",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Coffee warm-up — 25-min floor reasonable"
+  },
+  {
+    "case_id": "h2-14-station-cold-wait",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "8 min matches «недалеко» at −22°C morning"
+  },
+  {
+    "case_id": "h2-14-station-cold-wait",
+    "field": "allowed_categories",
+    "verdict": "debatable",
+    "reason": "Malls typically open ~10:00; mall unfit 08:00 coffee"
+  },
+  {
+    "case_id": "h2-14-station-cold-wait",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Outdoor and bar wrong for 08:00 frost coffee"
+  },
+  {
+    "case_id": "h2-15-momyshuly-park-weekend-walk",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Day walk plus meal — 50-min floor safe"
+  },
+  {
+    "case_id": "h2-15-momyshuly-park-weekend-walk",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «рядом» family outing"
+  },
+  {
+    "case_id": "h2-15-momyshuly-park-weekend-walk",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Park, playground, entertainment, food suit kid Saturday"
+  },
+  {
+    "case_id": "h2-15-momyshuly-park-weekend-walk",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar unsuitable for family daytime"
+  },
+  {
+    "case_id": "h2-16-momyshuly-park-laptop-work",
+    "field": "budget_min",
+    "verdict": "inconsistent",
+    "reason": "Query states about three hours; 60 mismatches stated time",
+    "suggested_value": 180
+  },
+  {
+    "case_id": "h2-16-momyshuly-park-laptop-work",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «near Momyshuly park»"
+  },
+  {
+    "case_id": "h2-16-momyshuly-park-laptop-work",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Cafe, coworking, quiet restaurant fit laptop work"
+  },
+  {
+    "case_id": "h2-16-momyshuly-park-laptop-work",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar, fast food, playground wrong for quiet 3-hour work"
+  },
+  {
+    "case_id": "h2-17-medu-between-classes",
+    "field": "budget_min",
+    "verdict": "inconsistent",
+    "reason": "Between-classes implies ~50-90 (label: час); 25 is too low",
+    "suggested_value": 60
+  },
+  {
+    "case_id": "h2-17-medu-between-classes",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "12 min matches «маңында» on a short break"
+  },
+  {
+    "case_id": "h2-17-medu-between-classes",
+    "field": "allowed_categories",
+    "verdict": "debatable",
+    "reason": "Query asks only cheap food; park_garden lacks food intent"
+  },
+  {
+    "case_id": "h2-17-medu-between-classes",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar wrong between classes at lunchtime"
+  },
+  {
+    "case_id": "h2-18-medu-smog-indoor-evening",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Evening indoor leisure — 60-min floor plausible"
+  },
+  {
+    "case_id": "h2-18-medu-smog-indoor-evening",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «рядом»; short smog exposure acceptable"
+  },
+  {
+    "case_id": "h2-18-medu-smog-indoor-evening",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "All allowed are indoor leisure, fitting «в помещении»"
+  },
+  {
+    "case_id": "h2-18-medu-smog-indoor-evening",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Outdoor categories banned with PM2.5 80"
+  },
+  {
+    "case_id": "h2-19-koktal-private-sector-weekend",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Saturday family outing — 80-min floor modest but fine"
+  },
+  {
+    "case_id": "h2-19-koktal-private-sector-weekend",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "20 min matches «не очень далеко» from outskirts"
+  },
+  {
+    "case_id": "h2-19-koktal-private-sector-weekend",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Family-friendly day-out categories fit"
+  },
+  {
+    "case_id": "h2-19-koktal-private-sector-weekend",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar unsuitable for family daytime plan"
+  },
+  {
+    "case_id": "h2-20-koktal-private-sector-dinner",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Proper dinner — 150-min floor plausible"
+  },
+  {
+    "case_id": "h2-20-koktal-private-sector-dinner",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "20 min reasonable from outskirts; notes admit car/transit"
+  },
+  {
+    "case_id": "h2-20-koktal-private-sector-dinner",
+    "field": "allowed_categories",
+    "verdict": "debatable",
+    "reason": "«Жақсы кешкі ас» (nice dinner) but fast_food allowed"
+  },
+  {
+    "case_id": "h2-20-koktal-private-sector-dinner",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Playground and viewpoint irrelevant for adult dinner"
+  },
+  {
+    "case_id": "h2-21-kokzhiek-street-holiday",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Holiday day stroll and meal — 60-min floor fine"
+  },
+  {
+    "case_id": "h2-21-kokzhiek-street-holiday",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "20 min matches «недалеко» from private sector"
+  },
+  {
+    "case_id": "h2-21-kokzhiek-street-holiday",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Parks, landmarks, museums, food suit holiday day"
+  },
+  {
+    "case_id": "h2-21-kokzhiek-street-holiday",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar mild exclusion for daytime stroll-and-eat"
+  },
+  {
+    "case_id": "h2-22-kokzhiek-street-cold-kids",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Indoor kids outing — 80-min floor plausible"
+  },
+  {
+    "case_id": "h2-22-kokzhiek-street-cold-kids",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min borderline but acceptable bundled at −22°C"
+  },
+  {
+    "case_id": "h2-22-kokzhiek-street-cold-kids",
+    "field": "allowed_categories",
+    "verdict": "debatable",
+    "reason": "kids_playground usually outdoor; −22°C needs indoor play only"
+  },
+  {
+    "case_id": "h2-22-kokzhiek-street-cold-kids",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Parks and viewpoints punishing at −22°C"
+  },
+  {
+    "case_id": "h2-23-botanical-garden-en-walk",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Walk plus breakfast — 30-min floor plausible"
+  },
+  {
+    "case_id": "h2-23-botanical-garden-en-walk",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "15 min matches «near the botanical garden»"
+  },
+  {
+    "case_id": "h2-23-botanical-garden-en-walk",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Garden walk plus cheap breakfast set fits"
+  },
+  {
+    "case_id": "h2-23-botanical-garden-en-walk",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Bar off for cheap morning walk-breakfast"
+  },
+  {
+    "case_id": "h2-24-asiapark-mixed-typo-night",
+    "field": "budget_min",
+    "verdict": "consistent",
+    "reason": "Late-night snack — 25-min floor fits «жрать хоцца»"
+  },
+  {
+    "case_id": "h2-24-asiapark-mixed-typo-night",
+    "field": "max_walk_min_one_way",
+    "verdict": "consistent",
+    "reason": "12 min matches «рядом» at 23:00"
+  },
+  {
+    "case_id": "h2-24-asiapark-mixed-typo-night",
+    "field": "allowed_categories",
+    "verdict": "consistent",
+    "reason": "Night food plus bar plausible at 23:00 craving"
+  },
+  {
+    "case_id": "h2-24-asiapark-mixed-typo-night",
+    "field": "forbidden_categories",
+    "verdict": "consistent",
+    "reason": "Playground and coworking irrelevant/closed at night"
+  }
+]

@@ -1,0 +1,31 @@
+[Unit]
+Description=Anyq: refresh the afisha (data/events.json)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=anyq
+Group=anyq
+WorkingDirectory=/opt/anyq/current
+Environment=HOME=/var/lib/anyq
+# The crawler's HTTP cache lives with the stand's state, not inside the release.
+Environment=WALKS_HTTP_CACHE=/var/lib/anyq/http_cache.sqlite
+# The collector of the repo root (collect/, its own venv at /opt/anyq/<release>/.venv built by remote.sh) writes the
+# deployed data/events.json (+ events_stats.json); the app re-reads the file when it changes. A source that fails
+# keeps its previous events. Same as `uv run python -m collect.events`, without a sync at run time.
+ExecStart=/opt/anyq/current/.venv/bin/python -m collect.events
+TimeoutStartSec=1800
+Nice=10
+MemoryMax=1G
+CPUQuota=100%
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/anyq /opt/anyq/current/data
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes

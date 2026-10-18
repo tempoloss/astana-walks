@@ -1,0 +1,58 @@
+{
+ "note": "center-bbox re-measure of the warm-route layers, reproducing the 17.10 chat-only numbers with artifacts. Live Overpass, overpass-api.de (mail.ru mirror 504 on this day), 2026-10-18, UA astana-walks-research/0.1.",
+ "bbox": [
+  51.1,
+  71.39,
+  51.16,
+  71.47
+ ],
+ "bbox_km": "6.7 x 5.6",
+ "queries": {
+  "tunnel_any": {
+   "q": "way[\"tunnel\"][\"highway\"](bbox)",
+   "ways": 59,
+   "matches_17_10_session_value": true
+  },
+  "tunnel_pedestrian_or_cycle": {
+   "q": "way[\"tunnel\"][\"highway\"~\"^(footway|path|pedestrian|steps|cycleway)$\"](bbox)",
+   "ways": 23,
+   "note": "of 59 tunnel-any; the rest are road tunnels. Center holds 23 of the city's 32 pedestrian/cycle tunnels (72%)."
+  },
+  "covered_yes": {
+   "q": "way[\"covered\"=\"yes\"](bbox)",
+   "ways": 44,
+   "matches_17_10_session_value": true,
+   "note": "no highway filter: catches non-highway ways too"
+  },
+  "pedestrian": {
+   "q": "way[\"highway\"=\"pedestrian\"](bbox)",
+   "ways": 42,
+   "matches_17_10_session_value": true
+  },
+  "footway_denominator": {
+   "q": "way[\"highway\"~\"^(footway|path|pedestrian)$\"](bbox)",
+   "ways": 6539,
+   "cross_check": "identical to NightLightsProbe lit_coverage (same bbox, same day, independent run) and equals the city-wide footway total for the city bbox 13425/6539 -> center holds 49% of the pedestrian network"
+  },
+  "covered_yes_missing_filter_note": "covered count is over ALL ways; covered-on-pedestrian-network measured city-wide separately: 4"
+ },
+ "citywide_same_definitions_18_10": {
+  "bbox": [
+   51.03,
+   71.28,
+   51.25,
+   71.55
+  ],
+  "tunnel_any": 111,
+  "tunnel_pedestrian_or_cycle": 32,
+  "covered_yes": 134,
+  "pedestrian": 80,
+  "footway_denominator": 13425,
+  "artifacts": [
+   "warm_tunnels_ped.json",
+   "this file"
+  ],
+  "covered_on_pedestrian_network": 4
+ },
+ "verdict": "center 59/44/42 reproduced exactly (44 = covered any-way, no highway filter). Sheltered pedestrian network city-wide is far smaller than 'covered=134' suggests: covered on footway/path/pedestrian/steps = 4; pedestrian/cycle tunnels = 32; highway=pedestrian = 80 (open-air car-free, not shelter). Deck-safe wording: '32 pedestrian underpasses + 4 covered footways + 80 pedestrian streets, measured city-wide, center holds 23/32 underpasses'; avoid any 'X% of network protected' until the union is measured with overlap."
+}

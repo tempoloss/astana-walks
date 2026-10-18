@@ -1,0 +1,18 @@
+[Unit]
+Description=Cloudflare tunnel for Anyq
+Wants=network-online.target
+After=network-online.target anyq.service
+
+[Service]
+User=cloudflared
+Group=cloudflared
+ExecStart=/usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/anyq.yml tunnel run
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

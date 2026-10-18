@@ -1,0 +1,46 @@
+{
+ "domain": "abudhabiplaza.info",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:30:16+00:00",
+ "pages": [
+  "https://abudhabiplaza.info/contacts"
+ ],
+ "branches": [
+  {
+   "name": "ТЦ Abu Dhabi Plaza",
+   "address": "Астана ул. Сыганак, дом 60/5",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 62 16 16",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abudhabiplaza.info/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://abudhabiplaza.info/contacts",
+     "snippet": "Астана ул. Сыганак, дом 60/5",
+     "fetched_at": "2026-10-17T09:30:16+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abudhabiplaza.info/contacts",
+     "snippet": "Общие вопросы +7 (7172) 62 16 16",
+     "fetched_at": "2026-10-17T09:30:16+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://abudhabiplaza.info/contacts",
+     "snippet": "Abu Dhabi Plaza",
+     "fetched_at": "2026-10-17T09:30:16+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The mall's visiting hours are not published on the site (same number is repeated for the commercial and marketing departments; the 'Общие вопросы' line is the mall helpdesk). Coordinates only appear inside a 2GIS widget URL — not stored.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

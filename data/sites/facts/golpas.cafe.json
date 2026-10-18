@@ -1,0 +1,9 @@
+{
+ "domain": "golpas.cafe",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T11:55:23+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "no first-party data: golpas.cafe is a Flutter SPA whose restaurant list comes from https://ailillu.kz/api/v0/restaurants, the multi-tenant ordering platform of a vendor (155 restaurants, dozens of brands, per-restaurant `organization_id`/`brand_id`), not Golpas' own backend; the list is third-party platform data and is not stored. Earlier the 17 'Гол+Пас' entries were stored from it (confidence 0.7) and dropped on 2026-10-17: the POI-level rule is that official hours must come from a domain that speaks for the POI and from the business's own page.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

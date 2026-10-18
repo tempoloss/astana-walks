@@ -1,0 +1,46 @@
+{
+ "domain": "qazaqgourmet.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:36:49+00:00",
+ "pages": [
+  "https://qazaqgourmet.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Qazaq Gourmet",
+   "address": "г. Астана, Мангилик Ел, 29",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 988 88 88",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://qazaqgourmet.kz/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://qazaqgourmet.kz/contacts",
+     "snippet": "г. Астана, Мангилик Ел, 29",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://qazaqgourmet.kz/contacts",
+     "snippet": "+7 708 988 88 88",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://qazaqgourmet.kz/contacts",
+     "snippet": "QAZAQ GOURMET",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "No opening hours anywhere on the site (only a 'ЗАБРОНИРОВАТЬ' link and a 2GIS pointer), so hours are not stored — not inferred.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "easybar.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://easybar.kz/"
+ ],
+ "branches": [],
+ "notes": "robots.txt absent (allowed), but the server answers HTTP 503 on / and /contacts after the retry budget; no page content fetchable — nothing stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

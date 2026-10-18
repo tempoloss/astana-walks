@@ -1,0 +1,72 @@
+{
+  "attribution": "© OpenStreetMap contributors, ODbL",
+  "notes": {
+    "count": 300,
+    "by_status": {
+      "closed": 293,
+      "open": 7
+    },
+    "by_classification": {
+      "other": 223,
+      "closure": 60,
+      "new_place": 11,
+      "construction": 4,
+      "hours": 2
+    },
+    "page_limit": 300,
+    "window": "single API page, most recently updated, any status — not a date window; open count is a lower bound",
+    "bbox": "71.25,50.98,71.6,51.25",
+    "snapshot_date": "2026-10-17",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL",
+    "source": "OpenStreetMap Notes API (api.openstreetmap.org/api/0.6/notes/search.json)"
+  },
+  "lit": {
+    "lit_count": 956,
+    "lit_by_value": {
+      "yes": 858,
+      "no": 98
+    },
+    "lit_by_highway": {
+      "footway": 572,
+      "residential": 107,
+      "secondary": 84,
+      "tertiary": 75,
+      "primary": 68,
+      "cycleway": 20,
+      "service": 11,
+      "pedestrian": 8,
+      "steps": 6,
+      "trunk": 3,
+      "secondary_link": 2
+    },
+    "construction_count": 79,
+    "construction_by_kind": {
+      "?": 0,
+      "primary_link": 6,
+      "residential": 14,
+      "secondary": 7,
+      "service": 12,
+      "tertiary": 25,
+      "tertiary_link": 1,
+      "unclassified": 3
+    },
+    "snapshot_date": "2026-10-17",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL",
+    "source": "Overpass (maps.mail.ru mirror), simplified geometry, ~5 m tolerance"
+  },
+  "construction": {
+    "count": 79,
+    "by_kind": {
+      "?": 0,
+      "primary_link": 6,
+      "residential": 14,
+      "secondary": 7,
+      "service": 12,
+      "tertiary": 25,
+      "tertiary_link": 1,
+      "unclassified": 3
+    }
+  }
+}

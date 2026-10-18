@@ -1,0 +1,252 @@
+{
+ "domain": "pinta.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:43:36+00:00",
+ "pages": [
+  "https://pinta.kz/restaurants/astana"
+ ],
+ "branches": [
+  {
+   "name": "PINTA на Достык, 5",
+   "address": "ул. Достык, 5 (ЖК «Северное Сияние»)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (778) 196-27-47",
+   "opening_hours_raw": "Вс-Чт : 12:00 - 02:00 Пт-Сб : 12:00 - 03:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-02:00; Fr,Sa 12:00-03:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA на Достык, 5",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (778) 196-27-47",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : 12:00 - 02:00 Пт-Сб : 12:00 - 03:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "ул. Достык, 5 (ЖК «Северное Сияние»)",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "PINTA на Кабанбай батыра 19/1",
+   "address": "пр. Кабанбай батыра, 19/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (707) 307-53-03",
+   "opening_hours_raw": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-02:00; Fr,Sa 12:00-03:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA на Кабанбай батыра 19/1",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (707) 307-53-03",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "пр. Кабанбай батыра, 19/1",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "PINTA на Достык, 18",
+   "address": "ул. Достык, 18 (БЦ «Москва»)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (778) 445-98-95",
+   "opening_hours_raw": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-02:00; Fr,Sa 12:00-03:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA на Достык, 18",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (778) 445-98-95",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "ул. Достык, 18 (БЦ «Москва»)",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "PINTA на Акмешит",
+   "address": "ул. Акмешит, 9/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (777) 100-46-16",
+   "opening_hours_raw": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-02:00; Fr,Sa 12:00-03:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA на Акмешит",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (777) 100-46-16",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "ул. Акмешит, 9/1",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "PINTA на Ауэзова",
+   "address": "ул. Ауэзова, 8 (БЦ Азия)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (701) 550-51-44",
+   "opening_hours_raw": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+   "opening_hours_osm": "Mo-Th,Su 12:00-02:00; Fr,Sa 12:00-03:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA на Ауэзова",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (701) 550-51-44",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : с 12:00 до 02:00 Пт-Сб : с 12:00 до 03:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "ул. Ауэзова, 8 (БЦ Азия)",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "PINTA в ТРК Keruen City",
+   "address": "Коргальджинское шоссе, 1 (ТРК Keruen City)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (702) 360-51-44",
+   "opening_hours_raw": "Вс-Чт : с 10:00 до 00:00 Пт-Сб : с 10:00 до 02:00",
+   "opening_hours_osm": "Mo-Th,Su 10:00-24:00; Fr,Sa 10:00-02:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://pinta.kz/restaurants/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "PINTA в ТРК Keruen City",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "+7 (702) 360-51-44",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Вс-Чт : с 10:00 до 00:00 Пт-Сб : с 10:00 до 02:00",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://pinta.kz/restaurants/astana",
+     "snippet": "Коргальджинское шоссе, 1 (ТРК Keruen City)",
+     "fetched_at": "2026-10-17T09:42:42+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Astana city tab of /restaurants (nur.pinta.kz redirects to pinta.kz/?city=astana); the Almaty/other tabs hold non-Astana venues and are skipped. The weekly schedule printed on each card ('Вс-Чт … Пт-Сб …') is the venue's hours. The site publishes no street coordinates for its venues.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

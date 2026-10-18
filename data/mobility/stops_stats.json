@@ -1,0 +1,13 @@
+{
+  "gtfs_stops_raw": 201,
+  "gtfs_fetched_at": "2026-10-17T17:30:13+05:00",
+  "osm_stops_raw": 0,
+  "merged_total": 183,
+  "with_osm": 0,
+  "gtfs_only": 183,
+  "osm_unmatched": 0,
+  "licence_gtfs": "CC-BY-4.0",
+  "licence_osm": "ODbL-1.0",
+  "attribution": "GTFS stops: Mansurova, Aigerim; Mussina, Aigerim; Aubakirov, Sanzhar; Nugumanova, Aliya; Yedilkhan, Didar (2025): «From Raw GPS to GTFS: A Real-World Open Dataset for Bus Travel Time Prediction», Zenodo, https://zenodo.org/records/15769359, CC BY 4.0 (doi:10.5281/zenodo.15769359; journal version doi:10.3390/data10080119). OSM platforms: © OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/copyright.",
+  "read_me_note": "Записи остановок (stops.txt) используются как есть; расписания GTFS этого датасета — реконструкция из GPS-треков 2024 года, для текущего расписания они не годятся, поэтому хранятся только остановки."
+}

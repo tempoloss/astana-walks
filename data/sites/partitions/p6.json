@@ -1,0 +1,1649 @@
+{
+ "partition": "p6",
+ "weight": 156.0,
+ "items": [
+  {
+   "kind": "manual",
+   "poi_id": "overture/e2157a69-731f-461d-a2cf-ff1bb56406b3",
+   "name": "ForteBank Kulanshi Art Space",
+   "category": "museum_gallery",
+   "lat": 51.1267624,
+   "lon": 71.4186172,
+   "address": "Астана, 8/1 Dostyk Street |",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/d8618d37-bebb-42da-b23d-0f9009deead7",
+   "name": "Historical Museum Astana",
+   "category": "museum_gallery",
+   "lat": 51.1189575,
+   "lon": 71.4719162,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/2615f322-7364-4a18-b653-9d9bae8090f7",
+   "name": "KOZ Gallery",
+   "category": "museum_gallery",
+   "lat": 51.0988541,
+   "lon": 71.4171295,
+   "address": "Астана, проспект Улы Дала 7",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/dd3617a1-a856-439a-919d-306b4f7c1c9e",
+   "name": "Kazakistan Tarihi Müzesi @astana",
+   "category": "museum_gallery",
+   "lat": 51.1188507,
+   "lon": 71.4723892,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q85787940",
+   "name": "National Military-Patriotic Center of the Armed Forces of Kazakhstan",
+   "category": "museum_gallery",
+   "lat": 51.1559167,
+   "lon": 71.4315278,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+   "name": "Военно-Исторический музей ВС РК",
+   "category": "museum_gallery",
+   "lat": 51.1561127,
+   "lon": 71.4308472,
+   "address": "Астана, проспект Республики 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1239171353",
+   "name": "Военно-исторический музей",
+   "category": "museum_gallery",
+   "lat": 51.1554984,
+   "lon": 71.4319723,
+   "address": null,
+   "opening_hours": "Mo-Su 10:00-18:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/240391776",
+   "name": "Государственный военно-исторический музей",
+   "category": "museum_gallery",
+   "lat": 51.1559295,
+   "lon": 71.4312983,
+   "address": "Астана, Республика даңғылы, 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q4146879",
+   "name": "Государственный музей золота и драгоценных металлов",
+   "category": "museum_gallery",
+   "lat": 51.157,
+   "lon": 71.4313,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/230358847",
+   "name": "Корме",
+   "category": "museum_gallery",
+   "lat": 51.1286406,
+   "lon": 71.4203796,
+   "address": "Астана, Достық көшесі, 3",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/13948916190",
+   "name": "Музей истории железных дорог Казахстана",
+   "category": "museum_gallery",
+   "lat": 51.1122858,
+   "lon": 71.5316883,
+   "address": "Астана, Мұхамеджан Тынышбайұлы көшесі",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/51431624",
+   "name": "Музей первого президента РК Н. А. Назарбаева",
+   "category": "museum_gallery",
+   "lat": 51.1667134,
+   "lon": 71.4190323,
+   "address": "Астана, Бейбітшілік көшесі, 11",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/963855443",
+   "name": "Назарбаев центр-2",
+   "category": "museum_gallery",
+   "lat": 51.1146527,
+   "lon": 71.4421493,
+   "address": "Астана, Әлихан Бөкейхан көшесі, 1а",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1460700597",
+   "name": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+   "category": "museum_gallery",
+   "lat": 51.1492984,
+   "lon": 71.4180805,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/7972273c-f99e-4cd9-b552-c94b2a59adde",
+   "name": "ҚР ҚК Әскери-тарихи музейі",
+   "category": "museum_gallery",
+   "lat": 51.1568642,
+   "lon": 71.4342804,
+   "address": "Астана, проспект Республики 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/12973428159",
+   "name": "Artist",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1700602,
+   "lon": 71.417062,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/11567664069",
+   "name": "Aru Cinema",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1603682,
+   "lon": 71.4826559,
+   "address": "улица Илияс Жансугурова, 8/1",
+   "opening_hours": "Mo-Su 10:00-00:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q33811540",
+   "name": "Cinema City",
+   "category": "culture_theatre_cinema",
+   "lat": 51.163675,
+   "lon": 71.431719,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/24265968-234a-472a-b61b-c2589dec0894",
+   "name": "Flamenco Theatre Astana",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1316833,
+   "lon": 71.4278946,
+   "address": "Астана, ул. Кунаева 29",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/ad269a74-94c9-44e5-95de-a2264d4b3098",
+   "name": "Keruen Cinema",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1249352,
+   "lon": 71.4320297,
+   "address": "Астана, Talan Gallery, Dostyq St 16",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/12764573001",
+   "name": "Kino Room",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1166558,
+   "lon": 71.4300321,
+   "address": "улица Туркестан, 4А",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/13148690568",
+   "name": "Renaissance",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1670395,
+   "lon": 71.4488577,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/53676e81-a25f-4029-9d95-b630dbce195f",
+   "name": "SML EXPO Energy Hall",
+   "category": "culture_theatre_cinema",
+   "lat": 51.0892029,
+   "lon": 71.4161301,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/12125755601",
+   "name": "Sayajay аrt",
+   "category": "culture_theatre_cinema",
+   "lat": 51.183578,
+   "lon": 71.4081778,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/03374983-a30e-495e-8d59-7e296140fbe3",
+   "name": "Vip Cinema",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1418037,
+   "lon": 71.4826813,
+   "address": "Астана, Bauyrzhan Momyshuly Ave 27",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4916363251",
+   "name": "Государственная академическая филармония им. Е. Рахмадиева",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1636794,
+   "lon": 71.4223498,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/798212555",
+   "name": "Государственный театр танца",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1796627,
+   "lon": 71.3387966,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/240376675",
+   "name": "Дворец Юность",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1700498,
+   "lon": 71.4278205,
+   "address": "Астана, Республика даңғылы, 34",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/5101392526",
+   "name": "Дворец торжеств «Салтанат сарайы»",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1502265,
+   "lon": 71.4235139,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "relation/6319524",
+   "name": "Дворец школьников им. аль-Фараби",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1374158,
+   "lon": 71.463417,
+   "address": "Астана, Бауыржан Момышұлы даңғылы, 5",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q97496724",
+   "name": "Здание кинотеатра «Октябрь»",
+   "category": "culture_theatre_cinema",
+   "lat": 51.167994,
+   "lon": 71.418413,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4920065833",
+   "name": "Казахский музыкально-драматический театр",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1688412,
+   "lon": 71.4174092,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/3824846563",
+   "name": "Органный зал Национальной академии музыки РК",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1738815,
+   "lon": 71.4110111,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q42768422",
+   "name": "ТЮЗ (Астана)",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1333333,
+   "lon": 71.4333333,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/2349675581",
+   "name": "Театр кукол",
+   "category": "culture_theatre_cinema",
+   "lat": 51.1584852,
+   "lon": 71.4287068,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/82d4a466-d863-4099-9161-b2ce55ed0ad6",
+   "name": "\"ТД \"Коктем\"\"",
+   "category": "mall",
+   "lat": 51.1752434,
+   "lon": 71.4089966,
+   "address": "Астана, проспект Богенбай батыра 34",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/cec6baf7-eafa-47bf-af18-44e5059716e6",
+   "name": "\"ТД \"Орбита\"\"",
+   "category": "mall",
+   "lat": 51.1512985,
+   "lon": 71.4618988,
+   "address": "Астана, Петров көшесі 1/2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/21d569ea-97fe-4d9f-8f33-549e394a3025",
+   "name": "\"ТЦ \"Женис\"\"",
+   "category": "mall",
+   "lat": 51.17939,
+   "lon": 71.4092331,
+   "address": "Астана, Жеңіс даңғылы 47",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/ba813b70-97bf-4073-a307-ad518fca7b66",
+   "name": "BIG Шанхай",
+   "category": "mall",
+   "lat": 51.2020988,
+   "lon": 71.4902878,
+   "address": "Астана, Алаш тас жолы 34/1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/498977612",
+   "name": "Central Market",
+   "category": "mall",
+   "lat": 51.1964122,
+   "lon": 71.4655186,
+   "address": "Астана, шоссе Алаш, 15",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1390487910",
+   "name": "Damu Mall",
+   "category": "mall",
+   "lat": 51.1156431,
+   "lon": 71.4922236,
+   "address": "Жұмекен Нәжімеденов көшесі, 26",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/21c0c68f-38cf-4f19-907e-e33242e37986",
+   "name": "Diadi Home",
+   "category": "mall",
+   "lat": 51.1749573,
+   "lon": 71.4391937,
+   "address": "Целиноград ауданы, 2-ші шағын аудан 26",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/491522670",
+   "name": "Festival Avenue",
+   "category": "mall",
+   "lat": 51.1281779,
+   "lon": 71.4073875,
+   "address": "Достық көшесі, 4",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/264403130",
+   "name": "Flowerhub",
+   "category": "mall",
+   "lat": 51.1759839,
+   "lon": 71.4055722,
+   "address": "Астана, Бөгенбай Батыр даңғылы, 29",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/d208c648-0047-40bf-ac7c-6a3bdb2c1544",
+   "name": "Foliant",
+   "category": "mall",
+   "lat": 51.1577072,
+   "lon": 71.4430389,
+   "address": "Астана, Aleksandr Kravtsov St 6/1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1390487360",
+   "name": "Jibek Joly",
+   "category": "mall",
+   "lat": 51.1148048,
+   "lon": 71.526949,
+   "address": "Ахмет Байтұрсынұлы көшесі",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/242373803",
+   "name": "KFC",
+   "category": "mall",
+   "lat": 51.1536168,
+   "lon": 71.4868941,
+   "address": "Астана, Абылай Хан даңғылы, 38",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/218b3a27-c463-4c31-b51c-47e91e79ee97",
+   "name": "KeruenCity",
+   "category": "mall",
+   "lat": 51.1452942,
+   "lon": 71.4134903,
+   "address": "Астана, Kurgal'zhinskoye Shosse 1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/8098acf5-2291-4e05-93f8-08174fab0450",
+   "name": "Megapolis",
+   "category": "mall",
+   "lat": 51.1734924,
+   "lon": 71.3969421,
+   "address": "Астана, Ермек Серкебаев 4А",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/471601228",
+   "name": "Reebok Adidas discount center",
+   "category": "mall",
+   "lat": 51.1738681,
+   "lon": 71.4348323,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/915690898",
+   "name": "Sauran",
+   "category": "mall",
+   "lat": 51.1183601,
+   "lon": 71.4161445,
+   "address": "Алматы көшесі, 3",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1179903477",
+   "name": "Tumar",
+   "category": "mall",
+   "lat": 51.1326604,
+   "lon": 71.3665438,
+   "address": "Астана, улица Сыганак, 1Б",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241248642",
+   "name": "Арай",
+   "category": "mall",
+   "lat": 51.1542961,
+   "lon": 71.4923043,
+   "address": "Астана, Абылай Хан даңғылы, 41/3",
+   "opening_hours": "09:00-21:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/52f9d496-4b23-4004-a769-985266f6f712",
+   "name": "Артем Астаналық",
+   "category": "mall",
+   "lat": 51.173233,
+   "lon": 71.4366989,
+   "address": "Астана, Сәкен Сейфуллин көшесі",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241594875",
+   "name": "Асем",
+   "category": "mall",
+   "lat": 51.1817415,
+   "lon": 71.4341906,
+   "address": "Ықылас Дүкенұлы көшесі, 31",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4933998223",
+   "name": "Бахус",
+   "category": "mall",
+   "lat": 51.1930161,
+   "lon": 71.4018926,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/167091300",
+   "name": "Встреча",
+   "category": "mall",
+   "lat": 51.1552497,
+   "lon": 71.4864247,
+   "address": "Абылай Хан даңғылы, 31",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4940269046",
+   "name": "Даулет ТД",
+   "category": "mall",
+   "lat": 51.1920596,
+   "lon": 71.4074904,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1089059381",
+   "name": "Евразия",
+   "category": "mall",
+   "lat": 51.1486777,
+   "lon": 71.4728387,
+   "address": "Астана, улица Алексея Петрова, 24",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/475995069",
+   "name": "Евразия-2",
+   "category": "mall",
+   "lat": 51.1478406,
+   "lon": 71.4730946,
+   "address": "Астана, улица Алексея Петрова, 24Б",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/240931360",
+   "name": "Каскад",
+   "category": "mall",
+   "lat": 51.1459716,
+   "lon": 71.424168,
+   "address": "Астана, Қабанбай Батыр даңғылы, 6/2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/108096984",
+   "name": "Керуен",
+   "category": "mall",
+   "lat": 51.1277901,
+   "lon": 71.4253099,
+   "address": "Астана, Достық көшесі, 9",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4933998230",
+   "name": "Коктал 2",
+   "category": "mall",
+   "lat": 51.1942364,
+   "lon": 71.3361409,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4965336822",
+   "name": "Мега Силк Вей",
+   "category": "mall",
+   "lat": 51.0890223,
+   "lon": 71.4075409,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4932698343",
+   "name": "Мереке ТД",
+   "category": "mall",
+   "lat": 51.1357901,
+   "lon": 71.5138292,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4931058934",
+   "name": "Меридиан",
+   "category": "mall",
+   "lat": 51.1492422,
+   "lon": 71.4695996,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/919012412",
+   "name": "Мечта",
+   "category": "mall",
+   "lat": 51.1320267,
+   "lon": 71.3715374,
+   "address": "Астана, Сығанақ көшесі, 3",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4900149827",
+   "name": "Рахмет",
+   "category": "mall",
+   "lat": 51.1796462,
+   "lon": 71.3766688,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241090093",
+   "name": "Рахмет ТЦ",
+   "category": "mall",
+   "lat": 51.1795817,
+   "lon": 71.3768795,
+   "address": "Астана, проспект Нургисы Тлендиева, 15",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/1daca465-09a2-4186-9d74-7f14953f97be",
+   "name": "Салем",
+   "category": "mall",
+   "lat": 51.1805038,
+   "lon": 71.382103,
+   "address": "Астана, просп. Тлендиева Нургисы",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/314236424",
+   "name": "Самгау",
+   "category": "mall",
+   "lat": 51.2001114,
+   "lon": 71.4680041,
+   "address": "Астана, шоссе Алаш, 43",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4944239674",
+   "name": "ТД \"Armada\"",
+   "category": "mall",
+   "lat": 51.1611513,
+   "lon": 71.4860845,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241248762",
+   "name": "ТД \"Веста\"",
+   "category": "mall",
+   "lat": 51.1558407,
+   "lon": 71.4882692,
+   "address": "Астана, улица Манаса, 4",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4935737743",
+   "name": "ТД Астыкжан 2",
+   "category": "mall",
+   "lat": 51.1826502,
+   "lon": 71.4549574,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/242373768",
+   "name": "ТД Гульжан",
+   "category": "mall",
+   "lat": 51.1536331,
+   "lon": 71.4854023,
+   "address": "Астана, Абылай Хан даңғылы, 34",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/242953032",
+   "name": "ТД Эверест",
+   "category": "mall",
+   "lat": 51.1729731,
+   "lon": 71.4168128,
+   "address": "Әліби Жангелдин көшесі, 18",
+   "opening_hours": "24/7",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4920177022",
+   "name": "ТРЦ \"Джафар\"",
+   "category": "mall",
+   "lat": 51.1797062,
+   "lon": 71.4367264,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4965763184",
+   "name": "ТЦ \"Азия-Сити\"",
+   "category": "mall",
+   "lat": 51.1577197,
+   "lon": 71.4876106,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/10583640008",
+   "name": "ТЦ Euromall",
+   "category": "mall",
+   "lat": 51.1728801,
+   "lon": 71.3794415,
+   "address": "улица Шаймердена Косшыгулулы, 24",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/82d2acbd-8bf8-4df8-b20e-073751634479",
+   "name": "ТЦ Гульжан",
+   "category": "mall",
+   "lat": 51.1542587,
+   "lon": 71.4859467,
+   "address": "Астана, Пр. Аблай-хана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/84958688-2e8f-4939-adce-bb5821879b49",
+   "name": "Торговый Дом Happy",
+   "category": "mall",
+   "lat": 51.1245346,
+   "lon": 71.4861908,
+   "address": "Астана, Арна көшесі 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/322211035",
+   "name": "Торговый дом \"Дияр\"",
+   "category": "mall",
+   "lat": 51.1670805,
+   "lon": 71.3886639,
+   "address": "Астана, Ермек Серкебаев көшесі, 13",
+   "opening_hours": "08:00-20:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/5913626963",
+   "name": "Торговый дом \"Интерьер City\"",
+   "category": "mall",
+   "lat": 51.143745,
+   "lon": 71.4750391,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4920065767",
+   "name": "Торговый дом Азат",
+   "category": "mall",
+   "lat": 51.1704213,
+   "lon": 71.4122265,
+   "address": null,
+   "opening_hours": "Mo-Su 10:00-20:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4928350081",
+   "name": "Торговый дом Дэн",
+   "category": "mall",
+   "lat": 51.1792379,
+   "lon": 71.4180636,
+   "address": null,
+   "opening_hours": "Mo-Su 10:00-20:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4914343538",
+   "name": "Шелковый путь",
+   "category": "mall",
+   "lat": 51.168192,
+   "lon": 71.3886747,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/425721187",
+   "name": "Athletic Center",
+   "category": "sport",
+   "lat": 51.0871666,
+   "lon": 71.3948207,
+   "address": "Астана, Қабанбай Батыр даңғылы, 53к3а",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1102228687",
+   "name": "Baqytbek Arena",
+   "category": "sport",
+   "lat": 51.1289349,
+   "lon": 71.2564542,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/40e62898-1bad-4f1c-a010-79dafb0108a3",
+   "name": "Daulet Tennis Centre",
+   "category": "sport",
+   "lat": 51.1414948,
+   "lon": 71.4992752,
+   "address": "Астана, Qorday St 6",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/916153705",
+   "name": "Dopșý Arena",
+   "category": "sport",
+   "lat": 51.1302863,
+   "lon": 71.3696534,
+   "address": "Астана, Сығанақ көшесі, 6/1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/eea77b1b-a86b-41cc-a1c6-796c10752b9d",
+   "name": "Hockey Room (Центр Хоккейной Подготовки) Дворец Школьников",
+   "category": "sport",
+   "lat": 51.1370888,
+   "lon": 71.4640884,
+   "address": "Астана, проспект Бауыржана Момышулы 5",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/453247475",
+   "name": "Ice Club",
+   "category": "sport",
+   "lat": 51.1474114,
+   "lon": 71.4745113,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/5776315441",
+   "name": "Life fitness",
+   "category": "sport",
+   "lat": 51.1199775,
+   "lon": 71.4295982,
+   "address": "улица Туркестан, 8",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1383011542",
+   "name": "Sana sports",
+   "category": "sport",
+   "lat": 51.1545118,
+   "lon": 71.4632908,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/11345949790",
+   "name": "The Ring",
+   "category": "sport",
+   "lat": 51.1130535,
+   "lon": 71.4297581,
+   "address": null,
+   "opening_hours": "Mo-Fr 07:00-22:00; Sa 09:00-20:00; Su 10:00-18:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/11920102369",
+   "name": "WORKOUT FITNESS & GYM",
+   "category": "sport",
+   "lat": 51.1248605,
+   "lon": 71.4341744,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/217676871",
+   "name": "Алатау",
+   "category": "sport",
+   "lat": 51.1516719,
+   "lon": 71.4512236,
+   "address": "Астана, Тәуелсіздік даңғылы, 1/1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "wikidata/Q746559",
+   "name": "Астана Арена",
+   "category": "sport",
+   "lat": 51.1082,
+   "lon": 71.4026,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/420eea81-ccfa-4f55-9ea9-423bc3c46116",
+   "name": "Бильярдный клуб Dostar",
+   "category": "sport",
+   "lat": 51.1653481,
+   "lon": 71.4055862,
+   "address": "Астана, Абай даңғылы 8",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/4904163499",
+   "name": "Гольф клуб",
+   "category": "sport",
+   "lat": 51.1099628,
+   "lon": 71.5672874,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/425276242",
+   "name": "Дворец единоборств имени Жаксылыка Ушкемпирова",
+   "category": "sport",
+   "lat": 51.1144172,
+   "lon": 71.4093604,
+   "address": "Қабанбай Батыр даңғылы, 43",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/460048101",
+   "name": "Ледовая арена",
+   "category": "sport",
+   "lat": 51.1103071,
+   "lon": 71.4056552,
+   "address": "Астана, Қабанбай Батыр даңғылы, 45А/1",
+   "opening_hours": "Mo-Fr 09:00-18:00",
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/b6d87731-edf4-40f2-9082-e39e962791e5",
+   "name": "Лыжероллерная Трасса",
+   "category": "sport",
+   "lat": 51.1563034,
+   "lon": 71.4151993,
+   "address": "Астана, Центральный Парк",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/1108448985",
+   "name": "Лыжная база",
+   "category": "sport",
+   "lat": 51.1543647,
+   "lon": 71.4131641,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/240921097",
+   "name": "Паралимпийский тренировочный центр",
+   "category": "sport",
+   "lat": 51.1490196,
+   "lon": 71.3956671,
+   "address": "Астана, Ақшоқы тұйық көшесі, 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241241695",
+   "name": "СДЮСШ №10 по хоккею с шайбой",
+   "category": "sport",
+   "lat": 51.1568812,
+   "lon": 71.4649955,
+   "address": "Астана, улица Кажымукана Мунайтпасова, 9",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/166265821",
+   "name": "Сарыарка",
+   "category": "sport",
+   "lat": 51.1100367,
+   "lon": 71.407336,
+   "address": "Астана, Қабанбай Батыр даңғылы, 45А",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/688298538",
+   "name": "Спортивная школа \"SportPlanet\"",
+   "category": "sport",
+   "lat": 51.1486662,
+   "lon": 71.5231802,
+   "address": "Астана",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/241053202",
+   "name": "Спорткомплекс ABYROY (Астана)",
+   "category": "sport",
+   "lat": 51.1696674,
+   "lon": 71.4070363,
+   "address": "Астана, Сарыарқа даңғылы, 21",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/236534117",
+   "name": "Спорткомплекс Динамо",
+   "category": "sport",
+   "lat": 51.1872806,
+   "lon": 71.4037034,
+   "address": "Астана, Григорий Потанин көшесі, 14",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "overture/978227af-2132-45dd-9cc8-189b682b7146",
+   "name": "Стадион им. Мунайтпасова",
+   "category": "sport",
+   "lat": 51.1638641,
+   "lon": 71.4152908,
+   "address": "Астана, Победы",
+   "opening_hours": null,
+   "social_only_website": "http://en.wikipedia.org/wiki/index.html?curid=4787733"
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/240485199",
+   "name": "Толкын",
+   "category": "sport",
+   "lat": 51.1539909,
+   "lon": 71.4556787,
+   "address": "Астана, Тәуелсіздік даңғылы, 2",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "node/3780590225",
+   "name": "Тренажерный зал",
+   "category": "sport",
+   "lat": 51.1589841,
+   "lon": 71.4573247,
+   "address": null,
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "manual",
+   "poi_id": "way/428784906",
+   "name": "Турлан",
+   "category": "sport",
+   "lat": 51.151786,
+   "lon": 71.4095212,
+   "address": "Астана, Тұран даңғылы, 5/1",
+   "opening_hours": null,
+   "social_only_website": null
+  },
+  {
+   "kind": "domain",
+   "domain": "korean-culture.org",
+   "poi_count": 1,
+   "categories": {
+    "culture_theatre_cinema": 1
+   },
+   "sample_names": [
+    "Korean Cultural Center Kazakhstan 주카자흐스탄 한국문화원"
+   ],
+   "urls": [
+    "http://kaz.korean-culture.org"
+   ],
+   "brands": [
+    "Korean Cultural Center in the Philippines"
+   ],
+   "poi_ids": [
+    "overture/bf72ed08-e1f1-49de-9eb1-0b1d7f65af86"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "lepainquotidien.com",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Le Pain Quotidien"
+   ],
+   "urls": [
+    "https://www.lepainquotidien.com/kz/kk/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37"
+   ],
+   "brands": [
+    "Le Pain Quotidien"
+   ],
+   "poi_ids": [
+    "overture/0fe823d3-4f33-4999-9177-0217c759a7a8"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "mado.com.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Мадо"
+   ],
+   "urls": [
+    "http://www.mado.com.kz"
+   ],
+   "brands": [
+    "Mado"
+   ],
+   "poi_ids": [
+    "node/6404769888"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "megacenter.kz",
+   "poi_count": 1,
+   "categories": {
+    "mall": 1
+   },
+   "sample_names": [
+    "Mega Silk Way"
+   ],
+   "urls": [
+    "http://astana.megacenter.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/499328514"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "nabrk.kz",
+   "poi_count": 1,
+   "categories": {
+    "coworking_library": 1
+   },
+   "sample_names": [
+    "Национальная академическая библиотека Республики Казахстан"
+   ],
+   "urls": [
+    "http://nabrk.kz/wps/portal/nabrk"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/230358855"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "once.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "ONCE"
+   ],
+   "urls": [
+    "https://once.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/b004d35f-0f36-4084-a21d-4a2ab09e3fed"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "paragonkaraoke.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Paragon Lounge&Karaoke"
+   ],
+   "urls": [
+    "http://paragonkaraoke.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/d5521d22-501d-4487-927a-bddc60b99829"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "provino.com.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "Про вино"
+   ],
+   "urls": [
+    "http://provino.com.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/5890195285"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "qazmedia.kz",
+   "poi_count": 1,
+   "categories": {
+    "entertainment": 1
+   },
+   "sample_names": [
+    "Казмедиа центр - Қазмедиа орталығы"
+   ],
+   "urls": [
+    "http://qazmedia.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/89b596fd-37ba-4146-aece-b64c1ada7fe2"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "rent-a-car.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "FIKA cafe"
+   ],
+   "urls": [
+    "http://www.rent-a-car.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/21d1858d-4b8a-4504-a192-39002d729df9"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "ribapila.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Рыба пила"
+   ],
+   "urls": [
+    "https://ribapila.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/12917116702"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "saporito.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Saporito"
+   ],
+   "urls": [
+    "http://www.saporito.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/66bcefb1-4c48-49e6-a769-6afc849fbd33"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "shogun.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Сёгун"
+   ],
+   "urls": [
+    "http://www.shogun.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/62e101af-5982-4794-a67d-3c03c1783e69"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "starbucks.com",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "Starbucks"
+   ],
+   "urls": [
+    "https://www.starbucks.com"
+   ],
+   "brands": [
+    "Starbucks"
+   ],
+   "poi_ids": [
+    "way/1449301315"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "tagam-halal.kz",
+   "poi_count": 1,
+   "categories": {
+    "fast_food": 1
+   },
+   "sample_names": [
+    "Тагам"
+   ],
+   "urls": [
+    "https://tagam-halal.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/5966463390"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "thegarden.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "The Garden"
+   ],
+   "urls": [
+    "http://www.thegarden.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/4409067789"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "tlpcompany.kz",
+   "poi_count": 1,
+   "categories": {
+    "cafe": 1
+   },
+   "sample_names": [
+    "TLP Flowers & Coffee"
+   ],
+   "urls": [
+    "https://tlpcompany.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/11290690869"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "uno-restobar.kz",
+   "poi_count": 1,
+   "categories": {
+    "bar_nightlife": 1
+   },
+   "sample_names": [
+    "UNO Restobar"
+   ],
+   "urls": [
+    "http://uno-restobar.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/898fa688-2f47-43df-ba86-c765444e486d"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "wall-street.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Wall Street"
+   ],
+   "urls": [
+    "http://www.wall-street.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "overture/17c01d0f-b2ba-4b19-bc52-00162d5daaca"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "z-1.kz",
+   "poi_count": 1,
+   "categories": {
+    "restaurant": 1
+   },
+   "sample_names": [
+    "Z-1"
+   ],
+   "urls": [
+    "http://qonaev.z-1.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "node/6312771198"
+   ]
+  },
+  {
+   "kind": "domain",
+   "domain": "zhastarastana.kz",
+   "poi_count": 1,
+   "categories": {
+    "park_garden": 1
+   },
+   "sample_names": [
+    "Сквер Дворца Жастар"
+   ],
+   "urls": [
+    "http://zhastarastana.kz"
+   ],
+   "brands": [],
+   "poi_ids": [
+    "way/1428964223"
+   ]
+  }
+ ],
+ "domain_count": 21,
+ "manual_count": 114,
+ "poi_count": 135
+}

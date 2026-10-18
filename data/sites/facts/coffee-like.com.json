@@ -1,0 +1,11 @@
+{
+ "domain": "coffee-like.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:41:55+00:00",
+ "pages": [
+  "https://coffee-like.com/coffee-bars/all"
+ ],
+ "branches": [],
+ "notes": "Feed /coffee-bars/all (drives the «Адреса» map page): 817 points across 129 cities, all of them Russian; Astana/KZ cities found: none. The 6 Astana «Coffee Like» POIs are not on the chain's own site map — no branches stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

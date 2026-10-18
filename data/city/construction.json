@@ -1,0 +1,2898 @@
+[
+  {
+    "id": 508473099,
+    "highway": "construction",
+    "construction": "unclassified",
+    "name": null,
+    "geometry": [
+      [
+        51.102497,
+        71.478231
+      ],
+      [
+        51.108231,
+        71.480518
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 663374493,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.128194,
+        71.551987
+      ],
+      [
+        51.127995,
+        71.551911
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 885788802,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.177862,
+        71.346077
+      ],
+      [
+        51.178102,
+        71.346637
+      ],
+      [
+        51.178485,
+        71.347586
+      ],
+      [
+        51.178695,
+        71.348153
+      ],
+      [
+        51.179003,
+        71.349084
+      ],
+      [
+        51.179453,
+        71.350349
+      ],
+      [
+        51.179713,
+        71.351125
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1214308578,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.161625,
+        71.398704
+      ],
+      [
+        51.16089,
+        71.395382
+      ],
+      [
+        51.160063,
+        71.392071
+      ],
+      [
+        51.159039,
+        71.389381
+      ],
+      [
+        51.15694,
+        71.386214
+      ],
+      [
+        51.156122,
+        71.385384
+      ],
+      [
+        51.154443,
+        71.383811
+      ],
+      [
+        51.151793,
+        71.382619
+      ],
+      [
+        51.150691,
+        71.382408
+      ],
+      [
+        51.150259,
+        71.382446
+      ],
+      [
+        51.148507,
+        71.382575
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1339367259,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-102 көшесі",
+    "geometry": [
+      [
+        51.129142,
+        71.545953
+      ],
+      [
+        51.129107,
+        71.546175
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1339367260,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-102 көшесі",
+    "geometry": [
+      [
+        51.129194,
+        71.545619
+      ],
+      [
+        51.129142,
+        71.545953
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1339367261,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.104815,
+        71.540833
+      ],
+      [
+        51.105388,
+        71.541074
+      ],
+      [
+        51.11287,
+        71.544214
+      ],
+      [
+        51.113032,
+        71.544259
+      ],
+      [
+        51.115638,
+        71.545374
+      ],
+      [
+        51.116017,
+        71.545515
+      ],
+      [
+        51.118789,
+        71.546579
+      ],
+      [
+        51.121245,
+        71.547569
+      ],
+      [
+        51.123611,
+        71.548523
+      ],
+      [
+        51.123884,
+        71.548633
+      ],
+      [
+        51.128434,
+        71.550467
+      ],
+      [
+        51.128757,
+        71.550586
+      ],
+      [
+        51.132229,
+        71.551818
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1345129702,
+    "highway": "construction",
+    "construction": "residential",
+    "name": "Е-36 көшесі",
+    "geometry": [
+      [
+        51.127773,
+        71.383966
+      ],
+      [
+        51.126751,
+        71.383659
+      ],
+      [
+        51.126657,
+        71.383664
+      ],
+      [
+        51.126585,
+        71.383699
+      ],
+      [
+        51.126517,
+        71.383761
+      ],
+      [
+        51.126423,
+        71.38375
+      ],
+      [
+        51.126189,
+        71.38367
+      ],
+      [
+        51.125822,
+        71.383544
+      ],
+      [
+        51.124648,
+        71.383136
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599624,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.180247,
+        71.384108
+      ],
+      [
+        51.18033,
+        71.384354
+      ],
+      [
+        51.180361,
+        71.384524
+      ],
+      [
+        51.180374,
+        71.384685
+      ],
+      [
+        51.180358,
+        71.384794
+      ],
+      [
+        51.180328,
+        71.384872
+      ],
+      [
+        51.180282,
+        71.384936
+      ],
+      [
+        51.180221,
+        71.384988
+      ],
+      [
+        51.180116,
+        71.385017
+      ],
+      [
+        51.18,
+        71.384984
+      ],
+      [
+        51.179756,
+        71.38474
+      ],
+      [
+        51.179511,
+        71.384465
+      ],
+      [
+        51.179298,
+        71.384226
+      ],
+      [
+        51.179228,
+        71.3841
+      ],
+      [
+        51.179173,
+        71.383924
+      ],
+      [
+        51.179162,
+        71.38379
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599625,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.179592,
+        71.382315
+      ],
+      [
+        51.179704,
+        71.382182
+      ],
+      [
+        51.179823,
+        71.382156
+      ],
+      [
+        51.17999,
+        71.382265
+      ],
+      [
+        51.180252,
+        71.382507
+      ],
+      [
+        51.18039,
+        71.382617
+      ],
+      [
+        51.180547,
+        71.382773
+      ],
+      [
+        51.180772,
+        71.38309
+      ],
+      [
+        51.180812,
+        71.383345
+      ],
+      [
+        51.180784,
+        71.383578
+      ],
+      [
+        51.180715,
+        71.383673
+      ],
+      [
+        51.180636,
+        71.383721
+      ],
+      [
+        51.18054,
+        71.383746
+      ],
+      [
+        51.180316,
+        71.38373
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599626,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.178832,
+        71.383356
+      ],
+      [
+        51.178718,
+        71.383442
+      ],
+      [
+        51.178609,
+        71.383449
+      ],
+      [
+        51.178387,
+        71.383285
+      ],
+      [
+        51.178173,
+        71.383067
+      ],
+      [
+        51.177998,
+        71.382906
+      ],
+      [
+        51.177907,
+        71.382695
+      ],
+      [
+        51.177915,
+        71.382511
+      ],
+      [
+        51.177948,
+        71.382316
+      ],
+      [
+        51.178008,
+        71.382184
+      ],
+      [
+        51.17812,
+        71.382133
+      ],
+      [
+        51.178292,
+        71.382074
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599627,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.178362,
+        71.381788
+      ],
+      [
+        51.178144,
+        71.381226
+      ],
+      [
+        51.178103,
+        71.38095
+      ],
+      [
+        51.178159,
+        71.380781
+      ],
+      [
+        51.178263,
+        71.380709
+      ],
+      [
+        51.178373,
+        71.380701
+      ],
+      [
+        51.178483,
+        71.380768
+      ],
+      [
+        51.17862,
+        71.380872
+      ],
+      [
+        51.178868,
+        71.381111
+      ],
+      [
+        51.179025,
+        71.381287
+      ],
+      [
+        51.179132,
+        71.381436
+      ],
+      [
+        51.179185,
+        71.38153
+      ],
+      [
+        51.179206,
+        71.381644
+      ],
+      [
+        51.179187,
+        71.381902
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599628,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.194313,
+        71.39845
+      ],
+      [
+        51.192576,
+        71.396552
+      ],
+      [
+        51.190626,
+        71.394671
+      ],
+      [
+        51.189136,
+        71.393191
+      ],
+      [
+        51.187916,
+        71.391838
+      ],
+      [
+        51.186467,
+        71.390247
+      ],
+      [
+        51.185297,
+        71.3891
+      ],
+      [
+        51.184321,
+        71.388019
+      ],
+      [
+        51.183517,
+        71.38719
+      ],
+      [
+        51.181732,
+        71.385213
+      ],
+      [
+        51.181043,
+        71.384458
+      ],
+      [
+        51.180316,
+        71.38373
+      ],
+      [
+        51.179622,
+        71.383022
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599629,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.178849,
+        71.382253
+      ],
+      [
+        51.178362,
+        71.381788
+      ],
+      [
+        51.177481,
+        71.380932
+      ],
+      [
+        51.176708,
+        71.380152
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1355599630,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.176577,
+        71.380344
+      ],
+      [
+        51.177683,
+        71.38146
+      ],
+      [
+        51.178292,
+        71.382074
+      ],
+      [
+        51.178741,
+        71.382505
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1396827257,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.076208,
+        71.443994
+      ],
+      [
+        51.075852,
+        71.446066
+      ],
+      [
+        51.075482,
+        71.448491
+      ],
+      [
+        51.074801,
+        71.453544
+      ],
+      [
+        51.074558,
+        71.45584
+      ],
+      [
+        51.074376,
+        71.457535
+      ],
+      [
+        51.074356,
+        71.458222
+      ],
+      [
+        51.074255,
+        71.458983
+      ],
+      [
+        51.07412,
+        71.46011
+      ],
+      [
+        51.073695,
+        71.463447
+      ],
+      [
+        51.073466,
+        71.46659
+      ],
+      [
+        51.073324,
+        71.469433
+      ],
+      [
+        51.073257,
+        71.471998
+      ],
+      [
+        51.07323,
+        71.473993
+      ],
+      [
+        51.07323,
+        71.475356
+      ],
+      [
+        51.07325,
+        71.475645
+      ],
+      [
+        51.073271,
+        71.475854
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1420033982,
+    "highway": "construction",
+    "construction": null,
+    "name": "Жошы Хан көшесі",
+    "geometry": [
+      [
+        51.081972,
+        71.431894
+      ],
+      [
+        51.080469,
+        71.43137
+      ],
+      [
+        51.079568,
+        71.431057
+      ],
+      [
+        51.078197,
+        71.430579
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1420544618,
+    "highway": "construction",
+    "construction": null,
+    "name": "Жошы Хан көшесі",
+    "geometry": [
+      [
+        51.084498,
+        71.43279
+      ],
+      [
+        51.082555,
+        71.432087
+      ],
+      [
+        51.082419,
+        71.432038
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1424559849,
+    "highway": "construction",
+    "construction": null,
+    "name": "Жошы Хан көшесі",
+    "geometry": [
+      [
+        51.095194,
+        71.436773
+      ],
+      [
+        51.095721,
+        71.437008
+      ],
+      [
+        51.098556,
+        71.437938
+      ],
+      [
+        51.098725,
+        71.438001
+      ],
+      [
+        51.099489,
+        71.438286
+      ],
+      [
+        51.099734,
+        71.438378
+      ],
+      [
+        51.100807,
+        71.438813
+      ],
+      [
+        51.102405,
+        71.439484
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1424559850,
+    "highway": "construction",
+    "construction": null,
+    "name": "Жошы Хан көшесі",
+    "geometry": [
+      [
+        51.102517,
+        71.439338
+      ],
+      [
+        51.101709,
+        71.439003
+      ],
+      [
+        51.099757,
+        71.438198
+      ],
+      [
+        51.098972,
+        71.437898
+      ],
+      [
+        51.098746,
+        71.437824
+      ],
+      [
+        51.098584,
+        71.437771
+      ],
+      [
+        51.097199,
+        71.437266
+      ],
+      [
+        51.09505,
+        71.436561
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1455963589,
+    "highway": "construction",
+    "construction": null,
+    "name": "Алматы көшесі",
+    "geometry": [
+      [
+        51.116675,
+        71.423979
+      ],
+      [
+        51.116638,
+        71.424228
+      ],
+      [
+        51.116561,
+        71.424768
+      ],
+      [
+        51.116455,
+        71.425519
+      ],
+      [
+        51.116376,
+        71.426071
+      ],
+      [
+        51.116276,
+        71.426778
+      ],
+      [
+        51.116188,
+        71.427397
+      ],
+      [
+        51.116161,
+        71.427632
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1460435166,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.11703,
+        71.411578
+      ],
+      [
+        51.116849,
+        71.411728
+      ],
+      [
+        51.116711,
+        71.411804
+      ],
+      [
+        51.116378,
+        71.412159
+      ],
+      [
+        51.11623,
+        71.412298
+      ],
+      [
+        51.116154,
+        71.412367
+      ],
+      [
+        51.116001,
+        71.412554
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760489,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-102 көшесі",
+    "geometry": [
+      [
+        51.12822,
+        71.553682
+      ],
+      [
+        51.128757,
+        71.550586
+      ],
+      [
+        51.12882,
+        71.55022
+      ],
+      [
+        51.12948,
+        71.545702
+      ],
+      [
+        51.129598,
+        71.544969
+      ],
+      [
+        51.129835,
+        71.54356
+      ],
+      [
+        51.129956,
+        71.542646
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760491,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-102 көшесі",
+    "geometry": [
+      [
+        51.127561,
+        71.555853
+      ],
+      [
+        51.126505,
+        71.562591
+      ],
+      [
+        51.126247,
+        71.564289
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760492,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-102 көшесі",
+    "geometry": [
+      [
+        51.125111,
+        71.573411
+      ],
+      [
+        51.126364,
+        71.565583
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760493,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.123283,
+        71.552908
+      ],
+      [
+        51.123317,
+        71.552632
+      ],
+      [
+        51.123461,
+        71.551639
+      ],
+      [
+        51.123504,
+        71.55134
+      ],
+      [
+        51.123662,
+        71.55021
+      ],
+      [
+        51.123884,
+        71.548633
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760494,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.123611,
+        71.548523
+      ],
+      [
+        51.123178,
+        71.551202
+      ],
+      [
+        51.123118,
+        71.55162
+      ],
+      [
+        51.12299,
+        71.552502
+      ],
+      [
+        51.122944,
+        71.552785
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760495,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.122466,
+        71.539845
+      ],
+      [
+        51.121245,
+        71.547569
+      ],
+      [
+        51.120776,
+        71.550534
+      ],
+      [
+        51.120614,
+        71.551559
+      ],
+      [
+        51.120568,
+        71.551875
+      ],
+      [
+        51.120533,
+        71.552126
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760496,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.115427,
+        71.568601
+      ],
+      [
+        51.117981,
+        71.552094
+      ],
+      [
+        51.118194,
+        71.550864
+      ],
+      [
+        51.118225,
+        71.550611
+      ],
+      [
+        51.118389,
+        71.549694
+      ],
+      [
+        51.118425,
+        71.549487
+      ],
+      [
+        51.118837,
+        71.5469
+      ],
+      [
+        51.118789,
+        71.546579
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760497,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.118789,
+        71.546579
+      ],
+      [
+        51.118659,
+        71.546815
+      ],
+      [
+        51.118265,
+        71.549618
+      ],
+      [
+        51.118093,
+        71.550565
+      ],
+      [
+        51.11805,
+        71.55083
+      ],
+      [
+        51.1179,
+        71.551759
+      ],
+      [
+        51.11786,
+        71.552008
+      ],
+      [
+        51.115271,
+        71.568523
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760499,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-91 көшесі",
+    "geometry": [
+      [
+        51.116687,
+        71.53877
+      ],
+      [
+        51.115638,
+        71.545374
+      ],
+      [
+        51.115003,
+        71.549375
+      ],
+      [
+        51.114947,
+        71.54966
+      ],
+      [
+        51.113852,
+        71.556451
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760500,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-91 көшесі",
+    "geometry": [
+      [
+        51.114253,
+        71.556629
+      ],
+      [
+        51.115314,
+        71.549805
+      ],
+      [
+        51.115357,
+        71.549513
+      ],
+      [
+        51.116017,
+        71.545515
+      ],
+      [
+        51.117097,
+        71.538999
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760501,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.12016,
+        71.538033
+      ],
+      [
+        51.120092,
+        71.538435
+      ],
+      [
+        51.120058,
+        71.538673
+      ],
+      [
+        51.119495,
+        71.542216
+      ],
+      [
+        51.118917,
+        71.545786
+      ],
+      [
+        51.118789,
+        71.546579
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760504,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.123884,
+        71.548633
+      ],
+      [
+        51.125189,
+        71.540702
+      ],
+      [
+        51.125225,
+        71.540477
+      ],
+      [
+        51.125796,
+        71.537215
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760505,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.125343,
+        71.53732
+      ],
+      [
+        51.124889,
+        71.540344
+      ],
+      [
+        51.124847,
+        71.540578
+      ],
+      [
+        51.123611,
+        71.548523
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760509,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.122838,
+        71.552936
+      ],
+      [
+        51.122795,
+        71.553271
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760510,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.123237,
+        71.55332
+      ],
+      [
+        51.123271,
+        71.553105
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760516,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "Ахмет Байтұрсынов даңғылы",
+    "geometry": [
+      [
+        51.113987,
+        71.536962
+      ],
+      [
+        51.11287,
+        71.544214
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462760517,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "Ахмет Байтұрсынов даңғылы",
+    "geometry": [
+      [
+        51.113032,
+        71.544259
+      ],
+      [
+        51.114032,
+        71.537412
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824657,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.178741,
+        71.382505
+      ],
+      [
+        51.179538,
+        71.383369
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824658,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.179622,
+        71.383022
+      ],
+      [
+        51.178849,
+        71.382253
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824659,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.177683,
+        71.38146
+      ],
+      [
+        51.177691,
+        71.381709
+      ],
+      [
+        51.17765,
+        71.38213
+      ],
+      [
+        51.177656,
+        71.382424
+      ],
+      [
+        51.17772,
+        71.382673
+      ],
+      [
+        51.177961,
+        71.383038
+      ],
+      [
+        51.178629,
+        71.383637
+      ],
+      [
+        51.178734,
+        71.383789
+      ],
+      [
+        51.178805,
+        71.384018
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824660,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.179475,
+        71.381423
+      ],
+      [
+        51.179383,
+        71.38146
+      ],
+      [
+        51.178965,
+        71.381016
+      ],
+      [
+        51.178788,
+        71.380829
+      ],
+      [
+        51.178675,
+        71.380718
+      ],
+      [
+        51.178516,
+        71.380566
+      ],
+      [
+        51.178374,
+        71.38051
+      ],
+      [
+        51.178226,
+        71.380518
+      ],
+      [
+        51.178057,
+        71.380699
+      ],
+      [
+        51.177895,
+        71.380878
+      ],
+      [
+        51.177481,
+        71.380932
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824661,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.182484,
+        71.386389
+      ],
+      [
+        51.184047,
+        71.388077
+      ],
+      [
+        51.184865,
+        71.388944
+      ],
+      [
+        51.186847,
+        71.390992
+      ],
+      [
+        51.18775,
+        71.391973
+      ],
+      [
+        51.188795,
+        71.393212
+      ],
+      [
+        51.18938,
+        71.393811
+      ],
+      [
+        51.19053,
+        71.394895
+      ],
+      [
+        51.191448,
+        71.395771
+      ],
+      [
+        51.192567,
+        71.396842
+      ],
+      [
+        51.194225,
+        71.39868
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1462824662,
+    "highway": "construction",
+    "construction": "primary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.181043,
+        71.384458
+      ],
+      [
+        51.180954,
+        71.38425
+      ],
+      [
+        51.180906,
+        71.384095
+      ],
+      [
+        51.180881,
+        71.383909
+      ],
+      [
+        51.180881,
+        71.3837
+      ],
+      [
+        51.180881,
+        71.383413
+      ],
+      [
+        51.180852,
+        71.383203
+      ],
+      [
+        51.180809,
+        71.383009
+      ],
+      [
+        51.180745,
+        71.382839
+      ],
+      [
+        51.180531,
+        71.382598
+      ],
+      [
+        51.179933,
+        71.382086
+      ],
+      [
+        51.179831,
+        71.382001
+      ],
+      [
+        51.179778,
+        71.381846
+      ],
+      [
+        51.179753,
+        71.381629
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1527479430,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.081987,
+        71.43269
+      ],
+      [
+        51.082105,
+        71.43237
+      ],
+      [
+        51.082197,
+        71.432255
+      ],
+      [
+        51.082308,
+        71.432161
+      ],
+      [
+        51.082442,
+        71.432109
+      ],
+      [
+        51.082555,
+        71.432087
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1527479431,
+    "highway": "construction",
+    "construction": null,
+    "name": null,
+    "geometry": [
+      [
+        51.082499,
+        71.432041
+      ],
+      [
+        51.082403,
+        71.431922
+      ],
+      [
+        51.082333,
+        71.43179
+      ],
+      [
+        51.08228,
+        71.431659
+      ],
+      [
+        51.082233,
+        71.431507
+      ],
+      [
+        51.082206,
+        71.43134
+      ],
+      [
+        51.082192,
+        71.43124
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728958,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.125921,
+        71.550884
+      ],
+      [
+        51.126048,
+        71.551059
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728964,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.123585,
+        71.552407
+      ],
+      [
+        51.123726,
+        71.55145
+      ],
+      [
+        51.123889,
+        71.550228
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728965,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.124209,
+        71.5527
+      ],
+      [
+        51.124344,
+        71.551679
+      ],
+      [
+        51.12449,
+        71.55045
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728966,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.126051,
+        71.552316
+      ],
+      [
+        51.124344,
+        71.551679
+      ],
+      [
+        51.123726,
+        71.55145
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728967,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.126224,
+        71.551128
+      ],
+      [
+        51.126048,
+        71.551059
+      ],
+      [
+        51.12449,
+        71.55045
+      ],
+      [
+        51.123889,
+        71.550228
+      ],
+      [
+        51.123671,
+        71.550147
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728968,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.126806,
+        71.551912
+      ],
+      [
+        51.126148,
+        71.55164
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728969,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.126408,
+        71.549894
+      ],
+      [
+        51.126224,
+        71.551128
+      ],
+      [
+        51.126148,
+        71.55164
+      ],
+      [
+        51.126051,
+        71.552316
+      ],
+      [
+        51.125895,
+        71.55334
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728970,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.127995,
+        71.551911
+      ],
+      [
+        51.12779,
+        71.553311
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728971,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.127048,
+        71.550141
+      ],
+      [
+        51.126906,
+        71.55131
+      ],
+      [
+        51.126813,
+        71.551866
+      ],
+      [
+        51.126667,
+        71.552743
+      ],
+      [
+        51.126598,
+        71.55316
+      ],
+      [
+        51.126519,
+        71.553596
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533728972,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.127995,
+        71.551911
+      ],
+      [
+        51.126906,
+        71.55131
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533730372,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-105 көшесі",
+    "geometry": [
+      [
+        51.114947,
+        71.54966
+      ],
+      [
+        51.115314,
+        71.549805
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1533730373,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "А-105 көшесі",
+    "geometry": [
+      [
+        51.115357,
+        71.549513
+      ],
+      [
+        51.115003,
+        71.549375
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1554695303,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.177925,
+        71.341584
+      ],
+      [
+        51.177613,
+        71.343734
+      ],
+      [
+        51.177542,
+        71.344221
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1554695304,
+    "highway": "construction",
+    "construction": "tertiary_link",
+    "name": null,
+    "geometry": [
+      [
+        51.177849,
+        71.346048
+      ],
+      [
+        51.177851,
+        71.345835
+      ],
+      [
+        51.177751,
+        71.345542
+      ],
+      [
+        51.177667,
+        71.345306
+      ],
+      [
+        51.177607,
+        71.34491
+      ],
+      [
+        51.177627,
+        71.34463
+      ],
+      [
+        51.177667,
+        71.344311
+      ],
+      [
+        51.177683,
+        71.344081
+      ],
+      [
+        51.177613,
+        71.343734
+      ],
+      [
+        51.177511,
+        71.343839
+      ],
+      [
+        51.177395,
+        71.344202
+      ],
+      [
+        51.177371,
+        71.344323
+      ],
+      [
+        51.177323,
+        71.344381
+      ],
+      [
+        51.177247,
+        71.344445
+      ],
+      [
+        51.177167,
+        71.344425
+      ],
+      [
+        51.177111,
+        71.344406
+      ],
+      [
+        51.177003,
+        71.344247
+      ],
+      [
+        51.176828,
+        71.344151
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1560034579,
+    "highway": "construction",
+    "construction": "service",
+    "name": null,
+    "geometry": [
+      [
+        51.101583,
+        71.44905
+      ],
+      [
+        51.10155,
+        71.449202
+      ],
+      [
+        51.101503,
+        71.449443
+      ],
+      [
+        51.101428,
+        71.449904
+      ],
+      [
+        51.101366,
+        71.450325
+      ],
+      [
+        51.10127,
+        71.45097
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1560034618,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.100679,
+        71.448309
+      ],
+      [
+        51.100792,
+        71.448464
+      ],
+      [
+        51.101033,
+        71.448724
+      ],
+      [
+        51.101296,
+        71.448922
+      ],
+      [
+        51.101583,
+        71.44905
+      ],
+      [
+        51.101864,
+        71.449115
+      ],
+      [
+        51.102154,
+        71.449106
+      ],
+      [
+        51.102441,
+        71.449026
+      ],
+      [
+        51.102717,
+        71.448876
+      ],
+      [
+        51.102819,
+        71.448804
+      ],
+      [
+        51.1029,
+        71.448732
+      ],
+      [
+        51.103073,
+        71.448557
+      ],
+      [
+        51.103233,
+        71.448353
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568767389,
+    "highway": "construction",
+    "construction": "secondary",
+    "name": "Шабал Бейсекова көшесі",
+    "geometry": [
+      [
+        51.179538,
+        71.383369
+      ],
+      [
+        51.180247,
+        71.384108
+      ],
+      [
+        51.181577,
+        71.385465
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568770302,
+    "highway": "construction",
+    "construction": "residential",
+    "name": "А-108 көшесі",
+    "geometry": [
+      [
+        51.131778,
+        71.554683
+      ],
+      [
+        51.132229,
+        71.551818
+      ],
+      [
+        51.133498,
+        71.543761
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568770303,
+    "highway": "construction",
+    "construction": "residential",
+    "name": "А-108 көшесі",
+    "geometry": [
+      [
+        51.133544,
+        71.543498
+      ],
+      [
+        51.133868,
+        71.541506
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568787819,
+    "highway": "construction",
+    "construction": "unclassified",
+    "name": "Шәмші Қалдаяқов көшесі",
+    "geometry": [
+      [
+        51.107083,
+        71.530911
+      ],
+      [
+        51.105388,
+        71.541074
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568787820,
+    "highway": "construction",
+    "construction": "unclassified",
+    "name": "Шәмші Қалдаяқов көшесі",
+    "geometry": [
+      [
+        51.105581,
+        71.541101
+      ],
+      [
+        51.107253,
+        71.530982
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818627,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "Роза Бағланова көшесі",
+    "geometry": [
+      [
+        51.119296,
+        71.357279
+      ],
+      [
+        51.118579,
+        71.362305
+      ],
+      [
+        51.11853,
+        71.362653
+      ],
+      [
+        51.118233,
+        71.364781
+      ],
+      [
+        51.118213,
+        71.365195
+      ],
+      [
+        51.118147,
+        71.366516
+      ],
+      [
+        51.118233,
+        71.36896
+      ],
+      [
+        51.118408,
+        71.374357
+      ],
+      [
+        51.118504,
+        71.377229
+      ],
+      [
+        51.118519,
+        71.378583
+      ],
+      [
+        51.118559,
+        71.379434
+      ],
+      [
+        51.118463,
+        71.380417
+      ],
+      [
+        51.118243,
+        71.382357
+      ],
+      [
+        51.117519,
+        71.388365
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818628,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.113009,
+        71.354482
+      ],
+      [
+        51.111658,
+        71.363948
+      ],
+      [
+        51.111553,
+        71.364459
+      ],
+      [
+        51.111326,
+        71.365072
+      ],
+      [
+        51.110987,
+        71.365643
+      ],
+      [
+        51.110647,
+        71.365986
+      ],
+      [
+        51.110334,
+        71.366256
+      ],
+      [
+        51.110002,
+        71.366412
+      ],
+      [
+        51.109662,
+        71.366527
+      ],
+      [
+        51.1093,
+        71.366454
+      ],
+      [
+        51.108832,
+        71.366298
+      ],
+      [
+        51.106775,
+        71.365571
+      ],
+      [
+        51.10567,
+        71.36518
+      ],
+      [
+        51.104595,
+        71.364864
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818629,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.108586,
+        71.352194
+      ],
+      [
+        51.106775,
+        71.365571
+      ],
+      [
+        51.105778,
+        71.372671
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818630,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.103719,
+        71.371891
+      ],
+      [
+        51.105778,
+        71.372671
+      ],
+      [
+        51.112619,
+        71.375364
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818631,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.122494,
+        71.363921
+      ],
+      [
+        51.11853,
+        71.362653
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818632,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.123791,
+        71.36703
+      ],
+      [
+        51.123142,
+        71.372261
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818633,
+    "highway": "construction",
+    "construction": "residential",
+    "name": null,
+    "geometry": [
+      [
+        51.123791,
+        71.36703
+      ],
+      [
+        51.118213,
+        71.365195
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818634,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.100966,
+        71.383579
+      ],
+      [
+        51.099507,
+        71.382707
+      ],
+      [
+        51.096605,
+        71.380851
+      ],
+      [
+        51.094234,
+        71.379198
+      ],
+      [
+        51.093259,
+        71.37872
+      ],
+      [
+        51.092405,
+        71.378408
+      ],
+      [
+        51.091494,
+        71.378279
+      ],
+      [
+        51.088442,
+        71.378031
+      ],
+      [
+        51.086185,
+        71.377737
+      ],
+      [
+        51.085665,
+        71.377549
+      ],
+      [
+        51.085478,
+        71.377481
+      ],
+      [
+        51.085349,
+        71.377434
+      ],
+      [
+        51.079722,
+        71.375496
+      ],
+      [
+        51.076831,
+        71.37455
+      ],
+      [
+        51.075683,
+        71.373861
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818635,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": null,
+    "geometry": [
+      [
+        51.075556,
+        71.374596
+      ],
+      [
+        51.079284,
+        71.375698
+      ],
+      [
+        51.082233,
+        71.37669
+      ],
+      [
+        51.085181,
+        71.377792
+      ],
+      [
+        51.08544,
+        71.377876
+      ],
+      [
+        51.085616,
+        71.377932
+      ],
+      [
+        51.086093,
+        71.378086
+      ],
+      [
+        51.086607,
+        71.37816
+      ],
+      [
+        51.087328,
+        71.378298
+      ],
+      [
+        51.090357,
+        71.378564
+      ],
+      [
+        51.091407,
+        71.378665
+      ],
+      [
+        51.092272,
+        71.378858
+      ],
+      [
+        51.09274,
+        71.379005
+      ],
+      [
+        51.093553,
+        71.379326
+      ],
+      [
+        51.094188,
+        71.379583
+      ],
+      [
+        51.095313,
+        71.380282
+      ],
+      [
+        51.097545,
+        71.381788
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818637,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "Хусейн бен Талал көшесі",
+    "geometry": [
+      [
+        51.085478,
+        71.377481
+      ],
+      [
+        51.08544,
+        71.377876
+      ],
+      [
+        51.084945,
+        71.382268
+      ],
+      [
+        51.084091,
+        71.388339
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  },
+  {
+    "id": 1568818638,
+    "highway": "construction",
+    "construction": "tertiary",
+    "name": "Хусейн бен Талал көшесі",
+    "geometry": [
+      [
+        51.084212,
+        71.388351
+      ],
+      [
+        51.085616,
+        71.377932
+      ],
+      [
+        51.085665,
+        71.377549
+      ]
+    ],
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "fetched_at": "2026-10-17T12:48:09+00:00",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors, ODbL"
+  }
+]

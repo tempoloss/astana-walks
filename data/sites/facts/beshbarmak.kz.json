@@ -1,0 +1,9 @@
+{
+ "domain": "beshbarmak.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "www.beshbarmak.kz does not resolve (getaddrinfo) => robots.txt unreachable => crawling not allowed; nothing stored for Kazakh food.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

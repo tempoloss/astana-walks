@@ -1,0 +1,185 @@
+{
+ "domain": "rafe.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:39:37+00:00",
+ "pages": [
+  "https://rafe.kz/",
+  "https://rafe.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Rafe Coffee & Food (Астана, Казахстан, улица Ханов Керея и Жанибека, 28)",
+   "address": "Астана, Казахстан, улица Ханов Керея и Жанибека, 28",
+   "lat": 51.112371,
+   "lon": 71.435064,
+   "phone": "+77772621122",
+   "opening_hours_raw": "ежедневно 10:00-22:20",
+   "opening_hours_osm": "Mo-Su 10:00-22:20",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://rafe.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, Казахстан, улица Ханов Керея и Жанибека, 28 \"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, Казахстан, улица Ханов Керея и Жанибека, 28 \"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://rafe.kz/",
+     "snippet": "\"lat\":\"51.112371\",\"lng\":\"71.435064\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://rafe.kz/",
+     "snippet": "\"days\":[[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"]]",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "Телефон: +77772621122",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Rafe Coffee & Food (Астана, ул. Азербайжана Мамбетова, 16)",
+   "address": "Астана, ул. Азербайжана Мамбетова, 16",
+   "lat": 51.162545,
+   "lon": 71.424366,
+   "phone": "+77017811042",
+   "opening_hours_raw": "ежедневно 10:00-22:20",
+   "opening_hours_osm": "Mo-Su 10:00-22:20",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://rafe.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, ул. Азербайжана Мамбетова, 16\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, ул. Азербайжана Мамбетова, 16\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://rafe.kz/",
+     "snippet": "\"lat\":\"51.162545\",\"lng\":\"71.424366\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://rafe.kz/",
+     "snippet": "\"days\":[[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"]]",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "Телефон: +77017811042",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Rafe Coffee & Food (Астана, ул. Д. Кунаева, 14)",
+   "address": "Астана, ул. Д. Кунаева, 14",
+   "lat": 51.128608,
+   "lon": 71.43387,
+   "phone": "+77017811041",
+   "opening_hours_raw": "ежедневно 10:00-22:20",
+   "opening_hours_osm": "Mo-Su 10:00-22:20",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://rafe.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, ул. Д. Кунаева, 14\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://rafe.kz/",
+     "snippet": "\"name\":\"Астана, ул. Д. Кунаева, 14\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://rafe.kz/",
+     "snippet": "\"lat\":\"51.128608\",\"lng\":\"71.43387\"",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://rafe.kz/",
+     "snippet": "\"days\":[[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"],[\"10:00\",\"22:20\"]]",
+     "fetched_at": "2026-10-17T09:39:37+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "Телефон: +77017811041",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Rafe Coffee & Food",
+   "address": "улица Кунаева 12/2",
+   "lat": null,
+   "lon": null,
+   "phone": "+77017811043",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://rafe.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "Rafe Coffee & Food",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "улица Кунаева 12/2",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://rafe.kz/contacts",
+     "snippet": "Телефон: +77017811043",
+     "fetched_at": "2026-10-17T09:33:35+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The order JSON carries name(address)/lat/lng/weekly days for 3 Astana points (uniform 10:00-22:20). Contacts page lists 4 points with phones; Кунаева 12/2 has no JSON point and is stored address/phone-only.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

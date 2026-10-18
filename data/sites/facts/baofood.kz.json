@@ -1,0 +1,94 @@
+{
+ "domain": "baofood.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:52:15+00:00",
+ "pages": [
+  "https://baofood.kz/restaurant"
+ ],
+ "branches": [
+  {
+   "name": "BAO в БЦ Москва",
+   "address": "ул. Достык, 18, Нур-Султан",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (778) 744-74-95",
+   "opening_hours_raw": "Su-Th 10:00-23:00, Fr-Mo 10:00-23:00",
+   "opening_hours_osm": null,
+   "description": "ул. Достык, 18 (БЦ Москва)",
+   "url": "https://baofood.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"name\": \" BAO в БЦ Москва\""
+    },
+    {
+     "field": "address",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"address\": { \"@type\": \"PostalAddress\", \"streetAddress\": \" ул. Достык, 18 \", \"addressLocality\": \" Нур-Султан \", \"addressRegion\": \" Есиль район\", \"postalCode\": \" Z05H9K6\", \"addressCountry\": \"KZ\" }"
+    },
+    {
+     "field": "phone",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"telephone\": \"+7 (778) 744-74-95\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"openingHours\": \"Su-Th 10:00-23:00, Fr-Mo 10:00-23:00\""
+    },
+    {
+     "field": "description",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"description\": \"ул. Достык, 18 (БЦ Москва)\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "BAO на Есиль",
+   "address": "ул. Е-489, д. 4, Нур-Султан",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (778) 744-74-95",
+   "opening_hours_raw": "Su-Th 10:00-23:00, Fr-Mo 10:00-23:00",
+   "opening_hours_osm": null,
+   "description": "ул. Е-489, д. 4 (ЖК Самрук Тауэрс)",
+   "url": "https://baofood.kz/",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"name\": \" BAO на Есиль\""
+    },
+    {
+     "field": "address",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"address\": { \"@type\": \"PostalAddress\", \"streetAddress\": \" ул. Е-489, д. 4\", \"addressLocality\": \" Нур-Султан \", \"addressRegion\": \" Есиль район\", \"postalCode\": \" Z05H9K6\", \"addressCountry\": \"KZ\" }"
+    },
+    {
+     "field": "phone",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"telephone\": \"+7 (778) 744-74-95\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"openingHours\": \"Su-Th 10:00-23:00, Fr-Mo 10:00-23:00\""
+    },
+    {
+     "field": "description",
+     "url": "https://baofood.kz/restaurant",
+     "snippet": "\"description\": \"ул. Е-489, д. 4 (ЖК Самрук Тауэрс)\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Outlets = the JSON-LD Restaurant objects of /restaurant (the city tabs of the page); the 5 Алматы outlets are dropped (Astana-only rule). Both Astana outlets share the phone +7 (778) 744-74-95 as published. openingHours 'Su-Th 10:00-23:00, Fr-Mo 10:00-23:00' is kept verbatim in raw; overlapping ranges make the OSM conversion non-deterministic, so opening_hours_osm is None.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

@@ -1,0 +1,62 @@
+{
+ "partition": "p3",
+ "weight": 5.0,
+ "items": [
+  {
+   "domain": "astanamuseums.kz",
+   "poi_ids": [
+    "way/240376692"
+   ],
+   "names": [
+    "Музей Сакена Сейфуллина"
+   ],
+   "categories": {
+    "museum_gallery": 1
+   },
+   "wikidata_ids": [],
+   "robots": "unreachable (connect timeout — domain parked or dead)",
+   "notes": "domains from: e_museum_site_field",
+   "origin": [
+    "e_museum_site_field"
+   ],
+   "poi_count": 1,
+   "status": "dead"
+  },
+  {
+   "domain": "bozok.kz",
+   "poi_ids": [
+    "node/11968737470"
+   ],
+   "names": [
+    "Городище Бозок"
+   ],
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [],
+   "robots": "allowed (Disallow: /wp-admin/ only; sitemap open)",
+   "notes": "domains from: e_museum_site_field",
+   "origin": [
+    "e_museum_site_field"
+   ],
+   "poi_count": 1,
+   "status": "open"
+  },
+  {
+   "domain": "museum-alzhir.kz",
+   "poi_ids": [],
+   "names": [],
+   "categories": {},
+   "wikidata_ids": [],
+   "robots": "denied (robots.txt responds 403, Cloudflare interstitial)",
+   "notes": "Музейно-мемориальный комплекс «Алжир»: e-museum card region=3952 (city Ақмол ауылы — the leak behind the '4 not 5' Astana count); own site blocks robots (403), no POI in the dataset — out of scope for the Astana crawl.",
+   "origin": [
+    "e_museum_register"
+   ],
+   "poi_count": 0,
+   "status": "denied"
+  }
+ ],
+ "domain_count": 3,
+ "poi_count": 2
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "paul.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://paul.kz/"
+ ],
+ "branches": [],
+ "notes": "The embedded outlet JSON of paul.kz lists a single organization 'PAUL АLMALY' (Бостандыкский р-н, Алматы, ТД «Алмалы», пр. Абая 108А… юр. адрес) and no Astana outlet at all — brand is present in Astana (Ramstor) per the POI list, but the site publishes no Astana address/hours; nothing stored.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

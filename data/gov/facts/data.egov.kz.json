@@ -1,0 +1,544 @@
+{
+ "source": "data.egov.kz",
+ "dataset": "sporttyk_keshender_turaly_dere1",
+ "fetched_at": "2026-10-17T12:26:28+00:00",
+ "pages": [
+  "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100"
+ ],
+ "robots": "ok",
+ "records": [
+  {
+   "id": "gov/sport/3fbde80ea6",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+   "names": {
+    "ru": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны",
+    "kk": "Астана қаласы әкімдігінің №1 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі"
+   },
+   "address": {
+    "raw": "г. Астана, ул. Джангильдина 9а",
+    "street": "ул. Джангильдина",
+    "house": "9а",
+    "key": "джангилдин",
+    "by_lang": {
+     "ru": "г. Астана, ул. Джангильдина 9а",
+     "kk": "қ. Астана, к. Джангильдина 9а"
+    }
+   },
+   "phone_raw": "приемная: 31-85-05",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №1» акимата города Астаны\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"Астана қаласы әкімдігінің №1 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г. Астана, \\nул.  Джангильдина 9а\\n\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 31-85-05 \"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "1",
+    "sports": "Художественная гимнастика, спортивная гимнастика, прыжки на батуте и акробатической дорожке, спортивные танцы"
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/20f26f7d87",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)",
+   "names": {
+    "ru": "С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)",
+    "kk": "С/К «Толқын» (Астана қаласы әкімдігінің №4 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі)"
+   },
+   "address": {
+    "raw": "г.Астана, пр. Тәуелсіздік, 2",
+    "street": "пр. Тәуелсіздік",
+    "house": "2",
+    "key": "тауелсиздик",
+    "by_lang": {
+     "ru": "г.Астана, пр. Тәуелсіздік, 2",
+     "kk": "қ.Астана, к. Тәуелсіздік, 2"
+    }
+   },
+   "phone_raw": "приемная: 36-93-50",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"С/К «Толкын» (КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №4» акимата города Астаны)\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"С/К «Толқын» (Астана қаласы әкімдігінің №4 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі)\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана, пр. Тәуелсіздік, 2\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 36-93-50\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "2",
+    "sports": "Академическая гребля, гребля на байдарках и каноэ, плавание, прыжки в воду, синхронное плавание"
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/0de9c70446",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "ГККП «Спорткомбинат «Даулет» акимата г. Астаны",
+   "names": {
+    "ru": "ГККП «Спорткомбинат «Даулет» акимата г. Астаны",
+    "kk": "ГККП «Спорткомбинат «Даулет» Астана қаласы әкімдігінің"
+   },
+   "address": {
+    "raw": "г.Астана, пр. Туран, 4/2",
+    "street": "пр. Туран",
+    "house": "4/2",
+    "key": "туран",
+    "by_lang": {
+     "ru": "г.Астана, пр. Туран, 4/2",
+     "kk": "қ.Астана, к. Туран, 4/2"
+    }
+   },
+   "phone_raw": "приемная: 44-56-50",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"ГККП «Спорткомбинат «Даулет» акимата г. Астаны\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"ГККП «Спорткомбинат «Даулет» Астана қаласы әкімдігінің\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана, пр. Туран, 4/2\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 44-56-50\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "3",
+    "sports": "Теннис"
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/61fc4660f6",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "ГККП «Ледовый дворец «Алау» акимата города Астаны",
+   "names": {
+    "ru": "ГККП «Ледовый дворец «Алау» акимата города Астаны",
+    "kk": "ГККП «Мұз сарайы «Алау» Астана қаласы әкімдігінің"
+   },
+   "address": {
+    "raw": "г.Астана, пр.Кабанбай батыра, 47",
+    "street": "пр.Кабанбай батыра",
+    "house": "47",
+    "key": "кабанба батир",
+    "by_lang": {
+     "ru": "г.Астана, пр.Кабанбай батыра, 47",
+     "kk": "қ.Астана, к.Кабанбай батыра, 47"
+    }
+   },
+   "phone_raw": "приемная: 70-67-44",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"ГККП «Ледовый дворец «Алау» акимата города Астаны\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"ГККП «Мұз сарайы «Алау» Астана қаласы әкімдігінің\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана, пр.Кабанбай батыра, 47\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 70-67-44\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "4",
+    "sports": "- площадь арены – площадь ледового покрытия – 9 200 м2 - площади тренировочных залов: а) универсальный зал – 884 м2; б) тренажерный зал – 420 м2; в) поле для игры в пляжный волейбол – 162 м2; г) мини-футбольное уличное поле – 800 м2;"
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/0328447a3e",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+   "names": {
+    "ru": "КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»",
+    "kk": "Астана қаласы әкімдігінің №10 Олимпиадалық резервтің шайбалы хоккей бойынша мамандандырылған балалар-жасөспірімдер спорт мектебі» СК «Барыс»"
+   },
+   "address": {
+    "raw": "г.Астана, Кажымукана, 7/1",
+    "street": "Кажымукана",
+    "house": "7/1",
+    "key": "кажимукан",
+    "by_lang": {
+     "ru": "г.Астана, Кажымукана, 7/1",
+     "kk": "қ.Астана, Кажымукана, 7/1"
+    }
+   },
+   "phone_raw": "приемная: 57-84-53",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"КГУ «Специализированная детско юношеская спортивная школа олимпийского резерва №10 по хоккею с шайбой» акимата города Астаны» СК «Барыс»\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"Астана қаласы әкімдігінің №10 Олимпиадалық резервтің шайбалы хоккей бойынша мамандандырылған балалар-жасөспірімдер спорт мектебі» СК «Барыс»\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана, Кажымукана, 7/1\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 57-84-53\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "5",
+    "sports": "Хоккей с шайбой, хоккей с мячом, тренажерный зал"
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/26eb47138e",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "КГУ \"СДЮСШОР №8\" акимата города Астаны стадион имени Кажимукана Мунайтпасова",
+   "names": {
+    "ru": "КГУ \"СДЮСШОР №8\" акимата города Астаны стадион имени Кажимукана Мунайтпасова",
+    "kk": "Астана қаласы әкімдігінің №8 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі (СДЮСШОР №8), Қажымұқан Мұңайтпасов атындағы стадион"
+   },
+   "address": {
+    "raw": "г.Астана, ул.Кенесары, 14",
+    "street": "ул.Кенесары",
+    "house": "14",
+    "key": "кенесар",
+    "by_lang": {
+     "ru": "г.Астана, ул.Кенесары, 14",
+     "kk": "қ.Астана, к.Кенесары, 14"
+    }
+   },
+   "phone_raw": "приемная: 39-01-37, 39-02-72",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"КГУ \\\"СДЮСШОР №8\\\" акимата города Астаны стадион имени Кажимукана  Мунайтпасова\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"Астана қаласы әкімдігінің №8 Олимпиадалық резервтің мамандандырылған балалар-жасөспірімдер спорт мектебі (СДЮСШОР №8), Қажымұқан Мұңайтпасов атындағы стадион\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана, ул.Кенесары, 14\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 39-01-37, 39-02-72\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "6",
+    "sports": null
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  },
+  {
+   "id": "gov/sport/8fbbff2f95",
+   "kind": "sport_facility",
+   "source": "data.egov.kz",
+   "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+   "name": "ГККП «Спорткомбинат Достык» акимата города Астаны \"Астана-Арена\"",
+   "names": {
+    "ru": "ГККП «Спорткомбинат Достык» акимата города Астаны \"Астана-Арена\"",
+    "kk": "ГККП «Достық спорткомбинаты» Астана қаласы әкімдігінің «Астана-Арена»"
+   },
+   "address": {
+    "raw": "г.Астана , пр. Туран, 48",
+    "street": "пр. Туран",
+    "house": "48",
+    "key": "туран",
+    "by_lang": {
+     "ru": "г.Астана , пр. Туран, 48",
+     "kk": "қ.Астана , к. Туран, 48"
+    }
+   },
+   "phone_raw": "приемная: 702-701",
+   "hours": {
+    "raw": "08:30-18:00",
+    "scope": "administration",
+    "opening_hours": null,
+    "note": null,
+    "flags": [
+     "administration_office_week"
+    ]
+   },
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksr\": \"ГККП «Спорткомбинат Достык» акимата города Астаны \\\"Астана-Арена\\\"\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "name",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"nsksk\": \"ГККП «Достық спорткомбинаты» Астана қаласы әкімдігінің «Астана-Арена»\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "kk"
+    },
+    {
+     "field": "address",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"mr\": \"г.Астана , пр. Туран, 48\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "admin_hours",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"rrr\": \"08:30-18:00\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    },
+    {
+     "field": "phone",
+     "url": "https://data.egov.kz/datasets/exportjson?index=sporttyk_keshender_turaly_dere1&from=0&count=100",
+     "snippet": "\"ktr\": \"приемная: 702-701\"",
+     "fetched_at": "2026-10-17T12:18:16+00:00",
+     "lang": "ru"
+    }
+   ],
+   "extra": {
+    "dataset": "sporttyk_keshender_turaly_dere1",
+    "register_no": 730,
+    "row_id": "7",
+    "sports": null
+   },
+   "fetched_at": "2026-10-17T12:18:16+00:00",
+   "geocode": null
+  }
+ ],
+ "notes": "rrr/rrk = office week of the administration (scope administration, admin_hours); no coordinates in the register; head's name not stored."
+}

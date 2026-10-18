@@ -1,0 +1,102 @@
+{
+ "simulated": true,
+ "what": "SIMULATED demand: the real pipeline replayed on drawn requests; not an observation about the city",
+ "seed": 20261019,
+ "n": 10000,
+ "date": "2026-10-17",
+ "method": {
+  "origin": "500 m cell with probability proportional to the OSM residential-building weight (data/population_proxy.json), uniform point in the cell; tourist scenario: near a landmark / museum / viewpoint / mall",
+  "population_proxy": {
+   "file": "data/population_proxy.json",
+   "source": "OpenStreetMap contributors, Overpass API; ODbL",
+   "snapshot_date": "2026-10-16",
+   "buildings": 36655,
+   "cells": 974
+  },
+  "scenario_mix": {
+   "tz_walk": 0.18,
+   "tz_quiet_cafe": 0.17,
+   "tz_kids": 0.12,
+   "tz_tourist": 0.08,
+   "tz_night": 0.07,
+   "coffee": 0.12,
+   "food": 0.1,
+   "park": 0.06,
+   "cinema": 0.05,
+   "sport": 0.05
+  },
+  "scenario_counts": {
+   "tz_night": 682,
+   "coffee": 1094,
+   "tz_walk": 1873,
+   "park": 648,
+   "tz_kids": 1176,
+   "tz_tourist": 866,
+   "sport": 509,
+   "cinema": 488,
+   "tz_quiet_cafe": 1664,
+   "food": 1000
+  },
+  "hour_weights": {
+   "8": 3,
+   "9": 4,
+   "10": 5,
+   "11": 6,
+   "12": 9,
+   "13": 8,
+   "14": 6,
+   "15": 6,
+   "16": 7,
+   "17": 9,
+   "18": 12,
+   "19": 12,
+   "20": 9,
+   "21": 6,
+   "22": 3
+  },
+  "weekdays": "uniform over the 7 days of the week of 2026-10-12",
+  "weather": [
+   {
+    "apparent_c": 8.0,
+    "precip_mm_h": 0.0,
+    "pm25": 12.0,
+    "weight": 0.7
+   },
+   {
+    "apparent_c": -25.0,
+    "precip_mm_h": 0.0,
+    "pm25": 12.0,
+    "weight": 0.15
+   },
+   {
+    "apparent_c": 10.0,
+    "precip_mm_h": 0.0,
+    "pm25": 90.0,
+    "weight": 0.15
+   }
+  ],
+  "answer": "walks.pipeline.recommend, rules parser, templates, offline router"
+ },
+ "poi_dataset_places": 2178,
+ "stats": {
+  "k": 5,
+  "requests": 10000,
+  "cells": 779,
+  "cells_shown": 524,
+  "cells_suppressed": 255,
+  "requests_in_suppressed_cells": 504,
+  "no_requested_category_nearby": 2834,
+  "hours_unknown_nearby": 3949,
+  "padded": 3020,
+  "requests_per_district": {
+   "Сарыарка": 2289,
+   "Есиль": 1853,
+   "Алматы": 1753,
+   "Нура": 1539,
+   "Байконур": 1444,
+   "Сарайшык": 1110,
+   "вне границ районов": 12
+  },
+  "largest_cell_share": 0.0077
+ }
+}

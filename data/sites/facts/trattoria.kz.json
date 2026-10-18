@@ -1,0 +1,52 @@
+{
+ "domain": "trattoria.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:19:46+00:00",
+ "pages": [
+  "https://trattoria.kz"
+ ],
+ "branches": [
+  {
+   "name": "Траттория (Trattoria.kz)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": "+7(707)988-78-87",
+   "opening_hours_raw": "Ежедневно для Вас с 10:00 до 22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://trattoria.kz",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "https://trattoria.kz",
+     "snippet": "Ежедневно для Вас с 10:00 до 22:00",
+     "fetched_at": "2026-10-17T09:19:46+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://trattoria.kz",
+     "snippet": "+7(707)988-78-87",
+     "fetched_at": "2026-10-17T09:19:46+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://trattoria.kz",
+     "snippet": "Астана Доставка ко времени",
+     "fetched_at": "2026-10-17T09:19:46+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://trattoria.kz",
+     "snippet": "Пиццерия Trattoria в Астане",
+     "fetched_at": "2026-10-17T09:19:46+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "One delivery pizzeria; the site sells Astana delivery only ('Астана' city selector, no branch list, no street address). 'Ежедневно для Вас с 10:00 до 22:00' is delivery/order hours of the one kitchen; hours.to_osm does not convert this phrasing, so the schedule stays raw without a flag.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

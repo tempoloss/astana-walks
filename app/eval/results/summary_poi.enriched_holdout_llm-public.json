@@ -1,0 +1,156 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "llm",
+  "chain": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-flash-lite-latest",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.7-flash",
+    "gemini:gemini-3.5-flash"
+  ],
+  "cases": 5,
+  "cases_with_recs": 5,
+  "recs_total": 7,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 85.7,
+  "case_all_ok_rate": 80.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 80.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 80.0,
+  "top1_open_rate": 20.0,
+  "unknown_hours_rec_share": 85.7,
+  "non_osm_rec_share": 42.9,
+  "avg_walk_min": 5.3,
+  "wifi_socket_in_data_share": null,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 3227.0,
+  "latency_ms_p90": 7880.0,
+  "generation_ms_median": 1698.0,
+  "generation_ms_p90": 4182.0,
+  "model_link": {
+    "gemini:gemini-3.5-flash-lite": 5
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "category_forbidden": 1,
+    "category_not_allowed": 1
+  },
+  "padded_rec_share": 14.3,
+  "expanded_rec_share": 0.0,
+  "backfill_rec_share": 14.3,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 20.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [
+    {
+      "case_id": "h04-lovers-sun-stroller",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Парк влюбленных (park_garden)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 7880,
+      "generation_ms": 4182
+    },
+    {
+      "case_id": "h08-nu-wed-kk-kids",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Японский сад (park_garden)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 3227,
+      "generation_ms": 2043
+    },
+    {
+      "case_id": "h13-nurly-tue-late-hungry",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 1,
+      "top1": "Nurlyzhol_vokzaly (bar_nightlife)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2804,
+      "generation_ms": 1698
+    },
+    {
+      "case_id": "h18-nu-tue-en-read",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 1,
+      "top1": "Drinkit (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2790,
+      "generation_ms": 1687
+    },
+    {
+      "case_id": "h20-keruen-newyear-cold",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 1,
+      "top1": "Байтерек (attraction_landmark)",
+      "open_claim_in_text": false,
+      "category_violation": true,
+      "honest_ok": true,
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ],
+      "total_ms": 4913,
+      "generation_ms": 1673
+    }
+  ],
+  "failing_cases": [
+    {
+      "case_id": "h20-keruen-newyear-cold",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "holdout",
+  "label": "llm-public",
+  "header": {
+    "label": "llm-public",
+    "mode": "llm",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "holdout_cases.json",
+    "case_set": "holdout",
+    "records": 5,
+    "git": "846f5fa+uncommitted",
+    "walking": "straight",
+    "generated_at": "2026-10-17T05:28:52+05:00"
+  }
+}

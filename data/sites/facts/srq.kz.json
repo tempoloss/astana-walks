@@ -1,0 +1,52 @@
+{
+ "domain": "srq.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:40:36+00:00",
+ "pages": [
+  "https://srq.kz/ru"
+ ],
+ "branches": [
+  {
+   "name": "ТРЦ «Сарыарка»",
+   "address": "город Астана, пр. Туран, 24",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 701 081 02 27",
+   "opening_hours_raw": "Магазины: 1,2,3 этажи 10:00 - 22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://srq.kz/ru",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://srq.kz/ru",
+     "snippet": "SARYARQA",
+     "fetched_at": "2026-10-17T09:40:36+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://srq.kz/ru",
+     "snippet": "Адрес: город Астана, пр. Туран, 24",
+     "fetched_at": "2026-10-17T09:40:36+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://srq.kz/ru",
+     "snippet": "Телефон: +7 701 081 02 27",
+     "fetched_at": "2026-10-17T09:40:36+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://srq.kz/ru",
+     "snippet": "Время работы: Магазины: 1,2,3 этажи 10:00 - 22:00",
+     "fetched_at": "2026-10-17T09:40:36+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Молалка «ВРЕМЯ РАБОТЫ» даёт часы по зонам (Магазины 10:00-22:00, Кафе/бары 10:00-24:00, Кинотеатр 10:00-03:00, паркинг круглосуточный); без дней недели -> opening_hours_raw хранит первую строку (зоны магазинов), OSM не выводится. Единой строки «ТРЦ с X до Y» на сайте нет. Это тот же ТРЦ, что saryarka.com (домен закреплён за p1).",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

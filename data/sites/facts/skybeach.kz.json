@@ -1,0 +1,53 @@
+{
+ "domain": "skybeach.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:32:12+00:00",
+ "pages": [
+  "http://www.skybeach.kz",
+  "https://skybeach.kz/ru/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Sky Beach Club",
+   "address": "г. Астана, пр. Туран 37",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 577-787 +7 701 883 9625",
+   "opening_hours_raw": "ежедневно с 10:00 до 21:00",
+   "opening_hours_osm": "Mo-Su 10:00-21:00",
+   "description": null,
+   "url": "https://skybeach.kz/ru/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.skybeach.kz",
+     "snippet": "Пляжный клуб - Sky Beach Club",
+     "fetched_at": "2026-10-17T09:29:05+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://skybeach.kz/ru/kontakty",
+     "snippet": "Адрес г. Астана, пр. Туран 37 Телефон +7 (7172) 577-787 +7 701 883 9625 Email skybeach@khanshatyr.com Часы работы ежедневно с 10:00 до 21:00",
+     "fetched_at": "2026-10-17T09:32:12+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://skybeach.kz/ru/kontakty",
+     "snippet": "Адрес г. Астана, пр. Туран 37 Телефон +7 (7172) 577-787 +7 701 883 9625 Email skybeach@khanshatyr.com Часы работы ежедневно с 10:00 до 21:00",
+     "fetched_at": "2026-10-17T09:32:12+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://skybeach.kz/ru/kontakty",
+     "snippet": "Часы работы ежедневно с 10:00 до 21:00",
+     "fetched_at": "2026-10-17T09:32:12+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "The club sits inside Khan Shatyr (пр. Туран 37, e-mail @khanshatyr.com) — the same address the mall publishes; join.py should match it to the sport POI by name. The home page repeats the schedule ('Наши двери открыты для вас ежедневно с 10:00 до 21:00').",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

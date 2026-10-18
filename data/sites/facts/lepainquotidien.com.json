@@ -1,0 +1,52 @@
+{
+ "domain": "lepainquotidien.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:30:20+00:00",
+ "pages": [
+  "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37"
+ ],
+ "branches": [
+  {
+   "name": "Le Pain Quotidien (Хан Шатыр)",
+   "address": "Turan Avenue 37, Astana (Khan Shatyr Mall)",
+   "lat": 51.1324556,
+   "lon": 71.4038654,
+   "phone": null,
+   "opening_hours_raw": "monday 10:00 until 22:00 tuesday 10:00 until 22:00 wednesday 10:00 until 22:00 thursday 10:00 until 22:00 friday 10:00 until 22:00 saturday 10:00 until 22:00 sunday 10:00 until 22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37",
+     "snippet": "Le Pain Quotidien",
+     "fetched_at": "2026-10-17T09:30:20+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37",
+     "snippet": "Opening hours monday 10:00 until 22:00 tuesday 10:00 until 22:00 wednesday 10:00 until 22:00 thursday 10:00 until 22:00 friday 10:00 until 22:00 saturday 10:00 until 22:00 sunday 10:00 until 22:00",
+     "fetched_at": "2026-10-17T09:30:20+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37",
+     "snippet": "address\\\":\\\"Turan Avenue 37\\\"",
+     "fetched_at": "2026-10-17T09:30:20+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.lepainquotidien.com/kz/en/locations/Khan%20Shatyr%20Mall/Turan-Avenue-37",
+     "snippet": "latitude\\\":51.1324556,\\\"longitude\\\":71.4038654",
+     "fetched_at": "2026-10-17T09:30:20+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "One Astana location (Khan Shatyr, Turan Avenue 37; zip 010000). The page prints 'Welcome To'/'status OPEN'; phone is $undefined on the page, so none is stored. Per-day English schedule converts to a uniform Mo-Su 10:00-22:00. The .com brand site is corporate-owned (first-party); the KZ locale path (/kz/) hosts only this location.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

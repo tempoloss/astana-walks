@@ -1,0 +1,228 @@
+[
+  {
+    "id": "a01-leftbank-3am-museum",
+    "label": "Левый берег, жилой квартал · ср 03:00 · обычная погода · хочу в музей",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-21T03:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Хочу в музей",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "museum_gallery"
+      ],
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Музей в 3 часа ночи: закрыт всегда. Честный ответ — «сейчас ничего не открыто» либо музеи с явной пометкой «часы работы неизвестны»; «открыто» утверждать нельзя.",
+      "budget_min": 120
+    }
+  },
+  {
+    "id": "a02-airport-lrt-2330-quiet-socket",
+    "label": "LRT Аэропорт · ср 23:30 · обычная погода · тихое кафе с розеткой",
+    "origin": {
+      "name": "LRT Аэропорт",
+      "lat": 51.028,
+      "lon": 71.4588
+    },
+    "when": "2026-10-21T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Тихое кафе с розеткой, поработать",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Вокзал/аэропорт глубокой ночью: рядом мало мест, розетки в данных не подтверждены. Честный ответ — места с пометкой «Wi-Fi/розетки не подтверждены» либо «ничего нет».",
+      "needs_wifi_socket": true,
+      "budget_min": 60
+    }
+  },
+  {
+    "id": "a03-industrial-museum",
+    "label": "Индустриальный парк № 2 (восточная окраина) · ср 14:00 · обычная погода · хочу в музей",
+    "origin": {
+      "name": "Индустриальный парк № 2 (СЭЗ, восточная окраина)",
+      "lat": 51.1689,
+      "lon": 71.5708
+    },
+    "when": "2026-10-21T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Хочу в музей",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "museum_gallery"
+      ],
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Промзона, до ближайшего музея около 7 км. Честный ответ — «рядом ничего подходящего нет» или помеченные компромиссы.",
+      "budget_min": 120
+    }
+  },
+  {
+    "id": "a04-leftbank-pool",
+    "label": "Левый берег, жилой квартал · ср 19:00 · обычная погода · бассейн рядом",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-21T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Бассейн рядом",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "sport"
+      ],
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Бассейнов (swimming_pool) в данных рядом нет: ближайший ~4 км. Спортзал или ресторан нельзя выдавать за бассейн; честный ответ — «бассейна рядом нет» либо помеченная замена.",
+      "wanted_pattern": "бассейн|pool|swimming",
+      "budget_min": 60
+    }
+  },
+  {
+    "id": "a05-nw-edge-cafe-socket",
+    "label": "Северо-западная окраина · ср 14:00 · обычная погода · кофе и розетка",
+    "origin": {
+      "name": "Северо-западная окраина",
+      "lat": 51.2,
+      "lon": 71.33
+    },
+    "when": "2026-10-21T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Кофе и розетка, поработать",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Окраина, кафе есть только за границей обычного радиуса и без данных о розетках: расширение радиуса и непроверенные розетки должны быть помечены.",
+      "needs_wifi_socket": true,
+      "budget_min": 60
+    }
+  },
+  {
+    "id": "a06-se-edge-stroller-museum",
+    "label": "Юго-восточная окраина · ср 15:00 · обычная погода · музей с коляской",
+    "origin": {
+      "name": "Юго-восточная окраина (за ж/д, пустыри)",
+      "lat": 51.0875,
+      "lon": 71.565
+    },
+    "when": "2026-10-21T15:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Хочу в музей с коляской",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "museum_gallery"
+      ],
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Пустая окраина, музеев нет ближе 3.5 км; нужна доступность для колясок. Честный ответ — «ничего нет».",
+      "step_free": true,
+      "budget_min": 120
+    }
+  },
+  {
+    "id": "a07-nw-edge-museum",
+    "label": "Северо-западная окраина · ср 14:00 · обычная погода · хочу в музей",
+    "origin": {
+      "name": "Северо-западная окраина",
+      "lat": 51.2,
+      "lon": 71.33
+    },
+    "when": "2026-10-21T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Хочу в музей",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "museum_gallery"
+      ],
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Музеев ближе 6 км нет: честный ответ — «рядом музеев нет» либо помеченная замена (другая категория).",
+      "budget_min": 120
+    }
+  },
+  {
+    "id": "a08-leftbank-frost-playground",
+    "label": "Левый берег, жилой квартал · ср 14:00 · −28°C · детская площадка",
+    "origin": {
+      "name": "ЖК Highvill Ishim (левый берег, жилой квартал)",
+      "lat": 51.1197,
+      "lon": 71.4601
+    },
+    "when": "2026-10-21T14:00",
+    "weather_override": {
+      "apparent_c": -28
+    },
+    "air_override": null,
+    "query": "Прогулка с ребёнком, площадка",
+    "tz": false,
+    "axes": {
+      "set": "abstain"
+    },
+    "expected": {
+      "wanted_categories": [
+        "kids_playground",
+        "museum_gallery",
+        "entertainment"
+      ],
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "Мороз −28°C: площадка на улице невозможна. Честный ответ — помещения для детей (музей, развлечения) либо «сегодня на улице нельзя»; кафе без пояснения — не ответ на «площадка».",
+      "budget_min": 120
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+ "corpus": "148 OD-cells (dedup ~110 m); est/real on all legs of the same cells",
+ "circuity_cells": {
+  "n": 148,
+  "median": 1.42,
+  "p25": 1.289,
+  "p75": 1.67,
+  "p90": 2.183,
+  "max": 5.23
+ },
+ "est_over_real_minutes_cells": {
+  "n": 192,
+  "median": 0.969,
+  "p25": 0.824,
+  "p75": 1.068,
+  "p90": 1.145,
+  "max": 1.41
+ },
+ "formula": "est=(1.25·hav(ends))/75 min vs real=s/60 min (Valhalla) — dimensionless ratio",
+ "reading": "median 0.97: constants compensate to −3 % ON AVERAGE; IQR 0.82–1.07 = ±18 % per-leg spread, no time guarantee on tails"
+}

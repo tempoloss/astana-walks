@@ -1,0 +1,266 @@
+{
+ "generated_at": "2026-10-17T15:50:44+00:00",
+ "snapshot_date": "2026-10-17",
+ "source": "poi.enriched.json",
+ "categories": [
+  "museum_gallery",
+  "culture_theatre_cinema",
+  "attraction_landmark",
+  "viewpoint",
+  "coworking_library",
+  "park_garden",
+  "entertainment",
+  "kids_playground"
+ ],
+ "measures": {
+  "poi_total": 2326,
+  "per_category": {
+   "attraction_landmark": {
+    "pois": 127,
+    "with_day_qualified_hours": 3,
+    "share_pct": 2.4
+   },
+   "bar_nightlife": {
+    "pois": 243,
+    "with_day_qualified_hours": 66,
+    "share_pct": 27.2
+   },
+   "cafe": {
+    "pois": 580,
+    "with_day_qualified_hours": 230,
+    "share_pct": 39.7
+   },
+   "coworking_library": {
+    "pois": 18,
+    "with_day_qualified_hours": 8,
+    "share_pct": 44.4
+   },
+   "culture_theatre_cinema": {
+    "pois": 45,
+    "with_day_qualified_hours": 8,
+    "share_pct": 17.8
+   },
+   "entertainment": {
+    "pois": 45,
+    "with_day_qualified_hours": 3,
+    "share_pct": 6.7
+   },
+   "fast_food": {
+    "pois": 168,
+    "with_day_qualified_hours": 91,
+    "share_pct": 54.2
+   },
+   "kids_playground": {
+    "pois": 328,
+    "with_day_qualified_hours": 1,
+    "share_pct": 0.3
+   },
+   "mall": {
+    "pois": 75,
+    "with_day_qualified_hours": 12,
+    "share_pct": 16.0
+   },
+   "museum_gallery": {
+    "pois": 25,
+    "with_day_qualified_hours": 2,
+    "share_pct": 8.0
+   },
+   "other": {
+    "pois": 10,
+    "with_day_qualified_hours": 10,
+    "share_pct": 100.0
+   },
+   "park_garden": {
+    "pois": 198,
+    "with_day_qualified_hours": 2,
+    "share_pct": 1.0
+   },
+   "restaurant": {
+    "pois": 398,
+    "with_day_qualified_hours": 84,
+    "share_pct": 21.1
+   },
+   "sport": {
+    "pois": 36,
+    "with_day_qualified_hours": 3,
+    "share_pct": 8.3
+   },
+   "transit_station": {
+    "pois": 29,
+    "with_day_qualified_hours": 1,
+    "share_pct": 3.4
+   },
+   "viewpoint": {
+    "pois": 1,
+    "with_day_qualified_hours": 0,
+    "share_pct": 0.0
+   }
+  },
+  "pois_with_website": 692,
+  "pois_with_website_no_day_qualified_hours": 320
+ },
+ "counts": {
+  "culture_pois": 787,
+  "culture_pois_without_day_qualified_hours": 760,
+  "domains_new_for_crawl": 7,
+  "pois_in_new_domains": 10,
+  "robots": {
+   "allowed": 4,
+   "denied": 1,
+   "unreachable": 2
+  }
+ },
+ "entries": [
+  {
+   "domain": "e-museum.kz",
+   "poi_ids": [
+    "way/240376692",
+    "way/240391776",
+    "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+    "overture/7972273c-f99e-4cd9-b552-c94b2a59adde",
+    "node/11968737470"
+   ],
+   "names": [
+    "Музей Сакена Сейфуллина",
+    "Государственный военно-исторический музей",
+    "Военно-Исторический музей ВС РК",
+    "ҚР ҚК Әскери-тарихи музейі",
+    "Городище Бозок"
+   ],
+   "categories": {
+    "museum_gallery": 4,
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [],
+   "robots": "allowed (Disallow: /wp-admin/ only; REST /wp-json/ open)",
+   "notes": "ГИС «Музеи Казахстана» (WP REST, keyless): GET /wp-json/wp/v2/museum?region=3952&lang=ru — 5 unique cards, of which 4 Astana museums + «Алжир» (Ақмол ауылы, region filter leaks it). work_hours + ticket_price filled on all 5 (verified 2026-10-17). The Сейфуллин card's `site` field points to astanamuseums.kz — unreachable (connect timeout, likely parked); the Алжир card's `site` museum-alzhir.kz blocks robots. Cards: Национальный музей Республики Казахстан https://e-museum.kz/ru/museum/68da379b4b4fb9d59-ru/; Музей Сакена Сейфуллина https://e-museum.kz/ru/museum/68da37a0228ab7ad4-ru/; Военно-исторический музей ВС Республики Казахстан https://e-museum.kz/ru/museum/68da379da9894247d-ru/; Государственный историко-культурный музей-заповедник «Бозоқ» https://e-museum.kz/ru/museum/68da37a2c72b30113-ru/",
+   "origin": [
+    "e_museum_register"
+   ],
+   "poi_count": 5,
+   "kind": "register_portal",
+   "status": "collected"
+  },
+  {
+   "domain": "akorda.kz",
+   "poi_ids": [
+    "wikidata/Q413579"
+   ],
+   "names": [
+    "Ак орда (резиденция)"
+   ],
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [
+    "Q413579"
+   ],
+   "notes": "domains from: wikidata_p856; wikidata Q413579",
+   "poi_count": 1,
+   "robots": "allowed (User-agent: * Allow: /)",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "status": "collected"
+  },
+  {
+   "domain": "astanamuseums.kz",
+   "poi_ids": [
+    "way/240376692"
+   ],
+   "names": [
+    "Музей Сакена Сейфуллина"
+   ],
+   "categories": {
+    "museum_gallery": 1
+   },
+   "wikidata_ids": [],
+   "notes": "domains from: e_museum_site_field",
+   "poi_count": 1,
+   "robots": "unreachable (connect timeout — domain parked or dead)",
+   "origin": [
+    "e_museum_site_field"
+   ],
+   "status": "dead"
+  },
+  {
+   "domain": "botsad-nursultan.kz",
+   "poi_ids": [
+    "way/1196402246"
+   ],
+   "names": [
+    "Ботанический сад"
+   ],
+   "categories": {
+    "park_garden": 1
+   },
+   "wikidata_ids": [
+    "Q104866948"
+   ],
+   "notes": "domains from: wikidata_p856; wikidata Q104866948",
+   "poi_count": 1,
+   "robots": "unreachable (DNS does not resolve; the POI's OSM domain astanabotsad.kz is already assigned)",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "status": "dead"
+  },
+  {
+   "domain": "bozok.kz",
+   "poi_ids": [
+    "node/11968737470"
+   ],
+   "names": [
+    "Городище Бозок"
+   ],
+   "categories": {
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [],
+   "notes": "domains from: e_museum_site_field",
+   "poi_count": 1,
+   "robots": "allowed (Disallow: /wp-admin/ only; sitemap open)",
+   "origin": [
+    "e_museum_site_field"
+   ],
+   "status": "open"
+  },
+  {
+   "domain": "museumgold.kz",
+   "poi_ids": [
+    "wikidata/Q4146879"
+   ],
+   "names": [
+    "Государственный музей золота и драгоценных металлов"
+   ],
+   "categories": {
+    "museum_gallery": 1
+   },
+   "wikidata_ids": [
+    "Q4146879"
+   ],
+   "notes": "domains from: wikidata_p856; wikidata Q4146879",
+   "poi_count": 1,
+   "robots": "allowed (User-agent: * Allow: /)",
+   "origin": [
+    "wikidata_p856"
+   ],
+   "status": "collected"
+  },
+  {
+   "domain": "museum-alzhir.kz",
+   "poi_ids": [],
+   "names": [],
+   "categories": {},
+   "wikidata_ids": [],
+   "robots": "denied (robots.txt responds 403, Cloudflare interstitial)",
+   "origin": [
+    "e_museum_register"
+   ],
+   "poi_count": 0,
+   "notes": "Музейно-мемориальный комплекс «Алжир»: e-museum card region=3952 (city Ақмол ауылы — the leak behind the '4 not 5' Astana count); own site blocks robots (403), no POI in the dataset — out of scope for the Astana crawl.",
+   "kind": "documentation_only",
+   "status": "denied"
+  }
+ ]
+}

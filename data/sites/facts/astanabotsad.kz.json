@@ -1,0 +1,84 @@
+{
+ "domain": "astanabotsad.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.astanabotsad.kz/ru/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Астанинский ботанический сад (административно-лабораторный корпус)",
+   "address": "г.Астана, Есильский район, ул. Орынбор, 14 Б",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 57-32-70",
+   "opening_hours_raw": "c 9:00 до 18:00 Обед: с 13:00 до 14:00",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.astanabotsad.kz/ru/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "Астанинский ботанический сад – филиал"
+    },
+    {
+     "field": "address",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "г.Астана, Есильский район, ул. Орынбор, 14 Б."
+    },
+    {
+     "field": "phone",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "Приемная: +7 (7172) 57-32-70"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "График работы корпуса: c 9:00 до 18:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астанинский ботанический сад (оранжерейный комплекс)",
+   "address": "г. Астана, ул. Орынбор, 14Е",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (771) 410-92-27",
+   "opening_hours_raw": "с 10:00 до 19:00, касса до 18:30",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.astanabotsad.kz/ru/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "Астанинский ботанический сад – филиал"
+    },
+    {
+     "field": "address",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "Оранжерейный комплекс: ул. Орынбор, 14Е"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "горячей линии: +7 (771) 410-92-27"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.astanabotsad.kz/ru/kontakty",
+     "snippet": "График работы оранжерей: с 10:00 до 19:00, касса до 18:30"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Contacts page (Институт ботаники и фитоинтродукции branch): admin корпус Орынбор 14Б (график c 9:00 до 18:00, обед 13-14 — day-less, kept raw with needs_days) and оранжерейный комплекс Орынбор 14Е ('с 10:00 до 19:00, касса до 18:30' + hotline +7 (771) 410-92-27). Hot line number is printed right after 'Телефон горячей линии:' — phone_ev uses the lowercase variant found in HTML. Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

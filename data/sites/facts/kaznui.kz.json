@@ -1,0 +1,9 @@
+{
+ "domain": "kaznui.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:15:31+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt answers HTTP 500 → per RFC 9309 crawling is not allowed. robots.txt/page unreachable per RFC 9309 (disallowed by robots.txt)",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

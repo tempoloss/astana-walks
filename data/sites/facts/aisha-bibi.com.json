@@ -1,0 +1,53 @@
+{
+ "domain": "aisha-bibi.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:22:57+00:00",
+ "pages": [
+  "http://aisha-bibi.com/astana"
+ ],
+ "branches": [
+  {
+   "name": "Aisha Bibi Hotel & Spa",
+   "address": "Астана, ул. Айша биби, 38, Астана",
+   "lat": 51.14155,
+   "lon": 71.39362,
+   "phone": "+7 771 899 42 09",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": "Забронируйте напрямую отель AISHA BIBI Hotel & Spa 4* в центре Астаны: номера с кухней, SPA-центр с бассейном, хамам и сауна, конференц-зал и панорамный ресторан. Рядом Хан Шатыр и Байтерек, 14 км до аэропорта. Тел. +7 771 899 42 09.",
+   "url": "http://aisha-bibi.com/astana",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://aisha-bibi.com/astana",
+     "snippet": "\"name\":\"Aisha Bibi Hotel & Spa\""
+    },
+    {
+     "field": "address",
+     "url": "http://aisha-bibi.com/astana",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Астана, ул. Айша биби, 38\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "geo",
+     "url": "http://aisha-bibi.com/astana",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.14155,\"longitude\":71.39362}"
+    },
+    {
+     "field": "phone",
+     "url": "http://aisha-bibi.com/astana",
+     "snippet": "\"telephone\":\"+7 771 899 42 09\""
+    },
+    {
+     "field": "description",
+     "url": "http://aisha-bibi.com/astana",
+     "snippet": "\"description\":\"Забронируйте напрямую отель AISHA BIBI Hotel & Spa 4* в центре Астаны: номера с кухней, SPA-центр с бассейном, хамам и сауна, конференц-зал и панорамный ресторан. Рядом Хан Шатыр и Байтерек, 14 км до аэропорта. Тел. +7 771 899 42 09.\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "The POI is the restaurant of Aisha Bibi Hotel & Spa; the site publishes hotel-level facts only (JSON-LD: address, geo, phone, description) — no restaurant-specific hours or contacts, and the on-page clock widget is live time, not a schedule, so opening_hours stays None.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

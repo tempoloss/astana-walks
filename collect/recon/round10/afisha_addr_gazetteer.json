@@ -1,0 +1,36 @@
+{
+ "statuses": {
+  "пр. Абая, 8": "rca-current",
+  "ул. Керей, Жанибек хандар, 22/2": "rca-current",
+  "ул. Сыганак, 17г": "rca-current",
+  "ул. Сыганак, 60/4": "rca-current",
+  "пр. Кабанбай батыра, 53": "openaddresses",
+  "ул. Желтоксан, 11": "rca-current",
+  "шоссе Коргалжын, 3": "openaddresses",
+  "ул. Кенесары, 32": "rca-current",
+  "Бейбітшілік, 20/1": "rca-current",
+  "мкр. Самал, 9": "not-street",
+  "мкр. Самал, 12": "not-street",
+  "ул. Кравцова, 6": "rca-current",
+  "Mangilik El ave., B1": "MISS",
+  "Коргалжынское шоссе, 3": "openaddresses",
+  "ул. Габдуллина, 18": "rca-current",
+  "пр. Улы Дала, 39": "MISS",
+  "к. Илияс Есенберлина, 10": "rca-current",
+  "ул. Акмешит, 1/3": "rca-current",
+  "Токпанов көш., 10": "rca-current",
+  "Қабанбай батыр даңғылы, 53": "openaddresses",
+  "Мәңгілік ел даңғылы, 10/1": "MISS"
+ },
+ "summary": {
+  "rca-current": 12,
+  "openaddresses": 4,
+  "not-street": 2,
+  "MISS": 3
+ },
+ "method": "token match (whole tokens, len>=4, genitive-tolerant prefix) vs RCA key/ru/kk+former and OpenAddresses names; микрорайон = not-street",
+ "notes": {
+  "mangilik": "«Улы Дала»/«Мәңгілік ел»/«Mangilik El» — одна магистраль, отсутствует в обоих снимках (RCA modified≤2024, OA 2017): gap возраста, не матчинга",
+  "korvaldzhyne": "шоссе Коргалжын/Коргалжынское — статус по факту прогона"
+ }
+}

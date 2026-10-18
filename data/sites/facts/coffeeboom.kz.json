@@ -1,0 +1,2649 @@
+{
+ "domain": "coffeeboom.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:24:28+00:00",
+ "pages": [
+  "https://coffeeboom.kz/coffeeshops/?city=16",
+  "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16"
+ ],
+ "branches": [
+  {
+   "name": "Хан Шатыр СОО-да, 3-қабат",
+   "address": "Астана, Тұран даңғылы, 37",
+   "lat": 51.132599,
+   "lon": 71.403817,
+   "phone": "+7(701) 915-9990",
+   "opening_hours_raw": "Mon-Sun 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0425\\u0430\\u043d \\u0428\\u0430\\u0442\\u044b\\u0440 \\u0421\\u041e\\u041e-\\u0434\\u0430, 3-\\u049b\\u0430\\u0431\\u0430\\u0442\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 37\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(701) 915-9990\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.403817\",\"lat\":\"51.132599\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Grand Turan Avenue 2 ТК-де",
+   "address": "Астана, Тұран даңғылы, 43В",
+   "lat": 51.123232,
+   "lon": 71.402249,
+   "phone": "+7(778) 955-3697",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Grand Turan Avenue 2 \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 43\\u0412\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 955-3697\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.402249\",\"lat\":\"51.123232\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Ұлы Дала даңғылында",
+   "address": "Астана, Ұлы Дала даңғылы, 41Б",
+   "lat": 51.097735,
+   "lon": 71.415652,
+   "phone": "+7(702) 705-7799",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u04b0\\u043b\\u044b \\u0414\\u0430\\u043b\\u0430 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u04b0\\u043b\\u044b \\u0414\\u0430\\u043b\\u0430 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 41\\u0411\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(702) 705-7799\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.415652\",\"lat\":\"51.097735\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Орталық саябақтағы сағаттың жанында",
+   "address": "Астана, Тұран даңғылы, 2г",
+   "lat": 51.153868,
+   "lon": 71.413514,
+   "phone": "+7(778) 099-0920",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u041e\\u0440\\u0442\\u0430\\u043b\\u044b\\u049b \\u0441\\u0430\\u044f\\u0431\\u0430\\u049b\\u0442\\u0430\\u0493\\u044b \\u0441\\u0430\\u0493\\u0430\\u0442\\u0442\\u044b\\u04a3 \\u0436\\u0430\\u043d\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 2\\u0433\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 099-0920\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.413514\",\"lat\":\"51.153868\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Рахмет ТСО-да",
+   "address": "Астана, Бауыржан Момышұлы даңғылы, 10",
+   "lat": 51.13894,
+   "lon": 71.476099,
+   "phone": "+7(708) 099-0191",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0420\\u0430\\u0445\\u043c\\u0435\\u0442 \\u0422\\u0421\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0411\\u0430\\u0443\\u044b\\u0440\\u0436\\u0430\\u043d \\u041c\\u043e\\u043c\\u044b\\u0448\\u04b1\\u043b\\u044b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 10\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 099-0191\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.476099\",\"lat\":\"51.138940\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Koktal СОО-да",
+   "address": "Астана, Тілендиев көшесі, 12А",
+   "lat": 51.181198,
+   "lon": 71.378875,
+   "phone": "+7(778) 099-2899",
+   "opening_hours_raw": "Mon-Sun 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Koktal \\u0421\\u041e\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u0456\\u043b\\u0435\\u043d\\u0434\\u0438\\u0435\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 12\\u0410\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 099-2899\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.378875\",\"lat\":\"51.181198\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Qyran ТК-де",
+   "address": null,
+   "lat": 51.134797,
+   "lon": 71.383762,
+   "phone": "+7(776) 944-9009",
+   "opening_hours_raw": "Mon-Sun 10:00-24:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Qyran \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 944-9009\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.383762\",\"lat\":\"51.134797\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "әуежайда 2",
+   "address": "Астана, Нұрсұлтан Назарбаев халықаралық әуежайы, ішкі рейстер терминалы, Gate D01",
+   "lat": 51.026815,
+   "lon": 71.460858,
+   "phone": null,
+   "opening_hours_raw": "Mon-Sun 00:00-00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "ambiguous_24h"
+   ],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u04d9\\u0443\\u0435\\u0436\\u0430\\u0439\\u0434\\u0430 2\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041d\\u04b1\\u0440\\u0441\\u04b1\\u043b\\u0442\\u0430\\u043d \\u041d\\u0430\\u0437\\u0430\\u0440\\u0431\\u0430\\u0435\\u0432 \\u0445\\u0430\\u043b\\u044b\\u049b\\u0430\\u0440\\u0430\\u043b\\u044b\\u049b \\u04d9\\u0443\\u0435\\u0436\\u0430\\u0439\\u044b, \\u0456\\u0448\\u043a\\u0456 \\u044",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.460858\",\"lat\":\"51.026815\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 00:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "В ЖК Headliner",
+   "address": "Астана, ул.Толе би, 50. ЖК Headliner",
+   "lat": 51.132604,
+   "lon": 71.398988,
+   "phone": "+7(708) 079-9979",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0412 \\u0416\\u041a Headliner\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0443\\u043b.\\u0422\\u043e\\u043b\\u0435 \\u0431\\u0438, 50. \\u0416\\u041a Headliner\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 079-9979\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.398988\",\"lat\":\"51.132604\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Apple City ТК-де",
+   "address": "Астана, Әлихан Бөкейхан көшесі, 25а, Apple City ТК",
+   "lat": 51.08654,
+   "lon": 71.428633,
+   "phone": "+7(776) 999-6911",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Apple City \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u04d8\\u043b\\u0438\\u0445\\u0430\\u043d \\u0411\\u04e9\\u043a\\u0435\\u0439\\u0445\\u0430\\u043d \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 25\\u0430, Apple City \\u0422\\u041a\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 999-6911\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.428633\",\"lat\":\"51.086540\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Республика 7-де",
+   "address": "Астана, Республика даңғылы, 7",
+   "lat": 51.160263,
+   "lon": 71.428345,
+   "phone": "+7(771) 533-9999",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0420\\u0435\\u0441\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430 7-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0420\\u0435\\u0441\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 7\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(771) 533-9999\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.428345\",\"lat\":\"51.160263\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Тұмар ТСО-да",
+   "address": "Астана, Сығанақ көшесі, 1Б",
+   "lat": 51.132644,
+   "lon": 71.366819,
+   "phone": "+7(700) 909-0890",
+   "opening_hours_raw": "Mon-Sun 09:00-23:00",
+   "opening_hours_osm": "Mo-Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0422\\u04b1\\u043c\\u0430\\u0440 \\u0422\\u0421\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0421\\u044b\\u0493\\u0430\\u043d\\u0430\\u049b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 1\\u0411\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(700) 909-0890\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.366819\",\"lat\":\"51.132644\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 09:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Целиноград ТК-де",
+   "address": "Астана, Күмісбеков көшесі, 9а",
+   "lat": 51.170401,
+   "lon": 71.397668,
+   "phone": "+7(771) 915-9995",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0426\\u0435\\u043b\\u0438\\u043d\\u043e\\u0433\\u0440\\u0430\\u0434 \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041a\\u04af\\u043c\\u0456\\u0441\\u0431\\u0435\\u043a\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 9\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(771) 915-9995\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.397668\",\"lat\":\"51.170401\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "В ЖК Dara Residence",
+   "address": null,
+   "lat": 51.133271,
+   "lon": 71.431327,
+   "phone": "+7(776) 965-9599",
+   "opening_hours_raw": "Mon-Sun 00:00-00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "ambiguous_24h"
+   ],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0412 \\u0416\\u041a Dara Residence\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 965-9599\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.431327\",\"lat\":\"51.133271\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 00:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Жүргенов көшесінде",
+   "address": null,
+   "lat": 51.11331,
+   "lon": 71.503022,
+   "phone": "+7(708) 495-9999",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0416\\u04af\\u0440\\u0433\\u0435\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456\\u043d\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 495-9999\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.503022\",\"lat\":\"51.113310\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Capital Park ТК-де",
+   "address": "Астана, Әл-Фараби даңғылы, 9",
+   "lat": 51.098357,
+   "lon": 71.451126,
+   "phone": "+7(777) 677-9994",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Capital Park \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u04d8\\u043b-\\u0424\\u0430\\u0440\\u0430\\u0431\\u0438 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 9\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(777) 677-9994\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.451126\",\"lat\":\"51.098357\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Самал шағынауданында",
+   "address": "Астана, Самал шағынауданы, 11",
+   "lat": 51.15371,
+   "lon": 71.429414,
+   "phone": "+7(707) 956-9996",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0421\\u0430\\u043c\\u0430\\u043b \\u0448\\u0430\\u0493\\u044b\\u043d\\u0430\\u0443\\u0434\\u0430\\u043d\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0421\\u0430\\u043c\\u0430\\u043b \\u0448\\u0430\\u0493\\u044b\\u043d\\u0430\\u0443\\u0434\\u0430\\u043d\\u044b, 11\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(707) 956-9996\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.429414\",\"lat\":\"51.153710\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Тұран 55-те",
+   "address": "Астана, Тұран даңғылы, 55Д",
+   "lat": 51.114836,
+   "lon": 71.398117,
+   "phone": "+7(776) 490-9669",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0422\\u04b1\\u0440\\u0430\\u043d 55-\\u0442\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 55\\u0414\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 490-9669\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.398117\",\"lat\":\"51.114836\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Akbulak Riviera ТК-де",
+   "address": "Астана, Амман көшесі, 21",
+   "lat": 51.148145,
+   "lon": 71.444173,
+   "phone": "+7(776) 490-4994",
+   "opening_hours_raw": "Mon-Sun 08:00-22:00",
+   "opening_hours_osm": "Mo-Su 08:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Akbulak Riviera \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0410\\u043c\\u043c\\u0430\\u043d \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 21\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 490-4994\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.444173\",\"lat\":\"51.148145\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Мұрагер» ТК-де",
+   "address": "Астана, Тәуелсіздік даңғылы, 23",
+   "lat": 51.144376,
+   "lon": 71.460478,
+   "phone": "+7(705) 899-9797",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u041c\\u04b1\\u0440\\u0430\\u0433\\u0435\\u0440\\u00bb \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04d9\\u0443\\u0435\\u043b\\u0441\\u0456\\u0437\\u0434\\u0456\\u043a \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 23\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(705) 899-9797\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.460478\",\"lat\":\"51.144376\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Тұран 18» БО-да",
+   "address": "Астана, Тұран даңғылы, 18",
+   "lat": 51.142082,
+   "lon": 71.411493,
+   "phone": "+7(707) 847-6999",
+   "opening_hours_raw": "Mon-Sun 08:00-18:00",
+   "opening_hours_osm": "Mo-Su 08:00-18:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u0422\\u04b1\\u0440\\u0430\\u043d 18\\u00bb \\u0411\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 18\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(707) 847-6999\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.411493\",\"lat\":\"51.142082\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-18:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Сарыарқа СОО-да",
+   "address": "Астана, Тұран даңғылы, 24",
+   "lat": 51.138239,
+   "lon": 71.410756,
+   "phone": null,
+   "opening_hours_raw": "Mon-Sun 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0421\\u0430\\u0440\\u044b\\u0430\\u0440\\u049b\\u0430 \\u0421\\u041e\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 24\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.410756\",\"lat\":\"51.138239\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "ҚТЖ-да",
+   "address": "Астана, Дінмұхамед Қонаев көшесі, 6",
+   "lat": 51.131095,
+   "lon": 71.421563,
+   "phone": null,
+   "opening_hours_raw": "Mon-Sun 08:30-18:30",
+   "opening_hours_osm": "Mo-Su 08:30-18:30",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u049a\\u0422\\u0416-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0414\\u0456\\u043d\\u043c\\u04b1\\u0445\\u0430\\u043c\\u0435\\u0434 \\u049a\\u043e\\u043d\\u0430\\u0435\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 6\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.421563\",\"lat\":\"51.131095\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:30-18:30\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Атлант» ТК-де",
+   "address": "Астана, Сарайшық көшесі, 6",
+   "lat": 51.135046,
+   "lon": 71.419613,
+   "phone": "+7(776) 099-9070",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u0410\\u0442\\u043b\\u0430\\u043d\\u0442\\u00bb \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0421\\u0430\\u0440\\u0430\\u0439\\u0448\\u044b\\u049b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 6\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 099-9070\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.419613\",\"lat\":\"51.135046\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Мұқанов көшесіндегі Мамандандырылған ХҚКО",
+   "address": "Астана, Мұқанов көшесі, 2",
+   "lat": 51.207693,
+   "lon": 71.318239,
+   "phone": null,
+   "opening_hours_raw": "Mon-Fri 09:00-18:00",
+   "opening_hours_osm": "Mo-Fr 09:00-18:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u041c\\u04b1\\u049b\\u0430\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456\\u043d\\u0434\\u0435\\u0433\\u0456 \\u041c\\u0430\\u043c\\u0430\\u043d\\u0434\\u0430\\u043d\\u0434\\u044b\\u0440\\u044b\\u043b\\u0493\\u0430\\u043d \\u0425\\u049a\\u041a\\u041e\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041c\\u04b1\\u049b\\u0430\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 2\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.318239\",\"lat\":\"51.207693\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Fri 09:00-18:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Y'ES Apart-та",
+   "address": "Астана, Түркістан көшесі, 16",
+   "lat": 51.106937,
+   "lon": 71.425237,
+   "phone": "+7(777) 409-9900",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Y'ES Apart-\\u0442\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04af\\u0440\\u043a\\u0456\\u0441\\u0442\\u0430\\u043d \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 16\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(777) 409-9900\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.425237\",\"lat\":\"51.106937\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Promenade Expo ТК-де",
+   "address": "Астана, Мәңгілік Ел даңғылы, 53",
+   "lat": 51.093798,
+   "lon": 71.425515,
+   "phone": "+7(708) 090-9797",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Promenade Expo \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041c\\u04d9\\u04a3\\u0433\\u0456\\u043b\\u0456\\u043a \\u0415\\u043b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 53\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 090-9797\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.425515\",\"lat\":\"51.093798\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Expo-да",
+   "address": "Астана қ., Мәңгілік Ел даңғылы, 55, B2.4",
+   "lat": 51.088639,
+   "lon": 71.415203,
+   "phone": "+7(771) 909-0890",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Expo-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b., \\u041c\\u04d9\\u04a3\\u0433\\u0456\\u043b\\u0456\\u043a \\u0415\\u043b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 55, B2.4\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(771) 909-0890\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.415203\",\"lat\":\"51.088639\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Highvill Ishim ТК-де",
+   "address": "Астана, Шәмші Қалдаяқов көшесі, 3",
+   "lat": 51.118873,
+   "lon": 71.459166,
+   "phone": "+7(777) 099-9004",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Highvill Ishim \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0428\\u04d9\\u043c\\u0448\\u0456 \\u049a\\u0430\\u043b\\u0434\\u0430\\u044f\\u049b\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 3\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(777) 099-9004\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.459166\",\"lat\":\"51.118873\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Keruen City-де",
+   "address": "Астана, Қорғалжын тасжолы, 1",
+   "lat": 51.145371,
+   "lon": 71.414107,
+   "phone": "+7(702) 989-8909",
+   "opening_hours_raw": "Mon-Sun 10:00-00:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Keruen City-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u049a\\u043e\\u0440\\u0493\\u0430\\u043b\\u0436\\u044b\\u043d \\u0442\\u0430\\u0441\\u0436\\u043e\\u043b\\u044b, 1\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(702) 989-8909\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.414107\",\"lat\":\"51.145371\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Оқушылар сарайының жанында",
+   "address": "Астана, Әзербайжан Мәмбетов көшесі, 16",
+   "lat": 51.162545,
+   "lon": 71.424366,
+   "phone": "+7(747) 199-9490",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u041e\\u049b\\u0443\\u0448\\u044b\\u043b\\u0430\\u0440 \\u0441\\u0430\\u0440\\u0430\\u0439\\u044b\\u043d\\u044b\\u04a3 \\u0436\\u0430\\u043d\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u04d8\\u0437\\u0435\\u0440\\u0431\\u0430\\u0439\\u0436\\u0430\\u043d \\u041c\\u04d9\\u043c\\u0431\\u0435\\u0442\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 16\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(747) 199-9490\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.424366\",\"lat\":\"51.162545\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Liberty» ТК-де",
+   "address": null,
+   "lat": 51.139528,
+   "lon": 71.394425,
+   "phone": "+7(771) 999-3932",
+   "opening_hours_raw": "Mon-Sun 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00abLiberty\\u00bb \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(771) 999-3932\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.394425\",\"lat\":\"51.139528\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Ботаникалық бақтың жанында",
+   "address": "Астана, Бұқар жырау көшесі, 28",
+   "lat": 51.101083,
+   "lon": 71.415841,
+   "phone": "+7(771) 999-3934",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0411\\u043e\\u0442\\u0430\\u043d\\u0438\\u043a\\u0430\\u043b\\u044b\\u049b \\u0431\\u0430\\u049b\\u0442\\u044b\\u04a3 \\u0436\\u0430\\u043d\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0411\\u04b1\\u049b\\u0430\\u0440 \\u0436\\u044b\\u0440\\u0430\\u0443 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 28\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(771) 999-3934\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.415841\",\"lat\":\"51.101083\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Тәуелсіздік-де 2",
+   "address": "Астана, Тәуелсіздік даң., 4А",
+   "lat": 51.150404,
+   "lon": 71.457978,
+   "phone": "+7(701) 299-1119",
+   "opening_hours_raw": "Mon-Sun 11:00-24:00",
+   "opening_hours_osm": "Mo-Su 11:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0422\\u04d9\\u0443\\u0435\\u043b\\u0441\\u0456\\u0437\\u0434\\u0456\\u043a-\\u0434\\u0435 2\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04d9\\u0443\\u0435\\u043b\\u0441\\u0456\\u0437\\u0434\\u0456\\u043a \\u0434\\u0430\\u04a3., 4\\u0410\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(701) 299-1119\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.457978\",\"lat\":\"51.150404\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 11:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Life Park ТҮК-де",
+   "address": "Астана, Орынбор көшесі, 12",
+   "lat": 51.111732,
+   "lon": 71.406866,
+   "phone": null,
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Life Park \\u0422\\u04ae\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041e\\u0440\\u044b\\u043d\\u0431\\u043e\\u0440 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 12\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.406866\",\"lat\":\"51.111732\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Зеленый квартал» ТҮК-де",
+   "address": "Астана, Сығанақ к-сі, 17П, НП-14",
+   "lat": 51.13118,
+   "lon": 71.387472,
+   "phone": "+7(778) 555-9380",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u0417\\u0435\\u043b\\u0435\\u043d\\u044b\\u0439 \\u043a\\u0432\\u0430\\u0440\\u0442\\u0430\\u043b\\u00bb \\u0422\\u04ae\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0421\\u044b\\u0493\\u0430\\u043d\\u0430\\u049b \\u043a-\\u0441\\u0456, 17\\u041f, \\u041d\\u041f-14\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 555-9380\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.387472\",\"lat\":\"51.131180\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Әуежайда",
+   "address": "Нұрсұлтан Назарбаев халықаралық әуежайы, 2-Терминал, CIP",
+   "lat": 51.026823,
+   "lon": 71.460846,
+   "phone": null,
+   "opening_hours_raw": "Mon-Sun 00:00-00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "ambiguous_24h"
+   ],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u04d8\\u0443\\u0435\\u0436\\u0430\\u0439\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u041d\\u04b1\\u0440\\u0441\\u04b1\\u043b\\u0442\\u0430\\u043d \\u041d\\u0430\\u0437\\u0430\\u0440\\u0431\\u0430\\u0435\\u0432 \\u0445\\u0430\\u043b\\u044b\\u049b\\u0430\\u0440\\u0430\\u043b\\u044b\\u049b \\u04d9\\u0443\\u0435\\u0436\\u0430\\u0439\\u044b, 2-\\u0422\\u0435\\u0440\\u043c\\u0438\\u043d\\u0430\\u043b, CIP\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.460846\",\"lat\":\"51.026823\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 00:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Central Park» ТҮК-де",
+   "address": "Астана, Тұран даңғылы, 3",
+   "lat": 51.153032,
+   "lon": 71.409822,
+   "phone": "+7(775) 110-9995",
+   "opening_hours_raw": "Mon-Sun 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00abCentral Park\\u00bb \\u0422\\u04ae\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 3\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(775) 110-9995\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.409822\",\"lat\":\"51.153032\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Жібек Жолы» СО-да",
+   "address": "Астана, Абылай хан д-лы, 29, «Жібек Жолы» СО",
+   "lat": 51.155348,
+   "lon": 71.485011,
+   "phone": "+7(701) 094-4499",
+   "opening_hours_raw": "Mon-Sun 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u0416\\u0456\\u0431\\u0435\\u043a \\u0416\\u043e\\u043b\\u044b\\u00bb \\u0421\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0410\\u0431\\u044b\\u043b\\u0430\\u0439 \\u0445\\u0430\\u043d \\u0434-\\u043b\\u044b, 29, \\u00ab\\u0416\\u0456\\u0431\\u0435\\u043a \\u0416\\u043e\\u043b\\u044b\\u00bb \\u0421\\u041e\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(701) 094-4499\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.485011\",\"lat\":\"51.155348\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Абу-Даби Плазасында",
+   "address": null,
+   "lat": 51.121972,
+   "lon": 71.428004,
+   "phone": "+7(705) 423-2026",
+   "opening_hours_raw": "Mon-Sun 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0410\\u0431\\u0443-\\u0414\\u0430\\u0431\\u0438 \\u041f\\u043b\\u0430\\u0437\\u0430\\u0441\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(705) 423-2026\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.428004\",\"lat\":\"51.121972\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«ХАН-ШАТЫР» СОО-да",
+   "address": "Астана, Тұран 37, Хан Шатыр СОО",
+   "lat": 51.132405,
+   "lon": 71.403421,
+   "phone": "+7(778) 099-5499",
+   "opening_hours_raw": "Mon-Sun 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u0425\\u0410\\u041d-\\u0428\\u0410\\u0422\\u042b\\u0420\\u00bb \\u0421\\u041e\\u041e-\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0422\\u04b1\\u0440\\u0430\\u043d 37, \\u0425\\u0430\\u043d \\u0428\\u0430\\u0442\\u044b\\u0440 \\u0421\\u041e\\u041e\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 099-5499\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.403421\",\"lat\":\"51.132405\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Нурсая-2» тұрғын үй кешені",
+   "address": "Астана қаласы, Достық көшесі, 13",
+   "lat": 51.126065,
+   "lon": 71.43383,
+   "phone": "+7(747) 509-9909",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u041d\\u0443\\u0440\\u0441\\u0430\\u044f-2\\u00bb \\u0442\\u04b1\\u0440\\u0493\\u044b\\u043d \\u04af\\u0439 \\u043a\\u0435\\u0448\\u0435\\u043d\\u0456\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0414\\u043e\\u0441\\u0442\\u044b\\u049b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 13\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(747) 509-9909\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.433830\",\"lat\":\"51.126065\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Highvill тұрғын үй кешені",
+   "address": null,
+   "lat": 51.127091,
+   "lon": 71.469218,
+   "phone": "+7(778) 999-4590",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Highvill \\u0442\\u04b1\\u0440\\u0493\\u044b\\u043d \\u04af\\u0439 \\u043a\\u0435\\u0448\\u0435\\u043d\\u0456\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 999-4590\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.469218\",\"lat\":\"51.127091\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Мәңгілік Ел даңғылында",
+   "address": "Астана, Мәңгілік ел даңғылы, 28 үй",
+   "lat": 51.110867,
+   "lon": 71.433297,
+   "phone": "+7(701) 077-7909",
+   "opening_hours_raw": "Mon-Sun 08:00-22:00",
+   "opening_hours_osm": "Mo-Su 08:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u041c\\u04d9\\u04a3\\u0433\\u0456\\u043b\\u0456\\u043a \\u0415\\u043b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u041c\\u04d9\\u04a3\\u0433\\u0456\\u043b\\u0456\\u043a \\u0435\\u043b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 28 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(701) 077-7909\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.433297\",\"lat\":\"51.110867\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Тұран даңғылында",
+   "address": "Астана қаласы, Тұран даңғылы 22 үй, ТҮ 6",
+   "lat": 51.140549,
+   "lon": 71.410707,
+   "phone": "+7(778) 978-9998",
+   "opening_hours_raw": "Mon-Sun 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0422\\u04b1\\u0440\\u0430\\u043d \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b 22 \\u04af\\u0439, \\u0422\\u04ae 6\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 978-9998\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.410707\",\"lat\":\"51.140549\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Жеңіс даңғылында",
+   "address": "Астана қаласы, Жеңіс даңғылы, 28",
+   "lat": 51.173426,
+   "lon": 71.412234,
+   "phone": "+7(707) 409-9909",
+   "opening_hours_raw": "Mon-Sun 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0416\\u0435\\u04a3\\u0456\\u0441 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0416\\u0435\\u04a3\\u0456\\u0441 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 28\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(707) 409-9909\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.412234\",\"lat\":\"51.173426\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Highvill 2 тұрғын үй кешені",
+   "address": null,
+   "lat": 51.127091,
+   "lon": 71.469218,
+   "phone": "+7(778) 099-9945",
+   "opening_hours_raw": "Mon-Sun 09:00-24:00",
+   "opening_hours_osm": "Mo-Su 09:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Highvill 2 \\u0442\\u04b1\\u0440\\u0493\\u044b\\u043d \\u04af\\u0439 \\u043a\\u0435\\u0448\\u0435\\u043d\\u0456\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 099-9945\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.469218\",\"lat\":\"51.127091\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 09:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "MEGA Silk Way",
+   "address": "Астана қаласы, Қабанбай батыр даңғылы, 62 үй",
+   "lat": 51.089308,
+   "lon": 71.409321,
+   "phone": "+7(708) 999-0908",
+   "opening_hours_raw": "Mon-Sun 10:00-24:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"MEGA Silk Way\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u049a\\u0430\\u0431\\u0430\\u043d\\u0431\\u0430\\u0439 \\u0431\\u0430\\u0442\\u044b\\u0440 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 62 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 999-0908\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.409321\",\"lat\":\"51.089308\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Бейбiтшiлiк көшесінде",
+   "address": "Астана қаласы, Бейбiтшiлiк көшесі, 35 үй",
+   "lat": 51.176038,
+   "lon": 71.418066,
+   "phone": "+7(708) 999-0098",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0411\\u0435\\u0439\\u0431i\\u0442\\u0448i\\u043bi\\u043a \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456\\u043d\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0411\\u0435\\u0439\\u0431i\\u0442\\u0448i\\u043bi\\u043a \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 35 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 999-0098\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.418066\",\"lat\":\"51.176038\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Керуен» ойын-сауық орталығы",
+   "address": "Астана қаласы, Достық көшесі, 9 үй",
+   "lat": 51.127817,
+   "lon": 71.425691,
+   "phone": "+7(776) 999-0912",
+   "opening_hours_raw": "Mon-Sun 10:00-22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u041a\\u0435\\u0440\\u0443\\u0435\\u043d\\u00bb \\u043e\\u0439\\u044b\\u043d-\\u0441\\u0430\\u0443\\u044b\\u049b \\u043e\\u0440\\u0442\\u0430\\u043b\\u044b\\u0493\\u044b\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0414\\u043e\\u0441\\u0442\\u044b\\u049b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 9 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(776) 999-0912\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.425691\",\"lat\":\"51.127817\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 10:00-22:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Тәуелсіздік даңғылында",
+   "address": "Астана қаласы, Тәуелсіздік даңғылы, 4А үй",
+   "lat": 51.150404,
+   "lon": 71.457978,
+   "phone": "+7(702) 999-9011",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0422\\u04d9\\u0443\\u0435\\u043b\\u0441\\u0456\\u0437\\u0434\\u0456\\u043a \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0422\\u04d9\\u0443\\u0435\\u043b\\u0441\\u0456\\u0437\\u0434\\u0456\\u043a \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 4\\u0410 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(702) 999-9011\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.457978\",\"lat\":\"51.150404\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Кенесары көшесінде",
+   "address": "Астана қаласы, Кенесары көшесі, 22 үй",
+   "lat": 51.163953,
+   "lon": 71.417016,
+   "phone": "+7(705) 757-0000",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u041a\\u0435\\u043d\\u0435\\u0441\\u0430\\u0440\\u044b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456\\u043d\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u041a\\u0435\\u043d\\u0435\\u0441\\u0430\\u0440\\u044b \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 22 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(705) 757-0000\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.417016\",\"lat\":\"51.163953\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Құдайбердіұлы даңғылында»",
+   "address": "Астана қаласы, Ш.Құдайбердіұлы даңғылы, 19в",
+   "lat": 51.157224,
+   "lon": 71.497919,
+   "phone": "+7(708) 999-0080",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00ab\\u049a\\u04b1\\u0434\\u0430\\u0439\\u0431\\u0435\\u0440\\u0434\\u0456\\u04b1\\u043b\\u044b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\\u043d\\u0434\\u0430\\u00bb\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u0428.\\u049a\\u04b1\\u0434\\u0430\\u0439\\u0431\\u0435\\u0440\\u0434\\u0456\\u04b1\\u043b\\u044b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 19\\u0432\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 999-0080\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.497919\",\"lat\":\"51.157224\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Қабанбай батыр даңғылы",
+   "address": "Астана қаласы, Қабанбай батыр даңғылы, 5Б",
+   "lat": 51.146213,
+   "lon": 71.418293,
+   "phone": "+7(747) 749-9991",
+   "opening_hours_raw": "Mon-Sun 09:00-23:00",
+   "opening_hours_osm": "Mo-Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u049a\\u0430\\u0431\\u0430\\u043d\\u0431\\u0430\\u0439 \\u0431\\u0430\\u0442\\u044b\\u0440 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u049a\\u0430\\u0431\\u0430\\u043d\\u0431\\u0430\\u0438\\u0306 \\u0431\\u0430\\u0442\\u044b\\u0440 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 5\\u0411\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(747) 749-9991\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.418293\",\"lat\":\"51.146213\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 09:00-23:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "«Dream City» тұрғын үй кешенінде",
+   "address": "Астана қаласы, Мәңгілік Ел даңғылы, 47 үй",
+   "lat": 51.097328,
+   "lon": 71.426611,
+   "phone": "+7(778) 999-4905",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u00abDream City\\u00bb \\u0442\\u04b1\\u0440\\u0493\\u044b\\u043d \\u04af\\u0439 \\u043a\\u0435\\u0448\\u0435\\u043d\\u0456\\u043d\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430 \\u049b\\u0430\\u043b\\u0430\\u0441\\u044b, \\u041c\\u04d9\\u04a3\\u0433\\u0456\\u043b\\u0456\\u043a \\u0415\\u043b \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 47 \\u04af\\u0439\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(778) 999-4905\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.426611\",\"lat\":\"51.097328\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Республика 30-де",
+   "address": "Астана, Республика даңғылы, 30",
+   "lat": 51.167781,
+   "lon": 71.427249,
+   "phone": "+7(701) 613-2803",
+   "opening_hours_raw": "Mon-Sun 08:00-24:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"\\u0420\\u0435\\u0441\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430 30-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0420\\u0435\\u0441\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430 \\u0434\\u0430\\u04a3\\u0493\\u044b\\u043b\\u044b, 30\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(701) 613-2803\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.427249\",\"lat\":\"51.167781\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-24:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Parkside ТК-дегі CBRB",
+   "address": null,
+   "lat": 51.106001,
+   "lon": 71.424459,
+   "phone": "+7(777) 409-9900",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Parkside \\u0422\\u041a-\\u0434\\u0435\\u0433\\u0456 CBRB \"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(777) 409-9900\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.424459\",\"lat\":\"51.106001\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Bailyq ТК-де",
+   "address": "Астана, Ахмет Байтұрсынов көшесі, 32",
+   "lat": 51.115221,
+   "lon": 71.525624,
+   "phone": "+7(708) 009-9029",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"Bailyq \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0410\\u0445\\u043c\\u0435\\u0442 \\u0411\\u0430\\u0439\\u0442\\u04b1\\u0440\\u0441\\u044b\\u043d\\u043e\\u0432 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 32\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(708) 009-9029\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.525624\",\"lat\":\"51.115221\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "GreenLine. Sakura ТК-де",
+   "address": "Астана, Е-900 көшесі, 8, GreenLine. Sakura ТК",
+   "lat": 51.135854,
+   "lon": 71.394407,
+   "phone": "+7(707) 609-9961",
+   "opening_hours_raw": "Mon-Sun 08:00-00:00",
+   "opening_hours_osm": "Mo-Su 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"name\":\"GreenLine. Sakura \\u0422\\u041a-\\u0434\\u0435\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"address\":\"\\u0410\\u0441\\u0442\\u0430\\u043d\\u0430, \\u0415-900 \\u043a\\u04e9\\u0448\\u0435\\u0441\\u0456, 8, GreenLine. Sakura \\u0422\\u041a\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"phone\":\"+7(707) 609-9961\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"lng\":\"71.394407\",\"lat\":\"51.135854\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://coffeeboom.kz/e/437/getCoffeeshops/?city=16",
+     "snippet": "\"work_time\":\"Mon-Sun 08:00-00:00\"",
+     "fetched_at": "2026-10-17T09:24:28+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "Data = JSON endpoint /e/437/getCoffeeshops/ (the map's data-ajax source, city=16 is Astana; the box lat 50.98-51.25 lon 71.25-71.65 re-checked per shop). work_time is already OSM-like 'Mon-Sun 08:00-24:00'; converted with the framework rules (00:00 -> 24:00). Non-Astana cities present in the endpoint (Алматы etc.) skipped. The 'Желі офисі' contact on /about/contacts/ is the chain office, not a cafe; its phones are chain-wide and not stored per branch.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

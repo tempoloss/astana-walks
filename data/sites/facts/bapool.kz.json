@@ -1,0 +1,9 @@
+{
+ "domain": "bapool.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt explicitly disallows all paths for user-agent astana-walks => nothing stored for Barys Arena Pool.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

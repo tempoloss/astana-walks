@@ -1,0 +1,37 @@
+{
+ "partition": "p1",
+ "weight": 6.0,
+ "items": [
+  {
+   "domain": "e-museum.kz",
+   "poi_ids": [
+    "way/240376692",
+    "way/240391776",
+    "overture/d2f834c2-bedd-4e70-9d4f-0e62c98a5298",
+    "overture/7972273c-f99e-4cd9-b552-c94b2a59adde",
+    "node/11968737470"
+   ],
+   "names": [
+    "Музей Сакена Сейфуллина",
+    "Государственный военно-исторический музей",
+    "Военно-Исторический музей ВС РК",
+    "ҚР ҚК Әскери-тарихи музейі",
+    "Городище Бозок"
+   ],
+   "categories": {
+    "museum_gallery": 4,
+    "attraction_landmark": 1
+   },
+   "wikidata_ids": [],
+   "robots": "allowed (Disallow: /wp-admin/ only; REST /wp-json/ open)",
+   "notes": "ГИС «Музеи Казахстана» (WP REST, keyless): GET /wp-json/wp/v2/museum?region=3952&lang=ru — 5 unique cards, of which 4 Astana museums + «Алжир» (Ақмол ауылы, region filter leaks it). work_hours + ticket_price filled on all 5 (verified 2026-10-17). The Сейфуллин card's `site` field points to astanamuseums.kz — unreachable (connect timeout, likely parked); the Алжир card's `site` museum-alzhir.kz blocks robots. Cards: Национальный музей Республики Казахстан https://e-museum.kz/ru/museum/68da379b4b4fb9d59-ru/; Музей Сакена Сейфуллина https://e-museum.kz/ru/museum/68da37a0228ab7ad4-ru/; Военно-исторический музей ВС Республики Казахстан https://e-museum.kz/ru/museum/68da379da9894247d-ru/; Государственный историко-культурный музей-заповедник «Бозоқ» https://e-museum.kz/ru/museum/68da37a2c72b30113-ru/",
+   "origin": [
+    "e_museum_register"
+   ],
+   "poi_count": 5,
+   "status": "collected"
+  }
+ ],
+ "domain_count": 1,
+ "poi_count": 5
+}

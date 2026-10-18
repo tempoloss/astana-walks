@@ -1,0 +1,34 @@
+{
+ "kv_tile_z14_center": {
+  "code": 200,
+  "lines": 71
+ },
+ "kv_photo_r500_hanshatyr": {
+  "code": 200,
+  "rows": 2,
+  "hasMore": false
+ },
+ "kv_photo_r10000": {
+  "code": 400,
+  "body": "{\"code\":400,\"reason\":\"VALIDATOR\",\"message\":\"invalid GetPhotosV2Request.Radius: value must be inside range [1, 500]\",\"metadata\":{}}"
+ },
+ "osc_photo_r500": {
+  "code": 200,
+  "body": "{\"status\":{\"apiCode\":600,\"apiMessage\":\"The request has been processed without incidents\",\"httpCode\":200,\"httpMessage\":\"S"
+ },
+ "mly_tile_notoken": {
+  "code": 403
+ },
+ "graph_root": {
+  "code": 500,
+  "body": "{\"error\":{\"message\":\"Invalid OAuth 2.0 Access Token\",\"type\":\"MLYApiException\",\"code\":190,\"error_data\":{},\"fbtrace_id\":\"A"
+ },
+ "dns_a_mapillary": {
+  "code": 200,
+  "status": 3
+ },
+ "panoramax_astana": {
+  "code": 200,
+  "features": 4
+ }
+}

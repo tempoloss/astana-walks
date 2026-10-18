@@ -1,0 +1,501 @@
+{
+ "source": "OpenStreetMap contributors (ODbL)",
+ "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+ "area_id": 3603087155,
+ "fetched_at": "2026-10-17T12:31:28+00:00",
+ "queries": {
+  "names": "[out:json][timeout:120];\narea(3603087155)->.a;\n(\n  nwr(area.a)[~\"^(name|name:ru|name:kk|name:en|alt_name|official_name|short_name|operator|brand)$\"~\"ЦОН|ХҚКО|Центр обслуживания населения|Халыққа қызмет көрсету орталығы|Правительство для граждан|Public Service Cent\",i];\n  nwr(area.a)[\"amenity\"=\"public_service\"];\n);\nout center tags;\n",
+  "address": [
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"9A\"][\"addr:street\"~\"ж[аә][нң][гғ][ийыі]лд[ийыі][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"9a\"][\"addr:street\"~\"ж[аә][нң][гғ][ийыі]лд[ийыі][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"9А\"][\"addr:street\"~\"ж[аә][нң][гғ][ийыі]лд[ийыі][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"9а\"][\"addr:street\"~\"ж[аә][нң][гғ][ийыі]лд[ийыі][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"2\"][\"addr:street\"~\"[аә][уүұ][еэё]лс[ийыі]зд[ийыі][кқ]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"4/2\"][\"addr:street\"~\"т[уүұ]р[аә][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"47\"][\"addr:street\"~\"[аә]б[аә][нң]б[аә]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"7/1\"][\"addr:street\"~\"[аә]ж[ийыі]м[уүұ][кқ][аә][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"14\"][\"addr:street\"~\"[еэё][нң][еэё]с[аә]р\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"48\"][\"addr:street\"~\"т[уүұ]р[аә][нң]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"30\"][\"addr:street\"~\"[аә][нң][гғ][ийыі]л[ийыі][кқ]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"4\"][\"addr:street\"~\"[аә][нң][ийыі]б[еэё][кқ]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"25\"][\"addr:street\"~\"[аә]тб[аә][еэё]в\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"16/1\"][\"addr:street\"~\"[аә][уүұ][еэё]лс[ийыі]зд[ийыі][кқ]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"20\"][\"addr:street\"~\"[ийыі]м[аә][нң][оө]в\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"13\"][\"addr:street\"~\"[еэё]р[кқ][еэё]б[аә][еэё]в\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"43\"][\"addr:street\"~\"[еэё]сп[уүұ]бл[ийыі][кқ]\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"2\"][\"addr:street\"~\"[уүұ][кқ][аә][нң][оө]в\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"14A\"][\"addr:street\"~\"[нң]д[ийыі]р[ийыі]с\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"14a\"][\"addr:street\"~\"[нң]д[ийыі]р[ийыі]с\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"14А\"][\"addr:street\"~\"[нң]д[ийыі]р[ийыі]с\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"14а\"][\"addr:street\"~\"[нң]д[ийыі]р[ийыі]с\",i];\n);\nout center tags;\n",
+   "[out:json][timeout:180];\narea(3603087155)->.a;\n(\n  nwr(area.a)[\"addr:housenumber\"=\"2/1\"][\"addr:street\"~\"[оө]м[ийыі]ш[уүұ]л\",i];\n);\nout center tags;\n"
+  ]
+ },
+ "address_targets": [
+  {
+   "key": "джангилдин",
+   "house": "9а",
+   "status": "partial",
+   "elements": 0,
+   "errors": [
+    "POST https://maps.mail.ru/osm/tools/overpass/api/interpreter: failed after 3 attempts (HTTP 504)"
+   ]
+  },
+  {
+   "key": "тауелсиздик",
+   "house": "2",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "туран",
+   "house": "4/2",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "кабанба батир",
+   "house": "47",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "кажимукан",
+   "house": "7/1",
+   "status": "ok",
+   "elements": 0
+  },
+  {
+   "key": "кенесар",
+   "house": "14",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "туран",
+   "house": "48",
+   "status": "ok",
+   "elements": 2
+  },
+  {
+   "key": "мангилик ел",
+   "house": "30",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "кере жанибек хандар",
+   "house": "4",
+   "status": "ok",
+   "elements": 4
+  },
+  {
+   "key": "сатбаев",
+   "house": "25",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "тауелсиздик",
+   "house": "16/1",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "иманов",
+   "house": "20",
+   "status": "ok",
+   "elements": 2
+  },
+  {
+   "key": "ермек серкебаев",
+   "house": "13",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "республик",
+   "house": "43",
+   "status": "ok",
+   "elements": 1
+  },
+  {
+   "key": "муканов",
+   "house": "2",
+   "status": "ok",
+   "elements": 3
+  },
+  {
+   "key": "а 82",
+   "house": "8",
+   "status": "failed",
+   "elements": 0,
+   "errors": [
+    "street name too short for a safe regex: not queried"
+   ]
+  },
+  {
+   "key": "ондирис",
+   "house": "14а",
+   "status": "partial",
+   "elements": 0,
+   "errors": [
+    "POST https://maps.mail.ru/osm/tools/overpass/api/interpreter: failed after 3 attempts (HTTP 504)"
+   ]
+  },
+  {
+   "key": "момишул",
+   "house": "2/1",
+   "status": "ok",
+   "elements": 1
+  }
+ ],
+ "elements": [
+  {
+   "ref": "node/10585575515",
+   "lat": 51.1082056,
+   "lon": 71.4323225,
+   "tags": {
+    "name": "Есіл ауданының №1 ХҚКО",
+    "name:ru": "ЦОН №1 Есильского района",
+    "name:kk": "Есіл ауданының №1 ХҚКО",
+    "office": "government"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/13072588641",
+   "lat": 51.1167715,
+   "lon": 71.404453,
+   "tags": {
+    "name": "Нұра ауданының ХҚКО",
+    "name:ru": "ЦОН района Нұра",
+    "office": "government",
+    "government": "public_service"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/2389205825",
+   "lat": 51.1192283,
+   "lon": 71.4188363,
+   "tags": {
+    "name": "Центр обслуживания населения района Есиль",
+    "amenity": "townhall"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/2635978785",
+   "lat": 51.1735932,
+   "lon": 71.4253229,
+   "tags": {
+    "name": "ЦОН района «Сарыарка»"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/4081435784",
+   "lat": 51.1526508,
+   "lon": 71.4860762,
+   "tags": {
+    "name": "Центр обслуживания населения",
+    "office": "government"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/5142315524",
+   "lat": 51.1416485,
+   "lon": 71.4112441,
+   "tags": {
+    "name": "НАО государственная корпорация правительство для граждан",
+    "name:ru": "НАО государственная корпорация правительство для граждан",
+    "office": "government"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/5887224792",
+   "lat": 51.1414584,
+   "lon": 71.4642677,
+   "tags": {
+    "name": "ЦОН номер 4",
+    "office": "government"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "node/6908055615",
+   "lat": 51.1662411,
+   "lon": 71.4618802,
+   "tags": {
+    "name": "ЦОН района Байконыр",
+    "office": "government"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/1076838601",
+   "lat": 51.11672,
+   "lon": 71.4042085,
+   "tags": {
+    "name": "ОК",
+    "addr:street": "Керей Және Жәнібек Хандар көшесі",
+    "addr:housenumber": "4",
+    "office": "yes",
+    "building": "office"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/1460088073",
+   "lat": 51.1081675,
+   "lon": 71.4027796,
+   "tags": {
+    "name": "Астана Арена",
+    "name:en": "Astana Arena",
+    "addr:street": "Тұран даңғылы",
+    "addr:housenumber": "48",
+    "leisure": "stadium"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/166223262",
+   "lat": 51.1081502,
+   "lon": 71.4027382,
+   "tags": {
+    "addr:street": "Тұран даңғылы",
+    "addr:housenumber": "48",
+    "building": "stadium"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/166267459",
+   "lat": 51.1048776,
+   "lon": 71.4050693,
+   "tags": {
+    "name": "Алау мұзайдыны сарайы",
+    "name:ru": "Ледовый дворец Алау",
+    "name:kk": "Алау мұзайдыны сарайы",
+    "name:en": "Ice Palace Alau",
+    "addr:street": "Қабанбай Батыр даңғылы",
+    "addr:housenumber": "47",
+    "building": "pavilion",
+    "leisure": "sports_centre"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/227450474",
+   "lat": 51.1473015,
+   "lon": 71.4600902,
+   "tags": {
+    "addr:street": "Тәуелсіздік даңғылы",
+    "addr:housenumber": "16/1",
+    "building": "commercial"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/240391761",
+   "lat": 51.1635848,
+   "lon": 71.4388223,
+   "tags": {
+    "name": "ЦОН Байконурского района",
+    "addr:street": "Амангелді Иманов көшесі",
+    "addr:housenumber": "20",
+    "office": "government",
+    "government": "public_service",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/240440924",
+   "lat": 51.1806402,
+   "lon": 71.4288215,
+   "tags": {
+    "addr:street": "Шәкен Айманов көшесі",
+    "addr:housenumber": "20",
+    "building": "apartments"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/240485199",
+   "lat": 51.1539909,
+   "lon": 71.4556787,
+   "tags": {
+    "name": "Толқын",
+    "name:ru": "Толкын",
+    "addr:street": "Тәуелсіздік даңғылы",
+    "addr:housenumber": "2",
+    "building": "yes",
+    "leisure": "sports_centre"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/240564814",
+   "lat": 51.1414612,
+   "lon": 71.474569,
+   "tags": {
+    "name": "Нұр Отау",
+    "name:ru": "Нур Отау",
+    "addr:street": "Қаныш Сәтбаев көшесі",
+    "addr:housenumber": "25",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/240860223",
+   "lat": 51.1302352,
+   "lon": 71.4594294,
+   "tags": {
+    "addr:street": "проспект Бауыржана Момышулы",
+    "addr:housenumber": "2/1",
+    "building": "commercial"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/241226090",
+   "lat": 51.1611177,
+   "lon": 71.4440722,
+   "tags": {
+    "name": "Бизнес центр \"ФОРУМ\"",
+    "addr:street": "Жәнібек Тархан көшесі",
+    "addr:housenumber": "4",
+    "building": "commercial"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/242364773",
+   "lat": 51.1533355,
+   "lon": 71.4193123,
+   "tags": {
+    "name": "Национальный теннисный центр \"Даулет\"",
+    "name:ru": "Этно-мемориальный комплекс Карта Казахстана Атамекен",
+    "addr:street": "Тұран даңғылы",
+    "addr:housenumber": "4/2",
+    "building": "yes",
+    "leisure": "stadium"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/243062883",
+   "lat": 51.1284621,
+   "lon": 71.5176991,
+   "tags": {
+    "addr:street": "улица Озбек Али Жаныбек",
+    "addr:housenumber": "4",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/259043617",
+   "lat": 51.2076766,
+   "lon": 71.318281,
+   "tags": {
+    "name": "Специализированный ЦОН №1",
+    "addr:street": "улица Сабита Муканова",
+    "addr:housenumber": "2",
+    "office": "government",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/30637540",
+   "lat": 51.1736339,
+   "lon": 71.4245305,
+   "tags": {
+    "name": "Центр обслуживания населения по Сарыаркинскому Району",
+    "name:ru": "ЦОН №2 Сарыаркинского района",
+    "addr:street": "Республика даңғылы",
+    "addr:housenumber": "43",
+    "office": "government",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/322211035",
+   "lat": 51.1670805,
+   "lon": 71.3886639,
+   "tags": {
+    "name": "Торговый дом \"Дияр\"",
+    "addr:street": "Ермек Серкебаев көшесі",
+    "addr:housenumber": "13",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/503083349",
+   "lat": 51.2079926,
+   "lon": 71.3170147,
+   "tags": {
+    "addr:street": "улица Сабита Муканова",
+    "addr:housenumber": "2",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/503596292",
+   "lat": 51.1626848,
+   "lon": 71.4125385,
+   "tags": {
+    "addr:street": "Кенесары көшесі",
+    "addr:housenumber": "14",
+    "building": "construction"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/506032632",
+   "lat": 51.1081502,
+   "lon": 71.4327114,
+   "tags": {
+    "name": "Astana Partners",
+    "addr:street": "Мәңгілік Ел даңғылы",
+    "addr:housenumber": "30",
+    "office": "yes",
+    "building": "office"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/549292864",
+   "lat": 51.1165318,
+   "lon": 71.4025758,
+   "tags": {
+    "addr:street": "Керей, Жәнібек Хандар көшесі",
+    "addr:housenumber": "4",
+    "building": "yes"
+   },
+   "encoding_repaired": false
+  },
+  {
+   "ref": "way/863661613",
+   "lat": 51.2073354,
+   "lon": 71.317918,
+   "tags": {
+    "name": "Специализированный ЦОН для автовладельцев",
+    "addr:street": "улица Сабита Муканова",
+    "addr:housenumber": "2",
+    "office": "government",
+    "government": "administrative"
+   },
+   "encoding_repaired": false
+  }
+ ]
+}

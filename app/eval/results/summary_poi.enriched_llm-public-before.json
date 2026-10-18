@@ -1,0 +1,153 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "llm",
+  "chain": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-flash-lite-latest",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.7-flash",
+    "gemini:gemini-3.5-flash"
+  ],
+  "cases": 5,
+  "cases_with_recs": 5,
+  "recs_total": 9,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 88.9,
+  "case_all_ok_rate": 80.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 100.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 80.0,
+  "top1_open_rate": 60.0,
+  "unknown_hours_rec_share": 33.3,
+  "non_osm_rec_share": 44.4,
+  "avg_walk_min": 3.3,
+  "wifi_socket_in_data_share": 50.0,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 2647.0,
+  "latency_ms_p90": 3241.0,
+  "generation_ms_median": 1551.0,
+  "generation_ms_p90": 1969.0,
+  "model_link": {
+    "gemini:gemini-3.5-flash-lite": 5
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "category_not_allowed": 1
+  },
+  "padded_rec_share": 11.1,
+  "expanded_rec_share": 0.0,
+  "backfill_rec_share": 11.1,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 20.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [
+    {
+      "case_id": "tz1",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Mega Silk Way (mall)",
+      "open_claim_in_text": false,
+      "category_violation": true,
+      "honest_ok": true,
+      "violations": [
+        "category_not_allowed"
+      ],
+      "total_ms": 3241,
+      "generation_ms": 1969
+    },
+    {
+      "case_id": "tz2",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Drinkit (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2647,
+      "generation_ms": 1551
+    },
+    {
+      "case_id": "tz3",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Детская площадка (kids_playground)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2499,
+      "generation_ms": 1541
+    },
+    {
+      "case_id": "tz4",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 1,
+      "top1": "Starbucks (cafe)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2323,
+      "generation_ms": 1305
+    },
+    {
+      "case_id": "tz5",
+      "model_link": "gemini:gemini-3.5-flash-lite",
+      "by_ai": true,
+      "intent_by_ai": true,
+      "intent_model": "gemini:gemini-flash-lite-latest",
+      "n_recs": 2,
+      "top1": "Лигалайф (bar_nightlife)",
+      "open_claim_in_text": false,
+      "category_violation": false,
+      "honest_ok": true,
+      "violations": [],
+      "total_ms": 2879,
+      "generation_ms": 1662
+    }
+  ],
+  "failing_cases": [
+    {
+      "case_id": "tz1",
+      "violations": [
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "main",
+  "label": "llm-public-before",
+  "header": {
+    "label": "llm-public-before",
+    "mode": "llm",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "cases.json",
+    "case_set": "main",
+    "records": 5,
+    "git": "e5b29df+uncommitted",
+    "walking": "straight",
+    "generated_at": "2026-10-17T05:05:24+05:00"
+  }
+}

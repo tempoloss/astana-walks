@@ -1,0 +1,9 @@
+{
+ "domain": "arujan.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:12:42+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "domain does not resolve (SSL/DNS failures) on repeated probes. robots.txt/page unreachable per RFC 9309 (disallowed by robots.txt)",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

@@ -1,0 +1,48 @@
+{
+ "domain": "ribambelle.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://ribambelle.kz/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Ribambelle",
+   "address": "Астана, ул. Достык, 16, Talan Tower, этаж 3",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (771) 779-11-55",
+   "opening_hours_raw": "ПН-ВС: с 10:00 до 22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://ribambelle.kz/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ribambelle.kz/kontakty",
+     "snippet": "Ribambelle"
+    },
+    {
+     "field": "address",
+     "url": "https://ribambelle.kz/kontakty",
+     "snippet": "Астана, ул. Достык, 16, Talan Tower, этаж 3"
+    },
+    {
+     "field": "phone",
+     "url": "https://ribambelle.kz/kontakty",
+     "snippet": "+7(771) 779-11-55"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ribambelle.kz/kontakty",
+     "snippet": "ПН-ВС: с 10:00 до 22:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Contacts page prints the single Astana outlet of the chain with schedule 'ПН-ВС: с 10:00 до 22:00'. Second number (+7 707 935 35 45) is the hiring WhatsApp, not kept. Almaty tabs skipped (non-Astana). Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "qazmedia.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:26:09+00:00",
+ "pages": [
+  "https://qazmedia.kz/ru/"
+ ],
+ "branches": [
+  {
+   "name": "ТОО «Управляющая компания «Қазмедиа орталығы» – Официальный сайт организации",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": "Официальный сайт организации",
+   "url": "https://qazmedia.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qazmedia.kz/ru/",
+     "snippet": "\"name\": \"ТОО «Управляющая компания «Қазмедиа орталығы» – Официальный сайт организации\""
+    },
+    {
+     "field": "description",
+     "url": "https://qazmedia.kz/ru/",
+     "snippet": "\"description\": \"Официальный сайт организации\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.7,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Только имя + описание из официального JSON-LD: адрес/координат/часов посещения сайт не публикует (на главной — 'День приема граждан: среда Время приема граждан: с 09:00 до 13:00', это приём гендиректора, не режим комплекса; телефоны — канцелярия/пиар-отдел). Концертный зал и выставки продаются через zakazbiletov.kz (агрегатор).",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

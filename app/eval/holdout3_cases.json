@@ -1,0 +1,941 @@
+[
+  {
+    "id": "h3-01",
+    "label": "Акимат · будни 13:00 · обычная погода · обеденный перерыв",
+    "origin": {
+      "name": "Акимат города Астаны",
+      "lat": 51.1667777,
+      "lon": 71.4201216
+    },
+    "when": "2026-10-20T13:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Вышол из акимата на обед, час свободен, где-то поесть рядом нормально",
+    "tz": false,
+    "axes": {
+      "need": "eat",
+      "time": "midday",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "fast_food",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Час свободен» — 60 минут целиком (поесть и вернуться к акимату)."
+    }
+  },
+  {
+    "id": "h3-02",
+    "label": "Хан Шатыр вход с Туран · будни 11:00 · обычная погода · кофе+работа",
+    "origin": {
+      "name": "ТРЦ Хан Шатыр (вход со стороны Туран)",
+      "lat": 51.1311545,
+      "lon": 71.4065528
+    },
+    "when": "2026-10-20T11:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Мне нужен кофе и розетка с вайфаем, полтора часа поработать с ноутбуком",
+    "tz": false,
+    "axes": {
+      "need": "coffee_work",
+      "time": "morning",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 90,
+      "needs_wifi_socket": true,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Полтора часа» — 90 минут целиком; язык запроса разговорный («вайфай»), суть — Wi-Fi и розетка."
+    }
+  },
+  {
+    "id": "h3-03",
+    "label": "Астана Арена парковка · будни 18:30 · обычная погода · ребёнок",
+    "origin": {
+      "name": "Стадион Астана Арена (парковка)",
+      "lat": 51.1061543,
+      "lon": 71.4090286
+    },
+    "when": "2026-10-21T18:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Баламен бірге еккі сағатта жүргім келеді, балаларға қызықты жер қайда?",
+    "tz": false,
+    "axes": {
+      "need": "kids",
+      "time": "evening",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "kids_playground",
+        "park_garden",
+        "mall",
+        "entertainment",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "«Еккі сағат» — два часа = 120 минут целиком (дорога, время на месте, обратно)."
+    }
+  },
+  {
+    "id": "h3-04",
+    "label": "ЕНУ главный корпус · пятница 19:00 · обычная погода · свидание",
+    "origin": {
+      "name": "ЕНУ им. Гумилёва (главный корпус)",
+      "lat": 51.1579958,
+      "lon": 71.4677455
+    },
+    "when": "2026-10-23T19:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Свидание сегодня вечером, хочу впечатлить, часа три на всё, что посоветуешь?",
+    "tz": false,
+    "axes": {
+      "need": "date",
+      "time": "evening",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe",
+        "bar_nightlife",
+        "viewpoint",
+        "park_garden",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 180,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Часа три» — 180 минут целиком."
+    }
+  },
+  {
+    "id": "h3-05",
+    "label": "КазНУИ · суббота 15:00 · обычная погода · культпоход",
+    "origin": {
+      "name": "Казахский национальный университет искусств",
+      "lat": 51.1883512,
+      "lon": 71.4087403
+    },
+    "when": "2026-10-24T15:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Театрға не мұражайға барғым келеді, екі сағат уақытым бар",
+    "tz": false,
+    "axes": {
+      "need": "culture",
+      "time": "afternoon",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "culture_theatre_cinema",
+        "museum_gallery",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "fast_food"
+      ],
+      "max_walk_min_one_way": 20,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Екі сағат уақытым бар» — 120 минут целиком (дорога, время на месте, обратно)."
+    }
+  },
+  {
+    "id": "h3-06",
+    "label": "Дворец Шабыт (КазНУИ) · будни 16:00 · дождь · помещение",
+    "origin": {
+      "name": "Дворец Шабыт (при КазНУИ)",
+      "lat": 51.188,
+      "lon": 71.4078
+    },
+    "when": "2026-10-20T16:00",
+    "weather_override": {
+      "apparent_c": 6,
+      "precip_mm": 3.0
+    },
+    "air_override": null,
+    "query": "Ливень, пока репетиция идёт, хочу в помещение рядом пересидеть часок",
+    "tz": false,
+    "axes": {
+      "need": "waiting_indoor",
+      "time": "afternoon",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "coworking_library",
+        "mall",
+        "museum_gallery"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife",
+        "kids_playground",
+        "viewpoint",
+        "park_garden"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "Осадки 3 мм/ч ≥ 2.5 → indoor_preferred: true подтверждается погодой кейса. «Часок» — 60 минут целиком."
+    }
+  },
+  {
+    "id": "h3-07",
+    "label": "Бәйтерек северная сторона · воскресенье 10:00 · обычная погода · турист",
+    "origin": {
+      "name": "Памятник Бәйтерек (северная сторона)",
+      "lat": 51.1282863,
+      "lon": 71.4304556
+    },
+    "when": "2026-10-25T10:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "I'm a tourist here, got about three hours, what should I walk to and see around?",
+    "tz": false,
+    "axes": {
+      "need": "tourist",
+      "time": "morning",
+      "lang": "en"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "attraction_landmark",
+        "viewpoint",
+        "park_garden",
+        "museum_gallery",
+        "cafe",
+        "mall"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 20,
+      "budget_min": 180,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "\"about three hours\" — 180 minutes total (walk there, stay, walk back)."
+    }
+  },
+  {
+    "id": "h3-08",
+    "label": "Автовокзал Сапаржай · будни 07:40 · обычная погода · быстрая пауза",
+    "origin": {
+      "name": "Автовокзал Сапаржай",
+      "lat": 51.1940332,
+      "lon": 71.4116915
+    },
+    "when": "2026-10-22T07:40",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Автобус через 30 минут, надо быстро кофе и перекусить, спешу",
+    "tz": false,
+    "axes": {
+      "need": "quick_break",
+      "time": "morning",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "restaurant"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 8,
+      "budget_min": 30,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Автобус через 30 минут» — «быстро» и «спешу»: 30 минут целиком (по умолчанию системы для «быстро»), включая дорогу туда и обратно."
+    }
+  },
+  {
+    "id": "h3-09",
+    "label": "Жилой массив Шубар · выходной 12:00 · −22 °C · ребёнок в помещении",
+    "origin": {
+      "name": "Жилой массив Шубар",
+      "lat": 51.1964885,
+      "lon": 71.6279729
+    },
+    "when": "2026-10-25T12:00",
+    "weather_override": {
+      "apparent_c": -22,
+      "precip_mm": 0
+    },
+    "air_override": null,
+    "query": "Баламен қатты аязда бір жерде отырамыз, екі сағаттай, жақын жерде",
+    "tz": false,
+    "axes": {
+      "need": "kids_indoor",
+      "time": "midday",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "mall",
+        "entertainment",
+        "kids_playground"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": true,
+      "notes": "−22 °C ≤ −15 → indoor_preferred: true. Уличная площадка и парк недопустимы; «екі сағаттай» — 120 минут целиком. Шубар — окраина, «жақын жерде» до 15 минут."
+    }
+  },
+  {
+    "id": "h3-10",
+    "label": "ТРЦ Керуен Сити · пятница 18:00 · обычная погода · шопинг+кино",
+    "origin": {
+      "name": "ТРЦ Керуен Сити",
+      "lat": 51.1434738,
+      "lon": 71.4109169
+    },
+    "when": "2026-10-23T18:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Куда сходить вечером рядом с Керуен Сити? Погулять по магазину, поужинать, может кино. Часа три-четыре есть",
+    "tz": false,
+    "axes": {
+      "need": "mall_evening",
+      "time": "evening",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "restaurant",
+        "cafe",
+        "culture_theatre_cinema",
+        "entertainment",
+        "bar_nightlife"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 15,
+      "budget_min": 180,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Часа три-четыре есть» — берём нижнюю границу названного диапазона, 180 минут, потому что метрика требует верхнюю границу, а не диапазон."
+    }
+  },
+  {
+    "id": "h3-11",
+    "label": "Набережная Ишима у моста Атырау · будни 18:30 · обычная погода · спорт",
+    "origin": {
+      "name": "Набережная Ишима у моста Атырау",
+      "lat": 51.1560964,
+      "lon": 71.4232506
+    },
+    "when": "2026-10-22T18:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Just finished jogging here, any gym or outdoor spot nearby to stretch and cool down for an hour?",
+    "tz": false,
+    "axes": {
+      "need": "sport",
+      "time": "evening",
+      "lang": "en"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "sport",
+        "park_garden",
+        "cafe"
+      ],
+      "forbidden_categories": [
+        "museum_gallery"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "\"for an hour\" — 60 minutes total. Погода в пределах порогов, indoor_preferred не ставим (уличные парки допустимы)."
+    }
+  },
+  {
+    "id": "h3-12",
+    "label": "Библиотека Первого Президента · будни 12:30 · смог · тихая работа",
+    "origin": {
+      "name": "Библиотека Первого Президента",
+      "lat": 51.1163535,
+      "lon": 71.4428744
+    },
+    "when": "2026-10-20T12:30",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 55
+    },
+    "query": "На улице смог, хочется в тихое место с воздухом внутри, почитать и поработать часика полтора",
+    "tz": false,
+    "axes": {
+      "need": "work_indoor",
+      "time": "midday",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "coworking_library",
+        "cafe",
+        "museum_gallery",
+        "mall"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground",
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "PM2.5 = 55 > 35 → indoor_preferred: true. «Часика полтора» — 90 минут целиком."
+    }
+  },
+  {
+    "id": "h3-13",
+    "label": "Акимат · Новый год 1 января 11:00 · обычная погода · праздник",
+    "origin": {
+      "name": "Акимат города Астаны",
+      "lat": 51.1667777,
+      "lon": 71.4201216
+    },
+    "when": "2027-01-01T11:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Первое января, все закрыто наверно, куда можно сходить погулять на два часа?",
+    "tz": false,
+    "axes": {
+      "need": "holiday",
+      "time": "midday",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "cafe",
+        "restaurant",
+        "mall"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 20,
+      "budget_min": 120,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Государственный праздник 1 января: must_flag_unknown_hours = true. «Два часа» — 120 минут целиком."
+    }
+  },
+  {
+    "id": "h3-14",
+    "label": "Хан Шатыр вход с Туран · ночь 02:00 · обычная погода · ночная ситуация",
+    "origin": {
+      "name": "ТРЦ Хан Шатыр (вход со стороны Туран)",
+      "lat": 51.1311545,
+      "lon": 71.4065528
+    },
+    "when": "2026-10-21T02:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Late night, can I find anything open for food or a warm place around here?",
+    "tz": false,
+    "axes": {
+      "need": "night",
+      "time": "night",
+      "lang": "en"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "fast_food",
+        "cafe",
+        "restaurant",
+        "bar_nightlife",
+        "mall"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 15,
+      "budget_min": 60,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "02:00 — ночь: must_flag_unknown_hours = true. Время в запросе не названо, обычный выход ~60 минут; система по умолчанию тоже возьмёт 60."
+    }
+  },
+  {
+    "id": "h3-15",
+    "label": "Астана Арена парковка · после матча 21:30 · лёгкий дождь · поесть",
+    "origin": {
+      "name": "Стадион Астана Арена (парковка)",
+      "lat": 51.1061543,
+      "lon": 71.4090286
+    },
+    "when": "2026-10-24T21:30",
+    "weather_override": {
+      "apparent_c": 4,
+      "precip_mm": 1.2
+    },
+    "air_override": null,
+    "query": "Матч закончился, жёстко жрать охота, где-то плотно поужинать и домой. Час-полтора",
+    "tz": false,
+    "axes": {
+      "need": "dinner",
+      "time": "night",
+      "lang": "ru_slang"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "restaurant",
+        "cafe",
+        "fast_food",
+        "bar_nightlife"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 15,
+      "budget_min": 90,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Сленг («жёстко жрать охота») — намерение то же: плотный ужин. Осадки 1.2 мм/ч < 2.5 → indoor_preferred не ставим. «Час-полтора» — берём верх диапазона, 90 минут: метрика требует верхнюю границу, а не диапазон."
+    }
+  },
+  {
+    "id": "h3-16",
+    "label": "ЕНУ главный корпус · будни 12:50 · обычная погода · перекус между парами",
+    "origin": {
+      "name": "ЕНУ им. Гумилёва (главный корпус)",
+      "lat": 51.1579958,
+      "lon": 71.4677455
+    },
+    "when": "2026-10-20T12:50",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Парлар арасында жарты сағат уақытым бар, тез тамақтанып келінейін",
+    "tz": false,
+    "axes": {
+      "need": "quick_break",
+      "time": "midday",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food",
+        "restaurant"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 30,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Жарты сағат» — полчаса = 30 минут целиком (дойти, поесть, вернуться)."
+    }
+  },
+  {
+    "id": "h3-17",
+    "label": "КазНУИ · пятница 23:30 · обычная погода · после концерта",
+    "origin": {
+      "name": "Казахский национальный университет искусств",
+      "lat": 51.1883512,
+      "lon": 71.4087403
+    },
+    "when": "2026-10-23T23:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Концерт закончился, не спится, куда бы под вечерок сходить, посидеть с друзьями пару часов",
+    "tz": false,
+    "axes": {
+      "need": "night_out",
+      "time": "night",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "bar_nightlife",
+        "cafe",
+        "restaurant",
+        "fast_food"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 20,
+      "budget_min": 120,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "23:30 — ночь: must_flag_unknown_hours = true. «Пару часов» — 120 минут целиком."
+    }
+  },
+  {
+    "id": "h3-18",
+    "label": "Дворец Шабыт (КазНУИ) · выходной 14:00 · обычная погода · коляска",
+    "origin": {
+      "name": "Дворец Шабыт (при КазНУИ)",
+      "lat": 51.188,
+      "lon": 71.4078
+    },
+    "when": "2026-10-24T14:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Я на коляске, нужны места без ступенек рядом, погулять часика два",
+    "tz": false,
+    "axes": {
+      "need": "accessibility",
+      "time": "afternoon",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "mall",
+        "museum_gallery",
+        "park_garden",
+        "restaurant",
+        "coworking_library"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "step_free": true,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Часика два» — 120 минут целиком. step_free: система обязана не утверждать доступность там, где признака нет в данных, и помечать неизвестные."
+    }
+  },
+  {
+    "id": "h3-19",
+    "label": "Бәйтерек северная сторона · будни 08:10 · обычная погода · кофе перед работой",
+    "origin": {
+      "name": "Памятник Бәйтерек (северная сторона)",
+      "lat": 51.1282863,
+      "lon": 71.4304556
+    },
+    "when": "2026-10-20T08:10",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Жұмысқа дейін кофе ішкім келеді, жарты сағат бар",
+    "tz": false,
+    "axes": {
+      "need": "coffee",
+      "time": "morning",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "fast_food"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 10,
+      "budget_min": 30,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "«Жарты сағат бар» — полчаса = 30 минут целиком."
+    }
+  },
+  {
+    "id": "h3-20",
+    "label": "Автовокзал Сапаржай · день 10:30 · обычная погода · долгая пересадка",
+    "origin": {
+      "name": "Автовокзал Сапаржай",
+      "lat": 51.1940332,
+      "lon": 71.4116915
+    },
+    "when": "2026-10-24T10:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Three hour layover here, where can I walk, eat and maybe see something not far away?",
+    "tz": false,
+    "axes": {
+      "need": "waiting",
+      "time": "morning",
+      "lang": "en"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "park_garden",
+        "attraction_landmark",
+        "mall",
+        "museum_gallery",
+        "fast_food"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 15,
+      "budget_min": 180,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "\"Three hour layover\" — 180 минут целиком, включая возврат к автовокзалу."
+    }
+  },
+  {
+    "id": "h3-21",
+    "label": "Жилой массив Шубар · суббота 16:00 · обычная погода · семья",
+    "origin": {
+      "name": "Жилой массив Шубар",
+      "lat": 51.1964885,
+      "lon": 71.6279729
+    },
+    "when": "2026-10-24T16:00",
+    "weather_override": null,
+    "air_override": null,
+    "query": "С двумя детьми куда податься рядом вечером, чтоб и поели и развлеклись, часа на три максимум",
+    "tz": false,
+    "axes": {
+      "need": "family",
+      "time": "evening",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "cafe",
+        "restaurant",
+        "mall",
+        "entertainment",
+        "kids_playground",
+        "park_garden"
+      ],
+      "forbidden_categories": [
+        "bar_nightlife"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 180,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": true,
+      "notes": "«Часа на три максимум» — верхняя граница 180 минут целиком. С детьми: kids_ok = true."
+    }
+  },
+  {
+    "id": "h3-22",
+    "label": "ТРЦ Керуен Сити · выходной 13:00 · −18 °C · только помещение",
+    "origin": {
+      "name": "ТРЦ Керуен Сити",
+      "lat": 51.1434738,
+      "lon": 71.4109169
+    },
+    "when": "2026-10-25T13:00",
+    "weather_override": {
+      "apparent_c": -18,
+      "precip_mm": 0
+    },
+    "air_override": null,
+    "query": "Қатты суық тұр, тоңбайтын жерде отырғым келеді, кофе ішіп, біраз жүргім келеді",
+    "tz": false,
+    "axes": {
+      "need": "indoor_warm",
+      "time": "midday",
+      "lang": "kk"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "cafe",
+        "restaurant",
+        "entertainment",
+        "culture_theatre_cinema"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 12,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "kids_ok": false,
+      "notes": "−18 °C ≤ −15 → indoor_preferred: true. Время не названо: прогулка с кофе — разумно ~120 минут, система возьмёт 120."
+    }
+  },
+  {
+    "id": "h3-23",
+    "label": "Набережная Ишима у моста Атырау · ночь 00:30 · обычная погода · поздняя прогулка",
+    "origin": {
+      "name": "Набережная Ишима у моста Атырау",
+      "lat": 51.1560964,
+      "lon": 71.4232506
+    },
+    "when": "2026-10-25T00:30",
+    "weather_override": null,
+    "air_override": null,
+    "query": "Не спится, хочу погулять по набережной и что-то открытое найти, где кофе выпить. Часа два от силы",
+    "tz": false,
+    "axes": {
+      "need": "night_walk",
+      "time": "night",
+      "lang": "ru"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "viewpoint",
+        "cafe",
+        "bar_nightlife",
+        "fast_food",
+        "attraction_landmark"
+      ],
+      "forbidden_categories": [],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": true,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "00:30 — ночь: must_flag_unknown_hours = true. «Часа два от силы» — верхняя граница 120 минут целиком."
+    }
+  },
+  {
+    "id": "h3-24",
+    "label": "Библиотека Первого Президента · воскресенье 15:00 · жара +34 · лёгкая прогулка",
+    "origin": {
+      "name": "Библиотека Первого Президента",
+      "lat": 51.1163535,
+      "lon": 71.4428744
+    },
+    "when": "2026-10-25T15:00",
+    "weather_override": {
+      "apparent_c": 34,
+      "precip_mm": 0
+    },
+    "air_override": null,
+    "query": "Too hot outside, somewhere air conditioned to walk around and get a cold drink for a couple of hours?",
+    "tz": false,
+    "axes": {
+      "need": "indoor_cool",
+      "time": "afternoon",
+      "lang": "en"
+    },
+    "author": "blind-glm-v2",
+    "written_at": "2026-10-17T13:14",
+    "expected": {
+      "allowed_categories": [
+        "mall",
+        "museum_gallery",
+        "cafe",
+        "coworking_library",
+        "entertainment"
+      ],
+      "forbidden_categories": [
+        "park_garden",
+        "viewpoint",
+        "kids_playground"
+      ],
+      "max_walk_min_one_way": 15,
+      "budget_min": 120,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": false,
+      "kids_ok": false,
+      "notes": "Жара +34 °C не входит в пороги системы (≤ −15 °C, осадки ≥ 2.5, PM2.5 > 35), поэтому indoor_preferred НЕ ставим — «кондиционер» в тексте запроса, а не в погоде кейса; спорный момент помечен. «A couple of hours» — 120 минут целиком."
+    }
+  }
+]

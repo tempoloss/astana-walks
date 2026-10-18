@@ -1,0 +1,33 @@
+{
+ "domain": "enu.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://lib.enu.kz/ru"
+ ],
+ "branches": [
+  {
+   "name": "Научная библиотека ЕНУ",
+   "address": "г. Астана, ул. Пушкина, 11",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://lib.enu.kz/ru",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://lib.enu.kz/ru",
+     "snippet": "10000 Казахстан, город Астана, ул. Пушкина, 11"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  }
+ ],
+ "notes": "The university main site (enu.kz) is a JS portal; the Science Library subdomain lib.enu.kz prints '10000 Казахстан, город Астана, ул. Пушкина, 11' in the footer of every page (address kept). Its 'Режим работы' page exposes only the e-mail — the hours table is image-rendered, not extractable verbatim: hours not stored.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

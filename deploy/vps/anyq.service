@@ -1,0 +1,48 @@
+[Unit]
+Description=Anyq (Astana walking assistant)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=anyq
+Group=anyq
+WorkingDirectory=/opt/anyq/current/app
+
+# State lives only under /var/lib/anyq (created and owned by systemd).
+StateDirectory=anyq
+Environment=HOME=/var/lib/anyq
+
+Environment=WALKS_FEEDBACK=/var/lib/anyq/city_feedback.json
+Environment=WALKS_REQUEST_LOG=/var/lib/anyq/requests.jsonl
+Environment=WALKS_PROFILE_DIR=/var/lib/anyq/profiles
+Environment=WALKS_LLM_CACHE=/var/lib/anyq/llm_cache.json
+Environment=WALKS_WALK_CACHE=off
+# Pedestrian legs that are not in data/walk_cache.json come from the own Valhalla container (deploy/vps/valhalla),
+# never from the public FOSSGIS server. Down: the leg is the straight line, retried after a minute.
+Environment=WALKS_VALHALLA_URL=http://127.0.0.1:8002/route
+
+# The model chain and its keys: an optional file of the server (LLM_CHAIN, LLM_INTENT_CHAIN, GEMINI_KEY_FILE,
+# LLM_PROFILE_<NAME>_BASE_URL / _API_KEY_FILE; mode 0640 root:anyq). With no usable link the AI counts as not
+# configured and every answer is the template from the data. Nothing secret or provider-specific lives in git.
+EnvironmentFile=-/etc/anyq/llm.env
+
+# WALKS_FEEDBACK is used as it is and never seeded: an empty list of residents' marks is created once, when missing.
+ExecStartPre=/bin/sh -c 'test -e /var/lib/anyq/city_feedback.json || echo "[]" > /var/lib/anyq/city_feedback.json'
+ExecStart=/opt/anyq/current/app/.venv/bin/python -m web --host 127.0.0.1 --port 8520
+
+Restart=on-failure
+RestartSec=5
+MemoryMax=1G
+CPUQuota=150%
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+
+[Install]
+WantedBy=multi-user.target

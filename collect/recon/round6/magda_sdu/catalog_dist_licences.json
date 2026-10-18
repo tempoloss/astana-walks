@@ -1,0 +1,2474 @@
+[
+{
+"id": "magda-ds-8ec6e917-d808-494a-b84d-177dd857d7c4",
+"name": "Данные по заболеваниям печени",
+"dists": 1,
+"lics": [
+"No License"
+]
+},
+{
+"id": "magda-ds-b183d151-5086-4889-b5e1-b459a0701747",
+"name": "Данные по налогам",
+"dists": 2,
+"lics": [
+"No License"
+]
+},
+{
+"id": "magda-ds-96d541d0-4542-4ab3-8748-7565d6031b36",
+"name": "Медицинская история граждан (Область Абай)",
+"dists": 30,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-5567377e-5600-4c5b-8203-821375d981d8",
+"name": "Медицинская история граждан (Акмолинская область)",
+"dists": 27,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-35436796-a646-4cec-bd90-fb96ea0bc366",
+"name": "Медицинская история граждан (Актюбинская область)",
+"dists": 27,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-190f2786-0f82-47d2-8728-a9f40aa1e9a9",
+"name": "Медицинская история граждан (Алматинская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-f3c0860c-089f-43be-84db-a3dbab165a23",
+"name": "Медицинская история граждан (Алматы)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-2bddf093-8ab8-43d9-9038-d43561ff58ed",
+"name": "Медицинская история граждан (Астана)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c91ec84a-3168-4ff0-a4b1-ac7d778df4b2",
+"name": "Медицинская история граждан (Атырауская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-48f4ce11-64aa-418c-aab5-010a79ff35aa",
+"name": "Медицинская история граждан (Восточно-Казахстанская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-018db002-eaa4-4528-a192-ed8a36585123",
+"name": "Медицинская история граждан (Жамбылская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-a38a8d1b-8eda-4e63-a4e0-40ee13c6dae9",
+"name": "Медицинская история граждан (Западно-Казахстанская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-29d8fbfa-493d-4ffe-a2a6-aee1e01d00ba",
+"name": "Медицинская история граждан (Карагандинская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-8450ac34-e5be-4a46-a67c-a1d6a31f2ee8",
+"name": "Медицинская история граждан (Костанайская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c5588b35-3545-4c32-9545-39b907869ef8",
+"name": "Медицинская история граждан (Кызылординская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-4eb319d2-350f-4fa8-a8fc-0c35770a56b5",
+"name": "Медицинская история граждан (Мангистауская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-71a489be-a928-4679-a5ea-5881abdf3ecd",
+"name": "Медицинская история граждан (Павлодарская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-bbe99246-761b-41cd-b54c-af0eb382644d",
+"name": "Медицинская история граждан (Северо-Казахстанская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b4e368fe-dd79-438c-b12c-bc23ce9597a0",
+"name": "Медицинская история граждан (Туркестанская область)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-59128248-e6a9-4ae7-ba40-0fe3e1ca9b33",
+"name": "Медицинская история граждан (Шымкент)",
+"dists": 28,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-be3feec9-e2a1-44c3-aa8a-4f4b8ef64b49",
+"name": "Данные по новорожденным (Область Абай)",
+"dists": 3,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-2949e4c5-56da-4b86-9649-ed7e41b9997c",
+"name": "Данные по новорожденным (Акмолинская область)",
+"dists": 54,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-e76834cb-f82d-437c-bd77-911049a856ee",
+"name": "Данные по новорожденным (Актюбинская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-6af1c33f-4a39-4dcf-bf7d-8b911150d95a",
+"name": "Данные по новорожденным (Алматинская область)",
+"dists": 57,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-3a875c52-a394-4978-a505-695ec4372056",
+"name": "Данные по новорожденным (Алматы)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-9b95a459-d39b-4d8a-a220-7df65c273bc2",
+"name": "Данные по новорожденным (Астана)",
+"dists": 58,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b45f148c-acdc-4df4-8430-2035755b316d",
+"name": "Данные по новорожденным (Атырауская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-886113e3-80fe-47fb-ab0b-22ee89327323",
+"name": "Данные по новорожденным (Восточно-Казахстанская область)",
+"dists": 53,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-04942f90-901c-47cd-8b37-6087e906c47e",
+"name": "Данные по новорожденным (Жамбылская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b30d6910-fb77-40be-bfd2-e5d1c4b69a82",
+"name": "Данные по новорожденным (Область Жетісу)",
+"dists": 3,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-d26bd6d0-98c7-4b85-923c-faabdbc28d67",
+"name": "Данные по новорожденным (Западно-Казахстанская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-738d41d4-7be6-41d7-8f0f-128ffdfd6d7a",
+"name": "Данные по новорожденным (Карагандинская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-d009900f-5ec7-4795-b131-960406f70390",
+"name": "Данные по новорожденным (Костанайская область)",
+"dists": 53,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-412793cc-3c9f-406b-bfc8-8565c07c46eb",
+"name": "Данные по новорожденным (Кызылординская область)",
+"dists": 54,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-09acfb35-71ba-4f83-be20-1044bc83ea8d",
+"name": "Данные по новорожденным (Мангистауская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-4a63a0f0-5d5b-41ad-97bb-fe9de2e7e0a3",
+"name": "Данные по новорожденным (Область Улытау)",
+"dists": 3,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-94073e3f-4dd2-4f62-b53b-db632efdb06c",
+"name": "Данные по новорожденным (Павлодарская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-26ae9f56-c793-4a02-9327-ef19cb2cea1a",
+"name": "Данные по новорожденным (Северо-Казахстанская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-a276920b-0b25-44e3-800f-e480f4e609ad",
+"name": "Данные по новорожденным (Туркестанская область)",
+"dists": 52,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-72a57b9f-ad57-42e4-9a9c-48bd5ffd1b47",
+"name": "Данные по новорожденным (Шымкент)",
+"dists": 53,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-18fb3ddb-1fdc-48e7-adc6-e74756d29cec",
+"name": "Данные по новорожденным (Южно-Казахстанская область)",
+"dists": 24,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-890627aa-f6b1-4497-839d-74ca9fb07995",
+"name": "Данные по заболеваниям населения РК(Акмолинская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-4784239c-514c-45b5-a084-911bfe80eb43",
+"name": "Данные по заболеваниям населения РК(Актюбинская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b17dfecb-bd6e-4ac0-b55e-c2b1f7037fa1",
+"name": "Данные по заболеваниям населения РК(Алматинская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-7470ed37-e86f-474e-8dff-846b3e564622",
+"name": "Данные по заболеваниям населения РК(Алматы)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-a679a32e-9522-4929-b835-b817d974fc2f",
+"name": "Данные по заболеваниям населения РК(Астана)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-5208687d-8091-4dc8-8fe4-52539dab9bff",
+"name": "Данные по заболеваниям населения РК(Атырауская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-e6f61928-9998-4943-a704-b20aabf5338d",
+"name": "Данные по заболеваниям населения РК(Восточно-Казахстанская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-68c0471e-e408-40c1-bbb8-a4648ce9c5ae",
+"name": "Данные по заболеваниям населения РК(Жамбылская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c38d5e27-27dd-4168-bdcb-ba8795c2c7c9",
+"name": "Данные по заболеваниям населения РК(Западно-Казахстанская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-4b7d1c48-1a65-4446-a7e9-8f550ea9fbbb",
+"name": "Данные по заболеваниям населения РК(Карагандинская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-aab3f70a-aae5-4441-8b4f-41903f0e2264",
+"name": "Данные по заболеваниям населения РК(Костанайская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-e4aff0b2-f51c-4bce-8238-5b3e989bd156",
+"name": "Данные по заболеваниям населения РК(Кызылординская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-f0868ce0-e12c-4b3f-b4ee-4b53db48b797",
+"name": "Данные по заболеваниям населения РК(Мангистауская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-1feba69e-89db-4a67-93a3-e83ab743d790",
+"name": "Данные по заболеваниям населения РК(Павлодарская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-03e97221-e3e1-4feb-ab1e-f5f9876df170",
+"name": "Данные по заболеваниям населения РК(Северо-Казахстанская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-6c80f87d-49b1-4dda-b578-345acebe2854",
+"name": "Данные по заболеваниям населения РК(Туркестанская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-3c3d1a81-afc6-4776-b880-68bdfbdabda3",
+"name": "Данные по заболеваниям населения РК(Шымкент)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-811c5160-fc8f-4335-b206-d15e9bd60362",
+"name": "Данные по заболеваниям населения РК(Южно-Казахстанская область)",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-69060df6-cdfe-4b22-8dec-461e0295bf64",
+"name": "Статистика по бракам",
+"dists": 22,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-eec7968b-a90d-4910-a7c0-fcf5b05c379d",
+"name": "Данные по пенсионерам",
+"dists": 21,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-92a0d116-1ecd-477f-802e-d3db8a931fbb",
+"name": "Транзакции по недвижимости(Область Абай)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-9de3dcc1-7165-4456-b4d5-15c5a91cd972",
+"name": "Транзакции по недвижимости(Акмолинская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1904ccff-b273-4d91-8428-2a77ffb9fd36",
+"name": "Транзакции по недвижимости(Актюбинская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a7a020b6-93f7-4cf7-aba4-5074b8af45a7",
+"name": "Транзакции по недвижимости(Алматинская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-626fda5d-90b1-4071-9ca4-8a0ed1908f04",
+"name": "Транзакции по недвижимости(Алматы)",
+"dists": 232,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f1a2c28d-c7da-4f07-86b3-fa7c470b2a58",
+"name": "Транзакции по недвижимости(Астана)",
+"dists": 232,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-93651a01-b6cd-40fd-a3ca-a6bc77ebf66d",
+"name": "Транзакции по недвижимости(Атырауская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-45eb34c1-59f3-4806-ae18-4ddbb913c3c7",
+"name": "Транзакции по недвижимости(Восточно-Казахстанская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a9262a36-7376-48e9-8cfc-89f1e4676d77",
+"name": "Транзакции по недвижимости(Жамбылская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-206733e5-7062-4b2f-a5c0-c43e2368cfe2",
+"name": "Транзакции по недвижимости(Область Жетісу)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-57081b46-918d-46d6-b142-06e1038643f5",
+"name": "Транзакции по недвижимости(Западно-Казахстанская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d60b289a-fc07-4524-8068-63feab7e236b",
+"name": "Транзакции по недвижимости(Карагандинская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4a4732b1-56f3-4d1f-92e5-5a4800dfa2ed",
+"name": "Транзакции по недвижимости(Костанайская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e8d9c41c-d1cf-481f-9ae3-bc7c3e91b72e",
+"name": "Транзакции по недвижимости(Кызылординская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-23269444-c8d2-4d22-9ac2-25a9139b7462",
+"name": "Транзакции по недвижимости(Мангистауская область)",
+"dists": 171,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-346833b6-96f9-4fbc-a2f6-1ae2a1b5d711",
+"name": "Транзакции по недвижимости(Область Улытау)",
+"dists": 222,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5651384e-b529-49f4-8480-d1a19786d3ce",
+"name": "Транзакции по недвижимости(Павлодарская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a93d1eb4-ae0c-4e20-95a5-884e16871192",
+"name": "Транзакции по недвижимости(Северо-Казахстанская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4c00fd8c-ee55-4a3b-b947-59eecb68f8a1",
+"name": "Транзакции по недвижимости(Туркестанская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4fe89b2f-c3df-41a0-a349-235867a3fe65",
+"name": "Транзакции по недвижимости(Шымкент)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c0ef0ebc-9cc2-4e84-9259-69eafb723783",
+"name": "Транзакции по недвижимости(Южно-Казахстанская область)",
+"dists": 133,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-990adb24-9865-48e8-acf1-0d8b6ca0b80f",
+"name": "Зарегистрированные автомобили",
+"dists": 209,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-878a5fca-5a65-41e0-a586-cbaf00df5f3f",
+"name": "Данные по адвокатам и нотариусам(Область Абай)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c5f3ecae-3974-4e2e-a219-e11eaa9a2f91",
+"name": "Данные по адвокатам и нотариусам(Акмолинская область)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-12431aca-28a8-433c-bdb5-4f51c107654f",
+"name": "Данные по адвокатам и нотариусам(Актюбинская область)",
+"dists": 41,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-6789f4de-c929-46a4-90b1-c3c6e40b848c",
+"name": "Данные по адвокатам и нотариусам(Алматинская область)",
+"dists": 43,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-0d2c02e5-7274-4842-adbd-229b61e7c73c",
+"name": "Данные по адвокатам и нотариусам(Алматы)",
+"dists": 48,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-3990004f-5823-42fe-92d5-1f0555acb401",
+"name": "Данные по адвокатам и нотариусам(Астана)",
+"dists": 48,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-8ebec735-24db-44be-8ba2-faafcbb81f40",
+"name": "Данные по адвокатам и нотариусам(Атырауская область)",
+"dists": 44,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b2eddd1e-5bda-4076-bda3-e89b68984139",
+"name": "Данные по адвокатам и нотариусам(Восточно-Казахстанская область)",
+"dists": 41,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-b9405b5f-839d-4af9-ad7e-7e877b9b403a",
+"name": "Данные по адвокатам и нотариусам(Жамбылская область)",
+"dists": 42,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-f7bcab1a-dd7c-4c2c-8a9b-cfb06183f109",
+"name": "Данные по адвокатам и нотариусам(Область Жетісу)",
+"dists": 35,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-89aca813-86f6-4013-a4bd-9c7e826c8157",
+"name": "Данные по адвокатам и нотариусам(Западно-Казахстанская область)",
+"dists": 40,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-ff8efff1-f9de-4cb5-8f7f-cfbc467e6123",
+"name": "Данные по адвокатам и нотариусам(Карагандинская область)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-ed92a6c9-abef-4784-92f8-164015db08d9",
+"name": "Данные по адвокатам и нотариусам(Костанайская область)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-8a94a3b0-c493-490b-b9d3-e196908f3efc",
+"name": "Данные по адвокатам и нотариусам(Кызылординская область)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-1bc8c2df-0e8b-41e5-8af2-3e062be41310",
+"name": "Данные по адвокатам и нотариусам(Мангистауская область)",
+"dists": 35,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-fc1719e6-1030-47c4-a49a-7408efa304e6",
+"name": "Данные по адвокатам и нотариусам(Область Ұлытау)",
+"dists": 26,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-4a9875c6-f208-479d-aa08-64014ecbed6a",
+"name": "Данные по адвокатам и нотариусам(Павлодарская область)",
+"dists": 38,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-eaaab3dd-d91c-4feb-8841-cc8b7b096123",
+"name": "Данные по адвокатам и нотариусам(Северо-Казахстанская область)",
+"dists": 39,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-15ba07b0-8051-4e4c-88f9-e077851c4d02",
+"name": "Данные по адвокатам и нотариусам(Туркестанская область)",
+"dists": 35,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-1d882a77-0442-4aea-86cc-4b77b9d0962a",
+"name": "Данные по адвокатам и нотариусам(Шымкент)",
+"dists": 43,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-657bcedf-5a1b-4435-9e12-e6950422fde0",
+"name": "Организации высшего образования",
+"dists": 21,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-9d26ef07-e415-4db5-8742-ec4eb9498f74",
+"name": "Медицинские организации",
+"dists": 22,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-5e88117e-46cf-4bc0-97c7-a031919ba42d",
+"name": "Частные школы",
+"dists": 21,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-1fc06d70-7144-4ed0-950a-d9c48669dad6",
+"name": "Государственные школы",
+"dists": 21,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-cef33ffa-d13a-4fc2-a61c-ca0c137881f7",
+"name": "Данные по безработным",
+"dists": 18,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-bfe5f448-c368-4dd7-95b4-404c77d4ddc2",
+"name": "Долевое участие в жилищном строительстве (Казреестр)",
+"dists": 3,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-69aba2ce-6cc0-4875-8230-c6584fbc11ce",
+"name": "Министерство обороны ",
+"dists": 15,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b2924ca2-20d4-4fbc-958d-b8d4479a7fae",
+"name": "Перечень организаций высшего и послевузовского образования с ключевой информацией о их деятельности",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c66b8f40-18a2-4e92-b071-beb7933c8ba9",
+"name": "Идентификация сельскохозяйственных животных (ИСЖ)",
+"dists": 9,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-363cf881-7b5d-4da0-a05b-29dcc379ba19",
+"name": "Юридические лица занимающиеся недвижимостью",
+"dists": 21,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-c064f699-f2cb-47ae-b83e-24d72cf29f86",
+"name": "Данные по нормативно-правовым актам РК",
+"dists": 135,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-85d4e20a-ef1b-412a-9c10-ecbac06d1cee",
+"name": "Земельные Участки(Область Абай)",
+"dists": 234,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2a17affc-077e-408f-bc4f-677409d37c98",
+"name": "Земельные Участки(Акмолинская область)",
+"dists": 235,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-64c53a13-a1a4-4967-bfa7-b9c9a8d8eb55",
+"name": "Земельные Участки(Актюбинская область)",
+"dists": 238,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-00176d80-93c3-42c1-a24f-b60237af26c2",
+"name": "Земельные Участки(Алматинская область)",
+"dists": 247,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-91243404-79a7-4274-9f85-bba1bbfaf981",
+"name": "Земельные Участки(Алматы)",
+"dists": 245,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-bdf0ed3b-6f14-471f-b908-ef5a0755c87a",
+"name": "Земельные Участки(Астана)",
+"dists": 239,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-26ce6f55-1abb-4d4c-b168-291166e6c4c5",
+"name": "Земельные Участки(Атырауская область)",
+"dists": 229,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-40cb7171-1a96-456e-bbd2-df44ac7f243f",
+"name": "Земельные Участки(Восточно-Казахстанская область)",
+"dists": 236,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-182220fd-5dfa-4d22-8b24-e3cda5f709aa",
+"name": "Земельные Участки(Жамбылская область)",
+"dists": 240,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e451aa38-2cd7-44b1-b46e-207b2c31aca7",
+"name": "Земельные Участки(Область Жетісу)",
+"dists": 234,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f6ad8ce1-4aa1-4d8f-9af2-e6cb6b26e76a",
+"name": "Земельные Участки(Западно-Казахстанская область)",
+"dists": 235,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-0443eea7-15bf-4482-bdf0-70dd1df3f67f",
+"name": "Земельные Участки(Карагандинская область)",
+"dists": 237,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2ee1dbc1-70de-48bf-b2a7-57b9e2058583",
+"name": "Земельные Участки(Костанайская область)",
+"dists": 234,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-551d36a7-96ba-4cd5-a0a0-4b3beb042a68",
+"name": "Земельные Участки(Кызылординская область)",
+"dists": 231,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3f4e86dd-5444-4ae2-bd75-3cd5d9da594f",
+"name": "Земельные Участки(Мангистауская область)",
+"dists": 178,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-30a9da9f-eb25-439c-a805-ade754acd808",
+"name": "Земельные Участки(Область Улытау)",
+"dists": 220,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-faf9b958-bebb-499f-99e9-a59eaa206e6f",
+"name": "Земельные Участки(Павлодарская область)",
+"dists": 230,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a0cd03f4-0528-4a81-89c4-394f30ced87f",
+"name": "Земельные Участки(Северо-Казахстанская область)",
+"dists": 229,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-30c9333d-25bc-4273-bc72-9204f910cab9",
+"name": "Земельные Участки(Туркестанская область)",
+"dists": 244,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3f2aeb11-8aae-437e-bd72-72f59c33c4ec",
+"name": "Земельные Участки(Шымкент)",
+"dists": 238,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1f2c00c5-b570-4d21-b4b4-327d4055b255",
+"name": "Земельные Участки(Южно-Казахстанская область)",
+"dists": 131,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-faa0e99e-07b5-4aa4-906a-c1068522fd9f",
+"name": "Единый реестр субъектов и объектов проверок",
+"dists": 7,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-bab08ae9-3962-4ed4-ae22-13a62184e547",
+"name": "Отечественные производители товаров",
+"dists": 1,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-73bb2163-e8ff-4ecc-adf8-5191ed7ccd02",
+"name": "Отчет 1-Д за 2 квартал 2025",
+"dists": 1,
+"lics": [
+"Creative Commons CC BY 4.0"
+]
+},
+{
+"id": "magda-ds-3bdd9d3a-b1b4-4c82-aac0-45047262d4a8",
+"name": "Иностранные туристы и места размещения",
+"dists": 7,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-44acd1a0-59d4-45d6-85cc-8c00cde6a748",
+"name": "Данные по госуслугам от eGov для ИИ-агента",
+"dists": 3,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-749f04ab-db3e-4ee8-b678-ee24b8a6a3cc",
+"name": "Данные по обращениям населения по call-центру 109 (ВКО)",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-708c981b-7428-476f-91a8-978f82a72bea",
+"name": "Обращения жителей в 109 Костанайской области",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5931ef21-620a-4714-8163-581ee2220c2d",
+"name": "Статус предоставления услуг Министерства промышленности и строительства РК",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-70a0d781-72cf-4dc5-a4c0-22e8124b92a2",
+"name": "Реестр субъектов предпринимательства Атырауской области ",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-3d36fad5-3edd-424b-b618-e54177fde701",
+"name": "Данные по обращениям граждан по call-центру 109 Акмолинской области.",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6e101b01-f6d9-4bb0-8da6-5cc93cfe4bc7",
+"name": "Обращения граждан в call-центр 109 Алматинской области ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b485a221-beab-403e-a158-677767327bb0",
+"name": "Дороги республиканского, областного и районного значения Улытауской области",
+"dists": 3,
+"lics": [
+"Creative Commons CC BY 4.0"
+]
+},
+{
+"id": "magda-ds-bb1c5ee3-5dbb-4da0-9f6b-020fd1227631",
+"name": "Здания и уличная сеть области Улытау",
+"dists": 2,
+"lics": [
+"Creative Commons CC BY 4.0"
+]
+},
+{
+"id": "magda-ds-a22aec5b-cdd9-4ae3-be12-51473da0358e",
+"name": "Объекты гидрографии Улытауской области",
+"dists": 2,
+"lics": [
+"No License"
+]
+},
+{
+"id": "magda-ds-da8e4353-bb45-43fd-bdf3-239c4ead9d96",
+"name": "Обращения жителей в 109 Туркестанской области ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-46380bbd-5ba5-459c-a7f6-cb6de744ef7b",
+"name": "Публичные обсуждения с экологическим воздействием Министерства экологии и природных ресурсов РК",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e1d1fb2f-2475-4db4-81d9-abea39d525cc",
+"name": "Данные МЭПР по выбросу загрязнителей в атмосферу",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-aa48eb99-7cf9-4c1f-9119-e84fdc36867a",
+"name": "Данные МЭПР по объемам отходов",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-0ea225e0-f368-490c-adc9-e50b02dc8955",
+"name": "Данные МЭПР по сбросам и переносу загрязнителей в сточные воды",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-cac7aa0e-ff21-43d9-8dab-6e7d66127129",
+"name": "Данные МИД по консульским действиям для ИИ-агента",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-bfc470ff-d5cd-4bf2-b8f7-8234a6b357a8",
+"name": "Данные МИД по загранучрежденям и консульским округам для ИИ-агента",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-afff01f9-f084-407e-8593-2e2bb26c88d3",
+"name": "Государственным услуги",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-71693239-1939-4090-93e8-5e63c3ce94f2",
+"name": "База вопросов и ответов МИД (FAQ) для ИИ-агента",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-21739bc1-b0cc-4848-b519-d1be37ff8e8e",
+"name": "Данные налоговых и смежных законодательств для ИИ-агента",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-478e1678-9821-4b1b-8f4b-f1a3feb93ae5",
+"name": "База вопросов и ответов по налогам и смежным темам для ИИ-агента",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e841458f-e6ed-436d-baa0-39ef85042a37",
+"name": "Данные по ПГУ – назначение государственной базовой пенсионной выплаты",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-7f541238-628f-430b-9cc8-d1ec3cb509cd",
+"name": "Данные по ПГУ – пособие родителю/опекуну ребёнка с инвалидностью",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c1155b36-0aa5-43c1-b1ec-fb0fc154b808",
+"name": "Данные по ПГУ – государственному социальному пособию по инвалидности",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-643285ce-b9a6-43d4-9396-662077ec35b8",
+"name": "Данные по ПГУ – государственному социальному пособию по случаю потери кормильца",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-78074d9d-3105-4fd6-8a98-df6a390497c4",
+"name": "Данные по ПГУ – социальная выплата на случай потери кормильца",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f33f9481-f713-4321-8193-8a3c2d138c49",
+"name": "Данные по ПГУ – социальная выплата на случай утраты трудоспособности",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1b0e27a7-fed3-4e25-8d53-356b8e3185c7",
+"name": "Данные по ПГУ – социальная выплата на случай потери работы",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-831c1d25-f4ec-4605-acf9-975c26fbbdba",
+"name": "Данные по ПГУ – пособие многодетной семье",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b80110e9-218a-42ba-b8c8-01fa5e4c82c8",
+"name": "Долевое участие в жилищном строительстве (Казреестр)",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b5d3dad4-e9b5-4667-a807-b981073239bd",
+"name": "Транспортные данные по специальным разрешениям на перевозки",
+"dists": 30,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-8b6f36e6-01ce-4424-81af-e67afcc6cfe5",
+"name": "Данные МПС о выдаче технических условий по водоснабжению",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-82ff3a33-5896-48ea-9f37-45a96cc0f03d",
+"name": "Данные МПС о выдаче технических условий по теплоснабжению",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-0a50ee88-a4fb-4500-b030-f4a588b68e58",
+"name": "Данные МПС о выдаче технических условий по энергоснабжению",
+"dists": 2,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-73b7610f-b9f7-43b8-943e-dd6af56468fa",
+"name": "Диспансерный учет пациентов ЭРДБ",
+"dists": 225,
+"lics": [
+"For general re-use (Creative Commons CC BY4.0)"
+]
+},
+{
+"id": "magda-ds-500a1246-8a25-41a9-bbf3-36e972e069c1",
+"name": "Данные МТЗСН: Действующие разрешения трудовых иммигрантов по регионам ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d60c530b-4fc5-42a2-b20b-df76274a9b57",
+"name": "Данные по обращениям населения по call-центру 109 Акмолинской области",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c41916ac-9ad1-4cf3-b1d4-8bcd9e7bc778",
+"name": "Обращения граждан в call-центр 109 Алматинской области ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6e4dcb06-8d76-4716-844a-94beddddc567",
+"name": "Обращения жителей в 109 Костанайской области",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-278b6270-77ae-4402-880b-f994da878441",
+"name": "Данные по обращениям населения по call-центру 109 (ВКО)",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-9eeb42d6-2f1b-4ea5-bb85-b7457bf26c6f",
+"name": "Данные по обращениям граждан в call-центр 109 Карагандинской области",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3ddf71d0-1021-41d3-843e-55551715497d",
+"name": "Обращения жителей в 109 Туркестанской области ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-342275eb-0d98-42c1-ac1b-46e8a3516be0",
+"name": "Добыча газа",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-678b1427-85bd-48ab-8b15-17ce8114c434",
+"name": "Добыча нефти ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-08bad7e1-227f-4a0a-acd8-1a3eeeef0b67",
+"name": "Открытые данные ЕГСУ: добыча нефти",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e7e2d159-2652-4a89-99aa-80b805eafd1d",
+"name": "Реестр субъектов предпринимательства Атырауской области ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e7d604d2-e487-4784-8b2e-f7fb76fb2574",
+"name": "Статус предоставления услуг Министерства промышленности и строительства РК",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2facfa45-85bf-4e2a-8b3c-93093ff3e162",
+"name": "Данные Министерства транспорта РК по специальным разрешениям на перевозки",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-006c44aa-3e68-48e1-92c7-f7b71181867a",
+"name": "Диспансерный учет пациентов ЭРДБ",
+"dists": 57,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6d64cceb-e996-4817-8227-8586726d5e1d",
+"name": "АИС органов исполнительного производства",
+"dists": 8,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-63b263aa-a589-457a-86d0-43ab7b8f8e46",
+"name": "Единый реестр субъектов и объектов проверок",
+"dists": 46,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-02ec887e-f9e5-44f2-a591-4d1d7afa9e39",
+"name": "Единый реестр административных правонарушений",
+"dists": 8,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-fd4a5a8e-ad9c-4622-bc7e-6dc28b338464",
+"name": "Данные по обращениям населения по call-центру 109 (Павлодарская область)",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4fc196b2-2b7d-4097-aab4-482461bf712c",
+"name": "TEST API ",
+"dists": 1,
+"lics": [
+"No License"
+]
+},
+{
+"id": "magda-ds-80f0a000-4bde-4727-9775-286111be2a9b",
+"name": "Общий коэффицент рождаемости ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c12242f1-5cab-4ed8-9097-e9f2adef8f4a",
+"name": "Ожидаемая продолжительность жизни населения при рождении",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5511e0e1-28da-4cc6-92b4-fc8c75cc97bd",
+"name": "Коэффиценты демографической нагрузки",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a6e8e026-5098-4c09-9969-2374eee25fd1",
+"name": "Общий коэффицент смертности ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-72208d9a-b3d4-4911-9bc0-7c6470838b18",
+"name": "Численность населения на начало периода ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3ed36346-9f3a-46dc-ae87-bd382d51b307",
+"name": "Естественный прирост населения ",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5c68ca67-30f9-42b3-82a9-8c35ebd07736",
+"name": "Запущенность злокачественных новообразований по локализациям\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-0955a478-dd3c-462b-8ac2-d8cb5a76e02d",
+"name": "Информация по онкобольным с впервые установленным диагнозом\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2123c2a3-4e81-41f3-9104-4a582d127d0a",
+"name": "Информация по онкологическим больным (расширенный)\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-7ef35c7c-5ce8-428a-b7cb-458028c35e05",
+"name": "Индекс развития молодёжи по регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-53af2ab8-f3e1-4582-96cf-396dc466b9c0",
+"name": "Общественные советы по регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-bcab97d5-b2c5-471e-a56d-0cfe3cb01354",
+"name": "Общественные советы по регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-40614e5e-9cf2-4a84-af26-20e5c2617a68",
+"name": "Реестр культовых сооружений по конфессиям и регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3bf5916b-0a39-41f2-ab2c-8fb4a23d7dc3",
+"name": "Реестр культовых сооружений по конфессиям и регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d196e4c8-8171-49c7-b74b-77b771503dbd",
+"name": "Мероприятия общественного контроля по регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a2f5d006-567f-4dab-b06e-20f83611cf1a",
+"name": "Религиозные образовательные учреждения и численность учащихся",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c7ef7ceb-c736-4ebc-8890-461253fb6045",
+"name": "Религиоведческая экспертиза материалов",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d573602f-9f72-4def-84a8-a2679dbd3722",
+"name": "Миссионерская деятельность по конфессиям и регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-562bab0a-df25-420e-bd3b-55419204f9a1",
+"name": "Информация по онкологическим больным (расширенный)\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d0d636ce-841b-4e38-be6e-7bbe028397fd",
+"name": "Запущенность злокачественных новообразований по локализациям\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-98dbdb27-edb7-4031-ad50-414d22d5a48b",
+"name": "Информация по онкобольным с впервые установленным диагнозом\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d32fab97-917d-4fff-89fa-94d084505177",
+"name": "Количество опубликованных материалов в реализации концепции \"Закон и порядок\" в СМИ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-dbb04040-87a4-443e-bc1a-346965f3913c",
+"name": "Социологическое исследование о правопорядке",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2e65ac4e-0fb8-42b9-882f-23fba36bacb8",
+"name": "Запущенность злокачественных новообразований по локализациям\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-69b7691f-8bae-4cf9-9076-4392e7fcd392",
+"name": "Информация по онкологическим больным (расширенный)\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-fba88431-bf4f-43d2-87dc-d1ba8b6e465b",
+"name": "Количество пролеченных случаев в разрезе возрастных групп",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-861a0254-d974-432f-b956-38efd0d917a4",
+"name": "Списочный отчёт по ОКС в разрезе возрастов и номеров карт",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-aa44b972-17b6-4a6c-8c0b-cf13cfd9e3c3",
+"name": "Сведения о медицинской технике организаций здравоохранения",
+"dists": 5,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f4253f1c-27ac-4430-aaa6-fce37c95889c",
+"name": "Количество занимаемых ставок по медицинским организациям",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-0d8bdd48-7cf9-4532-b11b-59f9d8ef4de1",
+"name": "Медицинские справки формы 028/у",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-7ef81bd2-f4c4-4553-8bf3-a9ba37e30145",
+"name": "Пролеченные случаи ОКС: ИМ с/без подъёма ST в разрезе регионов",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e94d2147-5f53-47b1-84f1-57cea415effa",
+"name": "Справочник спецификаций лекарственных препаратов",
+"dists": 43,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5ebd7ba4-3bc1-4dbd-bce0-7538ce571902",
+"name": "Количество пролеченных случаев в разрезе МО",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-82a07b17-0de7-4063-92e5-46b25add90e2",
+"name": "Факты проведения вакцинации в разрезе медицинских организаций и регионов",
+"dists": 106,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-62470e60-4a84-4c67-9c7b-4a5f14fc1d48",
+"name": "Отказы в плановой госпитализации (приёмный покой)",
+"dists": 6,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d5f48eaf-0094-488d-8bb1-f2b4529b098f",
+"name": "Информация по онкобольным с впервые установленным диагнозом\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-abe1cec8-b45b-4e4c-ba04-891e0ed8b02f",
+"name": "Ожидающие плановую госпитализацию в стационары",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4b553445-0570-4302-87e7-48e1edacfa41",
+"name": "Направления на плановую госпитализацию в стационары",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c20d7a5b-953a-48cb-a608-228e242a0779",
+"name": "Пациенты, взятые на диспансерный учет со злокачественными новообразованиями (C00–C97)\n",
+"dists": 8,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-bf74a4eb-4d9f-410e-ab84-09ceff6e6748",
+"name": "Профилактические осмотры",
+"dists": 126,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-abc6efc8-44ba-4fee-8d56-b55c19dcc654",
+"name": "Информация по аккредитации медицинских организаций\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a8bdc663-e340-48ea-a04a-ee676ec5839e",
+"name": "Случаи, прошедшие экспертизу объёма и качества (с детализацией по типам дефектов)\n",
+"dists": 8,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d4fbfe90-ca30-46a6-8d99-b6548ae3e6fb",
+"name": "Юридические лица",
+"dists": 18,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-47a97610-033c-49cc-b151-c5af1bc9ac63",
+"name": "Физические лица",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a8e90e17-b061-4894-85cc-6f214db8be40",
+"name": "Демография преподавателей",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-836fb474-c8fd-4bd1-9b4c-ad9f5c832483",
+"name": "Отказы от вакцинации и противопоказания",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f548a05f-260b-4d0e-a300-d358b787315d",
+"name": "Судна",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-fbf00ce2-d83c-4671-9f25-ea5619637b0f",
+"name": "Железные дороги",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-56aa5f09-3024-4e69-9fdf-94a0fd50c2f5",
+"name": "Коэффиценты демографической нагрузки",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e90d377f-106f-4e33-b5a0-47290b548635",
+"name": "Общий коэффицент смертности ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d7cc7e16-ce0b-4483-b095-7cc9ddd266de",
+"name": "Естественный прирост населения ",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-db0abdfd-944c-4d0f-bef8-e4a591e7cffc",
+"name": "Общий коэффицент рождаемости ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-41a112c8-a96c-4c6c-93ed-058d694373b6",
+"name": "Ожидаемая продолжительность жизни населения при рождении",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-245cee13-def1-4ebb-a566-0a96646eae77",
+"name": "Контингент учащихся, педагогический состав и достижения школ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4b601fa3-6f08-4522-b2ad-a6693c95c103",
+"name": "Образовательные программы и языки обучения школ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2d384758-870e-4e9a-9512-204ca1c5cfc4",
+"name": "Демография студентов",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e87bccf1-a32a-4f27-914f-256be90669f3",
+"name": "Социологическое исследование о правопорядке",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6a9e960b-dbf2-45ce-8fd6-c25b31023501",
+"name": "Реестр организаций среднего образования (школ) Республики Казахстан",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-8f66be4c-610a-4bee-809e-0b67b7fcf0a7",
+"name": "Освоенные дисциплины действующих студентов",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d7a90ec6-33e2-4b31-8d82-9b9e2fbaf384",
+"name": "Численность населения на начало периода ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6e8836f3-d602-4020-b181-6894d1ac5387",
+"name": "Трудоустраиваемость выпускников и освоенные дисциплины",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e6cd5fc0-eaa0-4445-bcae-fd6be2d3c972",
+"name": "Сведения о выписанных рецептах на лекарственные препараты",
+"dists": 154,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-4578f6f1-c49a-4512-ba71-4dfb4c872a11",
+"name": "Размещение иностранных граждан по по регионам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d7c32ecb-abc0-4212-922e-78bee64dee77",
+"name": "Размещение иностранных граждан по странам гражданства",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-ff7a0799-3cd0-43e1-a69f-9e71c842b62d",
+"name": "Статистика по бракам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1dc31f43-dafb-4ef4-9249-cd55b11e3436",
+"name": "Размещение иностранных граждан по целям визита",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1e6ba8ce-1196-4405-938d-de46abb69be3",
+"name": "Возрастно-половой состав\n\nиностранных гостей",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3a2d309f-9880-45e0-9628-fa14967a3eb5",
+"name": "Сведения об обеспеченных рецептах на лекарственные препараты",
+"dists": 144,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-399c3579-3bdb-4881-9c01-2b159b3f057e",
+"name": "Количество рождённых детей в разрезе месяцев\n",
+"dists": 7,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-21a375c6-d0ff-44fb-b2ce-6b0c3c082a80",
+"name": "Пациенты, состоящие на диспансерном учете, включая детей 0–17 лет\n",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-ef47144d-0ca6-4543-9cc6-1dbc952944e8",
+"name": "Пациенты, состоящие на диспансерном учете с орфанными заболеваниями согласно приказу 142 МЗ РК\n",
+"dists": 8,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5c7992fa-62a4-4c29-a26f-1356464330b2",
+"name": "Всего прикреплённого населения в разрезе регионов",
+"dists": 29,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-db364a84-0cbf-4687-ade1-2cf8284a4ca6",
+"name": "Клинические документы (бинарные)",
+"dists": 183,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1ba9b18a-2ce8-42d3-8ffb-f1f405577dcb",
+"name": "Метаданные клинических документов",
+"dists": 184,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-fe290577-78d8-4518-bd02-3cb0ec44fba5",
+"name": "Список пролеченных случаев в стационарах",
+"dists": 161,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d7975b53-50cb-4e24-8b16-ff4e5feb9dda",
+"name": "Направления на консультативно-диагностические услуги (КДУ)",
+"dists": 1292,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-361e6817-b63f-46be-a65f-904761c7e8c1",
+"name": "Перечень дефектов качества и объёма в разрезе номеров карт\n",
+"dists": 52,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f4cfceaf-b809-40a0-836f-757db35c0594",
+"name": "Акты ЕЭК по таможенным пошлинам",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-3e298386-d7ef-4b83-bdfc-c1e974edf481",
+"name": "Действующие меры защиты внутреннего рынка ЕАЭС",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-d14be33f-91b6-4199-821b-0cd4925c1e19",
+"name": "Расследования ЕЭК в отношении третьих стран",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5cdeeb88-13a3-4190-b864-9aa31280804d",
+"name": "Реестр экспертов-аудиторов",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f979b38b-c5a0-474d-885d-7a400f68c756",
+"name": "Испытательные лаборатории",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-136aa841-2119-4ef2-b5cd-6606dd8dff20",
+"name": "Аккредитованные субъекты со знаком ILAC MRA",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b92a3e02-6652-4308-be93-b8304ef0941d",
+"name": "Органы по подтверждению соответствия",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-59b4f9f4-6ddb-48e1-be91-8b880afab622",
+"name": "Количество опубликованных материалов в реализации концепции \"Закон и порядок\" в СМИ",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5b5d3fb2-843e-4578-aa2d-7b0fd63f997e",
+"name": "Факты проведённых вакцинаций с возможностью представления в разрезе возрастов",
+"dists": 106,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-377873e5-c750-41e5-b57e-b0280d4a7fba",
+"name": "Трудоустраиваемость выпускников и освоенные дисциплины",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2ff213cd-0337-4232-937b-07dcc616e989",
+"name": "Освоенные дисциплины действующих студентов",
+"dists": 4,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-e4a0224a-bb8f-45c8-933a-f84983fb72fa",
+"name": "Идентификация сельскохозяйственных животных (ИСЖ)",
+"dists": 75,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-ce9e9452-9f2e-4003-aea9-2e7efe726526",
+"name": "Стаж преподавателей по степени и категории",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-9e7f63a5-a66d-4aef-a6c0-aaf4459ee9bd",
+"name": "Количество преподавателей по должности, степени и категории",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-be8eede1-5962-4ec0-9242-08eae44821ba",
+"name": "Распределение преподавателей по ОВПО",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-08bdb283-c54d-4d65-b5c0-8fc58b3bf4bc",
+"name": "Количество студентов по статусу мобильности",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-359da9f2-b25d-4aee-8758-fe1a9e44c5f9",
+"name": "Количество студентов по курсам и ОВПО",
+"dists": 3,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-5baebfed-1d64-49d5-88f2-c54039e18d2d",
+"name": "Земельные участки — область Ұлытау",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-eb162234-2f50-4b6b-a865-c9098906791d",
+"name": "Земельные участки — Кызылординская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a42e1d03-6110-4d12-9371-f62bd1bd6470",
+"name": "Земельные участки — Атырауская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-a820744e-8aa0-4bb1-9d2e-04a758285528",
+"name": "Земельные участки — Мангистауская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-2e6b7b58-2e1d-4aa2-b4fd-871c9aa3444b",
+"name": "Земельные участки — Павлодарская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-c985324b-cc10-4bea-ba06-03c1d092b085",
+"name": "Земельные участки — область Жетісу",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-799dd576-fd80-4087-ab5c-3aab1cc4c9bc",
+"name": "Земельные участки — Западно-Казахстанская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-44bb8006-614a-4f2a-b258-474bae7abc02",
+"name": "Земельные участки — Костанайская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-250ea8d1-00d7-4a1a-b8fe-fe86588742ed",
+"name": "Земельные участки — область Абай",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-709fb7ab-afc9-4941-bb26-07bda0da436e",
+"name": "Земельные участки — Акмолинская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-1ff519a1-0d86-47d8-b707-ab20ae7b16e8",
+"name": "Земельные участки — Карагандинская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-32237d4a-7c6b-4914-a028-fb34ecce63b8",
+"name": "Земельные участки — Актюбинская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-ff3f6678-e7af-4dab-a894-8bbcaaafcb52",
+"name": "Земельные участки — Жамбылская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-989a2e30-55b6-40c7-8540-987a0295ad10",
+"name": "Земельные участки — Алматинская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-358bedc1-3ae0-475d-94eb-56da40703cf7",
+"name": "Земельные участки — г.Шымкент",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-00562ffa-d749-4465-9039-714733364ff8",
+"name": "Земельные участки — г.Алматы",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-b1710b9d-e074-41ec-979c-8c39f649cc38",
+"name": "Земельные участки — Северо-Казахстанская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-6708c813-888f-4e2e-8ea9-4392502f72d1",
+"name": "Земельные участки — г.Астана",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-46863076-94d3-42b0-8e27-50791cbc4d81",
+"name": "Земельные участки — Восточно-Казахстанская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-decd2b94-6486-4ff9-979b-ce5f0c933755",
+"name": "Земельные участки — Туркестанская область",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-0b7ae935-7acd-4240-9111-5940baf6c9c9",
+"name": "Инфраструктура и оснащённость школ Республики Казахстан",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+},
+{
+"id": "magda-ds-f79f71f0-8dd2-4dfe-a12c-e2ed622f84bb",
+"name": "Инфраструктура и оснащённость школ Республики Казахстан",
+"dists": 2,
+"lics": [
+"Creative Commons Attribution 3.0 New Zealand"
+]
+}
+]

@@ -1,0 +1,834 @@
+{{QuickbarCity
+| Nome ufficiale = Астана
+| Banner = Central Astana banner.jpg
+| DidascaliaBanner = Skyline di Astana
+| Immagine =Another view of Downtown Astana (6245921591).jpg
+| Didascalia = Centro di Astana
+| Stato = [[Kazakistan]]
+| Regione =[[Kazakistan settentrionale]]
+| Territorio =
+| Superficie = 710
+| Abitanti = 1.029.556 <small>(2017)</small>
+| Prefisso = +7 7172
+| CAP = 010000–010015
+| Sito del turismo = https://visitastana.kz/en/
+| Map = kz
+| Lat = 51.1807
+| Long = 71.461
+| DdM = 2021
+}}
+
+'''Astana''' ('''''Nur-Sultan''''' dal 2019 al 2022) è la capitale del [[Kazakistan]].
+
+== Da sapere ==
+=== Cenni geografici ===
+Astana sorge sulle rive del [[w:Išim (fiume)|fiume Išim]] sul luogo di un insediamento precedentemente noto come ''Akmola''.
+
+=== Quando andare ===
+{{Clima
+|genmax=-12|febmax=-12|marmax=-5|aprmax=9|magmax=19|giumax=25
+|lugmax=27|agomax=24|setmax=19|ottmax=8|novmax=-3|dicmax=-9
+|genmin=-21|febmin=-21|marmin=-14|aprmin=-1|magmin=6|giumin=12
+|lugmin=14,5|agomin=11,5|setmin=6|ottmin=-1|novmin=-10,5|dicmin=-17
+|genprecip=17|febprecip=12|marprecip=13|aprprecip=22|magprecip=35|giuprecip=33
+|lugprecip=53|agoprecip=32|setprecip=23|ottprecip=30|novprecip=20|dicprecip=18
+|descrizione=[https://it.climate-data.org/asia/kazakistan/astana/astana-491/ Climate-data.org]}}
+Il clima è continentale con inverni gelidi e prolungati ed estati torride. Astana è una delle capitali più fredde del mondo con temperature che scendono a -35° già nel tardo autunno.
+
+=== Cenni storici ===
+Nel 1830 i Russi vi stabilirono un avamposto militare per prevenire gli attacchi dei Kazaki e mutarono il nome in Akmolinsk. Nel 1862 il centro si era sviluppato abbastanza da ottenere lo statuto di città. Akmolinsk viveva di estrazione mineraria. Al tempo di Stalin divenne un luogo di deportazione. Durante la II guerra mondiale vi furono trasferiti in massa contadini dalla Russia occidentale che era stata occupata in gran parte dai Tedeschi. L'evacuazione mirava ad assicurare la continuità del ciclo produttivo delle terre agricole.
+
+Al tempo di [[w:Krusciov|Krusciov]] assunse il nome di ''Tselinograd'' che significa "Città delle Terre Vergini", dal varo di un piano economico che in pochi anni avrebbe trasformato parte della steppa in sconfinate piantagioni di cotone. La deviazione delle acque del fiume Syr Darya per gli scopi irrigui delle nuove piantagioni avrebbe portato al disastro ecologico del lago di Aral. Dopo la dichiarazione d'indipendenza del 1992 la città riacquistò il nome originario di Akmola.
+
+Nel 1998 il presidente [[w:Nursultan Nazarbayev|Nursultan Nazarbayev]] annunziò a sorpresa la sua decisione di trasferirvi la capitale da [[Almaty]]. Alla città fu conferito un nuovo nome, "Astana" che significa semplicemente "capitale". Di fatto Akmola non poteva essere mantenuto perché di cattivo auspicio: vuol dire, infatti, "tomba bianca".
+
+Dopo l'annunzio del presidente la città è divenuta un cantiere a cielo aperto. Nuovi, strabilianti edifici sono sorti sulla sponda meridionale del fiume come il Centro Culturale Presidenziale a forma di yurta, il Bayterek o albero della vita e il Palazzo della Pace e della Concordia dalla forma piramidale di [[w:Norman Foster|Norman Foster]]
+
+Il 23 marzo 2019 la città è stata rinominata Nur-sultan con decreto presidenziale in onore del presidente della repubblica uscente [[w:Nursultan Nazarbaev|Nursultan Nazarbaev]]. Ma il 14 settembre 2022, il vecchio nome è stato ripristinato.
+{{-}}
+
+== Come orientarsi ==
+{{MappaDinamica
+| Lat= 51.137
+| Long= 71.470
+| h = 550 | w = 500 | z = 12
+| view=Kartographer
+}}
+La città nuova si estende sulla riva meridionale del fiume Esil. Essa ha la pianta ideale di un immenso ippodromo. In corrispondenza di una curva sta il palazzo presidenziale, sulla cima di una collinetta delimitata da un'ansa del fiume Esil. Dall'altra sta il surrealista padiglione di [https://www.khanshatyr.com/ Khan Shatyr], un centro ricreazionale a forma di vela. La spina di questo ippodromo ideale è costituito da un viale prospettico estremamente ampio sul quale si affacciano vari edifici governativi. Il piano urbanistico è stato elaborato dall'architetto giapponese [[w:en:Kisho Kurokawa|Kisho Kurokawa]] che ha vinto il concorso indetto dall'''Astana genplan'', l'ente statale istituito per presiedere allo sviluppo urbanistico di Astana. Altri architetti di fama internazionale hanno realizzato singoli edifici. Il britannico Norman Foster ha progettato il palazzo a forma piramidale che sta sull'altra sponda del fiume in corrispondenza del retro del palazzo presidenziale.
+Per quanto affascinante possa essere il nuovo centro burocratico, la vita di Astana continua a pulsare sulla sponda opposta del fiume. La zona del vecchio centro è delimitata a nord dalla stazione ferroviaria. Sul viale Abey si affacciano molti dei principali alberghi di Astana.
+
+{{marker|nome=Nurzhol Bulvar |tipo=lime|lat= 51.127471|long=71.435654}} è una delle strade principali della città che collega prospetticamente la torre Bayterek con il Palazzo Presidenziale.
+{{-}}
+
+== Come arrivare ==
+=== In aereo ===
+[[File:210720 NQZ TerminalBirdView.jpg|miniatura|Aeroporto Internazionale Nursultan Nazarbayev]]
+[[File:Nursultan Nazarbayev International Airport 02.jpg|miniatura|Gli autobus di collegamento col centro]]
+* {{go
+| nome=Aeroporto Internazionale Nursultan Nazarbayev | alt={{IATA|TSE}} | sito=http://nn-airport.kz/ | email=
+| indirizzo= | lat=51.022222 | long=71.466944 | indicazioni=L'aeroporto internazionale di Astana è a 25&nbsp;km a sud del centro.
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q174233
+| descrizione=Le compagnie [http://www.austrian.com Austrian Airlines], [https://www.lufthansa.com/ Lufthansa], [http://www.thy.com Turkish Airlines] volano rispettivamente da [[Vienna#In aereo|Vienna]], [[Francoforte#In aereo|Francoforte]], [[Istanbul#In aereo|Istanbul]].
+
+:Altre compagnie che operano all'aeroporto di Astana sono:
+:* [http://www.airastana.com Air Astana] - Da/per [[Delhi]], [[Dubai]], [[Francoforte]], [[Hannover]], [[Mosca]]-Sheremetyevo
+:* [http://www.aero.kg Avia Traffic Company] - Da/per [[Bişkek]] Compagnia che appare nella [[w:Elenco dei vettori aerei soggetti a divieto operativo nell'Unione europea|lista nera]] stilata dall'unione Europea
+:* [http://belavia.by Belavia] - Da/per [[Minsk]] (stagionale dal 29 giugno al 31 agosto)
+:* [http://www.hnair.com Hainan Airlines] - Da/per [[Ürümqi#In aereo|Ürümqi]]
+:* [http://www.kdavia.eu KD Avia] - Da/per [[Kaliningrad]]
+:* [http://www.rossiya-airlines.ru Rossiya airlines] - Da/per [[Mosca#Vnukovo|Mosca]]-Vnukovo, [[San Pietroburgo]]
+:* [http://www.scat.kz Scat Air] - Da/per [[San Pietroburgo#In aereo|San Pietroburgo]]
+:* [http://www.umairlines.com UM Airlines] - Da/per [[Kiev#In aereo|Kiev]]-Boryspil, [[Simferopol]]
+:* [http://www.uzairways.com Uzbekistan Airways] - Da/per [[Tashkent#In aereo|Tashkent]]
+:*[https://www.turkishairlines.com/ Tukish Airlines] - Da/per [[Istanbul]]
+
+:I voli domestici sono assicurati dalle seguenti compagnie:
+:* [http://www.airastana.com Air Astana] - Da/per [[Aqtöbe]], [[Almaty]], [[Atyrau]], [[Qostanaj]], [[Qyzylorda]], [[Oral]], [[Óskemen]], [[Pavlodar]], [[Petropavl]], [[Semej]], [[Zhezkazgan]]
+:* [http://www.scat.kz Scat Air] - [[Aktau]], [[Aqtöbe]], [[Oral]], [[Shymkent]], [[Taraz]]
+
+:;Collegamenti
+:I [http://www.nn-airport.kz/pages/bus bus] 10 e 12 collegano l'aeroporto e il centro città almeno due volte ogni ora terminando la corsa alla stazione principale, il prezzo è di 60 tenge. Oppure il 100 che passando sempre dal centro raggiunge l'altra stazione. È possibile trovare la tabella degli orari alla fermata dell'autobus direttamente di fronte all'ingresso principale del terminal T2 (domestico), si trova ad un minuto a piedi dal terminal T1 (internazionale).
+
+:Un taxi dall'aeroporto al centro città costa circa US $ 20.
+}}
+<!--=== In auto ===-->
+<!--=== In nave ===-->
+
+=== In treno ===
+[[File:Astana Railway Station.jpg|miniatura|Stazione ferroviaria Astana-1]]
+* {{go
+| nome=Stazione ferroviaria Astana-1 | alt= | sito= | email=
+| indirizzo= | lat=51.195676 | long=71.409083 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q800403
+| descrizione=Tre treni diretti collegano ogni giorno [[Almaty]] e Astana, impiegando 20 ore durante la notte e 13 di giorno. Per la [[Russia]], c'è un treno diretto per [[Mosca]] (non tutti i giorni) via [[Petropavlovsk]]; o viaggio a [[Chelabynsk]] (18 ore) per le connessioni attraverso gli [[Urali]] e la Russia europea. Per [[Urumqi]] nella [[Cina occidentale]], un treno settimanale passa per [[Karagandy]], [[Aktogai]] e [[Dostyk]].
+}}
+[[File:Astana Nurly Jol 2018.jpg|miniatura|sinistra|L'interno della stazione]]
+* {{go
+| nome=Stazione Nurly Jol | alt=Нұрлы жол | sito= | email=
+| indirizzo= | lat=51.112389 | long=71.531752 | indicazioni=A circa 10 km dal centro della città.
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q30642068
+| descrizione=Inaugurata nel 2017 per l'Expo per far fronte all'aumento del traffico ferroviario, la stazione è terminale e i treni infatti terminano la loro corsa qui. Molti treni che facevano capolinea ad Astana-1 terminano le loro corse qui. Tra questi il treno Talgo da [[Almati]].
+:L'autobus numero 50 è frequente e può essere utilizzato per raggiungere quasi ogni posto nel centro di Astana (è prevista l'apertura di una metropolitana nel 2019). La stazione assomiglia a un aeroporto o alle nuove stazioni ferroviarie in Cina - spaziosa, con zone di partenza e arrivo divise. La sicurezza delle stazioni è onnipresente, ma si è tollerati se si resta nelle zone di attesa per un lungo periodo, anche dopo essere sbarcati dal treno. Offre la connessione Wi-Fi gratuita e alcune prese di corrente.
+}}
+'''Quale stazione ferroviaria considerare?''' A partire dall'autunno 2018, i treni provenienti dalla Russia utilizzano ancora la Stazione di Astana, mentre i treni per [[Urumqi]] in [[Cina]] utilizzano Nurly Zhol assieme ai treni più veloci per [[Almaty]]. Non è ancora chiaro il ruolo di entrambe le stazioni pertanto converrà chiedere sul posto.
+
+=== In autobus ===
+* {{go
+| nome=Autostazione Saparzhay | alt=Автовокорский Сапаржай | sito=http://saparzhai.kz/ | email=
+| indirizzo= | lat=51.194046 | long=71.411624 | indicazioni=adiacente alla stazione ferroviaria
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q104864810
+| descrizione=Da questo punto partono i bus che collegano le varie destinazioni regionali. Gli orari e le destinazioni possono essere verificati presso il sito web. Le principali località sono: [[Almaty]] (6500 tenge, 19 ore con 2 corse al giorno), [[Karaganda]] (1200 tenge, 4 ore e mezza, ogni 30 min 07:00-21:00), [[Petropavlovsk]] (3000 tenge, 10 ore, 7 corse al giorno), [[Semey]] (4700 tenge, 15 ore, 4 corse al giorno) e [[Ust-Kamenogorsk]] (6000 tenge, 19 ore e 2 corse al giorno).
+:Autobus internazionali per [[Omsk]], [[Barnaul]], [[Novosibirsk]] e [[Tomsk]].
+:I minibus privati e i taxi collettivi per Karaganda partono davanti l'autostazione (1500 o 2500 tenge, 3 ore).
+}}
+{{-}}
+
+== Come spostarsi ==
+=== Con mezzi pubblici ===
+[[File:Nur-Sultan - 190217 DSC 3829.jpg|miniatura|Un autobus urbano]]
+Gli autobus pubblici (Astra Bus) hanno una tariffa fissa di 180 tenge, pagate il controllore a bordo (o l'autista se non c'è un controllore). Gli autobus sono efficienti e confortevoli, ma sono spesso pieni. Alcuni autobus sono degli anni '90, ma ci sono anche autobus più nuovi degli ultimi 10 anni che si adattano a qualsiasi città moderna in termini di qualità. Per le tratte degli autobus, gli orari e gli aggiornamenti in tempo reale, scaricate l'utilissima app per smartphone '''Astrabus'''. Un'altra app utile è 2GIS.
+
+Le autorità municipali hanno pubblicato una mappa dei [https://kz.easyway.info/en/cities/astana/routes percorsi degli autobus], nello stesso sito sono indicate le app con i percorsi per iPhone e Android. Ma dovete scegliere il numero di bus per vedere il percorso. Ciò non è utile se sapete dove volere andare ma non sapere quale autobus prendere! Una volta che siete sull'autobus, c'è una mappa del percorso, quindi vale la pena scattare una foto per visualizzare i successivi viaggi in città. Quando salite su un autobus, dite al conduttore la vostra destinazione e vi diranno quando scendere o vi faranno salire su un altro autobus.
+
+L'autobus numero 12 fa un bel giro intorno alla nuova parte della città. L'autobus 19 va dalla stazione ferroviaria, giù per via Beibilitsky, poi attraversa il centro, oltrepassando il Museo Nazionale.
+
+Una linea della '''metropolitana''' è in costruzione tra l'aeroporto e la stazione ferroviaria di Nurly Zhol. La sua apertura è in ritardo; adesso è prevista per la fine del 2019.
+
+=== In taxi ===
+[[File:Nur-Sultan - 190217 DSC 3839.jpg|miniatura|Un taxi a Astana]]
+Ci sono molti taxi in giro: aspettatevi di pagare 300-1.000 tenge per un viaggio in città.
+
+'''Taxi di strada''': state al lato di qualsiasi strada e ponete il pollice in basso alla macchina che passa, in 3 minuti dovreste avere una serie di auto che si fermano. Dite loro la destinazione e loro si allontaneranno o faranno un gesto di assenso. È utile conoscere i numeri in modo da poter impostare un prezzo per il viaggio prima di iniziare. Questi mezzi sono molto più economici dei taxi ufficiali e potete aspettarvi di pagare circa la metà del prezzo, i prezzi partono da circa 500 tenge per un viaggio oltre il fiume. Alcuni conducenti praticheranno il loro inglese, altri correranno per le strade come pazzi, rallentando solo in corrispondenza dell'autovelox. Usare questo metodo con cautela e provate a viaggiare in gruppo.
+
+Yandex taxi è disponibile.
+<!--=== In auto ===-->
+
+=== In bici ===
+[[File:Велосипедная парковка "Astana Bike".jpg|150px|miniatura|Il bike sharing]]
+La città è dotata di un sistema di bike sharing chiamato ''[https://visitastana.kz/en/information/transport/sezonnyy-transport/ Astana bike]'' con 250 stazioni distribuite nella capitale.
+{{-}}
+
+== Cosa vedere ==
+La quantità di edifici contemporanei e di architetture avveniristiche è notevole, questa una delle ragioni per cui si visita la città. Tuttavia noterete come '''molti di essi soffrano di cattiva manutenzione''' e in alcuni casi essi siano sottoutilizzati.
+=== Palazzi ===
+[[File:Astana DSC04116 (7709631558).jpg|thumb|sinistra|Palazzo della Pace e della Riconciliazione]]
+* {{simbolo|attrazione principale}} {{see
+| nome=Palazzo della Pace e della Riconciliazione | alt=Piramide di Astana, Бейбітшілік пен келісім сарайы | sito=http://astana-piramida.kz/en/ | email=
+| indirizzo=Tauelsizdik Ave 57 | lat=51.123056 | long=71.463611 | indicazioni=
+| tel=+7 7172 74 47 44 | numero verde= | fax=
+| orari=Lun-Dom 10:00-18:00 | prezzo=
+| wikidata=Q2119741
+| descrizione=Appena completato nel 2006, questo edificio piramidale in vetro e granito, progettato dall'architetto britannico [[w:Norman Foster|Norman Foster]], ha destato l'attenzione dei ''media'' internazionali, divenendo uno dei nuovi simboli della capitale. Molti hanno fatto notare le rassomiglianze con la Piramide Caio Cestio a [[Roma]], ma anche con la piramide presente nei dollari statunitensi con il vertice superiore staccato, secondo alcuni un simbolo massonico. Sorge su una collina artificiale al cui interno è stato ricavato il teatro dell'opera. L'edificio è destinato ad accogliere i convegni internazionali di diversi capi religiosi. I suoi 25 piani ospitano il Museo della Cultura Nazionale, una sala di concerti, una biblioteca, un centro di ricerca su temi religiosi e una mostra permanente. La sala ove avvengono gli incontri triennali di capi religiosi occupa la cuspide della piramide.
+}}
+[[File:Astana DSC04242 (7709918302).jpg|thumb|Palazzo KazMunayGas]]
+* {{see
+| nome=Palazzo KazMunayGas | alt= | sito=http://www.kmg.kz | email=
+| indirizzo=Qabanbay Batyr Ave 19 | lat=51.131237 | long=71.412166 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q1417227
+| descrizione=Imponente palazzo, sede della potente compagnia di stato KazMunayGas che presiede allo sfruttamento dei ricchi giacimenti di petrolio e di gas naturale del paese. Il complesso è costituito da due ali unite da un grandioso arco alla fine del viale prospettico che ha inizio dal palazzo presidenziale.
+}}
+[[File:This building in Astana mimics a certain Moscow style (4054861399).jpg|thumb|left|Trionfo di Astana]]
+* {{see
+| nome=Trionfo di Astana | alt=Trionfo di Astana | sito= | email=
+| indirizzo=Проспект Кабанбай батыра 11, 6 секция, 18 этаж, 386 квартира | lat=51.140222 | long=71.414952 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q475139
+| descrizione=Grattacielo in stile staliniano costruito nel 2006 con 39 piani.
+}}
+* {{see
+| nome=Palazzo dell'Indipendenza | alt=Тәуелсіздік сарайы | sito=http://indepalace.kz/ | email=
+| indirizzo=Tauelsizdik Ave 52 | lat=51.1205 | long=71.4721 | indicazioni=
+| tel=+7 7172 70 03 80 | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q4155890
+| descrizione=Molti incontri politici e di affari si svolgono in questo palazzo. Il vertice dell'OSCE (Organizzazione per la sicurezza e la cooperazione in Europa) si è svolto nel dicembre 2010 in questo edificio; Sono stati invitati 56 paesi ed è stato uno dei più grandi raduni di capi di Stato (più grandi del vertice nucleare di [[Washington]]). I vertici riguardanti l'ecologia si sono tenuti nell'ottobre 2010 e nel 2011.
+}}
+[[File:Palace of Arts Shabyt.jpg|thumb|Palazzo Shabyt]]
+* {{see
+| nome=Palazzo Shabyt | alt=Palazzo della creatività, "Шабыт" шығармашылық сарайы | sito= | email=
+| indirizzo=Tauelsizdik Ave 50 | lat=51.122697 | long=71.472754 | indicazioni=
+| tel=+7 7172 70 54 45 | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Palace of Arts Shabyt.jpg | wikidata=Q60446898
+| descrizione=Lo Shabyt è un palazzo delle arti situato a destra del monumento Kazakh Eli. Assomiglia esternamente ad un piatto rivestito di vetro, tuttavia se lo si osserva da vicino si nota un'incredibile trascuratezza. Molte parti infatti necessitano di manutenzione.
+}}
+[[File:Astana-2021-10 - 25.jpg|miniatura|sinistra|Palazzo presidenziale Ak Orda]]
+* {{see
+| nome=Palazzo presidenziale Ak Orda | alt=Ақорда | sito=http://www.akorda.kz/ | email=
+| indirizzo=Ак орда, Левобережье | lat=51.125833 | long=71.446389 | indicazioni=sulla riva sinistra del fiume Išim
+| tel=+7 702 383 3734 | numero verde= | fax=
+| orari=Mar-Sab 7:30-20:00 | prezzo=
+| wikipedia=Palazzo presidenziale Ak Orda | wikidata=Q413579
+| descrizione=Residenza ufficiale del Presidente del Kazakistan. L'edificio fu costruito in tre anni ed ufficialmente inaugurato nel 2004. La sera l'illuminazione è suggestiva.
+}}
+[[File:Архив - panoramio.jpg|thumb|Archivio nazionale del Kazakistan]]
+* {{see
+| nome=Archivio nazionale del Kazakistan | alt=Қазақстан Республикасының ұлттық мұрағаты | sito= | email=
+| indirizzo=Nurzhol Blvd 12 | lat=51.128001 | long=71.427101 | indicazioni=A pochi passi dal Bayterek
+| tel=+7 7172 57 99 32 | numero verde= | fax=
+| orari=Lun-Ven 9:00-18:00 | prezzo=
+| immagine=Архив - panoramio.jpg
+| descrizione=Questo edificio che ospita l'archivio nazionale del Kazakistan presenta un interessante edificio circolare con una cupola ogivale architettonicamente interessante.
+}}
+* {{see
+| nome=Senato parlamento del Kazakistan | alt=Қазақстан Республикасы Парламентінің Сенаты | sito=http://www.parlam.kz | email=
+| indirizzo=Орынбор, 2, просп. Мәнгілік ел. 2 | lat=51.127677 | long=71.441497 | indicazioni=
+| tel=+7 7172 74 71 42 | numero verde= | fax=
+| orari=Lun-Ven 9:00-18:30 | prezzo=
+| wikidata=Q2995409
+| descrizione=LE due torri ospitano il Senato e il Parlamento del Kazakistan.
+}}
+[[File:Central Downtown Astana 1.jpg|thumb|left|La coppia di edifici dell'Accademia nazionale dell'Educazione]]
+* {{see
+| nome=Accademia nazionale dell'Educazione | alt=Ы. Алтынсарин атындағы Ұлттық білім академиясы | sito=http://nao.kz/ | email=
+| indirizzo=ул. Орынбор, 4, БЦ "Алтын Орда", 14 - 16 этаж, просп. Мәнгілік ел. 4 | lat=51.127509 | long=71.439609 | indicazioni=
+| tel=+7 7172 57 72 03 | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Una coppia di edifici che fanno bella prospettiva con il Bayterek. Secondo alcuni questi edifici richiamano un simbolo massonico.
+}}
+[[File:House of Ministries 02.jpg|thumb|Casa dei Ministri del Governo del Kazakistan di notte]]
+* {{see
+| nome=Casa dei Ministri del Governo del Kazakistan | alt=Министрліктер үйі | sito= | email=
+| indirizzo= | lat=51.1252 | long=71.4391 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Si tratta di due edifici curvi speculari a poca distanza dal Parlamento e dal palazzo presidenziale. Se di giorno sono dei semplici edifici di notte sono illuminati da migliaia di luci che fanno scorrere dei testi e delle immagini.
+}}
+* {{see
+| nome=Torri di smeraldo | alt=Kazako: Asyl tas; russo: Изумрудный квартал | sito= | email=
+| indirizzo= | lat=51.130719 | long=71.422394 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q1073439
+| descrizione=Tre grattacieli di 54, 43 e 37 piani.
+}}
+* {{see
+| nome=Expo 2017 | alt= | sito=https://expo2017astana.com/en/ | email=
+| indirizzo= | lat=51.0892333 | long=71.4163604 | indicazioni=Fermata bus Nazarbayev University
+| tel= | numero verde= | fax=
+| orari=Lun-Dom 8:00-22:00 | prezzo=
+| wikipedia=Categoria:Expo 2017 | wikidata=Q19858174
+| descrizione=Questo gruppo di edifici moderni hanno ospitato l’Expo di Astana nel 2017 dedicato alle fonti energetiche alternative. Il padiglione centrale, ossia quello del Kazakistan è una sfera dove è presente un museo dedicato alle fonti energetiche alternative.
+}}
+
+=== Monumenti e memoriali ===
+[[File:Kazakhstani tenge 10000 (2006).jpg|miniatura|sinistra|Bayterek sulle banconote Kazake]]
+[[File:Interior of Bayterek Tower 05.jpg|miniatura|Foto di rito sul Bayterek]]
+* {{simbolo|attrazione principale}} {{see
+| nome=Torre di Bayterek | alt=Бәйтерек, Bäyterek | sito= | email=
+| indirizzo= | lat=51.12825 | long=71.430472 | indicazioni=
+| tel=+7 701 998 2535 | numero verde= | fax=
+| orari=Dom-Gio 10:00-21:00, Ven-Sab 9:00-21:00 | prezzo=intero 500 T, ridotto 150 T
+| wikipedia=Baiterek | wikidata=Q804210
+| descrizione=Il simbolo della nuova Astana è questa torre panoramica che si erge sul viale prospettico di fronte al palazzo presidenziale. Disegnata anch'essa dal britannico [[w:Norman Foster|Norman Foster]] su suggerimenti, pare, dello stesso presidente Nazarbayev, è alta 97 m. (onorando il fatto che nel 1997 la città è divenuta capitale) ed è coronata da una sfera in colore oro di 22 metri di diametro. Dalla terrazza panoramica si può avere uno sguardo d'insieme della città anche se il miglior momento per vederla è al mattino quando i vetri non riflettono come di sera. La torre e la sfera sulla sua sommità simboleggiano la leggenda di un uccello magico di nome Samruk che deponeva le sue uova su alberi al di fuori della portata degli esseri umani. Le uova contenevano tutti i desideri umani e le risposte sul loro futuro. Alla base invece vi stava un drago.
+:Al piano finale si trova un piedistallo con un triangolo su cui è impressa la mano di Nazarbayev. Qui la gente ama farsi delle foto poggiandola, come a suggellare una sorta di rito massonico. Al lato c'è un pannello circolare che riporta i nomi di tutte le religioni del mondo.
+}}
+[[File:Kazakh Eli.jpg|miniatura|Kazakh Eli]]
+* {{see
+| nome=Monumento Kazakh Eli | alt=Стелла "Қазақ елі" | sito= | email=
+| indirizzo= | lat=51.122056 | long=71.469922 | indicazioni=vicino alla Piramide o Palazzo della Pace
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q12572863
+| descrizione=Questo monumento a colonna ha una piccola statua del primo presidente della Repubblica del Kazakistan. È alto circa 100 metri e ha il mitico uccello dorato Samryk in cima. Il monumento è fatto di marmo bianco e circondato da bellissime fontane.
+}}
+* {{see
+| nome=Zher Ana | alt= | sito= | email=
+| indirizzo= | lat=51.153384 | long=71.431714 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Monumento alla Madre Terra crear dallo scultore russo Dashi Namdakova e installato nel 2008 rappresenta la zarina Tomiris a cavallo di un toro.
+}}
+* {{see
+| nome=Arco di Trionfo | alt=Триумфальная арка | sito= | email=
+| indirizzo=Yengbekshiler Street 2 | lat=51.104329 | long=71.430102 | indicazioni=
+| tel= | numero verde= | fax=
+| orari=Mar-Dom 10:00-22:00 | prezzo=
+| descrizione=Un moderno arco di trionfo ad imitazione di quelli romani, ma ormai presenti in molte moderne città occidentali.
+}}
+* {{see
+| nome=Fontana del circo | alt= | sito= | email=
+| indirizzo= | lat=51.14594 | long=71.420112 | indicazioni=Accanto all'edificio circolare del circo
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Questa grande fontana rappresenta i personaggi del circo in posa divertente.
+}}
+<gallery mode="packed" heights="150">
+File:Stamps of Kazakhstan, 2012-32.jpg|L'arco di trionfo in un francobollo
+File:Circus fountain 01.jpg|Fontana del circo
+</gallery>
+* {{see
+| nome=Lucertole giganti | alt= | sito= | email=
+| indirizzo=Turan ave | lat=51.138739 | long=71.409658 | indicazioni=Accanto al centro commerciale
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Due sculture di lucertole in cui è possibile sedersi e farsi una foto dalla bocca che ha la forma di un divano.
+}}
+
+=== Edifici religiosi ===
+[[File:Kazakhstan P9130229 (28303484369).jpg|miniatura|sinistra|Interno della moschea Khazret Sultan]]
+[[File:Astana DSC04245 (7709924248).jpg|thumb|Moschea Nur Astana]]
+[[File:Успенский собор 2017 4.jpg|thumb|Cattedrale dell'Assunzione]]
+* {{see
+| nome=Moschea Khazret Sultan | alt=Әзірет Сұлтан мешіті | sito=http://www.muslim.kz | email=
+| indirizzo=Tauelsizdik Ave 48 | lat=51.125 | long=71.472222 | indicazioni=Accanto al Museo Nazionale, e visibile per miglia intorno
+| tel= | numero verde= | fax=
+| orari=Lun-Dom 09:00-21:00, i turisti dovrebbero evitare le preghiere del venerdì pomeriggio. | prezzo=
+| wikidata=Q4494668
+| descrizione=Completata nel 2012, è la più grande moschea del Kazakistan e la seconda più grande dell'Asia centrale. Un vasto e calmo spazio in grado di ospitare fino a 10.000 fedeli.
+}}
+* {{see
+| nome=Moschea Nur-Astana | alt=Nur-Astana meshiti, Астана Мешіті | sito=https://ummet.kz/ | email=
+| indirizzo=Qabanbay Batyr Ave 36 | lat=51.126561 | long=71.415737 | indicazioni=
+| tel=+7 7172 44 61 65 | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q1813417
+| descrizione=La seconda più grande moschea di Astana e la terza più grande in [[Asia centrale]], completata nel 2008. L'area della cupola contiene simboli provenienti da tutto il mondo come la Statua della Libertà, il frammento del grande muro cinese, la statua "Doriphor", il Partenone e altri.
+}}
+* {{see
+| nome=Cattedrale dell'Assunzione | alt=Свято-Успенский кафедральный собор | sito=http://sobor.kz/node/171 | email=
+| indirizzo=Kuyshi Dina St 27 | lat=51.149603 | long=71.481481 | indicazioni=
+| tel=+7 7172 35 07 32 | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Кафедральный собор в честь Успения Пресвятой Богородицы.jpg | wikidata=Q1899549
+| descrizione=Cattedrale ortodossa russa.
+}}
+
+=== Musei ===
+[[File:National Museum of the Republic of Kazakhstan 01.jpg|miniatura|sinistra|150px|Museo Nazionale della Repubblica del Kazakistan]]
+* {{see
+| nome=Museo Nazionale della Repubblica del Kazakistan | alt=Қазақстан Республикасының Ұлттық музейі | sito=http://www.nationalmuseum.kz/ | email=ulttyk_muzei@mail.ru
+| indirizzo=Tauelsizdik Ave 54 | lat=51.1178 | long=71.4701 | indicazioni=Le principali linee di autobus fermano all'esterno
+| tel=+7 7172 91 90 35 | numero verde= | fax=
+| orari=Mar-Dom 10:00-18:00 | prezzo=700 tenge per la collezione principale, 1000 tenge aggiuntivi per visitare la galleria d'oro
+| wikidata=Q18405670
+| descrizione=Il museo nazionale si è trasferito in questo luogo nel 2014. Si tratta di un edificio enorme e molto moderno con esposizioni interattive in inglese, russo e kazako. I display conducono attraverso la storia del Kazakistan fino ai giorni nostri. Ospita anche una galleria d'arte con molte mostre temporanee. L'ingresso principale è enorme e possiede un'aquila reale che batte le ali al suono della musica patriottica in determinati momenti della giornata. Uno dei punti salienti è al piano terra dove un diorama animato pianificato di Astana emerge dal pavimento, assicuratevi di arrivare presto perché può essere affollato. Nella galleria è esposta una replica di ''Altin Adam'' (l'uomo d'oro) lo scheletro di un guerriero scita o saka rinvenuto nella sua armatura d'oro nel 1969 in una tomba di Esyk / Issyk ([[regione di Almaty]]) e da allora divenuto un simbolo del [[Kazakistan]]. Nelle vetrine è esposta una serie di bellissimi oggetti d'oro che facevano parte del corredo funebre del guerriero. Da non perdere gli abbozzi di Nazabayev per il palazzo presidenziale e il Baiterek. Ma anche la statua di Nazarbayev seduto come George Washington.
+:All'ingresso dell'edificio è presente una splendida fontana monumentale.
+}}
+[[File:Kazakhstan Military History Museum 05.jpg|miniatura|Museo storico delle Forze Armate della Repubblica del Kazakistan]]
+* {{see
+| nome=Museo storico delle Forze Armate della Repubblica del Kazakistan | alt=Қазақстан Республикасы қарулы күштерінің Әскери-Тарихи музеиі | sito= | email=
+| indirizzo=Respublika Ave 2 | lat=51.155913 | long=71.431365 | indicazioni=circondato da strade, ci sono diversi sottopassaggi per arrivare a questo museo
+| tel=+7 777 881 4285 | numero verde= | fax=
+| orari=Lun-Dom 10:00-18:00 | prezzo=Gratis
+| descrizione=Costruito come una yurta con una cupola che ricorda una moschea. Contiene mostre sulla storia dell'esercito del Kazakistan. C'è una grande attenzione per la Grande Guerra Patriottica e una collezione di cimeli legati a Nazabayev, tra cui alcuni dei suoi articoli di cancelleria ufficiali, un cappello da comandante del carro armato che indossava e un grande dipinto ufficiale. Non perdetevi i livelli superiori che hanno alcuni eccellenti dipinti di guerra o dipinti in stile sovietico mentre entrate nell'edificio. Anche l’esterno è interessante con diversi modelli di carri armati, cannoni e un jet.
+}}
+[[File:Этно-мемориальный комплекс «Карта Казахстана Атамекен».JPG|miniatura|Mappa del Kazakistan Atameken|sinistra]]
+* {{see
+| nome=Mappa del Kazakistan Atameken | alt="Атамекен" этно-мемориалды кешені | sito=http://atamekenmap.kz/en/ | email=
+| indirizzo=Qorghalzhyn Hwy 2/1 | lat=51.14937 | long=71.417838 | indicazioni=
+| tel= | numero verde= | fax=
+| orari=Lun-Dom 9:00-21:00 | prezzo=400 tenge, guida in inglese 500 tenge (giu 2019)
+| wikidata=Q1454511
+| descrizione=Un museo all'aperto che offre una panoramica dell'intero paese in una versione in miniatura. Questa mostra di 1,7 ettari presenta oltre 200 modellini, creando città kazake e monumenti storici. Durante i mesi estivi, ci sono normalmente guide che parlano inglese (sono facoltative ovviamente), e c'è una sezione coperta che si concentra sulle nuove costruzioni all'interno della città. Fotografare a volte richiede un pagamento extra, ma potreste tenere la vostra macchina fotografica nella borsa fino a quando non si è superata la biglietteria. C'è una mappa coperta di Astana su una piattaforma assicuratevi di visitarla mostra perché offre diorami dell'industria, dello sport e della cultura kazaka.
+}}
+[[File:Astana SAM 0149 (14934464778).jpg|miniatura|Museo del primo presidente della Repubblica del Kazakistan]]
+* {{see
+| nome=Museo del primo presidente della Repubblica del Kazakistan | alt=Қазақстан Республикасы Тұңғыш Президентінің Музейі | sito=http://tour.presidentlibrary.kz/ | email=
+| indirizzo=Abay Ave 11 Beibitshilik Street | lat=51.166317 | long=71.418777 | indicazioni=a nord del fiume all'incrocio tra Abai Street e Bebeishelik Street
+| tel=+7 7172 75 12 96 | numero verde= | fax=
+| orari=Mar-Dom 10:00-18:00 | prezzo=gratis
+| wikidata=Q25500354
+| descrizione=Questo magnifico edificio fu la sede del potere prima della costruzione del nuovo palazzo presidenziale. C'è un ingresso su Abai Street dove verrete sottoposti a controlli. Una volta dentro assicuratevi di chiedere una guida in inglese. Le immagini sono ammesse al piano terra (1° in kazako) e all'esterno, ma non altrove. La maggior parte delle persone dovrà indossare una copertura per le scarpe e tutti i bagagli dovranno essere riposti negli armadietti.
+:L'edificio è costituito da mostre che illustrano la lotta per l'indipendenza, i doni e i premi dati a Nazarbayev, tra cui una mitragliatrice dei sauditi, e le stanze di stato conservate com'erano quando Nazarbayev vi viveva. All'ultimo piano c'è una mostra fotografica completa di Eltsin, qualcuno a cui Nazarbayev sembrava avere molta simpatia. Assicuratevi di vedere la copia a grandezza naturale dell'uomo d'oro. Il museo è spesso vuoto e non sorprendetevi di trovarti trascinato da uno staff ansioso e forse annoiato. Non c'è molto per i bambini, è più adatto a chi è interessato all'arte della diplomazia di stato e alla storia di Nazarbayev. C'è un piccolo negozio di articoli da regalo al piano terra con i soliti oggetti turistici.
+}}
+
+===Ponti===
+[[File:Astana, by the River (4054863149).jpg|miniatura|Ponte Ramstore]]
+[[File:Snake bridge 02.jpg|miniatura|sinistra|Ponte pedonale]]
+* {{see
+| nome=Ponte Ramstore | alt= | sito= | email=
+| indirizzo= | lat=51.15185 | long=71.428037 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Astana, by the River (4054863149).jpg | wikidata=Q28402868
+| descrizione=Un nuovo ponte della città per il passaggio di auto e pedoni. Collega le due sponde attraversate dal fiume Išim.
+}}
+* {{see
+| nome=Ponte pedonale | alt= | sito= | email=
+| indirizzo= | lat=51.1566338 | long=71.4259108 | indicazioni=Poco più a nord rispetto al ponte Ramstore
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Questo nuovissimo ponte è dedicato solo al passaggio di pedoni e presenta una interessante struttura modulare a rete che lo copre, inoltre il suo andamento è curvilineo tanti da far pensare al movimento di un serpente. Dal ponte si gode di una splendida veduta sul fiume.
+}}
+
+=== Altro ===
+[[File:Presidential Park 01.jpg|miniatura|Il parco presidenziale]]
+[[File:Panchina speciale.jpg|miniatura|Panchina del parco degli amanti|sinistra]]
+* {{see
+| nome=Parco degli amanti | alt=Ғашықтар саябағы | sito= | email=
+| indirizzo= | lat=51.131545 | long=71.409501 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Questo parco si trova sull'interessante prospettiva del Khan Shatyr da un lato e del KazMunayGas che con il suo grande arco mostra anche la prospettiva del Bayterek.
+}}
+* {{see
+| nome=Parco Presidenziale | alt= | sito= | email=
+| indirizzo= | lat=51.124203 | long=71.456585 | indicazioni=in linea retta con l’edificio presidenziale e in fondo il Bayterek
+| tel= | numero verde= | fax=
+| orari= | prezzo=gratis
+| descrizione=Una particolarità di questo parco è rappresentata da uno stagno a forma di fenice che vola verso la piramide. La fenice è visibile solo dall’alto e possiede un forte valore simbolico.
+}}
+{{-}}
+
+== Eventi e feste ==
+La città ha un folto programma di eventi internazionali che si tengono nelle molte strutture esistenti, da eventi sportivi a convegni.
+* {{listing
+| nome=Festa della capitale | alt= | sito= | email=
+| indirizzo= | lat= | long= | indicazioni=
+| tel= | numero verde= | fax=
+| orari=6 luglio | prezzo=
+| wikidata=Q4158455
+| descrizione=È la festa della capitale e prevede concerti ed eventi per la città, la data coincide con quella del compleanno dell'ex presidente Nazarbaev.
+}}
+{{-}}
+
+== Cosa fare ==
+* {{do
+| nome=Duman | alt= | sito=http://www.duman.kz/ | email=
+| indirizzo= | lat=51.148062 | long=71.416223 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Un complesso architettonico destinato all'intrattenimento costituito da un oceanario, un teatro 3D, un'area cupola, negozi di souvenir e caffè. L'acquario è l'unico ad essere situato ad oltre 3000 km dall'oceano! Esso possiede più di 2000 abitanti del mare e più di 100 specie di fauna marina provenienti da diverse parti del mondo. Potete anche vedere "sirene" e spettacoli in cui si dà da mangiare agli squali. Nel ''Motion Theatre'' potete fare un viaggio sott'acqua sotto il comando del capitano Mac-Cloud durante la Seconda Guerra Mondiale e superare tutte le trappole mentre soccorrete la splendida principessa confinata nelle segrete, fare un tour nel passato fino all'era dei dinosauri e molto altro.
+}}
+* {{do
+| nome=Ak Bulak sauna | alt= | sito= | email=
+| indirizzo=Aeroporto di Astana | lat=51.026941 | long=71.461344 | indicazioni=
+| tel=+7 7172 497698, +7 705 140 7221 (cell) | numero verde= | fax=
+| orari= | prezzo=da $ 20-60/ora
+| descrizione=Un complesso di saune con 3 saune private VIP. Ogni sauna è decorata con un diverso stile geografico e dispone di una propria piscina, bagno turco finlandese e russo (banya), jacuzzi, hammam, sala intrattenimento con tavolo per banchetti, biliardo, karaoke, TV con canali via cavo e 2 sale relax private. Il complesso dispone di un proprio parcheggio situato sulla principale autostrada dell'Aeroporto (non lontano dagli stadi olimpici). Alimenti e bevande sono forniti dal complesso. Diversi tipi di massaggi possono essere ordinati alla reception.
+}}
+* {{do
+| nome=Astana Arena | alt= | sito=http://www.astanaarena.kz/ | email=
+| indirizzo= | lat=51.1084 | long=71.4027 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikipedia=Astana Arena | wikidata=Q746559
+| descrizione=In questo stadio di calcio gioca l'Astana FC.
+}}
+* {{do
+| nome=Stadio Kazhymukan Munaitpasov | alt=Қажымұқан Мұңайтпасов стадион, Qajymuqan Muńaıtpasov stadıon | sito= | email=
+| indirizzo= | lat=51.162739 | long=71.413312 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Стадион имени Мунайтпасова.jpg | wikidata=Q2986461
+| descrizione=
+}}
+* {{do
+| nome=Barys Arena | alt= | sito= | email=
+| indirizzo= | lat=51.1092 | long=71.3950 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Barys Arena 2014-03-15.JPG | wikidata=Q16632800
+| descrizione=
+}}
+* {{do
+| nome=Velodromo Saryarka | alt= | sito=http://velotrek.kz/index.php/en/# | email=
+| indirizzo= | lat=51.11011 | long=71.40743 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| immagine=Saryarka Velodrome (inside).JPG | wikidata=Q4408858
+| descrizione=
+}}
+* {{do
+| nome=Palazzo del ghiaccio Alau | alt=Alau Muzaidyny Saraiy | sito=http://www.alau.info/eng/index.php | email=
+| indirizzo= | lat=51.105 | long=71.405 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q1072092
+| descrizione=
+}}
+* {{do
+| nome=Palasport "Kazakhstan" | alt= | sito=http://dskazakhstan.kz/ | email=
+| indirizzo=9 Munaitpasov | lat=51.15581 | long=71.46526 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q1186465
+| descrizione=
+}}
+
+{{-}}
+
+== Acquisti ==
+Ci sono bancomat nei centri commerciali, sulla strada e nella maggior parte degli hotel. La maggior parte di essi accetta Visa seppur alcune persone hanno avuto problemi con MasterCard. La maggior parte delle banche converte dollari, euro e rubli.
+=== Souvenir ===
+* {{buy
+| nome=Talisman | alt=Талисман | sito=http://talismans.kz/en | email=
+| indirizzo=Syghanaq St 18/2 | lat=51.122538 | long=71.431561 | indicazioni=
+| tel=+7 7172 27 21 00 | numero verde= | fax=
+| orari=Lun-Dom 10:00-20:00 | prezzo=
+| descrizione=Un piccolo negozio di souvenir che vanta oltre 3.500.000 tipi diversi di regali, tra cui T-shirt, prodotti in feltro, pellami, arte contemporanea, strumenti musicali tradizionali, set da scrivania e gioielli e leopardi ripieni. Un po' costoso e lo staff osserva con molta attenzione.
+}}
+=== Centri commerciali ===
+[[File:Stamps of Kazakhstan, 2010-08.jpg|miniatura|Khan Shatyr]]
+* {{simbolo|attrazione principale}} {{buy
+| nome=Khan Shatyr | alt=Хан Шатыр | sito=http://www.khanshatyr.com | email=
+| indirizzo=Turan Ave 37 | lat=51.132222 | long=71.403889 | indicazioni=
+| tel=+7 7172 57 26 26 | numero verde= | fax=
+| orari=Lun-Dom 10:00-22:00 | prezzo=
+| wikidata=Q671484
+| descrizione=È una tenda trasparente gigante, grande abbastanza per contenere 10.000 persone progettata dall'architetto Norman Foster. La tenda di 150 m di altezza ha una base ellittica di 200 m che copre un'area più grande di 10 stadi di calcio, e contiene un parco, un'area per lo shopping e l'intrattenimento con piazze e strade acciottolate, un fiume, un minigolf e un resort al coperto. Contiene anche una sua monorotaia con diverse fermate. Mentre Astana è una delle capitali più fredde del mondo con temperature fino a -40 ° C nella stagione fredda, il materiale trasparente lascia entrare il sole e aiuta a mantenere una temperatura di 24° per tutto l'anno.
+:Ha un supermercato Greens - ben strutturato (i corridoi non sono dritti, quindi non ha quella sensazione tipica dei supermercati). I prezzi sono ragionevoli considerando che è nel Khan Shatyr.
+}}
+* {{buy
+| nome=Saryarka | alt=ТЦ СарыАрка | sito=http://saryarqa.com/ | email=
+| indirizzo= | lat=51.138467 | long=71.410474 | indicazioni=
+| tel=+7 7172 51 56 06 | numero verde= | fax=
+| orari=Lun-Dom 10:00-22:00 | prezzo=
+| descrizione=
+}}
+* {{buy
+| nome=Sine Tempore | alt=Сине Темпоре | sito= | email=
+| indirizzo=Beibitshilik Street 9 | lat=51.165338 | long=71.419983 | indicazioni=accanto alla Sala concerti
+| tel=+7 7172 75 38 07 | numero verde= | fax=
+| orari=Dom-Ven 00-24 | prezzo=
+| descrizione=Il centro commerciale ospita alcuni negozi di vestiti, profumi, un negozio di macchine fotografiche, un caffè e un piccolo supermercato.
+}}
+* {{buy
+| nome=Keruen Mall Astana | alt=ТРЦ Keruen | sito= | email=
+| indirizzo= | lat=51.127871 | long=71.425194 | indicazioni=sulla riva sinistra vicino al Bayterek
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Supermercato, cinema, video-sala giochi/percorsi al coperto per bambini. Ristoranti.
+}}
+* {{buy
+| nome=Mega Silk Way | alt=Мега Центр "Mega Silk Way Astana" | sito=http://mega.kz/ | email=
+| indirizzo= | lat=51.089046 | long=71.407386 | indicazioni=
+| tel=+7 7172 73 50 95 | numero verde= | fax=
+| orari=Lun-dom 10:00-22:00 | prezzo=
+| descrizione=
+}}
+* {{buy
+| nome=Ramstore - Mega | alt= | sito=http://www.ramstore.kz/?lang=en | email=
+| indirizzo=Mega, 1st fl., Qorghalzhyn Hwy 1 | lat=51.145450 | long=71.414180 | indicazioni=
+| tel=+7 7172 79 14 85 | numero verde= | fax=
+| orari=Lun-Dom 10:00-22:00 | prezzo=
+| descrizione=Un'altra catena di supermercati popolare tra gli occidentali. Vendono molte cose che non riuscite a trovare altrove, come maccheroni e formaggio, popcorn a microonde, salsa Worcestershire, salse barbecue, tortilla chips e così via.
+}}
+* {{buy
+| nome=Asia Park Mall | alt=ТРЦ Азия Парк | sito=https://nursultan.asiapark.kz/en/ | email=
+| indirizzo=Qabanbay Batyr Ave 21 | lat=51.128273 | long=71.411723 | indicazioni=Accanto alla Moschea centrale
+| tel=+7 7172 97 87 67 | numero verde= | fax=
+| orari=Lun-Dom 10:00-22:00 | prezzo=
+| descrizione=Ha una bella vetrata con una bella vista. Include un supermercato Alma con un buon panificio, prodotti lattiero-caseari, cibo in scatola e alimenti surgelati. C'è un negozio Finn Mark per abiti invernali. C'è anche una palestra Fitness First.
+}}
+* {{buy
+| nome=Td Artem | alt=Тд АРТЕМ | sito= | email=
+| indirizzo= | lat=51.173160 | long=71.436428 | indicazioni=
+| tel=+7 708 351 0272 | numero verde= | fax=
+| orari=Lun-Dom 00-24 | prezzo=
+| descrizione=Questo centro commerciale è a metà strada tra un bazar (come qualcuno lo chiama) e un centro commerciale vecchio stile. Il piano terra è aperto e sembra un mercato - ha un sacco di frutta e verdura fresca e frutta secca e noci, tutti in vendita nelle bancarelle del mercato; più negozi di telefonia mobile. Ci sono anche aree che vendono carne e pesce. I molti piani superiori contengono per lo più negozi di abbigliamento - un po' più a buon prezzo rispetto a Mega, Khan Shatyr ecc., Oltre a articoli da toeletta, mobili e altro.
+}}
+* {{buy
+| nome=Eurasia shopping mall | alt=Евразия Центр «Дархан» | sito=http://evraziya.kz/ | email=
+| indirizzo=Petrov St 24 | lat=51.148754 | long=71.472985 | indicazioni=
+| tel=+7 7172 34 40 64 | numero verde= | fax=
+| orari=Lun-Dom 10:00-21:00 | prezzo=
+| descrizione=Uno dei primi centri commerciali a Astana. Ha tutto a prezzi un po' più bassi. Con la Cina relativamente vicina, è possibile trovare molti gadget elettronici nei negozi, basta ricordare che le politiche sui resi non sono così amichevoli come in Occidente. Anche alcuni dei gadget più recenti come iPhone e iPod sono più costosi qui che nei paesi occidentali.
+}}
+{{-}}
+
+== Come divertirsi ==
+=== Spettacoli ===
+[[File:Inside Astana's New Opera House (8282915665).jpg|miniatura|Teatro dell'Opera|401x401px]]
+* {{drink
+| nome=Teatro dell'Opera | alt= | sito=https://astanaopera.kz/ | email=
+| indirizzo= | lat=51.135556 | long=71.410917 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q21371563
+| descrizione=Con una capacità di ca. 1500 posti, la sua acustica è molto apprezzata in tutto il mondo. Il progetto acustico e scenotecnico sono stati curati da Enrico Moretti e Maria Cairoli.
+}}
+[[File:Казахстан ЦКЗ 2011 02.jpg|miniatura|La sala concerti|sinistra]]
+* {{drink
+| nome=Kazakstan Ortalyk koncert zaly | alt=Қазақстан Орталық концерт залы | sito=http://www.qazaqconcert.kz/ | email=
+| indirizzo= | lat=51.122778 | long=71.441667 | indicazioni=accanto al palazzo presidenziale Ak Orda
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| wikidata=Q573362
+| descrizione=Una sala concerto progettata dall'architetto italiano [[w:Manfredi Nicoletti|Manfredi Nicoletti]]. La forma dell'edificio ricorda la dinamicità dei petali di un fiore come metafora del dinamismo della musica stessa. La struttura esterna dell'edificio è costituita da una serie di pareti inclinate curve in cemento rivestite con pannelli di vetro trasparente retro-verniciato blu.
+}}
+* {{drink
+| nome=Kinopark 8 | alt= | sito=http://kinopark.kz/en/ | email=
+| indirizzo=Saryarqa, Turan Ave 24 | lat=51.138568 | long=71.410812 | indicazioni=
+| tel=+7 7172 79 09 99 | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Cinema multisala. Ogni martedì cinema in inglese alle 20:00.
+}}
+* {{drink
+| nome=Circo di Astana | alt= | sito=http://www.circus-astana.kz/ | email=
+| indirizzo=Qabanbay Batyr Ave 5 | lat=51.145203 | long=71.419097 | indicazioni=
+| tel=+7 7172 24 40 60 | numero verde= | fax=
+| orari=Lun-Dom 9:00-18:00 | prezzo=
+| descrizione=Questo curioso edificio circolare che sembra un'astronave è il posto in cui si svolgono gli spettacoli del circo.
+}}
+
+=== Locali notturni ===
+* {{drink
+| nome=A8 | alt= | sito= | email=
+| indirizzo=Mukhtar Auezov Street 8 | lat=51.164853 | long=71.425292 | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=
+}}
+* {{drink
+| nome=Fusion night club | alt= | sito= | email=
+| indirizzo=Bayimbet Maylin St 4 | lat=51.142363 | long=71.466456 | indicazioni=
+| tel=+7 7172 22 27 77 | numero verde= | fax=
+| orari=Ven-Sab 23:00-05:00 | prezzo=
+| descrizione=
+}}
+* {{drink
+| nome=Chocolate | alt= | sito=https://hg2.com/venue/chocolate-room/ | email=
+| indirizzo= | lat=51.159609 | long=71.411890 | indicazioni=Nello stesso edificio dell'hotel Radisson
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=
+}}
+{{-}}
+
+== Dove mangiare ==
+'''Beshbarmak''' - un piatto di carne e pasta di cavallo. La maggior parte dei ristoranti che lo servono presenterà una porzione sufficiente per due o tre persone. '''Boursaky''': il pane meglio servito bollente. Un po' come una ciambella non zuccherata. '''Shashliq''' - a meno che non si abbia uno stomaco robusto, è meglio evitare i venditori ambulanti, ma questi kebab sono spesso a buon mercato.
+
+Lungo la strada Turan (precedentemente Sara Arka), c'è una fila di ristoranti che, sebbene un po' costosi, sono piuttosto buoni. Hanno anche stanze private per feste, saune e persino camere d'albergo.
+
+*'''Kumis''' - sono disponibili diverse varietà di latte di questa giumenta, alcune sono un po 'salate. Leggermente fermentato Può contenere alcol.
+*'''Shubat''' - varietà locale di latte di cammello fermentato. Contiene un po' di alcol.
+*'''Vodka''' - I supermercati offrono una grande varietà, che va da 2 bottiglie da 2 dollari fino a 115 dollari o più.
+*'''Cognac''' - quello che chiameremmo brandy, di nuovo una vasta gamma di negozi e ristoranti.
+<!--=== Prezzi modici ===-->
+<!--* {{eat
+| nome= | alt= | sito= | email=
+| indirizzo= | lat= | long= | indicazioni=
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=
+}}-->
+=== Prezzi medi ===
+* {{eat
+| nome=Line Brew | alt= | sito= | email=
+| indirizzo=Kenesary St 20 | lat=51.163680 | long=71.416014 | indicazioni=
+| tel=+7 701 155 1322 | numero verde= | fax=
+| orari=Lun-Dom 12:00-02:00 | prezzo=
+| descrizione=Popolare tra gli espatriati e la gente del posto, Line Brew offre una propria birra, con un menu impressionante che include diverse deliziose bistecche, tra cui una fatta con carne di cavallo.
+}}
+* {{eat
+| nome=Ali Babas | alt= | sito= | email=
+| indirizzo=3 Bukeikhan st. | lat=51.1626309 | long=71.4220903 | indicazioni=a nord del fiume
+| tel=+7 7172 32 18 99 | numero verde= | fax=
+| orari=Lun-Dom 12:00-00:30 | prezzo=3000 tenge
+| descrizione=Un ristorante estivo molto popolare. Le cameriere e i camerieri si vestono con abiti tradizionali e il menù offre una selezione di piatti della cucina centroasiatica. I prezzi sono in linea con l'Europa o l'America ma il cibo è buono. Ci sono finte gabbie per uccelli appese al tetto che twittano elettronicamente. Il latte di cammello e di cavallo è offerto insieme alla birra Leffe.
+}}
+* {{eat
+| nome=Turfan | alt=Турфан | sito=https://astana.restoran.kz/cafe/2142-turfan | email=
+| indirizzo=Alikhan Bokeikhan St 10 | lat=51.1609669 | long=71.4240453 | indicazioni=
+| tel=+7 717 239 0850 | numero verde= | fax=
+| orari=Lun-Dom 11:00-23:00 | prezzo=
+| descrizione=Ristorante popolare con la gente del posto, che offre una buona scelta di cibo dell'Asia centrale selezionabile per foto, non hanno un menu inglese ma lo staff sarà felice di provare il loro inglese. Leggermente più economico del vicino Alibaba. Durante il Ramadan non servono alcolici
+}}
+* {{eat
+| nome=Sunduk Ресторан | alt= | sito=http://satgroup.kz/ | email=
+| indirizzo=Sauran Street 14/2 | lat=51.114806 | long=71.418195 | indicazioni=
+| tel= | numero verde= | fax=
+| orari=Lun-Dom 12:00-01:00 | prezzo=
+| descrizione=
+}}
+* {{eat
+| nome=Saksaul | alt= | sito= | email=
+| indirizzo=Northern Lights, Dostyq St 5 | lat=51.128242 | long=71.422894 | indicazioni=
+| tel=+7 7172 47 59 59 | numero verde= | fax=
+| orari=Lun-Dom 09:00-02:00 | prezzo=
+| descrizione=Ristorante con menù in inglese e cucina kazaka. Buona la scelta anche se il personale non sempre è del tutto professionale.
+}}
+
+=== Prezzi elevati ===
+* {{eat
+| nome=Sattj | alt= | sito=http://arka.kz/?p=32 | email=satti@arka.kz
+| indirizzo=Qabanbay Batyr Ave 32 | lat=51.131020 | long=71.415099 | indicazioni=
+| tel=+7 7172 24 28 48 | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=Serve principalmente cibo kazako, mescolato con alcuni piatti europei.
+}}
+{{-}}
+
+== Dove alloggiare ==
+=== Prezzi modici ===
+* {{sleep
+| nome=Hostel Nomad 4x4 | alt= | sito=https://hostel-nomad4x4.business.site/ | email=
+| indirizzo=Nurtas Ongdasynov Street 52A | lat=51.13976 | long=71.42568 | indicazioni=A un paio di chilometri dalla torre Bayterek
+| tel=+87713731727 | numero verde= | fax=
+| checkin= | checkout= | prezzo=singola 2000KZT, doppia/matrimoniale 6000KZT
+| descrizione=Dormitori puliti, divisi per sesso. Mix di gente del posto e stranieri provenienti da tutto il mondo. Cucina e frigorifero a disposizione degli ospiti, così come la vendita di bevande. Nel complesso l'ostello è piuttosto squallido ma assolve alla sua funzione.
+}}
+
+=== Prezzi medi ===
+* {{sleep
+| nome=Hotel Altyn Dala | alt=Алтын Дала | sito= | email=
+| indirizzo=Bigeldinov str. 6 | lat=51.16481 | long=71.412317 | indicazioni=
+| tel=+7 7172 32 33 11 | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=
+}}
+* {{sleep
+| nome=Uyutnaya | alt= | sito= | email=
+| indirizzo=Seifullin street, 52/2 | lat=51.1736152 | long=71.4477503 | indicazioni=
+| tel=+7 7172 346 310 | numero verde= | fax=+7 7172 324199
+| checkin= | checkout= | prezzo=
+| descrizione=
+}}
+* {{sleep
+| nome=Akku | alt= | sito= | email=
+| indirizzo=RYSKULOV STR., 22 | lat=51.1619980 | long=71.4159021 | indicazioni=
+| tel=+7 7172 324199 | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=
+}}
+* {{sleep
+| nome=Hotel Mukammal | alt= | sito= | email=
+| indirizzo=Zhengis Ave 53 | lat=51.1804624 | long=71.4084587 | indicazioni=
+| tel=+7 7172 382 939 | numero verde= | fax=+7 7172 302 912
+| checkin= | checkout= | prezzo=
+| descrizione=
+}}
+* {{sleep
+| nome=Astana comfort hotel | alt= | sito=http://comforthotel.kz/ | email=
+| indirizzo=Chubary village, Kosmonavtov street, 60 | lat=51.146598 | long=71.425645 | indicazioni=
+| tel=+7 7172 22 10 21, +7 7172 22 10 22 | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=Albergo a 4 stelle.
+}}
+* {{sleep
+| nome=Business Hotel | alt= | sito=http://www.business-hotel.kz | email=
+| indirizzo=Imanov street, 18/9 | lat=51.1631401 | long=71.4334820 | indicazioni=
+| tel=+7 7172 222 280, +7 7172 223 335 | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=Albergo a 4 stelle.
+}}
+
+=== Prezzi elevati ===
+* {{sleep
+| nome=Rixos President hotel | alt= | sito=http://www.rixos.com | email=
+| indirizzo=Kabanbai batyr avenue | lat=51.1338183 | long=71.4213195 | indicazioni=
+| tel=+7 7172 245 050 | numero verde= | fax=+7 7172 24 27 60
+| checkin= | checkout= | prezzo=
+| descrizione=Albergo a 5 stelle.
+}}
+* {{sleep
+| nome=Radisson blu | alt= | sito=https://www.radissonblu.com/en/hotel-astana | email=
+| indirizzo=4, Saryarka Avenue | lat=51.1598081 | long=71.4124079 | indicazioni=
+| tel=+77 20 172 20670777 | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=
+}}
+* {{sleep
+| nome=Hotel Duman | alt= | sito=http://www.hoteldumanastana.com/ | email=
+| indirizzo=Коргальджинское шоссе, 2А | lat=51.1492954 | long=71.4155484 | indicazioni=dietro il complesso di intrattenimento Duman
+| tel= | numero verde= | fax=
+| checkin= | checkout= | prezzo=
+| descrizione=Questo hotel a quattro stelle è un edificio di 18 piani costruito nel 2008 e affacciato sul parco e sul fiume a nord e ad est, e il centro commerciale Mega a sud. Le camere sono di buona qualità, con spazio, letti grandi (i letti sono rigidi), riscaldamento e aria condizionata, docce e bagni eccellenti. Le tariffe delle camere variano. Il bar della hall al piano terra si trova nella parte inferiore di un atrio di 18 piani, una delle pareti è interamente in vetro. I vetri nell'atrio mostrano una vista impressionante. Al 16 ° piano c'è un bar e un ristorante con viste fantastiche ma cibo molto povero. Il servizio di lavanderia è esorbitante - circa $ 100 per abiti per una settimana.
+}}
+{{-}}
+
+== Sicurezza ==
+Gli autisti degli autobus all'acquisto del biglietto potrebbero "dimenticare" di tornarvi il resto corretto facendo la cresta. Basta prestare un po’ d'attenzione.
+
+La città non presenta particolari problemi di sicurezza, è possibile girare fino a tardi senza problemi.
+
+* {{bandiera|Italia}} {{listing
+| nome=Ambasciata d'Italia | alt= | sito= | email=ambasciata.astana@esteri.it
+| indirizzo=via Kosmonavtov 62 | lat=51.1474692 | long=71.4244862 | indicazioni=
+| tel=+7 7172 243390, +7 705 294 52 69 (Cellulare per emergenze) | numero verde= | fax=+7 7172 243686
+| orari=Lun-Dom 8:00-16:30 | prezzo=
+| descrizione=
+}}
+* {{bandiera|Svizzera}} {{listing
+| nome=Ambasciata della Svizzera | alt= | sito=https://www.eda.admin.ch/astana | email=
+| indirizzo=via Kosmonavtov 62 | lat= | long= | indicazioni=Nello stesso edificio di quella italiana.
+| tel= | numero verde= | fax=
+| orari= | prezzo=
+| descrizione=
+}}
+{{-}}
+
+== Come restare in contatto ==
+<!--=== Poste ===-->
+<!--=== Telefonia ===-->
+=== Internet ===
+Il Wi-Fi può essere trovato all'interno di alcuni locali o presso i centri commerciali.
+
+<!--== Tenersi informati ==-->
+{{-}}
+
+== Nei dintorni ==
+[[File:Burabai.jpg|thumb|200px|Parco nazionale Burabay]]
+* {{marker|nome=[[Parco nazionale Burabay]] |lat=53.0883 | long=70.2967}} (''200 km a nord di Astana'') &mdash; Comprende il lago omonimo circondato da strane formazioni rocciose e foreste. È un posto di villeggiatura e i pochi alberghi locali sono sempre pieni.
+* {{listing
+| nome=Museo memoriale delle vittime della repressione politica e del totalitarismo | alt=Alzhir, Мемориал АЛЖИР | sito=https://museum-alzhir.kz/en/ | email=alzhir@bk.ru
+| indirizzo=Akmola region, Tselinograd district, a. Akmol, Linear, building 2B | lat=51.078600 | long=70.972193 | indicazioni=Akmol (aka Malinovka) vicino all'autostrada principale. Per raggiungere Akmol prendere l'autobus Astana - Korgalzhyn. Dalla stazione centrale degli autobus di Saparzhay, scendere a Akmol (partenze alle 10:00, 11:50, 13:00, 14:30, per 400 tenge).
+| tel=+7 7172 49 94 55 | numero verde= | fax=
+| orari= | prezzo=500 tenge, audio guida 500 tenge
+| descrizione=Ex campo dei Gulag per i familiari delle persone condannate. All'interno dell'edificio commemorativo sono esposte mostre documentarie.
+}}
+<!--=== Itinerari ===-->
+
+<!--== Informazioni utili ==-->
+{{-}}
+
+{{Quickfooter|Città
+| Continente = Asia
+| Regione continentale = Asia centrale
+| Stato = Kazakistan
+| Regione nazionale = Kazakistan settentrionale
+| Livello = 3
+}}

@@ -1,0 +1,74 @@
+{
+ "domain": "zhastar-theatre.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://www.zhastar-theatre.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Государственный театр «Жастар» (Молодежный театр)",
+   "address": "Астана қаласы, І.Есенберлин көшесі 10",
+   "lat": null,
+   "lon": null,
+   "phone": "8 7172 38 01 08",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.zhastar-theatre.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "Жастар театры"
+    },
+    {
+     "field": "address",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "Астана қаласы, І.Есенберлин көшесі 10"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "қабылдау бөлмесі 8 7172 38 01 08"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  },
+  {
+   "name": "Касса театра «Жастар»",
+   "address": "Астана қаласы, І.Есенберлин көшесі 10",
+   "lat": null,
+   "lon": null,
+   "phone": "8 7172 39 26 48",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.zhastar-theatre.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "Жастар театры"
+    },
+    {
+     "field": "address",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "Астана қаласы, І.Есенберлин көшесі 10"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.zhastar-theatre.kz/contacts",
+     "snippet": "касса 8 7172 39 26 48"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.65
+  }
+ ],
+ "notes": "Contacts page (Kazakh UI): 'мекен-жайы Астана қаласы, І.Есенберлин көшесі 10' with department phones (recеption 8 7172 38 01 08, box office 'касса 8 7172 39 26 48', admin 38 01 19). Box office kept as a second entry for the POI join. No opening-hours text on the page — hours not stored. Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

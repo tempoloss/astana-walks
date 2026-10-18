@@ -1,0 +1,11 @@
+{
+ "domain": "arman3d.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://arman3d.kz/61"
+ ],
+ "branches": [],
+ "notes": "Angular SPA: /61, /sitemap.xml and /api/* all return the same 1.5 KB shell; the cinema/halls/contacts data loads from the kinokassa.kz ticket platform (vendor API host — a backend of the same platform, not pages of the cinema's own site; probing /api/v2/* there returns only 'pong'). No first-party HTML facts.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

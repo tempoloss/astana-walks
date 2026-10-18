@@ -1,0 +1,622 @@
+[
+ {
+  "id": "fl-01",
+  "lang": "ru",
+  "origin": "aitu",
+  "lat": 51.1279,
+  "lon": 71.4322,
+  "when": "2026-10-20T13:40",
+  "query": "между парами час где перекусить недорого",
+  "weather": null
+ },
+ {
+  "id": "fl-02",
+  "lang": "kk",
+  "origin": "enu",
+  "lat": 51.159,
+  "lon": 71.4045,
+  "when": "2026-10-20T13:35",
+  "query": "маған жақын арзан кофе керек, жарты сағат уақытым бар",
+  "weather": null
+ },
+ {
+  "id": "fl-03",
+  "lang": "ru",
+  "origin": "nu",
+  "lat": 51.0906,
+  "lon": 71.3975,
+  "when": "2026-10-20T20:05",
+  "query": "хочу поужинать недалеко от кампуса, недорого и погромче",
+  "weather": null
+ },
+ {
+  "id": "fl-04",
+  "lang": "ru+kk",
+  "origin": "aitu",
+  "lat": 51.1279,
+  "lon": 71.4322,
+  "when": "2026-10-20T13:45",
+  "query": "ребята где тут можно сесть с ноутом? нужен wifi i rozetka, надолго",
+  "weather": null
+ },
+ {
+  "id": "fl-05",
+  "lang": "ru",
+  "origin": "enu",
+  "lat": 51.159,
+  "lon": 71.4045,
+  "when": "2026-10-20T15:20",
+  "query": "кде паесть дешево и быстра",
+  "weather": null
+ },
+ {
+  "id": "fl-06",
+  "lang": "en",
+  "origin": "nu",
+  "lat": 51.0906,
+  "lon": 71.3975,
+  "when": "2026-10-21T12:10",
+  "query": "looking for a quiet place to study for a couple of hours",
+  "weather": null
+ },
+ {
+  "id": "fl-07",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-18T11:00",
+  "query": "с ребёнком погулять, площадка рядом",
+  "weather": null
+ },
+ {
+  "id": "fl-08",
+  "lang": "kk",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-18T11:10",
+  "query": "Баламмен серуендеуге орын керек, ойын алаңы жақын болсын",
+  "weather": null
+ },
+ {
+  "id": "fl-09",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-19T16:00",
+  "query": "где с детьми можно провести два часа в мороз",
+  "weather": {
+   "apparent_c": -25,
+   "precip_mm": 0,
+   "pm25": 10
+  }
+ },
+ {
+  "id": "fl-10",
+  "lang": "ru",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-18T12:30",
+  "query": "дочка хочет на аттракционы, что рядом с коляской доступно?",
+  "weather": null
+ },
+ {
+  "id": "fl-11",
+  "lang": "ru",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-18T14:00",
+  "query": "колючая ситуация: с двумя детьми до 5 лет куда-то на часок, чтобы не дорого",
+  "weather": null
+ },
+ {
+  "id": "fl-12",
+  "lang": "en",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-18T10:30",
+  "query": "indoor playground nearby for a 4 year old, step free",
+  "weather": null
+ },
+ {
+  "id": "fl-13",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-21T13:05",
+  "query": "обед в пределах часа, сытно, рядом с офисом",
+  "weather": null
+ },
+ {
+  "id": "fl-14",
+  "lang": "kk",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-21T13:10",
+  "query": "түскі үзіліс 40 минут, жақын жерде тез тамақтануды керек етедім",
+  "weather": null
+ },
+ {
+  "id": "fl-15",
+  "lang": "ru",
+  "origin": "sarayshyk",
+  "lat": 51.14,
+  "lon": 71.418,
+  "when": "2026-10-21T12:45",
+  "query": "быстрый обед на полчаса, без фастфуда",
+  "weather": null
+ },
+ {
+  "id": "fl-16",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-21T18:40",
+  "query": "после работы встретиться с командой, выпить по бокалу",
+  "weather": null
+ },
+ {
+  "id": "fl-17",
+  "lang": "en",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-21T13:00",
+  "query": "lunch spot near the office, 1 hour max, wifi needed for a call",
+  "weather": null
+ },
+ {
+  "id": "fl-18",
+  "lang": "ru",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-19T10:30",
+  "query": "спокойное место прогуляться, недалеко, скамеечки",
+  "weather": null
+ },
+ {
+  "id": "fl-19",
+  "lang": "kk",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-19T10:00",
+  "query": "тыныш серуендеуге жақын парк қай жерде? әлеуметтік жағдайымда арзанырақ",
+  "weather": null
+ },
+ {
+  "id": "fl-20",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-19T09:40",
+  "query": "хочу кофе с утра тихо, без музыки",
+  "weather": null
+ },
+ {
+  "id": "fl-21",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-19T11:30",
+  "query": "куда сходить с внучкой 6 лет на 2 часа",
+  "weather": null
+ },
+ {
+  "id": "fl-22",
+  "lang": "kk",
+  "origin": "sarayshyk",
+  "lat": 51.14,
+  "lon": 71.418,
+  "when": "2026-10-19T09:30",
+  "query": "дәмді шай ішетін тыныш кафе керек",
+  "weather": null
+ },
+ {
+  "id": "fl-23",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-18T19:30",
+  "query": "задолбали, хочу куда-то с пацанами повеселиться на пару часов",
+  "weather": null
+ },
+ {
+  "id": "fl-24",
+  "lang": "ru",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-18T20:00",
+  "query": "где тут с друзьями в караоке или боулинг можно",
+  "weather": null
+ },
+ {
+  "id": "fl-25",
+  "lang": "kk",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-18T18:00",
+  "query": "досымен бaramyn, ойнайтын жер керек, бильярд немесе плейстейшн",
+  "weather": null
+ },
+ {
+  "id": "fl-26",
+  "lang": "ru+en",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-18T19:00",
+  "query": "что-нибудь необычное для сторис, instagrammable place?",
+  "weather": null
+ },
+ {
+  "id": "fl-27",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-18T21:15",
+  "query": "ночью чипсы хотим, где круглосуточно открыто?",
+  "weather": null
+ },
+ {
+  "id": "fl-28",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-17T19:30",
+  "query": "романтический ужин с видом, не дороже разумного",
+  "weather": null
+ },
+ {
+  "id": "fl-29",
+  "lang": "kk",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-17T19:35",
+  "query": "сүйіктіммен кешкі ас, көрінікті орын керек",
+  "weather": null
+ },
+ {
+  "id": "fl-30",
+  "lang": "ru",
+  "origin": "sarayshyk",
+  "lat": 51.14,
+  "lon": 71.418,
+  "when": "2026-10-17T20:00",
+  "query": "свидание: тихий ресторан, вино, два часа",
+  "weather": null
+ },
+ {
+  "id": "fl-31",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-17T18:00",
+  "query": "куда сходить вдвоём вечером, что-то необычное",
+  "weather": null
+ },
+ {
+  "id": "fl-32",
+  "lang": "en",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-17T19:00",
+  "query": "date night spot, cozy dinner, 2 hours",
+  "weather": null
+ },
+ {
+  "id": "fl-33",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-17T21:00",
+  "query": "поздний вечер, где спокойно посидеть вдвоём с коктейлем",
+  "weather": null
+ },
+ {
+  "id": "fl-34",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-18T01:30",
+  "query": "не спится, куда можно выйти в 2 часа ночи?",
+  "weather": null
+ },
+ {
+  "id": "fl-35",
+  "lang": "ru",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-18T02:00",
+  "query": "после смены хочу поесть, что открыто ночью",
+  "weather": null
+ },
+ {
+  "id": "fl-36",
+  "lang": "kk",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-18T23:30",
+  "query": "түнде ашық жер қайда? кофе ішкім келеді",
+  "weather": null
+ },
+ {
+  "id": "fl-37",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-18T04:15",
+  "query": "аэропорт-смена, 4 утра, где позавтракать без толпы",
+  "weather": null
+ },
+ {
+  "id": "fl-38",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-18T00:30",
+  "query": "молодёжь, караоке до утра, что рядом",
+  "weather": null
+ },
+ {
+  "id": "fl-39",
+  "lang": "en",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-18T03:00",
+  "query": "anything open at 3 am, need food",
+  "weather": null
+ },
+ {
+  "id": "fl-40",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-10-19T12:00",
+  "query": "гуляю с коляской, нужно без ступенек и недалеко",
+  "weather": null
+ },
+ {
+  "id": "fl-41",
+  "lang": "kk",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-19T12:10",
+  "query": "арбалоспа серуендеймін, баспалдақсыз орын керек",
+  "weather": null
+ },
+ {
+  "id": "fl-42",
+  "lang": "ru",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-19T13:00",
+  "query": "на коляске, кафе с доступом для инвалидов рядом",
+  "weather": null
+ },
+ {
+  "id": "fl-43",
+  "lang": "en",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-19T14:30",
+  "query": "wheelchair accessible restaurant nearby, lunch",
+  "weather": null
+ },
+ {
+  "id": "fl-44",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-19T15:00",
+  "query": "с коляской в тепло: mall или кафе, без лестниц",
+  "weather": {
+   "apparent_c": 20,
+   "precip_mm": 0,
+   "pm25": 10
+  }
+ },
+ {
+  "id": "fl-45",
+  "lang": "ru",
+  "origin": "talapker",
+  "lat": 51.135,
+  "lon": 71.52,
+  "when": "2026-10-19T11:00",
+  "query": "живём на окраине, куда можно с коляской съездить-сходить?",
+  "weather": null
+ },
+ {
+  "id": "fl-46",
+  "lang": "ru",
+  "origin": "airport",
+  "lat": 51.028,
+  "lon": 71.4635,
+  "when": "2026-10-20T05:45",
+  "query": "смена закончилась в 5 утра, кофе и поесть рядом с аэропортом",
+  "weather": null
+ },
+ {
+  "id": "fl-47",
+  "lang": "kk",
+  "origin": "airport",
+  "lat": 51.028,
+  "lon": 71.4635,
+  "when": "2026-10-20T06:00",
+  "query": "жаңа аяқталды ауысым, жақын жерде тамақ және кофе керек",
+  "weather": null
+ },
+ {
+  "id": "fl-48",
+  "lang": "ru",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-10-20T08:00",
+  "query": "после ночной смены поспать негде, где тихо сесть и выпить кофе",
+  "weather": null
+ },
+ {
+  "id": "fl-49",
+  "lang": "ru",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-20T22:30",
+  "query": "врачи после дежурства, перекус в 22:30",
+  "weather": null
+ },
+ {
+  "id": "fl-50",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-20T23:45",
+  "query": "почти полночь, спортзал ещё открыт где-то?",
+  "weather": null
+ },
+ {
+  "id": "fl-51",
+  "lang": "ru",
+  "origin": "sarayshyk",
+  "lat": 51.14,
+  "lon": 71.418,
+  "when": "2026-12-16T14:00",
+  "query": "16 декабря, праздник, куда пойти с семьёй",
+  "weather": null
+ },
+ {
+  "id": "fl-52",
+  "lang": "kk",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-03-22T12:00",
+  "query": "Наурыз! қайда мерекені тойлауға болады, балалармен",
+  "weather": null
+ },
+ {
+  "id": "fl-53",
+  "lang": "ru",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-01-01T02:30",
+  "query": "1 января 2 часа ночи, где открыто?",
+  "weather": null
+ },
+ {
+  "id": "fl-54",
+  "lang": "ru",
+  "origin": "saryarka_mkr",
+  "lat": 51.175,
+  "lon": 71.395,
+  "when": "2026-01-15T13:00",
+  "query": "хочется прогуляться, но смог жуткий",
+  "weather": {
+   "apparent_c": -8,
+   "precip_mm": 0,
+   "pm25": 90
+  }
+ },
+ {
+  "id": "fl-55",
+  "lang": "kk",
+  "origin": "esil_lbank",
+  "lat": 51.102,
+  "lon": 71.425,
+  "when": "2026-01-15T15:00",
+  "query": "смог күні бүйірде отырарлық жер керек",
+  "weather": {
+   "apparent_c": -8,
+   "precip_mm": 0,
+   "pm25": 90
+  }
+ },
+ {
+  "id": "fl-56",
+  "lang": "ru",
+  "origin": "nura_mkr",
+  "lat": 51.125,
+  "lon": 71.405,
+  "when": "2026-10-19T17:30",
+  "query": "дождь ливанул, где переждать час с кофе",
+  "weather": {
+   "apparent_c": 5,
+   "precip_mm": 3.0,
+   "pm25": 10
+  }
+ },
+ {
+  "id": "fl-57",
+  "lang": "en",
+  "origin": "airport",
+  "lat": 51.028,
+  "lon": 71.4635,
+  "when": "2026-10-20T14:00",
+  "query": "2 hours before my flight, where can I walk and eat?",
+  "weather": null
+ },
+ {
+  "id": "fl-58",
+  "lang": "ru",
+  "origin": "almaty_mkr",
+  "lat": 51.158,
+  "lon": 71.419,
+  "when": "2026-10-19T11:00",
+  "query": "хочется халяль поесть рядом",
+  "weather": null
+ },
+ {
+  "id": "fl-59",
+  "lang": "kk",
+  "origin": "baikonur_mkr",
+  "lat": 51.16,
+  "lon": 71.433,
+  "when": "2026-10-19T18:00",
+  "query": "кешкі уақытта отбасымен баратын жер, халал тағам",
+  "weather": null
+ },
+ {
+  "id": "fl-60",
+  "lang": "ru",
+  "origin": "kosshy",
+  "lat": 51.165,
+  "lon": 71.49,
+  "when": "2026-10-19T13:00",
+  "query": "живём в Кошы, где заняться чем-нибудь вдвоём? кино или выставка",
+  "weather": null
+ }
+]

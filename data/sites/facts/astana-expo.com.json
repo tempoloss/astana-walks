@@ -1,0 +1,52 @@
+{
+ "domain": "astana-expo.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:23:03+00:00",
+ "pages": [
+  "http://www.astana-expo.com"
+ ],
+ "branches": [
+  {
+   "name": "Астана-Экспо КС",
+   "address": "010000, Казахстан, город Астана, район Сарайшық, улица Жұмекен Нәжімеденов, дом 16Г",
+   "lat": null,
+   "lon": null,
+   "phone": "8 7172 64 23 23",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": "Astana Expo — организатор ключевых отраслевых выставок и конференций в Казахстане и Центральной Азии",
+   "url": "http://www.astana-expo.com",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.astana-expo.com",
+     "snippet": "«Астана-Экспо КС»",
+     "fetched_at": "2026-10-17T09:23:03+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://www.astana-expo.com",
+     "snippet": "010000, Казахстан, город Астана, район Сарайшық, улица Жұмекен Нәжімеденов, дом 16Г",
+     "fetched_at": "2026-10-17T09:23:03+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.astana-expo.com",
+     "snippet": "Тел: 8 7172 64 23 23",
+     "fetched_at": "2026-10-17T09:23:03+00:00"
+    },
+    {
+     "field": "description",
+     "url": "http://www.astana-expo.com",
+     "snippet": "Astana Expo — организатор ключевых отраслевых выставок и конференций в Казахстане и Центральной Азии",
+     "fetched_at": "2026-10-17T09:23:03+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Exhibition organiser/venue; only event dates are published, no visiting opening hours.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

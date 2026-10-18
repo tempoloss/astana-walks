@@ -1,0 +1,136 @@
+{
+ "domain": "uzbechka1.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:38:41+00:00",
+ "pages": [
+  "https://uzbechka1.kz"
+ ],
+ "branches": [
+  {
+   "name": "Узбечка №1 — Флагман на Алихана Бокейхана",
+   "address": "ул. Алихан Бокейхан, 10, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Mo-Su 11:00-23:00",
+   "opening_hours_osm": "Mo-Su 11:00-23:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"name\":\"Узбечка №1 — Флагман на Алихана Бокейхана\""
+    },
+    {
+     "field": "address",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"ул. Алихан Бокейхан, 10\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"11:00\",\"closes\":\"23:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Узбечка №1 — Новый ресторан на Бухар жырау",
+   "address": "ул. Бухар жырау, 36г, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Mo-Su 11:00-23:00",
+   "opening_hours_osm": "Mo-Su 11:00-23:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"name\":\"Узбечка №1 — Новый ресторан на Бухар жырау\""
+    },
+    {
+     "field": "address",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"ул. Бухар жырау, 36г\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"11:00\",\"closes\":\"23:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Узбечка №1 — Ресторан на Динмухамеда Конаева",
+   "address": "ул. Динмухамед Конаев, 14г, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Mo-Su 11:00-23:00",
+   "opening_hours_osm": "Mo-Su 11:00-23:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"name\":\"Узбечка №1 — Ресторан на Динмухамеда Конаева\""
+    },
+    {
+     "field": "address",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"ул. Динмухамед Конаев, 14г\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"11:00\",\"closes\":\"23:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Узбечка №1 — Ресторан в Damu Mall",
+   "address": "ул. Жумекен Нажимеденов, 26, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Mo-Su 11:00-23:00",
+   "opening_hours_osm": "Mo-Su 11:00-23:00",
+   "description": null,
+   "url": null,
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"name\":\"Узбечка №1 — Ресторан в Damu Mall\""
+    },
+    {
+     "field": "address",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"ул. Жумекен Нажимеденов, 26\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://uzbechka1.kz",
+     "snippet": "\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"11:00\",\"closes\":\"23:00\"}]"
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Branches = the schema.org @graph of the home page (4 restaurants in Астана, each with street address and 'Mo-Su 11:00-23:00'). The graph's Organization/WebSite objects (hours without an address) are dropped as duplicates. The page's tel:+7 701 068 1888 is the network reservation line, not branch-specific, so no phone is stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

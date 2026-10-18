@@ -1,0 +1,152 @@
+{
+ "ca608c65a73ff40f2266ce9ba2d1f8391025aeabd251f39802ab5ea9fddc35b7": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":45,\"mode\":\"walk\",\"categories\":[\"park_garden\",\"attraction_landmark\",\"viewpoint\",\"mall\"],\"with_kids\":false,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"mega silk way\",\"прогулка\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин"
+ },
+ "c2f389aede30b26421f5f74ef123f2bb61ec940a5ffaee7da0b360e52718a5bb": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Зеленая зона поблизости, подходящая для короткой прогулки на свежем воздухе.\",\"time_on_site_min\":20,\"what_to_do\":\"Пройдитесь по аллеям парка и отдохните от суеты.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Тематический сад рядом с маршрутом, отлично дополняющий прогулку.\",\"time_on_site_min\":15,\"what_to_do\":\"Осмотрите ландшафтное оформление и прогуляйтесь по дорожкам сада.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин"
+ },
+ "a5d71e5e38a491f4118cd251131c58e56aa9d815bc904e5f5e2f704056d3e9ea": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":60,\"mode\":\"walk\",\"categories\":[\"cafe\",\"coworking_library\"],\"with_kids\":false,\"quiet\":true,\"needs_wifi_socket\":true,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"тихое место\",\"кофе\",\"розетка\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Тихое место с кофе и розеткой"
+ },
+ "3fee9e568f926513d0a9db200b247d7f6f7dd30fbc3262f5ff6bc39566f11687": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/10564988185\",\"why\":\"Подходит для спокойного отдыха с кофе: по отметкам людей здесь тихо, есть розетки и доступ к Wi-Fi.\",\"time_on_site_min\":45,\"what_to_do\":\"Заказать кофе и поработать за ноутбуком с возможностью подзарядки.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"node/4853972122\",\"why\":\"Кафе располагает доступом к Wi-Fi и подходит для спокойного визита.\",\"time_on_site_min\":45,\"what_to_do\":\"Выпить напиток и воспользоваться интернетом.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"}],\"route_order\":[\"node/10564988185\",\"node/4853972122\"]}",
+  "label": "Тихое место с кофе и розеткой"
+ },
+ "cf438a57710fcb8e53dd068a31c3033cfc6a4f102db2fe389018979b52e72edf": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":120,\"mode\":\"walk\",\"categories\":[\"museum_gallery\",\"kids_playground\"],\"with_kids\":true,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"ребенок\",\"площадка\",\"интерактивный музей\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "С ребёнком: площадка или интерактивный музей"
+ },
+ "ae82168419e6840771047ea0774ff2b595178cb9a9b3a5e832fa4a5d8e35ee87": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"overture/d87167ac-3862-4106-8e2e-dc53e728c667\",\"why\":\"Развлекательный центр подходит для посещения с детьми и предлагает интерактивные игровые зоны. По данным сайта заведения, здесь есть игровые автоматы и детская комната.\",\"time_on_site_min\":60,\"what_to_do\":\"Опробуйте игровые автоматы и прокатитесь на аттракционах вместе с ребенком.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1449322330\",\"why\":\"Открытая детская площадка прямо неподалеку, где ребенок может поиграть и побегать на свежем воздухе.\",\"time_on_site_min\":30,\"what_to_do\":\"Проведите время на свежем воздухе, пока ребенок играет на площадке.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1449322330\",\"overture/d87167ac-3862-4106-8e2e-dc53e728c667\"]}",
+  "label": "С ребёнком: площадка или интерактивный музей"
+ },
+ "8bb0ac42fd0d832886959c5f987ae55c32300a66d1d9d9e86e2d351fddef44bb": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":60,\"mode\":\"walk\",\"categories\":[\"attraction_landmark\",\"viewpoint\",\"museum_gallery\",\"park_garden\",\"cafe\"],\"with_kids\":false,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"турист\",\"вылет\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Турист, 2 часа до вылета"
+ },
+ "f30b9dadf3af0f38c1e1eb8bb42dc7fb963098b7fe5f30d6b8ea1c75e40b6626": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/10976892637\",\"why\":\"Отличное место, чтобы комфортно провести время и выпить кофе перед вылетом в аэропорту.\",\"time_on_site_min\":40,\"what_to_do\":\"Закажите любимый напиток и перекусите перед рейсом.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"node/6552437087\",\"why\":\"Подойдет для туристов, которым нужен основательный перекус перед дорогой.\",\"time_on_site_min\":35,\"what_to_do\":\"Выберите горячие блюда и спокойно пообедайте перед вылетом.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/10976892637\",\"node/6552437087\"]}",
+  "label": "Турист, 2 часа до вылета"
+ },
+ "0dc2e3ee33f49127b570597182cbabc96655aa91d670c293c67a23e58ac9cab8": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":60,\"mode\":\"walk\",\"categories\":[\"attraction_landmark\",\"museum_gallery\",\"viewpoint\",\"entertainment\",\"bar_nightlife\",\"culture_theatre_cinema\",\"cafe\"],\"with_kids\":false,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":true,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"необычная\",\"активность\",\"ночная\",\"арт\",\"инсталляция\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Необычная ночная активность"
+ },
+ "a69714341c95ed69490fcc06e56f5515182827799a3b615a70d03ca66178fbf7": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/6404747238\",\"why\":\"Заведение с особой концепцией, подходящее для позднего вечера. По данным сайта заведения, его интерьер и атмосфера вдохновлены образом реки («өзен»).\",\"time_on_site_min\":40,\"what_to_do\":\"Оценить стильный дизайн бара, заказать коктейль или легкие закуски.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"},{\"poi_id\":\"node/2826184438\",\"why\":\"Ночной бар поблизости, подходящий для продолжения вечернего досуга в рамках небольшого бюджета по времени.\",\"time_on_site_min\":40,\"what_to_do\":\"Отдохнуть в барной обстановке и заказать напитки.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"}],\"route_order\":[\"node/6404747238\",\"node/2826184438\"]}",
+  "label": "Необычная ночная активность"
+ },
+ "c486aabe8c173703e39204bf3d40e3f8f53a72bca18f23159862d74f46b33b52": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":60,\"mode\":\"walk\",\"categories\":[\"attraction_landmark\",\"viewpoint\",\"museum_gallery\",\"park_garden\",\"cafe\",\"mall\",\"culture_theatre_cinema\",\"coworking_library\"],\"with_kids\":false,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"ru\",\"free_text_keywords\":[\"турист\",\"вылет\"],\"weather_hint\":\"cold\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Турист, 2 часа до вылета, на улице мороз"
+ },
+ "bded87acb7d814dc17fd96911aa556283d43858cbec0dfeec81845d08950fa7c": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/10976892637\",\"why\":\"Подходящее теплое место в аэропорту, где можно отдохнуть перед вылетом.\",\"time_on_site_min\":45,\"what_to_do\":\"Выпейте горячий кофе и отдохните в тепле перед посадкой.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"node/6552437087\",\"why\":\"Вариант в шаговой доступности для быстрого и сытного приема пищи перед дорогой.\",\"time_on_site_min\":35,\"what_to_do\":\"Перекусите и согрейтесь перед отправлением.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/10976892637\"]}",
+  "label": "Турист, 2 часа до вылета, на улице мороз"
+ },
+ "674b2b5ee92487ddd7102720aa77ba54ebbef452fcfe07993cac75b0f21bdca0": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "json": "{\"time_budget_min\":120,\"mode\":\"walk\",\"categories\":[\"kids_playground\",\"museum_gallery\",\"entertainment\",\"park_garden\"],\"with_kids\":true,\"quiet\":false,\"needs_wifi_socket\":false,\"night\":false,\"accessibility\":false,\"budget\":\"any\",\"language\":\"kk\",\"free_text_keywords\":[\"баламен\",\"бару\"],\"weather_hint\":\"none\",\"exclude_categories\":[],\"halal\":false,\"mode_explicit\":false,\"minor\":false,\"refusal\":\"none\",\"diets\":[],\"landmark_refs\":[],\"plan_order\":[],\"group_size\":0,\"price_cap_kzt\":0,\"pets\":false,\"info_about\":[]}",
+  "label": "Баламен қайда баруға болады?"
+ },
+ "65435126d391e292a3a6326097f7ccde1d8ede633eb272fab64411394d4352e0": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"overture/f156787e-136d-4047-9f5e-8ae04ed039bb\",\"why\":\"Баламен бірге танымдық уақыт өткізуге арналған болашақ энергиясы музейі.\",\"time_on_site_min\":60,\"what_to_do\":\"Экспозицияларды аралап көріп, болашақ энергиясы туралы көрмелерді тамашалаңыз.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1452597370\",\"why\":\"Балалардың таза ауада еркін ойнауы үшін қолайлы ойын алаңы.\",\"time_on_site_min\":35,\"what_to_do\":\"Балалармен бірге алаңда ойнап, серуендеңіз.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"overture/f156787e-136d-4047-9f5e-8ae04ed039bb\",\"way/1452597370\"]}",
+  "label": "Баламен қайда баруға болады?"
+ },
+ "697a7a686f654acfce8637926010722ecdea8390b6037e2c8561f3ced8d34f43": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Отличное место для прогулки на свежем воздухе недалеко от торгово-развлекательного центра.\",\"time_on_site_min\":30,\"what_to_do\":\"Прогуляйтесь по дорожкам парка и отдохните на свежем воздухе.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а поближе?"
+ },
+ "d81c61ba5b2c007623b77d012602c1aae9b6db3fe64803cae65fb3ec56f46677": {
+  "model": "gemini:gemini-3.8-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1459874428\",\"why\":\"Единственная парковая зона среди вариантов для короткой прогулки на свежем воздухе.\",\"time_on_site_min\":25,\"what_to_do\":\"Прогуляться по дорожкам сквера и отдохнуть на свежем воздухе.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"В источнике нет данных о графике работы и подробном обустройстве территории.\"},{\"poi_id\":\"node/13173517356\",\"why\":\"Кафе находится прямо в ТРЦ MEGA Silk Way, что точно соответствует запросу, и подходит для отдыха во время прогулки.\",\"time_on_site_min\":30,\"what_to_do\":\"Зайти на перекус или выпить чашку чая; по отметкам людей, здесь обычно тихо и есть розетки.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"}],\"route_order\":[\"way/1459874428\",\"node/13173517356\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → что-то другое"
+ },
+ "fae6e61e3a940644e297d8290b95dff5b6dae53e7db9bd97b9b61755c8056a4f": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/6408271985\",\"why\":\"Уютное место для позднего вечера неподалеку, где можно отдохнуть в непринужденной городской атмосфере.\",\"time_on_site_min\":40,\"what_to_do\":\"Заказать блины или десерт с горячим напитком и отдохнуть в помещении.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"node/10564988185\",\"why\":\"Подойдет для спокойного позднего визита в теплое закрытое заведение.\",\"time_on_site_min\":35,\"what_to_do\":\"Выпить чаю или кофе и провести время за ночной беседой.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/6408271985\",\"node/10564988185\"]}",
+  "label": "Необычная ночная активность → а без алкоголя"
+ },
+ "3fd963c159a66811904b042d0816b5bbe845a2e1ce08f457c71761ee50771bc5": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/10564988185\",\"why\":\"Кафе отлично подходит для спокойной работы с ноутбуком: по отметкам людей здесь тихо, есть доступ к Wi-Fi и розеткам.\",\"time_on_site_min\":45,\"what_to_do\":\"Взять чашку кофе и расположиться с ноутбуком возле розетки.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/10564988185\"]}",
+  "label": "Тихое место с кофе и розеткой → а подешевле"
+ },
+ "c66068b583a9f66750db4deb159205b83380ea0791fdd1207ee03e2fceb103b6": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Открытый парк рядом для спокойной прогулки на свежем воздухе с детьми.\",\"time_on_site_min\":20,\"what_to_do\":\"Пройтись по аллеям парка и провести время на свежем воздухе.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Тематический сад поблизости, подходящий для продолжения неспешного семейного маршрута.\",\"time_on_site_min\":15,\"what_to_do\":\"Осмотреть садовую зону и погулять с ребенком по дорожкам.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а если с ребёнком"
+ },
+ "4a4f9b22d2fb24d90b2d7b4aa8b113c6d7f1a79a35a3689a1747c89362d5a139": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/10976892637\",\"why\":\"Сетевая кофейня отлично подходит для ожидания вылета и короткого отдыха.\",\"time_on_site_min\":45,\"what_to_do\":\"Выпить кофе и отдохнуть перед рейсом.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"node/6552437087\",\"why\":\"Подойдет, если перед дорогой требуется более основательный и сытный прием пищи.\",\"time_on_site_min\":40,\"what_to_do\":\"Пообедать перед поездкой или вылетом.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/10976892637\",\"node/6552437087\"]}",
+  "label": "Турист, 2 часа до вылета → на час дольше"
+ },
+ "8384e1953f9b4b254c3a5cb7d2d733b98d60b99072a22049d7723f16957ddb52": {
+  "model": "gemini:gemini-3.6-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Отличная локация для прогулки на свежем воздухе недалеко от комплекса Mega Silk Way.\",\"time_on_site_min\":20,\"what_to_do\":\"Пройтись по аллеям парка и отдохнуть на свежем воздухе.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Уютный парк поблизости, подходящий для короткого пешего маршрута.\",\"time_on_site_min\":15,\"what_to_do\":\"Прогуляться по территории сада и насладиться спокойной атмосферой.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин"
+ },
+ "2c3b50115c17c5412c3096f19b4f0cbdfb5e266fdf3218e62ec23afed9ff466f": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/6404747238\",\"why\":\"Заведение с особой концепцией интерьера, отражающей тему реки, подходит для вечернего визита.\",\"time_on_site_min\":45,\"what_to_do\":\"По данным сайта заведения, здесь можно заказать коктейли, легкие закуски или чай.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"},{\"poi_id\":\"node/4199896989\",\"why\":\"Круглосуточный бар поблизости для продолжения ночного отдыха.\",\"time_on_site_min\":45,\"what_to_do\":\"Заглянуть внутрь и провести время за напитками.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/6404747238\",\"node/4199896989\"]}",
+  "label": "Необычная ночная активность"
+ },
+ "4dc6370afc7495870f1c06c908fc7b325590d9f7da6877177f4840d20da351db": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1459874428\",\"why\":\"Единственная подходящая зеленая зона поблизости для прогулки на свежем воздухе.\",\"time_on_site_min\":25,\"what_to_do\":\"Прогуляться по аллеям сквера и отдохнуть от городской суеты.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"Данные о часах работы в источниках отсутствуют.\"},{\"poi_id\":\"node/13173517356\",\"why\":\"Кафе находится прямо в ТРЦ MEGA Silk Way, что отлично дополняет прогулочный маршрут при желании сделать паузу.\",\"time_on_site_min\":20,\"what_to_do\":\"Сделать остановку на напиток или легкий перекус; по отметкам людей, здесь обычно тихо.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1459874428\",\"node/13173517356\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → что-то другое"
+ },
+ "6db8f9aefdef549063ed61f9dba0c4a1e5b64d0781ebdfc441fc3df542a11fa7": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Зеленая зона рядом с вами подойдет для спокойной прогулки на свежем воздухе с детьми.\",\"time_on_site_min\":25,\"what_to_do\":\"Прогуляться по парковым аллеям и подышать свежим воздухом с ребенком.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"В справочнике нет сведений о графике работы парка.\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Небольшой тематический сад по соседству отлично дополнит короткий пеший маршрут.\",\"time_on_site_min\":15,\"what_to_do\":\"Осмотреть декоративное оформление сада во время прогулки.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"Точные часы посещения в данных не указаны.\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а если с ребёнком"
+ },
+ "39f011eb4f4903390bf63686d26ee751f7a753ed3842da4603291a5cafa5583c": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/6404747238\",\"why\":\"Заведение с особой концепцией интерьера, вдохновленной рекой, отлично подойдет для позднего вечернего визита.\",\"time_on_site_min\":45,\"what_to_do\":\"Оценить оригинальный дизайн заведения, заказать авторские коктейли или чай по данным сайта заведения.\",\"confidence\":\"high\",\"generated_idea\":false,\"notes\":\"\"},{\"poi_id\":\"node/4199896989\",\"why\":\"Круглосуточный бар подойдет для продолжения ночной прогулки в неформальной обстановке.\",\"time_on_site_min\":45,\"what_to_do\":\"Отдохнуть в непринужденной атмосфере ночного бара и заказать напитки.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"node/6404747238\",\"node/4199896989\"]}",
+  "label": "Необычная ночная активность"
+ },
+ "924f2ae29d6d912fe1dcbf88e7fe21ea1672ab23ca5f7b1115a1163937806e8f": {
+  "model": "gemini:gemini-3.7-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"node/6408271985\",\"why\":\"Уютное заведение неподалеку для ночной остановки в помещении.\",\"time_on_site_min\":40,\"what_to_do\":\"Перекусить десертом или выпить теплый напиток в поздний час.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"По отметкам людей, внутри может быть шумно.\"},{\"poi_id\":\"node/10564988185\",\"why\":\"Подходящее место для ночного визита в шаговой доступности.\",\"time_on_site_min\":35,\"what_to_do\":\"Заказать кофе или чай и отдохнуть в спокойной обстановке.\",\"confidence\":\"high\",\"generated_idea\":true,\"notes\":\"По отметкам людей, место тихое, есть Wi-Fi и розетки.\"}],\"route_order\":[\"node/6408271985\",\"node/10564988185\"]}",
+  "label": "Необычная ночная активность → а без алкоголя"
+ },
+ "640fc352c7bf19f6f8ca9ee402798654c9da310d6b3415a7d0c157a7da2373b2": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1470723968\",\"why\":\"Место отлично подходит для спокойной прогулки на свежем воздухе неподалеку.\",\"time_on_site_min\":25,\"what_to_do\":\"Прогуляться по территории сада и насладиться атмосферой.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1467797207\",\"why\":\"Парковая зона рядом, где можно приятно пройтись на свежем воздухе.\",\"time_on_site_min\":20,\"what_to_do\":\"Пройтись по аллеям парка во время короткой прогулки.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин"
+ },
+ "7e6ce6afb6d1a8188de787ad687c68b6eb4649c87c1878094ca3027e9c4ed126": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Этот парк расположен неподалеку и отлично подходит для короткой прогулки на свежем воздухе.\",\"time_on_site_min\":30,\"what_to_do\":\"Пройдитесь по аллеям парка и отдохните от городского шума.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а поближе?"
+ },
+ "bf535d39dfbe8602db48dc6c1dd42e91a78c55f93cffd3d1d92d8e1c3633fdac": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1459874428\",\"why\":\"Место отлично подходит под ваш запрос на прогулку на свежем воздухе.\",\"time_on_site_min\":30,\"what_to_do\":\"Пройтись по аллеям парка и отдохнуть от городской суеты.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1459874428\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → что-то другое"
+ },
+ "9887fddc0587839575089c5c60d7461e471aa223dc315515ff7d5d0cba9ad491": {
+  "model": "gemini:gemini-2.5-flash",
+  "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"NU Park — это отличный вариант для прогулки с детьми, так как это просторный парк, где можно активно провести время на свежем воздухе.\",\"time_on_site_min\":30,\"what_to_do\":\"Прогуляйтесь по аллеям парка, насладитесь природой и позвольте детям побегать и поиграть на открытом пространстве.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Японский сад предлагает уникальную атмосферу для спокойной прогулки и знакомства с восточной культурой, что может быть интересно для детей.\",\"time_on_site_min\":30,\"what_to_do\":\"Полюбуйтесь ландшафтным дизайном, прудами и растениями, характерными для японских садов, и сделайте красивые фотографии.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а если с ребёнком"
+ }
+}

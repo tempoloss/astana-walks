@@ -1,0 +1,191 @@
+{
+ "domain": "papajohns.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:27:23+00:00",
+ "pages": [
+  "https://order.papajohns.kz/papajohnskazakhstan/store-locator/?lang=ru",
+  "https://order.papajohns.kz/api/outlet/list/?all=true"
+ ],
+ "branches": [
+  {
+   "name": "Papa Johns ТРЦ Азия Парк, 3 этаж, зона фудкорта.",
+   "address": "Проспект Кабанбай Батыра 21 Астана, 050000, Казахстан",
+   "lat": 51.128054,
+   "lon": 71.411582,
+   "phone": "+77788783300; +77013182151",
+   "opening_hours_raw": "Понедельник: 10.00 - 00.00 Вторник: 10.00 - 00.00 Среда: 10.00 - 00.00 Четверг: 10.00 - 00.00 Пятница: 10.00 - 00.00 Суббота: 10.00 - 00.00 Воскресенье: 10.00 - 00.00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "description": null,
+   "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Papa Johns ТРЦ Азия Парк, 3 этаж, зона фудкорта.",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Проспект Кабанбай Батыра 21 Астана, 050000, Казахстан",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"value\":\"+77788783300\"",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Понедельник: 10.00 - 00.00\\nВторник: 10.00 - 00.00\\nCреда: 10.00 - 00.00\\nЧетверг: 10.00 - 00.00\\nПятница: 10.00 - 00.00\\nCуббота: 10.00 - 00.00\\nВоскресенье: 10.00 - 00.00",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"points\":[51.128054,71.411582]",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "Papa Johns ЖК Балкадиша",
+   "address": "улица Сагадат Нурмагамбетова 19, Астана, Казахстан, 3300",
+   "lat": 51.115622,
+   "lon": 71.482747,
+   "phone": "+77788783300; +77013182159",
+   "opening_hours_raw": "Понедельник: 10.00 - 00.00 Вторник: 10.00 - 00.00 Среда: 10.00 - 00.00 Четверг: 10.00 - 00.00 Пятница: 10.00 - 00.00 Суббота: 10.00 - 00.00 Воскресенье: 10.00 - 00.00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "description": null,
+   "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Papa Johns ЖК Балкадиша",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "улица Сагадат Нурмагамбетова 19, Астана, Казахстан, 3300",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"value\":\"+77788783300\"",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Понедельник: 10.00 - 00.00\\nВторник: 10.00 - 00.00\\nCреда: 10.00 - 00.00\\nЧетверг: 10.00 - 00.00\\nПятница: 10.00 - 00.00\\nCуббота: 10.00 - 00.00\\nВоскресенье: 10.00 - 00.00",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"points\":[51.115622,71.482747]",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "Мангилик Ел Астана",
+   "address": "Проспект Мангилик Ел, 40, Есиль район, Астана",
+   "lat": 51.103305,
+   "lon": 71.430638,
+   "phone": null,
+   "opening_hours_raw": "Понедельник: 10.00 - 00.00 Вторник: 10.00 - 00.00 Среда: 10.00 - 00.00 Четверг: 10.00 - 00.00 Пятница: 10.00 - 00.00 Суббота: 10.00 - 00.00 Воскресенье: 10.00 - 00.00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "description": null,
+   "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Мангилик Ел Астана",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Проспект Мангилик Ел, 40, Есиль район, Астана",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Понедельник: 10.00 - 00.00\\nВторник: 10.00 - 00.00\\nCреда: 10.00 - 00.00\\nЧетверг: 10.00 - 00.00\\nПятница: 10.00 - 00.00\\nCуббота: 10.00 - 00.00\\nВоскресенье: 10.00 - 00.00",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"points\":[51.103305,71.430638]",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "Papa Johns Рeспублика",
+   "address": "проспект Республики, 10, Астана",
+   "lat": 51.160689,
+   "lon": 71.429677,
+   "phone": "+77788783300; +77013182165",
+   "opening_hours_raw": "Понедельник: 10.00 - 02.45 Вторник: 10.00 - 02.45 Среда: 10.00 - 02.45 Четверг: 10.00 - 02.45 Пятница: 10.00 - 02.45 Суббота: 10.00 - 02.45 Воскресенье: 10.00 - 02.45",
+   "opening_hours_osm": "Mo-Su 10:00-02:45",
+   "description": null,
+   "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Papa Johns Рeспублика",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "проспект Республики, 10, Астана",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"value\":\"+77788783300\"",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "Понедельник: 10.00 - 02.45\\nВторник: 10.00 - 02.45\\nCреда: 10.00 - 02.45\\nЧетверг: 10.00 - 02.45\\nПятница: 10.00 - 02.45\\nCуббота: 10.00 - 02.45\\nВоскресенье: 10.00 - 02.45",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://order.papajohns.kz/api/outlet/list/?all=true",
+     "snippet": "\"points\":[51.160689,71.429677]",
+     "fetched_at": "2026-10-17T09:27:23+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Outlets = order.papajohns.kz API /api/outlet/list/?all=true, the store-locator SPA data source (the endpoint 404s without a same-site Referer; response cached under its URL). hours_text ru repeats one interval per day; the Latin-C homoglyphs in 'Cреда/Cуббота' are fixed before conversion, the evidence snippet keeps the raw string. 'Тест Лаб'/'Лоад Тест Лаб' are test outlets, skipped. Call-centre 3300 / +7 701 529 33 00 on www.papajohns.kz are chain-wide, not branch-specific. Skipped: Папа Джонс Казахстан Тест Лаб",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

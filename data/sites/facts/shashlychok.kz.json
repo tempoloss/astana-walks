@@ -1,0 +1,412 @@
+{
+ "domain": "shashlychok.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:19:50+00:00",
+ "pages": [
+  "https://shashlychok.kz/adresaiyrinf"
+ ],
+ "branches": [
+  {
+   "name": "Шашлычок, Астана, Тауелсиздик, 34 (киоск)",
+   "address": "Астана, Тауелсиздик, 34 (киоск)",
+   "lat": 51.140257,
+   "lon": 71.465958,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 09:00-00:30",
+   "opening_hours_osm": "Mo-Su 09:00-00:30",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Тауелсиздик, 34 (киоск)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Тауелсиздик, 34 (киоск)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.140257\",\"lng\":\"71.465958\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Ташенова, 24а (СК «Алатау»)",
+   "address": "Астана, Ташенова, 24а (СК «Алатау»)",
+   "lat": 51.153015,
+   "lon": 71.449626,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 11:00-23:00",
+   "opening_hours_osm": "Mo-Su 11:00-23:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Ташенова, 24а (СК «Алатау»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Ташенова, 24а (СК «Алатау»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.153015\",\"lng\":\"71.449626\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"],[\"11:00\",\"23:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Едил, 26/2 (ТЦ «Магнум»)",
+   "address": "Астана, Едил, 26/2 (ТЦ «Магнум»)",
+   "lat": 51.144698,
+   "lon": 71.526477,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 11:00-00:00",
+   "opening_hours_osm": "Mo-Su 11:00-24:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Едил, 26/2 (ТЦ «Магнум»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Едил, 26/2 (ТЦ «Магнум»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.144698\",\"lng\":\"71.526477\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Туран 55/3 (ТЦ «Магнум»)",
+   "address": "Астана, Туран 55/3 (ТЦ «Магнум»)",
+   "lat": 51.117573,
+   "lon": 71.398925,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 09:00-00:30",
+   "opening_hours_osm": "Mo-Su 09:00-00:30",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Туран 55/3 (ТЦ «Магнум»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Туран 55/3 (ТЦ «Магнум»)",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.117573\",\"lng\":\"71.398925\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Туркестан, 16",
+   "address": "Астана, Туркестан, 16",
+   "lat": 51.106931,
+   "lon": 71.425273,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 09:00-00:30",
+   "opening_hours_osm": "Mo-Su 09:00-00:30",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Туркестан, 16",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Туркестан, 16",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.106931\",\"lng\":\"71.425273\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"],[\"09:00\",\"00:30\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Тлендиева 15/5",
+   "address": "Астана, Тлендиева 15/5",
+   "lat": 51.17956,
+   "lon": 71.37671,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 10:00-00:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Тлендиева 15/5",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Тлендиева 15/5",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.17956\",\"lng\":\"71.37671\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Сыганак,15/1",
+   "address": "Астана, Сыганак,15/1",
+   "lat": 51.13598453552815,
+   "lon": 71.3900627588149,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 10:00-02:00",
+   "opening_hours_osm": "Mo-Su 10:00-02:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Сыганак,15/1",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Сыганак,15/1",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":51.13598453552815,\"lng\":71.3900627588149",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"],[\"10:00\",\"02:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Уалиханова 12/2",
+   "address": "Астана, Уалиханова 12/2",
+   "lat": 51.168532,
+   "lon": 71.440365,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 11:00-00:00",
+   "opening_hours_osm": "Mo-Su 11:00-24:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Уалиханова 12/2",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Уалиханова 12/2",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.168532\",\"lng\":\"71.440365\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, Астана, Кабанбай батыра 49-Алау",
+   "address": "Астана, Кабанбай батыра 49-Алау",
+   "lat": 51.100942,
+   "lon": 71.405402,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 11:00-00:00",
+   "opening_hours_osm": "Mo-Su 11:00-24:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Кабанбай батыра 49-Алау",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "Астана, Кабанбай батыра 49-Алау",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.100942\",\"lng\":\"71.405402\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  },
+  {
+   "name": "Шашлычок, проспект Улы Дала, 61, Астана",
+   "address": "проспект Улы Дала, 61, Астана",
+   "lat": 51.094635,
+   "lon": 71.439493,
+   "phone": null,
+   "opening_hours_raw": "Ежедневно 11:00-00:00",
+   "opening_hours_osm": "Mo-Su 11:00-24:00",
+   "description": null,
+   "url": "https://shashlychok.kz/adresaiyrinf",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "проспект Улы Дала, 61, Астана",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "проспект Улы Дала, 61, Астана",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"lat\":\"51.094635\",\"lng\":\"71.439493\"",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://shashlychok.kz/adresaiyrinf",
+     "snippet": "\"days\":[[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"],[\"11:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:19:50+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Branch list = the JSON store array embedded in the page template (foodpicasso platform): name, lat/lng and a 7-day [from,to] 'days' schedule per outlet; all seven days identical -> raw 'Ежедневно <from>-<end>'. Only outlets whose name says Астана are stored; Almaty/Shymkent outlets skipped. The page also prints legal requisites (ИП «UAKA food», ул. Абая 92/3) — a legal address, not a cafe; not stored. Phone numbers of the site are the chain delivery contact, not branch-specific.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

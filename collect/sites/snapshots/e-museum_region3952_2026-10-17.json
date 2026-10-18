@@ -1,0 +1,3641 @@
+[
+ {
+  "lang": "ru",
+  "status": 200,
+  "url": "/wp-json/wp/v2/museum",
+  "fetched_at": "2026-10-17T15:19:33Z",
+  "cards": [
+   {
+    "id": 2507,
+    "date": "2025-12-05T15:08:02",
+    "date_gmt": "2025-12-05T12:08:02",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a0228ab7ad4-ru/"
+    },
+    "modified": "2026-03-06T08:43:43",
+    "modified_gmt": "2026-03-06T05:43:43",
+    "slug": "68da37a0228ab7ad4-ru",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/ru/museum/68da37a0228ab7ad4-ru/",
+    "title": {
+     "rendered": "Музей Сакена Сейфуллина"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2507",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "ru",
+    "translations": {
+     "ru": 2507,
+     "kk": 2506,
+     "en": 2508
+    },
+    "original_id": "154",
+    "site_info": "<p style=\"text-align: justify; \">Музей Сакена Сейфуллина - государственный музей, занимающий значительное место в литературно-культурной истории Казахстана, расположен в столице страны - Астане. Учреждение посвящено жизни и творчеству Сакена Сейфуллина - видного представителя казахской литературы и культуры начала XX века, поэта, писателя, драматурга, публициста, а также общественного и государственного деятеля. Музей осуществляет научную, просветительскую и культурную деятельность, направленную на сохранение исторической памяти о выдающейся личности и воспитание у подрастающего поколения патриотизма и уважения к национальным ценностям.</p>\n<p style=\"text-align: justify;\">Музей был официально открыт 21 января 1988 года на основании постановления Совета Министров Казахской ССР. Основная экспозиция музея размещена в архитектурном памятнике конца XIX века - деревянном здании, которое было построено в 1846 году по инициативе купцов Акмолинского края и первоначально использовалось как склад для хранения товаров. В 1920-1930-х годах в этом доме жил и творчески работал сам Сакен Сейфуллин. Этот период стал важным этапом в становлении казахской советской литературы. Здание имеет особую историко-культурную значимость, так как является местом жизни и деятельности выдающегося деятеля казахской культуры. До 1988 года здесь функционировал детский сад. Сегодня здание находится под охраной государства и выполняет функции музея.</p>\n<p style=\"text-align: justify;\">Второй объект музея - административное здание, также является памятником деревянной архитектуры конца XIX - начала XX века, выполненным в стиле эклектики. Первоначально этот дом принадлежал врачу Фёдору Ивановичу Благовещенскому, который жил здесь около 40 лет и вел приём пациентов. Позднее в здании размещалась бухгалтерская школа, а в настоящее время оно служит административным центром музея.</p>\n<p style=\"text-align: justify;\">Постоянная экспозиция музея включает шесть выставочных залов, в фонде музея насчитывается более 7000 экспонатов. Основные направления экспозиции:</p>\n<p style=\"text-align: justify;\">1.\tЛичные вещи Сакена Сейфуллина - предметы быта и принадлежности писателя;</p>\n<p style=\"text-align: justify;\">2.\tРукописи и письма - подлинные документы, раскрывающие творческое наследие Сейфуллина;</p>\n<p style=\"text-align: justify;\">3.\tКниги и издания - первые публикации произведений писателя и их переводы;</p>\n<p style=\"text-align: justify;\">4.\tФотографии и архивные документы - материалы, отражающие исторические события и биографию;</p>\n<p style=\"text-align: justify;\">5.\tПроизведения изобразительного искусства и скульптуры - посвящённые личности и деятельности Сейфуллина.</p>\n<p style=\"text-align: justify;\">Помимо экспозиционной деятельности, музей активно занимается научно-исследовательской работой, организует литературно-культурные мероприятия, сотрудничает со школами и вузами, проводит открытые уроки, лекции, конференции и выставки, направленные на развитие абаеведения и сәкеноведения. Также музей осуществляет экспедиции, сбор новых артефактов и восстановление историко-культурного наследия.</p>\n<p style=\"text-align: justify;\">Музей Сакена Сейфуллина - это не только литературно-исторический центр, но и научно-просветительское учреждение, играющее важную роль в духовной жизни страны. В будущем планируется развитие цифровой платформы музея, расширение базы данных, установление международных научных связей и активизация работы в направлении музейной педагогики.</p>\n<p></p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0f59d15-ce06-4c38-ae50-1c480f3a1e16.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/57799e3f-e314-483e-9098-a45eae33e412.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/8ccbe92d-11e1-4aef-8e0e-8d940d93191e.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/118d32ea-4f50-4e54-a99a-bd2318909894.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/9bf197c4-71fd-4873-aa49-9e1cddc2ba6a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/d772365d-1a25-4655-a67a-efaa63d016e6.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a828f34-33fe-4825-b76d-1c83ff43cfa2.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/10693e94-9a32-459c-86b8-6de48db00a3e.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/25763e4a-0ac1-44e4-9215-71edb20457f9.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0dd23798-6047-479a-a3e5-72b0cc33e750.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/dd8ecfdb-35dc-4df6-9522-1f7bdac99975.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c73a4646-3246-46db-9d7a-ebfc451af19a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0e91fed6-f24f-4a17-823a-06b871306cae.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/650f41f8-886f-45ba-bd35-26b1bc47301a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2224e123-65f6-489e-9b1c-3a48ed45b424.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/62e371e8-b38d-4bf9-b984-9fe2ac132d02.jpeg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг",
+    "is_active": "1",
+    "site": "www.astanamuseums.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Әуезов көшесі 20 А",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2507",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 6,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2507/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99981,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2507/revisions/99981"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2507"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2507"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2513,
+    "date": "2025-12-05T10:05:09",
+    "date_gmt": "2025-12-05T07:05:09",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37ac132046063-ru/"
+    },
+    "modified": "2026-03-06T08:41:37",
+    "modified_gmt": "2026-03-06T05:41:37",
+    "slug": "68da37ac132046063-ru",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/ru/museum/68da37ac132046063-ru/",
+    "title": {
+     "rendered": "Музейно-мемориальный комплекс жертв политических репресий и тоталитаризма «Алжир»"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2513",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "ru",
+    "translations": {
+     "ru": 2513,
+     "kk": 2512,
+     "en": 2514
+    },
+    "original_id": "155",
+    "site_info": "<p style=\"text-align: justify; \">Мемориальный музей жертв политических репрессий и тоталитаризма «Алжир» - один из первых и крупнейших историко-мемориальных комплексов в Казахстане, посвящённый памяти жертв советских политических репрессий. Музей освещает одну из самых трагичных страниц в истории страны - массовые репрессии 1930–1950-х годов, судьбы пострадавших от тоталитарного режима граждан и их семей.</p>\n<p style=\"text-align: justify;\">Мемориальный комплекс «Алжир» был официально открыт 31 мая 2007 года в День памяти жертв политических репрессий. Он расположен в селе Акмол (бывшая Малиновка) Целиноградского района Акмолинской области - на территории бывшего Акмолинского лагеря жен изменников Родины, более известного под аббревиатурой Алжир.</p>\n<p style=\"text-align: justify;\">Основная цель музея - сохранить память о трагических судьбах репрессированных, особенно женщин, восстановить историческую справедливость, сформировать у молодёжи осознанное отношение к национальной истории и донести правду о преступлениях тоталитарного режима.</p>\n<p style=\"text-align: justify;\">Алжир (Акмолинский лагерь жен изменников Родины) был создан в 1938 году по приказу НКВД как лагерь особого режима. Здесь отбывали наказание жёны и дочери так называемых «врагов народа», осуждённых в годы сталинских репрессий. Более 18 000 женщин из всех республик СССР прошли через этот лагерь. Среди них были жёны видных государственных деятелей, представители интеллигенции, писатели, журналисты и работники науки и культуры.</p>\n<p style=\"text-align: justify;\">Жестокие условия труда, голод, издевательства, холод и отсутствие медицинской помощи привели к многочисленным человеческим жертвам. Многие женщины погибли, другие на всю жизнь остались со сломанными судьбами. Музей бережно сохраняет воспоминания и личные свидетельства тех, кто пережил это время.</p>\n<p style=\"text-align: justify;\">На территории мемориального комплекса расположены архитектурные и экспозиционные объекты:</p>\n<p style=\"text-align: justify;\">1. «Колокол скорби» - центральный мемориальный символ, посвящённый жертвам репрессий.</p>\n<p style=\"text-align: justify;\">2. Инсталляция «Дорога» - символизирует трудный путь женщин, прибывших в лагерь этапом.</p>\n<p style=\"text-align: justify;\">3. Подвальные помещения - реконструкция следственного изолятора с тематическими экспозициями.</p>\n<p style=\"text-align: justify;\">Основные выставочные залы содержат исторические документы, фотографии, личные вещи, информацию о карательных органах, а также артефакты, рассказывающие о повседневной жизни репрессированных женщин.</p>\n<p style=\"text-align: justify;\">Экспозиции снабжены современными интерактивными технологиями: посетителям предлагаются архивные видеоматериалы,  диорамы, реконструкции и художественные инсталляции, воссоздающие атмосферу тоталитарной эпохи.</p>\n<p style=\"text-align: justify;\">Деятельность музея не ограничивается выставочной работой. Он также выполняет научно-исследовательскую и просветительскую функции: занимается сбором и изучением архивных документов, систематизацией информации о жертвах репрессий, организует научные конференции, семинары, просмотры документальных фильмов и тематические мероприятия.</p>\n<p style=\"text-align: justify;\">Мемориальный музей «Алжир» - важное духовно-культурное учреждение, играющее значительную роль в сохранении исторической памяти Казахстана. Напоминая обществу о трагических уроках прошлого, музей способствует утверждению прав человека, восстановлению исторической справедливости и воспитанию подрастающего поколения в духе патриотизма и гражданской ответственности.</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0736388-36f2-43e9-9d27-35a059a225fa.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/ffedf61d-f5ec-48c8-b500-eccfa6dc2de1.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/eda99816-3515-42ca-beac-000779d33141.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2a06b989-cb6c-47fd-bd1f-a44d771e100f.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/17a81133-f800-4a33-bae0-8421ef19d029.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/94901b5a-8017-4732-a3c7-ce857846722a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/cebb5df6-1339-4b52-9147-22afe6539962.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6996f07a-bef8-4aea-a49f-49541c731b3b.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/785eb588-9ffa-4624-a0bb-d4646d9404fa.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6fa39968-0f3a-4339-909f-2323cb22946a.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "300 тг.",
+    "is_active": "1",
+    "site": "museum-alzhir.kz",
+    "address": "",
+    "addresscity": "Ақмол ауылы",
+    "addresscountry": "Ақмола облысы",
+    "addresspostalcode": "",
+    "addressstate": "Целиноград ауданы",
+    "addressstreet": "Линейная көшесі Строение 2 б",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2513",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 4,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2513/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99978,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2513/revisions/99978"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2513"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2513"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2573,
+    "date": "2025-12-05T10:03:08",
+    "date_gmt": "2025-12-05T07:03:08",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379da9894247d-ru/"
+    },
+    "modified": "2026-03-06T15:24:26",
+    "modified_gmt": "2026-03-06T12:24:26",
+    "slug": "68da379da9894247d-ru",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/ru/museum/68da379da9894247d-ru/",
+    "title": {
+     "rendered": "Военно-исторический музей ВС Республики Казахстан"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2573",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "ru",
+    "translations": {
+     "ru": 2573,
+     "kk": 2572,
+     "en": 2574
+    },
+    "original_id": "165",
+    "site_info": "<p style=\"text-align: justify; \">Военно-исторический музей Вооружённых Сил Республики Казахстан - уникальное научно-просветительское и культурное учреждение, направленное на сохранение и широкую популяризацию военного наследия страны. Музей выполняет миссию по изучению военной истории, демонстрации примеров боевой доблести и патриотическому воспитанию молодого поколения. Он расположен в современном архитектурном комплексе, построенном в 1998 году по инициативе Первого Президента Республики Казахстан Нурсултана Назарбаева. Особенность здания - в его многофункциональности: помимо музейных экспозиций, в нём размещены концертный зал, зал временных выставок, а также Центральный оркестр и Центральный ансамбль Министерства обороны Республики Казахстан.</p>\n<p style=\"text-align: justify; \">В музейном фонде собрано свыше 10 000 экспонатов, отражающих военную культуру и боевую историю казахского народа с древнейших времён до современности. Среди них - археологические артефакты, образцы вооружения, документы, военная форма и редкие исторические предметы.</p>\n<p style=\"text-align: justify; \">Основные залы музея включают:</p>\n<p style=\"text-align: justify; \">1. Зал «Вооружённых Сил Республики Казахстан» - Представлены материалы о создании, развитии и достижениях армии независимого Казахстана. Специальная экспозиция посвящена Верховному Главнокомандующему Вооружённых Сил - Нурсултану Назарбаеву.</p>\n<p style=\"text-align: justify; \">2. Зал «Древность - XIX век» - Рассказывает о становлении военного искусства и оружейного дела у казахов. Демонстрируются археологические находки, начиная с каменного века и до эпохи железа.</p>\n<p style=\"text-align: justify; \">3. Зал «Военной истории XX века» - Здесь представлены материалы, посвящённые периоду Алаш-Орды, Великой Отечественной войне, а также участию казахстанцев в советско-афганской войне. Используются мультимедийные средства для показа информации о Героях Советского Союза, кавалерах ордена Славы и обладателях звания «Народный герой».</p>\n<p style=\"text-align: justify; \">4. Зал «вооружения (XX–XXI века)» - Экспонируются пистолеты, автоматы, гранатомёты, противотанковые мины, авиационные средства поражения, а также макеты военной техники, включая танк Т-72, штурмовик Су-25 и корабль «Торнадо».</p>\n<p style=\"text-align: justify; \">5. Зал Временных выставок - Используется для размещения сменных экспозиций, например, уникальной коллекции антикварного салона «Ампир».</p>\n<p style=\"text-align: justify; \">6. Зал «Изобразительного искусства» - Представлены картины, графика и скульптуры на тему защиты Родины, созданные казахстанскими художниками. Особое место занимают портретные скульптуры Жамбыла Жабаева, царицы Томирис, героинь Великой Отечественной войны Маншук Маметовой и Алиии Молдагуловой, а также маршала Конева.</p>\n<p style=\"text-align: justify; \">В атриуме музея размещены барельефы, отражающие преемственность исторических эпох и эволюцию вооружения казахских воинов от древности до современности. Центральным элементом является композиция «Мәңгілік Ел» («Вечная страна»), в которой символически соединены образы исторических батыров и современных защитников Отечества. Музей - это не только выставочное пространство, но и центр научных исследований, музейной педагогики и патриотического воспитания. Здесь реализуются научные проекты, ведётся архивная работа, проводятся конференции, выставки и интерактивные занятия. Посетителям доступна интерактивная книга с уникальными архивными документами, полученными из российских архивов.</p>\n<p style=\"text-align: justify; \">Военно-исторический музей Вооружённых Сил Республики Казахстан - это важнейший национальный институт, служащий делу сохранения и чествования боевых традиций страны. Он обеспечивает преемственность государственной и военной памяти, способствуя её передаче будущим поколениям.</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/f8a24bdb-dcf0-4eba-9cd1-7d543ad5338c.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/7e92f9e7-03ec-4c86-88b6-ea931e4d40f0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/36b2476a-4065-4752-a040-e471bf92a6cd.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/bdc7ed55-4d74-49d8-a50e-7350c5ddb756.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c8729559-da18-4d83-8447-c938477a6ad0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/4eb65668-b283-4753-a444-1d44cc69a02c.webp",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/1e49f8c2-4b3a-4517-a8a2-ccdd02985c77.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6d2bc4ec-2c68-4c18-82ef-988b35d4498a.png",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/e03c54ef-1158-4cac-b20e-b2778edd291d.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "mhm.kazakhstan@gmail.com",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Республики даңғылы  2",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2573",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 5,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2573/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 100186,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2573/revisions/100186"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2573"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2573"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1253,
+    "date": "2025-12-05T10:02:58",
+    "date_gmt": "2025-12-05T07:02:58",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a2c72b30113-ru/"
+    },
+    "modified": "2026-06-18T13:40:46",
+    "modified_gmt": "2026-06-18T10:40:46",
+    "slug": "68da37a2c72b30113-ru",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/ru/museum/68da37a2c72b30113-ru/",
+    "title": {
+     "rendered": "Государственный историко-культурный музей-заповедник «Бозоқ»"
+    },
+    "content": {
+     "rendered": "<p>Городище Бозок &#8212; одна из первых страниц ранней истории нашей столицы. Памятник обнаружен к западу от г. Астана на восточном берегу оз. Бузукты. Городище Бозок расположено в центре Сарыарки, в месте, где сходятся истоки рек Есиль, Селеты, Шидерты, Нура и Сарысу. Многочисленные притоки, впадающие в Есиль, как с юга, так и севера создавали множество удобных караванных путей. На этом отрезке пути проходят торговые ответвления маршрутов Великого Шелкового пути.</p>\n",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "<p>Городище Бозок &#8212; одна из первых страниц ранней истории нашей столицы. Памятник обнаружен к западу от г. Астана на восточном [&hellip;]</p>\n",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1253",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "ru",
+    "translations": {
+     "ru": 1253,
+     "kk": 1252,
+     "en": 1254
+    },
+    "original_id": "32",
+    "site_info": "<p style=\"text-align: justify; \">Государственный историко-культурный заповедник-музей «Бозок» расположен на окраине столицы Казахстана - города Астаны, вблизи микрорайонов Үркер и Ильинка, рядом с озером Бузукты. Общая площадь составляет 412 гектаров, что делает его одним из крупнейших музеев под открытым небом в Казахстане. Заповедник-музей «Бозок» был создан в рамках национальной программы «Семь граней Великой степи». Основная цель проекта - сохранение, реконструкция и широкое представление древних и средневековых историко-культурных комплексов. Кроме того, проект направлен на развитие туристического потенциала столицы, поддержку малого и среднего бизнеса, а также создание до 1000 сезонных рабочих мест. На территории поселения воссоздаются сооружения от эпохи энеолита до средневековья: резиденции, культовые сооружения, жилые дома, мастерские, металлургические печи, рынки и петроглифы. Главные входы в комплекс расположены с юга («Врата Дешт-и-Кыпчак») и с севера («Врата Сарыарка»). Высота ворот превышает 7 метров, а весь комплекс окружён декоративной оградой протяжённостью 8,7 километра. Заповедник-музей «Бозок» - это уникальный культурный комплекс, объединяющий историю и природу, археологию и архитектуру, традиции и современность. Он даёт возможность глубоко познать прошлое казахской степи и Евразии в целом, оставаясь бесценным наследием для будущих поколений. Городище Бозок - один из крупнейших археологических памятников, отражающих раннюю и средневековую историю нынешней столицы Казахстана. Оно служит важной научной основой для изучения исторической памяти и культурного наследия страны. Памятник расположен в Нуринском районе, на восточном побережье озера Бузукты, в центральной части Сарыарки, на водоразделе рек Есиль, Селета, Шидерты, Нура и Сарысу. Географически это естественная транзитная зона, в которой сходятся многочисленные реки, впадающие в Есиль, и по которой проходили ветви Великого шелкового пути. Поселение Бозок впервые упоминается в 1816 году в путевых заметках сибирского путешественника Ивана Шангина. В 1929-1930 годах известный краевед Леонид Семёнов провёл первые археологические разведки. Однако систематические научные исследования начались только в 1998 году под руководством академика Кемеля Акышева. С 1999 года здесь ведутся постоянные археологические раскопки. Комплекс включает в себя объекты, относящиеся к различным историческим эпохам: священное место тюркского периода, средневековое укреплённое городище, некрополи Золотой Орды, жилые дома и зимовки кыпчаков, а также развитые ирригационные системы. Общая площадь археологической зоны составляет около 40 гектаров. Археологические данные свидетельствуют о том, что освоение территории началось в VII веке. В VI веке древние тюрки, продвигаясь с территории Монголии на запад, построили здесь военно-административный центр на восточном побережье озера Бузукты. Центральная часть состояла из трёх платформ, композиционно расположенных в форме трёхлепесткового цветка. Каждая платформа была окружена рвом шириной 3-5 метров и глубиной 2-3 метра. Извлечённая глина использовалась для строительства крепостных стен шириной у основания 8 метров, наверху - 5 метров, высотой 2-3 метра. В X веке это место стало резиденцией кыпчакских ханов, которые реконструировали старые постройки, возвели жилые дома из обожжённого кирпича и сторожевые башни. В восточной части поселения развивались земледелие и садоводство. Кыпчаки построили ирригационные каналы, эффективно используя гидрографические особенности реки Есиль и сезонные озёра. Одной из уникальных находок является захоронение знатной женщины-воительницы периода Золотой Орды, датируемое XIII-XIV веками. Женщина была погребена в деревянном саркофаге, одетая в шёлковое одеяние с украшениями из жемчуга и полудрагоценных камней. На ней были серебряные браслеты, серьги, на голове - бокка, сшитая из бересты, покрытая шёлком и украшенная жемчугом. В могиле также найдены железное копьё, кинжал, серебряная чаша и бронзовое зеркало. Эти артефакты подтверждают высокий социальный статус женщины. Историко-культурное значение городища Бозок заключается в его расположении на пересечении караванных путей Великого шелкового пути, а также в его роли религиозно-культурного центра и военного укрепления. Поселение существовало с VII по XVII века, выступая в разные эпохи как священное место тюркских племён, кыпчакское поселение и аграрно-ремесленный центр. Найденные в ходе раскопок бытовые предметы, оружие, украшения, монеты и остатки построек отражают процессы урбанизации в средневековом Казахстане. Бозок - первый крупный археологический объект, исследованный в степной зоне Казахстана. Его материалы представляют большую ценность для средневековой археологии Евразии. Мемориальные сооружения также позволяют изучить особенности распространения ислама в степных районах Сарыарки. В 2018 году на базе древнего городища был создан Государственный историко-культурный заповедник-музей «Бозок», в рамках которого реализуется проект создания национального археологического парка под открытым небом. Основной целью проекта является научная реконструкция городища и популяризация древних и средневековых историко-культурных комплексов на территории Казахстана.</p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf0014b4b38b",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf4418babe6c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafa3b0e994d5",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafe9f6299364",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb03d6b164c9d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb08d5ac26a4d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb0d78f6b708b",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb12885c04843",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb187891b8028",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb1de556cd60f"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "bozok.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы  54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1253",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 7,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1253/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 111345,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1253/revisions/111345"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1253"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1253"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1223,
+    "date": "2025-12-05T10:01:25",
+    "date_gmt": "2025-12-05T07:01:25",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379b4b4fb9d59-ru/"
+    },
+    "modified": "2026-06-16T07:17:18",
+    "modified_gmt": "2026-06-16T04:17:18",
+    "slug": "68da379b4b4fb9d59-ru",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/ru/museum/68da379b4b4fb9d59-ru/",
+    "title": {
+     "rendered": "Национальный музей Республики Казахстан"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1223",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "ru",
+    "translations": {
+     "ru": 1223,
+     "kk": 1222,
+     "en": 1224
+    },
+    "original_id": "22",
+    "site_info": "<p style=\"text-align: justify; \">Национальный музей Республики Казахстан - одно из самых новых и крупнейших музейных учреждений в Центральной Азии. Музей был создан по инициативе Первого Президента Республики Казахстан Н.А. Назарбаева в рамках реализации государственной программы «Культурное наследие» и официально начал свою работу в соответствии с постановлением Правительства Республики Казахстан №675 от 2 июля 2013 года.</p>\n<p style=\"text-align: justify; \">Музей расположен на главной историко-культурной площади страны - площади Независимости в Астане. Архитектурно здание выполнено в современном стиле и гармонично сочетается с монументом «Казак ели», Дворцом Независимости, Дворцом мира и согласия, мечетью «Хазрет Султан» и Казахским национальным университетом искусств, образуя единый культурный ансамбль.</p>\n<p style=\"text-align: justify; \">Музейный комплекс выделяется своими масштабами и содержанием. Общая площадь здания составляет 74 000 квадратных метров. Оно состоит из семи блоков и имеет ступенчатую структуру, поднимающуюся до девяти этажей. Экспозиционная площадь превышает 14 000 квадратных метров и включает 20 залов.&nbsp;</p>\n<p style=\"text-align: justify; \">Музей оснащён современным оборудованием, соответствующим международным стандартам музейного дела. Среди технологических решений - интерактивные медиа-стены, изогнутые экраны со специальным контентом, мультимедийные полы, светодиодное освещение (LED), голограммы, сенсорные информационные киоски и мультимедийные гиды с поддержкой трёх языков. Всё это превращает музей из простого выставочного пространства в полноценную интерактивную историческую среду.</p>\n<p style=\"text-align: justify; \">Экскурсионные программы играют важную роль в деятельности музея. Посетителям предлагаются обзорные, тематические, философские экскурсии, а также интерактивные занятия с элементами игры для детей и молодёжи. Такой подход не только расширяет культурно-историческое восприятие, но и активно вовлекает посетителей в процесс познания.</p>\n<p style=\"text-align: justify; \">Национальный музей Республики Казахстан - это современный интеллектуальный центр, занимающий ведущую роль в сохранении исторической памяти нации, систематизации культурного наследия, его исследовании и популяризации среди широкой общественности. Здесь работают квалифицированные специалисты: историки, археологи, этнографы, реставраторы, музееведы и другие профессионалы, вносящие вклад в научную, культурную и образовательную миссию музея.</p>\n<p style=\"text-align: justify; \">В будущем деятельность музея будет расширяться за счёт цифровых технологий: планируется развитие виртуальных выставок, формирование цифровых фондов и укрепление международных научных связей.</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/3cf933af-7688-473f-bd3b-0e862e3f4434.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69492fbb808113c8e",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930126068eda2c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930307bf3ce880",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493054f0de52e91",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949306be1f0f151d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307dbd1ff6f11",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493085944bff521",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949308bbeeb6f560",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307500855480c"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "1000 тг.",
+    "is_active": "1",
+    "site": "nmrk.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы 54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1223",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 14,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1223/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 108784,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1223/revisions/108784"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1223"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1223"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "status": 200,
+  "url": "/wp-json/wp/v2/museum",
+  "fetched_at": "2026-10-17T15:19:35Z",
+  "cards": [
+   {
+    "id": 2574,
+    "date": "2025-12-05T15:09:09",
+    "date_gmt": "2025-12-05T12:09:09",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379da9894247d-en/"
+    },
+    "modified": "2026-03-06T15:24:27",
+    "modified_gmt": "2026-03-06T12:24:27",
+    "slug": "68da379da9894247d-en",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/en/museum/68da379da9894247d-en/",
+    "title": {
+     "rendered": "State Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2574",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "en",
+    "translations": {
+     "en": 2574,
+     "kk": 2572,
+     "ru": 2573
+    },
+    "original_id": "165",
+    "site_info": "<p>The Military History Museum of the Armed Forces of the Republic of Kazakhstan is a unique scientific, educational, and cultural institution dedicated to preserving and widely promoting the country’s military heritage. The museum fulfills its mission by studying military history, showcasing examples of martial valor, and fostering patriotic education among the younger generation. It is housed in a modern architectural complex constructed in 1998 at the initiative of the First President of the Republic of Kazakhstan, Nursultan Nazarbayev. A distinguishing feature of the building is its multifunctionality: in addition to exhibition spaces, it also hosts a concert hall, a temporary exhibitions hall, as well as the Central Orchestra and Central Ensemble of the Ministry of Defense of the Republic of Kazakhstan.</p>\r\n<p>The museum's collection comprises over 10,000 artifacts that reflect the military culture and combat history of the Kazakh people from ancient times to the present day. These include archaeological finds, weapons, documents, military uniforms, and rare historical items.</p>\r\n<p>The main exhibition halls of the museum include:</p>\r\n<p>1. Hall of the Armed Forces of the Republic of Kazakhstan - This hall presents materials on the formation, development, and achievements of Kazakhstan's independent army. A special section is devoted to the Supreme Commander-in-Chief of the Armed Forces - Nursultan Nazarbayev.</p>\r\n<p>2. Hall “Antiquity – 19th Century” - This exhibition explores the development of military art and weapon-making traditions among the Kazakhs, showcasing archaeological artifacts from the Stone Age to the Iron Age.</p>\r\n<p>3. Hall of 20th Century Military History - This hall displays materials related to the period of the Alash Orda movement, the Great Patriotic War, and the participation of Kazakh citizens in the Soviet-Afghan War. Multimedia tools are used to present information about Heroes of the Soviet Union, recipients of the Order of Glory, and those awarded the “People’s Hero” title.</p>\r\n<p>4. Hall of Weapons (20th–21st Centuries) - Exhibits include pistols, automatic rifles, grenade launchers, anti-tank mines, aviation weapons, and military equipment models such as the T-72 tank, Su-25 attack aircraft, and the “Tornado” naval vessel.</p>\r\n<p>5. Hall of Temporary Exhibitions - This space hosts rotating exhibitions, including collections such as the elite antique salon “Ampir.”</p>\r\n<p>6. Hall of Fine Arts - Features paintings, graphics, and sculptures dedicated to the defense of the homeland by Kazakhstani artists. Notable are the portrait sculptures of Zhambyl Zhabayev, Queen Tomyris, World War II heroines Manshuk Mametova and Aliya Moldagulova, as well as Marshal Konev.</p>\r\n<p>In the museum’s atrium, a series of bas-reliefs illustrates the historical continuity and evolution of Kazakh warriors’ weaponry from ancient to modern times. The central element of the atrium is the “Mangilik El” (“Eternal Nation”) composition, which symbolically unites the images of historical heroes with contemporary defenders of the homeland. The museum is not only an exhibition space but also a center for scientific research, museum pedagogy, and patriotic education. It hosts research projects, archival work, conferences, exhibitions, and interactive educational sessions. Visitors also have access to an interactive book featuring rare archival documents from Russian archives.</p>\r\n<p>The Military History Museum of the Armed Forces of the Republic of Kazakhstan is a vital national institution devoted to the preservation and celebration of the country’s military traditions. It ensures the continuity of national and military memory and contributes to passing this legacy on to future generations.</p>\r\n<p></p>\r\n<p></p>\r\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/f8a24bdb-dcf0-4eba-9cd1-7d543ad5338c.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/7e92f9e7-03ec-4c86-88b6-ea931e4d40f0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/36b2476a-4065-4752-a040-e471bf92a6cd.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/bdc7ed55-4d74-49d8-a50e-7350c5ddb756.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c8729559-da18-4d83-8447-c938477a6ad0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/4eb65668-b283-4753-a444-1d44cc69a02c.webp",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/1e49f8c2-4b3a-4517-a8a2-ccdd02985c77.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6d2bc4ec-2c68-4c18-82ef-988b35d4498a.png",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/e03c54ef-1158-4cac-b20e-b2778edd291d.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "mhm.kazakhstan@gmail.com",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Республики даңғылы  2",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2574",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 5,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2574/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 100187,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2574/revisions/100187"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2574"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2574"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2514,
+    "date": "2025-12-05T15:08:10",
+    "date_gmt": "2025-12-05T12:08:10",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37ac132046063-en/"
+    },
+    "modified": "2026-03-06T08:41:38",
+    "modified_gmt": "2026-03-06T05:41:38",
+    "slug": "68da37ac132046063-en",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/en/museum/68da37ac132046063-en/",
+    "title": {
+     "rendered": "«Аlzhir» Museum and Memorial complex of political  repressions and totalitarianism victims"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2514",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "en",
+    "translations": {
+     "en": 2514,
+     "kk": 2512,
+     "ru": 2513
+    },
+    "original_id": "155",
+    "site_info": "<p>The “Аlzhir” Memorial Museum of Victims of Political Repressions and Totalitarianism is one of the first and largest historical memorial complexes in Kazakhstan dedicated to the memory of victims of Soviet political repressions. The museum highlights one of the most tragic chapters in the nation's history-the mass repressions of the 1930s to 1950s-and the fates of citizens and their families who suffered under the totalitarian regime.</p>\r\n<p>The memorial complex was officially opened on May 31, 2007, which is marked in Kazakhstan as the Day of Remembrance for Victims of Political Repressions. It is located in the village of Akmol (formerly Malinovka), Tselinograd District, Akmola Region - on the territory of the former Akmola Camp for Wives of Traitors to the Motherland, known by its Russian acronym Аlzhir.</p>\r\n<p>The primary mission of the museum is to preserve the memory of the tragic destinies of the repressed, particularly women, to restore historical justice, to cultivate a sense of historical awareness among younger generations, and to convey the truth about the crimes of the totalitarian regime.</p>\r\n<p>Аlzhir (Akmola Camp for Wives of Traitors to the Motherland) was established in 1938 by order of the NKVD as a special-regime labor camp. Women-wives and daughters of those labeled as “enemies of the people” during the Stalinist purges-were incarcerated here. Over 18,000 women from all Soviet republics passed through the camp. Among them were spouses of prominent political figures, members of the intelligentsia, writers, journalists, scientists, and cultural workers.</p>\r\n<p>Harsh forced labor, starvation, abuse, cold, and a lack of medical care led to countless deaths. Many of the women died, while others lived out their lives bearing the deep scars of suffering. The museum carefully preserves the personal testimonies and memories of those who endured this tragic period.</p>\r\n<p>The memorial complex features several architectural and exhibition elements:</p>\r\n<p>1.\tThe “Bell of Sorrow” - the central memorial symbol dedicated to the victims of repression.</p>\r\n<p>2.\tThe “Path” Installation - symbolizes the harrowing journey endured by the women transported to the camp.</p>\r\n<p>3.\tBasement Cells - reconstructed interrogation and detention cells that house thematic exhibitions.</p>\r\n<p>The main exhibition halls display historical documents, photographs, personal belongings, information on punitive institutions, and artifacts that depict the everyday lives of the imprisoned women.</p>\r\n<p>The exhibits are enhanced with modern interactive technologies: visitors can view archival video materials, dioramas, reconstructions, and artistic installations that recreate the atmosphere of the totalitarian era.</p>\r\n<p>The museum’s work extends beyond exhibitions. It also undertakes research and educational activities, including the collection and analysis of archival documents, the systematization of information on victims of repression, the organization of academic conferences and seminars, screenings of documentary films, and thematic educational events.</p>\r\n<p>The Аlzhir Memorial Museum is a vital spiritual and cultural institution playing an important role in preserving Kazakhstan’s historical memory. By reminding society of the dark lessons of the past, the museum promotes the protection of human rights, the restoration of historical truth, and the moral education of future generations in the spirit of patriotism and civic responsibility.</p>\r\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0736388-36f2-43e9-9d27-35a059a225fa.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/ffedf61d-f5ec-48c8-b500-eccfa6dc2de1.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/eda99816-3515-42ca-beac-000779d33141.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2a06b989-cb6c-47fd-bd1f-a44d771e100f.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/17a81133-f800-4a33-bae0-8421ef19d029.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/94901b5a-8017-4732-a3c7-ce857846722a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/cebb5df6-1339-4b52-9147-22afe6539962.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6996f07a-bef8-4aea-a49f-49541c731b3b.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/785eb588-9ffa-4624-a0bb-d4646d9404fa.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6fa39968-0f3a-4339-909f-2323cb22946a.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "300 тг.",
+    "is_active": "1",
+    "site": "museum-alzhir.kz",
+    "address": "",
+    "addresscity": "Ақмол ауылы",
+    "addresscountry": "Ақмола облысы",
+    "addresspostalcode": "",
+    "addressstate": "Целиноград ауданы",
+    "addressstreet": "Линейная көшесі Строение 2 б",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2514",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 3,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2514/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99979,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2514/revisions/99979"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2514"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2514"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2508,
+    "date": "2025-12-05T15:08:04",
+    "date_gmt": "2025-12-05T12:08:04",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a0228ab7ad4-en/"
+    },
+    "modified": "2026-03-06T08:43:44",
+    "modified_gmt": "2026-03-06T05:43:44",
+    "slug": "68da37a0228ab7ad4-en",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/en/museum/68da37a0228ab7ad4-en/",
+    "title": {
+     "rendered": "Museum of Saken Seyfullin"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2508",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "en",
+    "translations": {
+     "en": 2508,
+     "kk": 2506,
+     "ru": 2507
+    },
+    "original_id": "154",
+    "site_info": "<p></p>\r\n<p>The Saken Seifullin Museum is a state cultural institution of significant importance in the literary and cultural history of Kazakhstan, located in the capital city - Astana. The museum is dedicated to the life and creative legacy of Saken Seifullin - a prominent figure in early 20th-century Kazakh literature and culture, a poet, writer, playwright, publicist, and public and political figure. The institution functions as a scientific, educational, and cultural center aimed at preserving the historical memory of this national personality and fostering patriotism and respect for cultural values among younger generations.</p>\r\n<p>The museum was officially opened on January 21, 1988, by decree of the Council of Ministers of the Kazakh SSR. Its main exposition is housed in an architectural monument - a wooden building constructed in the late 19th century. Built in 1846 at the initiative of local merchants from Akmolinsk, the building was originally used as a warehouse for goods. Between the 1920s and 1930s, Saken Seifullin himself lived and worked here, contributing significantly to the formation of Soviet Kazakh literature during this pivotal period. The house holds special historical and cultural significance as a place where a national figure of enduring influence lived and created. Prior to 1988, the building served as a kindergarten. Today, it is protected as a cultural heritage site and functions as a museum.</p>\r\n<p>The museum also includes a second building that serves as its administrative office. This structure is another example of late 19th - early 20th-century wooden architecture, built in the eclectic style. Originally the home of physician Fyodor Ivanovich Blagoveshchensky, who lived and practiced there for nearly 40 years, the building later housed an accounting school and today accommodates the museum’s administrative functions.</p>\r\n<p>The museum’s permanent exhibition consists of six halls and holds over 7,000 artifacts. The core themes of the exhibition include:</p>\r\n<p>1. Personal belongings of Saken Seifullin - everyday items and objects used by the writer;</p>\r\n<p>2. Manuscripts and letters - original materials offering insight into his creative legacy;</p>\r\n<p>3. Books and publications - first editions and translations of Seifullin’s literary works;</p>\r\n<p>4. Photographs and archival documents - materials illustrating historical events and key biographical moments;</p>\r\n<p>5. Visual art and sculpture - paintings, sculptures, and commemorative works dedicated to Seifullin’s life and achievements.</p>\r\n<p>In addition to its exhibition activities, the museum conducts scholarly research and organizes cultural and literary events. It collaborates with schools and universities, offering lectures, public lessons, literary evenings, conferences, and temporary exhibitions to promote Seifullin studies and literary scholarship. Museum staff are also involved in gathering oral histories, conducting field expeditions, acquiring new artifacts, and reviving interest in cultural heritage.</p>\r\n<p>The Saken Seifullin Museum is not merely a literary-historical archive; it serves as a modern educational and spiritual space that fosters national identity and cultural continuity. Future plans include expanding the museum’s digital platform, enriching its database, strengthening international academic partnerships, and enhancing educational programming through museum pedagogy initiatives.</p>\r\n<p></p>\r\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0f59d15-ce06-4c38-ae50-1c480f3a1e16.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/57799e3f-e314-483e-9098-a45eae33e412.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/8ccbe92d-11e1-4aef-8e0e-8d940d93191e.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/118d32ea-4f50-4e54-a99a-bd2318909894.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/9bf197c4-71fd-4873-aa49-9e1cddc2ba6a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/d772365d-1a25-4655-a67a-efaa63d016e6.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a828f34-33fe-4825-b76d-1c83ff43cfa2.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/10693e94-9a32-459c-86b8-6de48db00a3e.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/25763e4a-0ac1-44e4-9215-71edb20457f9.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0dd23798-6047-479a-a3e5-72b0cc33e750.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/dd8ecfdb-35dc-4df6-9522-1f7bdac99975.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c73a4646-3246-46db-9d7a-ebfc451af19a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0e91fed6-f24f-4a17-823a-06b871306cae.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/650f41f8-886f-45ba-bd35-26b1bc47301a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2224e123-65f6-489e-9b1c-3a48ed45b424.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/62e371e8-b38d-4bf9-b984-9fe2ac132d02.jpeg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг",
+    "is_active": "1",
+    "site": "www.astanamuseums.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Әуезов көшесі 20 А",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2508",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 5,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2508/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99982,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2508/revisions/99982"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2508"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2508"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1254,
+    "date": "2025-12-05T14:46:59",
+    "date_gmt": "2025-12-05T11:46:59",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a2c72b30113-en/"
+    },
+    "modified": "2026-06-18T13:40:47",
+    "modified_gmt": "2026-06-18T10:40:47",
+    "slug": "68da37a2c72b30113-en",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/en/museum/68da37a2c72b30113-en/",
+    "title": {
+     "rendered": "State Historical and Cultural Museum-Reserve &#171;Bozok&#187;"
+    },
+    "content": {
+     "rendered": "<p>The settlement of Bozok is one of the first pages of the early history of our capital. The monument was discovered to the west of Astana on the eastern shore of the lake. Buzukty. The Bozok settlement is located in the center of Saryarka, at the place where the sources of the Yesil, Selety, Shiderty, Nura and Sarysu rivers converge. Numerous tributaries flowing into the Yesil, both from the south and north, created many convenient caravan routes. Trade branches of the routes of the Great Silk Road pass along this segment of the route.</p>\n",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "<p>The settlement of Bozok is one of the first pages of the early history of our capital. The monument was [&hellip;]</p>\n",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1254",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "en",
+    "translations": {
+     "en": 1254,
+     "kk": 1252,
+     "ru": 1253
+    },
+    "original_id": "32",
+    "site_info": "<p>The State Historical and Cultural Museum-Reserve \"Bozok\" is located on the outskirts of Kazakhstan's capital, Astana, near the Urker and Ilinka residential areas, close to Lake Buzukty. Covering a total area of 412 hectares, it is one of the largest open-air museums in Kazakhstan. The Bozok Museum-Reserve was established within the framework of the national program \"Seven Facets of the Great Steppe.\" The main goal of the project is to preserve, restore, and widely promote ancient and medieval historical and cultural complexes. Additionally, the project aims to enhance the tourist potential of the capital, support small and medium-sized businesses, and create up to 1,000 seasonal jobs. The site features reconstructed structures from the Eneolithic to the Middle Ages, including residences, temples, dwellings, workshops, metal smelting furnaces, marketplaces, and petroglyphs. The main entrances to the complex are located in the south (\"Dasht-i-Kipchak Gate\") and the north (\"Saryarka Gate\"). The gates exceed 7 meters in height, and the entire complex is surrounded by a decorative fence 8.7 kilometers long.</p>\r\n<p>The Bozok Museum-Reserve is a unique cultural complex that unites history and nature, archaeology and architecture, tradition and modernity. It offers a deep understanding of the past of the Kazakh steppe and Eurasia as a whole, remaining an invaluable legacy for future generations.</p>\r\n<p>The Bozok settlement is one of the largest archaeological monuments reflecting the early and medieval history of modern-day Kazakhstan’s capital. It serves as a key scientific foundation for studying the country’s historical memory and cultural heritage. The monument is located in the Nura district, on the eastern shore of Lake Buzukty, in the central part of Saryarka, at the watershed of the Esil, Seleta, Shiderty, Nura, and Sarysu rivers. Geographically, this is a natural transit zone where numerous rivers flow into the Esil and where branches of the Great Silk Road once passed.</p>\r\n<p>Bozok was first mentioned in 1816 in the travel notes of Siberian explorer Ivan Shangin. In 1929-1930, the first archaeological surveys were conducted by the renowned local historian Leonid Semenov. However, systematic archaeological research began only in 1998 under the leadership of academician Kemel Akishev. Since 1999, continuous excavations have been carried out.</p>\r\n<p>The complex includes structures from various historical periods: a sacred site from the Turkic era, a medieval fortified town, necropolises from the Golden Horde period, Kipchak dwellings and winter camps, as well as developed irrigation systems. The archaeological zone covers about 40 hectares. Evidence suggests the area was first settled in the 7th century. In the 6th century, ancient Turks migrating westward from Mongolia established a military-administrative center on the eastern shore of Lake Buzukty. The central part consisted of three platforms arranged in the shape of a three-petaled flower, surrounded by moats 3-5 meters wide and 2-3 meters deep. Clay from the moats was used to build fortress walls with bases 8 meters wide, tops 5 meters wide, and heights of 2-3 meters.</p>\r\n<p>In the 10th century, the site became a residence for Kipchak khans who reconstructed the existing structures and gave the town a new appearance, adding brick houses and watchtowers. Agriculture and horticulture developed in the eastern part of the settlement. The Kipchaks built irrigation canals that efficiently utilized the natural hydrological features of the Esil River and seasonal lakes.</p>\r\n<p>One of the most remarkable discoveries is the burial of a noble warrior woman from the Golden Horde period, dated to the 13th-14th centuries. She was buried in a wooden sarcophagus, dressed in silk garments decorated with pearls and semi-precious stones. She wore silver bracelets, earrings, and a bokka headdress made of birch bark, covered in silk and adorned with pearls. The grave also contained an iron spear, a dagger, a silver bowl, and a bronze mirror - artifacts that attest to her high social status.</p>\r\n<p>The historical and cultural significance of the Bozok site lies in its location at the intersection of caravan routes along the Great Silk Road, as well as its role as a religious-cultural center and military stronghold. The settlement existed from the 7th to the 17th century, serving variously as a sacred place for Turkic tribes, a Kipchak settlement, and an agricultural and craft production center. Artifacts uncovered during excavations - household items, weapons, jewelry, coins, and construction remnants - illustrate the processes of urbanization in medieval Kazakhstan.</p>\r\n<p>Bozok is the first large-scale archaeological site to be thoroughly studied in the Kazakh steppe region. Its materials are of great importance for the medieval archaeology of Eurasia. The memorial structures at the site also shed light on the spread of Islam in the steppe regions of Saryarka.</p>\r\n<p>In 2018, the State Historical and Cultural Museum-Reserve \"Bozok\" was established on the site of the ancient settlement. Within its framework, a national open-air archaeological park project is being implemented. The project’s primary goal is the scientific reconstruction of the settlement and the promotion of ancient and medieval historical and cultural complexes across Kazakhstan.</p>\r\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf0014b4b38b",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf4418babe6c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafa3b0e994d5",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafe9f6299364",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb03d6b164c9d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb08d5ac26a4d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb0d78f6b708b",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb12885c04843",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb187891b8028",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb1de556cd60f"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "bozok.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы  54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1254",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 6,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1254/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 111346,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1254/revisions/111346"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1254"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1254"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1224,
+    "date": "2025-12-05T14:46:26",
+    "date_gmt": "2025-12-05T11:46:26",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379b4b4fb9d59-en/"
+    },
+    "modified": "2026-06-16T07:17:19",
+    "modified_gmt": "2026-06-16T04:17:19",
+    "slug": "68da379b4b4fb9d59-en",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/en/museum/68da379b4b4fb9d59-en/",
+    "title": {
+     "rendered": "National Museum of the Republic of Kazakhstan"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1224",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "en",
+    "translations": {
+     "en": 1224,
+     "kk": 1222,
+     "ru": 1223
+    },
+    "original_id": "22",
+    "site_info": "<p style=\"text-align: justify; \">The National Museum of the Republic of Kazakhstan is one of the newest and largest museum institutions in Central Asia. It was established on the initiative of the First President of the Republic of Kazakhstan, Nursultan Nazarbayev, as part of the implementation of the state program “Cultural Heritage” and officially began operations by the Resolution of the Government of the Republic of Kazakhstan No. 675 dated July 2, 2013.</p>\n<p style=\"text-align: justify;\">The museum is located in the country’s main historical and cultural space - Independence Square in Astana. Architecturally, the building is constructed in a modern style and harmoniously integrates with the “Kazakh Eli” monument, the Palace of Independence, the Palace of Peace and Reconciliation, the “Hazret Sultan” Mosque, and the Kazakh National University of Arts, forming a unique cultural ensemble.</p>\n<p style=\"text-align: justify;\">The museum complex stands out for its scale and content. The total area of the building is 74,000 square meters. It consists of seven blocks with a tiered structure rising up to nine floors. The exhibition area exceeds 14,000 square meters and includes 20 galleries.&nbsp;</p>\n<p style=\"text-align: justify;\">The museum is equipped with advanced technology that meets international museum standards. Technological features include interactive media walls, curved screens with dedicated content, multimedia floors, LED lighting, holograms, touchscreen information kiosks, and multimedia guides available in three languages. These technologies transform the museum from a traditional exhibition venue into an immersive and interactive historical space.</p>\n<p style=\"text-align: justify;\">Excursion programs play an important role in the museum’s activities. Visitors are offered general, thematic, and philosophical tours, as well as interactive lessons with gamified elements for children and youth. This approach not only enhances historical and cultural understanding but also encourages active engagement.</p>\n<p style=\"text-align: justify;\">The National Museum of the Republic of Kazakhstan is a modern intellectual center that plays a leading role in preserving national historical memory, systematizing cultural heritage, conducting research, and promoting it to the wider public. The museum employs highly qualified specialists, including historians, archaeologists, ethnographers, restorers, museologists, and other professionals who contribute to the museum’s scientific, cultural, and educational mission.</p>\n<p style=\"text-align: justify;\">In the future, the museum plans to expand its activities through digital technologies, including the development of virtual exhibitions, the creation of digital collections, and the strengthening of international scientific cooperation.</p>\n<p></p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/3cf933af-7688-473f-bd3b-0e862e3f4434.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69492fbb808113c8e",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930126068eda2c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930307bf3ce880",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493054f0de52e91",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949306be1f0f151d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307dbd1ff6f11",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493085944bff521",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949308bbeeb6f560",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307500855480c"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "1000 тг.",
+    "is_active": "1",
+    "site": "nmrk.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы 54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1224",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 14,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1224/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 108785,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1224/revisions/108785"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1224"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1224"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "lang": "kk",
+  "status": 200,
+  "url": "/wp-json/wp/v2/museum",
+  "fetched_at": "2026-10-17T15:19:37Z",
+  "cards": [
+   {
+    "id": 2512,
+    "date": "2025-12-05T15:08:08",
+    "date_gmt": "2025-12-05T12:08:08",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37ac132046063-kk/"
+    },
+    "modified": "2026-03-06T08:41:36",
+    "modified_gmt": "2026-03-06T05:41:36",
+    "slug": "68da37ac132046063-kk",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/museum/68da37ac132046063-kk/",
+    "title": {
+     "rendered": "«Алжир» саяси қуғын-сүргін және тоталитаризм құрбандарының мемориалды-музей кешені"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2512",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "kk",
+    "translations": {
+     "kk": 2512,
+     "ru": 2513,
+     "en": 2514
+    },
+    "original_id": "155",
+    "site_info": "<p style=\"text-align: justify; \">Саяси қуғын-сүргін және тоталитаризм құрбандарының «Алжир» мемориалды-музейі - Қазақстандағы кеңестік кезеңдегі саяси репрессиялар құрбандарына арналған алғашқы ірі тарихи-мемориалдық кешендердің бірі. Бұл музей Қазақстан тарихындағы ең қайғылы беттердің бірі – 1930-1950 жылдар аралығындағы жаппай қуғын-сүргінге, тоталитарлық жүйе зұлматтарына ұшыраған азаматтар мен олардың отбасыларының тағдырына арналған.</p>\n<p style=\"text-align: justify;\">&nbsp;«Алжир» мемориалды-музей кешені 2007 жылы 31 мамырда ресми түрде ашылды. Музей Ақмола облысы Целиноград ауданы, Ақмол ауылында (бұрынғы Малиновка), яғни бұрынғы «Отанын сатқандардың әйелдеріне арналған Ақмола лагері» - Алжир орналасқан тарихи орында салынған.</p>\n<p style=\"text-align: justify;\">Музейдің негізгі мақсаты - саяси қуғын-сүргінге ұшыраған азаматтардың, әсіресе әйелдердің қайғылы тағдырын ұмыт қалдырмау, тарихи әділеттілікті қалпына келтіру, келер ұрпақтың тарихи санасын қалыптастыру және тоталитарлық жүйенің зардаптары туралы шынайы деректерді сақтау мен насихаттау.</p>\n<p style=\"text-align: justify;\">Алжир (Акмолинский лагерь жен изменников Родины) - 1938 жылы НКВД-ның бұйрығымен құрылған ерекше режимдегі лагерь. Бұл лагерьде сталиндік репрессияға ұшыраған «халық жауларының» әйелдері мен қыздары қамауға алынған. Алжирде КСРО-ның барлық республикаларынан келген 18 000-нан астам әйел жазасын өтеген. Олардың қатарында көрнекті қоғам қайраткерлерінің жұбайлары, ғылым мен мәдениет саласындағы зиялы қауым өкілдері, жазушылар, журналистер болған.</p>\n<p style=\"text-align: justify;\">Ауыр еңбек, аштық, қорлық, суық пен медициналық көмектің жоқтығы салдарынан мыңдаған адам осы жерде қаза тапты немесе өмір бойы жаралы тағдырмен өмір сүрді. Музей осы нәубетті кезеңнің нақты куәгерлерінің естеліктері мен мұраларын сақтайды.</p>\n<p style=\"text-align: justify;\">Музей аумағында бірнеше архитектуралық және экспозициялық нысандар орналасқан:</p>\n<p style=\"text-align: justify;\">1. «Қайғы қоңырауы» (Колокол скорби) - қуғын-сүргін құрбандарына арналған басты мемориалдық символ.</p>\n<p style=\"text-align: justify;\">2. «Жол» композициясы - этаппен келген әйелдердің ауыр жолын бейнелейді.</p>\n<p style=\"text-align: justify;\">3. Жертөле бөлмелері - тергеу изоляторы ретінде қайта жасақталған экспозициялар.</p>\n<p style=\"text-align: justify;\">Негізгі экспозициялық залдар - тарихи құжаттар, фотосуреттер, жеке заттар, жазалаушы құрылымдар туралы мәліметтер, қуғын-сүргінге ұшыраған әйелдердің өмірінен сыр шертетін артефактілер қойылған.</p>\n<p style=\"text-align: justify;\">Экспозициялар интерактивті технологиялармен жабдықталған, келушілерге архивтік бейнематериалдар ұсынылады. Сонымен қатар, арнайы диорамалар, тарихи реконструкциялар және көркемдік инсталляциялар арқылы тоталитарлық жүйенің шынайы бейнесі көрсетіледі.</p>\n<p style=\"text-align: justify;\">Музей қызметі тек экспозициямен шектелмейді. Мұнда ғылыми-зерттеу, тарихи-мәдени мұраны зерделеу, архивтік құжаттарды жинақтау, қуғын-сүргін құрбандары туралы мәліметтерді жүйелеу, конференциялар мен ғылыми-тәжірибелік семинарлар ұйымдастыру, деректі фильмдер көрсету секілді бағыттар қамтылған.</p>\n<p style=\"text-align: justify;\">&nbsp;«Алжир» мемориалды-музейі - Қазақстанның тарихи жадын сақтаудағы маңызды рухани-мәдени мекеме. Ол өткеннің зұлмат сабақтарын есте сақтай отырып, адам құқықтарын қорғау, тарихи әділеттілікті қалпына келтіру мен ұлт болашағын саналы, білімді, елін сүйетін азаматтар етіп тәрбиелеу ісіне зор үлес қосып отыр.</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0736388-36f2-43e9-9d27-35a059a225fa.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/ffedf61d-f5ec-48c8-b500-eccfa6dc2de1.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/eda99816-3515-42ca-beac-000779d33141.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2a06b989-cb6c-47fd-bd1f-a44d771e100f.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/17a81133-f800-4a33-bae0-8421ef19d029.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/94901b5a-8017-4732-a3c7-ce857846722a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/cebb5df6-1339-4b52-9147-22afe6539962.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6996f07a-bef8-4aea-a49f-49541c731b3b.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/785eb588-9ffa-4624-a0bb-d4646d9404fa.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6fa39968-0f3a-4339-909f-2323cb22946a.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "300 тг.",
+    "is_active": "1",
+    "site": "museum-alzhir.kz",
+    "address": "",
+    "addresscity": "Ақмол ауылы",
+    "addresscountry": "Ақмола облысы",
+    "addresspostalcode": "",
+    "addressstate": "Целиноград ауданы",
+    "addressstreet": "Линейная көшесі Строение 2 б",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2512",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 4,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2512/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99977,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2512/revisions/99977"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2512"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2512"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2506,
+    "date": "2025-12-05T15:08:00",
+    "date_gmt": "2025-12-05T12:08:00",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a0228ab7ad4-kk/"
+    },
+    "modified": "2026-03-06T08:43:42",
+    "modified_gmt": "2026-03-06T05:43:42",
+    "slug": "68da37a0228ab7ad4-kk",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/museum/68da37a0228ab7ad4-kk/",
+    "title": {
+     "rendered": "Сәкен Сейфуллин музейі"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2506",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "kk",
+    "translations": {
+     "kk": 2506,
+     "ru": 2507,
+     "en": 2508
+    },
+    "original_id": "154",
+    "site_info": "<p style=\"text-align: justify; \">Сәкен Сейфуллин музейі - Қазақстанның әдеби-мәдени тарихында елеулі орны бар мемлекеттік музей, елорда - Астана қаласында орналасқан. Музей ХХ ғасырдың басындағы қазақ әдебиеті мен мәдениетінің ірі өкілі, қоғам және мемлекет қайраткері, ақын, жазушы, драматург, публицист Сәкен Сейфуллиннің өмірі мен шығармашылығына арналған. Мекеме ұлт тарихындағы тұлғалық жадыны сақтау, ұрпақты отансүйгіштік пен мәдени құндылықтарды қадірлеуге тәрбиелеу мақсатында ғылыми, ағартушылық және мәдени бағытта жұмыс атқарады.</p>\n<p style=\"text-align: justify;\">Музей 1988 жылғы 21 қаңтарда Қазақ КСР Министрлер Кеңесінің қаулысы негізінде ресми түрде ашылды. Қазіргі музейдің негізгі экспозициясы орналасқан ғимарат XIX ғасырдың соңында салынған ағаштан тұрғызылған сәулет ескерткіші болып табылады. 1846 жылы бұл ғимарат Ақмола өңірінің көпестері бастамасымен салынып, бастапқыда тауарлық қойма ретінде қолданылған. 1920-1930 жылдары аралығында мұнда Сәкен Сейфуллиннің өзі тұрып, шығармашылықпен айналысқан. Осы кезең - оның қазақ кеңес әдебиетін қалыптастыру жолындағы күрделі де жарқын кезеңі. Бұл үйдің тарихи-мәдени маңызы зор, себебі ол ұлт тарихында елеулі із қалдырған тұлғаның өмір сүрген және еңбек еткен орны ретінде қарастырылады. 1988 жылға дейін бұл ғимарат балабақша ретінде пайдаланылған. Қазіргі таңда ол мемлекет қорғауындағы тарихи-сәулет нысанына айналып, музей ретінде қызмет етеді.</p>\n<p style=\"text-align: justify;\">Музейдің екінші нысаны - әкімшілік бөлім орналасқан ғимарат. Бұл XIX ғасырдың соңы мен XX ғасыр басындағы ағаш сәулет өнерінің үлгісі болып табылады және эклектика стилінде салынған. Бастапқыда бұл үй дәрігер Федор Иванович Благовещенскийдің меншігінде болып, ол мұнда шамамен 40 жыл өмір сүріп, дәрігерлік қызмет атқарған. Кейін бұл үй бухгалтерлік курстарға арналған мектеп ретінде қолданылып, бүгінгі күні музейдің әкімшілік орталығы ретінде қызмет етеді.</p>\n<p style=\"text-align: justify;\">Сәкен Сейфуллин музейі алты залдан тұратын тұрақты экспозицияға ие және оның қорында 7000-нан астам жәдігер жинақталған. Экспозицияда келесі бағыттар қамтылған:</p>\n<p style=\"text-align: justify;\">1. Сәкен Сейфуллиннің жеке заттары - күнделікті тұрмыста қолданған бұйымдары;</p>\n<p style=\"text-align: justify;\">2. Қолжазбалар мен хаттар - жазушының шығармашылық мұрасынан сыр шертетін түпнұсқа деректер;</p>\n<p style=\"text-align: justify;\">3. Кітаптар мен басылымдар - Сәкен шығармаларының алғашқы басылымдары мен аудармалары;</p>\n<p style=\"text-align: justify;\">4. Фотосуреттер мен мұрағаттық құжаттар - тарихи оқиғалар мен өмірбаяндық деректер;</p>\n<p style=\"text-align: justify;\">5. Жазушыға арналған суреттер, мүсіндер және ескерткіш өнер туындылары.</p>\n<p style=\"text-align: justify;\">Музей ғылыми-зерттеу жұмысымен қатар, әдеби-мәдени іс-шаралар ұйымдастырып, мектептер мен жоғары оқу орындарымен байланыс орнату арқылы абайтану мен сәкентануды дамытып келеді. Сондай-ақ, музей қызметкерлері Сәкен Сейфуллиннің өмірі мен мұрасын зерттеу, экспедициялар ұйымдастыру, жаңа жәдігерлер жинақтау, көрмелер мен конференциялар өткізу арқылы тарихи-мәдени мұраны жаңғыртуға үлес қосуда.</p>\n<p style=\"text-align: justify;\">Сәкен Сейфуллин музейі - тек әдеби-тарихи орталық қана емес, ұлттық рух пен санаға, мәдени тұтастыққа бағытталған ғылыми-ағартушылық мекеме ретінде еліміздің рухани кеңістігінде маңызды орын алады. Алдағы уақытта музейдің цифрлық платформасын дамыту, деректер базасын толықтыру, халықаралық ғылыми байланыстар орнату және музей педагогикасы бағытындағы жұмыстарды жандандыру жоспарлануда.</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/a0f59d15-ce06-4c38-ae50-1c480f3a1e16.jpeg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/57799e3f-e314-483e-9098-a45eae33e412.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/8ccbe92d-11e1-4aef-8e0e-8d940d93191e.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/118d32ea-4f50-4e54-a99a-bd2318909894.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/9bf197c4-71fd-4873-aa49-9e1cddc2ba6a.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/d772365d-1a25-4655-a67a-efaa63d016e6.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a828f34-33fe-4825-b76d-1c83ff43cfa2.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/10693e94-9a32-459c-86b8-6de48db00a3e.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/25763e4a-0ac1-44e4-9215-71edb20457f9.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0dd23798-6047-479a-a3e5-72b0cc33e750.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/dd8ecfdb-35dc-4df6-9522-1f7bdac99975.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c73a4646-3246-46db-9d7a-ebfc451af19a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/0e91fed6-f24f-4a17-823a-06b871306cae.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/650f41f8-886f-45ba-bd35-26b1bc47301a.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/2224e123-65f6-489e-9b1c-3a48ed45b424.jpeg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/62e371e8-b38d-4bf9-b984-9fe2ac132d02.jpeg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг",
+    "is_active": "1",
+    "site": "www.astanamuseums.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Әуезов көшесі 20 А",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2506",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 5,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2506/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 99980,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2506/revisions/99980"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2506"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2506"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 2572,
+    "date": "2025-12-05T14:47:07",
+    "date_gmt": "2025-12-05T11:47:07",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379da9894247d-kk/"
+    },
+    "modified": "2026-03-06T15:24:25",
+    "modified_gmt": "2026-03-06T12:24:25",
+    "slug": "68da379da9894247d-kk",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/museum/68da379da9894247d-kk/",
+    "title": {
+     "rendered": "ҚР Қарулы күштерінің әскери-тарихи музейі"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-2572",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "kk",
+    "translations": {
+     "kk": 2572,
+     "ru": 2573,
+     "en": 2574
+    },
+    "original_id": "165",
+    "site_info": "<p style=\"text-align: justify; \">Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі -елдің әскери мұрасын сақтау мен кеңінен насихаттауға бағытталған бірегей ғылыми-ағартушылық және мәдени мекеме. Бұл музей әскери тарихты зерттеу, ұрпаққа жауынгерлік даңқ үлгілерін көрсету және отансүйгіштік рухта тәрбиелеу мақсатында қызмет етеді. Ол 1998 жылы Қазақстан Республикасының Тұңғыш Президенті Нұрсұлтан Назарбаевтың бастамасымен салынған заманауи сәулеттік кешенде орналасқан. Ғимараттың ерекшелігі - оның көпфункционалды құрылымында: мұнда музейлік экспозициялармен қатар концерт залы, уақытша көрмелер залы, Қазақстан Республикасы Қорғаныс министрлігінің Орталық оркестрі мен Орталық ансамблі де орналасқан.</p>\n<p style=\"text-align: justify;\">Музейдің қорында қазақ халқының ежелгі дәуірлерден бүгінгі күнге дейінгі әскери мәдениеті мен жауынгерлік тарихына қатысты 10 мыңнан астам экспонат жинақталған. Олардың қатарында археологиялық жәдігерлер, қару-жарақ үлгілері, құжаттар, әскери форма және сирек кездесетін тарихи артефактілер бар.</p>\n<p style=\"text-align: justify;\">Музей мынадай негізгі залдардан тұрады:</p>\n<p style=\"text-align: justify;\">1. «Қазақстан Республикасының Қарулы Күштері» залы - Бұл залда Тәуелсіз Қазақстан армиясының құрылуы, дамуы мен қазіргі кезеңдегі жетістіктері туралы материалдар ұсынылған. Арнайы экспозиция Қазақстан Республикасы Қарулы Күштерінің Бас Қолбасшысы - Нұрсұлтан Назарбаевқа арналған.</p>\n<p style=\"text-align: justify;\">2. «Ежелгі дәуір - XIX ғасыр» залы - Қазақ халқының соғыс өнерінің қалыптасуы мен қару-жарақ жасау дәстүрлері қамтылады. Тас дәуірінен бастап темір ғасырына дейінгі археологиялық жәдігерлер көрсетілген.</p>\n<p style=\"text-align: justify;\">3. «XX ғасырдағы әскери тарих» залы - Алаш Орда кезеңі, Ұлы Отан соғысы, Қазақстан азаматтарының Ауған соғысына қатысуы туралы арнайы және бірегей материалдар ұсынылған. Кеңес Одағының Батырлары, «Даңқ» орденінің иегерлері, «Халық қаһармандары» туралы мультимедиялық ақпарат интерактивті форматта беріледі.</p>\n<p style=\"text-align: justify;\">4. «Қару-жарақ» залы (XX–XXI ғасырлар) - Тапаншалар, автоматтар, граната атқыштар, танкіге қарсы миналар, авиациялық жою құралдары мен әскери техника макеттері ұсынылады. Сондай-ақ, Т-72 танкісі, Су-25 шабуылдаушы ұшағы, «Торнадо» кемесінің макеттері қойылған.</p>\n<p style=\"text-align: justify;\">5. «Мерзімді көрмелер» залы - Уақытша көрмелер ұйымдастырылатын бұл кеңістікте, мысалы, «Ампир» антиквариат салонының бірегей коллекциясы ұсынылған.</p>\n<p style=\"text-align: justify;\">6. «Бейнелеу өнері» залы - Мұнда Қазақстан суретшілерінің Отан қорғау тақырыбындағы кескіндеме, графика, мүсін туындылары жинақталған. Жамбыл Жабаев, Томирис, Мәншүк Мәметова, Әлия Молдағұлова және маршал Конев бейнеленген портрет-мүсіндер ерекше орын алады.</p>\n<p style=\"text-align: justify;\">Музейдің атриум кеңістігінде тарихи сабақтастықты бейнелейтін барельефтер сериясы орналастырылған. Олар қазақ жауынгерлерінің ежелгі дәуірден бүгінге дейінгі қару-жарақ эволюциясын көрсетеді. Атриумның орталық элементі - «Мәңгілік Ел» композициясы, онда заманауи жауынгерлер мен тарихи батырлар бейнесі арқылы ұлттың әскери мұрасына деген адалдық идеясы көрініс табады. Музей тек экспозициялық кеңістік емес, сонымен қатар зерттеу, музейлік педагогика және патриоттық тәрбие беру ісінің орталығы болып табылады. Мұнда ғылыми-зерттеу жобалары, архивтік жұмыс, конференциялар, көрмелер және интерактивті сабақтар өткізіледі. Сонымен қатар, келушілерге Ресей мұрағаттарынан алынған сирек құжаттар ұсынылатын интерактивті кітап қолжетімді.</p>\n<p style=\"text-align: justify;\">Қазақстан Республикасының Қарулы Күштерінің Әскери-тарихи музейі - бұл елдің жауынгерлік дәстүрлерін сақтау мен ұлықтауға бағытталған маңызды ұлттық институт. Ол мемлекеттіліктің, әскери рух пен тарихи жадының тұрақты сақталуы мен ұрпақ санасына берілуінің кепілі болып отыр.</p>\n<p></p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/f8a24bdb-dcf0-4eba-9cd1-7d543ad5338c.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/7e92f9e7-03ec-4c86-88b6-ea931e4d40f0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/36b2476a-4065-4752-a040-e471bf92a6cd.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/bdc7ed55-4d74-49d8-a50e-7350c5ddb756.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/c8729559-da18-4d83-8447-c938477a6ad0.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/4eb65668-b283-4753-a444-1d44cc69a02c.webp",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/1e49f8c2-4b3a-4517-a8a2-ccdd02985c77.jpg",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6d2bc4ec-2c68-4c18-82ef-988b35d4498a.png",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/e03c54ef-1158-4cac-b20e-b2778edd291d.jpg"
+    ],
+    "work_hours": "09:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "mhm.kazakhstan@gmail.com",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Республики даңғылы  2",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2572",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 5,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2572/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 100185,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/2572/revisions/100185"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=2572"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=2572"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1252,
+    "date": "2025-12-05T14:46:57",
+    "date_gmt": "2025-12-05T11:46:57",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da37a2c72b30113-kk/"
+    },
+    "modified": "2026-06-18T13:40:45",
+    "modified_gmt": "2026-06-18T10:40:45",
+    "slug": "68da37a2c72b30113-kk",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/museum/68da37a2c72b30113-kk/",
+    "title": {
+     "rendered": "«Бозоқ» мемлекеттік тарихи-мәдени музей-қорығы"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1252",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "kk",
+    "translations": {
+     "kk": 1252,
+     "ru": 1253,
+     "en": 1254
+    },
+    "original_id": "32",
+    "site_info": "<p style=\"text-align: justify; \">«Бозоқ» мемлекеттік тарихи-мәдени қорық-музейі елордасы Астана қаласының шетінде, Үркер және Ильинка шағынаудандарына жақын, Бұзықты көлінің маңында орналасқан. Жалпы аумағы 412 гектарды құрайды, бұл оны Қазақстандағы ең ірі ашық аспан астындағы музейлердің біріне айналдырады. «Бозоқ» қорық-музейі «Ұлы Даланың жеті қыры» ұлттық бағдарламасы аясында құрылған. Жобаның негізгі мақсаты - ежелгі және ортағасырлық тарихи-мәдени кешендерді сақтау, қайта жаңғырту және кеңінен таныту. Сонымен қатар, бұл кешен Астананың туризмдік әлеуетін арттыруға, шағын және орта бизнес пен жаңа жұмыс орындарын (1000-ға жуық маусымдық жұмыс) құруға бағытталған. Қалашықта энеолиттен бастап ортағасырларға дейінгі құрылыстар - резиденциялар, ғибадатханалар, тұрғын үйлер, шеберханалар, металл балқыту пештері, базарлар және петроглифтер қалпына келтірілуде. Басты кіреберістер - оңтүстік («Дешті-Қыпшақ» қақпасы) және солтүстік («Сарыарқа» қақпасы) бағыттарында орналасқан. Қақпа қабырғаларының биіктігі 7 метрден асады, ал бүкіл кешен 8,7 км сәндік дуалмен қоршалады.</p>\n<p style=\"text-align: justify;\">«Бозоқ» қорық-музейі - тарих пен табиғатты, археология мен архитектураны, дәстүр мен жаңғыртуды біріктірген бірегей мәдени кешен. Ол Қазақстан мен Еуразия даласының өткенін терең танып-білуге мүмкіндік береді және келешек ұрпақ үшін баға жетпес мұра болып қала бермек.</p>\n<p style=\"text-align: justify;\">Бозоқ қалашығы – қазіргі Қазақстан астанасының ерте және ортағасырлық тарихын бейнелейтін ірі археологиялық ескерткіштердің бірі. Бұл нысан еліміздің тарихи жадысы мен мәдени мұрасын зерделеуге бағытталған маңызды ғылыми негіз болып табылады. Ескерткіш Нұра ауданындағы Бұзықты көлінің шығыс жағалауында, Сарыарқаның орталық бөлігінде, Есіл, Селета, Шідерті, Нұра және Сарысу өзендерінің су айрығында орналасқан. Географиялық тұрғыда бұл өңір – Есілдің алқабына оңтүстіктен және солтүстіктен келіп қосылатын көптеген өзендермен ерекшеленетін, керуен жолдарының түйісу нүктесіне айналған табиғи транзиттік аймақ болып табылады. Осы бағытта Ұлы Жібек жолының тармақтары өткен.</p>\n<p style=\"text-align: justify;\">Бозоқ қалашығы алғаш рет 1816 жылы Сібірден Орта Азияға саяхат жасаған саяхатшы Иван Шангиннің жазбаларында аталады. Ал 1929 - 1930 жылдары ескерткіште алғашқы археологиялық барлау жұмыстарын белгілі өлкетанушы Леонид Семенов жүргізді. Алайда ескерткіштің жүйелі археологиялық зерттелуі тек 1998 жылы академик Кемел Ақышевтің жетекшілігімен басталды. 1999 жылдан бастап бұл жерде тұрақты археологиялық зерттеулер жүргізілуде.</p>\n<p style=\"text-align: justify;\">Бозоқ кешенінің құрылымы бірнеше тарихи кезеңдерге жататын нысандарды қамтиды: көне түркі дәуірінің киелі орны, ортағасырлық бекініс қалашық, Алтын Орда кезеңінің қорымдары, қыпшақтардың тұрақты тұрғын үйлері мен қыстаулары, сондай-ақ дамыған ирригациялық жүйелер. Жалпы кешен 40 гектар аумақты қамтиды. Археологиялық деректер бұл аумақтың алғаш рет VII ғасырда игеріле бастағанын көрсетеді. VI ғасырда Моңғолиядан батысқа қарай жылжыған көне түркілер бұл жерді әскери-әкімшілік мақсатта игеріп, Бұзықты көлінің шығыс жағалауында үш басты құрылымнан тұратын орталық бөлікті салған. Құрылымдар композициялық жағынан үш жапырақты гүл тәрізді болып орналасып, айналасы тереңдігі 2-3 м, ені 3-5 м арықпен қоршалған. Арықтардан алынған саз балшықтан бекініс қабырғалары тұрғызылған, олардың табаны 8 м, жоғарғы бөлігі 5 м, биіктігі 2-3 м болған.</p>\n<p style=\"text-align: justify;\">X ғасырда бұл орынды қыпшақ тайпаларының қағандары резиденция ретінде пайдаланған. Олар бұрынғы құрылымдарды қайта жаңғыртып, қалаға жаңа келбет берген. Бақылау мұнаралары, күйдірілген кірпіштен салынған тұрғын үйлер тұрғызылып, шығыс бөлігінде егіншілік пен бау-бақша шаруашылығы дамыды. Қыпшақтар салған суару жүйесі Есіл өзенінің табиғи гидрографиялық ерекшеліктерін тиімді пайдаланып, маусымдық көлдерді ирригациялық арналар арқылы егіншілікке бейімдеген.</p>\n<p style=\"text-align: justify;\">Бозоқ қалашығының ерекше археологиялық олжаларының бірі - жоғары мәртебелі жауынгер әйелдің жерлеу орны болып табылады. Бұл бейіт шамамен 700 жыл бұрын, моңғол дәуірінде салынған. Әйел жібекпен қапталған, інжу-маржанмен безендірілген бокка бас киім киіп, жартылай қымбат тастардан жасалған алқа, күміс білезіктер мен сырғалармен жерленген. Сонымен қатар қабірден темір найза, қанжар, күміс тостаған мен қола айна табылған. Бұл заттар жерленген әйелдің жоғары әлеуметтік мәртебесін айғақтайды.</p>\n<p style=\"text-align: justify;\">Бозоқ қалашығының тарихи-мәдени маңызы оның Ұлы Жібек жолының керуен жолдары қиылысында орналасқан діни-мәдени орталық әрі әскери-әкімшілік маңызға ие бекініс болғандығын көрсетеді. Қалашық VII-XVII ғасырлар аралығында өмір сүріп, түрлі тарихи кезеңдерде түркі тайпаларының киелі орны, қыпшақтардың қонысы, аграрлық-өндірістік орталық ретінде дамыған. Қазба жұмыстары барысында табылған тұрмыстық заттар, қару-жарақ, зергерлік бұйымдар, тиындар мен құрылыс қалдықтары Қазақстанның ортағасырлық урбанизациялық үрдістерін сипаттайды.</p>\n<p style=\"text-align: justify;\">Бозоқ қалашығы - Қазақстан далалық аймағындағы алғаш кең көлемде зерттелген ортағасырлық археологиялық нысан. Ескерткіш материалдары Еуразияның ортағасырлық археологиясы үшін маңызды дереккөзі болып табылады. Сонымен қатар, мұндағы кесенелер мен құрылыстар ислам дінінің Сарыарқа далалық өңіріне таралуының ерекшеліктерін де айқындауға мүмкіндік береді.</p>\n<p style=\"text-align: justify;\">2018 жылы ежелгі Бозоқ қалашығының негізінде «Бозоқ» мемлекеттік тарихи-мәдени қорық-музейі құрылып, ашық аспан астындағы ұлттық археологиялық парк жобасын жүзеге асыру жұмыстары басталды. Жобаның басты мақсаты - Бозоқ қалашығын тарихи тұрғыда қайта жаңғырту және Қазақстан аумағындағы ежелгі және ортағасырлық тарихи-мәдени кешендерді сақтау мен танымал ету болып табылады.</p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf0014b4b38b",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33caf4418babe6c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafa3b0e994d5",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cafe9f6299364",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb03d6b164c9d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb08d5ac26a4d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb0d78f6b708b",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb12885c04843",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb187891b8028",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6a33cb1de556cd60f"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "500 тг.",
+    "is_active": "1",
+    "site": "bozok.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы  54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1252",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 7,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1252/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 111344,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1252/revisions/111344"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1252"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1252"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   },
+   {
+    "id": 1222,
+    "date": "2025-12-05T14:46:23",
+    "date_gmt": "2025-12-05T11:46:23",
+    "guid": {
+     "rendered": "https://emuseum.torus.kz/museum/68da379b4b4fb9d59-kk/"
+    },
+    "modified": "2026-06-16T07:17:17",
+    "modified_gmt": "2026-06-16T04:17:17",
+    "slug": "68da379b4b4fb9d59-kk",
+    "status": "publish",
+    "type": "museum",
+    "link": "https://e-museum.kz/museum/68da379b4b4fb9d59-kk/",
+    "title": {
+     "rendered": "Қазақстан Республикасы Ұлттық музейі"
+    },
+    "content": {
+     "rendered": "",
+     "protected": false
+    },
+    "excerpt": {
+     "rendered": "",
+     "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+     "site-sidebar-layout": "default",
+     "site-content-layout": "",
+     "ast-site-content-layout": "default",
+     "site-content-style": "default",
+     "site-sidebar-style": "default",
+     "ast-global-header-display": "",
+     "ast-banner-title-visibility": "",
+     "ast-main-header-display": "",
+     "ast-hfb-above-header-display": "",
+     "ast-hfb-below-header-display": "",
+     "ast-hfb-mobile-header-display": "",
+     "site-post-title": "",
+     "ast-breadcrumbs-content": "",
+     "ast-featured-img": "",
+     "footer-sml-layout": "",
+     "ast-disable-related-posts": "",
+     "theme-transparent-header-meta": "",
+     "adv-header-id-meta": "",
+     "stick-header-meta": "",
+     "header-above-stick-meta": "",
+     "header-main-stick-meta": "",
+     "header-below-stick-meta": "",
+     "astra-migrate-meta-layouts": "default",
+     "ast-page-background-enabled": "default",
+     "ast-page-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-5)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "ast-content-background-meta": {
+      "desktop": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "tablet": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      },
+      "mobile": {
+       "background-color": "var(--ast-global-color-4)",
+       "background-image": "",
+       "background-repeat": "repeat",
+       "background-position": "center center",
+       "background-size": "auto",
+       "background-attachment": "scroll",
+       "background-type": "",
+       "background-media": "",
+       "overlay-type": "",
+       "overlay-color": "",
+       "overlay-opacity": "",
+       "overlay-gradient": ""
+      }
+     },
+     "footnotes": ""
+    },
+    "region": [
+     3952
+    ],
+    "class_list": [
+     "post-1222",
+     "museum",
+     "type-museum",
+     "status-publish",
+     "hentry",
+     "region-g-astana"
+    ],
+    "aioseo_notices": [],
+    "lang": "kk",
+    "translations": {
+     "kk": 1222,
+     "ru": 1223,
+     "en": 1224
+    },
+    "original_id": "22",
+    "site_info": "<p style=\"text-align: justify; \">Қазақстан Республикасының Ұлттық музейі - Орталық Азия кеңістігіндегі ең жаңа әрі ірі музейлік мекеме болып табылады. Бұл музей Қазақстан Республикасының Тұңғыш Президенті Н.Ә. Назарбаевтың бастамасымен, «Мәдени мұра» мемлекеттік бағдарламасын жүзеге асыру шеңберінде құрылып, Қазақстан Республикасы Үкіметінің 2013 жылғы 2 шілдедегі №675 қаулысымен ресми түрде өз жұмысын бастады.</p>\n<p style=\"text-align: justify;\">Музей еліміздің басты тарихи-мәдени кеңістігі - Астананың Тәуелсіздік алаңында орналасқан. Архитектуралық жағынан заманауи стильде салынған ғимарат «Қазақ елі» монументімен, Тәуелсіздік сарайымен, Бейбітшілік және келісім сарайымен, «Хазірет Сұлтан» мешітімен және Ұлттық өнер университетімен архитектуралық үйлесім таба отырып, бірегей мәдени ансамбльдің құрамына енеді.</p>\n<p style=\"text-align: justify;\">Музей кешені өзінің көлемі мен мазмұны жағынан айрықша ерекшеленеді. Жалпы аумағы 74 000 шаршы метрді құрайтын ғимарат жеті блоктан тұрады және тоғыз қабатқа дейін жететін ауыспалы деңгейлік құрылымымен ерекшеленеді. Экспозициялық алаң 14 000 шаршы метрден асады және 20 залды қамтиды.&nbsp;</p>\n<p style=\"text-align: justify;\">Музей әлемдік музей ісінің озық стандарттарына сай жоғары технологиялық құралдармен жабдықталған. Қазіргі заманғы көрме технологиялары қатарында интерактивті медиа-қабырғалар, арнайы контентпен жабдықталған иілген экрандар, мультимедиялық едендер, диодты LED жарық, голограммалар, сенсорлы ақпараттық дүңгіршектер мен үш тілде ақпарат беретін мультимедиялық гид жүйесі бар. Бұл құралдар келушілерге мазмұнды әрі танымдық әсер қалдырып, музейді тек тамашалау нысаны емес, интерактивті тарихи кеңістікке айналдырады.</p>\n<p style=\"text-align: justify;\">Ұлттық музей қызметінде экскурсиялық бағдарламалар маңызды орын алады. Мұнда шолу, тақырыптық, философиялық бағыттағы экскурсиялармен қатар, балалар мен жастарға арналған ойын элементтерімен байытылған интерактивті сабақтар өткізіледі. Бұл әдіс тарихи-мәдени танымды арттырып қана қоймай, келушілердің белсенді қатысуын қамтамасыз етеді.</p>\n<p style=\"text-align: justify;\">Қазақстан Республикасының Ұлттық музейі - ұлттық тарихи жадыны сақтау, мәдени мұраны жүйелеу, зерттеу және көпшілікке кеңінен таныстыру ісінде жетекші орын алатын заманауи зияткерлік орталық. Мұнда тарихшылар, археологтар, этнографтар, реставраторлар, музейтанушылар мен басқа да жоғары білікті сала мамандары жұмыс істейді. Олар музейдің ғылыми, мәдени және ағартушылық миссиясын сапалы түрде жүзеге асырып келеді.</p>\n<p style=\"text-align: justify;\">Болашақта Ұлттық музейдің қызметі сандық технологиялар арқылы кеңейтіліп, виртуалды көрмелер, цифрлық қорлар мен халықаралық ғылыми байланыстарды дамыту бағытында жалғасын табады.&nbsp;</p>\n<p></p>\n",
+    "logo": "https://crm.e-museum.kz/emuseum/museum/MuseumGal/3cf933af-7688-473f-bd3b-0e862e3f4434.jpg",
+    "museum_type": "",
+    "multimedia": [
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69492fbb808113c8e",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930126068eda2c",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/694930307bf3ce880",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493054f0de52e91",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949306be1f0f151d",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307dbd1ff6f11",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/69493085944bff521",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949308bbeeb6f560",
+     "https://crm.e-museum.kz/emuseum/museum/MuseumGal/6949307500855480c"
+    ],
+    "work_hours": "10:00 - 18:00",
+    "ticket_price": "1000 тг.",
+    "is_active": "1",
+    "site": "nmrk.kz",
+    "address": "",
+    "addresscity": "Астана қаласы",
+    "addresscountry": "Қазақстан",
+    "addresspostalcode": "",
+    "addressstate": "",
+    "addressstreet": "Тәуелсіздік даңғылы 54",
+    "pll_sync_post": [],
+    "_links": {
+     "self": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1222",
+       "targetHints": {
+        "allow": [
+         "GET"
+        ]
+       }
+      }
+     ],
+     "collection": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum"
+      }
+     ],
+     "about": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/types/museum"
+      }
+     ],
+     "version-history": [
+      {
+       "count": 15,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1222/revisions"
+      }
+     ],
+     "predecessor-version": [
+      {
+       "id": 108783,
+       "href": "https://e-museum.kz/wp-json/wp/v2/museum/1222/revisions/108783"
+      }
+     ],
+     "wp:attachment": [
+      {
+       "href": "https://e-museum.kz/wp-json/wp/v2/media?parent=1222"
+      }
+     ],
+     "wp:term": [
+      {
+       "taxonomy": "region",
+       "embeddable": true,
+       "href": "https://e-museum.kz/wp-json/wp/v2/region?post=1222"
+      }
+     ],
+     "curies": [
+      {
+       "name": "wp",
+       "href": "https://api.w.org/{rel}",
+       "templated": true
+      }
+     ]
+    }
+   }
+  ]
+ }
+]

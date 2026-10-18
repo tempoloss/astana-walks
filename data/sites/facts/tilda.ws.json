@@ -1,0 +1,60 @@
+{
+ "domain": "tilda.ws",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:21:30+00:00",
+ "pages": [
+  "http://linebrewexpo.tilda.ws"
+ ],
+ "branches": [
+  {
+   "name": "Line Brew Expo",
+   "address": "Астана, Мангелик Ел 20/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 701 016 07 77",
+   "opening_hours_raw": "открыт с 12:00 до 02:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": "LINE BREW EXPO второй ресторан сети \"Line Brew\" в Астане",
+   "url": "http://linebrewexpo.tilda.ws",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://linebrewexpo.tilda.ws",
+     "snippet": "LINE BREW EXPO",
+     "fetched_at": "2026-10-17T09:21:30+00:00"
+    },
+    {
+     "field": "address",
+     "url": "http://linebrewexpo.tilda.ws",
+     "snippet": "Астана, Мангелик Ел 20/1",
+     "fetched_at": "2026-10-17T09:21:30+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://linebrewexpo.tilda.ws",
+     "snippet": "Бронь столов: +7 701 016 07 77",
+     "fetched_at": "2026-10-17T09:21:30+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://linebrewexpo.tilda.ws",
+     "snippet": "открыт с 12:00 до 02:00",
+     "fetched_at": "2026-10-17T09:21:30+00:00"
+    },
+    {
+     "field": "description",
+     "url": "http://linebrewexpo.tilda.ws",
+     "snippet": "LINE BREW EXPO второй ресторан сети \"Line Brew\" в Астане",
+     "fetched_at": "2026-10-17T09:21:30+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Same page also says «Open daily 12a.m. - 12p.m.», contradicting «открыт с 12:00 до 02:00» — the Russian schedule is stored (weekday-unqualified). Incognita Karaoke (incognita.astana.tilda.ws, the second POI of the tilda.ws partition entry): HTTP 403 over http and TLS/robots failure over https on repeated probes — no facts.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

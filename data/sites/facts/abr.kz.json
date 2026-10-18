@@ -1,0 +1,443 @@
+{
+ "domain": "abr.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:50:39+00:00",
+ "pages": [
+  "https://abr.kz/restaurants",
+  "https://abr.kz/restaurant/auyl",
+  "https://abr.kz/restaurant/spiros",
+  "https://abr.kz/restaurant/cafe-alma",
+  "https://abr.kz/restaurant/del-papa",
+  "https://abr.kz/restaurant/carne_by_palomar",
+  "https://abr.kz/restaurant/table",
+  "https://abr.kz/restaurant/canteen",
+  "https://abr.kz/restaurant/ami",
+  "https://abr.kz/restaurant/coco",
+  "https://abr.kz/restaurant/aroma",
+  "https://abr.kz/restaurant/jinau",
+  "https://abr.kz/restaurant/brodvej-burger",
+  "https://abr.kz/restaurant/cafe-afisha",
+  "https://abr.kz/restaurant/cafeteria",
+  "https://abr.kz/restaurant/ogonyok",
+  "https://abr.kz/restaurant/luckee-yu",
+  "https://abr.kz/restaurant/daredzhani"
+ ],
+ "branches": [
+  {
+   "name": "Del Papa — пр. Кабанбай батыра, 34",
+   "address": "пр. Кабанбай батыра, 34",
+   "lat": 51.130168,
+   "lon": 71.414987,
+   "phone": "+7 771 722 81 97",
+   "opening_hours_raw": "Пн-Вс с 10:00 до 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/del-papa",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "Обратная связь Del Papa Назад",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "<div class=\"item-title\">пр. Кабанбай батыра, 34</div>",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "toggle('51.130168, 71.414987')",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "href=\"tel:+7 771 722 81 97\"",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "item-col-desc\">Пн-Вс с 10:00 до 23:00<",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Del Papa — пр. Республики, 10",
+   "address": "пр. Республики, 10",
+   "lat": 51.160574,
+   "lon": 71.429549,
+   "phone": "+7 771 722 81 96",
+   "opening_hours_raw": "Пн-Вс с 10:00 до 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/del-papa",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "Обратная связь Del Papa Назад",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "<div class=\"item-title\">пр. Республики, 10</div>",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "toggle('51.160574, 71.429549')",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "href=\"tel:+7 771 722 81 96\"",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "item-col-desc\">Пн-Вс с 10:00 до 23:00<",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Del Papa — пр. ​Кабанбай батыр, 62, ​ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "пр. ​Кабанбай батыр, 62, ​ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.088296,
+   "lon": 71.407723,
+   "phone": "+7 771 742 09 96",
+   "opening_hours_raw": "Пн-Чт, Вс с 10:00 до 23:00, Пт, Сб с 10:00 до 00:00",
+   "opening_hours_osm": "Mo-Th,Su 10:00-23:00; Fr,Sa 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/del-papa",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "Обратная связь Del Papa Назад",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "<div class=\"item-title\">пр. ​Кабанбай батыр, 62, ​ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "toggle('51.088296, 71.407723')",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "href=\"tel:+7 771 742 09 96\"",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/del-papa",
+     "snippet": "item-col-desc\">Пн-Чт, Вс с 10:00 до 23:00, Пт, Сб с 10:00 до 00:00<",
+     "fetched_at": "2026-10-17T09:07:41+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "COCO — проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.088077,
+   "lon": 71.408406,
+   "phone": "+7 771 070 85 35",
+   "opening_hours_raw": "Пн-Вс с 10:00 до 00:00",
+   "opening_hours_osm": "Mo-Su 10:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/coco",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/coco",
+     "snippet": "Обратная связь COCO Назад",
+     "fetched_at": "2026-10-17T09:50:36+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/coco",
+     "snippet": "<div class=\"item-title\">проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:50:36+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/coco",
+     "snippet": "toggle('51.088077, 71.408406')",
+     "fetched_at": "2026-10-17T09:50:36+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/coco",
+     "snippet": "href=\"tel:+7 771 070 85 35\"",
+     "fetched_at": "2026-10-17T09:50:36+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/coco",
+     "snippet": "item-col-desc\">Пн-Вс с 10:00 до 00:00<",
+     "fetched_at": "2026-10-17T09:50:36+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "JINAU — проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.127778,
+   "lon": 71.413333,
+   "phone": "+7 702 519 67 57",
+   "opening_hours_raw": "Пн-Вс с 10:00 до 23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/jinau",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/jinau",
+     "snippet": "Обратная связь JINAU Назад",
+     "fetched_at": "2026-10-17T09:50:37+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/jinau",
+     "snippet": "<div class=\"item-title\">проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:50:37+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/jinau",
+     "snippet": "toggle('51.127778, 71.413333')",
+     "fetched_at": "2026-10-17T09:50:37+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/jinau",
+     "snippet": "href=\"tel:+7 702 519 67 57\"",
+     "fetched_at": "2026-10-17T09:50:37+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/jinau",
+     "snippet": "item-col-desc\">Пн-Вс с 10:00 до 23:00<",
+     "fetched_at": "2026-10-17T09:50:37+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Cafeteria — Кабанбай батыр проспект, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "Кабанбай батыр проспект, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.127778,
+   "lon": 71.413333,
+   "phone": "+7 777 078 67 86",
+   "opening_hours_raw": "Пн-Чт,Вс с 10:00 до 22:00, Пт, Сб с 10:00 до 23:00",
+   "opening_hours_osm": "Mo-Th,Su 10:00-22:00; Fr,Sa 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/cafeteria",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/cafeteria",
+     "snippet": "Обратная связь Cafeteria Назад",
+     "fetched_at": "2026-10-17T09:50:34+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/cafeteria",
+     "snippet": "<div class=\"item-title\">Кабанбай батыр проспект, 62, ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:50:34+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/cafeteria",
+     "snippet": "toggle('51.127778, 71.413333')",
+     "fetched_at": "2026-10-17T09:50:34+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/cafeteria",
+     "snippet": "href=\"tel:+7 777 078 67 86\"",
+     "fetched_at": "2026-10-17T09:50:34+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/cafeteria",
+     "snippet": "item-col-desc\">Пн-Чт,Вс с 10:00 до 22:00, Пт, Сб с 10:00 до 23:00<",
+     "fetched_at": "2026-10-17T09:50:34+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Luckee Yu — проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.088077,
+   "lon": 71.408406,
+   "phone": "+7 707 684 12 55",
+   "opening_hours_raw": "Пн-Вс 10:00 до 22:00",
+   "opening_hours_osm": "Mo-Su 10:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/luckee-yu",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/luckee-yu",
+     "snippet": "Обратная связь Luckee Yu Назад",
+     "fetched_at": "2026-10-17T09:50:38+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/luckee-yu",
+     "snippet": "<div class=\"item-title\">проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:50:38+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/luckee-yu",
+     "snippet": "toggle('51.088077, 71.408406')",
+     "fetched_at": "2026-10-17T09:50:38+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/luckee-yu",
+     "snippet": "href=\"tel:+7 707 684 12 55\"",
+     "fetched_at": "2026-10-17T09:50:38+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/luckee-yu",
+     "snippet": "item-col-desc\">Пн-Вс 10:00 до 22:00<",
+     "fetched_at": "2026-10-17T09:50:38+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Дареджани — пр. Кабанбай батыра, 34",
+   "address": "пр. Кабанбай батыра, 34",
+   "lat": 51.130168,
+   "lon": 71.414987,
+   "phone": "+7 775 303 03 88",
+   "opening_hours_raw": "Пн-Вс с 9:00 до 00:00",
+   "opening_hours_osm": "Mo-Su 09:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/daredzhani",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "Обратная связь Дареджани Назад",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "<div class=\"item-title\">пр. Кабанбай батыра, 34</div>",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "toggle('51.130168, 71.414987')",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "href=\"tel:+7 775 303 03 88\"",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "item-col-desc\">Пн-Вс с 9:00 до 00:00<",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Дареджани — проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "address": "проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж",
+   "lat": 51.089204,
+   "lon": 71.406696,
+   "phone": "+7 771 741 09 06",
+   "opening_hours_raw": "Пн-Вс с 9:00 до 23:00",
+   "opening_hours_osm": "Mo-Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://abr.kz/restaurant/daredzhani",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "Обратная связь Дареджани Назад",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "<div class=\"item-title\">проспект Кабанбай батыра, 62, ТРЦ MEGA Silk Way, 1 этаж</div>",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "toggle('51.089204, 71.406696')",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "href=\"tel:+7 771 741 09 06\"",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://abr.kz/restaurant/daredzhani",
+     "snippet": "item-col-desc\">Пн-Вс с 9:00 до 23:00<",
+     "fetched_at": "2026-10-17T09:19:10+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "One page per brand; each page tabs its venues by city — only the 'Астана' tab cards were used (tab id resolved dynamically, bounds-checked). Card fields: address = item-title, hours = 'Работаем <item-col-desc>' schedule, phone = tel: link, geo = yandex-map toggle('lat, lon'). abr.kz/contacts only carries Almaty head-office phones, so branch data comes from the brand pages.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

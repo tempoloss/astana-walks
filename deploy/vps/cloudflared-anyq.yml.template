@@ -1,0 +1,9 @@
+# Template: copy to /etc/cloudflared/anyq.yml (root:cloudflared, 0640) and put the real tunnel id in.
+# The credentials file /etc/cloudflared/<TUNNEL_ID>.json (cloudflared:cloudflared, 0600) is made by
+# `cloudflared tunnel create anyq` and is never committed.
+tunnel: <TUNNEL_ID>
+credentials-file: /etc/cloudflared/<TUNNEL_ID>.json
+ingress:
+  - hostname: anyq.an8kk.dev
+    service: http://127.0.0.1:8520
+  - service: http_status:404

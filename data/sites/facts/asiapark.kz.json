@@ -1,0 +1,54 @@
+{
+ "domain": "asiapark.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:38:02+00:00",
+ "pages": [
+  "https://astana.asiapark.kz/ru/"
+ ],
+ "branches": [
+  {
+   "name": "ТРЦ Asia Park",
+   "address": "г. Астана, пр. Кабанбай батыра, 21",
+   "lat": null,
+   "lon": null,
+   "phone": "+77052221008",
+   "opening_hours_raw": "С 10:00 до 22:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://astana.asiapark.kz/ru/",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://astana.asiapark.kz/ru/",
+     "snippet": "Фактический адрес : Республика Казахстан г. Астана пр. Кабанбай батыра 21",
+     "fetched_at": "2026-10-17T09:38:02+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://astana.asiapark.kz/ru/",
+     "snippet": "С 10:00 до 22:00",
+     "fetched_at": "2026-10-17T09:38:02+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://astana.asiapark.kz/ru/",
+     "snippet": "+77052221008",
+     "fetched_at": "2026-10-17T09:38:02+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://astana.asiapark.kz/ru/",
+     "snippet": "ТРЦ Asia Park",
+     "fetched_at": "2026-10-17T09:38:02+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "www.asiapark.kz (the POI's URL) redirects work to the city subdomain astana.asiapark.kz — the mall's own site. The footer also prints the legal address of ТОО «REM.KZ» (пр. Бухар Жырау 51/4) which is the operator, not the mall, so only the 'Фактический адрес' was stored; its text keeps a decomposed 'й' (и + U+0306) in the evidence snippet. 'С 10:00 до 22:00' names no days -> raw only (needs_days).",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

@@ -1,0 +1,352 @@
+/* The map's own look: pins, «Вы здесь», the minutes on the route, the card at the pointer, the zoom buttons. Tokens are
+   the page's design tokens, written out here so the map reads the same whatever the page around it defines. */
+
+.maplibregl-map {
+  --m-ink: #161b26;
+  --m-ink-2: #4b5263;
+  --m-ink-3: #8a919e;
+  --m-hair: rgba(16, 24, 40, 0.08);
+  --m-accent: #0f9d76;
+  --m-accent-soft: rgba(15, 157, 118, 0.16);
+  --m-open: #1f9d55;
+  --m-soon: #b7791f;
+  --m-closed: #d1373a;
+  --m-glass: rgba(255, 255, 255, 0.88);
+  --m-pop: 0 0 0 1px var(--m-hair), 0 8px 24px rgba(16, 24, 40, 0.1);
+  --m-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --m-sans: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --m-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-family: var(--m-sans);
+}
+
+/* ---- pins ------------------------------------------------------------------------------------------ */
+
+/* The button is the hit area (36 px, 44 on touch screens); the pin itself is drawn by .mk-dot inside it. MapLibre's
+   own .maplibregl-marker makes it position:absolute: never set `position` on a marker element. */
+.mk {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (pointer: coarse) { .mk { width: 44px; height: 44px; } }
+.mk-dot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--m-ink);
+  box-shadow: inset 0 0 0 1.5px var(--m-ink), 0 1px 4px rgba(16, 24, 40, 0.28);
+  font: 600 10.5px/1 var(--m-mono);
+  font-variant-numeric: tabular-nums;
+  transition: transform 120ms var(--m-ease), width 180ms var(--m-ease), height 180ms var(--m-ease), background-color 180ms var(--m-ease), box-shadow 180ms var(--m-ease);
+}
+.mk.sel .mk-dot {
+  width: 24px;
+  height: 24px;
+  background: var(--m-accent);
+  color: #fff;
+  box-shadow: 0 0 0 4px var(--m-accent-soft), 0 2px 6px rgba(16, 24, 40, 0.25);
+  font-size: 11.5px;
+}
+.mk.hot .mk-dot { transform: scale(1.15); }
+/* a place outside the answer's numbered ones: a dot instead of a number */
+.mk.extra .mk-dot::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--m-ink); }
+.mk.extra.sel .mk-dot::after { background: #fff; width: 8px; height: 8px; }
+.mk:focus-visible { outline: none; }
+.mk:focus-visible .mk-dot { outline: 2px solid var(--m-accent); outline-offset: 3px; }
+
+/* the status dot: colour, and for unknown a grey hatch (the word is in the card beside the answer and in the tooltip) */
+.mk-state {
+  position: absolute;
+  left: calc(50% + 5px);
+  top: calc(50% - 13px);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--m-open);
+  box-shadow: 0 0 0 1.5px #fff;
+  pointer-events: none;
+  transition: transform 180ms var(--m-ease);
+}
+.mk.sel .mk-state { transform: translate(2px, -2px); }
+.mk-state.closing_soon { background: var(--m-soon); }
+.mk-state.closed { background: var(--m-closed); }
+.mk-state.unknown {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(45deg, rgba(110, 117, 130, 0.9) 0 1px, transparent 1px 2.6px);
+  box-shadow: 0 0 0 1.5px #fff, 0 0 0 2px rgba(16, 24, 40, 0.25);
+}
+
+/* the name: beside the selected (or hovered) pin, on the right, on the left where the right has no room */
+.mk-label {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 18px);
+  display: none;
+  max-width: 240px;
+  padding: 4px 7px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: var(--m-pop);
+  color: var(--m-ink);
+  font: 600 12px/1 var(--m-sans);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.mk-label.flip { left: auto; right: calc(50% + 18px); }
+.mk.sel .mk-label, .mk.hot .mk-label { display: block; }
+.mk-label.off, .you-label.off, .leg-label.off { visibility: hidden; }
+
+/* ---- «Вы здесь» -------------------------------------------------------------------------------------- */
+
+.you { width: 12px; height: 12px; pointer-events: none; }
+.you-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--m-ink);
+  box-shadow: 0 0 0 2.5px #fff, 0 1px 5px rgba(16, 24, 40, 0.35);
+}
+.you-label {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: var(--m-ink);
+  color: #fff;
+  font: 600 11px/1 var(--m-sans);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+/* ---- minutes on the route ---------------------------------------------------------------------------- */
+
+.leg-label {
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--m-hair), 0 2px 6px rgba(16, 24, 40, 0.12);
+  color: var(--m-ink);
+  font: 600 11px/1 var(--m-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ---- the card at the pointer ------------------------------------------------------------------------- */
+
+.map-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  max-width: 270px;
+  padding: 7px 10px 8px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--m-hair), 0 10px 28px rgba(16, 24, 40, 0.16);
+  color: var(--m-ink);
+  font: 400 12px/1.4 var(--m-sans);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms var(--m-ease);
+}
+.map-tip.on { opacity: 1; }
+.map-tip b { display: block; font-size: 12.5px; font-weight: 600; }
+.tip-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0 6px; margin-top: 3px; color: var(--m-ink-2); }
+.tip-row.mono { font: 500 11.5px/1.4 var(--m-mono); font-variant-numeric: tabular-nums; }
+.tip-kind { font-family: var(--m-sans); color: var(--m-ink-3); }
+.tip-state { display: inline-flex; align-items: center; gap: 5px; font-weight: 500; }
+.tip-state svg { width: 12px; height: 12px; flex: none; }
+.tip-state .dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--m-open); }
+.tip-state.open { color: var(--m-open); }
+.tip-state.closing_soon { color: var(--m-soon); }
+.tip-state.closing_soon .dot { background: var(--m-soon); }
+.tip-state.closed { color: var(--m-closed); }
+.tip-state.closed .dot { background: var(--m-closed); }
+.tip-state.unknown { color: var(--m-ink-2); }
+.tip-state.unknown .dot {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(45deg, rgba(110, 117, 130, 0.9) 0 1px, transparent 1px 2.6px);
+  box-shadow: 0 0 0 1px rgba(16, 24, 40, 0.25);
+}
+
+/* ---- zoom ------------------------------------------------------------------------------------------- */
+
+/* The shell may move the buttons left of a tall panel: --map-zoom-right / --map-zoom-top on the map's box. */
+.maplibregl-ctrl-top-right { top: var(--map-zoom-top, 12px); right: var(--map-zoom-right, 12px); }
+.maplibregl-ctrl-top-right .maplibregl-ctrl { margin: 0; }
+.maplibregl-ctrl-group {
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--m-glass);
+  box-shadow: var(--m-pop);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.maplibregl-ctrl-group button { width: 28px; height: 28px; }
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--m-hair); }
+.maplibregl-ctrl-group button:hover { background-color: rgba(16, 24, 40, 0.04); }
+@media (pointer: coarse) { .maplibregl-ctrl-group button { width: 44px; height: 44px; } }
+.maplibregl-ctrl-top-right .maplibregl-ctrl.locate-ctrl { margin-top: 8px; }
+.locate { display: grid; place-items: center; color: var(--m-ink-2); }
+.locate svg { width: 16px; height: 16px; }
+.locate.busy svg { animation: locate-pulse 1s infinite ease-in-out; color: var(--m-accent); }
+@keyframes locate-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+/* below a laptop the zoom buttons give way to the fingers; the location button stays. On a phone the whole corner is
+   given up: the top bar has its own location button, and no pin is ever under a control of the map */
+@media (max-width: 899px) {
+  .maplibregl-ctrl-top-right .maplibregl-ctrl-group:not(.locate-ctrl) { display: none; }
+  .maplibregl-ctrl-top-right .maplibregl-ctrl.locate-ctrl { margin-top: 0; }
+}
+@media (max-width: 760px) {
+  .maplibregl-ctrl-top-right { display: none; }
+}
+
+/* ---- saved places: a small dark rounded square with the kind's glyph; the hit area is 36 px (44 on touch screens) ----- */
+.bm {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (pointer: coarse) { .bm { width: 44px; height: 44px; } }
+.bm-dot { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 8px; background: var(--m-ink-2); color: #fff; box-shadow: 0 0 0 2px #fff, 0 1px 4px rgba(16, 24, 40, 0.3); }
+.bm-dot svg { width: 13px; height: 13px; }
+.bm:focus-visible { outline: none; }
+.bm:focus-visible .bm-dot { outline: 2px solid var(--m-accent); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mk-dot, .mk-state, .map-tip { transition: none; }
+}
+
+/* ---- phone: pins and names a little larger than a laptop's, the same look (the hit area stays 44px) ------- */
+
+@media (max-width: 899px) {
+  .mk-dot { width: 22px; height: 22px; font-size: 11.5px; }
+  .mk.sel .mk-dot { width: 26px; height: 26px; font-size: 12.5px; }
+  .mk-label { left: calc(50% + 18px); font-size: 12px; }
+  .mk-label.flip { left: auto; right: calc(50% + 18px); }
+  .you-label, .leg-label { font-size: 11px; }
+  .map-tip { font-size: 12px; }
+}
+
+/* weather-fx: the sky gradient and the particle canvas lie right above the basemap's canvas and below the pins, labels and
+   controls (map-weather.js inserts them there); the sky is multiplied over the basemap only (the container isolates it) */
+.maplibregl-canvas-container { isolation: isolate; }
+.fx-sky, .fx-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.fx-sky {
+  background: linear-gradient(168deg, var(--fx-a, transparent), var(--fx-b, transparent));
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.fx-sky.on { opacity: 1; }
+.fx-canvas[hidden], .fx-wrap[hidden], .fx-menu[hidden], .fx-pop[hidden], .fx-fact[hidden] { display: none; }
+
+/* the control: a small button (the wind's short fact beside the icon when it is known) and the popover it opens. Nothing
+   of it stays on the map, so no pin is covered. A laptop: in the corner under the map's own buttons; a phone: the top bar. */
+.maplibregl-ctrl-top-right .maplibregl-ctrl.fx-wrap { position: relative; margin-top: 8px; }
+.fx-btn, .fx-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0;
+  color: #8a919e;
+  font: 600 11.5px/1 Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.maplibregl-ctrl-group .fx-btn { display: inline-flex; width: auto; min-width: 28px; height: 28px; padding: 0 6px; background: none; }
+@media (pointer: coarse) { .maplibregl-ctrl-group .fx-btn { min-width: 44px; height: 44px; padding: 0 10px; } }
+.fx-btn svg, .fx-top svg { width: 16px; height: 16px; flex: none; }
+.fx-btn.on, .fx-top.on { color: #0f9d76; }
+.fx-btn.on .fx-fact, .fx-top.on .fx-fact { color: #4b5263; }
+.fx-btn:focus-visible, .fx-top:focus-visible { outline: 2px solid #0f9d76; outline-offset: -2px; }
+
+/* the popover: the switch, then what is drawn and from which measurement (the sun is computed) */
+.fx-pop {
+  position: absolute;
+  z-index: 6;
+  width: 272px;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 0 0 1px rgba(16, 24, 40, 0.08), 0 10px 28px rgba(16, 24, 40, 0.16);
+  color: #4b5263;
+  font: 400 12px/1.4 Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  pointer-events: auto;
+}
+.fx-wrap .fx-pop { top: 0; right: calc(100% + 8px); }
+.fx-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: #161b26;
+  font: 600 13px/1 Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+.fx-switch:hover { background: rgba(16, 24, 40, 0.04); }
+.fx-switch:focus-visible { outline: 2px solid #0f9d76; outline-offset: -2px; }
+.fx-track { position: relative; flex: none; width: 36px; height: 20px; border-radius: 10px; background: #c4c9d2; transition: background-color 150ms; }
+.fx-track::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(16, 24, 40, 0.3); transition: transform 150ms; }
+.fx-switch[aria-checked='true'] .fx-track { background: #0f9d76; }
+.fx-switch[aria-checked='true'] .fx-track::after { transform: translateX(16px); }
+.fx-line { margin: 0; padding: 2px 8px 8px; }
+
+/* the phone: the button is in the top bar beside «Моё местоположение», the popover under the bar (the plate is above the map) */
+.fx-menu { display: none; }
+@media (max-width: 760px) {
+  .fx-menu { display: block; }
+  .fx-menu[hidden] { display: none; }
+  .fx-top {
+    position: relative;
+    min-width: var(--tap);
+    height: var(--bar-h);
+    padding: 0 10px;
+    border-radius: 12px;
+    background: var(--glass);
+    box-shadow: var(--shadow-pop);
+    -webkit-backdrop-filter: blur(12px) saturate(1.1);
+    backdrop-filter: blur(12px) saturate(1.1);
+    color: var(--ink-3);
+    pointer-events: auto;
+  }
+  .fx-top::after { content: ""; position: absolute; inset: -2px 0; }
+  .fx-top.on { color: var(--accent); }
+  .fx-menu .fx-pop { top: calc(100% + 6px); right: 0; width: min(300px, calc(100vw - 24px)); font-size: 12.5px; }
+}
+/* the bar has no room for the fact beside a query pill (an answer) or on the narrowest phones: the popover says it */
+@media (max-width: 760px) { header.top:has(.qpill:not([hidden])) .fx-top .fx-fact { display: none; } }
+@media (max-width: 380px) { .fx-top .fx-fact { display: none; } }
+@media (prefers-reduced-motion: reduce) { .fx-sky { transition: none; } }

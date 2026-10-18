@@ -1,0 +1,9 @@
+{
+ "domain": "smartproject.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:16:55+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "domain does not resolve on repeated probes. robots.txt/page unreachable per RFC 9309 (disallowed by robots.txt)",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

@@ -1,0 +1,9 @@
+{
+ "pharm_all": "1182",
+ "pharm_hours": "076",
+ "pharm_247": "022",
+ "toilets_all": "2815",
+ "toilets_hours": "02",
+ "streets_main": "26290",
+ "streets_sidewalk": "480"
+}

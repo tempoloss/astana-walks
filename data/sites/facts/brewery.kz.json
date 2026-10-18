@@ -1,0 +1,52 @@
+{
+ "domain": "brewery.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:20:27+00:00",
+ "pages": [
+  "https://brewery.kz"
+ ],
+ "branches": [
+  {
+   "name": "Brewery",
+   "address": "Астана, проспект Туран, 30 (здание Fitness Palace)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 56 77 11, +7 702 888 11 59",
+   "opening_hours_raw": "12:00-01:00, без выходных",
+   "opening_hours_osm": "Mo-Su 12:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://brewery.kz",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://brewery.kz",
+     "snippet": "Астана, проспект Туран, 30 (здание Fitness Palace)",
+     "fetched_at": "2026-10-17T09:20:27+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://brewery.kz",
+     "snippet": "Режим работы: 12:00-01:00, без выходных",
+     "fetched_at": "2026-10-17T09:20:27+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://brewery.kz",
+     "snippet": "+7 7172 56 77 11, +7 702 888 11 59",
+     "fetched_at": "2026-10-17T09:20:27+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://brewery.kz",
+     "snippet": "Brewery",
+     "fetched_at": "2026-10-17T09:20:27+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Single venue (the page header also links 'Все рестораны' to satgroup.kz). Hours cross midnight (12:00-01:00). No coordinates on the page.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

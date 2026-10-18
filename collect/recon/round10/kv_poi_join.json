@@ -1,0 +1,278 @@
+[
+ {
+  "name": "Kobyz Palace",
+  "cat": "restaurant",
+  "lat": 51.113823,
+  "lon": 71.4248795
+ },
+ {
+  "name": "Стумари",
+  "cat": "restaurant",
+  "lat": 51.113839,
+  "lon": 71.4252883
+ },
+ {
+  "name": "REPUBLICA",
+  "cat": "bar_nightlife",
+  "lat": 51.1163602,
+  "lon": 71.4282893
+ },
+ {
+  "name": "KaRima",
+  "cat": "restaurant",
+  "lat": 51.1085063,
+  "lon": 71.4308145
+ },
+ {
+  "name": "Coffee BOOM",
+  "cat": "cafe",
+  "lat": 51.1401959,
+  "lon": 71.4105286
+ },
+ {
+  "name": "Аяшка",
+  "cat": "cafe",
+  "lat": 51.1589176,
+  "lon": 71.428777
+ },
+ {
+  "name": "Loft Park",
+  "cat": "cafe",
+  "lat": 51.1392416,
+  "lon": 71.4087264
+ },
+ {
+  "name": "Театр кукол",
+  "cat": "culture_theatre_cinema",
+  "lat": 51.1584852,
+  "lon": 71.4287068
+ },
+ {
+  "name": "Избушка",
+  "cat": "cafe",
+  "lat": 51.1283377,
+  "lon": 71.4180466
+ },
+ {
+  "name": "Дастархан",
+  "cat": "cafe",
+  "lat": 51.1284084,
+  "lon": 71.4174565
+ },
+ {
+  "name": "Памятник Шарлю Де Голлю",
+  "cat": "attraction_landmark",
+  "lat": 51.1414649,
+  "lon": 71.4486596
+ },
+ {
+  "name": "Донер",
+  "cat": "fast_food",
+  "lat": 51.1559292,
+  "lon": 71.4530698
+ },
+ {
+  "name": "Избушка",
+  "cat": "cafe",
+  "lat": 51.1313366,
+  "lon": 71.4595375
+ },
+ {
+  "name": "Salter's",
+  "cat": "restaurant",
+  "lat": 51.1224518,
+  "lon": 71.4274902
+ },
+ {
+  "name": "Детское кафе Balaqai",
+  "cat": "cafe",
+  "lat": 51.1581688,
+  "lon": 71.4287262
+ },
+ {
+  "name": "Discovery Coffee",
+  "cat": "cafe",
+  "lat": 51.1155701,
+  "lon": 71.4299011
+ },
+ {
+  "name": "Mandarin Kitchen&bar",
+  "cat": "restaurant",
+  "lat": 51.1187859,
+  "lon": 71.4595642
+ },
+ {
+  "name": "Emiliya",
+  "cat": "restaurant",
+  "lat": 51.1224518,
+  "lon": 71.4274902
+ },
+ {
+  "name": "Buddha-Bar Astana",
+  "cat": "restaurant",
+  "lat": 51.1224518,
+  "lon": 71.4271011
+ },
+ {
+  "name": "Emil Chinese Restobar",
+  "cat": "restaurant",
+  "lat": 51.1173096,
+  "lon": 71.4341049
+ },
+ {
+  "name": "Ray Bar",
+  "cat": "bar_nightlife",
+  "lat": 51.1282692,
+  "lon": 71.4185638
+ },
+ {
+  "name": "Бодрый день Казахстан",
+  "cat": "cafe",
+  "lat": 51.1225395,
+  "lon": 71.4033585
+ },
+ {
+  "name": "Carreta_restobar",
+  "cat": "restaurant",
+  "lat": 51.1139297,
+  "lon": 71.4277344
+ },
+ {
+  "name": "La Maison De Rafe",
+  "cat": "restaurant",
+  "lat": 51.1124229,
+  "lon": 71.4355392
+ },
+ {
+  "name": "Тілеп қобыз сарайы",
+  "cat": "entertainment",
+  "lat": 51.113781,
+  "lon": 71.4247818
+ },
+ {
+  "name": "Music Hall Terrace",
+  "cat": "entertainment",
+  "lat": 51.1313133,
+  "lon": 71.4586868
+ },
+ {
+  "name": "Bakerist.Astana",
+  "cat": "cafe",
+  "lat": 51.1153946,
+  "lon": 71.4348831
+ },
+ {
+  "name": "NIS Centre of Excellence",
+  "cat": "coworking_library",
+  "lat": 51.1287498,
+  "lon": 71.4136581
+ },
+ {
+  "name": "Eli•Peli ресторан/караоке",
+  "cat": "bar_nightlife",
+  "lat": 51.1139412,
+  "lon": 71.4251175
+ },
+ {
+  "name": "Pacman CyberCafe",
+  "cat": "cafe",
+  "lat": 51.1581688,
+  "lon": 71.4287262
+ },
+ {
+  "name": "La Creme кондитерский бутик",
+  "cat": "restaurant",
+  "lat": 51.1281281,
+  "lon": 71.4190979
+ },
+ {
+  "name": "Мадлен",
+  "cat": "cafe",
+  "lat": 51.1307487,
+  "lon": 71.4289093
+ },
+ {
+  "name": "Астана, Библиотека Назарбаева",
+  "cat": "coworking_library",
+  "lat": 51.1112328,
+  "lon": 71.4384232
+ },
+ {
+  "name": "Сундук",
+  "cat": "restaurant",
+  "lat": 51.1150589,
+  "lon": 71.4182816
+ },
+ {
+  "name": "Детская площадка",
+  "cat": "kids_playground",
+  "lat": 51.1119809,
+  "lon": 71.4204149
+ },
+ {
+  "name": "Детская площадка",
+  "cat": "kids_playground",
+  "lat": 51.1164571,
+  "lon": 71.4194874
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1521676,
+  "lon": 71.4472192
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1522795,
+  "lon": 71.4471589
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1520091,
+  "lon": 71.4468122
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1517722,
+  "lon": 71.4457407
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1516427,
+  "lon": 71.4451928
+ },
+ {
+  "name": "Триумфальная арка Мангилик Ел",
+  "cat": "attraction_landmark",
+  "lat": 51.1043034,
+  "lon": 71.4300836
+ },
+ {
+  "name": "Парк / сквер",
+  "cat": "park_garden",
+  "lat": 51.1224519,
+  "lon": 71.4384974
+ },
+ {
+  "name": "Happy Cake",
+  "cat": "cafe",
+  "lat": 51.117268,
+  "lon": 71.433906
+ },
+ {
+  "name": "Coffee BOOM, Шәмші Қалдаяқов көшесі, 3",
+  "cat": "cafe",
+  "lat": 51.118873,
+  "lon": 71.459166
+ },
+ {
+  "name": "Кафе \"Еда Города\" (халал)",
+  "cat": "cafe",
+  "lat": 51.118285,
+  "lon": 71.416047
+ }
+]

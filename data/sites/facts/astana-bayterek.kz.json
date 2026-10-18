@@ -1,0 +1,9 @@
+{
+ "domain": "astana-bayterek.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "robots.txt unreachable (connection refused after retries) => crawling not allowed per RFC 9309; nothing stored for монумент Байтерек.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

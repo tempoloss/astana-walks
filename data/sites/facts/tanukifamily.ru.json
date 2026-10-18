@@ -1,0 +1,9 @@
+{
+ "domain": "tanukifamily.ru",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:53+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "HTTP 401 basic-auth wall on the whole domain (B2B/staging protection) => no page content, nothing stored for Тануки Астана.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

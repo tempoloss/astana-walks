@@ -1,0 +1,135 @@
+{
+ "domain": "qaganat24.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:28:46+00:00",
+ "pages": [
+  "https://qaganat24.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Qaganat, Достык, 5",
+   "address": "Достык, 5, Астана",
+   "lat": 51.127891,
+   "lon": 71.422704,
+   "phone": "+7-708-970-50-46",
+   "opening_hours_raw": "Mo-Su 00:00-23:59",
+   "opening_hours_osm": "24/7",
+   "description": null,
+   "url": "https://qaganat24.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"name\":\"Qaganat, Достык, 5\""
+    },
+    {
+     "field": "address",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Достык, 5\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.127891,\"longitude\":71.422704}"
+    },
+    {
+     "field": "phone",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"telephone\":\"+7-708-970-50-46\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"openingHours\":\"Mo-Su 00:00-23:59\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Qaganat, Тауелсиздик, 8/1",
+   "address": "Тауелсиздик, 8/1, Астана",
+   "lat": 51.149287,
+   "lon": 71.459804,
+   "phone": "+7-708-970-50-46",
+   "opening_hours_raw": "Mo-Su 00:00-23:59",
+   "opening_hours_osm": "24/7",
+   "description": null,
+   "url": "https://qaganat24.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"name\":\"Qaganat, Тауелсиздик, 8/1\""
+    },
+    {
+     "field": "address",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Тауелсиздик, 8/1\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.149287,\"longitude\":71.459804}"
+    },
+    {
+     "field": "phone",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"telephone\":\"+7-708-970-50-46\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"openingHours\":\"Mo-Su 00:00-23:59\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  },
+  {
+   "name": "Qaganat, Республики, 34А",
+   "address": "Республики, 34А, Астана",
+   "lat": 51.17307,
+   "lon": 71.426002,
+   "phone": "+7-708-970-50-46",
+   "opening_hours_raw": "Mo-Su 00:00-23:59",
+   "opening_hours_osm": "24/7",
+   "description": null,
+   "url": "https://qaganat24.kz/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"name\":\"Qaganat, Республики, 34А\""
+    },
+    {
+     "field": "address",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Республики, 34А\",\"addressLocality\":\"Астана\",\"addressCountry\":\"KZ\"}"
+    },
+    {
+     "field": "geo",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":51.17307,\"longitude\":71.426002}"
+    },
+    {
+     "field": "phone",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"telephone\":\"+7-708-970-50-46\""
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://qaganat24.kz/contacts",
+     "snippet": "\"openingHours\":\"Mo-Su 00:00-23:59\""
+    }
+   ],
+   "method": "jsonld",
+   "confidence": 0.9,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Outlets = LocalBusiness JSON-LD on /contacts; only the 3 Астана ones kept (Достык 5, Тауелсиздик 8/1, Республики 34А). Phone +7-708-970-50-46 is the chain call-centre printed identically on every outlet (kept as stated). 'Открыто круглосуточно' on the page matches openingHours Mo-Su 00:00-23:59.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

@@ -1,0 +1,53 @@
+{
+ "domain": "eurotrans.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:32:27+00:00",
+ "pages": [
+  "https://eurotrans.kz/ru/",
+  "https://eurotrans.kz/contacts-2"
+ ],
+ "branches": [
+  {
+   "name": "Eurotrans Group",
+   "address": "Z05H9D1, г. Астана, ул.Кунаева 23/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (708) 425 38 03 +7 (7172) 573 888",
+   "opening_hours_raw": "Пн-Пт: с 9:00 до 18:00 Сб-Вс: выходной",
+   "opening_hours_osm": "Mo-Fr 09:00-18:00; Sa,Su off",
+   "description": null,
+   "url": "https://eurotrans.kz/contacts-2",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://eurotrans.kz/contacts-2",
+     "snippet": "Адрес: Z05H9D1, г. Астана, ул.Кунаева 23/1",
+     "fetched_at": "2026-10-17T09:27:46+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://eurotrans.kz/contacts-2",
+     "snippet": "Телефон: +7 (708) 425 38 03 +7 (7172) 573 888",
+     "fetched_at": "2026-10-17T09:27:46+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://eurotrans.kz/contacts-2",
+     "snippet": "График работы: Пн-Пт: с 9:00 до 18:00 Сб-Вс: выходной",
+     "fetched_at": "2026-10-17T09:27:46+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://eurotrans.kz/ru/",
+     "snippet": "Транспортная компания Eurotrans Group",
+     "fetched_at": "2026-10-17T09:32:27+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "POI «Eurotrans Group» is the office of a logistics company (transit_station category). Working schedule, not 24/7 cargo ops; site JSON-LD repeats the same address. The e-mail is JS-obfuscated on the page (no verbatim snippet, not stored).",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

@@ -1,0 +1,46 @@
+{
+ "domain": "qazaqconcert.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:05+00:00",
+ "pages": [
+  "https://qazaqconcert.kz/ru/contacts"
+ ],
+ "branches": [
+  {
+   "name": "РГКП \"Государственная академическая концертная организация \"Қазақконцерт\" имени Розы Баглановой\"",
+   "address": "г. Астана, пр.Мәңгілік ел, 10/1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 706 730 6601",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://qazaqconcert.kz/ru/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://qazaqconcert.kz/ru/contacts",
+     "snippet": "РГКП \"Государственная академическая концертная организация \"Қазақконцерт\" имени Розы Баглановой\"",
+     "fetched_at": "2026-10-17T09:02:05+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://qazaqconcert.kz/ru/contacts",
+     "snippet": "г. Астана, пр.Мәңгілік ел, 10/1",
+     "fetched_at": "2026-10-17T09:02:05+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://qazaqconcert.kz/ru/contacts",
+     "snippet": "Колл-центр +7 706 730 6601",
+     "fetched_at": "2026-10-17T09:02:05+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Contacts of the «Қазақконцерт» organisation (the ЦКЗ/ОКЗ «Қазақстан» concert hall). Phones listed per department (дирекция 70-53-02, аренда залов 70-52-41); stored is the колл-центр line +7 706 730 6601 (the visitor number). The page states no opening hours (the ticket-office schedule loads through a JS widget), so hours stay None — never inferred.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

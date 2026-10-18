@@ -1,0 +1,28 @@
+{
+ "bbox": [
+  51.1,
+  71.39,
+  51.16,
+  71.47
+ ],
+ "note": "maps.mail.ru mirror 504-down; used overpass-api.de/kumi",
+ "queries": {
+  "with_lit": {
+   "ways": "233",
+   "mirror": "https://overpass-api.de/api/interpreter"
+  },
+  "lit_yes": {
+   "ways": "198",
+   "mirror": "https://overpass-api.de/api/interpreter"
+  },
+  "lit_no": {
+   "ways": "35",
+   "mirror": "https://overpass-api.de/api/interpreter"
+  },
+  "total": {
+   "ways": "6539",
+   "mirror": "https://overpass-api.de/api/interpreter"
+  }
+ },
+ "fetched_at": "2026-10-18T11:23:16Z"
+}

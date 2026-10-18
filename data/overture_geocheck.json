@@ -1,0 +1,3659 @@
+{
+  "meta": {
+    "snapshot_date": "2026-10-16",
+    "cutoff": 0.7,
+    "release": "2026-09-23.1",
+    "license": "ODbL-1.0 (Nominatim answers, © OpenStreetMap contributors)",
+    "params": {
+      "cluster_min": 8,
+      "share_max": 0.4,
+      "ref_min": 5,
+      "far_m": 2000.0
+    },
+    "counts": {
+      "collapsed_point_records": 689,
+      "collapsed_point_clusters": 14,
+      "address_far_nominees": 15,
+      "verdicts": {
+        "address_far": 13,
+        "unverified": 2
+      }
+    }
+  },
+  "collapsed_point": {
+    "0093b4f3-7328-4f9c-9812-c045d0d109b2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "03377463-5944-4193-9b8b-fbff6247c24b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "083d7317-8328-4792-8b4c-cf969c5e39a0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "09b60b82-6b4f-417d-9ab0-c04c5fa3435f": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "0a18b9ef-a8fe-4226-ace7-ec6c61c58095": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "0eb1417e-e588-4bb3-ac91-1a708270b35d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "0fadfa0d-7c1d-4d9b-976a-3ddb89bb3d3d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "104d7ca3-d1d6-4ec1-a1a1-1ff74993c2d9": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "126f992c-1ac9-409b-b8ea-a8e9e47093c1": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "150fe488-d2bd-43ea-bc8b-2f2730e10f32": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1675454a-eda0-4263-9304-29600db9d369": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "19a7c679-31e9-41bf-a4f2-447e78748f79": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "19e290f2-6ffe-4823-97db-286ffb99be5b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1b5be24c-0dc4-43d8-a8a9-ecce756ea95c": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1bef4d64-2b82-46e1-a008-8d769eb77b7b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1d21c9af-762e-4565-a2b5-60d6d7d6cea1": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1d489fdc-7568-4a07-ad9b-bfcdc34379f2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "1dc07e41-7b69-4ba0-a51a-2bdcb2cf7690": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "218fae2f-d168-410b-b10c-a9f7d6bd3fc2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "21fd9d10-04a2-4a79-85f5-f0f100810f36": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "2850a283-ae76-45d6-86c4-9b5f86e9d209": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "31c79ba4-545e-4caf-b8bf-468eeeb015b0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "359fe094-bd44-457d-8fc0-71bceb07e650": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "37b08440-3711-485c-991d-f7fd029e00ee": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "384d1f5d-9eae-4be9-bee7-7f607c4c704f": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "3c08bc80-e1b1-45c3-8845-f5a9b60a7eee": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "3d47c1e0-8c45-42d5-b670-03b76cc99338": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "3e5209c0-5896-4bef-85ce-a1f2049c1979": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "3f298bf4-b466-4f48-8014-ee2badc21ab3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "3f6093ba-a2d7-4b7b-87cb-bebce53d960c": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "43e54567-cc76-4a6c-8ebb-80d278b92361": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "44302cdd-181c-4f28-83e0-a96c16a4bc79": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "443dd6d6-b4d4-4ae6-9c29-f24615a92d0a": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "45185257-5249-4493-ab3e-f97d7f24295d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4641c780-3b27-4d9f-8c94-693c43d4e0ba": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4735a9eb-7bc2-4b11-aab5-7fbb8ed5edf3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "479e71ef-51ec-47dd-8748-8898d71fac1d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "481fdab4-3fc4-475c-9ca6-f9bd199a8789": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4877ba9e-0862-491f-aa78-814e91266993": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "494cd51e-8246-419f-8169-df4b01ec14d9": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4a6654eb-3b07-4137-b687-8b3a79bf8e82": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4d8b96bf-048b-41a1-bad4-50b12b27c073": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4e351542-ecf2-4c49-88ad-3bd6ec2b001e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "4f0ad915-28f6-4726-9d45-1a91999cbd07": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "50daea1b-7134-480d-9ee9-99634fcc5096": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "534d1cef-8e25-4d90-9d50-efe9cb484c4d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "58793927-175e-400f-a556-33b1aae4c3c2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "58f5036e-da30-437f-89e2-bfcf1b8f9803": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "5aad11d4-ee50-4126-9fd3-e3564953f6ec": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "5d4b4ca8-87dc-442d-a232-05eeb72ceb6c": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "5e0a2ae5-b564-4177-ae24-5dfc52137afd": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "60800c34-281f-4dfc-a136-f987e8b96d76": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "64c60ccf-1cc4-4ffb-ab06-9d4fb3a6e2a9": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "65983a1c-776d-46bf-9f2a-edfab3355661": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "689621ad-f1f8-4d1a-a219-a5c2d06376ae": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "6a4952c1-00b1-47a9-958d-9067474c4377": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "6cabeee1-2b37-4894-8422-c7c7d7228d9e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "6cb35c41-3219-4e90-ae3b-b51e8d3b1b72": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "6e293a52-afe3-412f-a688-eeba6ead2b75": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "6f1ba754-afa1-4a2c-a416-a8aeaa32b649": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "70941002-767c-4760-961a-30657ecfa4bc": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7123baaa-cbec-40af-a799-e741f028b02e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "723d4e40-75e6-4242-a7f9-0125ed3abff2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7712f35e-6fd5-428d-a099-0e7c450e9fed": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "785c9bdc-13ed-4b9e-a2f3-749f8302b466": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "798a4b36-b7d2-4e41-913e-d1552995c962": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7b67f76f-0d70-4ea3-8625-932cfd5db128": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7cd898cb-c471-4bdd-95dc-6b4d6fdfa05b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7d84946f-5c56-4711-aa6a-e4c6bca6684b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7d8722a3-0776-41ad-b10b-1f90fee33aa3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7de99ba5-9f67-4a29-8b98-a76f32854f57": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "7e5d0798-69c0-4aa4-837d-cf4cdeed64d0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "8022b432-7070-417c-8496-76635eeb6cc3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "805e5e24-8a9d-43e7-9c08-06bd3e547a33": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "83e05a6c-7176-4a3d-b19a-d30ca9db5809": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "848971ce-73d6-4100-955a-9e817fd855da": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "88ec2ad3-a413-4bb2-9d3d-f416fed83ec0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "8a9c6e62-99d1-4ea0-be65-9eedd5779b69": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "8b082aa4-bf3f-4ba7-b235-435173e54968": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "8e2b9f85-d339-49ea-83b5-1187f77a872e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "91a6404a-1314-4f74-804f-bb5a59f9d4f2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "926292b7-1343-4fca-97c0-406cc6974bc7": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "93a56db9-4a16-414a-83d8-784f3be29b4f": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "93c46882-de6d-498c-9a93-921403aad18f": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "947ddcff-b31c-4922-9a30-d42c805e3488": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "95935717-01a0-411c-9d80-da840cd54ca6": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9a6364b3-b5a3-4530-a090-8d3800336c78": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9ab488a9-2661-4a6a-92af-b4c40afc0f45": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9ad5523d-2749-4015-b01b-b757d8c35df7": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9b33f5e4-6e44-419e-8862-e822ad4eec85": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9b7c8e2f-3481-4c08-9249-38e800b8f5b9": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9b835ec2-5b14-48f3-bb3e-f2111a92c3eb": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9c011425-1a86-497d-bfa1-c895e9dfe64b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9c6025d2-8497-4524-b5f1-ed5bfc128d0a": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "9ed6a2b4-a854-4d59-ae66-172c5c70dc45": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a02dd91d-23af-474d-9ce7-8374ce9aba99": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a07a00a7-cfdf-407a-a5e8-53f875f2fe36": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a10c6644-d8c1-4d2a-b0ef-a8576b3dcbaa": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a14f1020-c1eb-42ad-a66c-c68641854446": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a1cb7a84-3ff4-4afd-9670-c40d4d8d0072": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a5dd65a4-96ff-4602-bb68-0b46229f8bd2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "a9a64efd-fcc9-4511-8092-005c2129ed07": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "ab083955-3ce4-4e21-b694-ad5cf7033d99": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "abc19c2a-aa8c-41c1-8b21-ef52351b508e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "ad451808-5a43-40ae-b1d9-a836d72b09d4": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "aed68a50-49d8-44bd-8565-cb7a92c8e6ac": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "af18a7c9-9d13-485b-a3d9-2199883f993f": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "afcdedfa-2334-4f32-84bc-5d5b3c8dc9fc": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "b2359e55-bb01-49bf-bcf3-f281553398ea": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "b24f6bf0-51b7-4e84-a5f6-5f459c4e937d": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "b7267fb6-ad07-47c4-b340-41a4edc78cdb": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bb593d05-71a4-4cd0-bcb8-e725fe2ce462": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bb96fe3d-782c-4063-b504-f5de7300bac1": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bc308f5a-9625-40dc-a882-ecbd930151e0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bc4a79f0-d751-4b95-8547-579832b73199": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bd6b54f8-65b0-44d5-a273-df794b7f9553": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "be5a3aad-a245-4e71-b320-ec849b57a8e8": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "bf945949-b8d1-4380-88a2-f0ea5dfcb2f0": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c029126b-8ddb-4db4-9460-b8cbbf05decb": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c34c0ac4-6660-425b-a03f-9da0fa3acd0e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c3f09bba-7c9b-40bc-8082-4b05f3c20b66": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c3ffdbd0-d3a4-4fc4-984c-ff6cfc5e79d7": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c6658eee-80d6-4018-8ac7-13009b842517": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c7678ecb-60a4-4c25-be83-59a28cfd6566": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c76cdbee-c4c9-4cfe-b8b4-a9045cf1a397": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c88a7ecb-43d1-4e4b-ae2b-1bf3ed4f28a6": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "c9c36312-7725-40eb-bb7b-f0ed35d5a77c": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "cafcce49-0a0c-4687-bb8a-82add8906953": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "d0d30dcc-448f-4440-a21a-fcfe3a491cf2": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "d5ccf28c-c89f-4684-bcd0-e01fe9ea11e4": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "d675e80a-c865-4bce-b45a-a105b011a8c8": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "d693b677-876e-4c0d-8525-935f9ce6367e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "d87f3fdf-a248-42b1-b183-57bf9bf93169": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "da88da45-cee2-4e00-b48c-77f4c7e3b451": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "dc2d1812-abab-4ba7-943b-31da7631556a": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "dcc4c87f-78e1-4cef-84eb-595932af6edf": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "de9d73e1-9eca-4e39-8b96-f541aca42454": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "deeb13eb-fcb3-4fbd-b831-0899e4875fb8": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "df25dd84-8561-451c-bbbb-82e6ef9aff23": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "df72db09-9c19-4c02-8bad-30fc556a6ffb": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "dfd72a65-f8db-403a-94de-a362c6c6545b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "dfecffb1-caf6-4c26-8f15-dd02e5f76d68": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e17322a7-c008-4cfa-90b8-b1eaa8b5d08e": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e3e7122a-e869-4ea1-83cf-1e2cff9ed6b1": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e4863b3d-205d-44a0-93be-dbb6a26e86e3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e5e6a54c-d3f3-4029-978d-1b8887b2e7a3": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e67f9a64-dd2d-495c-a115-b3370706e472": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "e86d17b3-91b1-4766-ac5c-329fd1b31774": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "eaf925be-34d8-4cd9-8ee9-e6604e55b955": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "eb12b7d0-2f2d-4939-a33b-50c2eeb65055": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "ed4b95f4-1584-4498-89d2-1309b0515b16": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "eef62d9a-d664-4705-9ee4-1e367dc301fb": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "f11c8330-c45c-4eb9-957a-e43a13ca1406": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "f163e17b-8cf0-4305-a8ac-dac29fb572bd": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "f8266c8e-2244-4754-90aa-334d6767e1d9": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "f8a053bf-7d41-4fc4-97ae-8f9d76657e57": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "f94022f1-3dbb-411d-9ab5-b2b15477cf30": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "fcb031af-56f1-4f19-bde6-7f51fbc4ec5b": {
+      "reason": "collapsed_point",
+      "records_on_point": 158,
+      "top_address_share": 0.01
+    },
+    "01bffc18-6460-42fd-8a55-1f5d242b980c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "02b00632-6fc5-4f5a-938c-397d63b09118": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "035cec6c-5791-4f87-b800-03cc39813982": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "044e7c75-a578-42c9-9cbf-564016d33e16": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "0b133a11-6da4-4fd9-8897-f85f3232b309": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "0ebb6d7e-9af4-44e0-b810-a60dcde03317": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "0f0bf0be-d36c-44a5-97b2-b7208f63add9": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "17061f4c-cdbe-4ac6-a665-730a5755d7f1": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "1bd9fb3e-82cc-4272-9b37-1340db962f01": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "21c5f8c9-804d-4b16-b6b3-7ba06b864774": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2354ad20-d822-4bae-b724-9b06c40f1c9f": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "26b2508d-5a79-4f70-84a0-fb0f4ac2bedf": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "272bc792-c05f-4d56-b963-a27e3998edeb": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2904deb2-c1fd-4754-90a1-7af9e63fa5ed": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2a9e68c6-049a-420b-af5d-0a4c62571867": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2b6e18c3-9142-4735-a609-42beefe03f1e": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2cb3e4d1-4ce9-4021-9202-b689de2922a3": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "2d90d554-811f-43c6-a169-a1fb93b30e7d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "328884da-d407-4818-93c5-52f5d2fa1183": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "3d800ca8-099f-49df-9241-379ca48cea66": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "43090843-b0c9-4d1c-a2bd-14d54ca7033e": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "434e4c5c-280e-4b67-a38a-eb0354ac92d3": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "499504af-0d8e-4525-8835-6dc8277e3303": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "4c603dbd-e957-4b66-a519-2dbe6408c47c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "54ed2e85-ef90-4f31-8dec-4bf7dac968f7": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "5741f8f7-3afb-4c00-af61-8117b21c1972": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "5774b64a-7945-4dbf-821a-25f62a8b043b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "612dd17d-6697-4444-8e73-b52a076c5981": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "657d9d40-a130-44fb-aa16-277a371943ed": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "6708a05c-cd57-46be-9a2a-56e8066477d3": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "68b2d162-74fa-448c-aef9-072c78976174": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "69e30332-7090-454f-a9f1-eb8a6aac5c19": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "6d5a8e48-6a1d-4cd2-93f5-a9b950936d06": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "6e3a0829-fbc7-499d-bb81-a4768a040b2b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "707b7a4e-dd63-47b0-b890-1e923d46fcc0": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "71496076-560e-41be-8609-7e7838d9d50c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "756993eb-a721-4a6b-b997-95eff8120835": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "7b2a4348-926d-4ea4-8030-54bd88031e93": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "81600d9e-bf39-4302-82d4-c87c97aefbc6": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "81a07a53-1f6f-4f97-b665-2d18c346813c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "84829fa5-37ed-43c1-8d5b-a2f82ef3121f": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "86bbbd86-97e8-4c3f-9007-72e1a26a493b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "888c371b-4fc5-4fe3-832a-b5d6f3703de5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "89e27739-6e43-4028-b633-a44d2457ea26": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "8a243525-33b5-45ca-9f36-232f8f92e66c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "8cd67576-1ceb-4918-95c2-46c1ae334c4b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "8dcb849b-b54a-464b-8bf9-8898a14f6dc6": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "8f2698ae-68b3-4499-933f-569f92892e7f": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "90e8234a-16df-4eb6-ad18-b92ad9f3bedf": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "911e795c-a6b7-4afc-ae4e-d165498af3ba": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "91cbe603-a96e-4fcb-9f87-4e66464b556b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "93cf6396-835f-47b7-99f0-cc819c1ac24e": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "9b938c26-86cb-4237-a5c2-f74f65eadfe0": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "9cc0186a-26f9-48c2-9718-fac883bda9fe": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "9ce9c563-97bb-433e-88d8-0287b2a8eb74": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a0de9dbe-04f3-47c8-92b8-264c3ffdfc50": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a0df1e92-04c6-4539-8c22-5a7dc0f859ac": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a0f8a3a0-d983-4011-ae67-2d76f2ce7207": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a1413c65-7cd7-4796-8053-5e780970c425": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a250ce22-07ab-4b5d-8ffe-015da9fd11e8": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a467306c-a6ad-46f5-a851-a64036755100": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a4d341e0-d66a-4659-84a8-e6a1b20f19df": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a59361a2-c067-4a8c-b973-418648d002e9": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a5c8e3f8-1bf0-4448-bec7-e65820d7ab34": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "a9695cc6-22af-40c5-a5ff-1bbfdbc79593": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "ac2d894e-e22b-4be0-a63f-576fc62e6e55": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "af762188-b7ca-4861-bfd1-013e10033bfa": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "b0d9ca3c-0431-4bac-bd06-c44de287f43d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "b3e55c6a-92dd-41f7-83bd-438a66973098": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "b608f148-a9f2-4ae4-8399-0388cea6fde0": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "b87697f6-1367-4931-8bd1-d864f71192cc": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bb6a382e-362a-4294-8d68-dfaec784d460": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bc481468-d321-460d-b47b-3236c028d95c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bc538d6c-b9e2-4a38-91cd-5f83b7bbddef": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bc6f231f-fe87-43c5-b23e-0cc533b53e55": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bcd15c56-8875-44d6-a381-2567b05567a2": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "bfdc47b7-ca14-43b6-b314-74a72625e8d1": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c06ab6ad-0d19-48b5-acd2-375359028085": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c1692570-7075-4ab0-a27b-40b84fd98032": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c290802d-cba2-48ee-a6a8-f6e7715d7bc5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c4d69069-2347-4969-86e4-9d39b64cbf27": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c50da32c-9d58-43e1-af93-861bb7ad31d5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c5770129-8d25-4a4c-b2d9-cbf1d64c9077": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c720f427-bd7b-4d0c-b8c7-fdd7421c7a69": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c75daaa1-2365-485e-928e-7e10a565f089": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "c99bb3fa-3844-4e29-ae90-86cde47b5517": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "cdb4ce5a-2f98-42cc-bfcc-7bf8f00ec79b": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "cfa293f4-a0c1-4fd9-9d09-b09da09c6f48": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "cfb82472-fcc5-43cf-9720-c4b38ab19946": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "d0327af6-ef0e-471f-b095-9fea2760f437": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "d832c7f1-5c0c-4904-b5f1-6dc2b9c5a369": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "d8414962-1297-4cca-861f-74bf2432ae82": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "da8f676a-6263-4008-8c93-780e70fd3827": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "db9fcbe0-6629-44a0-b528-b79a6e9537bf": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "def0171c-78ae-414b-a048-5771ba9be9df": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "df877ead-7cd9-46f3-87ba-91897b663b65": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "e00bdebb-07e0-4445-a3a4-0f9a0261fa09": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "e5f360a0-828f-4397-9a60-51b8a1419f61": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "e66d9559-659f-4685-8253-0d99ffad5e02": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "e85f6632-7e21-4408-9f46-f95fedaa9c6d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "eaf03217-b6df-4b14-b7bd-932b05666308": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "ed1a743e-0632-46c4-9b8e-62bccc0c6d6d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "edbee330-e976-497d-8e83-f10715bdf1b5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "ee51939d-38f5-4ef1-a255-271eac869d2c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "ee85b656-27a5-4a59-b9a3-5bf0ed78cdbc": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f107b291-8121-46c3-8200-5ba69c82c28c": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f1e1c726-3e5e-43f1-9253-0230129f77fa": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f2a004c9-5578-44cd-ab91-ffa812eda929": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f322029f-0042-4e6d-8338-a51c4ad08f38": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f4af5565-e95a-406e-9408-d23a25a6c1ca": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f635644c-05f3-459f-808a-490bc3b7c6b5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f65c18ee-532c-45bb-b4ed-3a8ad33a8be5": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f81e97c3-4b47-4c82-83bd-0cbb06f8bc7f": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "f945fcf2-9fb0-456e-b8dd-8a52d0cf4626": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "fbb33bea-bb12-4955-acb6-05e0a756142d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "fd3bdff1-e1f5-412e-83ea-a9c7ed8eb063": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "fdda06fc-6435-4832-bf4b-7723db1d2c86": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "ff02b26f-ad4c-4be9-b9e3-fae74ad1615d": {
+      "reason": "collapsed_point",
+      "records_on_point": 118,
+      "top_address_share": 0.19
+    },
+    "0246cda7-d04d-46c9-a315-fabb329e063d": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "03710a63-4400-431a-8cce-29f0c3e97a1f": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "2262f5ea-48b5-4dbd-af8a-ce7a214f892d": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "537ec496-a946-4dbf-8e8b-aeee6743dcb8": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "5f472fc1-31d8-4a53-8a9d-049b1173359c": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "659deaef-2239-401b-8f41-199fa130da35": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "7bd3f704-be3f-4a94-a876-30607d0c4715": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "8a7d1af8-dda0-412f-8fbb-670c4563bb65": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "910227fa-c057-4833-9884-534e58e724dc": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "b04c17e8-4d7f-4335-80d4-fbca88bd16d4": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "cc1969a6-77a3-4cd9-833b-fa99a2707c2d": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "cfdaa1c5-a074-4b9a-9cb3-413ed1a5b287": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "f11a1748-c853-4384-bc6e-7b1f436e8291": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.08
+    },
+    "02611673-a314-4b79-b4e4-b23dd904dc7e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "02b16777-95b2-49df-bb87-94e802d71706": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "0464221d-b703-4749-89fb-d852ed0c416c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "05f11a8c-721a-481e-acb4-8f25b9f18158": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "060f7990-8f4d-4f44-8cb9-a3ded793ab98": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "072b02ac-f922-4dc7-b2e0-a89342579164": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "074dc6b7-42a2-4cbf-b4a9-a9fed90ac149": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "07da3830-cdce-4c91-9de2-2ae5d640eec9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "0a67774d-c9a6-422c-9dfa-c7b536bef20c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "0a84ad67-2d7e-450c-856a-6ca6f3fc4d2e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "0cdf8457-6670-4abd-b050-4159c4ad4796": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1184644a-de26-4c59-9052-bbddd9ef7b85": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "11acc741-7fe0-4019-9fe4-a72ab2cb69a9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "131252fe-959f-4ec7-bc18-8abb2f03df03": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1320cf51-b777-4272-8b32-61c72415dd4b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1464f1d1-8785-4d34-87c4-c07351aacd28": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "14e79b1a-c830-49c8-a1d8-9d8e69b90f4d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "162d0b94-1473-4f8b-88fa-236ae655cf2d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "165ce223-a59f-46e8-8a16-c1453d8efc3f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "17c579b9-d34f-4e6d-a22c-32cd54f98c28": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1879affe-ef09-41fe-85b9-87c262f62c39": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1889426d-bfe7-4ee8-874c-f65e547ffff3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "19058336-31a8-4737-ad59-468b30c8a658": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "192d8a9c-82cb-45db-ad99-5d0667a3cf99": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1a479f1c-5c70-4192-a77a-b55db3daf924": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1cf28055-cd09-464a-87ad-eb0e8faf350e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1f35aef9-4a4d-48e7-b2f4-dfd051a76e09": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1f39fe5f-7626-4213-bef8-342f7ab78a98": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "1f5ff6d6-699b-47b0-9ac3-f72cdda93ffa": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2061cfc9-a732-41f3-bddb-09a7d530bca1": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "20646d7f-936f-43b4-91e7-f10e6148b01f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2079d884-a621-4835-9653-b6f3cc4b24ff": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2273348e-3eaa-4cdb-b0ea-5fbc08809d64": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2298357d-9fea-4ec8-b94f-6a286bff3d3a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "22b2a0bc-4cb2-4c6c-a3ef-e2ea48c00664": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "24abe3b4-ec1c-4a8b-aa97-b3209e578e6e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "24ee7fdb-5883-493e-aeb6-a7869080d57e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "25bd3fbd-de8d-4fad-98b1-fe52d2feb14e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "27a61ae0-ca29-4064-96d9-b315d8128783": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "27addfca-92c4-4b4f-8561-16e186a4df67": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "282c0818-58a7-4914-a05b-310346199a8c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "285d42db-5d52-46be-ac69-5eaecfbea6b0": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2b33d99f-0703-495e-85cc-c12d0fbc7f95": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2b416539-4718-4a1d-9b6b-239242a016f9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2b47b0aa-c631-4d3d-ac38-05de505b42e5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2d9a7816-e1da-4d64-958e-5d1ba439b77f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2da1bffd-e842-449e-92d8-1f9ca7c9828c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2e0bedb7-8617-4e4e-bfc0-86e22d0d3870": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2fa9177e-f02c-468c-8358-854125c93dab": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "2fb66341-3f91-4815-bafc-f8a4f5a33f0c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "318ecc77-e3d3-4722-b740-1567b62bfa40": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "31a3d5b3-6775-42bc-8197-2a8b3610c867": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3219b73d-684b-4429-ac48-e7f5f2848802": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "321cb92f-2e7f-4b0c-b594-40d085f68abe": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "33bf01fe-0113-4c91-ba63-2824863ec607": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "33dcfe58-5293-4b67-aba2-c82945aa9211": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "33f27975-84ee-46f1-bbd9-e00da4683aea": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "33fe1745-0de8-4712-8c0f-b748890b9bfb": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3458b935-90c8-4ec6-be52-6d0cd90c76dc": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3571493e-b496-499b-b073-f1b36a238822": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "35c97c0b-5f80-4bc0-8e9d-a133bef765ff": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "37097089-d5f2-4872-acd4-3231d093cc07": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "38a182eb-68ba-4459-9241-2b8f97abe77d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3964caaa-ab57-4d40-9897-9180e9145e2e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "39801d31-8725-46ac-adbd-8a22ed9eda6f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3c4bdf97-2b69-42ca-8c96-f3f25bbf96c0": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3ccec526-81c1-4d68-a306-f833deb3f3f3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3d52d3f9-14c7-4e1c-ab58-458ca1662a09": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3de65933-9003-4868-bfb8-b591bc15743f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "3f5e7d3c-2a8c-48b0-b705-3e00e43e5ef4": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "43be3704-33a0-40e0-afe0-3f0ecc8146bb": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "46496fb8-3b8d-4dc0-9ee6-66fbf8f7e42f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "46f5c4a3-740f-4784-ad8d-9359ae0daff4": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "4a731d82-0b43-44a5-bc14-395f5e0feb67": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "4b75b811-fb4c-4df8-a7dc-0e621a185f6d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "4cdd1f14-638d-46d3-a824-d6bf8ca9362b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "4f0224b4-6543-4d76-83ad-fbc16a42cd27": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "51301f7a-72e2-4ac1-910e-3e1537828643": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "51b12102-29ec-4ee7-9667-6e2347c6fe3e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "543e974b-6a7f-4abf-a313-086ec31460e7": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "549239ba-e030-42d2-910e-e33adce09f2b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "54f2bec9-712a-4a26-a548-7ff3f26be86b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "562f212c-230a-4f92-a289-267706f4fa6a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "582b008f-9711-41b8-8a20-b6e27d635b49": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "588519a3-7869-4ead-a503-466f86d4eda7": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "595e2cef-5780-4552-a896-73d44e3cc327": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5b721e26-b6ea-437e-b89d-103c30a8d694": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5cb7727d-7bca-4d75-af39-803104dc3f83": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5db3a8fa-6a7f-4ce5-8a65-9723998bcfe6": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5ec376e9-8b3a-4280-9e89-0dffdc511fa1": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5f1e1992-32d1-497d-92ed-c8b3f8074f29": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "5fd33e36-3a36-49fa-b16c-58a8ef59d739": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "607c880d-c45d-447c-bf00-ade8add5ed29": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "61ecb4ac-a8aa-42ce-9af7-6c1c30c16444": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "624c25fc-4452-44b8-bccf-5d4a49c3aee3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "62d28521-6d02-4943-9386-8417ed26ee3b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "676e2112-4a42-439d-a800-8c089be19a9a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6841eaa5-a1cd-4f48-a160-1a363c7f56aa": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "68ffa62a-50e7-43fa-a0b0-48a4d5dcd2cc": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6939066e-f4b7-4507-a9e3-67fccbcd51f9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6aa4a0bc-bbed-46f1-9151-3a54e86fe81d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6b645d7b-bfa2-4fe9-abc1-9d30b5155530": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6c59787e-98a4-474e-8a7e-86fd1ea481c1": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "6ecbc607-e41c-45f4-bb17-54cdeaf4c47c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "705576ae-ed1f-44de-ba4b-f7cdbe976eb3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7109b160-1f45-4da0-98c9-531864f10a0a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "72a86725-1942-4e2c-94b4-b43781454531": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "72abde52-a797-4029-b9ad-d325bcbc16e9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "736856c5-32d3-4f78-a54f-ef148b218fe2": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7429197f-c609-4776-89b0-8a0c3153aea5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "74a61747-f714-453a-9db8-0c3e8ecf4509": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "74b15f2a-a067-48f2-be8a-200f6d0190d3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "763856b8-02ef-48d5-b622-8fef1d09171c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "76ff30be-fb19-4fb3-a45f-d5890e04cf6a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7787c292-ff32-4549-83cb-8c969e6ec012": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "77d8fffa-c3c3-4f24-8fea-5e87662e6ede": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "78dcc847-036d-4b55-a6cd-59a5a4b9588c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7901879d-28b6-49cc-803e-90d4b0073173": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "79490e87-8e8f-4cc2-8f16-c31957156efd": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7adfaefc-3256-4d54-98d1-f256f489da8b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7b560a6f-eefd-4f1d-af6f-163d1a4494b5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7b881f0f-2145-4720-a750-0ef4085c28a5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7bd7656a-b68c-4455-bf42-b335d2841d91": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7be933f3-1079-4898-a44b-4d9852bf2740": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7da291a6-04e6-4023-885e-94d8ea3b3736": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7e2da94e-6be0-4d22-b819-8e49b8608e69": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7ec41ba8-9964-415b-bb21-5e4aa39fc5fc": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "7f74e7a8-0ec7-4be2-ae53-5e3c96486a84": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "80f84051-7c59-4e57-9de6-979214e0ef9d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "81e03da7-6841-4d3f-8048-6f927385d9f5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "82db08af-09a9-4a1c-8fc7-e2185ff21091": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "84c17b21-fac0-416e-9a38-9a6a050fb542": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "84c1bd14-c029-4041-a189-2d512810bd00": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "87743f05-cf13-490d-93b2-5e7ad8ba2890": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "87fe462f-3196-45f6-b38c-5596e5a24601": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "88369650-2c02-473e-983a-01b97fd6ff9b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "88f29d8e-3737-454d-b299-b84b49d1575e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "8ad8d24b-5158-4ec2-9a26-8c4c8baa4917": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "8c597729-293d-4c14-8cb6-7d91a0080c24": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "8e2447a9-4fb1-40e8-97eb-17eaf11b728e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "8e2a59d0-0555-4eae-94ee-e444a0194098": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "8f0f8c0b-1204-485c-8d26-0e087f442196": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "91425296-c121-40ca-81c0-e7348473bce9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "927cc10f-f126-4486-b3e2-32f2ef9910ce": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "93ba53c4-e153-41c0-b4e7-089f7338e185": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "95197308-42b0-4845-a90b-6fb99c37334e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9565be67-a5cf-4230-8404-3ea860f31e4a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9580754a-a491-4b21-bf99-1cbe7021f946": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "961507f9-660d-464a-8d7e-177181c7775e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9939c701-62a4-491d-852e-746bacefec82": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9982402d-622c-42e6-8d4f-dffdf5e5a526": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9b8a8624-c64a-4085-bdd2-4ecec0d1a4f5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9c1df8b8-7763-47f5-8fb2-9a4ec6734356": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9dddf27c-ff76-47f5-af11-99f21830de1b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "9f8cf0c8-411f-4e84-a53f-cd3774f9d9b5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a187441d-a81e-4403-a1fc-5eecef881d39": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a334f917-fe89-46db-83bd-d8ac2da41cce": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a395aec4-c905-4c9b-ad2d-88b643fbde34": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a79e1277-58b4-4d2c-98de-9eb28e572be8": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a8006a96-a030-4cfd-b420-17d584afd182": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a8206f82-8d66-4476-9915-3b455dbdc9f3": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a829ee8d-d9b2-4a16-ac16-b947b1e9febc": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a87583ad-bd66-459c-9b35-8aae9b3baf67": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a8b648dc-6cc9-40ad-90f6-efa2ad3ca71f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "a97de334-676a-4d26-9daa-49f15fc7739e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "aaccf415-608e-4e73-9a77-a75fe086b6b5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ab342507-8ad0-4b42-8ede-f9edb3dd6051": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ab67594a-78f6-46b0-a61c-32593d066d11": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ad761cfc-8510-4ed9-b288-e53e005ded64": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "adde6ece-0108-4a52-8cc7-197d9ea3526c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "adec58fa-1e7f-45eb-98de-6f33b5a70af7": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ae91c511-a722-46bd-a1aa-460feed589a4": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "aec312f6-26e4-4edc-ac83-41d950e82e4d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "af881c57-e97b-4a9d-bd33-cc994267623c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b38a6cf9-b7d0-47ae-a6c0-005a2e4575e5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b3ebbb14-f58f-4bcd-b223-05cd87cdbb15": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b41b5e21-3ea4-4df1-8049-e482905b82bb": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b4fea401-3872-4feb-821c-e0fff74c9952": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b60f4d53-db8c-4071-ba92-0459dd16267f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b61a3736-e6ea-4585-b07b-1f656b276417": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b689f5f4-ceda-4e6f-a464-8aab1f0a5b5a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b6a864e2-8889-40de-81ed-7ba4405e0c13": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b6b37694-9093-4d6c-8215-f0d84d211fd9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b72ef02d-df9d-48eb-aa11-a0a9ebe88cec": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "b7fb36d6-adfe-478a-a20a-4a2d4a91cf3b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ba199cc3-db9b-412f-a99b-d0cd388c706e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ba4ad7d2-e3fe-4f0c-bca0-43454c6bddf4": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "bad38d1b-92b5-45d5-82d2-bd02f4fda489": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "bb0680e4-54f1-4f1e-87b7-faf1ccae6da0": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "bb891936-f4aa-436e-b98f-5de2081102f8": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "be2e1c4d-e4e4-4fab-82af-c9f120f5483f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "c0c23a51-3403-4af7-9311-a0708cda01a1": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "c21f8a16-e490-4c0d-ae9d-649d6c70056f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "c23eb9d1-f60f-432b-af30-9b404dbdade6": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ca021a84-28a6-49ce-b80f-612bddc65c7d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "cad70476-7f90-4031-b14d-a53c4c337a1f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "cb212608-f019-4871-adbc-637edaa6cc3d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "cba77764-560f-42c8-815b-58344db1a9cf": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "cbee73b0-1990-4c33-b9a4-d44d8e8096a5": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d12967c3-e2b4-4866-8b9b-57618c82c9ef": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d3d8bb33-8e8a-452a-87cb-181fba70814d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d53134be-6566-4922-b524-5eab0fffb297": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d6ec0088-dd86-44a0-92fe-c41e837282d9": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d7b6235a-e533-4cf6-8d9c-03d08e2aeb53": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "d907192f-baac-4400-a747-6d014663b611": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "dd426204-62ca-4f1e-8b10-6023cdba0f2c": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ddda74e4-0c61-4bec-9886-8ca5eaecfec8": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "de3095d4-4716-4921-9b1b-496d5dc989af": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "df0c6f5c-f63a-4749-a62f-233e61ca290b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "dff9660d-f9f1-4d49-8649-1021d86c9eff": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e0105725-b280-482c-98dd-5bbd71c0f446": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e534043c-7f4e-4cce-8ce8-a04456c01b3a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e77203bc-1078-4e68-be39-6d22f435a604": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e78a2770-7eec-4cbd-803e-4633b29d8f50": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e7957a57-7b18-4480-9f1d-63db139d503b": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "e92653b4-7f0c-4757-93b6-1ed92bfc4b73": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "eb656c06-90e0-4dd5-b46f-ffac8b86c62d": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "ebac20c1-3e48-456c-8671-6e6bbb129797": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "eca0d8e6-63de-4207-abae-504e7392ed9f": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "eff37fb7-729c-44b2-98ea-23e9c4b9bb41": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f22e9b54-4f4c-4ca9-8f14-6600792c3507": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f23a090a-157e-4cba-80f1-c9cb14cb5865": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f487c1e0-8cab-424b-9072-01ccbf02b739": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f49710cc-6a82-46b5-a701-26f53e338c70": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f56cb324-6825-4db7-a846-8c0051aa4ef1": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f59661ed-54f4-44ac-9a9c-f7343050a188": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f85b48ef-2fc1-4a10-910f-09e7b6a7b1ce": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f87f0d24-359a-47ba-a94c-cbea00b69376": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f8d81678-1bf2-4c58-842a-7c3b7c5798b7": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "f8de5696-d5a5-49bf-85de-146ee75d8ddf": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fa37a6f8-609e-43ab-9b7f-7486db13d909": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fa6ce54b-91b9-4de6-a333-45748a3387f2": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fa910432-fdd4-4c88-9993-886a76310f8a": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fc343627-5340-4d86-adc0-d283a197f59e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fcb6ad44-4bc1-4018-8bc4-8d6081c47335": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "fe746d06-9fab-4c5d-901c-5aa0a33aae1e": {
+      "reason": "collapsed_point",
+      "records_on_point": 236,
+      "top_address_share": 0.0
+    },
+    "02c9a793-ac0f-469d-9849-85461caf9e0f": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "0d74b3a4-8a83-4a57-acf9-b0fe075f4d67": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "0f3e5331-d4c7-493f-8c09-fddf6964e753": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "26a52489-94a4-4fa3-bade-cc46fe439e73": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "3ca71486-8892-44d1-8bc6-2698294a27e3": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "483acaf4-8063-42af-abec-9d1a0b76b47a": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "4e72475a-7c22-4ab8-b8b3-8795701c57a5": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "67d1450e-79a4-44dc-a205-a26ec2f520f8": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "70ae5c1e-a649-4813-9385-b8598a7f051a": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "9a820a9b-18a6-421a-b5b7-378ce134dc55": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "c57fac8c-e69c-4360-9654-e44d836bd833": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "c89374fa-5db1-42e7-a515-e5de6b2b540f": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "daed45b6-8d57-448a-ba9e-d6e7b13846eb": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "dd648205-30c1-4d7d-afdf-37db11cbeef6": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "ebb920d6-29cb-41b1-a233-6bb240820594": {
+      "reason": "collapsed_point",
+      "records_on_point": 15,
+      "top_address_share": 0.2
+    },
+    "038918c1-bfce-41a5-9032-eed098ef4148": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "0d55c491-d2c9-4ff0-bea7-d15a4fded3ad": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "1e2da6a5-f93c-4206-a7ab-3e310c61fa53": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "2b51272c-28a1-433c-a003-47ece6ec68f4": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "41477906-3914-4a10-a827-de22e6f7e396": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "6075588f-38b9-46db-99b9-773948e4c046": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "97ae7c94-c3bc-49b9-979f-2f4c6e2ac87b": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "a6eb4cfa-3c00-4bb4-a7b8-188963ec7dc5": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "a9e7ad94-9264-4356-99e0-3228c5e8108b": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "b0a16896-edc9-4846-a326-1c8d7519a330": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "bc53c37d-f29c-4cc7-accd-be068bd6e5d9": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "bdbf770e-1ba0-444a-a6ab-aecdc1e656a8": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "cf13430a-9e4b-406e-b750-313781d96f37": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "ebe465c4-dea9-46f5-8fba-2a80985c0d1d": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "fd016872-6e53-4bec-ad84-d1b11774f47f": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "fda38848-1bbf-41c0-a4dd-a283eaf207ff": {
+      "reason": "collapsed_point",
+      "records_on_point": 16,
+      "top_address_share": 0.06
+    },
+    "08a5f7ee-5b9c-4677-8643-7687f7bd15ed": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "0b0af0be-2eb3-4996-bb3c-d2cf80ae4149": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "0df312bd-1386-41ac-a0f6-77c25af588ef": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "10c910a1-d523-4df0-a6a0-09febaaacd8f": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "1ded33c5-1e2c-4950-8b30-08fa00f97fa9": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "336027fb-dbb0-411c-af0e-94c3c9d317a4": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "33a5aa22-159f-466d-991d-00aac67ddf99": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "36573eb6-5f59-45e6-a305-0166468bc460": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "3b2e2b52-2a60-4b6b-9e3a-ea83b6b0d905": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "3f10952b-3644-4ef9-9560-acde79503743": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "4abdd80f-c544-440f-9cc0-3b1104ec8073": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "54dd68b4-7cbf-4770-a758-a8e60f471fc4": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "57221d1a-3252-44cc-bc87-5a43735989eb": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "592ea552-b60f-4f52-a692-fa794bf32d4c": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "ba8549d8-ef60-4428-a9d7-d7d2a3835eb4": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "c0cfb823-761e-4fed-aa67-f8daf7f663c6": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "d148ad10-696c-4439-90b5-927e9b1f1b5e": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "d2975a5c-8851-4a67-84e8-7b64a07294b6": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "dcd277aa-96da-45da-a989-0ee18d16a81a": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "ea37c004-2314-4efc-8278-032cd574b24f": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "ef1317cb-90e0-4ff8-89fd-f6885ab63399": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "f5ed6f80-f630-4920-86e8-b2b19d145f07": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "f6d766cb-516b-44cc-bccf-f9790e325551": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "fcbb027c-0636-4872-8cee-5be01e91a3eb": {
+      "reason": "collapsed_point",
+      "records_on_point": 24,
+      "top_address_share": 0.0
+    },
+    "08ccaebf-1bef-484d-bdb7-edfa66d3d4a8": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "0b14ac7d-77dc-4383-b6f0-aff2b250038d": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "0f483bb9-8ce4-477f-b622-229f89fdd7c8": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "12e8a549-3167-405c-974a-4a6b806cf659": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "1cd7e8cc-38f9-4612-ad15-b93d9bd87b60": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "1d867154-5635-40e5-9965-69af6b30b7e2": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "1d924654-34aa-424f-b852-251a6a0bdb87": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "2d862a95-7ceb-4767-a033-900668fabdf4": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "35d43f5c-0eed-43ce-b9e0-61b4f41de9af": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "3d6b67c7-6a14-42f5-a9f0-4474edef2322": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "5600c2d9-1041-4a99-bf10-6f1c0c81ef1a": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "58aacdd0-7e52-4592-a765-b8b25c8bc1c9": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "58c2eb46-0af0-4e1c-bf06-a8d7ece7e8bc": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "71cbaf1a-1f13-411f-8f41-8042f75c5e69": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7249f66c-94d4-4071-b44c-fbdd8253a35f": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7933bde1-9990-4889-bd62-bf17d040b615": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7a426b33-f178-452d-81ab-bf5a678f0db8": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7b7c0e9c-39dd-4d37-b3ce-7f450ac78be0": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7eb11dfa-7ec7-488e-a24d-a9ad2c5009a2": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "7f6ee8f1-a990-45cf-8f24-069c8f6c3f74": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "8334520d-480f-48cf-9949-6c5e02ddd337": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "884130a1-0293-4055-8391-ce38f4c9ab6e": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "90e9ad87-96ed-48eb-b86d-4d716b1aef6f": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "93a62af0-7214-400b-9ddd-a5fdb1f35d7c": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "95e250ec-4b96-45e4-82d4-166db321e57f": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "a24bb9a6-854c-4984-ab35-5995fa5f424e": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "aae8ed4c-e61f-42cb-ada7-db734c760795": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "ae0bcaf1-2f57-4b0b-87a8-c33c5ab439d8": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "af7354fa-2ce0-452c-ba01-79a4d5140f74": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "bb2c072b-a636-47b2-8330-9d045764d207": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "c445a231-dbb2-4fe7-bef8-1ae00f40ef5e": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "cd29f177-4623-4955-b32f-2fd211531756": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "d85567c6-9e5c-406a-8b4c-e7a2651ddf77": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "d87f1a1f-6f3c-4875-b151-4c2d54b3e8dd": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "dbd0e10d-1400-4c8d-b6eb-7db4612d1859": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "e272eca0-7317-4a2c-935f-4b7635b672f0": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "f601bd67-2be9-427d-b32f-dc5bf9172e0f": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "f6fdc656-cb96-4c82-a39a-ce9ed2fbf457": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "fa2d717e-e457-4200-a291-f3403670ecee": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "fa36b689-af65-4cb0-8b02-190e053e7a62": {
+      "reason": "collapsed_point",
+      "records_on_point": 40,
+      "top_address_share": 0.03
+    },
+    "12bbb881-605b-4096-94f1-a09c3654d945": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "1c9a7151-d0ca-4a17-9c9f-1fecaaff8f4c": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "44b5f650-c787-4981-9950-f2b87eced616": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "5bafd34e-1790-4807-b35a-28f35c4a7f95": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "896f146f-2855-467d-9b57-592b1bf9a92c": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "8eb26760-eddb-4999-ae2a-138026681f0b": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "a96b54ab-0442-4cf3-8053-da69365cbe6c": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "b5dd5f1a-9d55-48b1-9d68-7172ea84da3f": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.38
+    },
+    "15085e6c-04cf-42fd-8ae8-be170005fe9d": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "2139aea3-ec37-4866-8bbe-1a0d1d6bff34": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "368f480d-a6c8-443c-a737-28d23f8b8989": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "54b43c22-1217-45c6-83cf-ed7ea02f0e65": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "58405cc8-3937-4d85-8d73-de9b1088a577": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "6a4be701-0b86-4eaa-86ca-38588d385141": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "8a7ee6d7-1020-418a-911c-5369a9c34516": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "8d31ea70-08d7-43c7-9120-fde694a75b58": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "928225ba-5885-4968-8940-42f105b78659": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "9d23fee4-e904-4e9f-928b-a93ac8e9c77e": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "fa592127-357e-4858-a7db-615258d32cfd": {
+      "reason": "collapsed_point",
+      "records_on_point": 11,
+      "top_address_share": 0.18
+    },
+    "19d651e0-db0a-4f23-bf9d-e2e78cc79dc4": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "1bf411c7-cd28-4f3d-ba7d-fdd8d5be56ca": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "3e8bcac5-1987-4389-acb0-b0e4bdc3a553": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "4e544937-3e20-4c60-b3e3-f61cdd03a48e": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "54416b14-4e47-4e1c-a8d1-a12837508e1d": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "632bbcfd-da59-4d16-94f1-d4a32fcdae1d": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "672a1276-95a8-4783-b52d-e70b4c7dcd9b": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "6ed94940-1f81-4057-9ca2-49ee3cc7d7da": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "7a3da477-9f06-499b-8820-e7712ed25824": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "b17c6b29-c6d3-4321-a70e-a9dc3ce539d6": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "b1e609b0-e77e-428a-96f4-7befaff4d9e6": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "c8038f6c-d034-4f00-a9fd-f825bcbf079d": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "c94352c8-d9f5-4942-a77d-47406e6eb188": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "cad5b5c4-478d-4285-9ad0-84dbda0fc59f": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "ce1c5295-e5b3-410a-96c1-553c0c618507": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "d101c31c-49e9-4855-9345-f235bb0ba08e": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "e49b08e8-f65d-443e-9566-b2e10828c5ec": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "e6354625-1223-413c-9f5c-5f763cb62ff9": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "eaf5aadd-12e2-4416-a1db-3e4d6ac4ae89": {
+      "reason": "collapsed_point",
+      "records_on_point": 19,
+      "top_address_share": 0.0
+    },
+    "1cc2428c-e4ad-4d84-b96f-0411eb48ae78": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "2bf98fce-50df-44d3-9ccf-571de07bf677": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "5411bcc9-2bf0-43ab-907d-9416bfc89a8c": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "54360f37-11b3-4a47-b6f7-d8faff484049": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "5a009144-9ed0-4b47-8479-e74c106d2b80": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "6fc7dedd-3c52-4557-9518-07f257e5a6ac": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "a242d072-2987-424a-8268-579fb61cf04f": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "a802742a-7d3f-4156-8df1-81ed8bb5d43b": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "b1f34ddc-27de-4756-be25-061c9b6d711f": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "b3667c71-6c40-47b0-9f46-aff9d00fb59c": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "ddafa7a4-9edf-495c-b84d-5f689474cf3c": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "eef166e2-b8b2-42d4-8dcd-1ad0bec2342d": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "f298924f-5b4c-44f0-9fb9-69d705b04f17": {
+      "reason": "collapsed_point",
+      "records_on_point": 13,
+      "top_address_share": 0.31
+    },
+    "1e26fa36-d1c2-4dc0-85bc-997b979c417c": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "3e3d2d9e-522e-47f2-a088-79d7a58bcd6f": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "5074f49b-39ab-4321-80ed-05dd6792f406": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "5f12cb60-8151-4b25-9a8c-e6c001e23cc1": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "746bf626-bda4-44b0-b4ad-95524191b298": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "ce3896ba-9d08-4ee8-bada-ac68a6ca75ea": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "ec418b61-13c1-476d-ae37-f5a67d2ed2f9": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "f7d12d95-b2a4-4477-af8c-daafce913531": {
+      "reason": "collapsed_point",
+      "records_on_point": 8,
+      "top_address_share": 0.12
+    },
+    "554aa850-19b1-4ba3-9770-ad55e1779860": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "7feee7aa-efef-4dc1-9204-e6f63e302d6d": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "86ca5420-18f4-46a1-bcd5-1703a5a0d6a7": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "a404283c-703e-45d1-b019-30b4f9262ae9": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "a8db6529-2163-4657-8006-c333252ea461": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "c4df936a-f0c6-4948-847c-d5ce68f94620": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "c915ceba-b52c-4021-9fb2-a420840d84ec": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "cf291d3a-0945-4c31-8345-6f6120588419": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "ed625c04-2db6-4f14-8d55-79d91425b37f": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    },
+    "fde2ebc3-fae4-4146-b17e-f82f9afad02a": {
+      "reason": "collapsed_point",
+      "records_on_point": 10,
+      "top_address_share": 0.4
+    }
+  },
+  "address_check": {
+    "02febfee-c276-4b5e-9d04-a2d014622240": {
+      "reason": "address_far",
+      "street_ref_distance_m": 5719,
+      "name": "The Плов",
+      "category": "restaurant",
+      "address": "Омаров 10",
+      "nominatim": {
+        "lat": 51.1382329,
+        "lon": 71.3714923
+      },
+      "distance_m": 5903,
+      "verdict": "address_far"
+    },
+    "46007613-8aea-449c-ab42-2821b3abe069": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2158,
+      "name": "Family Bakery",
+      "category": "restaurant",
+      "address": "Ұлы Дала проспект 27/3",
+      "nominatim": {
+        "lat": 51.0876818,
+        "lon": 71.4727147
+      },
+      "distance_m": 6904,
+      "verdict": "address_far"
+    },
+    "4ca19474-0eff-40b6-920e-30b8386637ba": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2118,
+      "name": "Mokki Restaurant",
+      "category": "restaurant",
+      "address": "Dostyk 16",
+      "nominatim": {
+        "lat": 51.1246828,
+        "lon": 71.4322617
+      },
+      "distance_m": 14527,
+      "verdict": "address_far"
+    },
+    "56ec082d-1380-4a86-88c3-26aec51dec12": {
+      "reason": "address_far",
+      "street_ref_distance_m": 4574,
+      "name": "Lugano итальянский ресторан",
+      "category": "restaurant",
+      "address": "Абай көшесі 1",
+      "nominatim": {
+        "lat": 51.2451165,
+        "lon": 71.2701336
+      },
+      "distance_m": 16882,
+      "verdict": "address_far"
+    },
+    "5b38edc9-74ab-4978-aded-26d8589515d2": {
+      "reason": "address_far",
+      "street_ref_distance_m": 4694,
+      "name": "Mangal_astana",
+      "category": "cafe",
+      "address": "Караганда, Петров көшесі 13",
+      "nominatim": {
+        "lat": 51.1492528,
+        "lon": 71.4679834
+      },
+      "distance_m": 5262,
+      "verdict": "address_far"
+    },
+    "6d674095-191e-444c-8ca4-c89a5669a9e9": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2054,
+      "name": "Saporito",
+      "category": "restaurant",
+      "address": "улица Туркестан 34",
+      "nominatim": {
+        "lat": 51.0953868,
+        "lon": 71.4208807
+      },
+      "distance_m": 5105,
+      "verdict": "address_far"
+    },
+    "739376ac-d2d5-4309-8f1a-954289f8f170": {
+      "reason": "address_far",
+      "street_ref_distance_m": 3484,
+      "name": "Ambrella",
+      "category": "restaurant",
+      "address": "Highvill A5, улица Ахмета Байтурсынова 1",
+      "nominatim": {
+        "lat": 51.1285395,
+        "lon": 71.4584442
+      },
+      "distance_m": 3509,
+      "verdict": "address_far"
+    },
+    "8621e87d-18f2-4731-9313-b58f4fe78e66": {
+      "reason": "address_far",
+      "street_ref_distance_m": 3034,
+      "name": "Bozoq Museum",
+      "category": "museum_gallery",
+      "address": "Бозок, проспект Абая 98Б",
+      "nominatim": {
+        "lat": 51.1635006,
+        "lon": 71.4700658
+      },
+      "distance_m": 6523,
+      "verdict": "address_far"
+    },
+    "8b36e65b-941e-4629-9016-2d48f00520cd": {
+      "reason": "address_far",
+      "street_ref_distance_m": 3097,
+      "name": "Degirmen Astana",
+      "category": "restaurant",
+      "address": "Кунаева 14, ЖК Нурсая-1",
+      "nominatim": null,
+      "verdict": "unverified"
+    },
+    "9333122e-7dc0-46a3-bf38-1c292c4eafd9": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2118,
+      "name": "Duets Vip Karaoke",
+      "category": "bar_nightlife",
+      "address": "Достык 20",
+      "nominatim": {
+        "lat": 51.1244625,
+        "lon": 71.4361251
+      },
+      "distance_m": 16565,
+      "verdict": "address_far"
+    },
+    "9e194f84-73ff-4fef-9053-bb6808fcc1b4": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2118,
+      "name": "Navat_astana",
+      "category": "restaurant",
+      "address": "Достык 13",
+      "nominatim": {
+        "lat": 51.126592,
+        "lon": 71.4355555
+      },
+      "distance_m": 16774,
+      "verdict": "address_far"
+    },
+    "a55d4b6e-c974-4730-937b-ae039e786246": {
+      "reason": "address_far",
+      "street_ref_distance_m": 7119,
+      "name": "Астана Азия Парк",
+      "category": "park_garden",
+      "address": "Дпд Казахстан, Ұлы Дала даңғылы 19",
+      "nominatim": {
+        "lat": 51.1000907,
+        "lon": 71.5073168
+      },
+      "distance_m": 8764,
+      "verdict": "address_far"
+    },
+    "cb7d45f2-581f-4c72-9383-1fae80798ff5": {
+      "reason": "address_far",
+      "street_ref_distance_m": 6947,
+      "name": "Starbucks",
+      "category": "cafe",
+      "address": "Int'l Airport, Kabanbai Batyra 119",
+      "nominatim": null,
+      "verdict": "unverified"
+    },
+    "e0e294f3-2054-4663-a580-e0b13d7790c7": {
+      "reason": "address_far",
+      "street_ref_distance_m": 2984,
+      "name": "Кафе Aiwa",
+      "category": "bar_nightlife",
+      "address": "проспект Богенбай батыра 42",
+      "nominatim": {
+        "lat": 51.1758721,
+        "lon": 71.4160303
+      },
+      "distance_m": 5753,
+      "verdict": "address_far"
+    },
+    "fe56a0eb-c9a7-4877-bfec-afa3cf3862f7": {
+      "reason": "address_far",
+      "street_ref_distance_m": 5716,
+      "name": "Starbucks",
+      "category": "cafe",
+      "address": "TC Khan Shatyr, Туран 37",
+      "nominatim": {
+        "lat": 51.1328426,
+        "lon": 71.4014752
+      },
+      "distance_m": 6469,
+      "verdict": "address_far"
+    }
+  }
+}

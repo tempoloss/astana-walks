@@ -1,0 +1,9 @@
+{
+ "domain": "uzbechka1-1.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "uzbechka1-1.kz does not resolve (getaddrinfo) => robots.txt unreachable => crawling not allowed; nothing stored for Узбечка 1/1 (the sibling uzbechka1.kz IS crawled).",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

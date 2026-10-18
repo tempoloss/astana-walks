@@ -1,0 +1,19 @@
+{
+ "est_over_real_minutes": {
+  "median": 0.969,
+  "p25": 0.824,
+  "p75": 1.068,
+  "n": 192,
+  "formula": "est=(1.25·hav(концов))/75 (radius.py:53) vs real=s/60 (Valhalla); единицы — минуты"
+ },
+ "max_leg": {
+  "cell": "51.0280,71.4630>51.0268,71.4613",
+  "shape_m": 1237,
+  "ends_m": 198,
+  "ratio": 6.26,
+  "reading": "U-образный заезд/обход барьера на 200-300 м концов — реальная петля маршрута, не снаппинг-артефакт (ends ≥150 по фильтру)"
+ },
+ "retracts": {
+  "first_pass": "m/hav(KEY) 1.42 — false, keys snapped; second est/real 0.016 — unit bug (min vs s)"
+ }
+}

@@ -1,0 +1,516 @@
+{
+ "domain": "okadzaki.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:43:52+00:00",
+ "pages": [
+  "https://okadzaki.kz/restaurants"
+ ],
+ "branches": [
+  {
+   "name": "Астана, пр. Кабанбай батыра 62 (ТРЦ MEGA Silk Way)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 10:00-00:00 tuesday 10:00-00:00 wednesday 10:00-00:00 thursday 10:00-00:00 friday 10:00-00:00 saturday 10:00-01:00 sunday 10:00-01:00",
+   "opening_hours_osm": "Mo-Fr 10:00-24:00; Sa,Su 10:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, пр. Кабанбай батыра 62 (ТРЦ MEGA Silk Way)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"10:00 − 01:00\",\"days\":[[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"00:00\"],[\"10:00\",\"01:00\"],[\"10:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. А. Байтұрсынұлы 57 (Вокзал Нурлы - Жол)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. А. Байтұрсынұлы 57 (Вокзал Нурлы - Жол)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Ракымжан Кошкарбаева, 1 (ЖК La vie блок 4НП 9)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Ракымжан Кошкарбаева, 1 (ЖК La vie блок 4НП 9)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, проспект Улы Дала, 41А (ЖК Panorama Park)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, проспект Улы Дала, 41А (ЖК Panorama Park)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, проспект Аль-Фараби 1 (ЖК Capital Park Light 3B)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, проспект Аль-Фараби 1 (ЖК Capital Park Light 3B)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Ракымжан Кошкарбаева, 48 (Круглосуточно, ЖК Әулет)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Ракымжан Кошкарбаева, 48 (Круглосуточно, ЖК Әулет)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, проспект Мангилик Ел, 56 (Круглосуточно, ЖК Only Sun)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, проспект Мангилик Ел, 56 (Круглосуточно, ЖК Only Sun)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, проспект Мангилик Ел, 21 (ЖК Айсанам De Luxe)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, проспект Мангилик Ел, 21 (ЖК Айсанам De Luxe)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Туран, 55 (Круглосуточно, ЖК Сердце Столицы)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Туран, 55 (Круглосуточно, ЖК Сердце Столицы)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Шамши Калдаякова, 23",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Шамши Калдаякова, 23\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. И. Омаров, 2 (ЖК Soul Park)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. И. Омаров, 2 (ЖК Soul Park)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Рыскулбекова, 29 (ЖК Nova City)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Рыскулбекова, 29 (ЖК Nova City)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Сыганак, 15 (Круглосуточно, ЖК FreeDom)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Сыганак, 15 (Круглосуточно, ЖК FreeDom)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Кумисбеков, 2 (Круглосуточно, ЖК Жеруйык)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Кумисбеков, 2 (Круглосуточно, ЖК Жеруйык)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул.Кунаева 14Б (Круглосуточно, ЖК Нурсая)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул.Кунаева 14Б (Круглосуточно, ЖК Нурсая)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, Мухамедханова 6 Б (ЖК GreenLine.Atmosfera)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, Мухамедханова 6 Б (ЖК GreenLine.Atmosfera)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, ул. Темирказык, 65 (Круглосуточно, ЖК Лазурный квартал)",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "круглосуточно круглосуточно",
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, ул. Темирказык, 65 (Круглосуточно, ЖК Лазурный квартал)\"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"круглосуточно\",\"days\":[[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"],[\"00:00\",\"00:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  },
+  {
+   "name": "Астана, проспект Абая, 59",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-01:00 tuesday 09:00-01:00 wednesday 09:00-01:00 thursday 09:00-01:00 friday 09:00-01:00 saturday 09:00-01:00 sunday 09:00-01:00",
+   "opening_hours_osm": "Mo-Su 09:00-01:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://okadzaki.kz/restaurants",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"name\":\"Астана, проспект Абая, 59 \"",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://okadzaki.kz/restaurants",
+     "snippet": "\"today\":\"09:00 − 01:00\",\"days\":[[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"],[\"09:00\",\"01:00\"]]",
+     "fetched_at": "2026-10-17T09:52:01+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "Branch list = the escaped JSON 'restaurants' array embedded in /restaurants (order-menu backend): every entry is one Astana OKADZAKI point (name = printed 'Астана, <street>' address line, hence kept as the branch name; separate address field is empty in the payload). Weekly schedule is the 'days' array (Mon..Sun pairs, matches the printed 'today' value), 'круглосуточно' points print 00:00-00:00 pairs plus the word in their name. Phones are the shared order line, not per-branch — skipped. Entries of other cities (Алматы etc.) are not Astana and were skipped.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

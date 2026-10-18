@@ -1,0 +1,10 @@
+{
+ "domain": "museumgold.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T16:40:00+00:00",
+ "pages": [
+  "https://museumgold.kz/"
+ ],
+ "branches": [],
+ "notes": "Домен припаркован: заглушка регистратора (HTTP 503, «Новый сайт успешно создан и готов к работе», поддержка support@example.com; robots.txt отвечает Allow: /). Сайта музея нет, часов и цен нет. P856 Q4146879 указывает на мёртвый домен."
+}

@@ -1,0 +1,58 @@
+{
+ "domain": "stumari.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:29:08+00:00",
+ "pages": [
+  "https://stumari.kz"
+ ],
+ "branches": [
+  {
+   "name": "Стумари",
+   "address": "010000, Республика Казахстан, г. Астана ул. Керей, Жанибек Хандар, 18",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 838 32 15",
+   "opening_hours_raw": "ПН-ВС 12:00 - 00:00",
+   "opening_hours_osm": "Mo-Su 12:00-24:00",
+   "description": "Стумари - это щедрость, вкусы и веселье Грузии.",
+   "url": "https://stumari.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://stumari.kz",
+     "snippet": "Стумари",
+     "fetched_at": "2026-10-17T09:29:08+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://stumari.kz",
+     "snippet": "КОНТАКТЫ ПН-ВС 12:00 - 00:00 Бронирование +7 708 838 32 15 Инстаграм @stumari_astana Адрес 010000, Республика Казахстан, г. Астана ул. Керей, Жанибек Хандар, 18",
+     "fetched_at": "2026-10-17T09:29:08+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://stumari.kz",
+     "snippet": "КОНТАКТЫ ПН-ВС 12:00 - 00:00 Бронирование +7 708 838 32 15 Инстаграм @stumari_astana Адрес 010000, Республика Казахстан, г. Астана ул. Керей, Жанибек Хандар, 18",
+     "fetched_at": "2026-10-17T09:29:08+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://stumari.kz",
+     "snippet": "ПН-ВС 12:00 - 00:00",
+     "fetched_at": "2026-10-17T09:29:08+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://stumari.kz",
+     "snippet": "Стумари - это щедрость, вкусы и веселье Грузии.",
+     "fetched_at": "2026-10-17T09:29:08+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8,
+   "hours_flags": []
+  }
+ ],
+ "notes": "One venue; the Instagram handle is a social network (not crawled). Booking phone is the restaurant's own number as printed next to the address.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

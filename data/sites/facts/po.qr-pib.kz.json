@@ -1,0 +1,46 @@
+{
+ "domain": "po.qr-pib.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:12:39+00:00",
+ "pages": [
+  "https://po.qr-pib.kz/ru/contacts"
+ ],
+ "branches": [
+  {
+   "name": "Президентский центр Республики Казахстан (Назарбаев центр)",
+   "address": "г. Астана, ул. Бокейхана, 1а",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "Вторник-воскресенье, с 10.00 до 17.00 ч.",
+   "opening_hours_osm": "Tu-Su 10:00-17:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://po.qr-pib.kz/ru/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://po.qr-pib.kz/ru/contacts",
+     "snippet": "Президентский центр Республики Казахстан",
+     "fetched_at": "2026-10-17T09:02:01+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://po.qr-pib.kz/ru/contacts",
+     "snippet": "г. Астана, ул. Бокейхана, 1а",
+     "fetched_at": "2026-10-17T09:02:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://po.qr-pib.kz/ru/contacts",
+     "snippet": "График проведения экскурсий: Вторник-воскресенье, с 10.00 до 17.00 ч.",
+     "fetched_at": "2026-10-17T09:02:01+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Визитные часы для публики = график экскурсий (Вт-Вс, конвертируется в Tu-Su). Отдельно страницу печатает административный график 'Понедельник-пятница, с 09.00 до 18.30 ч.' — это офис, не посещение, в opening_hours не кладётся (в raw только экскурсионный). Телефонов блок контактов не даёт.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

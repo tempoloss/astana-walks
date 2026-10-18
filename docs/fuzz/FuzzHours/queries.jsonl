@@ -1,0 +1,60 @@
+{"id":"h01","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 07:30","q":"где выпить кофе перед работой","stress":"earliest_open"}
+{"id":"h02","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 23:45","q":"где поужинать","stress":"late_night_edge"}
+{"id":"h03","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-21 00:30","q":"где поесть ночью","stress":"after_midnight"}
+{"id":"h04","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-21 02:00","q":"куда сходить ночью поесть","stress":"deep_night"}
+{"id":"h05","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 21:50","q":"где поужинать","stress":"closing_soon_edge"}
+{"id":"h06","lang":"ru","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-10-20 09:55","q":"где позавтракать рядом","stress":"just_open_edge_mall"}
+{"id":"h07","lang":"kk","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 09:55","q":"жақын жерде кофе ішуге болады ма","stress":"just_open_edge_mall"}
+{"id":"h08","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 23:45","q":"түнде тамақ ішуге қайда баруға болады","stress":"late_night_edge"}
+{"id":"h09","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-21 02:00","q":"түнгі 02:00-де ашық жер керек","stress":"deep_night"}
+{"id":"h10","lang":"en","origin":"expo","lat":51.0895,"lon":71.4130,"time":"2026-10-20 21:50","q":"where can I get dinner near EXPO","stress":"closing_soon_edge"}
+{"id":"h11","lang":"en","origin":"expo","lat":51.0895,"lon":71.4130,"time":"2026-10-21 00:30","q":"anything open to eat right now","stress":"after_midnight"}
+{"id":"h12","lang":"en","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 07:30","q":"coffee before work, what is open","stress":"earliest_open"}
+{"id":"h13","lang":"ru","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 09:55","q":"стоит ли идти в Хан Шатыр сейчас","stress":"named_place_hours"}
+{"id":"h14","lang":"ru","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-20 21:50","q":"какие часы работы у Керуена сейчас","stress":"named_place_hours"}
+{"id":"h15","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-19 13:00","q":"дүйсенбіде музей жұмыс істей ме","stress":"monday_museum"}
+{"id":"h16","lang":"ru","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-19 13:00","q":"куда сходить в музей в понедельник","stress":"monday_museum"}
+{"id":"h17","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-18 13:00","q":"что посмотреть в воскресенье рядом","stress":"sunday"}
+{"id":"h18","lang":"en","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-18 21:50","q":"is anything still open on Sunday evening","stress":"sunday_closing_soon"}
+{"id":"h19","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-01-01 13:00","q":"где поесть 1 января","stress":"holiday_jan1"}
+{"id":"h20","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-01-01 20:00","q":"Жаңа жылдың бірінші күні ашық мейрамхана бар ма","stress":"holiday_jan1"}
+{"id":"h21","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-03-22 13:00","q":"Наурыз куда сходить поесть","stress":"holiday_nauryz"}
+{"id":"h22","lang":"kk","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-03-22 18:00","q":"Наурызда жақын жерде тамақ","stress":"holiday_nauryz"}
+{"id":"h23","lang":"ru","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-07-06 20:00","q":"День столицы где поужинать","stress":"holiday_jul6"}
+{"id":"h24","lang":"en","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-07-06 20:00","q":"Capital Day dinner near me","stress":"holiday_jul6"}
+{"id":"h25","lang":"ru","origin":"nurly_zhol","lat":51.1067,"lon":71.4200,"time":"2026-12-16 13:00","q":"16 декабря где пообедать","stress":"holiday_dec16"}
+{"id":"h26","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-12-16 19:00","q":"Тәуелсіздік күні тамақ ішетін жер","stress":"holiday_dec16"}
+{"id":"h27","lang":"ru","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-10-20 21:50","q":"Asia Park вечером куда сходить","stress":"asia_park_evening"}
+{"id":"h28","lang":"ru","origin":"nurly_zhol","lat":51.1067,"lon":71.4200,"time":"2026-10-20 23:45","q":"Нурлы Жол ночью где поесть","stress":"late_night_edge"}
+{"id":"h29","lang":"en","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-10-20 09:55","q":"breakfast near Mega Silk Way","stress":"just_open_edge_mall"}
+{"id":"h30","lang":"ru","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 07:30","q":"раннее утро где позавтракать у Хан Шатыра","stress":"earliest_open_mall"}
+{"id":"h31","lang":"ru","origin":"expo","lat":51.0895,"lon":71.4130,"time":"2026-10-20 07:30","q":"рано утром где кофе near expo","stress":"earliest_open"}
+{"id":"h32","lang":"kk","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-10-20 07:30","q":"таңертең кофе ішейін","stress":"earliest_open"}
+{"id":"h33","lang":"en","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-10-20 07:30","q":"what is open for breakfast at 7:30","stress":"earliest_open"}
+{"id":"h34","lang":"ru","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-20 09:55","q":"ТРЦ открыт уже","stress":"just_open_edge_mall"}
+{"id":"h35","lang":"en","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 09:55","q":"is Khan Shatyr open right now","stress":"named_place_hours"}
+{"id":"h36","lang":"kk","origin":"nurly_zhol","lat":51.1067,"lon":71.4200,"time":"2026-10-20 13:00","q":"түскі ас қайда","stress":"lunch"}
+{"id":"h37","lang":"ru","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 13:00","q":"обед в Хан Шатыре","stress":"lunch"}
+{"id":"h38","lang":"en","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-20 13:00","q":"lunch nearby","stress":"lunch"}
+{"id":"h39","lang":"kk","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-20 23:45","q":"түнде ашық кафелер","stress":"late_night_edge"}
+{"id":"h40","lang":"en","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-21 00:30","q":"open late for food at half past midnight","stress":"after_midnight"}
+{"id":"h41","lang":"ru","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-21 02:00","q":"два часа ночи где есть открытое","stress":"deep_night"}
+{"id":"h42","lang":"en","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-21 02:00","q":"anything still open at 2am","stress":"deep_night"}
+{"id":"h43","lang":"kk","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-10-18 10:00","q":"жексенбіде сауда орталықтары ашық па","stress":"sunday_morning_malls"}
+{"id":"h44","lang":"ru","origin":"expo","lat":51.0895,"lon":71.4130,"time":"2026-10-18 23:45","q":"воскресенье перед полуночью где посидеть","stress":"sunday_late"}
+{"id":"h45","lang":"en","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-19 11:00","q":"museums open on Monday","stress":"monday_museum"}
+{"id":"h46","lang":"ru","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-10-20 13:00","q":"ТЦ Азия Парк сейчас открыт?","stress":"named_place_hours"}
+{"id":"h47","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-01-01 12:00","q":"Қаңтаңның бірінде ашық жер","stress":"holiday_jan1"}
+{"id":"h48","lang":"en","origin":"nurly_zhol","lat":51.1067,"lon":71.4200,"time":"2026-01-01 21:00","q":"restaurants open on New Year evening","stress":"holiday_jan1_night"}
+{"id":"h49","lang":"ru","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-03-22 23:45","q":"Наурыз ночь где быть","stress":"holiday_nauryz_late"}
+{"id":"h50","lang":"kk","origin":"expo","lat":51.0895,"lon":71.4130,"time":"2026-07-06 10:00","q":"Астана күні таңертең ашық па","stress":"holiday_jul6_morning"}
+{"id":"h51","lang":"ru","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-12-16 23:45","q":"16 декабря вечер где ужин","stress":"holiday_dec16_late"}
+{"id":"h52","lang":"en","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-12-16 09:55","q":"is Mega Silk Way open on Independence Day morning","stress":"holiday_dec16_morning"}
+{"id":"h53","lang":"ru","origin":"nurly_zhol","lat":51.1067,"lon":71.4200,"time":"2026-10-20 09:55","q":"кофе рядом 9:55","stress":"just_open_edge_mall"}
+{"id":"h54","lang":"kk","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-10-20 21:50","q":"кешке ашық мейрамхана","stress":"closing_soon_edge"}
+{"id":"h55","lang":"ru","origin":"keruen","lat":51.1665,"lon":71.4180,"time":"2026-10-17 21:50","q":"что открыто прямо сейчас рядом","stress":"current_time"}
+{"id":"h56","lang":"en","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-20 21:50","q":"qazgrill is open now","stress":"unqualified_site_hours"}
+{"id":"h57","lang":"ru","origin":"khan_shatyr","lat":51.1325,"lon":71.4033,"time":"2026-10-20 21:00","q":"сарыарка торговый центр часы работы","stress":"unqualified_site_hours"}
+{"id":"h58","lang":"kk","origin":"baiterek","lat":51.1282,"lon":71.4305,"time":"2026-10-21 01:00","q":"түнгі бірде тамақ","stress":"after_midnight"}
+{"id":"h59","lang":"ru","origin":"mega","lat":51.0967,"lon":71.4120,"time":"2026-10-20 23:45","q":"Mega Silk Way до скольки открыт","stress":"named_place_hours"}
+{"id":"h60","lang":"en","origin":"asia_park","lat":51.1043,"lon":71.4213,"time":"2026-10-20 02:00","q":"night food near Asia Park","stress":"deep_night"}

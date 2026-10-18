@@ -1,0 +1,60 @@
+{"id": "s01", "persona": "followup_chain", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "где поесть рядом", "follows": ["а поближе", "а подешевле"]}
+{"id": "s02", "persona": "followup_chain", "lang": "ru", "origin": "aru_city", "lat": 51.122, "lon": 71.426, "time": "2026-10-17 19:00", "q": "куда сходить вечером", "follows": ["а без алкоголя", "а если с ребёнком"]}
+{"id": "s03", "persona": "followup_chain", "lang": "ru", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "2026-10-17 15:00", "q": "где перекусить", "follows": ["а на час дольше", "а подешевле"]}
+{"id": "s04", "persona": "followup_chain", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "где выпить кофе", "follows": ["потише, людно не хочу", "а поближе"]}
+{"id": "s05", "persona": "followup_chain", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 14:00", "q": "где посмотреть кино", "follows": ["а если с ребёнком", "а подешевле"]}
+{"id": "s06", "persona": "followup_chain", "lang": "ru", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "2026-10-17 12:30", "q": "где пообедать с детьми", "follows": ["а подешевле", "а поближе"]}
+{"id": "s07", "persona": "followup_chain", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:30", "q": "романтический ужин, вдвоем", "follows": ["а поближе", "а подешевле"]}
+{"id": "s08", "persona": "followup_chain", "lang": "ru", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "2026-10-17 09:30", "q": "где позавтракать", "follows": ["а поближе", "что-то другое"]}
+{"id": "s09", "persona": "followup_chain", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "жақын жерде тамақ", "follows": ["жақынырақ", "арзанырақ"]}
+{"id": "s10", "persona": "followup_chain", "lang": "kk", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "2026-10-17 18:00", "q": "кофе қайда", "follows": ["басқа", "жақынырақ"]}
+{"id": "s11", "persona": "followup_chain", "lang": "kk", "origin": "aru_city", "lat": 51.122, "lon": 71.426, "time": "2026-10-17 19:00", "q": "кешке қайда барамыз", "follows": ["алкогольсіз", "баласымен болса"]}
+{"id": "s12", "persona": "followup_chain", "lang": "kk", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "2026-10-17 13:00", "q": "дәмді тамақ ішетін орын керек", "follows": ["жақынырақ", "басқа"]}
+{"id": "s13", "persona": "followup_chain", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 14:00", "q": "кино қайда көреміз", "follows": ["баламен болса", "арзанырақ"]}
+{"id": "s14", "persona": "followup_chain", "lang": "kk", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "2026-10-17 12:30", "q": "кофе ішетін орын", "follows": ["тыныштау", "жақынырақ"]}
+{"id": "s15", "persona": "followup_chain", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:30", "q": "романтикалық кешкі ас, екеуміз", "follows": ["жақынырақ", "арзанырақ"]}
+{"id": "s16", "persona": "followup_chain", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 11:00", "q": "coffee near me", "follows": ["something else", "closer please"]}
+{"id": "s17", "persona": "followup_chain", "lang": "en", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 14:00", "q": "where to watch a movie", "follows": ["what if with a kid", "one more hour"]}
+{"id": "s18", "persona": "followup_chain", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:30", "q": "romantic anniversary dinner with a view", "follows": ["closer please", "cheaper"]}
+{"id": "s19", "persona": "followup_chain", "lang": "en", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "where to walk my dog", "follows": ["closer please", "somewhere less crowded"]}
+{"id": "s20", "persona": "followup_chain", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 15:00", "q": "where to take nice photos", "follows": ["something else", "what if with kids"]}
+{"id": "s21", "persona": "seasonal_nauryz", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-03-21 13:00", "q": "где отметить Наурыз, 21 марта"}
+{"id": "s22", "persona": "seasonal_newyear", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-01-01 15:00", "q": "куда пойти 1 января с детьми"}
+{"id": "s23", "persona": "seasonal_capital_day", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-07-06 18:00", "q": "6 июля День столицы, где гулять и что смотреть"}
+{"id": "s24", "persona": "seasonal_heat", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-07-15 14:00", "q": "жара 35 градусов, где спрятаться от зноя", "weather": {"apparent_c": 35}}
+{"id": "s25", "persona": "seasonal_blizzard", "lang": "ru", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "2026-01-10 14:00", "q": "буран на улице, где переждать и поесть", "weather": {"apparent_c": -18}}
+{"id": "s26", "persona": "seasonal_rain_kids", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 13:00", "q": "дождь, чем занять ребёнка 5 лет в помещении"}
+{"id": "s27", "persona": "named_place_hours", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "какие часы работы у Хан Шатыра сегодня"}
+{"id": "s28", "persona": "named_place_now", "lang": "ru", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "2026-10-17 19:30", "q": "стоит ли идти в Национальный музей сейчас"}
+{"id": "s29", "persona": "group_8", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:00", "q": "нас 8 человек, куда сходить поужинать"}
+{"id": "s30", "persona": "group_8", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:00", "q": "нужен стол на большую компанию, ужин на восемь персон"}
+{"id": "s31", "persona": "budget_tenge", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "обед до 3000 тг рядом"}
+{"id": "s32", "persona": "budget_tenge", "lang": "ru", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "2026-10-17 13:00", "q": "поужинать не дороже 5000 тенге на человека"}
+{"id": "s33", "persona": "pets_dog", "lang": "ru", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "где погулять с собакой"}
+{"id": "s34", "persona": "pets_cafe", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "можно с собакой в кафе или на террасу"}
+{"id": "s35", "persona": "photo_spots", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 15:00", "q": "где сделать красивые фото, фотогеничные места"}
+{"id": "s36", "persona": "anxiety_quiet", "lang": "ru", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "тревожно в толпе, где тихо и малолюдно"}
+{"id": "s37", "persona": "seasonal_nauryz", "lang": "kk", "origin": "hazret", "lat": 51.1254, "lon": 71.4722, "time": "2026-03-21 12:00", "q": "Наурызда қайда тамақ ішеміз"}
+{"id": "s38", "persona": "seasonal_newyear", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-01-01 16:00", "q": "Жаңа жылда балалармен қайда барамыз"}
+{"id": "s39", "persona": "seasonal_capital_day", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-07-06 12:00", "q": "6 шілде Астана күнінде қайда серуендеуге болады"}
+{"id": "s40", "persona": "seasonal_heat", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-07-15 14:00", "q": "ыстықта +35, көлеңкеде немесе үй ішінде отыратын жер", "weather": {"apparent_c": 35}}
+{"id": "s41", "persona": "seasonal_blizzard", "lang": "kk", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "2026-01-10 15:00", "q": "боранда қайда паналауға және тамақтануға болады", "weather": {"apparent_c": -18}}
+{"id": "s42", "persona": "seasonal_rain_kids", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 13:00", "q": "жаңбыр жауып тұр, баламен ішке қайда барамыз"}
+{"id": "s43", "persona": "named_place_hours", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "Хан Шатырдың жұмыс уақыты қандай"}
+{"id": "s44", "persona": "named_place_now", "lang": "kk", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "2026-10-17 10:00", "q": "Ұлт музейіне қазір баруға бола ма"}
+{"id": "s45", "persona": "group_8", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:00", "q": "біз сегіз адаммыз, кешкі ас ішетін орын керек"}
+{"id": "s46", "persona": "budget_tenge", "lang": "kk", "origin": "kbtu", "lat": 51.128, "lon": 71.443, "time": "2026-10-17 13:00", "q": "3000 теңгеге қайда тамақтануға болады"}
+{"id": "s47", "persona": "pets_dog", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "итпен серуендеуге парк керек"}
+{"id": "s48", "persona": "photo_spots", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 15:00", "q": "суретке түсуге ыңғайлы әдемі орындар"}
+{"id": "s49", "persona": "anxiety_quiet", "lang": "kk", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "тыныш және аз адам жер керек"}
+{"id": "s50", "persona": "named_place_landmark", "lang": "kk", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 18:00", "q": "үлкен шатыр сағат нешеде жабылады"}
+{"id": "s51", "persona": "seasonal_nauryz", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "2026-03-21 14:00", "q": "where to celebrate Nauryz on March 21"}
+{"id": "s52", "persona": "seasonal_newyear", "lang": "en", "origin": "nat_museum", "lat": 51.1182, "lon": 71.4694, "time": "2026-01-01 14:00", "q": "anything open on New Year Day with kids"}
+{"id": "s53", "persona": "seasonal_capital_day", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-07-06 20:00", "q": "Anything open on Capital Day July 6?"}
+{"id": "s54", "persona": "seasonal_heat", "lang": "en", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-07-15 15:00", "q": "its 35 degrees outside, where can we cool off", "weather": {"apparent_c": 35}}
+{"id": "s55", "persona": "seasonal_blizzard", "lang": "en", "origin": "vokzal", "lat": 51.1954, "lon": 71.4096, "time": "2026-01-10 16:00", "q": "blizzard outside, where can I wait it out with food", "weather": {"apparent_c": -18}}
+{"id": "s56", "persona": "seasonal_rain_kids", "lang": "en", "origin": "meganim", "lat": 51.158, "lon": 71.433, "time": "2026-10-17 13:00", "q": "raining all day, indoor fun for a 5 year old"}
+{"id": "s57", "persona": "named_place_hours", "lang": "en", "origin": "khan_shatyr", "lat": 51.1325, "lon": 71.4033, "time": "2026-10-17 12:00", "q": "what time does the big tent close"}
+{"id": "s58", "persona": "group_8", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 19:00", "q": "party of 8, where can we all have dinner together"}
+{"id": "s59", "persona": "budget_tenge", "lang": "en", "origin": "expo_it_univ", "lat": 51.0906, "lon": 71.4014, "time": "2026-10-17 18:00", "q": "dinner under 3000 tenge near the expo"}
+{"id": "s60", "persona": "anxiety_quiet", "lang": "en", "origin": "baiterek", "lat": 51.1282, "lon": 71.4305, "time": "2026-10-17 12:00", "q": "I get anxious in crowds, is there a quiet uncrowded place to sit"}

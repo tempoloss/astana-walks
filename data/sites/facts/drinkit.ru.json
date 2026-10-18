@@ -1,0 +1,11 @@
+{
+ "domain": "drinkit.ru",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T08:59:37+00:00",
+ "pages": [
+  "https://drinkit.ru/"
+ ],
+ "branches": [],
+ "notes": "the chain's site is a franchise landing (WordPress): the sitemap exposes only the landing and one post and the points map is fed client-side; no Astana addresses/hours in first-party HTML",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

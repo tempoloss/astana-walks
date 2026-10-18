@@ -1,0 +1,166 @@
+{
+ "domain": "foodsolutions.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:43:36+00:00",
+ "pages": [
+  "https://foodsolutions.kz/restaurants"
+ ],
+ "branches": [
+  {
+   "name": "Food Solutions (пр. Кабанбай батыра, 26)",
+   "address": "пр. Кабанбай батыра, 26",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: пр. Кабанбай батыра, 26 Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (Кабанбай Батыра 62, ТРЦ \"Mega Silk Way\", 2-этаж, зона фудкорта.)",
+   "address": "Кабанбай Батыра 62, ТРЦ \"Mega Silk Way\", 2-этаж, зона фудкорта.",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: Кабанбай Батыра 62, ТРЦ \"Mega Silk Way\", 2-этаж, зона фудкорта. Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (ул. Достык 9, ТРЦ \"Керуен\")",
+   "address": "ул. Достык 9, ТРЦ \"Керуен\"",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: ул. Достык 9, ТРЦ \"Керуен\" Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (пр., Богенбай батыра 49, уг. ул. Ауезова)",
+   "address": "пр., Богенбай батыра 49, уг. ул. Ауезова",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: пр., Богенбай батыра 49, уг. ул. Ауезова Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (пр. Сарыарка, 9 \"Д\")",
+   "address": "пр. Сарыарка, 9 \"Д\"",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: пр. Сарыарка, 9 \"Д\" Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (Петрова 24Г)",
+   "address": "Петрова 24Г",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: Петрова 24Г Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  },
+  {
+   "name": "Food Solutions (Район «Байқоңыр», ул. Ɵндiрiс 96)",
+   "address": "Район «Байқоңыр», ул. Ɵндiрiс 96",
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://foodsolutions.kz/restaurants",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://foodsolutions.kz/restaurants",
+     "snippet": "Адрес: Район «Байқоңыр», ул. Ɵндiрiс 96 Тел.",
+     "fetched_at": "2026-10-17T09:40:32+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.75
+  }
+ ],
+ "notes": "The Astana tab of /restaurants publishes 7 outlets (Кабанбай батыра 26; Кабанбай Батыра 62 ТРЦ 'Mega Silk Way'; Достык 9 ТРЦ 'Керуен'; пр. Богенбай батыра 49 'САБ'; пр. Сарыарка 9 'Д' Кенесары; Петрова 24Г 'Евразия'; район 'Байқоңыр', ул. Өндіріс 96 'Трасса М36'), each with an 'Адрес:' line; the 'Тел.:' field is printed empty everywhere and the page gives no opening hours for Astana, so only addresses are stored. Coordinates are not published. Tabs of the other cities (Алматы, Костанай, Актобе, Караганда, Атырау) are not Astana and were skipped.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

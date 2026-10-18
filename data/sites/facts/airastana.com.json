@@ -1,0 +1,11 @@
+{
+ "domain": "airastana.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://airastana.com/uae/en-us/Experience-Air-Astana/Airport-Lounges/Shanyrak-Lounge-in-Astana"
+ ],
+ "branches": [],
+ "notes": "Incapsula WAF answers every fetched path with a 'Request unsuccessful ... incident ID' stub (HTTP 200, 83 visible chars); lounge hours/terminal location need a browser session. Nothing stored for The Shanyrak Lounge.",
+ "verified_at": "2026-10-17T11:55:31+00:00"
+}

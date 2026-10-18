@@ -1,0 +1,46 @@
+{
+ "domain": "astanaballet.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:48:55+00:00",
+ "pages": [
+  "https://astanaballet.com/ru/pages/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Астана балет",
+   "address": "г. Астана, проспект Ұлы дала, 43",
+   "lat": null,
+   "lon": null,
+   "phone": "Касса +7 7172 62-12-12",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://astanaballet.com/ru/pages/kontakty",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://astanaballet.com/ru/pages/kontakty",
+     "snippet": "г. Астана, проспект Ұлы дала, 43 (бывший Ұлы дала, 9)",
+     "fetched_at": "2026-10-17T09:48:55+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://astanaballet.com/ru/pages/kontakty",
+     "snippet": "Касса +7 7172 62-12-12",
+     "fetched_at": "2026-10-17T09:48:55+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://astanaballet.com/ru/pages/kontakty",
+     "snippet": "Контакты - Театр Астана Балет",
+     "fetched_at": "2026-10-17T09:48:55+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Contacts page: касса +7 7172 62-12-12, приемная/канцелярия/маркетинг numbers exist too, only the box office is stored. Performance schedule (афиша) is per-event, not opening hours -> no opening_hours. www.astanaballet.com robots.txt is for the wrong cert host; the bare https host was used.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

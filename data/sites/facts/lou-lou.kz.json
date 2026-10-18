@@ -1,0 +1,11 @@
+{
+ "domain": "lou-lou.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:28:57+00:00",
+ "pages": [
+  "https://lou-lou.kz"
+ ],
+ "branches": [],
+ "notes": "site content is a browser error page (DNS_PROBE_FINISHED_NXDOMAIN) — the domain no longer resolves",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

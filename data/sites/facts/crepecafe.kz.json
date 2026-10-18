@@ -1,0 +1,212 @@
+{
+ "domain": "crepecafe.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:20:22+00:00",
+ "pages": [
+  "https://crepecafe.kz/rus/contacts"
+ ],
+ "branches": [
+  {
+   "name": "CrepeCafe, Е-899, 1/1",
+   "address": "​Улица Е-899, 1/1",
+   "lat": 51.13188863327351,
+   "lon": 71.38725042343141,
+   "phone": "+77000370245",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://crepecafe.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"name\\\":\\\"Е-899, 1/1\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"address\\\":\\\"​Улица Е-899, 1/1\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"phone\\\":\\\"+77000370245\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"lat\\\":51.13188863327351,\\\"lng\\\":71.38725042343141",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "CrepeCafe, ​Сыганак 52/1",
+   "address": "​Улица Сыганак, 52/1",
+   "lat": 51.123559100111116,
+   "lon": 71.41622990546642,
+   "phone": "+77000370247",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://crepecafe.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"name\\\":\\\"​Сыганак 52/1\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"address\\\":\\\"​Улица Сыганак, 52/1\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"phone\\\":\\\"+77000370247\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"lat\\\":51.123559100111116,\\\"lng\\\":71.41622990546642",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "CrepeCafe, Конаева 12/1",
+   "address": "ул. Динмухамед Конаева 12/1",
+   "lat": 51.12933437251375,
+   "lon": 71.4280240891534,
+   "phone": "+77000370241",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://crepecafe.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"name\\\":\\\"Конаева 12/1\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"address\\\":\\\"ул. Динмухамед Конаева 12/1 \\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"phone\\\":\\\"+77000370241\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"lat\\\":51.12933437251375,\\\"lng\\\":71.4280240891534",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "CrepeCafe, Мангилик ел 17",
+   "address": "​Проспект Мангилик Ел, 17",
+   "lat": 51.11669125385534,
+   "lon": 71.43379515380815,
+   "phone": "+77000370242",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://crepecafe.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"name\\\":\\\"Мангилик ел 17\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"address\\\":\\\"​Проспект Мангилик Ел, 17\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"phone\\\":\\\"+77000370242\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"lat\\\":51.11669125385534,\\\"lng\\\":71.43379515380815",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  },
+  {
+   "name": "CrepeCafe, Иманова 16",
+   "address": "​Амангельды Иманова улица, 16",
+   "lat": 51.16339852889182,
+   "lon": 71.43561065196992,
+   "phone": "+77000370243",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "description": null,
+   "url": "https://crepecafe.kz/rus/contacts",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"name\\\":\\\"Иманова 16\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"address\\\":\\\"​Амангельды Иманова улица, 16\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"phone\\\":\\\"+77000370243\\\"",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://crepecafe.kz/rus/contacts",
+     "snippet": "\\\"lat\\\":51.16339852889182,\\\"lng\\\":71.43561065196992",
+     "fetched_at": "2026-10-17T09:20:22+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85,
+   "hours_flags": []
+  }
+ ],
+ "notes": "Data = the escaped `restaurants` JSON embedded in the Next.js stream of /rus/contacts: name, ru address, lat/lng, per-cafe phone (+7 700 037-02xx; a '$undefined' placeholder phone is dropped). The payload also lists non-Astana outlets ('Усть-Каменогорск', 'Балхаш') — dropped per the Astana-only rule. The page prints no opening hours for any cafe (only the chain contact +7 707 707 47 47), so opening_hours stays None — never inferred. ZWSP characters inside names/addresses are stripped in the stored values; snippets are the raw escaped JSON spans.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

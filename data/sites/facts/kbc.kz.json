@@ -1,0 +1,48 @@
+{
+ "domain": "kbc.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "http://www.kbc.kz/wine-club-nur-sultan"
+ ],
+ "branches": [
+  {
+   "name": "Wine Club Астана",
+   "address": "г. Астана, микрорайон Акбулак-3, ул. Жалайри, 4",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (777) 170 13 33",
+   "opening_hours_raw": "Вс-Чт: 10:00-00:00 Пт-Сб: 10:00-02:00",
+   "opening_hours_osm": "Mo-Th,Su 10:00-24:00; Fr,Sa 10:00-02:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.kbc.kz/wine-club-nur-sultan",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "http://www.kbc.kz/wine-club-nur-sultan",
+     "snippet": "Wine Club Астана"
+    },
+    {
+     "field": "address",
+     "url": "http://www.kbc.kz/wine-club-nur-sultan",
+     "snippet": "г. Астана, микрорайон Акбулак-3, ул. Жалайри, 4"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.kbc.kz/wine-club-nur-sultan",
+     "snippet": "+7 (777) 170 13 33"
+    },
+    {
+     "field": "opening_hours",
+     "url": "http://www.kbc.kz/wine-club-nur-sultan",
+     "snippet": "Режим работы Вс-Чт: 10:00-00:00 Пт-Сб: 10:00-02:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Kazakhstan Beer Company official page for its Wine Club bar in Astana: address, phone and 'Режим работы Вс-Чт: 10:00-00:00 Пт-Сб: 10:00-02:00' printed in the contact block. Company HQ (Алматы) skipped.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "lapsha.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:33:47+00:00",
+ "pages": [
+  "https://lapsha.kz/"
+ ],
+ "branches": [],
+ "notes": "the Lanzhou delivery SPA lists cities Алматы/Павлодар/Караганда (no Astana point list server-side) and announces its new site lanzhou.kz, which likewise exposes no Astana address list; the «График работы: с 11:00 до 23:00» string is the delivery-hours note of the order form, not an Astana branch schedule",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

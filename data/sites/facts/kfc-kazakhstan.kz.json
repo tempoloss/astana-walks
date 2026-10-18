@@ -1,0 +1,11 @@
+{
+ "domain": "kfc-kazakhstan.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:01:37+00:00",
+ "pages": [
+  "https://kfc-kazakhstan.kz/sitemap.xml"
+ ],
+ "branches": [],
+ "notes": "the homepage and inner pages intermittently fail the TLS handshake (SSL UNEXPECTED_EOF / connection reset on repeated probes); robots.txt allows crawling and its readable sitemap lists only one Shymkent page («restorany-kfc-v-shymkente»), no Astana branch facts",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

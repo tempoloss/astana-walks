@@ -1,0 +1,52 @@
+{
+ "domain": "ribapila.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:22:25+00:00",
+ "pages": [
+  "https://ribapila.kz"
+ ],
+ "branches": [
+  {
+   "name": "Рыба Пила",
+   "address": "Проспект Туран 22, Астана",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (705) 605 22 22",
+   "opening_hours_raw": "Пн-Вс 12:00 - 00:00",
+   "opening_hours_osm": "Mo-Su 12:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://ribapila.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://ribapila.kz",
+     "snippet": "РЫБА ПИЛА МОРСКОЙ РЕСТОРАН В АСТАНЕ",
+     "fetched_at": "2026-10-17T09:22:25+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://ribapila.kz",
+     "snippet": "Проспект Туран 22, Астана",
+     "fetched_at": "2026-10-17T09:22:25+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://ribapila.kz",
+     "snippet": "Пн-Вс | 12:00 - 00:00",
+     "fetched_at": "2026-10-17T09:22:25+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://ribapila.kz",
+     "snippet": "+7 (705) 605 22 22",
+     "fetched_at": "2026-10-17T09:22:25+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Header prints 'Пн-Вс | 12:00 - 00:00'; the vertical bar is stripped for the value only, the evidence snippet keeps it verbatim (00:00 closes -> 24:00). Phone is the restaurant's WhatsApp/booking number printed in the same block.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

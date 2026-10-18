@@ -1,0 +1,55 @@
+{
+ "domain": "nabrk.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:02:35+00:00",
+ "pages": [
+  "https://nabrk.kz/ru/page/rezhim-raboty",
+  "https://nabrk.kz/ru/page/kak-nas-nayti-0"
+ ],
+ "branches": [
+  {
+   "name": "Национальная академическая библиотека Республики Казахстан",
+   "address": "010000, Республика Казахстан, г.Астана, ул. Достык 11",
+   "lat": null,
+   "lon": null,
+   "phone": "+7(7172) 472545, 472653",
+   "opening_hours_raw": "работает с 09.00 до 20.00 ч., суббота-воскресенье с 09.00 до 18.00 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://nabrk.kz/ru/page/rezhim-raboty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://nabrk.kz/ru/page/rezhim-raboty",
+     "snippet": "Национальная Академическая Библиотека Республики Казахстан",
+     "fetched_at": "2026-10-17T09:02:01+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://nabrk.kz/ru/page/rezhim-raboty",
+     "snippet": "работает с 09.00 до 20.00 ч., суббота-воскресенье с 09.00 до 18.00 часов",
+     "fetched_at": "2026-10-17T09:02:01+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://nabrk.kz/ru/page/kak-nas-nayti-0",
+     "snippet": "010000, Республика Казахстан, г.Астана, ул. Достык 11",
+     "fetched_at": "2026-10-17T09:02:35+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://nabrk.kz/ru/page/kak-nas-nayti-0",
+     "snippet": "+7(7172) 472545, 472653",
+     "fetched_at": "2026-10-17T09:02:35+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Фраза графика не называет дней для будней ('работает с 09.00 до 20.00 ч., суббота-воскресенье ...') — hours_flags фиксирует причину неконвертации, raw сохранён дословно. Та же страница добавляет 'Последняя пятница каждого месяца – санитарный день' и 'Государственные праздничные дни библиотека не работает' — исключения, не выразимые в OSM. Телефон — справочные номера библиотеки со страницы 'Как нас найти'.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

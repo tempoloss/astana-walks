@@ -1,0 +1,12 @@
+{
+ "domain": "chaplin.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:22:51+00:00",
+ "pages": [
+  "https://new.chaplin.kz",
+  "http://chaplin.kz"
+ ],
+ "branches": [],
+ "notes": "Nuxt SPA: the server answers every path (including /_nuxt/* assets) with the same 3.2 KB shell, so no address/hours are in the crawlable HTML; sitemap.xml is the same shell. Chaplin Cinema facts (Е53... Астана) stay unconfirmed first-party.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

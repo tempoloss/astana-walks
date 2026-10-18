@@ -1,0 +1,90 @@
+{
+ "domain": "lacreme.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://www.lacreme.kz/contacts"
+ ],
+ "branches": [
+  {
+   "name": "La creme (Мангилик Ел 53)",
+   "address": "Астана, Мангилик Ел 53",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 708 425 05 05",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.lacreme.kz/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "Астана, Мангилик Ел 53"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "+7 708 425 05 05"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "La creme (Достык 1)",
+   "address": "Астана, Достык 1",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 747 395 05 05",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.lacreme.kz/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "Астана, Достык 1"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "+7 747 395 05 05"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  },
+  {
+   "name": "La creme (Green mall)",
+   "address": "Астана Green mal",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 778 303 50 52",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.lacreme.kz/contacts",
+   "evidence": [
+    {
+     "field": "address",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "Астана Green mal"
+    },
+    {
+     "field": "phone",
+     "url": "https://www.lacreme.kz/contacts",
+     "snippet": "+7 778 303 50 52"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.6
+  }
+ ],
+ "notes": "Footer of /contacts repeats three Astana outlets (Мангилик Ел 53, Достык 1, 'Green mal' = Green mall) each with its own phone. No opening-hours text on the page ('время доставки блюда 1 час' is delivery time, not a schedule) — hours not stored. ТОО «LIKE SERVICE» legal/factual addresses confirm the two street points. Coordinates not published.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

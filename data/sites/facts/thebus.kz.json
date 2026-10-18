@@ -1,0 +1,9 @@
+{
+ "domain": "thebus.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:31:07+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "thebus.kz answers HTTP 402 ('Please pay') on every path — hosting suspended; robots.txt absent, page unfetchable => no evidence, nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

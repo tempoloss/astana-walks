@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.local/
+.env
+*.key
+.streamlit/secrets.toml
+.worktrees/
+
+# Parking zones from the operator gateway have no licence: collect locally only (WALKS_MOBILITY_PARKING=1), never commit.
+data/mobility/parking_zones*.json

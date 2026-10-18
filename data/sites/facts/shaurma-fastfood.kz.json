@@ -1,0 +1,11 @@
+{
+ "domain": "shaurma-fastfood.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://shaurma-fastfood.kz/"
+ ],
+ "branches": [],
+ "notes": "robots allow; the site is a 1 KB JS-only landing — no verbatim address/hours text in the HTML; nothing stored.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

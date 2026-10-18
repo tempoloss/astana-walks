@@ -1,0 +1,46 @@
+{
+ "domain": "astana-filarmonia.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:26:18+00:00",
+ "pages": [
+  "https://astana-filarmonia.kz/ru/o-nas/kontakty"
+ ],
+ "branches": [
+  {
+   "name": "Государственная академическая филармония имени Еркегали Рахмадиева",
+   "address": "город Астана, 010000, улица Кенесары 32 (Концертный зал)",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 7172 75-22-00",
+   "opening_hours_raw": null,
+   "opening_hours_osm": null,
+   "hours_flags": [],
+   "description": null,
+   "url": "https://astana-filarmonia.kz/ru/o-nas/kontakty",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://astana-filarmonia.kz/ru/o-nas/kontakty",
+     "snippet": "Еркеғали Рахмадиев атындағы мемлекеттік академиялық филармония",
+     "fetched_at": "2026-10-17T09:26:18+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://astana-filarmonia.kz/ru/o-nas/kontakty",
+     "snippet": "город Астана, 010000, улица Кенесары 32 (Концертный зал)",
+     "fetched_at": "2026-10-17T09:26:18+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://astana-filarmonia.kz/ru/o-nas/kontakty",
+     "snippet": "Код города: 8 (7172) Приемная: 75-22-00 Касса: 75-23-83",
+     "fetched_at": "2026-10-17T09:26:18+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Концертный зал (Кенесары 32) — основная площадка; сайт перечисляет также Камерный зал (Абая 29) и Репетиционный (Бокейхана 25г) — отдельные адреса хранятся в notes, чтобы join не схватил их одним филиалом. Часов работы/кассы в HTML нет (афиша = события). Телефон — приёмная из блока 'Код города: 8 (7172) Приемная: 75-22-00 Касса: 75-23-83'. E-mail скрыт JS-обфускацией.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

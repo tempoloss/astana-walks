@@ -1,0 +1,11 @@
+{
+ "domain": "bankabar.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T10:41:53+00:00",
+ "pages": [
+  "https://bankabar.kz/"
+ ],
+ "branches": [],
+ "notes": "robots allow (www variant disallows the UA). The bar-network pages («Наши Банки», home) list only Алматинские адреса (ул. Шолохова 8, ул. Розыбакиева 158, ул. Макатаева 81; +7 727…/+7 776…) and say nothing about an Astana branch — recorded with no branches per the partition rule.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

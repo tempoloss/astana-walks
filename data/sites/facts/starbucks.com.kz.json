@@ -1,0 +1,534 @@
+{
+ "domain": "starbucks.com.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T11:55:23+00:00",
+ "pages": [
+  "https://www.starbucks.com.kz/stores"
+ ],
+ "branches": [
+  {
+   "name": "Starbucks NCity",
+   "address": "Туран даң. 53в, Қазақстан, Астана",
+   "lat": 51.116641,
+   "lon": 71.398898,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-22:00 tuesday 08:00-22:00 wednesday 08:00-22:00 thursday 08:00-22:00 friday 08:00-23:00 saturday 09:00-23:00 sunday 09:00-23:00",
+   "opening_hours_osm": "Mo-Th 08:00-22:00; Fr 08:00-23:00; Sa,Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks NCity\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Туран даң. 53в, Қазақстан, Астана\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.398898,\\\"lat\\\":51.116641",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-22:00\\\",\\\"tuesday\\\":\\\"08:00-22:00\\\",\\\"wednesday\\\":\\\"08:00-22:00\\\",\\\"thursday\\\":\\\"08:00-22:00\\\",\\\"friday\\\":\\\"08:00-23:00\\\",\\\"saturday\\\":\\\"09:00-23:00\\\",\\\"sunday\\\":\\\"09:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbcuks Абу-Даби Плаза N",
+   "address": "Сығанақ көш. 14/5, Астана, Қазақстан",
+   "lat": 51.121957,
+   "lon": 71.428034,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-22:00 tuesday 08:00-22:00 wednesday 08:00-22:00 thursday 08:00-22:00 friday 08:00-22:00 saturday 08:00-22:00 sunday 08:00-22:00",
+   "opening_hours_osm": "Mo-Su 08:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbcuks Абу-Даби Плаза N\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Сығанақ көш. 14/5, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.428034,\\\"lat\\\":51.121957",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-22:00\\\",\\\"tuesday\\\":\\\"08:00-22:00\\\",\\\"wednesday\\\":\\\"08:00-22:00\\\",\\\"thursday\\\":\\\"08:00-22:00\\\",\\\"friday\\\":\\\"08:00-22:00\\\",\\\"saturday\\\":\\\"08:00-22:00\\\",\\\"sunday\\\":\\\"08:00-22:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Керуен",
+   "address": "Достық көш. 9, Астана, Қазақстан",
+   "lat": 51.145631,
+   "lon": 71.414145,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-23:00 tuesday 09:00-23:00 wednesday 09:00-23:00 thursday 09:00-23:00 friday 09:00-23:00 saturday 09:00-23:00 sunday 09:00-23:00",
+   "opening_hours_osm": "Mo-Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Керуен\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Достық көш. 9, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.414145,\\\"lat\\\":51.145631",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"09:00-23:00\\\",\\\"tuesday\\\":\\\"09:00-23:00\\\",\\\"wednesday\\\":\\\"09:00-23:00\\\",\\\"thursday\\\":\\\"09:00-23:00\\\",\\\"friday\\\":\\\"09:00-23:00\\\",\\\"saturday\\\":\\\"09:00-23:00\\\",\\\"sunday\\\":\\\"09:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Хан Шатыр",
+   "address": "Тұран даңғылы, 37, Қазақстан, Астана",
+   "lat": 51.133158,
+   "lon": 71.404515,
+   "phone": null,
+   "opening_hours_raw": "monday 10:00-22:00 tuesday 10:00-22:00 wednesday 10:00-22:00 thursday 10:00-22:00 friday 10:00-22:00 saturday 10:00-23:00 sunday 10:00-23:00",
+   "opening_hours_osm": "Mo-Fr 10:00-22:00; Sa,Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Хан Шатыр\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Тұран даңғылы, 37, Қазақстан, Астана\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.404515,\\\"lat\\\":51.133158",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"10:00-22:00\\\",\\\"tuesday\\\":\\\"10:00-22:00\\\",\\\"wednesday\\\":\\\"10:00-22:00\\\",\\\"thursday\\\":\\\"10:00-22:00\\\",\\\"friday\\\":\\\"10:00-22:00\\\",\\\"saturday\\\":\\\"10:00-23:00\\\",\\\"sunday\\\":\\\"10:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Мега Силк Вэй Молл",
+   "address": "Қабанбай батыр даңғ. 62, Алматы, Қазақстан",
+   "lat": 51.089535,
+   "lon": 71.407952,
+   "phone": null,
+   "opening_hours_raw": "monday 10:00-23:00 tuesday 10:00-23:00 wednesday 10:00-23:00 thursday 10:00-23:00 friday 10:00-23:00 saturday 10:00-23:00 sunday 10:00-23:00",
+   "opening_hours_osm": "Mo-Su 10:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Мега Силк Вэй Молл\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Қабанбай батыр даңғ. 62, Алматы, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.407952,\\\"lat\\\":51.089535",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"10:00-23:00\\\",\\\"tuesday\\\":\\\"10:00-23:00\\\",\\\"wednesday\\\":\\\"10:00-23:00\\\",\\\"thursday\\\":\\\"10:00-23:00\\\",\\\"friday\\\":\\\"10:00-23:00\\\",\\\"saturday\\\":\\\"10:00-23:00\\\",\\\"sunday\\\":\\\"10:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Мега Силк Вэй Университет",
+   "address": "Қабанбай батыр даңғ. 62, Алматы, Қазақстан",
+   "lat": 51.089832,
+   "lon": 71.404095,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-23:00 tuesday 08:00-23:00 wednesday 08:00-23:00 thursday 08:00-23:00 friday 08:00-23:00 saturday 08:00-23:00 sunday 08:00-23:00",
+   "opening_hours_osm": "Mo-Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Мега Силк Вэй Университет \\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Қабанбай батыр даңғ. 62, Алматы, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.404095,\\\"lat\\\":51.089832",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-23:00\\\",\\\"tuesday\\\":\\\"08:00-23:00\\\",\\\"wednesday\\\":\\\"08:00-23:00\\\",\\\"thursday\\\":\\\"08:00-23:00\\\",\\\"friday\\\":\\\"08:00-23:00\\\",\\\"saturday\\\":\\\"08:00-23:00\\\",\\\"sunday\\\":\\\"08:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Талан Тауэрс",
+   "address": "Достық көш. 16, Астана, Қазақстан",
+   "lat": 51.124967,
+   "lon": 71.432155,
+   "phone": null,
+   "opening_hours_raw": "monday 07:00-22:00 tuesday 07:00-22:00 wednesday 07:00-22:00 thursday 07:00-22:00 friday 07:00-22:00 saturday 08:00-23:00 sunday 08:00-23:00",
+   "opening_hours_osm": "Mo-Fr 07:00-22:00; Sa,Su 08:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Талан Тауэрс\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Достық көш. 16, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.432155,\\\"lat\\\":51.124967",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"07:00-22:00\\\",\\\"tuesday\\\":\\\"07:00-22:00\\\",\\\"wednesday\\\":\\\"07:00-22:00\\\",\\\"thursday\\\":\\\"07:00-22:00\\\",\\\"friday\\\":\\\"07:00-22:00\\\",\\\"saturday\\\":\\\"08:00-23:00\\\",\\\"sunday\\\":\\\"08:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Керуен Сити",
+   "address": "Кургальджинское тас жолы 1, Астана, Қазақстан",
+   "lat": 51.145566,
+   "lon": 71.414144,
+   "phone": null,
+   "opening_hours_raw": "monday 09:00-23:00 tuesday 09:00-23:00 wednesday 09:00-23:00 thursday 09:00-23:00 friday 09:00-23:00 saturday 09:00-23:00 sunday 09:00-23:00",
+   "opening_hours_osm": "Mo-Su 09:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Керуен Сити\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Кургальджинское тас жолы 1, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.414144,\\\"lat\\\":51.145566",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"09:00-23:00\\\",\\\"tuesday\\\":\\\"09:00-23:00\\\",\\\"wednesday\\\":\\\"09:00-23:00\\\",\\\"thursday\\\":\\\"09:00-23:00\\\",\\\"friday\\\":\\\"09:00-23:00\\\",\\\"saturday\\\":\\\"09:00-23:00\\\",\\\"sunday\\\":\\\"09:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Астана Молл",
+   "address": "Тәуелсіздік көш. 34, Астана, Қазақстан",
+   "lat": 51.140443,
+   "lon": 71.465149,
+   "phone": null,
+   "opening_hours_raw": "monday 08:30-22:00 tuesday 08:30-22:00 wednesday 08:30-22:00 thursday 08:30-22:00 friday 08:30-22:00 saturday 08:30-22:00 sunday 08:30-22:00",
+   "opening_hours_osm": "Mo-Su 08:30-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Астана Молл\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Тәуелсіздік көш. 34, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.465149,\\\"lat\\\":51.140443",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:30-22:00\\\",\\\"tuesday\\\":\\\"08:30-22:00\\\",\\\"wednesday\\\":\\\"08:30-22:00\\\",\\\"thursday\\\":\\\"08:30-22:00\\\",\\\"friday\\\":\\\"08:30-22:00\\\",\\\"saturday\\\":\\\"08:30-22:00\\\",\\\"sunday\\\":\\\"08:30-22:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Грин Молл",
+   "address": "Сығанақ 17Б, NP13, Астана, Қазақстан",
+   "lat": 51.129936,
+   "lon": 71.389947,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-22:00 tuesday 08:00-22:00 wednesday 08:00-22:00 thursday 08:00-22:00 friday 08:00-22:00 saturday 09:00-20:00 sunday 09:00-20:00",
+   "opening_hours_osm": "Mo-Fr 08:00-22:00; Sa,Su 09:00-20:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Грин Молл\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Сығанақ 17Б, NP13, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.389947,\\\"lat\\\":51.129936",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-22:00\\\",\\\"tuesday\\\":\\\"08:00-22:00\\\",\\\"wednesday\\\":\\\"08:00-22:00\\\",\\\"thursday\\\":\\\"08:00-22:00\\\",\\\"friday\\\":\\\"08:00-22:00\\\",\\\"saturday\\\":\\\"09:00-20:00\\\",\\\"sunday\\\":\\\"09:00-20:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbcuks Абу-Даби Плаза",
+   "address": "Сығанақ көш. 14/5, Астана, Қазақстан",
+   "lat": 51.121957,
+   "lon": 71.428034,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-22:00 tuesday 08:00-22:00 wednesday 08:00-22:00 thursday 08:00-22:00 friday 08:00-22:00 saturday 08:00-22:00 sunday 08:00-22:00",
+   "opening_hours_osm": "Mo-Su 08:00-22:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbcuks Абу-Даби Плаза\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Сығанақ көш. 14/5, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.428034,\\\"lat\\\":51.121957",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-22:00\\\",\\\"tuesday\\\":\\\"08:00-22:00\\\",\\\"wednesday\\\":\\\"08:00-22:00\\\",\\\"thursday\\\":\\\"08:00-22:00\\\",\\\"friday\\\":\\\"08:00-22:00\\\",\\\"saturday\\\":\\\"08:00-22:00\\\",\\\"sunday\\\":\\\"08:00-22:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Аэропорт Астана",
+   "address": "Қабанбай батыр даң. 119/2, Астана, Қазақстан",
+   "lat": 51.02665,
+   "lon": 71.46054,
+   "phone": null,
+   "opening_hours_raw": "monday 00:00-00:00 tuesday 00:00-00:00 wednesday 00:00-00:00 thursday 00:00-00:00 friday 00:00-00:00 saturday 00:00-00:00 sunday 00:00-00:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "ambiguous_24h"
+   ],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Аэропорт Астана\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Қабанбай батыр даң. 119/2, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.46054,\\\"lat\\\":51.02665",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"00:00-00:00\\\",\\\"tuesday\\\":\\\"00:00-00:00\\\",\\\"wednesday\\\":\\\"00:00-00:00\\\",\\\"thursday\\\":\\\"00:00-00:00\\\",\\\"friday\\\":\\\"00:00-00:00\\\",\\\"saturday\\\":\\\"00:00-00:00\\\",\\\"sunday\\\":\\\"00:00-00:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  },
+  {
+   "name": "Starbucks Europe City",
+   "address": "Ақмешіт көшесі, 1 блок 3, Астана, Қазақстан",
+   "lat": 51.120481,
+   "lon": 71.424865,
+   "phone": null,
+   "opening_hours_raw": "monday 08:00-23:00 tuesday 08:00-23:00 wednesday 08:00-23:00 thursday 08:00-23:00 friday 08:00-24:00 saturday 08:00-24:00 sunday 08:00-23:00",
+   "opening_hours_osm": "Mo-Th,Su 08:00-23:00; Fr,Sa 08:00-24:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://www.starbucks.com.kz/stores",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"name\\\":\\\"Starbucks Europe City\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"storeAddress\\\":\\\"Ақмешіт көшесі, 1 блок 3, Астана, Қазақстан\\\"",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"lon\\\":71.424865,\\\"lat\\\":51.120481",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.starbucks.com.kz/stores",
+     "snippet": "\\\"weeklyWorkingHours\\\":{\\\"monday\\\":\\\"08:00-23:00\\\",\\\"tuesday\\\":\\\"08:00-23:00\\\",\\\"wednesday\\\":\\\"08:00-23:00\\\",\\\"thursday\\\":\\\"08:00-23:00\\\",\\\"friday\\\":\\\"08:00-24:00\\\",\\\"saturday\\\":\\\"08:00-24:00\\\",\\\"sunday\\\":\\\"08:00-23:00\\\"}",
+     "fetched_at": "2026-10-17T11:51:16+00:00"
+    }
+   ],
+   "method": "locator_json",
+   "confidence": 0.85
+  }
+ ],
+ "notes": "Store list = the escaped JSON array 'stores' embedded in the /stores page (Next.js RSC payload): name, storeAddress, weeklyWorkingHours per day and location lat/lon; per-store phones exist in the same payload but the chain uses one ordering line and they are not kept. Only outlets whose lat/lon fall in the Astana box are kept (Алматы/Шымкент skipped); one exact duplicate card ('Starbucks Europe City', same name and coordinates, two payload ids) is dropped. Names/addresses are as printed (Kazakh UI), including the site's own typo: 'Starbcuks Абу-Даби Плаза N' and 'Starbcuks Абу-Даби Плаза' are two different names at the same point and both are kept. Weekly hours: 'monday 08:00-22:00 ...' text converted by the framework rules. Cross-check: every store card of the list prints today's interval only (the fuzz run of 2026-10-17 compared that single value with the Mon-Fri JSON hours and saw a one-hour 'shift'; there is none: Saturday's JSON entry equals the card), so the crawler compares the card with the JSON entry of today's weekday (UTC+5) and stores no hours for a store where they differ.",
+ "verified_at": "2026-10-17T11:55:35+00:00"
+}

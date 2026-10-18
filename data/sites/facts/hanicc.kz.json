@@ -1,0 +1,48 @@
+{
+ "domain": "hanicc.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:47:23+00:00",
+ "pages": [
+  "https://hanicc.kz/hani_astana"
+ ],
+ "branches": [
+  {
+   "name": "Hani Cakes and Coffee",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": null,
+   "opening_hours_raw": "09:00−20:00",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": "Закажите еду на дом или в офис с бесплатной доставкой в Караганде и Астане. Мы готовим еду высочайшего качества из премиальных ингредиентов. Быстрая доставка еды от 30 минут.",
+   "url": "https://hanicc.kz/hani_astana",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "https://hanicc.kz/hani_astana",
+     "snippet": "09:00−20:00",
+     "fetched_at": "2026-10-17T09:47:23+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://hanicc.kz/hani_astana",
+     "snippet": "<title>Доставка в Караганде от Hani",
+     "fetched_at": "2026-10-17T09:47:23+00:00"
+    },
+    {
+     "field": "description",
+     "url": "https://hanicc.kz/hani_astana",
+     "snippet": "<meta property=\"og:description\" content=\"Закажите еду на дом или в офис с бесплатной доставкой в Караганде и Астане. Мы готовим еду высочайшего качества из премиальных ингредиентов. Быстрая доставка еды от 30 минут.",
+     "fetched_at": "2026-10-17T09:47:23+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The Astana storefront of the Hani delivery service: '09:00−20:00' in the header is the hub's daily working time but names no days -> hours stay raw (needs_days). No street address or phone is rendered without login; delivery zones list only districts, not the venue address.",
+ "verified_at": "2026-10-17T11:55:33+00:00"
+}

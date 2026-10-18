@@ -1,0 +1,306 @@
+{
+ "domain": "edagoroda.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:19:31+00:00",
+ "pages": [
+  "https://www.edagoroda.kz"
+ ],
+ "branches": [
+  {
+   "name": "Кафе \"Еда Города\" — Сатпаева, 25",
+   "address": "Сатпаева, 25",
+   "lat": 51.14146,
+   "lon": 71.474824,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot;\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"кафе &quot;Еда Города&quot;&lt;br /&gt;Сатпаева, 25&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"кафе &quot;Еда Города&quot;&lt;br /&gt;Сатпаева, 25&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.141460\",lng:\"71.474824\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Кафе \"Еда Города\" — Сарыарка, 19",
+   "address": "Сарыарка, 19",
+   "lat": 51.168803,
+   "lon": 71.407603,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot;\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"кафе &quot;Еда Города&quot;&lt;br /&gt;Сарыарка, 19&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"кафе &quot;Еда Города&quot;&lt;br /&gt;Сарыарка, 19&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.168803\",lng:\"71.407603\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Кафе \"Еда Города\" — Улы Дала, 67 ЖК Арнау",
+   "address": "Улы Дала, 67 ЖК Арнау",
+   "lat": 51.093594,
+   "lon": 71.444128,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot;\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot;&lt;br /&gt;Улы Дала, 67 ЖК Арнау&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot;&lt;br /&gt;Улы Дала, 67 ЖК Арнау&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.093594\",lng:\"71.444128\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Гриль-бар \"Еда Города\" — Балкантау, 187",
+   "address": "Балкантау, 187",
+   "lat": 51.133181,
+   "lon": 71.475569,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Гриль-бар &quot;Еда Города&quot;\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Гриль-бар &quot;Еда Города&quot;&lt;br /&gt;Балкантау, 187&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Гриль-бар &quot;Еда Города&quot;&lt;br /&gt;Балкантау, 187&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.133181\",lng:\"71.475569\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Кафе \"Еда Города\" (халал) — Алматы, 3 ТЦ Сауран, 4 этаж, фуд-корт",
+   "address": "Алматы, 3 ТЦ Сауран, 4 этаж, фуд-корт",
+   "lat": 51.118285,
+   "lon": 71.416047,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot; (халал)\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Алматы, 3 ТЦ Сауран, 4 этаж, фуд-корт&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Алматы, 3 ТЦ Сауран, 4 этаж, фуд-корт&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.118285\",lng:\"71.416047\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Кафе \"Еда Города\" (халал) — Култегин, 14, вход со стороны школы между 3 и 4 подъездом",
+   "address": "Култегин, 14, вход со стороны школы между 3 и 4 подъездом",
+   "lat": 51.1359198,
+   "lon": 71.3749084,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot; (халал)\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Култегин, 14, вход со стороны школы между 3 и 4 подъездом&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Култегин, 14, вход со стороны школы между 3 и 4 подъездом&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.1359198\",lng:\"71.3749084\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  },
+  {
+   "name": "Кафе \"Еда Города\" — Култегин, 14, вход со стороны школы между 3 и 4 подъездом",
+   "address": "Култегин, 14, вход со стороны школы между 3 и 4 подъездом",
+   "lat": 51.1359198,
+   "lon": 71.3749084,
+   "phone": null,
+   "opening_hours_raw": "с 10 до 22 часов",
+   "opening_hours_osm": null,
+   "hours_flags": [
+    "needs_days"
+   ],
+   "description": null,
+   "url": "https://www.edagoroda.kz",
+   "evidence": [
+    {
+     "field": "name",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "title:\"Кафе &quot;Еда Города&quot;\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Култегин, 14, вход со стороны школы между 3 и 4 подъездом&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "opening_hours",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "descr:\"Кафе &quot;Еда Города&quot; (халал)&lt;br /&gt;Култегин, 14, вход со стороны школы между 3 и 4 подъездом&lt;br /&gt;с 10 до 22 часов\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    },
+    {
+     "field": "geo",
+     "url": "https://www.edagoroda.kz",
+     "snippet": "lat:\"51.1359198\",lng:\"71.3749084\"",
+     "fetched_at": "2026-10-17T09:19:31+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "The company's own venue list is the 2GIS-style map initialisation on the home page (JS objects with title/descr/lat/lng; descr = name<br />address<br />schedule). Schedules 'с 10 до 22 часов' name no days, so hours stay raw (needs_days). The POI 'Лепим Варим' is not part of this list (only Еда Города cafes / grill-bar at Балкантау 187). Delivery 'ДОСТАВКА КРУГЛОСУТОЧНО' is a service, not venue hours; phone +7 705 100 21 33 is the chain order line, not branch-specific — not stored.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

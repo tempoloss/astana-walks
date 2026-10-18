@@ -1,0 +1,52 @@
+{
+ "domain": "odo-astana.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:08:50+00:00",
+ "pages": [
+  "https://odo-astana.kz/ru/fitness-center-cot/"
+ ],
+ "branches": [
+  {
+   "name": "Фитнес-центр ЦОП «Сарыарка»",
+   "address": "г. Астана, проспект Кабанбай батыра, 45 А",
+   "lat": null,
+   "lon": null,
+   "phone": "+7 (7172) 707 179",
+   "opening_hours_raw": "Понедельник с 7:00 до 23:00; Вторник с 7:00 до 23:00; Среда с 7:00 до 23:00; Четверг с 7:00 до 23:00; Пятница с 7:00 до 23:00; Суббота с 7:00 до 23:00; Воскресенье с 7:00 до 23:00",
+   "opening_hours_osm": "Mo-Su 07:00-23:00",
+   "hours_flags": [],
+   "description": null,
+   "url": "https://odo-astana.kz/ru/fitness-center-cot/",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "https://odo-astana.kz/ru/fitness-center-cot/",
+     "snippet": "График работы фитнес центра: Понедельник - с 7:00 до 23:00",
+     "fetched_at": "2026-10-17T09:08:50+00:00"
+    },
+    {
+     "field": "address",
+     "url": "https://odo-astana.kz/ru/fitness-center-cot/",
+     "snippet": "г. Астана, проспект Кабанбай батыра, 45 А",
+     "fetched_at": "2026-10-17T09:08:50+00:00"
+    },
+    {
+     "field": "name",
+     "url": "https://odo-astana.kz/ru/fitness-center-cot/",
+     "snippet": "фитнес центр",
+     "fetched_at": "2026-10-17T09:08:50+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "https://odo-astana.kz/ru/fitness-center-cot/",
+     "snippet": "+7 (7172) 707 179",
+     "fetched_at": "2026-10-17T09:08:50+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.8
+  }
+ ],
+ "notes": "Семь подневных строк 'Понедельник - с 7:00 до 23:00 ...' (единый интервал) конвертируются в Mo-Su 07:00-23:00; в raw дни склеены ';'. Внутренняя вставка '(раз в две недели, по понедельникам - санитарный день)' вынесена из raw (невыразимо в OSM, цитируется здесь). Часы кассы (7:00-20:30 вт-вс, обед 13:00-13:30) — касса, не клуб. Велотрек Сарыарка по тому же адресу — velotrek.kz (p3).",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

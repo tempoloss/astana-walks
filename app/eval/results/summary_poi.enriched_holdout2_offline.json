@@ -1,0 +1,168 @@
+{
+  "dataset": "poi.enriched",
+  "mode": "offline",
+  "chain": [],
+  "cases": 24,
+  "cases_with_recs": 24,
+  "recs_total": 70,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 84.3,
+  "case_all_ok_rate": 33.3,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 37.5,
+  "diversity": 100.0,
+  "top1_ok_rate": 91.7,
+  "top1_open_rate": 54.2,
+  "unknown_hours_rec_share": 55.7,
+  "non_osm_rec_share": 42.9,
+  "avg_walk_min": 6.4,
+  "wifi_socket_in_data_share": 33.3,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 15.0,
+  "latency_ms_p90": 24.0,
+  "generation_ms_median": 0.0,
+  "generation_ms_p90": 1.0,
+  "model_link": {
+    "template": 24
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "over_budget": 15,
+    "category_not_allowed": 5,
+    "walk_too_long": 1,
+    "outdoor_in_cold_or_smog": 1
+  },
+  "padded_rec_share": 10.0,
+  "expanded_rec_share": 0.0,
+  "backfill_rec_share": 10.0,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 16.7,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [],
+  "failing_cases": [
+    {
+      "case_id": "h2-01-hazret-morning-walk",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-03-asiapark-family-day",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-05-piramida-tourist-hour",
+      "violations": [
+        "over_budget",
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h2-06-piramida-stroller-accessible",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h2-10-nurzhol-smog-laptop",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-11-astanamall-budget-lunch",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-12-astanamall-late-night",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-13-station-transit-lunch",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-14-station-cold-wait",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-15-momyshuly-park-weekend-walk",
+      "violations": [
+        "category_not_allowed",
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-16-momyshuly-park-laptop-work",
+      "violations": [
+        "category_not_allowed",
+        "outdoor_in_cold_or_smog",
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-17-medu-between-classes",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-19-koktal-private-sector-weekend",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-22-kokzhiek-street-cold-kids",
+      "violations": [
+        "category_not_allowed",
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-23-botanical-garden-en-walk",
+      "violations": [
+        "category_not_allowed",
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h2-24-asiapark-mixed-typo-night",
+      "violations": [
+        "over_budget"
+      ]
+    }
+  ],
+  "case_set": "holdout2",
+  "label": "offline",
+  "header": {
+    "label": "offline",
+    "mode": "offline",
+    "dataset": "poi.enriched",
+    "data_path": "data/poi.enriched.json",
+    "cases_file": "holdout2_cases.json",
+    "case_set": "holdout2",
+    "records": 24,
+    "git": "9fbe2fc",
+    "walking": "straight",
+    "generated_at": "2026-10-18T21:56:22+05:00"
+  }
+}

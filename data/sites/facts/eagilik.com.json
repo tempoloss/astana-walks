@@ -1,0 +1,46 @@
+{
+ "domain": "eagilik.com",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:36:49+00:00",
+ "pages": [
+  "http://www.eagilik.com/index.php/ru/about-eagilik-ru/contact-us-ru"
+ ],
+ "branches": [
+  {
+   "name": "Eagilik - Books & Coffee",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "phone": "+7-(7172)-20-19-83",
+   "opening_hours_raw": "Вт-Сб: 10:00-21:00 Вс: 14:00-21:00 Пн: выходной",
+   "opening_hours_osm": "Tu-Sa 10:00-21:00; Su 14:00-21:00; Mo off",
+   "hours_flags": [],
+   "description": null,
+   "url": "http://www.eagilik.com/index.php/ru/about-eagilik-ru/contact-us-ru",
+   "evidence": [
+    {
+     "field": "opening_hours",
+     "url": "http://www.eagilik.com/index.php/ru/about-eagilik-ru/contact-us-ru",
+     "snippet": "Вт-Сб: 10:00-21:00 Вс: 14:00-21:00 Пн: выходной",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "phone",
+     "url": "http://www.eagilik.com/index.php/ru/about-eagilik-ru/contact-us-ru",
+     "snippet": "Coffee Bar & Bookstore | +7-(7172)-20-19-83",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    },
+    {
+     "field": "name",
+     "url": "http://www.eagilik.com/index.php/ru/about-eagilik-ru/contact-us-ru",
+     "snippet": "Кофе бар",
+     "fetched_at": "2026-10-17T09:36:49+00:00"
+    }
+   ],
+   "method": "html",
+   "confidence": 0.7
+  }
+ ],
+ "notes": "The contacts page prints 'Нажмите на карту, чтобы узнать, где мы находимся' — street address is not in the text, only inside a Google-Maps link ('Eagilik, Astana'), so no address is stored. Phone belongs to the coffee bar & bookstore department; the library department number (+7-(7172)-20-08-01) is a separate desk and not stored. Schedule converted to Tu-Sa 10:00-21:00; Su 14:00-21:00; Mo off.",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "domain": "arsenal.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:23:01+00:00",
+ "pages": [
+  "https://arsenal.kz"
+ ],
+ "branches": [],
+ "notes": "the cinema site is a JS shell embedding the third-party kinoplan/kinowidget booking engine (which disallows us); the static HTML has no address/hours markup",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

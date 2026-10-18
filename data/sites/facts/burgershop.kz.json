@@ -1,0 +1,11 @@
+{
+ "domain": "burgershop.kz",
+ "robots_ok": true,
+ "fetched_at": "2026-10-17T09:23:40+00:00",
+ "pages": [
+  "http://burgershop.kz"
+ ],
+ "branches": [],
+ "notes": "redirects to the kzdom.com hosting page — the restaurant site is gone",
+ "verified_at": "2026-10-17T11:55:32+00:00"
+}

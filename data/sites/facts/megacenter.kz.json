@@ -1,0 +1,9 @@
+{
+ "domain": "megacenter.kz",
+ "robots_ok": false,
+ "fetched_at": "2026-10-17T10:11:03+00:00",
+ "pages": [],
+ "branches": [],
+ "notes": "astana.megacenter.kz не резолвится (getaddrinfo fail), mega.kz — Nuxt-VUE шелл «Loading...», часы/контакты рендерятся JS-ом (scout_chains: RUNTIME). robots прочитан (404 = всё разрешено), фактов в статике нет.",
+ "verified_at": "2026-10-17T11:55:34+00:00"
+}

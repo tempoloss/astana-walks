@@ -1,0 +1,226 @@
+[
+ {
+  "poi_id": "node/10564988185",
+  "signal": "has_socket",
+  "date": "2026-10-12",
+  "weekday": "mon",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "has_socket",
+  "date": "2026-10-14",
+  "weekday": "wed",
+  "hour_bucket": "evening",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "has_socket",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "has_wifi",
+  "date": "2026-10-13",
+  "weekday": "tue",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "has_wifi",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "quiet",
+  "date": "2026-10-14",
+  "weekday": "wed",
+  "hour_bucket": "evening",
+  "demo": true
+ },
+ {
+  "poi_id": "node/10564988185",
+  "signal": "quiet",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/6408271985",
+  "signal": "has_socket",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/6408271985",
+  "signal": "noisy",
+  "date": "2026-10-13",
+  "weekday": "tue",
+  "hour_bucket": "evening",
+  "demo": true
+ },
+ {
+  "poi_id": "node/6408271985",
+  "signal": "noisy",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "evening",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/22ad98d6-faf7-4c60-b761-82371ea7424d",
+  "signal": "was_open",
+  "date": "2026-10-13",
+  "weekday": "tue",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/22ad98d6-faf7-4c60-b761-82371ea7424d",
+  "signal": "was_open",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/22ad98d6-faf7-4c60-b761-82371ea7424d",
+  "signal": "quiet",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/493818a8-db71-4896-a99b-cff4bd6ba6c9",
+  "signal": "was_closed",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13173517356",
+  "signal": "has_socket",
+  "date": "2026-10-11",
+  "weekday": "sun",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13173517356",
+  "signal": "has_socket",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13173517356",
+  "signal": "quiet",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/6e82f8c5-48f7-4fab-b0c6-929cb742c9fc",
+  "signal": "was_open",
+  "date": "2026-10-14",
+  "weekday": "wed",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/6e82f8c5-48f7-4fab-b0c6-929cb742c9fc",
+  "signal": "was_open",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "overture/6e82f8c5-48f7-4fab-b0c6-929cb742c9fc",
+  "signal": "has_wifi",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/9047331880",
+  "signal": "was_closed",
+  "date": "2026-10-12",
+  "weekday": "mon",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/9047331880",
+  "signal": "was_closed",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/9047331880",
+  "signal": "was_open",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13462282540",
+  "signal": "has_wifi",
+  "date": "2026-10-13",
+  "weekday": "tue",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13462282540",
+  "signal": "has_wifi",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13462282540",
+  "signal": "has_socket",
+  "date": "2026-10-15",
+  "weekday": "thu",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13462282540",
+  "signal": "has_socket",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ },
+ {
+  "poi_id": "node/13462282540",
+  "signal": "quiet",
+  "date": "2026-10-16",
+  "weekday": "fri",
+  "hour_bucket": "day",
+  "demo": true
+ }
+]

@@ -1,0 +1,128 @@
+{
+  "dataset": "poi",
+  "mode": "offline",
+  "chain": [],
+  "cases": 20,
+  "cases_with_recs": 20,
+  "recs_total": 51,
+  "hallucinated_poi": 0,
+  "constraint_ok_rate": 76.5,
+  "case_all_ok_rate": 50.0,
+  "honest_unknown_rate": 100.0,
+  "honest_unknown_rate_flagged": 100.0,
+  "honest_rec_rate": 100.0,
+  "coverage": 80.0,
+  "diversity": 100.0,
+  "top1_ok_rate": 75.0,
+  "top1_open_rate": 50.0,
+  "unknown_hours_rec_share": 64.7,
+  "non_osm_rec_share": 0.0,
+  "avg_walk_min": 7.8,
+  "wifi_socket_in_data_share": 0.0,
+  "route_stop_closed_cases": 0,
+  "latency_ms_median": 7.5,
+  "latency_ms_p90": 27.0,
+  "generation_ms_median": 0.0,
+  "generation_ms_p90": 1.0,
+  "model_link": {
+    "template": 20
+  },
+  "llm_chain_failed": 0,
+  "llm_invalid_answers": 0,
+  "violation_cases": {
+    "category_not_allowed": 5,
+    "walk_too_long": 4,
+    "category_forbidden": 2,
+    "over_budget": 1
+  },
+  "padded_rec_share": 33.3,
+  "expanded_rec_share": 2.0,
+  "backfill_rec_share": 25.5,
+  "substituted_rec_share": 5.9,
+  "padded_case_share": 55.0,
+  "padding_derived_recs": 0,
+  "padding_missing_fields": [],
+  "honest_abstain_rate": null,
+  "abstained_cases": null,
+  "silent_mismatch_cases": null,
+  "abstain_detail": [],
+  "ai_detail": [],
+  "failing_cases": [
+    {
+      "case_id": "h02-nurly-fri-train",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h05-arena-tue-rain",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h06-kenesary-sat-first-time",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h09-botsad-thu-typos",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h11-akorda-holiday-cold-tea",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h14-kenesary-wed-dog",
+      "violations": [
+        "over_budget"
+      ]
+    },
+    {
+      "case_id": "h16-lovers-tue-sunset",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h18-nu-tue-en-read",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h19-hazret-sun-kk-museum",
+      "violations": [
+        "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h20-keruen-newyear-cold",
+      "violations": [
+        "category_not_allowed"
+      ]
+    }
+  ],
+  "case_set": "holdout",
+  "label": "offline",
+  "header": {
+    "label": "offline",
+    "mode": "offline",
+    "dataset": "poi",
+    "data_path": "data/poi.json",
+    "cases_file": "holdout_cases.json",
+    "case_set": "holdout",
+    "records": 20,
+    "git": "9fbe2fc",
+    "walking": "straight",
+    "generated_at": "2026-10-18T21:56:19+05:00"
+  }
+}
