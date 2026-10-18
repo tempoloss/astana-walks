@@ -26,7 +26,7 @@ from walks.models import (
 )
 from walks.pipeline import recommend
 from walks.retrieve import retrieve
-from walks.shelter import OUTDOOR_OFF_KIND, asks_outdoors
+from walks.shelter import asks_outdoors
 from walks.walking import offline_router
 from walks.weather import make_weather
 from web import explain as web_explain
@@ -141,17 +141,17 @@ def test_a_generic_request_under_the_same_notice_still_moves_indoors():
 
 
 @pytest.mark.parametrize("lang", LANGS)
-def test_an_explicit_park_without_a_pet_still_moves_indoors_and_the_card_names_the_nmu(lang):
+def test_an_explicit_park_without_a_pet_stays_the_park_and_the_card_names_the_nmu(lang):
     res = _ask("хочу в парк", _nmu(), language=lang)
     assert res.intent.intent.categories == ["park_garden"]
     assert not res.intent.intent.pets
-    assert not res.retrieval.filters.outdoor_request
+    assert (
+        res.retrieval.filters.outdoor_request
+    )  # a named park beats the shelter rule: the NMU is advice only
     assert res.recs
-    assert all(r.poi.category != "park_garden" for r in res.recs)
-    assert all(r.padding == "substituted" for r in res.recs)
-    assert all(
-        tw("wx_c_nmu", lang) in r.why for r in res.recs
-    )  # the real reason, not «погода или темнота»
+    assert all(r.poi.category == "park_garden" for r in res.recs)
+    assert all(r.padding == "none" for r in res.recs)
+    assert all(tw("wx_c_nmu", lang) in r.notes for r in res.recs)  # the card names the real reason
 
 
 def test_a_food_request_is_not_an_outdoor_request():
@@ -177,9 +177,9 @@ def test_another_kind_is_a_violation_while_a_place_of_the_requested_kind_is_left
     res = retrieve(pois, *ORIGIN, intent, AFTERNOON, weather=_nmu())
     assert res.filters.excluded_outdoor == 0
     assert res.candidates[0].poi.id == "park"
-    off_kind = [c for c in res.candidates if c.poi.id != "park"]
-    assert off_kind  # back-filled: too few parks in range
-    assert all(OUTDOOR_OFF_KIND in c.reasons for c in off_kind)
+    assert [c.poi.id for c in res.candidates] == [
+        "park"
+    ]  # a walk is never padded with a café or a mall
     # the code, not the model, keeps the answer to the requested kind
     ask = LLMOutput(
         recommendations=[
@@ -251,8 +251,8 @@ def test_the_lead_names_the_nmu_and_keeps_the_outdoor_request(lang):
     clauses, drives = dialog_lead.conditions(res, lang, show_temp=False)
     assert any("НМУ" in c or "NMU" in c for c in clauses), clauses
     assert drives
-    tail = dialog_lead._tail(res, drives, lang)
-    assert tail == dialog_strings.s("ld_outdoor_kept", lang)
+    tail = dialog_lead._tail(res, drives, lang, set())
+    assert tail == dialog_strings.s("ld_walk_short", lang)
     assert "indoor places first" not in tail
     assert "в помещении" not in tail
 

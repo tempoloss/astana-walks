@@ -6,22 +6,22 @@
   "cases_with_recs": 24,
   "recs_total": 66,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 78.8,
-  "case_all_ok_rate": 58.3,
+  "constraint_ok_rate": 74.2,
+  "case_all_ok_rate": 54.2,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 91.7,
+  "coverage": 87.5,
   "diversity": 100.0,
-  "top1_ok_rate": 70.8,
-  "top1_open_rate": 62.5,
-  "unknown_hours_rec_share": 51.5,
+  "top1_ok_rate": 66.7,
+  "top1_open_rate": 50.0,
+  "unknown_hours_rec_share": 56.1,
   "non_osm_rec_share": 45.5,
-  "avg_walk_min": 11.2,
+  "avg_walk_min": 11.6,
   "wifi_socket_in_data_share": 100.0,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 16.0,
-  "latency_ms_p90": 48.0,
+  "latency_ms_median": 15.0,
+  "latency_ms_p90": 51.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -30,15 +30,16 @@
   "llm_chain_failed": 0,
   "llm_invalid_answers": 0,
   "violation_cases": {
-    "walk_too_long": 5,
+    "walk_too_long": 6,
     "category_not_allowed": 5,
-    "over_budget": 2
+    "over_budget": 2,
+    "category_forbidden": 1
   },
-  "padded_rec_share": 13.6,
+  "padded_rec_share": 12.1,
   "expanded_rec_share": 3.0,
   "backfill_rec_share": 7.6,
-  "substituted_rec_share": 3.0,
-  "padded_case_share": 25.0,
+  "substituted_rec_share": 1.5,
+  "padded_case_share": 20.8,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -57,6 +58,12 @@
       "case_id": "h3-05",
       "violations": [
         "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-07",
+      "violations": [
+        "walk_too_long"
       ]
     },
     {
@@ -106,6 +113,7 @@
     {
       "case_id": "h3-24",
       "violations": [
+        "category_forbidden",
         "category_not_allowed"
       ]
     }
@@ -120,8 +128,8 @@
     "cases_file": "holdout3_cases.json",
     "case_set": "holdout3",
     "records": 24,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:24+05:00"
+    "generated_at": "2026-10-19T00:28:08+05:00"
   }
 }

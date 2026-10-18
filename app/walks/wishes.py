@@ -3,23 +3,38 @@ and the honest «no place found has it» for halal and the diets."""
 
 from __future__ import annotations
 
+from collections import Counter
+from collections.abc import Callable
+
 from .models import Candidate
 
 # unknown hours at 23:00-06:00 are as good as closed for these
 UNLIKELY_AT_NIGHT = frozenset({"mall", "museum_gallery", "coworking_library"})
 
 
-def open_first(ranked: list[Candidate]) -> list[Candidate]:
+def open_first(ranked: list[Candidate], wished: frozenset[str] = frozenset()) -> list[Candidate]:
     """23:00-06:00: places whose opening hours the data confirm come before every place with unknown hours (a stable
-    partition: the rank order holds inside each group), whatever their category: at 3 a.m. a night shift wants what
-    is open, not what is nearest and probably closed."""
-    return sorted(ranked, key=lambda c: c.hours_state != "open")
+    partition: the rank order holds inside each group): at 3 a.m. a night shift wants what is open, not what is
+    nearest and probably closed. A kind the person named («погулять с собакой») keeps its place before everything
+    else: the night orders the places of that kind, it never replaces them with a café that happens to be open."""
+    return sorted(
+        ranked,
+        key=lambda c: (bool(wished) and c.poi.category not in wished, c.hours_state != "open"),
+    )
 
 
-def without_night_dead_ends(chosen: list[Candidate]) -> list[Candidate]:
+def without_night_dead_ends(
+    chosen: list[Candidate], wished: frozenset[str] = frozenset()
+) -> list[Candidate]:
     """A mall, a museum or a library with unknown hours at 23:00-06:00 is closed in all likelihood: out, unless nothing
-    else is left."""
-    left = [c for c in chosen if c.hours_state == "open" or c.poi.category not in UNLIKELY_AT_NIGHT]
+    else is left or the person named that kind (the card then says its hours are unknown)."""
+    left = [
+        c
+        for c in chosen
+        if c.hours_state == "open"
+        or c.poi.category not in UNLIKELY_AT_NIGHT
+        or c.poi.category in wished
+    ]
     return left or chosen
 
 
@@ -38,3 +53,24 @@ def mark_unmet_wishes(top: list[Candidate]) -> list[Candidate]:
             reasons.append(r)
         out.append(c.model_copy(update={"reasons": reasons}) if reasons != c.reasons else c)
     return out
+
+
+def keep_requested_kinds(
+    cands: list[Candidate], requested: list[str], top_n: int, rank: Callable[[Candidate], tuple]
+) -> list[Candidate]:
+    """The first `top_n` of `cands`, except that the best candidate of every requested category that has any
+    stays in the list: «playground or museum» must not be answered with ten playgrounds only. It takes the
+    place of the lowest-ranked entry of a category that is listed more than once."""
+    top = cands[:top_n]
+    for cat in requested:
+        if any(c.poi.category == cat for c in top):
+            continue
+        best = next((c for c in cands if c.poi.category == cat), None)
+        if best is None:
+            continue
+        counts = Counter(c.poi.category for c in top)
+        for i in range(len(top) - 1, -1, -1):
+            if counts[top[i].poi.category] > 1:
+                top = sorted([*top[:i], *top[i + 1 :], best], key=rank)
+                break
+    return top

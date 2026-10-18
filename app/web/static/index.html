@@ -80,7 +80,7 @@
         <div class="where">
           <span class="where-icon" aria-hidden="true"></span>
           <span id="where-text"></span>
-          <button type="button" class="link" id="where-change" data-i18n="loc_change"></button>
+          <button type="button" class="link" id="where-change"></button>
           <button type="button" class="link opts-toggle" id="opts-toggle" aria-expanded="false" data-i18n="opts_toggle"></button>
         </div>
         <div class="ask">
@@ -102,24 +102,24 @@
     <section class="legend glass" id="legend"></section>
   </main>
 
-  <dialog id="location" class="sheet-dialog">
-    <form method="dialog" class="dialog-inner">
+  <dialog id="location" class="sheet-dialog" aria-labelledby="loc-title">
+    <div class="dialog-inner loc">
       <header>
-        <h2 data-i18n="loc_title"></h2>
-        <button value="close" class="ghost icon close" data-i18n-aria="close"></button>
+        <h2 id="loc-title" data-i18n="loc_title"></h2>
+        <button type="button" class="ghost icon close" data-i18n-aria="close"></button>
       </header>
-      <div class="loc-marks" id="loc-marks"></div>
-      <div class="loc-list" id="loc-list"></div>
+      <p class="loc-nudge" id="loc-nudge" hidden></p>
+      <div id="loc-addr"></div>
       <div class="loc-actions">
-        <button type="button" class="secondary" id="loc-mine" data-i18n="loc_mine"></button>
-        <button type="button" class="secondary" id="loc-pick" data-i18n="loc_pick_map"></button>
+        <button type="button" class="secondary" id="loc-mine"><span data-i18n="loc_mine"></span></button>
+        <button type="button" class="secondary" id="loc-pick"><span data-i18n="loc_pick_map"></span></button>
       </div>
-      <p class="fine" id="loc-status" data-i18n="loc_privacy"></p>
-    </form>
+      <p class="fine" id="loc-status" role="status" data-i18n="loc_privacy"></p>
+    </div>
   </dialog>
 
-  <dialog id="bookmark" class="sheet-dialog">
-    <form class="dialog-inner" id="bm-form" method="dialog" novalidate></form>
+  <dialog id="bookmark" class="sheet-dialog" aria-labelledby="bm-title">
+    <form class="dialog-inner ps" id="bm-form" method="dialog" novalidate></form>
   </dialog>
 
   <div class="map-menu glass" id="map-menu" role="menu" hidden></div>

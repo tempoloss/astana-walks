@@ -116,6 +116,27 @@ NEGATORS = frozenset(
 )
 # «не знаю где поесть» is not a negation of eating
 NEGATION_VOID = frozenset(["знаю", "знаем", "понимаю", "уверен", "помню", "know", "sure"])
+# words between a negator and the kind it negates that do not use up the window: «не хочу в кафе», «не надо идти в бар»
+NEGATION_SKIP = frozenset(
+    {
+        "в",
+        "во",
+        "на",
+        "к",
+        "ко",
+        "по",
+        "хочу",
+        "хотим",
+        "хочется",
+        "надо",
+        "нужно",
+        "идти",
+        "пойти",
+        "сходить",
+        "ходить",
+    }
+    | {"want", "wanna", "need", "to", "go", "going", "into", "in", "at"}
+)
 # «кофе емес» - the negator of kk stands after the word
 POSTFIX_NEGATORS = frozenset({"емес", "жоқ"})
 # a word that is another language's word when the text is kazakh («бар» = «there is»)

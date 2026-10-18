@@ -86,6 +86,8 @@ RULES_ONLY_FIELDS = frozenset(
         "price_cap_kzt",
         "pets",
         "info_about",
+        "wished",
+        "refused",
     }
 )
 _REFUSALS = (("refuse_drugs", "drugs"), ("refuse_sex", "sex"), ("refuse_weapons", "weapons"))
@@ -293,6 +295,19 @@ def _categories(m: Matches, flags: set[str], excluded: set[str], notes: list[str
     if dropped:
         notes.append(f"тихий запрос → без {', '.join(dropped)}: их не добавляют общие слова")
     return [c for c in implied if c not in implied_out]
+
+
+def _named_wish(m: Matches, categories: list[str]) -> list[str]:
+    """The kinds of `categories` the text itself NAMES: a kind word («парк», «кофе», «бар»), an activity («погулять»)
+    or a dog to walk or a toilet. What a mood (a child, the weather, «куда сходить»), the Wi-Fi or a plan adds on its own
+    is not a wish of the person, so no default of the system gives way to it and it gives way to every default."""
+    named: list[str] = []
+    for c in CONCEPTS:
+        if (c.tier in {"kind", "activity"} or c.name in ("dog_walk", "wish_toilet")) and m.has(
+            c.name
+        ):
+            _add(named, *c.categories)
+    return [c for c in categories if c in named]
 
 
 _DEADLINE = re.compile(
@@ -538,6 +553,8 @@ def parse_rules(text: str, when: datetime | None = None) -> IntentResult:
         price_cap_kzt=cap,
         pets="pets" in flags,
         info_about=info_about,
+        wished=_named_wish(m, categories),  # type: ignore[arg-type]
+        refused=sorted(excluded, key=CATEGORIES.index),  # type: ignore[arg-type]
     )
     return IntentResult(intent=intent, parser="rules", note="; ".join(notes))
 
@@ -550,6 +567,17 @@ def named_categories(text: str) -> list[str]:
         if c.tier == "kind" and m.has(c.name):
             _add(out, *c.categories)
     return out
+
+
+def kinds_named_alone(text: str) -> list[str]:
+    """The kinds the text names by a word of that one kind («кофе», «бар», «музей»), not by a word that covers a
+    family («поесть»: a restaurant, a café or fast food): only such a name lifts the profile's «не показывать»."""
+    m = match(text)
+    return [
+        c.categories[0]
+        for c in CONCEPTS
+        if c.tier == "kind" and len(c.categories) == 1 and m.has(c.name)
+    ]
 
 
 # ---------------------------------------------------------------- Gemini refinement + merge
@@ -572,7 +600,9 @@ def refine_prompt(text: str, rules: Intent, about: str = "") -> str:
 
 def llm_dropped(rules: Intent, llm: Intent, text: str) -> list[str]:
     """Categories the LLM refinement proposed that the request's own concepts rule out («прогулка» is not a mall
-    or a bar). A category the rules themselves produced from the text is never dropped."""
+    or a bar), and, for a stated outdoor wish («погулять», «в парк»), every indoor or food place the model would add
+    next to it: the model only narrows a wish, it never turns a walk into a coffee. A category the rules themselves
+    produced from the text is never dropped."""
     m = match(text)
     forbidden = {f for c in CONCEPTS if m.has(c.name) for f in c.forbids}
     return [
@@ -595,7 +625,11 @@ def merge_intents(rules: Intent, llm: Intent, text: str) -> Intent:
     MAX_LLM_BUDGET_MIN nor LLM_BUDGET_FACTOR times the rules' value) and every rules-only field (weather hint,
     exclusions, halal, minor, refusal). An explicit budget or non-ru language found by the rules wins too."""
     dropped = llm_dropped(rules, llm, text)
-    barred = {*rules.exclude_categories, *(("bar_nightlife",) if rules.minor else ())}
+    barred = {
+        *rules.exclude_categories,
+        *rules.refused,
+        *(("bar_nightlife",) if rules.minor else ()),
+    }
     cats = list(
         dict.fromkeys(
             c for c in [*rules.categories, *llm.categories] if c not in dropped and c not in barred
@@ -635,6 +669,8 @@ def merge_intents(rules: Intent, llm: Intent, text: str) -> Intent:
         price_cap_kzt=rules.price_cap_kzt,
         pets=rules.pets,
         info_about=rules.info_about,
+        wished=rules.wished,
+        refused=rules.refused,
     )
 
 

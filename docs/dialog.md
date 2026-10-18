@@ -57,8 +57,23 @@ several places: one short sentence each); `notice` is one honest remark under it
 
 A message the rules cannot read (slang, typos, «куда сходить») goes to the model's intent step **before** any clarifying
 question (when a model is available): the model's reading is reused by the search (one call), a kind of place or a wish it
-finds is searched, `clarify` is answered only when it finds nothing (or no model answers / the AI is off). Safety stays:
-a minor never gets bars, a refusal (the rules', or the model's own `refusal`) is never lifted.
+finds is searched. A bare «куда сходить / where should I go / қайда барсам болады» that the model does not read (or with no
+model) gets the default answer of `walks/outing.py` (a walk, a sight, a café, a museum, ordered by the usual rules; the lead
+names no kind); `clarify` is answered only for a message nobody reads. Safety stays: a minor never gets bars, a refusal (the
+rules', or the model's own `refusal`) is never lifted, and a kind the person asked for that a safety rule left out is said in
+one sentence at the start of the lead («Бары и алкоголь до 18 лет не предлагаю.», «Бары не показываю: включено «без
+алкоголя».»), never named as the wish. «Вы ищете: …» names only the kinds the person's own words name (`Intent.wished`),
+never a kind a mood, a default or a back-fill added.
+
+A kind the message rules out («не хочу в кафе, хочу гулять», «не надо заведений», «без алкоголя») is `Intent.refused`: a hard
+exclusion in retrieval for that request and its follow-ups, which the model cannot bring back (`merge_intents`); a negator
+reaches the kind past «хочу / надо / идти / в / на» but never past a comma («нет, хочу в кафе» is a café). A toilet («туалет»,
+«где туалет», «дәретхана», «toilet», «restroom») is the kind `public_toilet`, never padded with other places; when the data
+hold none near, the reply says so as the data's absence («В наших данных туалетов рядом нет — уточните на месте или в
+ближайшем ТРЦ/кафе»), never «рядом нет туалетов»; next to another kind («кафе с туалетом») it stays a wish the cards answer
+honestly. The reply speaks the language of the current message (`lang_fixed` aside): a Cyrillic message is never answered
+in English, a short word of both languages keeps a Kazakh dialogue, and a message without words («☕») takes the saved answer
+language of the profile.
 
 `Place`: id, name, kind, category, lat/lon, `primary`, `why` (≤ ~25 words, whole sentences), `what_to_do` (one
 sentence), `ai_idea`, `walk{minutes, distance_m, method, mode, text}`, `hours{state, text, raw, source{label,url}, issue,
@@ -67,11 +82,25 @@ note, data_date}` (text: «Открыто до 22:00» / «Закрыто, от�
 website, and the optional `Hours.today` / `Hours.soon` / `Place.price` (see «Fields for the compact panel»). After «ещё» an AI
 answer never carries a template back-fill card (one voice per answer).
 
-A request with a pet (a dog is walked outside whatever the weather) is never answered with indoor places in bad weather
-or bad air (PM2.5, smoke / haze, the Kazhydromet НМУ): the places of the requested kind stay (nearer first), `note` says
-the real reason and that the walk is better kept short, and the answer's «Как получен ответ» lines say the choice was
-kept. Every other request, an explicit park and a default stroll included, keeps the indoor substitution (`padding:
-substituted`, `caveat`; `why` names the real reason). `meta.generation_retry` (optional, `""` | `live` | `failed`): a recorded / cached answer left no card
+**A wish the person names beats the system's defaults.** «погулять / прогуляться / пройтись / подышать», «в парк», «на смотровую»,
+a dog to walk (`Intent.wished`: the kinds the words themselves name, read by the rules from the current message; a mood such as
+«с ребёнком» or «холодно» names none) is answered with outdoor walking places (park, square, embankment, viewpoint) whatever the
+weather, the air or the darkness: no indoor substitution, no café or mall as padding, and the stated kind comes before anything
+the system added (also at 23:00–06:00 and in the late-home bias). The conditions only order inside the kind (nearer first;
+after dark places beside a street the data tag `lit=yes` first, `city_layers.lit_near`; no tag is never «unlit»), shorten the
+stay, and are said in the lead as advice («воздух хуже обычного, уже темно, гулять лучше недолго; сначала места у освещённых
+улиц (по данным OpenStreetMap)»). The time-fit rule keeps a named kind whose usual stay is longer than the time left, flagged
+(`NAMED_OVER_BUDGET`). A request with no stated wish («куда сходить») keeps the indoor substitution (`padding: substituted`,
+`caveat`). A children's playground is not in the walking family: with a child in frost or smog the shelter rule stays.
+«Вы ищете …» keeps the person's terms: the model's paraphrase must name the stated wish (`walks.want`), otherwise the template
+says it («Вы ищете, где прогуляться»). The profile's «не показывать» (`Constraints.avoid`) is a hard exclusion in retrieval, lifted
+only for a kind the message names by its own word («хочу кофе», «в бар»; a word for a family such as «поесть» does not lift
+it); an empty result is the honest «ничего не нашлось». Saved settings that changed the answer are
+said once at the end of the lead («Учтены ваши настройки: халяль — отмечен у 1 из 24 мест рядом, их ставлю первыми»), with the
+real counts of the records (`Filters.halal_*`, `step_free_*`, `excluded_alcohol`); nothing is said per card, and halal is
+never said on an answer without a place to eat. The budget setting is «не важно / недорого» only: the data hold no prices,
+so a mid-range or pricier bill could change nothing (a profile saved with one loads as «не важно»).
+`meta.generation_retry` (optional, `""` | `live` | `failed`): a recorded / cached answer left no card
 with the model's own text, so on a stand with live models the chain was asked once more without the cache (`live`: that
 answer is used; `failed`: the models could not answer and the recorded cards stay). Replay-only and offline never retry.
 
@@ -129,7 +158,7 @@ All optional, ignored by an old client; each is absent (or `None`) when the data
 
 * `Hours.today` — the open spans of the arrival day in hours, `[[8.0, 24.0]]`, what a card's day strip draws. `[]` is a
   place whose schedule is known and which is closed all day; `None` is no schedule at all (also while `state` is
-  `unknown`: the strip is then hatched, never drawn from a schedule the answer does not trust). `Hours.soon` — the place
+  `unknown`: no strip is drawn, never drawn from a schedule the answer does not trust). `Hours.soon` — the place
   is open and its schedule closes within the hour after arrival («скоро закроется»); the page colours that state amber.
 * `Place.price` — `{text, source{label,url}, date}`: the place's own price wording («1000 тг.», «500-3,000 tenge»),
   verbatim and never parsed into a number, whose it is (the venue's site, the museum register, Wikivoyage, …: named the same

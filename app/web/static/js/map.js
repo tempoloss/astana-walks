@@ -23,10 +23,13 @@ const FIT_MAX_ZOOM = 16.2;
 const TILE_ERRORS_MAX = 3; // failed tiles, with none loaded, after which the basemap is given up
 const TILE_PATIENCE_MS = 8000;
 const REFRAME_MS = 240;
-const MIN_ZOOM = 10; // the whole city fits a laptop's screen here
+const MIN_ZOOM = 9; // the whole map box fits a laptop's screen at this zoom (MapLibre keeps the box in view by itself)
 
-// The map shows Astana and nothing around it: a pan stops at this box, and a point outside it is not «here».
+// Astana itself: a point outside this box is not «here» (the device's position, a place picked on the map).
 const ASTANA = { south: 50.98, north: 51.3, west: 71.2, east: 71.7 };
+// The map shows the city and its surroundings, about 2.5 times the city's width and height, so a walk or a trip can be
+// followed past the last block: a pan stops at this box.
+const MAP_BOUNDS = { south: 50.74, north: 51.54, west: 70.83, east: 72.08 };
 
 let map = null;
 let loaded = null;
@@ -157,7 +160,7 @@ export async function initMap(el, { center, offline, lang }) {
     center: [center[1], center[0]],
     zoom: 14,
     minZoom: MIN_ZOOM,
-    maxBounds: [[ASTANA.west, ASTANA.south], [ASTANA.east, ASTANA.north]],
+    maxBounds: [[MAP_BOUNDS.west, MAP_BOUNDS.south], [MAP_BOUNDS.east, MAP_BOUNDS.north]],
     maxZoom: 18,
     dragRotate: false,
     touchPitch: false,

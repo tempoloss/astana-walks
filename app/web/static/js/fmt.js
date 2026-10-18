@@ -1,4 +1,4 @@
-// Numbers and times as the page says them. Minutes, metres and clock times are shown in the mono face (`.num-m`).
+// Numbers and times as the page says them. Minutes, metres and clock times use the tabular figures of the page's one family (`.tnum`).
 
 import { currentLang, tr } from './i18n.js';
 

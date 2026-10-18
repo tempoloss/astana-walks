@@ -21,7 +21,7 @@ from .bookmarks import Ref, find_ref
 from .dialog_asks import Ask, airport_answer, events_answer, mentions_travel, read_ask
 from .dialog_chips import MAX_BUDGET_MIN, chip, refine_chips, reset_chip, start_chips
 from .dialog_extras import airport_notice, decorate, events_block, lighting_line, weather_notice
-from .dialog_lead import follow_up_lead, lead
+from .dialog_lead import follow_up_lead, lead, taken_into_account
 from .dialog_named import find_named, spells_a_place, unknown_name
 from .dialog_nlu import (
     PlaceQuestion,
@@ -75,6 +75,7 @@ from .models import (
     StartHints,
     WeatherInfo,
 )
+from .outing import default_outing, is_outing
 from .pipeline import get_pois, recommend, round_location
 from .profile import Profile, personal_view
 from .stay import min_stay
@@ -540,12 +541,16 @@ def _search(
             _turn("refusal", t("refusal", lang), lang, state, start_chips(lang)), state, res
         )
     if not places:
+        toilet = (
+            "public_toilet" in new_conv.intent.wished
+        )  # said as the data's absence, never as the street's
         key = "none_new" if res.continued and new_conv.constraints.exclude_ids else "none_found"
-        longer = new_conv.intent.time_budget_min < MAX_BUDGET_MIN
+        longer = new_conv.intent.time_budget_min < MAX_BUDGET_MIN and not toilet
         chips = (
             [chip("longer", lang)] if longer and "other" not in new_conv.intent.categories else []
         )
-        turn = _turn("none_found", s(key, lang), lang, state, [*chips, reset_chip(lang)])
+        reply = s("none_toilet" if toilet else key, lang)
+        turn = _turn("none_found", reply, lang, state, [*chips, reset_chip(lang)])
     else:
         anchor = bookmark.name if bookmark is not None and bmode == "near" else ""
         way = _way_of(res, env)
@@ -553,7 +558,10 @@ def _search(
             reply = follow_up_lead(places, change, lang, anchor=anchor, way=way)
         else:
             show_temp = env.when is None and not pinned and gov_when is None
-            reply = lead(res, places, lang, show_temp=show_temp, anchor=anchor, way=way)
+            taken = taken_into_account(res, env.profile, lang)
+            reply = lead(
+                res, places, lang, show_temp=show_temp, anchor=anchor, way=way, taken=taken
+            )
         turn = _turn(
             "places",
             reply,
@@ -598,11 +606,17 @@ def _named_question(state: DialogState, env: TurnEnv, lang: str, text: str) -> O
     """«какие часы у Хан Шатыра», «далеко идти до Дерева жизни?»: an explicitly named place is answered directly,
     wherever it is, with its distance, hours and source, or «в данных нет». A name that is not in the data is
     said so; a name of a shown place is a question about that place."""
-    if is_state_request(text):
-        return None  # a state service point is searched for, not looked up by the words of its name
+    if is_state_request(text) or is_outing(text):
+        return None  # a state service point or «куда сходить» is searched for, not looked up by the words of a name
     pq = place_question(text, allow_kind=True)
     if pq is None and not is_info_question(text):
         return None
+    if (
+        pq is not None
+        and pq.topic == "toilet"
+        and "public_toilet" in parse_rules(text).intent.wished
+    ):
+        return None  # «где туалет», «public toilet»: a search for a toilet, not a question about a named place
     if pq is not None and pq.ordinal is not None:
         return None
     if state.shown and mentioned(text, [p.name for p in state.shown]) is not None:
@@ -640,7 +654,11 @@ def _signal(text: str) -> tuple[bool, bool, bool]:
 def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> Outcome:
     env = env or TurnEnv()
     text = restore(tidy(message))
-    lang = env.language or detect(text, state.lang)
+    saved = env.profile.language if env.profile is not None else None
+    # «☕», «?», «👍»: no word to read the language from, so the saved answer language («Язык ответа») speaks
+    lang = env.language or detect(
+        text, saved if saved and not any(ch.isalpha() for ch in text) else state.lang
+    )
     if not any(ch.isalnum() for ch in text):
         key = "clarify_start" if state.conversation is None else "clarify_change"
         return _clarify(state, lang, key)
@@ -671,7 +689,9 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
         return Outcome(_turn("none_found", reply, lang, state, chips), _after(state, lang))
     if (named := _named_question(state, env, lang, text)) is not None:
         return named
-    pq = place_question(text)
+    pq = (
+        None if is_outing(text) else place_question(text)
+    )  # «where should I go» asks for places, not about one
     if pq is None and (state.shown or state.asked):
         priced = place_question(
             text, allow_kind=True
@@ -688,6 +708,11 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
         # slang, typos, a phrase with no word the rules know: the model reads it before anything is asked back
         model = _model_reading(env, text)
         if model is None:
-            key = "clarify_unclear" if state.conversation is None else "clarify_change"
-            return _clarify(state, lang, key)
+            outing = default_outing(
+                text, env.when
+            )  # «куда сходить» and no model: a default answer, not a question
+            if outing is None:
+                key = "clarify_unclear" if state.conversation is None else "clarify_change"
+                return _clarify(state, lang, key)
+            model = (outing, Deadline())
     return _search(state, env, lang, text, fu, model, ref)

@@ -58,10 +58,12 @@ def _wish_notes(c: Candidate, intent: Intent) -> list[str]:
         out.append(t("note_price_cap", lang, cap=cap))
     elif intent.budget == "low" and "fee" not in c.poi.tag_dict():
         out.append(t("note_cheaper", lang))
-    out += [
-        t("note_unsupported", lang, what=w)
-        for w in unsupported_wishes(intent.free_text_keywords, lang)
-    ]
+    words = intent.free_text_keywords
+    if (
+        c.poi.category == "public_toilet"
+    ):  # the record IS the toilet asked for: no «нет данных о туалете» on it
+        words = [k for k in words if unsupported_wishes([k], "ru") != ["туалет рядом"]]
+    out += [t("note_unsupported", lang, what=w) for w in unsupported_wishes(words, lang)]
     return out
 
 

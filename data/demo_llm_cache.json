@@ -148,5 +148,25 @@
   "model": "gemini:gemini-2.5-flash",
   "json": "{\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"NU Park — это отличный вариант для прогулки с детьми, так как это просторный парк, где можно активно провести время на свежем воздухе.\",\"time_on_site_min\":30,\"what_to_do\":\"Прогуляйтесь по аллеям парка, насладитесь природой и позвольте детям побегать и поиграть на открытом пространстве.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1470723968\",\"why\":\"Японский сад предлагает уникальную атмосферу для спокойной прогулки и знакомства с восточной культурой, что может быть интересно для детей.\",\"time_on_site_min\":30,\"what_to_do\":\"Полюбуйтесь ландшафтным дизайном, прудами и растениями, характерными для японских садов, и сделайте красивые фотографии.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
   "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а если с ребёнком"
+ },
+ "1a4fa619a725ca40b78b3e09aaf4e256b913bfebd8286160fc899c7669d25ca6": {
+  "model": "gemini:gemini-3.5-flash",
+  "json": "{\"you_want\":\"Вы ищете место для приятной прогулки на свежем воздухе\",\"recommendations\":[{\"poi_id\":\"way/1470723968\",\"why\":\"Японский сад отлично подходит для спокойной прогулки.\",\"time_on_site_min\":30,\"what_to_do\":\"Пройдитесь по ухоженным аллеям и насладитесь тихой атмосферой.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"},{\"poi_id\":\"way/1467797207\",\"why\":\"Близлежащий парк NU Park удобен для короткого отдыха на природе.\",\"time_on_site_min\":30,\"what_to_do\":\"Совершите небольшую прогулку по территории парка.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1467797207\",\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин"
+ },
+ "e5364defb1e607348b8445b1ba7aa3f3ac9746f4e3d4416bfb0af954f751a0b3": {
+  "model": "gemini:gemma-4-26b-a4b-it",
+  "json": "{\"you_want\":\"Вы ищете место для прогулки в парке или на смотровой площадке.\",\"recommendations\":[{\"poi_id\":\"way/1467797207\",\"why\":\"Это отличный вариант для прогулки по парку.\",\"time_on_site_min\":45,\"what_to_do\":\"Прогуляйтесь по территории парка.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а поближе?"
+ },
+ "7b9ed0807b33b047d8921a5fb70f0ba24c056967f908e6e4859e3dfa8c408ab1": {
+  "model": "gemini:gemma-4-26b-a4b-it",
+  "json": "{\"you_want\":\"Вы ищете место для прогулки в парке или на смотровой площадке\",\"recommendations\":[{\"poi_id\":\"way/1459874428\",\"why\":\"Это подходящее по категории наиболее близкое к вам текущему нахождениянию.\",\"time_on_site_min\":45,\"what_to_do\":\"Прогуляйтесь по территории парка или сквера.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → что-то другое"
+ },
+ "2e77bd622801636f2fad72c3b67ab255f92badc26212c404f23653f82df66795": {
+  "model": "gemini:gemma-4-26b-a4b-it",
+  "json": "{\"you_want\":\"Вы ищете место для прогулки в парке или на смотровой площадке.\",\"recommendations\":[{\"poi_id\":\"way/1470723968\",\"why\":\"Этот парк-сад, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, по отметкам людей, пополяренный popular, popular, popular, popular, popular, popular, popular, popular, popular, popular, popular, popular, по отметкам людей, по отметments, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, подходит для прогулок с детьми.\",\"time_on_site_min\":45,\"what_to_do\":\"Прогуляйтесь по живописный сад-парк.\",\"confidence\":\"medium\",\"generated_idea\":true,\"notes\":\"\"}],\"route_order\":[\"way/1470723968\"]}",
+  "label": "Рядом с Mega Silk Way, прогулка 30–60 мин → а если с ребёнком"
  }
 }

@@ -769,9 +769,12 @@ def test_the_time_notice_never_names_a_kind_the_weather_added(text):
     assert out.turn.notice == ""
 
 
-def test_the_time_notice_still_names_a_kind_the_user_asked_for():
+def test_a_kind_the_user_named_is_kept_when_the_time_is_short_and_the_card_says_so():
     turn, _ = say("хочу в ресторан на 20 минут", "ru")
-    assert turn.notice
+    assert turn.places
+    assert {p.category for p in turn.places} == {
+        "restaurant"
+    }  # the time-fit rule never replaces the named kind
 
 
 STROLLER = {

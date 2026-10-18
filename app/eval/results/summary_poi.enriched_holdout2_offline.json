@@ -6,7 +6,7 @@
   "cases_with_recs": 24,
   "recs_total": 70,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 84.3,
+  "constraint_ok_rate": 82.9,
   "case_all_ok_rate": 33.3,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
@@ -15,13 +15,13 @@
   "diversity": 100.0,
   "top1_ok_rate": 91.7,
   "top1_open_rate": 54.2,
-  "unknown_hours_rec_share": 55.7,
+  "unknown_hours_rec_share": 57.1,
   "non_osm_rec_share": 42.9,
-  "avg_walk_min": 6.4,
+  "avg_walk_min": 7.3,
   "wifi_socket_in_data_share": 33.3,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 15.0,
-  "latency_ms_p90": 24.0,
+  "latency_ms_median": 13.5,
+  "latency_ms_p90": 23.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -32,7 +32,7 @@
   "violation_cases": {
     "over_budget": 15,
     "category_not_allowed": 5,
-    "walk_too_long": 1,
+    "walk_too_long": 2,
     "outdoor_in_cold_or_smog": 1
   },
   "padded_rec_share": 10.0,
@@ -115,7 +115,8 @@
       "violations": [
         "category_not_allowed",
         "outdoor_in_cold_or_smog",
-        "over_budget"
+        "over_budget",
+        "walk_too_long"
       ]
     },
     {
@@ -161,8 +162,8 @@
     "cases_file": "holdout2_cases.json",
     "case_set": "holdout2",
     "records": 24,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:22+05:00"
+    "generated_at": "2026-10-19T00:28:06+05:00"
   }
 }

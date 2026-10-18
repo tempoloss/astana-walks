@@ -1,0 +1,19 @@
+{
+ "form_open_by_default": true,
+ "toggle_rows": [
+  "Запоминать мои предпочтения",
+  "Хожу с детьми",
+  "Нужен халяль",
+  "Без алкоголя",
+  "Люблю тихие места"
+ ],
+ "profile_posts_after_flip": [],
+ "turn_after_unsaved_flip": "{\"text\":\"хочу выпить\",\"lat\":51.089,\"lon\":71.416,\"lang\":\"ru\",\"lang_fixed\":false,\"at\":null,\"weather\":\"now\",\"budget_min\":null,\"company\":null,\"state\":null,\"profile_on\":true,\"profile_id\":null,\"bookmarks\":[]}",
+ "reply_unsaved": "Уже темно. Вы ищете: бар — советую «Пинта», 11 мин пешком, открыто до 00:00; ниже ещё два места.",
+ "turn_after_save": "{\"text\":\"хочу выпить\",\"lat\":51.089,\"lon\":71.416,\"lang\":\"ru\",\"lang_fixed\":false,\"at\":null,\"weather\":\"now\",\"budget_min\":null,\"company\":null,\"state\":{\"version\":1,\"lang\":\"ru\",\"lat\":51.089,\"lon\":71.416,\"conversation\":{\"intent\":{\"time_budget_min\":60,\"mode\":\"walk\",\"categories\":[\"bar_nightlife\"],\"with_kids\"",
+ "reply_saved": "Уже темно. Вы ищете: бар — советую «Coffee BOOM», 2 мин пешком, открыто до 00:00; ниже ещё два места.",
+ "cards_saved": [
+  "Coffee BOOM"
+ ],
+ "cards_saved_text": "1\nCoffee BOOM\nкафе\n≈ 2 мин\nОткрыто до 00:00\n71 м · по прямой\nсегодня 08:00–24:00\nсейчас 22:21\nдругая категория\n\nНе совсем то, что вы просили, но по часам с официального сайта открыто в это время. После заката — место в помещении.\n\nИсточник часов: официальный сайт · данные на 17.10.2026\nПодробнее\n2ГИС\nЯндекс"
+}

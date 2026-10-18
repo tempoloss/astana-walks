@@ -3,16 +3,16 @@
 // Every word comes from the turn (walks.dialog `Place`); nothing here decides what a place is.
 
 import { h, icon } from './dom.js';
-import { askBlocks, deepLinks, detailRows, hoursSource, priceParts, sourceLinks, telHref } from './details.js';
+import { askBlocks, deepLinks, detailSections, hoursSource, priceParts, sourceLinks, telHref } from './details.js';
 import { hhmm, metres, minutes, stateOf } from './fmt.js';
 import { tr } from './i18n.js';
 
 const STATE_ICON = { open: 'open', closing_soon: 'clock', closed: 'closed' };
 
-// colour + icon + word: a dot-sized glyph, the words of the turn; unknown hours are hatched and say so
+// an icon and the words of the turn; hours that are unknown are plain muted words, nothing more
 export function statusEl(place) {
   const state = stateOf(place);
-  if (state === 'unknown') return h('span', { class: 'unk' }, place.hours.text);
+  if (state === 'unknown') return h('span', { class: 'st unknown' }, place.hours.text);
   return h('span', { class: `st ${state}` }, icon(STATE_ICON[state]), place.hours.text);
 }
 
@@ -21,15 +21,11 @@ const nowHour = (at) => {
   return hh + mm / 60;
 };
 
-// the day as a strip: open spans, a tick at the moment of the answer; no schedule: hatched, and the word «неизвестно»
+// the day as a strip: open spans, a tick at the moment of the answer; with no schedule there is no strip at all
 export function hoursStrip(place, at) {
   const spans = place.hours.today;
+  if (spans == null || place.hours.state === 'unknown') return null;
   const now = h('b', { style: `left:${(nowHour(at) / 24) * 100}%`, 'aria-hidden': 'true' });
-  if (spans == null || place.hours.state === 'unknown') {
-    return h('div', { class: 'strip' },
-      h('div', { class: 'hbar none' }),
-      h('div', { class: 'hcap' }, h('span', { text: '00' }), h('span', { text: `${tr('h_now')} ${at ? at.time : ''}` }), h('span', { text: '24' })));
-  }
   const bar = h('div', { class: 'hbar' },
     spans.map(([open, close]) => h('i', { style: `left:${(open / 24) * 100}%;width:${((close - open) / 24) * 100}%` })), spans.length ? now : null);
   const today = spans.length ? spans.map(([o, c]) => `${hhmm(o)}–${hhmm(c)}`).join(', ') : tr('h_today_closed');
@@ -48,6 +44,14 @@ function num(n) {
 
 function out(href, label, primary) {
   return h('a', { class: `btn${primary ? ' pri' : ''}`, href, target: '_blank', rel: 'noopener noreferrer' }, icon('external'), label);
+}
+
+// the source of the hours on a card: whose they are and when they were read; no source, no line (the status says it)
+function sourceLine(place, onDetails) {
+  const source = hoursSource(place);
+  return h('div', { class: 'c-src' },
+    source.length ? h('span', { class: 'src' }, ...source) : null,
+    h('button', { type: 'button', class: 'lnk', onclick: () => onDetails(place.id) }, tr('details')));
 }
 
 // a row or a card is the place's handle on the page: it is hovered with its pin and selected with it
@@ -78,6 +82,12 @@ function whyBlock(text) {
   return h('div', { class: 'why-wrap' }, p, more);
 }
 
+// why the hours are unknown, when the data has a reason (the website lists hours without days, the sources disagree)
+function hoursIssue(place) {
+  const hrs = place.hours;
+  return hrs.state === 'unknown' && hrs.issue && hrs.note ? h('p', { class: 'c-note', text: hrs.note }) : null;
+}
+
 // o: {n, at, origin, sel, profileOn, onProfile, onSelect(id), onHover(id|null), onDetails(id)}
 export function primaryCard(place, o) {
   const links = deepLinks(place, o.origin);
@@ -89,18 +99,17 @@ export function primaryCard(place, o) {
     h('div', { class: 'c-top' },
       num(o.n),
       h('h3', { class: 'c-title' }, h('span', { class: 'c-name', text: place.name }), h('span', { class: 'c-kind', text: place.kind })),
-      h('span', { class: 'c-min mono', text: minutes(place.walk.minutes, place.walk.method) })),
-    h('div', { class: 'c-st' }, statusEl(place), h('span', { class: 'm mono', text: walkTail(place) })),
+      h('span', { class: 'c-min', text: minutes(place.walk.minutes, place.walk.method) })),
+    h('div', { class: 'c-st' }, statusEl(place), h('span', { class: 'm', text: walkTail(place) })),
     hoursStrip(place, o.at),
+    hoursIssue(place),
     price ? h('p', { class: 'price' }, ...price) : null,
     place.signal
       ? h('p', { class: 'note signal' }, icon('info'), h('span', {}, place.signal.text, ' · ', ...sourceLinks([place.signal.source])))
       : null,
-    place.caveat ? h('span', { class: 'tag caveat', text: place.caveat }) : null,
+    place.caveat ? h('p', { class: 'c-note', text: place.caveat }) : null,
     place.why ? whyBlock(place.why) : null,
-    h('div', { class: 'c-src' },
-      h('span', { class: 'src' }, ...hoursSource(place)),
-      h('button', { type: 'button', class: 'lnk', onclick: () => o.onDetails(place.id) }, tr('details'))),
+    sourceLine(place, o.onDetails),
     h('div', { class: 'acts' },
       out(links.gis, tr('open_2gis'), true),
       out(links.yandex, tr('open_yandex_short')),
@@ -116,9 +125,9 @@ export function altRow(place, o) {
     { class: 'alt', id: `place-${o.turnId}-${o.n}` },
     num(o.n),
     h('span', { class: 'a-l1' }, h('span', { class: 'a-name', text: place.name }), h('span', { class: 'kd', text: place.kind })),
-    h('span', { class: 'a-meta' }, statusEl(place), h('span', { class: 'm mono', text: walkTail(place) })),
+    h('span', { class: 'a-meta' }, statusEl(place), h('span', { class: 'm', text: walkTail(place) })),
     h('span', { class: 'a-end' },
-      h('span', { class: 'a-min mono', text: minutes(place.walk.minutes, place.walk.method) }),
+      h('span', { class: 'a-min', text: minutes(place.walk.minutes, place.walk.method) }),
       h('button', { type: 'button', class: 'more-b', 'aria-label': tr('details'), onclick: () => o.onDetails(place.id) }, icon('next'))),
   );
   return wire(row, place, o);
@@ -132,7 +141,7 @@ export function miniRow(place, o) {
     num(o.n),
     h('span', { class: 'mn', text: place.name }),
     statusEl(place),
-    h('span', { class: 'mm mono', text: minutes(place.walk.minutes, place.walk.method) }),
+    h('span', { class: 'mm', text: minutes(place.walk.minutes, place.walk.method) }),
   );
   return row;
 }
@@ -144,15 +153,13 @@ export function qaCard(place, o) {
     { class: 'qa-card', id: `place-${o.turnId}-qa` },
     h('div', { class: 'c-top' }, o.n ? num(o.n) : null, h('b', { text: place.name }), statusEl(place)),
     hoursStrip(place, o.at),
-    h('div', { class: 'c-src' },
-      h('span', { class: 'src' }, ...hoursSource(place)),
-      h('button', { type: 'button', class: 'lnk', onclick: () => o.onDetails(place.id) }, tr('details'))),
+    sourceLine(place, o.onDetails),
   );
   return wire(card, place, o);
 }
 
-// The details view of a place: «label — value» rows, the way out, then the asks. A phone's sheet holds it at full height
-// with the way out (and the way back) pinned at the bottom.
+// The details view of a place, grouped by what the person is doing (now, getting there, about, contacts, sources), the
+// questions to the visitor, and the way out pinned at the bottom (with the way back on a phone).
 // o: {n, at, origin, sel, profileOn, onProfile, onBack}
 export function detailsView(place, o) {
   const links = deepLinks(place, o.origin);
@@ -163,13 +170,13 @@ export function detailsView(place, o) {
     { class: 'details-view' },
     h('div', { class: 'dhead' }, h('button', { type: 'button', class: 'backb', onclick: o.onBack }, icon('back'), tr('back_to_answer'))),
     name,
-    h('div', { class: 'dsub' }, `${place.kind} · `, h('span', { class: 'mono', text: minutes(place.walk.minutes, place.walk.method) })),
-    detailRows(place, hoursStrip(place, o.at)),
+    h('div', { class: 'dsub', text: place.kind }),
+    ...detailSections(place, hoursStrip(place, o.at), statusEl(place)),
+    h('div', { class: 'asks' }, ...askBlocks(place, o)),
     h('div', { class: 'acts' },
       h('button', { type: 'button', class: 'btn back-b', 'aria-label': tr('back_to_answer'), onclick: o.onBack }, icon('back')),
       out(links.gis, tr('open_2gis'), true),
       out(links.yandex, tr('open_yandex_short')),
       tel ? h('a', { class: 'btn call', href: tel, 'aria-label': tr('call') }, icon('phone'), h('span', { class: 'call-lbl', text: tr('call') })) : null),
-    h('div', { class: 'asks' }, ...askBlocks(place, o)),
   );
 }

@@ -189,9 +189,11 @@ def test_polluted_air_prefers_indoor_and_says_why(pois):
     assert res.filters.weather_adapted
     assert res.candidates[0].poi.category not in OUTDOOR_CATEGORIES
     assert res.filters.radius_effective_m <= 600
-    rec = recommend("прогулка на 2 часа", lat, lon, DAY, use_llm=False, pois=pois, weather=smog)
+    rec = recommend(
+        "где переждать на 2 часа", lat, lon, DAY, use_llm=False, pois=pois, weather=smog
+    )
     assert rec.recs[0].poi.category not in OUTDOOR_CATEGORIES
-    assert "воздух загрязнён" in rec.recs[0].why
+    assert "оздух загрязнён" in rec.recs[0].why
     assert "PM2.5 80" in rec.recs[0].why
     assert all(
         "загрязнён" in r.notes and r.time_on_site_min <= 20

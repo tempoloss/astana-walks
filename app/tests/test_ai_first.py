@@ -14,6 +14,7 @@ from walks import intent as intent_mod
 from walks.dialog import TurnEnv, new_state, take_turn
 from walks.generate import _clean_want
 from walks.models import Intent, LLMOutput, LLMRec, LLMStep, Personal
+from walks.outing import DEFAULT_KINDS
 from walks.presets import PRESETS
 from walks.walking import offline_router
 from walks.weather import make_weather
@@ -22,6 +23,7 @@ BAITEREK = PRESETS["Байтерек"]
 EVENING = datetime(2026, 10, 14, 19, 0)  # a Wednesday, after the sunset of that day
 LANGS = ("kk", "ru", "en")
 SLANG = "куда сходить"  # nothing the rules read
+UNCLEAR = "абырвалг кукарямба"  # nothing anyone reads
 
 
 def call_of(value) -> llm.LLMCall:
@@ -85,23 +87,29 @@ def test_a_message_the_rules_cannot_read_goes_to_the_model_once(monkeypatch):
     assert len(models.intent_prompts) == 1  # the reading is reused by the search, never asked twice
 
 
-def test_the_model_finding_nothing_gives_the_honest_clarify(monkeypatch):
+def test_the_model_finding_nothing_in_a_bare_where_to_go_gives_the_default(monkeypatch):
     models = Models(monkeypatch, Intent())
     out = say(SLANG)
-    assert out.turn.kind == "clarify"
-    assert out.turn.chips
+    assert out.turn.kind == "places"  # «куда сходить»: an answer, never a dead-end question
+    assert {p.category for p in out.turn.places} <= set(DEFAULT_KINDS)
     assert len(models.intent_prompts) == 1
-    assert not models.gen_prompts
+    unclear = say(UNCLEAR)
+    assert unclear.turn.kind == "clarify"
+    assert unclear.turn.chips
 
 
-def test_an_unavailable_model_gives_the_honest_clarify(monkeypatch):
+def test_an_unavailable_model_gives_the_default_or_the_honest_clarify(monkeypatch):
     Models(monkeypatch, llm.LLMUnavailable("down"))
-    assert say(SLANG).turn.kind == "clarify"
+    assert say(SLANG).turn.kind == "places"
+    assert say(UNCLEAR).turn.kind == "clarify"
 
 
-def test_without_a_model_the_clarify_stays_and_nothing_is_asked(monkeypatch):
+def test_without_a_model_nothing_is_asked_and_only_the_unreadable_is_asked_back(monkeypatch):
     models = Models(monkeypatch, Intent(categories=["park_garden"]))
-    assert say(SLANG, use_llm=False).turn.kind == "clarify"
+    assert (
+        say(SLANG, use_llm=False).turn.kind == "places"
+    )  # the default answer of a bare «куда сходить»
+    assert say(UNCLEAR, use_llm=False).turn.kind == "clarify"
     assert not models.intent_prompts
 
 

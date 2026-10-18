@@ -31,17 +31,24 @@ MIN_STAY_OVER_BUDGET = (
     "min_stay_over_budget"  # reason code: kept although its minimum stay does not fit
 )
 TIGHT_FIT = "tight_fit"  # reason code: minimum stay exceeds the time left, but only slightly
+NAMED_OVER_BUDGET = (
+    "named_over_budget"  # reason code: a kind the person named is kept, its stay is longer
+)
 
 
 def min_stay(category: str) -> int:
     return STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])[0]
 
 
-def fit_stay_budget(cands: list[Candidate], budget_min: int) -> tuple[list[Candidate], int]:
+def fit_stay_budget(
+    cands: list[Candidate], budget_min: int, wished: frozenset[str] = frozenset()
+) -> tuple[list[Candidate], int]:
     """Drop candidates whose category minimum stay exceeds the budget left after walking there and back by more
     than TIGHT_FIT_MARGIN_MIN (a cinema in a 90-minute window); one that is over by up to that margin stays,
-    flagged TIGHT_FIT so the card says «впритык». Only when nothing would remain they are all kept, flagged
-    MIN_STAY_OVER_BUDGET. Returns (kept, number dropped)."""
+    flagged TIGHT_FIT so the card says «впритык». A kind the person NAMED is never replaced by this rule: when every
+    place of it would go, they stay, flagged NAMED_OVER_BUDGET (the card says the usual stay is longer than the time
+    left). Only when nothing would remain at all they are all kept, flagged MIN_STAY_OVER_BUDGET. Returns (kept,
+    number dropped)."""
     kept: list[Candidate] = []
     for c in cands:
         over = min_stay(c.poi.category) - (budget_min - 2 * c.travel_min)
@@ -50,5 +57,18 @@ def fit_stay_budget(cands: list[Candidate], budget_min: int) -> tuple[list[Candi
         elif over <= TIGHT_FIT_MARGIN_MIN:
             kept.append(c.model_copy(update={"reasons": [*c.reasons, TIGHT_FIT]}))
     if kept or not cands:
-        return kept, len(cands) - len(kept)
+        saved = _named_over_budget(cands, kept, wished)
+        return [*kept, *saved], len(cands) - len(kept) - len(saved)
     return [c.model_copy(update={"reasons": [*c.reasons, MIN_STAY_OVER_BUDGET]}) for c in cands], 0
+
+
+def _named_over_budget(
+    cands: list[Candidate], kept: list[Candidate], wished: frozenset[str]
+) -> list[Candidate]:
+    """The places of a named kind of which none fit the time, flagged."""
+    have = {c.poi.category for c in kept}
+    return [
+        c.model_copy(update={"reasons": [*c.reasons, NAMED_OVER_BUDGET]})
+        for c in cands
+        if c.poi.category in wished and c.poi.category not in have
+    ]

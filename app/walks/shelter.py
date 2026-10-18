@@ -22,21 +22,32 @@ LANDMARK = "attraction_landmark"
 # Requested categories that make indoor places stand in for them in frost / smog: the outdoor categories and landmarks
 # (a landmark without an indoor signal is outdoors, see has_indoor_signal).
 OUTDOOR_REQUESTS = OUTDOOR_CATEGORIES | {LANDMARK}
+# The walking family a named wish keeps outdoors in any weather: a park, a square, an embankment (a landmark), a
+# viewpoint. A children's playground is not in it: a child's health and the recorded demo answers keep the shelter rule.
+WALKING_KINDS = frozenset({"park_garden", "attraction_landmark", "viewpoint"})
 # Reason codes of an outdoor request kept outdoors in bad weather / air (see asks_outdoors): the place itself keeps
 # its kind, the card says why the walk is better kept short; a candidate of another kind is shown only when nothing
 # of the requested kind is left.
 WEATHER_OUTDOOR_KEPT = "weather_outdoor_kept"
 AIR_OUTDOOR_KEPT = "air_outdoor_kept"
 OUTDOOR_OFF_KIND = "outdoor_off_kind"
+LIT_NEAR = "lit_near"  # reason code: a way tagged lit=yes passes by (OpenStreetMap); no tag is never «unlit»
+
+
+def outdoor_wish(intent: Intent) -> bool:
+    """Did the person NAME a place to walk («погулять», «в парк», «на набережную», «на смотровую»)?
+    Only their own words count (`Intent.wished`), never what a mood, the weather or the system added."""
+    return bool(set(intent.wished) & WALKING_KINDS)
 
 
 def asks_outdoors(intent: Intent) -> bool:
-    """Does the request bring a pet: a dog has to be walked outside whatever the weather, so such a request is never
-    answered with indoor places in bad weather or bad air; the conditions are said on the card. A pet request that
-    names only indoor kinds («кафе с собакой») is not an outdoor one. Every other request, an explicit park or a
-    default stroll included, keeps the indoor substitution (with the reason in the note)."""
+    """Is the request answered outdoors whatever the weather, the air or the darkness? A stated outdoor wish is: what
+    the person asked for beats the system's shelter rule, the conditions only order the places inside the kind
+    (nearer, lit first), shorten the stay and are said in the lead as advice. So is a request that brings a pet (a dog
+    has to be walked outside), unless it names only indoor kinds («кафе с собакой»). A request with no stated wish
+    («куда сходить») keeps the indoor substitution, with the reason in the note."""
     kinds = set(intent.categories)
-    return intent.pets and (not kinds or bool(kinds & OUTDOOR_REQUESTS))
+    return outdoor_wish(intent) or (intent.pets and (not kinds or bool(kinds & OUTDOOR_REQUESTS)))
 
 
 # Wikidata classes (`wikidata_class=` tag, from the Wikipedia link) of buildings that people enter: mosque, church

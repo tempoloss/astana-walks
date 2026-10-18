@@ -17,11 +17,11 @@
   "top1_open_rate": 25.0,
   "unknown_hours_rec_share": 76.9,
   "non_osm_rec_share": 0.0,
-  "avg_walk_min": 31.5,
+  "avg_walk_min": 32.8,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 4.5,
-  "latency_ms_p90": 43.0,
+  "latency_ms_median": 4.0,
+  "latency_ms_p90": 42.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -32,9 +32,9 @@
   "violation_cases": {
     "over_budget": 4
   },
-  "padded_rec_share": 76.9,
+  "padded_rec_share": 61.5,
   "expanded_rec_share": 38.5,
-  "backfill_rec_share": 23.1,
+  "backfill_rec_share": 7.7,
   "substituted_rec_share": 15.4,
   "padded_case_share": 87.5,
   "padding_derived_recs": 0,
@@ -46,7 +46,7 @@
     {
       "case_id": "a01-leftbank-3am-museum",
       "n_recs": 3,
-      "labelled_recs": 3,
+      "labelled_recs": 1,
       "silent": {}
     },
     {
@@ -129,8 +129,8 @@
     "cases_file": "abstain_cases.json",
     "case_set": "abstain",
     "records": 8,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:25+05:00"
+    "generated_at": "2026-10-19T00:28:09+05:00"
   }
 }

@@ -1,7 +1,7 @@
 # Оценка: `poi.enriched`, режим `offline`
 
 Набор кейсов: abstain. Кейсов: 8, рекомендаций: 15.
-Прогон: метка `offline`, режим `offline`, 8 записей, данные `data/poi.enriched.json`, git `9fbe2fc`, 2026-10-18T21:56:26+05:00.
+Прогон: метка `offline`, режим `offline`, 8 записей, данные `data/poi.enriched.json`, git `29dda4a`, 2026-10-19T00:28:10+05:00.
 
 | метрика | значение |
 |---|---|

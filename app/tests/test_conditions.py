@@ -4,6 +4,7 @@ sun (walks.sun) and `GET /api/conditions` (walks.conditions). Reports are real s
 
 from __future__ import annotations
 
+import json
 from datetime import UTC, date, datetime, timedelta
 
 import pytest
@@ -14,6 +15,7 @@ from tests.test_weather_obs import _fetch, _routes
 from walks import conditions, metar, metno, sun
 from walks import weather as wx
 from walks.hours import TZ
+from walks.models import WeatherWarning
 from web.server import create_app
 
 DAY = datetime(2026, 10, 20, 12, tzinfo=UTC)  # a report names only its day of the month
@@ -186,7 +188,7 @@ def _report(minutes_ago: int = 10, **fields) -> wx.WeatherInfo:
         "precip_now": "snow",
         "precip_level": 2,
     }
-    return wx.make_weather(temperature_c=0.0, apparent_c=0.0, **(base | fields))
+    return wx.make_weather(**({"temperature_c": 0.0, "apparent_c": 0.0} | base | fields))
 
 
 def test_the_payload_of_a_fresh_report_with_snow(monkeypatch):
@@ -255,8 +257,23 @@ def test_the_forecast_gives_wind_and_sky_but_never_precipitation(monkeypatch):
 def test_the_air_flag_is_the_official_notice_or_the_stations_smoke(monkeypatch):
     monkeypatch.setattr(wx, "_latest", _report(conditions=("smog",)))
     assert conditions.current(NOW)["air"] == {"kind": "smog", "source": "metar", "at": "17:20"}
-    monkeypatch.setattr(wx, "_latest", _report(conditions=("nmu",)))
-    assert conditions.current(NOW)["air"] == {"kind": "nmu", "source": "kazhydromet", "at": ""}
+    notice = WeatherWarning(
+        kind="nmu", title="НМУ", text="…", source_url="https://www.kazhydromet.kz/nmu", active=True
+    )
+    monkeypatch.setattr(wx, "_latest", _report(warnings=(notice,)))
+    assert (
+        conditions.current(NOW)["air"]
+        == {
+            "kind": "nmu",
+            "source": "kazhydromet",
+            "at": "",
+            "title": "НМУ",
+            "url": "https://www.kazhydromet.kz/nmu",  # the caption names the notice only together with its link
+        }
+    )
+    tomorrow = notice.model_copy(update={"active": False})  # shown, but not the air now
+    monkeypatch.setattr(wx, "_latest", _report(warnings=(tomorrow,)))
+    assert conditions.current(NOW)["air"] is None
     monkeypatch.setattr(wx, "_latest", _report(conditions=("snow", "wind")))
     assert conditions.current(NOW)["air"] is None
 
@@ -286,7 +303,19 @@ def test_the_endpoint_reads_the_refreshed_weather_and_never_the_network(client, 
     assert res.status_code == 200
     assert res.headers["cache-control"] == "no-store"
     assert res.json()["known"] is False
-    assert set(res.json()) == {"known", "now", "sun", "wind", "sky", "precip", "air"}
+    assert set(res.json()) == {
+        "known",
+        "now",
+        "sun",
+        "wind",
+        "sky",
+        "precip",
+        "air",
+        "temp",
+        "vis",
+        "pm25",
+        "hours",
+    }
 
 
 def test_a_scenario_is_served_only_under_the_test_switch(client, monkeypatch):
@@ -299,3 +328,102 @@ def test_a_scenario_is_served_only_under_the_test_switch(client, monkeypatch):
     assert out["sun"]["phase"] == "night"
     assert client.get("/api/conditions?fake=none").json()["wind"] is None
     assert client.get("/api/conditions?fake=haze").json()["air"]["kind"] == "nmu"
+
+
+# ------------------------------------------------------------------------------------------- the weather card
+
+
+def test_the_card_blocks_of_a_fresh_report(monkeypatch):
+    weather = _report(
+        temperature_c=-3.2, apparent_c=-7.6, visibility_m=4000, pm25=36.4, fetched_at="17:25"
+    )
+    monkeypatch.setattr(wx, "_latest", weather)
+    out = conditions.current(NOW)
+    assert out["temp"] == {"temp_c": -3, "feels_c": -8, "source": "metar", "at": "17:20"}
+    assert out["vis"] == {"m": 4000, "source": "metar", "at": "17:20"}
+    assert out["pm25"] == {"value": 36, "source": "open-meteo", "at": "17:25"}
+    assert (out["sun"]["rise"], out["sun"]["set"]) == ("06:40", "17:19")  # computed for 17 October
+
+
+def test_a_block_without_data_is_none_not_a_clear_word(monkeypatch):
+    monkeypatch.setattr(wx, "_latest", wx.make_weather(forecast_used=False))
+    out = conditions.current(NOW)
+    assert all(out[k] is None for k in ("temp", "vis", "pm25", "hours", "wind", "sky"))
+    metar_only = _report(visibility_m=None)
+    monkeypatch.setattr(wx, "_latest", metar_only)
+    assert conditions.current(NOW)["vis"] is None  # a report without the group says nothing
+
+
+def test_the_forecast_gives_the_temperature_but_not_the_visibility(monkeypatch):
+    forecast = wx.make_weather(2.0, -1.0, 18.0, 3.0, forecast_used=True, visibility_m=9999)
+    monkeypatch.setattr(wx, "_latest", forecast)
+    out = conditions.current(NOW)
+    assert out["temp"] == {"temp_c": 2, "feels_c": -1, "source": "met-no", "at": ""}
+    assert out["vis"] is None
+
+
+def test_the_next_hours_come_from_the_series_in_memory_and_never_the_network(monkeypatch):
+    metno.reset()
+    doc = met_doc("2026-10-17T12:00:00Z", 1.0, 80.0, 3.0, 0.0)
+    series = doc["properties"]["timeseries"]
+    for i in range(1, 9):
+        entry = json.loads(json.dumps(series[0]))
+        entry["time"] = f"2026-10-17T{12 + i}:00:00Z"
+        entry["data"]["instant"]["details"]["air_temperature"] = 1.0 - i
+        entry["data"]["next_1_hours"] = {
+            "summary": {"symbol_code": "lightsnowshowers_night" if i == 2 else "partlycloudy_day"},
+            "details": {"precipitation_amount": 0.4 if i == 2 else 0.0},
+        }
+        series.append(entry)
+    metno.forecast(0.0, NOW, 4.0, MetServer(doc))
+    forecast = wx.make_weather(1.0, 1.0, 10.8, 0.0, forecast_used=True)
+    monkeypatch.setattr(wx, "_latest", forecast)
+    items = conditions.current(NOW)["hours"]["items"]
+    assert [i["at"] for i in items] == [
+        "18:00",
+        "19:00",
+        "20:00",
+        "21:00",
+        "22:00",
+        "23:00",
+    ]  # 12:30 UTC = 17:30
+    assert items[1] == {"at": "19:00", "temp_c": -1, "precip_mm": 0.4, "sym": "snow"}
+    assert items[0]["sym"] == "partly"
+    assert conditions.current(NOW)["hours"]["source"] == "met-no"
+    metno.reset()
+    assert conditions.current(NOW)["hours"] is None  # no series, no strip
+
+
+@pytest.mark.parametrize(
+    ("code", "kind"),
+    [
+        ("clearsky_day", "clear"),
+        ("fair_night", "clear"),
+        ("partlycloudy_night", "partly"),
+        ("cloudy", "cloud"),
+        ("heavyrainshowers_day", "rain"),
+        ("lightrainandthunder", "thunder"),
+        ("sleet", "sleet"),
+        ("lightsnow", "snow"),
+        ("fog", "fog"),
+        ("", ""),
+        (None, ""),
+    ],
+)
+def test_the_symbols_reduce_to_what_the_card_draws(code, kind):
+    assert metno.symbol_kind(code) == kind
+
+
+def test_the_scenario_wind_speed_and_card_blocks(client, monkeypatch):
+    monkeypatch.setenv("WALKS_FX_FAKE", "1")
+    out = client.get("/api/conditions?fake=wind12%2Bday").json()
+    assert out["wind"]["speed_ms"] == 12.0
+    assert out["wind"]["gust_ms"] is not None
+    assert client.get("/api/conditions?fake=day").json()["wind"]["speed_ms"] == 3.0
+    haze = client.get("/api/conditions?fake=haze").json()
+    assert haze["air"]["url"].startswith("https://www.kazhydromet.kz/")
+    assert haze["pm25"]["value"] == 62
+    snow = client.get("/api/conditions?fake=snow").json()
+    assert (snow["temp"]["temp_c"], snow["vis"]["m"], len(snow["hours"]["items"])) == (-3, 3000, 6)
+    none = client.get("/api/conditions?fake=none").json()
+    assert none["temp"] is none["hours"] is None

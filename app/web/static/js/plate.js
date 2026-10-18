@@ -30,7 +30,7 @@ function timeRow() {
     h('button', { type: 'button', 'aria-pressed': String(pressed), disabled: !enabled, onclick: pick(at), dataset: { when: String(at) } }, label, extra);
   row.replaceChildren(
     ...[
-      opt(tr('when_now'), null, true, !here.at && !custom, [' · ', h('span', { class: 'mono', text: hhmm(now % (24 * 60)) })]),
+      opt(tr('when_now'), null, true, !here.at && !custom, [' · ', h('span', { class: 'tnum', text: hhmm(now % (24 * 60)) })]),
       opt(tr('when_hour'), hour, hour !== null, here.at === hour && hour !== null),
       opt(tr('when_evening'), evening, evening !== null, here.at === evening && evening !== null),
       custom ? opt(tr('when_at', { t: custom }), custom, true, true) : null,

@@ -30,7 +30,8 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 from .i18n import LANG_SELF, Entry, age_label, category_name, pick, t
-from .models import Budget, Category, Constraints, Intent, Language, Personal, WeatherInfo
+from .intent import kinds_named_alone
+from .models import Category, Constraints, Intent, Language, Personal, WeatherInfo
 from .weather import HEAVY_PRECIP_MM
 
 DEFAULT_DIR = Path(__file__).resolve().parents[1] / ".local" / "profiles"
@@ -45,6 +46,9 @@ AgeBand = Literal["0-3", "4-7", "8-12", "13+"]
 Mobility = Literal["none", "stroller", "wheelchair"]
 Pace = Literal["slow", "normal", "fast"]
 Cold = Literal["low", "normal", "high"]
+# «недорого» is the one budget the data can act on (a free entry, the nearer place, «цены уточняйте»); the data hold no
+# prices, so a mid-range or a pricier bill is not a setting: nothing could honestly be done with it
+ProfileBudget = Literal["any", "low"]
 ABOUT_MAX = 500  # characters of the user's free text
 _SPACES = re.compile(r"\s+")
 _CONTROL = re.compile(r"[\x00-\x08\x0b-\x1f\x7f-\x9f\u200b-\u200f\u2028-\u202e\u2060-\u206f]")
@@ -67,7 +71,7 @@ class Profile(BaseModel):
     kids_age_band: AgeBand | None = None
     mobility: Mobility = "none"
     quiet: bool = False
-    budget: Budget = "any"
+    budget: ProfileBudget = "any"
     halal: bool = False
     no_alcohol: bool = False
     language: Language | None = None
@@ -77,6 +81,13 @@ class Profile(BaseModel):
     about: str = Field("", max_length=ABOUT_MAX)
     visited: list[VisitedPlace] = Field(default_factory=list)
     liked: dict[str, int] = Field(default_factory=dict)
+
+    @field_validator("budget", mode="before")
+    @classmethod
+    def _supported_budget(cls, value: object) -> object:
+        return (
+            value if value in ("any", "low") else "any"
+        )  # a file saved with a level the form no longer offers
 
     @field_validator("about", mode="before")
     @classmethod
@@ -270,11 +281,11 @@ def suggest_chips(
             out.append(Chip("mobility:stroller", t("chip_stroller", lang)))
         else:
             out.append(Chip("mobility:wheelchair", t("chip_wheelchair", lang)))
-    if intent.budget != "any" and profile.budget == "any":
-        out.append(Chip(f"budget:{intent.budget}", t("chip_budget", lang)))
+    if intent.budget == "low" and profile.budget == "any":
+        out.append(Chip("budget:low", t("chip_budget", lang)))
     if constraints.no_alcohol and not profile.no_alcohol:
         out.append(Chip("no_alcohol", t("chip_no_alcohol", lang)))
-    if "халяль" in intent.free_text_keywords and not profile.halal:
+    if (intent.halal or "халяль" in intent.free_text_keywords) and not profile.halal:
         out.append(Chip("halal", t("chip_halal", lang)))
     if intent.language != "ru" and profile.language != intent.language:
         out.append(
@@ -327,25 +338,29 @@ def merge_into_intent(intent: Intent, profile: Profile, text: str) -> tuple[Inte
     if profile.quiet and not intent.quiet:
         update["quiet"] = True
         applied.append("quiet")
-    if profile.budget != "any" and intent.budget == "any":
-        update["budget"] = profile.budget
+    if profile.budget == "low" and intent.budget == "any":
+        update["budget"] = "low"
         applied.append("budget")
     if profile.halal:
         kws = list(dict.fromkeys([*intent.free_text_keywords, "халяль", "halal"]))[:8]
-        if kws != intent.free_text_keywords:
+        if kws != intent.free_text_keywords or not intent.halal:
             update["free_text_keywords"] = kws
+            update["halal"] = (
+                True  # the ranking's halal rule (tagged first, the rest honestly unverified)
+            )
             applied.append("halal")
     if profile.language and not _LETTER.search(text):
         update["language"] = profile.language  # the request has no words to read the language from
         applied.append("language")
-    barred = [
-        c for c in profile.avoid if c not in intent.categories
-    ]  # asking for a kind beats avoiding it
-    kinds = list(dict.fromkeys([*intent.exclude_categories, *barred]))
-    if kinds != intent.exclude_categories:
-        update["exclude_categories"] = kinds
-        applied.append("avoid")
     return intent.model_copy(update=update), applied
+
+
+def avoided_kinds(intent: Intent, profile: Profile, text: str) -> list[str]:
+    """The kinds the profile leaves out of this request: a hard exclusion in retrieval (`Constraints.avoid`), lifted
+    only for a kind the person NAMES in this very message by its own word («хочу в бар», «хочу кофе»). A word for a
+    family («поесть») does not lift it (the avoided café leaves, the restaurants stay), nor does a mood or the model."""
+    named = set(kinds_named_alone(text)) & set(intent.wished)
+    return [c for c in profile.avoid if c not in named]
 
 
 def constraints_for(profile: Profile) -> tuple[Constraints, list[str]]:
@@ -384,7 +399,10 @@ def personal_view(profile: Profile) -> Personal:
     """What retrieval reads: visited ids and liked counts, and `about`, the user's own text the core hands to the
     intent and generation prompts (the one profile field that may reach a model besides the flags)."""
     return Personal(
-        visited=[v.poi_id for v in profile.visited], liked=dict(profile.liked), about=profile.about
+        visited=[v.poi_id for v in profile.visited],
+        liked=dict(profile.liked),
+        about=profile.about,
+        kids_age_band=profile.kids_age_band if profile.with_kids else None,
     )
 
 
@@ -410,30 +428,3 @@ def preferences_payload(profile: Profile) -> dict:
     if profile.cold_tolerance != "normal":
         out["cold_tolerance"] = profile.cold_tolerance
     return out
-
-
-_EXPLAIN = (
-    "with_kids",
-    "mobility",
-    "quiet",
-    "budget",
-    "halal",
-    "no_alcohol",
-    "walk_pace",
-    "cold_tolerance",
-)
-
-
-def explain(applied: list[str], profile: Profile, language: str) -> str:
-    """«Вы отмечали, что ходите с ребёнком (4–7 лет) — это учтено.» ('' when nothing was applied)."""
-    parts = []
-    for code in applied:
-        if code not in _EXPLAIN:
-            continue
-        text = t(f"explain_{code}", language)
-        if code == "with_kids" and profile.kids_age_band:
-            text += f" ({t('explain_age', language, band=profile.kids_age_band)})"
-        parts.append(text)
-    if not parts:
-        return ""
-    return t("explain_wrap", language, parts="; ".join(parts))

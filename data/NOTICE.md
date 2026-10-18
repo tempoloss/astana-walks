@@ -8,7 +8,7 @@ would be likely to look for it», because the JSON files cannot carry it inside.
 ## 1. The database is under the Open Database License (ODbL) 1.0
 
 `poi.osm.json`, `poi.json`, `poi.enriched.json`, `districts.geojson`, `population_proxy.json`, `walk_cache.json`,
-`city/*.json`, `mobility/stops.json`, `gov/osm_candidates.json` and `overture_geocheck.json` contain a substantial
+`city/*.json`, `mobility/stops.json`, `gov/osm_candidates.json`, `gazetteer/astana_addresses.json` and `overture_geocheck.json` contain a substantial
 part of the OpenStreetMap database (the Overpass extract of the places of Astana is not «insubstantial»: the OSMF
 guideline calls fewer than 100 features insubstantial and a systematic extraction of all places of a kind in an
 area substantial; `poi.osm.json` has 1 501 places). Together with the records we added

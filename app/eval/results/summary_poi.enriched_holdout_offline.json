@@ -4,24 +4,24 @@
   "chain": [],
   "cases": 20,
   "cases_with_recs": 20,
-  "recs_total": 58,
+  "recs_total": 56,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 77.6,
-  "case_all_ok_rate": 60.0,
+  "constraint_ok_rate": 73.2,
+  "case_all_ok_rate": 50.0,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 80.0,
+  "coverage": 75.0,
   "diversity": 100.0,
-  "top1_ok_rate": 85.0,
-  "top1_open_rate": 70.0,
-  "unknown_hours_rec_share": 58.6,
-  "non_osm_rec_share": 51.7,
-  "avg_walk_min": 6.9,
+  "top1_ok_rate": 80.0,
+  "top1_open_rate": 60.0,
+  "unknown_hours_rec_share": 67.9,
+  "non_osm_rec_share": 48.2,
+  "avg_walk_min": 8.1,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 1,
-  "latency_ms_median": 14.5,
-  "latency_ms_p90": 35.0,
+  "latency_ms_median": 11.5,
+  "latency_ms_p90": 33.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -31,15 +31,16 @@
   "llm_invalid_answers": 0,
   "violation_cases": {
     "category_not_allowed": 6,
-    "category_forbidden": 3,
-    "walk_too_long": 2,
-    "over_budget": 1
+    "category_forbidden": 4,
+    "walk_too_long": 4,
+    "over_budget": 2,
+    "outdoor_in_cold_or_smog": 1
   },
-  "padded_rec_share": 24.1,
-  "expanded_rec_share": 0.0,
-  "backfill_rec_share": 19.0,
-  "substituted_rec_share": 5.2,
-  "padded_case_share": 35.0,
+  "padded_rec_share": 16.1,
+  "expanded_rec_share": 1.8,
+  "backfill_rec_share": 14.3,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 30.0,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -64,6 +65,12 @@
       ]
     },
     {
+      "case_id": "h06-kenesary-sat-first-time",
+      "violations": [
+        "walk_too_long"
+      ]
+    },
+    {
       "case_id": "h09-botsad-thu-typos",
       "violations": [
         "category_forbidden",
@@ -74,6 +81,14 @@
       "case_id": "h11-akorda-holiday-cold-tea",
       "violations": [
         "walk_too_long"
+      ]
+    },
+    {
+      "case_id": "h12-keruen-sun-smog-air",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed",
+        "outdoor_in_cold_or_smog"
       ]
     },
     {
@@ -91,7 +106,8 @@
     {
       "case_id": "h16-lovers-tue-sunset",
       "violations": [
-        "category_not_allowed"
+        "over_budget",
+        "walk_too_long"
       ]
     },
     {
@@ -111,8 +127,8 @@
     "cases_file": "holdout_cases.json",
     "case_set": "holdout",
     "records": 20,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:20+05:00"
+    "generated_at": "2026-10-19T00:28:05+05:00"
   }
 }

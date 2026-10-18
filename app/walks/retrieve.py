@@ -4,8 +4,6 @@ request reaches, the minimum-stay budget and the shelter rule live in walks.radi
 from __future__ import annotations
 
 import re
-from collections import Counter
-from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 
@@ -23,11 +21,13 @@ from .attributes import (
     serves_alcohol,
     wheelchair_access,
 )
+from .city_layers import lit_near
 from .colocated import collapse_shared_coordinates
 from .feedback import FeedbackIndex
 from .holidays import holiday_name
 from .hours import poi_hours, to_local_naive
 from .kids import (
+    KIDS_BONUS,
     KIDS_HOST_CATEGORIES,
     collapse_anonymous,
     is_member,
@@ -36,6 +36,7 @@ from .kids import (
     padding_of,
 )
 from .lexicon import normalize
+from .marks import Marks, count_marks, supply_nearby
 from .models import (
     POI,
     Candidate,
@@ -60,7 +61,6 @@ from .radius import (
     declared_radius_m,
     haversine_m,
     is_stroll,
-    reachable_radius_m,
     related_kinds,
     travel_minutes,
     travel_share,
@@ -68,6 +68,7 @@ from .radius import (
 )
 from .shelter import (
     AIR_OUTDOOR_KEPT,
+    LIT_NEAR,
     OUTDOOR_OFF_KIND,
     OUTDOOR_REQUESTS,
     WEATHER_OUTDOOR_KEPT,
@@ -78,9 +79,13 @@ from .shelter import (
 )
 from .stay import fit_stay_budget
 from .sun import is_dark, sun_for
-from .supply import supply_counts
 from .weather import INDOOR_CATEGORIES, OUTDOOR_CATEGORIES
-from .wishes import mark_unmet_wishes, open_first, without_night_dead_ends
+from .wishes import (
+    keep_requested_kinds,
+    mark_unmet_wishes,
+    open_first,
+    without_night_dead_ends,
+)
 
 TRANSIT_CATEGORY = "transit_station"
 ANCHOR_RADIUS_M = 200  # a request from a starting place's own point comes from that place
@@ -113,7 +118,10 @@ DEEP_NIGHT_START, DEEP_NIGHT_END = 23, 6  # local hours; [23:00, 06:00)
 DEEP_NIGHT_OPEN_BONUS = 2.0  # on top of the night bonus: confirmed-open beats unknown hours
 SHORT_TIME_MIN = 45  # a budget up to this is «быстро»: the nearer place wins
 NEAR_WEIGHT, NEAR_WEIGHT_CONSTRAINED = 1.5, 3.0  # score points lost over the whole radius
-DARK_OUTDOOR_PENALTY = 3.0  # park / viewpoint / playground after sunset
+DARK_OUTDOOR_PENALTY = (
+    3.0  # park / viewpoint / playground after sunset, for a request that did not ask for it
+)
+LIT_BONUS = 2.0  # after dark, an outdoor place beside a street the data tag lit, for a request that asked for it
 GYM_OUTDOOR_PENALTY = 3.0
 _GYM_WISH = re.compile(
     r"спортзал|тренажёр|тренажер|фитнес|\bgym\b|fitness|спорт залы|жаттығу", re.I
@@ -122,6 +130,7 @@ _GYM_WISH = re.compile(
 NIGHT_START, NIGHT_END = 21, 5  # local hours; [21:00, 05:00) counts as "night" for ranking
 VISITED_PENALTY = 2.5  # a place the user's profile says they have been to
 LIKED_STEP = 0.3  # per mark «понравилось» of the category, at most three
+LIKED_OPEN_BONUS = 1.5  # a kind the person likes, when the request names no kind of its own
 
 _UNKNOWN_PENALTY = 1.0
 _UNKNOWN_PENALTY_NIGHT = 2.5
@@ -159,6 +168,7 @@ def _score(
     visited: bool = False,
     liked: int = 0,
     deep_night: bool = False,
+    kids_band: str | None = None,
 ) -> tuple[float, list[str]]:
     reasons: list[str] = []
     s = 0.0
@@ -200,13 +210,7 @@ def _score(
         s += LANDMARK_BONUS
         reasons.append("landmark_ref")
     if intent.with_kids:
-        s += {
-            "kids_playground": 3.0,
-            "entertainment": 1.5,
-            "museum_gallery": 1.0,
-            "park_garden": 0.5,
-            "coworking_library": -1.5,
-        }.get(cat, 0.0)
+        s += KIDS_BONUS.get(kids_band or "", KIDS_BONUS[""]).get(cat, 0.0)
         if cat == "bar_nightlife":
             s -= 6.0
         if cat == "kids_playground" or (cat in KIDS_HOST_CATEGORIES and kids_signal(poi)):
@@ -310,6 +314,8 @@ def _score(
         reasons.append("visited")
     if liked:
         s += LIKED_STEP * min(liked, 3)
+        if not intent.wished:
+            s += LIKED_OPEN_BONUS
         reasons.append("liked_category")
     if poi.has_real_description():  # OSM tag or Wikipedia, not text derived from tags
         s += 0.3
@@ -342,7 +348,14 @@ def _score(
             if weather.air_bad:
                 reasons.append("air_outdoor")
     if dark:
-        if cat in OUTDOOR_CATEGORIES or is_outdoor_sport(poi):
+        owish = asks_outdoors(intent)
+        if owish and is_outdoor_place(poi):  # asked for the outdoors: the dark only orders them
+            lit = lit_near(
+                poi.lat, poi.lon
+            )  # lit way near; no tag is no verdict (the card says so)
+            reasons.append(LIT_NEAR if lit else "dark_outdoor")
+            s += LIT_BONUS if lit else 0.0
+        elif not owish and (cat in OUTDOOR_CATEGORIES or is_outdoor_sport(poi)):
             s -= DARK_OUTDOOR_PENALTY
             reasons.append("dark_outdoor")
         elif cat in INDOOR_CATEGORIES:
@@ -391,27 +404,6 @@ def collapse_duplicates(cands: list[Candidate]) -> tuple[list[Candidate], list[C
     return kept, log
 
 
-def _keep_requested_kinds(
-    cands: list[Candidate], requested: list[str], top_n: int, rank: Callable[[Candidate], tuple]
-) -> list[Candidate]:
-    """The first `top_n` of `cands`, except that the best candidate of every requested category that has any
-    stays in the list: «playground or museum» must not be answered with ten playgrounds only. It takes the
-    place of the lowest-ranked entry of a category that is listed more than once."""
-    top = cands[:top_n]
-    for cat in requested:
-        if any(c.poi.category == cat for c in top):
-            continue
-        best = next((c for c in cands if c.poi.category == cat), None)
-        if best is None:
-            continue
-        counts = Counter(c.poi.category for c in top)
-        for i in range(len(top) - 1, -1, -1):
-            if counts[top[i].poi.category] > 1:
-                top = sorted([*top[:i], *top[i + 1 :], best], key=rank)
-                break
-    return top
-
-
 # ---------------------------------------------------------------- main entry
 
 
@@ -423,6 +415,7 @@ class _Context:
     feedback: FeedbackIndex | None
     visited: frozenset[str]
     liked: dict[str, int]
+    kids_band: str | None
     shown: tuple[
         tuple[POI, frozenset[str]], ...
     ]  # places shown earlier in the dialogue, with name keys
@@ -452,6 +445,13 @@ class _Pool:
         self.excluded_stay = 0
         self.stay_kinds: list[str] = []  # categories the time-fit rule dropped places of
         self.followup = 0
+        self.alcohol_removed = (
+            0  # places of the requested kinds left out by the profile's «без алкоголя»
+        )
+        self.avoided = 0  # places left out by the profile's «не показывать»
+        self.marks = (
+            Marks()
+        )  # what the records say about halal / step-free (honest counts for the lead)
 
 
 def _gather(
@@ -469,6 +469,12 @@ def _gather(
     for p, d in in_radius:
         if p.category == "other" and ("other" not in requested or not p.is_state_service()):
             continue  # `other` holds the ЦОН only: a place for an explicit state-service request, never a walk
+        if p.category in ctx.constraints.avoid or p.category in intent.refused:
+            out.avoided += 1  # «не показывать» or «не хочу в кафе»: a hard exclusion, no backfill path brings it back
+            continue
+        if ctx.constraints.no_alcohol and serves_alcohol(p):
+            out.alcohol_removed += not requested or p.category in requested
+            continue
         if ctx.excludes(p):
             out.followup += 1
             continue
@@ -504,6 +510,7 @@ def _gather(
             p.id in ctx.visited,
             ctx.liked.get(p.category, 0),
             deep_night,
+            ctx.kids_band,
         )
         out.scored.append(
             Candidate(
@@ -520,9 +527,12 @@ def _gather(
             )
         )
     before = out.scored
-    out.scored, out.excluded_stay = fit_stay_budget(before, intent.time_budget_min)
+    out.scored, out.excluded_stay = fit_stay_budget(
+        before, intent.time_budget_min, frozenset(intent.wished)
+    )
     kept = {c.poi.id for c in out.scored}
     out.stay_kinds = sorted({c.poi.category for c in before if c.poi.id not in kept})
+    out.marks = count_marks(out.scored, intent)
     return out
 
 
@@ -576,20 +586,6 @@ def _without_visited_kinds(chosen: list[Candidate], intent: Intent) -> list[Cand
     return left or chosen
 
 
-def _supply_nearby(
-    pois: list[POI], lat: float, lon: float, intent: Intent, local: datetime, stroll: bool
-) -> tuple[int, int]:
-    """The dataset's supply inside the radius the time budget gives in ordinary weather (walks.supply): not the
-    weather cap, the dialogue's narrowing or the exclusions, so it stays a fact about the city, not the ranker."""
-    radius = reachable_radius_m(intent.time_budget_min, intent.mode, False, travel_share(stroll))
-    near = [
-        p
-        for p in pois
-        if p.category != TRANSIT_CATEGORY and haversine_m(lat, lon, p.lat, p.lon) <= radius
-    ]
-    return supply_counts(near, intent.categories, local)
-
-
 def retrieve(
     pois: list[POI],
     lat: float,
@@ -609,7 +605,7 @@ def retrieve(
     outdoor_request = asks_outdoors(intent)
     swap_indoor = (
         indoor and not outdoor_request
-    )  # an outdoor request stays outdoors (the card says why short)
+    )  # a named outdoor wish stays outdoors (advice, not a swap)
     stroll = is_stroll(intent)
     constraints = constraints or Constraints()
     base_radius = declared_radius_m(intent, indoor, constraints)
@@ -619,6 +615,7 @@ def retrieve(
         feedback=feedback,
         visited=frozenset(personal.visited) if personal else frozenset(),
         liked=dict(personal.liked) if personal else {},
+        kids_band=personal.kids_age_band if personal else None,
         shown=tuple(
             (by_id[i], frozenset(name_keys(by_id[i])))
             for i in constraints.exclude_ids
@@ -660,8 +657,14 @@ def retrieve(
         ):
             break
 
+    wished = frozenset(intent.wished)
+
     def rank(c: Candidate) -> tuple:
-        return (-c.score, c.distance_m, c.poi.id)
+        # a kind the person named comes before anything the system added next to it (padding, a substitute)
+        named = c.poi.category in wished or (
+            not outdoor_request and is_member(c.poi, member_cats, requested, intent)
+        )
+        return (bool(wished) and not named, -c.score, c.distance_m, c.poi.id)
 
     scored, merged_log = collapse_duplicates(pool.scored)
     scored, shared_log = collapse_shared_coordinates(scored)
@@ -678,7 +681,7 @@ def retrieve(
     strict = [
         c for c in scored if not requested or is_member(c.poi, member_cats, requested, intent)
     ]
-    absent = bool(requested) and not stroll and not strict
+    absent = bool(requested) and (not stroll or outdoor_request) and not strict
     # the anonymous records one card stands for count as places of the kind: collapsing them is not a shortage
     plenty = len(strict) + sum(c.nearby_anon for c in strict)
     relaxed = bool(requested) and plenty < MIN_IN_CATEGORY
@@ -688,7 +691,13 @@ def retrieve(
             c
             for c in scored
             if is_member(c.poi, member_cats, requested, intent)
-            or (backfill_ok(c.poi.category, intent, stroll) and c.distance_m <= base_radius)
+            or (
+                backfill_ok(c.poi.category, intent, stroll)
+                and c.distance_m <= base_radius
+                and (
+                    not outdoor_request or c.poi.category in OUTDOOR_REQUESTS
+                )  # never a café for a walk
+            )
         ]
         if absent:
             related = related_kinds(requested)
@@ -716,12 +725,12 @@ def retrieve(
         chosen, excluded_outdoor = apply_shelter_rule(chosen)
     chosen = _without_visited_kinds(chosen, intent)
     if deep_night:
-        chosen = without_night_dead_ends(chosen)
+        chosen = without_night_dead_ends(chosen, wished)
 
     cands = sorted(chosen, key=rank)
     if deep_night:
-        cands = open_first(cands)
-    top = keep_named(cands, _keep_requested_kinds(cands, requested, top_n, rank))
+        cands = open_first(cands, wished)
+    top = keep_named(cands, keep_requested_kinds(cands, requested, top_n, rank))
     top = [
         c.model_copy(
             update={
@@ -734,7 +743,7 @@ def retrieve(
     if intent.info_about:
         top = info_first(top, pois, lat, lon, intent, local, ctx.feedback, base_radius)
 
-    nearby, nearby_with_hours = _supply_nearby(pois, lat, lon, intent, local, stroll)
+    nearby, nearby_with_hours = supply_nearby(pois, lat, lon, intent, local, stroll)
     filters = Filters(
         mode=intent.mode,
         speed_kmh=SPEED_KMH[intent.mode],
@@ -773,5 +782,8 @@ def retrieve(
         people_marks=sum(1 for c in top if c.people is not None),
         requested_nearby=nearby,
         requested_nearby_with_hours=nearby_with_hours,
+        **pool.marks._asdict(),  # halal / step-free counts of the records in range
+        excluded_alcohol=pool.alcohol_removed,
+        excluded_avoid=pool.avoided,
     )
     return RetrievalResult(candidates=top, filters=filters)

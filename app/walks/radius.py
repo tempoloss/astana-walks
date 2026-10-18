@@ -109,8 +109,8 @@ def declared_radius_m(intent: Intent, adverse: bool, constraints: Constraints) -
 def backfill_ok(category: str, intent: Intent, stroll: bool) -> bool:
     """May a place outside the requested categories fill up a short list? Never fast food / bars / 'other' (bars
     only for a night request); a stroll takes only what fits a walk. A state-service request («ЦОН», category
-    `other`) is never padded with cafes and parks: a short list is the honest answer."""
-    if "other" in intent.categories:
+    `other`) or a toilet is never padded with cafes and parks: a short list is the honest answer."""
+    if "other" in intent.categories or "public_toilet" in intent.categories:
         return False
     if category in NEVER_BACKFILL and not (category == "bar_nightlife" and intent.night):
         return False

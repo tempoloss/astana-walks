@@ -547,6 +547,8 @@
       "budget_min": 45,
       "must_flag_unknown_hours": false,
       "indoor_preferred": true,
+      "outdoor_wished": true,
+      "outdoor_wished": true,
       "kids_ok": false,
       "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. PM2.5 60: приоритет помещениям. В непогоду допустимы торговые центры как помещение вместо прогулки."
     }
@@ -1141,6 +1143,8 @@
       "budget_min": 45,
       "must_flag_unknown_hours": false,
       "indoor_preferred": true,
+      "outdoor_wished": true,
+      "outdoor_wished": true,
       "kids_ok": false,
       "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. PM2.5 60: приоритет помещениям. В непогоду допустимы торговые центры как помещение вместо прогулки."
     }
@@ -1403,6 +1407,8 @@
       "budget_min": 45,
       "must_flag_unknown_hours": false,
       "indoor_preferred": true,
+      "outdoor_wished": true,
+      "outdoor_wished": true,
       "kids_ok": false,
       "notes": "Парк/набережная/достопримечательность в пределах ~12 мин пешком; маршрут туда-обратно укладывается в 45 мин. Ощущается −25°C: приоритет помещениям, радиус пешком ≤ 600 м. В непогоду допустимы торговые центры как помещение вместо прогулки."
     }
@@ -1741,6 +1747,133 @@
       "indoor_preferred": true,
       "kids_ok": true,
       "notes": "Площадка, интерактивный музей или развлечение; никаких баров; под -15°C / PM2.5>35 — только помещения. PM2.5 60: приоритет помещениям."
+    }
+  },
+  {
+    "id": "wish1",
+    "label": "Байтерек · вечер после заката · НМУ/смог · «Где прогуляться можно щас?»",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T21:42",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 80
+    },
+    "query": "Где прогуляться можно щас?",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "eve",
+      "weather": "smog",
+      "persona": "walk"
+    },
+    "author": "DialogueWish",
+    "written_at": "2026-10-18",
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "must_include_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 15,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "outdoor_wished": true,
+      "kids_ok": false,
+      "notes": "Воздух плохой и темно, но человек просит гулять: только парки, достопримечательности, смотровые; кафе и ТЦ — нарушение (жалоба владельца)."
+    }
+  },
+  {
+    "id": "wish2",
+    "label": "Байтерек · вечер · НМУ/смог · «Я именно погулять хочу» (повтор желания)",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T21:42",
+    "weather_override": null,
+    "air_override": {
+      "pm25": 80
+    },
+    "query": "Я именно погулять хочу",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "eve",
+      "weather": "smog",
+      "persona": "walk"
+    },
+    "author": "DialogueWish",
+    "written_at": "2026-10-18",
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "must_include_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 15,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "outdoor_wished": true,
+      "kids_ok": false,
+      "notes": "Повтор желания после того, как система предложила кафе: ответ всё равно уличный."
+    }
+  },
+  {
+    "id": "wish3",
+    "label": "Байтерек · мороз −25 · «хочу погулять»",
+    "origin": {
+      "name": "Байтерек",
+      "lat": 51.1283,
+      "lon": 71.4305
+    },
+    "when": "2026-10-20T19:00",
+    "weather_override": {
+      "apparent_c": -25,
+      "precip_mm": 0
+    },
+    "air_override": null,
+    "query": "хочу погулять",
+    "tz": false,
+    "axes": {
+      "origin": "baiterek",
+      "when": "eve",
+      "weather": "cold",
+      "persona": "walk"
+    },
+    "author": "DialogueWish",
+    "written_at": "2026-10-18",
+    "expected": {
+      "allowed_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "must_include_categories": [
+        "park_garden",
+        "attraction_landmark",
+        "viewpoint"
+      ],
+      "max_walk_min_one_way": 15,
+      "must_flag_unknown_hours": false,
+      "indoor_preferred": true,
+      "outdoor_wished": true,
+      "kids_ok": false,
+      "notes": "Мороз, но желание названо: уличные места остаются, прогулку лучше сократить; кафе не подменяют."
     }
   }
 ]

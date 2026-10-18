@@ -2,39 +2,41 @@
   "dataset": "poi.enriched",
   "mode": "offline",
   "chain": [],
-  "cases": 41,
-  "cases_with_recs": 41,
-  "recs_total": 122,
+  "cases": 44,
+  "cases_with_recs": 44,
+  "recs_total": 125,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 100.0,
-  "case_all_ok_rate": 100.0,
+  "constraint_ok_rate": 99.2,
+  "case_all_ok_rate": 97.7,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 100.0,
+  "coverage": 97.7,
   "diversity": 100.0,
-  "top1_ok_rate": 100.0,
-  "top1_open_rate": 65.9,
-  "unknown_hours_rec_share": 37.7,
-  "non_osm_rec_share": 63.1,
-  "avg_walk_min": 4.6,
+  "top1_ok_rate": 97.7,
+  "top1_open_rate": 56.8,
+  "unknown_hours_rec_share": 45.6,
+  "non_osm_rec_share": 59.2,
+  "avg_walk_min": 5.0,
   "wifi_socket_in_data_share": 28.6,
   "route_stop_closed_cases": 4,
-  "latency_ms_median": 11.0,
+  "latency_ms_median": 10.0,
   "latency_ms_p90": 20.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
-    "template": 41
+    "template": 44
   },
   "llm_chain_failed": 0,
   "llm_invalid_answers": 0,
-  "violation_cases": {},
-  "padded_rec_share": 15.6,
-  "expanded_rec_share": 0.0,
-  "backfill_rec_share": 4.1,
-  "substituted_rec_share": 11.5,
-  "padded_case_share": 24.4,
+  "violation_cases": {
+    "walk_too_long": 1
+  },
+  "padded_rec_share": 8.8,
+  "expanded_rec_share": 0.8,
+  "backfill_rec_share": 2.4,
+  "substituted_rec_share": 5.6,
+  "padded_case_share": 13.6,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -42,7 +44,14 @@
   "silent_mismatch_cases": null,
   "abstain_detail": [],
   "ai_detail": [],
-  "failing_cases": [],
+  "failing_cases": [
+    {
+      "case_id": "lrt-wk14-cold-walk",
+      "violations": [
+        "walk_too_long"
+      ]
+    }
+  ],
   "case_set": "main",
   "label": "offline",
   "header": {
@@ -52,9 +61,9 @@
     "data_path": "data/poi.enriched.json",
     "cases_file": "cases.json",
     "case_set": "main",
-    "records": 41,
-    "git": "9fbe2fc",
+    "records": 44,
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:18+05:00"
+    "generated_at": "2026-10-19T00:28:03+05:00"
   }
 }

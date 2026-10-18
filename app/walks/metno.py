@@ -58,6 +58,16 @@ class Forecast:
 
 
 @dataclass(frozen=True)
+class Hour:
+    """One hour of the series ahead of «now», for the panel's strip."""
+
+    time: datetime  # UTC
+    temperature_c: float
+    precipitation_mm: float | None  # next_1_hours; None when the entry has none
+    symbol: str  # clear / partly / cloud / fog / rain / sleet / snow / thunder, or "" when the series has no symbol
+
+
+@dataclass(frozen=True)
 class _Entry:
     time: datetime
     temperature_c: float
@@ -66,6 +76,7 @@ class _Entry:
     precipitation_mm: float | None
     wind_from_deg: float | None = None
     cloud_pct: float | None = None
+    symbol: str | None = None  # symbol_code of next_1_hours («lightsnow», «partlycloudy_night»)
 
 
 @dataclass
@@ -94,6 +105,7 @@ def parse(doc: dict) -> list[_Entry]:
         for item in series:
             details = item["data"]["instant"]["details"]
             one_hour = item["data"].get("next_1_hours")
+            symbol = one_hour.get("summary", {}).get("symbol_code") if one_hour else None
             precipitation = one_hour["details"].get("precipitation_amount") if one_hour else None
             humidity = details.get("relative_humidity")
             wind = details.get("wind_speed")
@@ -108,6 +120,7 @@ def parse(doc: dict) -> list[_Entry]:
                     precipitation_mm=None if precipitation is None else float(precipitation),
                     wind_from_deg=None if wind_from is None else float(wind_from),
                     cloud_pct=None if cloud is None else float(cloud),
+                    symbol=symbol,
                 )
             )
     except (KeyError, TypeError, AttributeError) as exc:
@@ -136,6 +149,42 @@ def pick(entries: list[_Entry], utc_now: datetime) -> Forecast | None:
         ),
         cloud_pct=entry.cloud_pct,
     )
+
+
+def symbol_kind(code: str | None) -> str:
+    """MET Norway's symbol_code reduced to what the panel draws; "" for a code it does not know."""
+    if not code:
+        return ""
+    for needle, kind in (
+        ("thunder", "thunder"),
+        ("sleet", "sleet"),
+        ("snow", "snow"),
+        ("rain", "rain"),
+        ("fog", "fog"),
+        ("clearsky", "clear"),
+        ("fair", "clear"),
+        ("partlycloudy", "partly"),
+        ("cloudy", "cloud"),
+    ):
+        if needle in code:
+            return kind
+    return ""
+
+
+def upcoming(utc_now: datetime, count: int = 6) -> list[Hour]:
+    """The next `count` hours of the series in memory (the entries after «now»), nothing when the series is not
+    confirmed any more (MAX_STALE). Reads memory only: the refresh thread is what fetches."""
+    state = _state
+    if state.fetched_at is None or utc_now - state.fetched_at > MAX_STALE:
+        return []
+    later = sorted(
+        (e for e in state.entries if utc_now < e.time <= utc_now + timedelta(hours=count + 1)),
+        key=lambda e: e.time,
+    )
+    return [
+        Hour(e.time, e.temperature_c, e.precipitation_mm, symbol_kind(e.symbol))
+        for e in later[:count]
+    ]
 
 
 def _ttl(headers, utc_now: datetime) -> float:

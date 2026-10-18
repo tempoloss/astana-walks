@@ -31,9 +31,9 @@ from walks.pipeline import recommend
 from walks.profile import (
     Profile,
     adapt_weather,
+    avoided_kinds,
     constraints_for,
     delete_profile,
-    explain,
     forget_item,
     list_items,
     load_profile,
@@ -362,9 +362,11 @@ def test_socket_marks_make_a_cafe_usable_for_a_quiet_cafe_with_a_socket():
     why = after.recs[0].why
     assert "по отметкам людей" in why.lower()
     assert "есть розетка (2 отметки)" in why
-    assert "демо" not in why  # real marks are not labelled demo
+    assert "не настоящие" not in why  # real marks are not labelled sample ones
     demo = FeedbackIndex([_mark("far", "has_socket", 1, demo=True)])
-    assert "демо-данные" in _ask(q, pois, feedback=demo).recs[0].why.lower()
+    sample = _ask(q, pois, feedback=demo).recs[0].why.lower()
+    assert "(примерные, не настоящие)" in sample
+    assert "демо" not in sample
 
 
 def test_quiet_and_noisy_marks_move_a_quiet_request():
@@ -534,14 +536,13 @@ def test_profile_flags_reach_the_answer_and_say_so():
     res = _ask("Кафе", pois, profile=profile)
     assert res.intent.intent.with_kids
     assert res.profile_applied == ["with_kids", "quiet"]
-    for r in res.recs:
-        assert "Вы отмечали, что ходите с ребёнком (4-7 лет)" in r.why
+    assert all(
+        "Вы отмечали" not in r.why for r in res.recs
+    )  # said once, in the lead (test_stated_wish)
     plain = _ask("Кафе", pois)
     assert not plain.intent.intent.with_kids
     assert plain.profile_applied == []
     assert all("Вы отмечали" not in r.why for r in plain.recs)
-    assert explain([], profile, "ru") == ""
-    assert explain(["quiet"], profile, "en").startswith("You told me that you like quiet")
 
 
 def test_visited_places_are_ranked_lower():
@@ -569,7 +570,19 @@ def test_liked_categories_give_a_small_lift():
     gain = next(c.score for c in liked.candidates if c.poi.id == "p") - next(
         c.score for c in base.candidates if c.poi.id == "p"
     )
-    assert gain == pytest.approx(0.3)
+    assert gain == pytest.approx(0.3 + 1.5)  # a request that names no kind lifts a liked kind more
+    named = retrieve(
+        pois,
+        *ORIGIN,
+        Intent(wished=["cafe"]),
+        NOON,
+        personal=personal_view(record_like(Profile(), "park_garden")),
+    )
+    plain = retrieve(pois, *ORIGIN, Intent(wished=["cafe"]), NOON)
+    lift = next(c.score for c in named.candidates if c.poi.id == "p") - next(
+        c.score for c in plain.candidates if c.poi.id == "p"
+    )
+    assert lift == pytest.approx(0.3)
 
 
 def test_pace_no_alcohol_and_cold_tolerance_shape_the_search():
@@ -705,16 +718,21 @@ def test_a_childs_age_needs_with_kids():
     assert Profile.model_validate(p.model_dump()).kids_age_band is None
 
 
-def test_avoided_kinds_narrow_the_intent_but_an_explicit_request_wins():
+def test_avoided_kinds_are_a_hard_constraint_unless_the_request_names_the_kind():
     p = Profile(avoid=["bar_nightlife", "mall", "mall"])
     assert p.avoid == ["bar_nightlife", "mall"]
+    assert avoided_kinds(Intent(), p, "куда сходить") == ["bar_nightlife", "mall"]
+    assert avoided_kinds(Intent(wished=["mall"]), p, "хочу в торговый центр") == ["bar_nightlife"]
+    assert avoided_kinds(Intent(), Profile(), "") == []
+    cafe = Profile(
+        avoid=["cafe"]
+    )  # «поесть» names a family: the avoided café leaves, the restaurants stay
+    assert avoided_kinds(
+        Intent(wished=["restaurant", "cafe", "fast_food"]), cafe, "хочу поесть"
+    ) == ["cafe"]
+    assert avoided_kinds(Intent(wished=["cafe"]), cafe, "хочу кофе") == []
     merged, applied = merge_into_intent(Intent(), p, "куда сходить")
-    assert merged.exclude_categories == ["bar_nightlife", "mall"]
-    assert "avoid" in applied
-    asked, applied = merge_into_intent(Intent(categories=["mall"]), p, "торговый центр")
-    assert asked.exclude_categories == ["bar_nightlife"]
-    none, applied = merge_into_intent(Intent(), Profile(), "куда сходить")
-    assert none.exclude_categories == []
+    assert merged.exclude_categories == []  # the just-visited kinds keep their own, softer rule
     assert "avoid" not in applied
     assert [i.key for i in list_items(p)] == ["avoid:bar_nightlife", "avoid:mall"]
     assert forget_item(p, "avoid:mall").avoid == ["bar_nightlife"]

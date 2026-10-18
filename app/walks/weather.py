@@ -247,6 +247,7 @@ def make_weather(
     cloud_pct: float | None = None,
     precip_now: str = "",
     precip_level: int = 0,
+    visibility_m: int | None = None,
 ) -> WeatherInfo:
     """The conditions with their verdict. `conditions` are the adverse tokens read off the airport report; an active
     Kazhydromet storm warning adds «storm_warning», an active НМУ adds «nmu» (the air is then bad). With
@@ -277,6 +278,7 @@ def make_weather(
         cloud_pct=cloud_pct,
         precip_now=precip_now,  # type: ignore[arg-type]
         precip_level=precip_level,
+        visibility_m=visibility_m,
         conditions=tokens,
         warnings=list(warnings),
         adverse=adverse,
@@ -424,6 +426,7 @@ def _obs_fields(obs: metar.Observation, forecast: dict) -> dict:
         "cloud_pct": None if obs.cloud is None else metar.CLOUD_PCT[obs.cloud],
         "precip_now": falling[0],
         "precip_level": falling[1],
+        "visibility_m": obs.visibility_m,
     }
 
 

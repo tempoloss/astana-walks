@@ -20,6 +20,7 @@ import math
 import os
 import re
 from dataclasses import dataclass
+from functools import lru_cache
 from itertools import pairwise
 from pathlib import Path
 
@@ -255,6 +256,73 @@ def lit_share(
     n = sum(counts.values())
     yes, no = counts["yes"] / n, counts["no"] / n
     return LitShare(lit_yes=yes, lit_no=no, unknown=1.0 - yes - no, known_share=yes + no)
+
+
+LIT_PLACE_RADIUS_M = (
+    60.0  # a place's point is its middle: a lit way this near «runs along» it (a park's own edge)
+)
+_CELL_DEG = 0.002  # the grid cell of the lit-way index, ~220 m
+_M_LAT = 111_000.0
+
+
+def _local_m(lat: float, lon: float, lat0: float) -> tuple[float, float]:
+    return lon * _M_LAT * math.cos(math.radians(lat0)), lat * _M_LAT
+
+
+def _seg_dist_m(plat: float, plon: float, a: tuple[float, float], b: tuple[float, float]) -> float:
+    """Distance from a point to the segment a-b, on a local flat projection (a few hundred metres across)."""
+    px, py = _local_m(plat, plon, plat)
+    ax, ay = _local_m(a[0], a[1], plat)
+    bx, by = _local_m(b[0], b[1], plat)
+    dx, dy = bx - ax, by - ay
+    span = dx * dx + dy * dy
+    t = 0.0 if span == 0 else max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / span))
+    return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
+
+
+@lru_cache(maxsize=4)
+def _lit_index(
+    city_dir: str, stamp: int
+) -> dict[tuple[int, int], list[tuple[tuple[float, float], tuple[float, float]]]]:
+    """The lit=yes ways of the city as segments in a grid (cell -> the segments near it). `stamp` is the file's mtime:
+    a replaced file is read again."""
+    index: dict[tuple[int, int], list[tuple[tuple[float, float], tuple[float, float]]]] = {}
+    pad = LIT_PLACE_RADIUS_M / _M_LAT
+    pad_lon = pad / math.cos(
+        math.radians(51.1)
+    )  # a degree of longitude is shorter at Astana's latitude
+    for way in _read("lit.json"):
+        if way.get("lit") != "yes":
+            continue
+        pts = [(p[0], p[1]) for p in way.get("geometry") or [] if len(p) >= 2]
+        for a, b in pairwise(pts):
+            lo_i, hi_i = (
+                int((min(a[0], b[0]) - pad) // _CELL_DEG),
+                int((max(a[0], b[0]) + pad) // _CELL_DEG),
+            )
+            lo_j, hi_j = (
+                int((min(a[1], b[1]) - pad_lon) // _CELL_DEG),
+                int((max(a[1], b[1]) + pad_lon) // _CELL_DEG),
+            )
+            for i in range(lo_i, hi_i + 1):
+                for j in range(lo_j, hi_j + 1):
+                    index.setdefault((i, j), []).append((a, b))
+    return index
+
+
+def lit_near(lat: float, lon: float) -> bool:
+    """Does a way the data tag `lit=yes` pass within LIT_PLACE_RADIUS_M of the point? True is a fact of the data; False
+    is only «no tagged lit way near»: the absence of a tag is never read as darkness, so the caller says nothing
+    against the place."""
+    folder = _city_dir()
+    try:
+        stamp = (folder / "lit.json").stat().st_mtime_ns
+    except OSError:
+        return False
+    segments = _lit_index(str(folder), stamp).get(
+        (int(lat // _CELL_DEG), int(lon // _CELL_DEG)), ()
+    )
+    return any(_seg_dist_m(lat, lon, a, b) <= LIT_PLACE_RADIUS_M for a, b in segments)
 
 
 def construction_near_route(

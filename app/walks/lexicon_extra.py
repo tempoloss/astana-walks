@@ -260,19 +260,21 @@ EXTRA_CONCEPTS: tuple[Concept, ...] = (
         ),
         tier="mood",
     ),
-    # Wishes the dataset holds no facts about: they travel as keywords so that the answer can say so
+    # A toilet: the kind `public_toilet` when no other kind is named («где туалет»); next to one («кафе с туалетом») a
+    # keyword the dataset holds no facts about, so that the answer can say so
     Concept(
         "wish_toilet",
         ru=(
             "туалет", "уборн", "санузел",
         ),
         kk=(
-            "дәретхана",
+            "дәретхана", "әжетхана",
         ),
         en=(
-            "toilet", "restroom", "bathroom", "wc=",
+            "toilet", "restroom", "bathroom", "washroom", "wc=",
         ),
         tier="mood",
+        categories=("public_toilet",),
         keywords=("туалет",),
     ),
     Concept(

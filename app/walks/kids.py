@@ -140,3 +140,34 @@ def unnamed_more(n: int, lang: str | None) -> str:
     if lang == "kk":
         return f"Жақын жерде мұндай атаусыз орын тағы {n}."
     return f"And {n} more unnamed place{'s' if n != 1 else ''} of this kind nearby."
+
+
+# What a request with a child lifts, by the child's age band of the profile ("": no age known). The older the child,
+# the less a playground and the more a play centre, a museum or a mall answers it.
+_BASE_KIDS = {"museum_gallery": 1.0, "park_garden": 0.5, "coworking_library": -1.5}
+KIDS_BONUS: dict[str, dict[str, float]] = {
+    "": {**_BASE_KIDS, "kids_playground": 3.0, "entertainment": 1.5},
+    "0-3": {
+        **_BASE_KIDS,
+        "kids_playground": 3.0,
+        "park_garden": 1.5,
+        "entertainment": 0.5,
+        "museum_gallery": 0.0,
+    },
+    "4-7": {**_BASE_KIDS, "kids_playground": 3.0, "entertainment": 2.0},
+    "8-12": {
+        **_BASE_KIDS,
+        "kids_playground": 1.5,
+        "entertainment": 2.5,
+        "museum_gallery": 2.0,
+        "mall": 0.5,
+    },
+    "13+": {
+        **_BASE_KIDS,
+        "kids_playground": -2.0,
+        "entertainment": 2.5,
+        "museum_gallery": 1.5,
+        "mall": 1.0,
+        "coworking_library": -1.0,
+    },
+}

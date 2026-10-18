@@ -15,6 +15,8 @@ import { renderAnswer, renderError, renderFolded, renderThinking } from './threa
 
 const STORE = 'anyq.dialog';
 const BUDGETS = [30, 60, 120];
+const WAIT_SHAPE = 300; // ms before the skeleton of the answer shows
+const WAIT_STEPS = 3000; // ms before the steps do
 const COMPANY = ['solo', 'pair', 'kids'];
 const WEATHER = ['now', 'frost', 'rain', 'smog'];
 
@@ -90,11 +92,18 @@ export function state() {
 
 export function setWhere(where, { fly = true } = {}) {
   S.where = where;
-  $('where-text').textContent = tr('loc_here', { name: whereName() });
+  showWhere();
   mapView.setYou([where.lat, where.lon], tr('you_marker'));
   updateChrome();
   if (fly) mapView.flyTo([where.lat, where.lon], 14.5);
   save();
+}
+
+// «Старт по умолчанию: Байтерек» while the place is one of the app's own (a preset), «Вы здесь: …» once it is the visitor's
+function showWhere() {
+  const preset = Boolean(S.where.preset);
+  $('where-text').textContent = tr(preset ? 'loc_default' : 'loc_here', { name: whereName() });
+  $('where-change').textContent = tr(preset ? 'loc_set' : 'loc_change');
 }
 
 // ---------------------------------------------------------------- the composer: options
@@ -408,7 +417,7 @@ function miniRow() {
     n ? h('span', { class: 'num sel', text: String(n) }) : null,
     h('span', { class: 'mn', text: place.name }),
     statusEl(place),
-    h('span', { class: 'mm mono', text: minutes(place.walk.minutes, place.walk.method) }),
+    h('span', { class: 'mm', text: minutes(place.walk.minutes, place.walk.method) }),
   );
   box.setAttribute('aria-label', place.name);
   box.hidden = false;
@@ -427,12 +436,12 @@ function render() {
   } else {
     const last = S.items.length - 1;
     S.items.forEach((item, idx) => {
-      const li = h('li', { class: 'turn', id: `turn-${item.id}` });
+      const li = h('li', { class: `turn${item.status === 'pending' ? ' pending' : ''}`, id: `turn-${item.id}` });
       const folded = idx !== last && !item.open && item.status === 'done';
       if (idx === 0 && item.resp) li.append(contextLabel(item));
       li.append(h('p', { class: 'u', text: item.text }));
       if (folded) li.append(renderFolded(item, answerCtx(item)));
-      else if (item.status === 'pending') li.append(renderThinking(`thinking-${item.id}`, item.stages || []));
+      else if (item.status === 'pending') li.append(renderThinking(`thinking-${item.id}`, item.stages || [], item.phase || 0));
       else if (item.status === 'error') li.append(renderError(() => send(item.text, { retry: item })));
       else li.append(renderAnswer(item.resp, answerCtx(item)));
       thread.append(li);
@@ -477,6 +486,7 @@ export async function send(text, { retry = null, fresh = false } = {}) {
   const item = retry || { id: `t${(S.seq += 1)}`, text: clean, status: 'pending', resp: null, open: false, where: [S.where.lat, S.where.lon] };
   item.status = 'pending';
   item.stages = [];
+  item.phase = 0;
   if (ui.detail && sheet) sheet.lock(false);
   ui.detail = null;
   if (!retry) {
@@ -487,10 +497,20 @@ export async function send(text, { retry = null, fresh = false } = {}) {
   render();
   scrollToTurn(item);
   setBusy(true);
+  // the wait: nothing for 300 ms (a quick answer never flashes a placeholder), then the shape of the answer, after 3 s the steps
+  const refresh = () => {
+    const el = document.getElementById(`thinking-${item.id}`);
+    if (el) el.replaceWith(renderThinking(`thinking-${item.id}`, item.stages, item.phase));
+    if (sheet) sheet.refresh();
+  };
+  const timers = [[WAIT_SHAPE, 1], [WAIT_STEPS, 2]].map(([ms, phase]) =>
+    setTimeout(() => {
+      item.phase = phase;
+      refresh();
+    }, ms));
   const onStage = (stage) => {
     item.stages.push(stage);
-    const el = document.getElementById(`thinking-${item.id}`);
-    if (el) el.replaceWith(renderThinking(`thinking-${item.id}`, item.stages));
+    refresh();
   };
   try {
     const resp = await api.turn(payload(clean, item), onStage);
@@ -508,6 +528,7 @@ export async function send(text, { retry = null, fresh = false } = {}) {
     render();
   } finally {
     setBusy(false);
+    for (const t of timers) clearTimeout(t);
     save();
   }
 }
@@ -554,7 +575,7 @@ function suggestionChips() {
   const box = $('starters');
   box.replaceChildren(
     ...genericAsks().map((s) => h('button', { type: 'button', class: 'chip', title: s.text, dataset: { suggest: s.id }, onclick: () => send(s.text, { fresh: true }) }, s.label)),
-    h('button', { type: 'button', class: 'chip marks-chip', id: 'hello-marks', onclick: () => app.openLocation() }, icon('home'), tr('bm_title')),
+    h('button', { type: 'button', class: 'chip marks-chip', id: 'hello-marks', onclick: () => app.memory.open() }, icon('home'), tr('bm_title')),
   );
 }
 
@@ -568,8 +589,8 @@ export function renderFacts() {
   }
   box.replaceChildren(
     h('p', { class: 'lbl', text: tr('facts_in_data') }),
-    h('p', { class: 'row' }, h('b', { class: 'mono', text: count(cov.places) }), ` ${tr('facts_places', { n: '' }).trim()}`, ' · ', tr('facts_hours', { p: '' }).trim(), ' ', h('b', { class: 'mono', text: percent(cov.hours) })),
-    h('p', { class: 'cov' }, h('i', { class: 'hzb hz' }), h('span', { text: tr('facts_note') })),
+    h('p', { class: 'row' }, h('b', { class: 'tnum', text: count(cov.places) }), ` ${tr('facts_places', { n: '' }).trim()}`, ' · ', tr('facts_hours', { p: '' }).trim(), ' ', h('b', { class: 'tnum', text: percent(cov.hours) })),
+    h('p', { class: 'cov', text: tr('facts_note') }),
   );
 }
 
@@ -580,7 +601,7 @@ function relang(_lang, { user }) {
   whenPanel();
   renderFacts();
   if (S.where) {
-    $('where-text').textContent = tr('loc_here', { name: whereName() });
+    showWhere();
     mapView.setYou([S.where.lat, S.where.lon], tr('you_marker'));
   }
   const last = lastDone();

@@ -94,6 +94,53 @@ BOXES = """() => {
 }"""
 
 
+# visible text that is an untranslated i18n key (snake_case words only): a bug on any picture
+RAW_KEYS = r"""() => {
+  const key = /^[a-z][a-z0-9]*(_[a-z0-9]+)+$/;
+  const found = [];
+  const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  for (let node = walk.nextNode(); node; node = walk.nextNode()) {
+    const text = node.textContent.trim();
+    const el = node.parentElement;
+    if (!key.test(text) || !el || el.closest('script, style, noscript, [hidden]')) continue;
+    const css = getComputedStyle(el);
+    if (css.visibility === 'hidden' || css.display === 'none' || !el.getClientRects().length) continue;
+    found.push(text);
+  }
+  return [...new Set(found)];
+}"""
+
+# a /api/turn stream made slow and staged like the real one (stage lines, then the answer after `ms`)
+SLOW_STREAM = r"""(ms) => {
+  if (!window.__realFetch) window.__realFetch = window.fetch.bind(window);
+  const real = window.__realFetch;
+  window.fetch = async (url, opts) => {
+    if (!String(url).includes('/api/turn')) return real(url, opts);
+    const t0 = performance.now(); // the delays count from the request, whatever the real answer cost
+    const res = await real(url, opts);
+    const lines = (await res.text()).split('\n').filter(Boolean);
+    const stages = lines.filter((l) => l.includes('"stage"'));
+    const rest = lines.filter((l) => !l.includes('"stage"'));
+    const enc = new TextEncoder();
+    const until = (at) => new Promise((r) => setTimeout(r, Math.max(at - (performance.now() - t0), 0)));
+    const stream = new ReadableStream({
+      async start(c) {
+        for (const [at, line] of [[Math.min(100, ms / 2), stages[0]], [Math.min(1200, ms / 2), stages[1]], [Math.max(ms - 1800, ms / 2), stages[2]]]) {
+          if (!line) continue;
+          await until(at);
+          c.enqueue(enc.encode(line + '\n'));
+        }
+        await until(ms);
+        for (const line of rest) c.enqueue(enc.encode(line + '\n'));
+        c.close();
+      },
+    });
+    return new Response(stream, { status: 200, headers: { 'content-type': 'application/x-ndjson' } });
+  };
+}"""
+RESTORE_FETCH = "() => { if (window.__realFetch) window.fetch = window.__realFetch; }"
+
+
 @dataclass
 class Shot:
     file: str
@@ -105,6 +152,67 @@ class Shot:
 
 
 class Tour:
+    def memory_applies(self, browser, url: str) -> None:
+        """The memory settings apply at once: «Нужен халяль» flipped (nothing saved by hand, the panel closed), then
+        «хочу поесть»: the request carries the profile's id and profile_on, and the answer says the setting was
+        taken into account («халяль» in the lead or in the places' reasons)."""
+        page = self.open(browser, url)
+        if self.phone:
+            self.press(page, ".menu-open")
+            self.press(page, "#menu .memory-open")
+        else:
+            self.press(page, ".tabs .memory-open")
+        page.wait_for_selector("#memory[open] #memory-root .mf-toggle")
+        halal = page.locator("#memory-root .mf-toggle", has_text="халяль").locator("input")
+        halal.scroll_into_view_if_needed()
+        halal.click(force=True)
+        page.wait_for_selector("#memory-root .mf-status[data-state='saved']", timeout=10000)
+        s = self.shot(
+            page,
+            "memory-instant",
+            "the memory: «Нужен халяль» flipped, «Сохранено», nothing to press",
+        )
+        if page.locator("#memory-root .mf-actions, #memory-root button[type='submit']").count():
+            s.ok = False
+            s.notes.append("a save button is left for the instant settings")
+        if not page.locator("#mem-toggle").is_checked():
+            s.ok = False
+            s.notes.append("flipping a setting did not turn «Запоминать мои предпочтения» on")
+        page.locator("#memory-root > header button").click()
+        page.wait_for_selector("#memory:not([open])", state="attached")
+        page.wait_for_timeout(300)
+        with page.expect_response(lambda r: r.url.endswith("/api/turn")) as sent:
+            self.ask(page, "хочу поесть")
+        body = sent.value.request.post_data_json
+        answer = next(
+            json.loads(line)["answer"]
+            for line in sent.value.text().splitlines()
+            if line.startswith('{"answer"')
+        )["turn"]
+        said = " ".join(
+            [answer["reply"], *(p.get("why", "") for p in answer.get("places", []))]
+        ).lower()
+        s = self.shot(page, "memory-answer", "«хочу поесть» with «Нужен халяль» on")
+        # the camera is still settling after the answer: two pins may touch for a moment (as in the quick-wait shot)
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if not body.get("profile_id") or body.get("profile_on") is not True:
+            s.ok = False
+            s.notes.append(
+                f"the request has profile_id={body.get('profile_id')!r}, profile_on={body.get('profile_on')!r}"
+            )
+        if "халя" not in said and "халал" not in said:
+            s.ok = False
+            s.notes.append(
+                f"the answer does not say the halal setting was taken into account: {said[:400]!r} {body}"
+            )
+        # leave nothing behind: «Забыть всё» deletes the profile file
+        page.evaluate("import('/static/js/memory.js').then((m) => m.open())")
+        page.wait_for_selector("#memory-root .mf-forget")
+        page.locator("#memory-root .mf-forget").click()
+        page.wait_for_timeout(500)
+        page.context.close()
+
     def __init__(self, base: str, size: str, out: Path = OUT):
         self.base, self.size, self.out = base, size, out
         self.w, self.h, _ = SIZES[size]
@@ -141,6 +249,11 @@ class Tour:
         page.screenshot(path=str(self.out / file))
         s = Shot(file, what)
         self.shots.append(s)
+        for key in page.evaluate(
+            RAW_KEYS
+        ):  # an untranslated i18n key on screen is a bug on every picture
+            s.ok = False
+            s.notes.append(f"raw i18n key on screen: {key!r}")
         if self.phone:
             for line in audit(page):  # every phone picture: targets, overlaps, cuts, clipped text
                 s.ok = False
@@ -299,6 +412,7 @@ class Tour:
             shot.notes.append(
                 f"primary card not fully visible: {card['top']:.0f}..{card['bottom']:.0f}, input at {facts['composerTop']:.0f}"
             )
+        self.no_hatch(page, shot)
         pins = page.evaluate(BOXES)
         if pins["pins"] < 2:
             shot.ok = False
@@ -342,8 +456,15 @@ class Tour:
         if before not in rows:
             shot.ok = False
             shot.notes.append(f"the place that was main ({before!r}) is not a row now: {rows}")
+        if main.locator(".st.unknown").count() and main.locator(".strip, .hbar").count():
+            shot.ok = False
+            shot.notes.append("a day strip on a card whose hours are unknown")
+        unknown = main.locator(".st.unknown").count() > 0
         for css, what in (
-            (".strip", "the day's hours"),
+            (
+                ".st.unknown" if unknown else ".strip",
+                "the plain «hours unknown»" if unknown else "the day's hours",
+            ),
             (".c-src", "the source line"),
             (".acts .btn", "the way out"),
         ):
@@ -361,6 +482,8 @@ class Tour:
         else:
             self.run_desk_core(page)
         self.run_sweep(page)
+        self.waiting(page)
+        self.memory_applies(browser, online)
 
         # Kazakh: the interface and the recorded Kazakh request
         self.set_lang(page, "kk")
@@ -432,9 +555,9 @@ class Tour:
         page.locator("#thread .card.primary .c-src .lnk").click()
         page.wait_for_timeout(500)
         s = self.shot(page, "details", "the details view of the main card")
-        if not page.locator("#thread .details-view dl.dl").count():
+        if not page.locator("#thread .details-view .d-sec").count():
             s.ok = False
-            s.notes.append("no details table")
+            s.notes.append("no grouped details (now, getting there, about)")
         page.keyboard.press("Escape")
         page.wait_for_timeout(400)
         self.ask(page, OPEN_NOW)
@@ -538,9 +661,9 @@ class Tour:
             "details",
             "the details of the main card: the sheet is full, the way out and back at the bottom",
         )
-        if not page.locator("#thread .details-view dl.dl").count():
+        if not page.locator("#thread .details-view .d-sec").count():
             s.ok = False
-            s.notes.append("no details table")
+            s.notes.append("no grouped details (now, getting there, about)")
         if not sheet(page)["locked"] or sheet(page)["pos"] != "full":
             s.ok = False
             s.notes.append("the details are not on a full, locked sheet")
@@ -606,8 +729,9 @@ class Tour:
         self.new_search(page)
 
     def unknown_hours(self, page: Page) -> None:
-        """A place with no hours in the data: the word and the hatch, never «открыто»; asked about, the answer says so."""
-        unk = page.locator("#thread .unk")
+        """A place with no hours in the data: the plain muted words and no strip, never «открыто», never a hatch;
+        asked about, the answer says so."""
+        unk = page.locator("#thread .st.unknown")
         if not unk.count():
             return
         holder = unk.first.locator("xpath=ancestor::*[@data-pid][1]")
@@ -616,9 +740,95 @@ class Tour:
         s = self.shot(
             page, "offline-unknown", f"offline, hours unknown: «{name}», the way as a straight line"
         )
-        if not page.locator("#thread .qa-card .hbar.none").count():
+        card = page.locator("#thread .qa-card")
+        if not card.locator(".st.unknown").count():
             s.ok = False
-            s.notes.append("no hatched day strip for a place with unknown hours")
+            s.notes.append("the card of a place with unknown hours does not say so")
+        if card.locator(".strip, .hbar").count():
+            s.ok = False
+            s.notes.append("a day strip for a place with unknown hours")
+        self.no_hatch(page, s)
+
+    @staticmethod
+    def no_hatch(page: Page, shot: Shot) -> None:
+        """Nothing on the page is hatched: unknown is a plain word, never a pattern."""
+        found = page.evaluate(
+            """() => [...document.querySelectorAll('#view-assistant *, #view-city *, #plate *, #legend *')].filter((el) => {
+              const css = getComputedStyle(el);
+              return css.backgroundImage.includes('repeating-linear') && el.getClientRects().length;
+            }).map((el) => el.className || el.tagName)"""
+        )
+        if found:
+            shot.ok = False
+            shot.notes.append(f"hatched elements on the page: {found[:3]}")
+
+    def waiting(self, page: Page) -> None:
+        """The wait for an answer on a stream made slow: the message is there at once, nothing for the first 300 ms (a
+        quick answer never flashes a placeholder), then the shape of the answer (a lead and one card), after 3 s the
+        steps the core reports; never a spinner alone."""
+        text = self.config(page)["starters"]["ru"][1]["text"]
+        page.evaluate(
+            "() => { window.__skel = false; new MutationObserver(() => { if (document.querySelector('#thread .skel')) window.__skel = true; }).observe(document.getElementById('thread'), { childList: true, subtree: true }); }"
+        )
+        page.evaluate(SLOW_STREAM, 150)  # an answer after 150 ms: no skeleton may ever show
+        self.ask(page, text)
+        s = self.shot(
+            page, "waiting-quick", "an answer after 150 ms: no placeholder was ever shown"
+        )
+        # the map's camera is still settling after the second search from the same place: pins may touch for a moment
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if page.evaluate("window.__skel"):
+            s.ok = False
+            s.notes.append("a skeleton flashed for an answer that took 150 ms")
+        self.new_search(page)
+
+        page.evaluate(SLOW_STREAM, 5200)
+        before = self.answers(page)
+        page.locator("#composer-input").fill(text)
+        page.locator("#composer .send").click()
+        page.wait_for_timeout(120)
+        early_skeleton = page.locator("#thread .skel").count()
+        message = page.locator("#thread .u").first.is_visible()
+        page.wait_for_timeout(500)
+        shape = (
+            page.locator("#thread .skel .skel-lead i").count()
+            and page.locator("#thread .skel .skel-card").count()
+        )
+        early_steps = page.locator("#thread .steps").count()
+        s = self.shot(
+            page,
+            "waiting-shape",
+            "waiting: the message and the shape of the answer, a lead and one card",
+        )
+        if not message:
+            s.ok = False
+            s.notes.append("the person's message is not on the page while the answer is made")
+        if early_skeleton:
+            s.ok = False
+            s.notes.append("a skeleton before 300 ms")
+        if not shape:
+            s.ok = False
+            s.notes.append("no skeleton in the shape of the answer after 300 ms")
+        if early_steps:
+            s.ok = False
+            s.notes.append("steps before 3 s")
+        page.wait_for_timeout(1900)
+        steps = page.locator("#thread .steps li").count()
+        dots = page.locator("#thread .thinking .dots").count()
+        s = self.shot(page, "waiting-steps", "waiting 4 s: honest steps above the shape")
+        if steps < 2:
+            s.ok = False
+            s.notes.append("no steps after 3 s of waiting")
+        if dots:
+            s.ok = False
+            s.notes.append("a spinner of dots is on the page")
+        self.wait_answer(page, before + 1)
+        if page.locator("#thread .skel").count():
+            s.ok = False
+            s.notes.append("the skeleton stays after the answer")
+        page.evaluate(RESTORE_FETCH)
+        self.new_search(page)
 
     def run_sweep(self, page: Page) -> None:
         for sid in STARTERS:

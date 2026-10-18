@@ -6,18 +6,18 @@
   "cases_with_recs": 24,
   "recs_total": 64,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 78.1,
-  "case_all_ok_rate": 54.2,
+  "constraint_ok_rate": 75.0,
+  "case_all_ok_rate": 50.0,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 91.7,
+  "coverage": 87.5,
   "diversity": 100.0,
   "top1_ok_rate": 70.8,
-  "top1_open_rate": 62.5,
-  "unknown_hours_rec_share": 50.0,
+  "top1_open_rate": 58.3,
+  "unknown_hours_rec_share": 53.1,
   "non_osm_rec_share": 0.0,
-  "avg_walk_min": 11.6,
+  "avg_walk_min": 12.2,
   "wifi_socket_in_data_share": 100.0,
   "route_stop_closed_cases": 1,
   "latency_ms_median": 12.0,
@@ -30,15 +30,16 @@
   "llm_chain_failed": 0,
   "llm_invalid_answers": 0,
   "violation_cases": {
+    "walk_too_long": 6,
     "category_not_allowed": 6,
-    "walk_too_long": 5,
-    "over_budget": 2
+    "over_budget": 2,
+    "category_forbidden": 1
   },
-  "padded_rec_share": 15.6,
+  "padded_rec_share": 14.1,
   "expanded_rec_share": 1.6,
   "backfill_rec_share": 10.9,
-  "substituted_rec_share": 3.1,
-  "padded_case_share": 29.2,
+  "substituted_rec_share": 1.6,
+  "padded_case_share": 25.0,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -57,6 +58,12 @@
       "case_id": "h3-05",
       "violations": [
         "category_not_allowed"
+      ]
+    },
+    {
+      "case_id": "h3-07",
+      "violations": [
+        "walk_too_long"
       ]
     },
     {
@@ -112,6 +119,7 @@
     {
       "case_id": "h3-24",
       "violations": [
+        "category_forbidden",
         "category_not_allowed"
       ]
     }
@@ -126,8 +134,8 @@
     "cases_file": "holdout3_cases.json",
     "case_set": "holdout3",
     "records": 24,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:23+05:00"
+    "generated_at": "2026-10-19T00:28:07+05:00"
   }
 }

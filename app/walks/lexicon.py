@@ -36,6 +36,7 @@ from .lexicon_data import (
     LANDMARK_ALIASES,
     LOCATIVE_BEFORE,
     NAME_LINKS,
+    NEGATION_SKIP,
     NEGATION_VOID,
     NEGATORS,
     PLACE_WORDS,
@@ -296,10 +297,13 @@ def _is_negated(tokens: list[str], start: int, end: int, *, own_without: bool = 
         and tokens[start].endswith(_KK_WITHOUT)
     ):
         return True  # kk «алкогольсіз» = «without alcohol»
-    lo, words = start, 0  # «don't want a quiet place»: an article stands in the way of no negator
+    lo, words = (
+        start,
+        0,
+    )  # «don't want a quiet place», «не хочу в кафе»: an article or a «want / go» is no word here
     while lo > 0 and words < NEGATION_WINDOW:
         lo -= 1
-        words += tokens[lo] not in DETERMINERS
+        words += tokens[lo] not in DETERMINERS and tokens[lo] not in NEGATION_SKIP
     for k in range(lo, start):
         if tokens[k] in NEGATORS:
             return not any(t in NEGATION_VOID for t in tokens[k + 1 : start])

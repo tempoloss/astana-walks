@@ -4,24 +4,24 @@
   "chain": [],
   "cases": 20,
   "cases_with_recs": 20,
-  "recs_total": 51,
+  "recs_total": 48,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 76.5,
-  "case_all_ok_rate": 50.0,
+  "constraint_ok_rate": 70.8,
+  "case_all_ok_rate": 45.0,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 80.0,
+  "coverage": 70.0,
   "diversity": 100.0,
-  "top1_ok_rate": 75.0,
-  "top1_open_rate": 50.0,
-  "unknown_hours_rec_share": 64.7,
+  "top1_ok_rate": 70.0,
+  "top1_open_rate": 40.0,
+  "unknown_hours_rec_share": 68.8,
   "non_osm_rec_share": 0.0,
-  "avg_walk_min": 7.8,
+  "avg_walk_min": 9.1,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
   "latency_ms_median": 7.5,
-  "latency_ms_p90": 27.0,
+  "latency_ms_p90": 28.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -30,16 +30,17 @@
   "llm_chain_failed": 0,
   "llm_invalid_answers": 0,
   "violation_cases": {
+    "walk_too_long": 5,
     "category_not_allowed": 5,
-    "walk_too_long": 4,
-    "category_forbidden": 2,
-    "over_budget": 1
+    "category_forbidden": 3,
+    "over_budget": 2,
+    "outdoor_in_cold_or_smog": 1
   },
-  "padded_rec_share": 33.3,
-  "expanded_rec_share": 2.0,
-  "backfill_rec_share": 25.5,
-  "substituted_rec_share": 5.9,
-  "padded_case_share": 55.0,
+  "padded_rec_share": 25.0,
+  "expanded_rec_share": 4.2,
+  "backfill_rec_share": 20.8,
+  "substituted_rec_share": 0.0,
+  "padded_case_share": 50.0,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -80,6 +81,14 @@
       ]
     },
     {
+      "case_id": "h12-keruen-sun-smog-air",
+      "violations": [
+        "category_forbidden",
+        "category_not_allowed",
+        "outdoor_in_cold_or_smog"
+      ]
+    },
+    {
       "case_id": "h14-kenesary-wed-dog",
       "violations": [
         "over_budget"
@@ -88,7 +97,8 @@
     {
       "case_id": "h16-lovers-tue-sunset",
       "violations": [
-        "category_not_allowed"
+        "over_budget",
+        "walk_too_long"
       ]
     },
     {
@@ -121,8 +131,8 @@
     "cases_file": "holdout_cases.json",
     "case_set": "holdout",
     "records": 20,
-    "git": "9fbe2fc",
+    "git": "29dda4a",
     "walking": "straight",
-    "generated_at": "2026-10-18T21:56:19+05:00"
+    "generated_at": "2026-10-19T00:28:04+05:00"
   }
 }

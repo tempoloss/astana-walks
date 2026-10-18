@@ -7,6 +7,7 @@ JSON endpoints over the core. Run it with `python -m web` (web/__main__.py) or a
     POST /api/turn            one message of the dialogue                             (web.turns, walks.dialog)
     POST /api/report          a resident's anonymous mark of a place                  (web.memory, walks.feedback)
     GET|POST /api/profile     the opt-in profile                                      (web.memory, walks.profile)
+    GET  /api/geocode         the address search of «Где вы?»: ≤ 5 points (?q=) or the house at a point (?lat=&lon=)  (web.geocode)
     GET  /api/city/{layer}    demand | quality | reports                              (web.city)
     GET  /api/city/export/{name}
     GET  /api/data            sources, coverage, measured honesty                     (web.datainfo)
@@ -45,7 +46,7 @@ from i18n import ui_table
 from walks import conditions, weather
 from walks.envcfg import load_env_file
 from walks.i18n import SIGNAL, norm
-from web import city, datainfo, memory, turns
+from web import city, datainfo, geocode, memory, turns
 
 STATIC = Path(__file__).resolve().parent / "static"
 VERSIONED = "/static/v-"  # /static/v-<release>/js/main.js is /static/js/main.js of that release
@@ -252,6 +253,22 @@ async def city_layer(request: Request) -> Response:
     raise HTTPException(404, "no_such_layer")
 
 
+async def geocode_view(request: Request) -> Response:
+    """The address search of «Где вы?»: up to five points of Astana for what was typed (`q`), or the house under a
+    point (`lat`, `lon`). Neither the text nor the point is logged (web.geocode also strips them from uvicorn's access
+    line) or kept."""
+    q = request.query_params
+    try:
+        point = (float(q["lat"]), float(q["lon"])) if "lat" in q and "lon" in q else None
+    except ValueError:
+        raise HTTPException(422, "bad_point") from None
+    if point:
+        found = await run_in_threadpool(geocode.reverse, *point, _lang(request))
+    else:
+        found = await run_in_threadpool(geocode.search, q.get("q", ""), _lang(request))
+    return JSONResponse({"results": found}, headers={"cache-control": "no-store"})
+
+
 async def city_export(request: Request) -> Response:
     name = request.path_params["name"]
     args = (name, request.query_params.get("source"), _int(request, "k"))
@@ -305,6 +322,7 @@ def create_app() -> Starlette:
             Route("/api/turn", turn, methods=["POST"]),
             Route("/api/report", report, methods=["POST"]),
             Route("/api/profile", profile, methods=["GET", "POST"]),
+            Route("/api/geocode", geocode_view),
             Route("/api/city/export/{name}", city_export),
             Route("/api/city/{layer}", city_layer),
             Route("/api/data", data),

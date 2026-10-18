@@ -1,13 +1,14 @@
 // One turn of the conversation on the page: the user's bubble and what came back (a `Turn` of walks.dialog plus the
 // page's extras). The latest turn is open, earlier ones fold into their places as mini rows. The user's bubble shows at
-// once, then the steps of the work while the answer is being made; a shown set of cards is never swapped for another.
+// once; while the answer is being made the page waits quietly for 300 ms, then shows the shape of the answer to come,
+// and after 3 s the steps the core reports; a shown set of cards is never swapped for another.
 // The answer to a follow-up about a place is a sentence and that place's card, in the thread under the folded answer.
 
 import { altRow, miniRow, primaryCard, qaCard } from './cards.js';
 import { sourceLinks } from './details.js';
 import { h, icon } from './dom.js';
 import { metres } from './fmt.js';
-import { tr } from './i18n.js';
+import { currentLang, tr } from './i18n.js';
 
 const STEP = { parse: 'step_parse', search: 'step_search', write: 'step_write', route: 'step_route' };
 
@@ -35,19 +36,29 @@ function noticeLine(notice) {
   return h('p', { class: `note notice ${notice.kind}` }, icon(notice.kind === 'weather' ? 'cloud' : 'route'), body);
 }
 
-// «Сегодня рядом»: the afisha's events with their source links, under the cards, never above them.
-function eventsBlock(events) {
+// «2 события», «2 іс-шара», «2 events»: the plural form of the language
+function eventsCount(n) {
+  const rule = new Intl.PluralRules(currentLang()).select(n);
+  return tr(`ev_n_${['one', 'few', 'many'].includes(rule) ? rule : 'other'}`, { n });
+}
+
+// «Сегодня рядом: 2 события ›»: one line that opens onto the afisha's events with their source links, under the cards,
+// never above them. It is open from the start when the events are the answer (the question was about them).
+function eventsBlock(events, open) {
   if (!events || !events.items.length) return null;
+  const items = events.items.map((e) =>
+    h('li', {},
+      h('p', { class: 'event-title' }, h('b', { class: 'when', text: e.when }), ' ', e.title),
+      h('p', { class: 'fine' },
+        [e.venue, metres(e.distance_m), e.price].filter(Boolean).join(' · '), ' · ', ...sourceLinks([e.source]))));
   return h(
-    'section',
-    { class: 'events', 'aria-label': events.heading },
-    h('h4', { class: 'events-head' }, icon('flag'), events.heading),
-    h('ul', {}, events.items.map((e) =>
-      h('li', {},
-        h('p', { class: 'event-title' }, h('b', { class: 'when', text: e.when }), ' ', e.title),
-        h('p', { class: 'fine' },
-          [e.venue, metres(e.distance_m), e.price].filter(Boolean).join(' · '), ' · ', ...sourceLinks([e.source])))),
-    ),
+    'details',
+    { class: 'events', open },
+    h('summary', {},
+      icon('flag'),
+      h('span', { class: 'events-head', text: `${events.heading}: ${eventsCount(events.items.length)}` }),
+      h('span', { class: 'chev' }, icon('chevron'))),
+    h('ul', {}, items),
     events.note ? h('p', { class: 'fine events-note', text: events.note }) : null,
   );
 }
@@ -146,7 +157,8 @@ export function renderAnswer(resp, ctx) {
   if (answered) parts.push(...placeAnswer(turn, ctx));
   else if (places.length) parts.push(...placesBlock(turn, ctx));
   else for (const notice of turn.notices || []) parts.push(noticeLine(notice));
-  parts.push(eventsBlock(turn.events));
+  const events = turn.events;
+  parts.push(eventsBlock(events, Boolean(events) && (!places.length || events.items.length > 2)));
   const chips = (turn.chips || []).map((c) => chipButton(c, ctx.onChip));
   const remember = (resp.remember || []).map((c) =>
     h('button', { type: 'button', class: 'chip remember', onclick: (e) => ctx.onRemember(c, e.currentTarget) }, c.label));
@@ -177,16 +189,30 @@ export function renderError(onRetry) {
   );
 }
 
-// The steps the core reported so far (walks.dialog on_stage): done ones ticked, the current one with the dots.
-export function renderThinking(id, stages) {
+// the shape of the answer to come: two lines of the lead and one card, resting (nothing moves but a slow pulse)
+function skeleton() {
+  const bar = (cls) => h('i', { class: cls });
+  return h('div', { class: 'skel', 'aria-hidden': 'true' },
+    h('div', { class: 'skel-lead' }, bar(), bar()),
+    h('div', { class: 'skel-card' }, bar('t'), bar('s'), bar('b'), h('div', { class: 'skel-btns' }, bar(), bar())));
+}
+
+// The wait for an answer. phase 0: the first 300 ms, nothing (a quick answer never flashes a placeholder); phase 1: the
+// shape of the answer; phase 2 (after 3 s): the steps the core reported so far (walks.dialog on_stage), the done ones
+// ticked, the current one marked. Never a spinner alone.
+export function renderThinking(id, stages, phase = 0) {
   const known = stages.filter((s) => STEP[s]);
-  const dots = h('span', { class: 'dots', 'aria-hidden': 'true' }, h('i'), h('i'), h('i'));
-  if (!known.length) return h('div', { class: 'thinking', id, role: 'status' }, dots);
-  return h(
-    'ol',
-    { class: 'thinking steps', id, role: 'status' },
-    known.map((s, i) => (i === known.length - 1
-      ? h('li', { class: 'now' }, dots, tr(STEP[s]))
-      : h('li', { class: 'done' }, icon('check'), tr(STEP[s])))),
-  );
+  const box = h('div', { class: 'thinking', id, role: 'status' });
+  if (phase >= 2 && known.length) {
+    box.setAttribute('aria-label', tr(STEP[known[known.length - 1]]));
+    box.append(h(
+      'ol',
+      { class: 'steps' },
+      known.map((s, i) => (i === known.length - 1
+        ? h('li', { class: 'now', 'aria-current': 'step' }, tr(STEP[s]))
+        : h('li', { class: 'done' }, icon('check'), tr(STEP[s])))),
+    ));
+  }
+  if (phase >= 1) box.append(skeleton());
+  return box;
 }

@@ -86,7 +86,7 @@ def test_cli_marks_change_the_quiet_cafe_answer(sandbox, capsys):
     q = ["--lat", BAITEREK[0], "--lon", BAITEREK[1], "--q", "Тихое место с кофе и розеткой"]
     seeded = _run(capsys, *q)
     assert _names(seeded)[0] == "Degirmen"
-    assert "по отметкам людей (демо-данные): есть розетка (3 отметки)" in seeded.lower()
+    assert "по отметкам людей (примерные, не настоящие): есть розетка (3 отметки)" in seeded.lower()
     assert "Память: отсеяно диалогом 0, радиус ×1, кандидатов с отметками людей" in seeded
     (sandbox / "city_feedback.json").write_text("[]", encoding="utf-8")  # without any mark
     plain = _run(capsys, *q)
@@ -146,7 +146,9 @@ def test_cli_profile_is_remembered_reflected_and_forgotten(sandbox, capsys):
     assert path.exists()
     second = _run(capsys, *q, "--profile", uid)
     assert "Профиль: учтено with_kids" in second
-    assert "Вы отмечали, что ходите с ребёнком — это учтено." in second
+    assert (
+        "Вы отмечали" not in second
+    )  # the dialogue lead says it once; the CLI prints the codes above
     assert '"with_kids":true' in second
     assert "Вы отмечали" not in _run(capsys, *q)  # the profile is opt-in: no --profile, no memory
     assert cli.main(["--profile", uid, "--forget"]) == 0

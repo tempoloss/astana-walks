@@ -416,9 +416,9 @@ STRINGS: dict[str, Entry] = {
     # marks of people
     "people_source": ("адамдардың белгілері бойынша", "по отметкам людей", "by people's marks"),
     "people_source_demo": (
-        "адамдардың белгілері бойынша (демо-деректер)",
-        "по отметкам людей (демо-данные)",
-        "by people's marks (demo data)",
+        "адамдардың белгілері бойынша (үлгі белгілер, нақты емес)",
+        "по отметкам людей (примерные, не настоящие)",
+        "by people's marks (sample marks, not real)",
     ),
     "people_mixed": (
         "адамдардың белгілері бір-біріне қайшы (ашық {o}, жабық {c}; соңғысы {last})",
@@ -474,6 +474,11 @@ STRINGS: dict[str, Entry] = {
         "Күн батқаннан кейін: ашық жерде қараңғы, жарықтандыру туралы деректер жоқ.",
         "После заката: на открытом месте темно, освещение в данных неизвестно.",
         "After sunset: dark outdoors, lighting is not in the data.",
+    ),
+    "note_lit_near": (
+        "Күн батқаннан кейін: жақын жерде жарықтандырылған көше бар (OpenStreetMap бойынша).",
+        "После заката: рядом улица с освещением (по данным OpenStreetMap).",
+        "After sunset: a lit street runs nearby (per OpenStreetMap).",
     ),
     "note_holiday": (
         "Мемлекеттік мереке ({name}): жұмыс уақыты басқаша болуы мүмкін, алдын ала нақтылаңыз.",
@@ -636,36 +641,6 @@ STRINGS: dict[str, Entry] = {
     ),
     "fu_mode": ("көлік: {mode}", "транспорт: {mode}", "transport: {mode}"),
     # profile
-    "explain_with_kids": ("баламен жүресіз", "ходите с ребёнком", "you go with a child"),
-    "explain_mobility": (
-        "баспалдақсыз кіру керек",
-        "нужен доступ без ступенек",
-        "you need step-free access",
-    ),
-    "explain_quiet": (
-        "тыныш орындарды жақсы көресіз",
-        "любите тихие места",
-        "you like quiet places",
-    ),
-    "explain_budget": (
-        "қолжетімді нәрсе іздейсіз",
-        "ищете недорогое",
-        "you look for something affordable",
-    ),
-    "explain_halal": ("халал керек", "нужен халяль", "you need halal"),
-    "explain_no_alcohol": ("алкогольсіз керек", "без алкоголя", "you want no alcohol"),
-    "explain_walk_pace": (
-        "өз қарқыныңызбен жүресіз",
-        "ходите в своём темпе",
-        "you walk at your own pace",
-    ),
-    "explain_cold_tolerance": ("суыққа сезімталсыз", "чувствительны к холоду", "you feel the cold"),
-    "explain_age": ("{band} жас", "{band} лет", "{band} y.o."),
-    "explain_wrap": (
-        "Сіз {parts} деп белгілегенсіз — бұл ескерілді.",
-        "Вы отмечали, что {parts} — это учтено.",
-        "You told me that {parts} - taken into account.",
-    ),
     "item_with_kids": ("баламен жүремін", "хожу с ребёнком", "I go with a child"),
     "item_mobility_stroller": ("арбамен жүремін", "хожу с коляской", "I use a stroller"),
     "item_mobility_wheelchair": (
@@ -675,8 +650,6 @@ STRINGS: dict[str, Entry] = {
     ),
     "item_quiet": ("тыныш орындарды жақсы көремін", "люблю тихие места", "I like quiet places"),
     "item_budget_low": ("арзанды іздеймін", "ищу недорогое", "I look for something cheap"),
-    "item_budget_medium": ("орташа бюджет", "средний бюджет", "mid-range budget"),
-    "item_budget_high": ("бюджет шектелмеген", "бюджет не ограничен", "no budget limit"),
     "item_halal": ("халал керек", "нужен халяль", "I need halal"),
     "item_no_alcohol": ("алкогольсіз", "без алкоголя", "no alcohol"),
     "item_language": (

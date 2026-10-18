@@ -14,6 +14,7 @@ const EDGE = 29; // from the bottom of the top bar to the free map
 const MAP_FREE = 250; // the map keeps at least this much between the top bar and the sheet
 const MIN_STEP = 60; // peek and half stay at least this much (and 2×) below full
 const FULL_TOP = 8; // below the status bar
+const HANDLE_HIT = 44; // the handle's hit area lies this far above the sheet: it never covers the top bar's buttons
 
 const $ = (id) => document.getElementById(id);
 
@@ -47,15 +48,17 @@ export function answerFit(panel) {
       // the lines under the card (an official notice, the lighting of the way) are part of it: half never ends inside one
       const notes = [...turn.querySelectorAll('.answer > .note, .answer > .route-line')];
       const must = Math.max(bottom(card), ...notes.map((n) => bottom(n) + NOTE_GAP));
-      return { start, peek: bottom(card.querySelector('.c-st')), must, cuts: [...rows, chips].filter(Boolean).map(bottom) };
+      return { start, peek: bottom(card.querySelector('.c-st')), must, core: bottom(card), cuts: [...rows, chips].filter(Boolean).map(bottom) };
     }
     const asked = [...turn.querySelectorAll('.qa-card')];
     if (asked.length) {
       return { start, peek: bottom(turn.querySelector('.qa')), must: bottom(asked[0]), cuts: [...asked.slice(1), chips].filter(Boolean).map(bottom) };
     }
-    // no place to show (a question back, the afisha, an error, the dots): the first block, then all of it when it fits
+    // no place to show (a question back, the afisha, an error, the waiting): the first block, then the afisha's line and
+    // its events one by one, then all of it when it fits
     const lead = turn.querySelector('.answer > *, .thinking, .error-row') || turn;
-    return { start, peek: bottom(lead), must: bottom(lead), cuts: [bottom(turn)] };
+    const events = [...turn.querySelectorAll('.answer > .events > summary, .answer > .events[open] li')].map(bottom);
+    return { start, peek: bottom(lead), must: bottom(lead), cuts: [...events, bottom(turn)] };
   }
 
   // everything in the sheet but the scrolled part: the handle, the notice, the field
@@ -85,9 +88,15 @@ export function answerFit(panel) {
       const peekV = visible(b.peek);
       const room = availableHeight() - barBottom() - EDGE - MAP_FREE - bar;
       const fitting = b.cuts.map(visible).filter((v) => v <= room);
-      const halfV = Math.max(visible(b.must), ...fitting);
+      let halfV = Math.max(visible(b.must), ...fitting);
       const full = availableHeight() - safeTop() - FULL_TOP;
-      return { peek: Math.min(bar + peekV, full - 2 * MIN_STEP), half: Math.min(bar + halfV, full - MIN_STEP), full };
+      const below = availableHeight() - barBottom() - HANDLE_HIT; // the tallest a non-full sheet may be
+      if (bar + halfV > below) {
+        // too tall for the top bar: end at the card (or a row) that still fits, never through the notice under it
+        const clean = [b.core ?? b.must, ...b.cuts].map(visible).filter((v) => bar + v <= below);
+        halfV = clean.length ? Math.max(...clean) : below - bar;
+      }
+      return { peek: Math.min(bar + peekV, full - 2 * MIN_STEP, below), half: Math.min(bar + halfV, full - MIN_STEP, below), full };
     },
     // peek and half show the latest turn from its top
     align() {

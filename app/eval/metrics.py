@@ -42,6 +42,7 @@ ACCESS_NOT_FLAGGED = "wheelchair_unknown_not_flagged"
 OVER_BUDGET = "over_budget"
 DUPLICATE_CHAIN = "duplicate_chain"
 NO_RECS = "no_recs"
+REQUIRED_KIND_MISSING = "required_kind_missing"
 HALLUCINATED = "hallucinated_poi"
 
 CONSTRAINT_CODES = {
@@ -233,7 +234,10 @@ def judge_case(case: dict, recs: list[dict], route: dict | None, index: dict[str
     """Verdict of one answer. `recs` are the JSONL rec records (poi_id, category, hours_state, walk_min, why,
     what_to_do, notes, ...), `route` the JSONL route record or None."""
     expected, when = case["expected"], case_when(case)
-    indoor = bool(expected.get("indoor_preferred", indoor_required(case)))
+    # a stated outdoor wish beats the weather's shelter rule (`outdoor_wished`, eval/SCHEMA.md)
+    indoor = bool(expected.get("indoor_preferred", indoor_required(case))) and not expected.get(
+        "outdoor_wished", False
+    )
     hallucinated = [r["poi_id"] for r in recs if r["poi_id"] not in index]
     constraint_viol: dict[str, list[str]] = {}
     honesty_viol: dict[str, list[str]] = {}
@@ -249,6 +253,8 @@ def judge_case(case: dict, recs: list[dict], route: dict | None, index: dict[str
             honesty_viol[r["poi_id"]] = v
         wifi_verified += has_wifi_or_socket(poi)
 
+    must = expected.get("must_include_categories")
+    missing_kind = bool(must and recs and not any(r.get("category") in must for r in recs))
     budget = expected.get("budget_min")
     over_budget = bool(route and budget is not None and route["total_min"] > budget)
     dups = _duplicate_chains(recs, index)
@@ -261,6 +267,7 @@ def judge_case(case: dict, recs: list[dict], route: dict | None, index: dict[str
         | ({OVER_BUDGET} if over_budget else set())
         | ({DUPLICATE_CHAIN} if dups else set())
         | ({NO_RECS} if not recs else set())
+        | ({REQUIRED_KIND_MISSING} if missing_kind else set())
         | ({HALLUCINATED} if hallucinated else set())
     )
     return {

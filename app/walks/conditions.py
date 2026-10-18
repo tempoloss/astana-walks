@@ -5,18 +5,21 @@ never a guess: unknown weather is not clear sky.
 
 Sources: the airport observation (METAR UACC) for the wind, the sky and the precipitation falling now; MET Norway's
 forecast for the wind and the sky when there is no usable observation (never for precipitation); the official НМУ
-notice of Kazhydromet or the smoke / haze of the station report for the air flag."""
+notice of Kazhydromet (with the link to it) or the smoke / haze of the station report for the air flag.
+
+For the weather card: `temp` (temperature and feels-like), `vis` (the station's visibility), `pm25` (only with the
+Open-Meteo demo leg), `hours` (the next hours of MET Norway's series in memory), `sun.rise` / `sun.set`."""
 
 from __future__ import annotations
 
 import re
 from datetime import UTC, datetime, timedelta
 
-from . import metar, sun
+from . import metar, metno, sun
 from . import weather as wx
 from .envcfg import fx_fake
 from .hours import TZ
-from .models import WeatherInfo
+from .models import WeatherInfo, WeatherWarning
 
 PRECIP_MAX_AGE = timedelta(
     minutes=90
@@ -41,8 +44,16 @@ def phase(altitude: float, morning: bool) -> str:
 
 
 def _sun_block(now_utc: datetime, override: tuple[float, bool] | None = None) -> dict:
+    """The sun for «now» and today's computed sunrise and sunset (local, HH:MM)."""
     altitude, morning = override or sun.sun_altitude(now_utc)
-    return {"altitude": round(altitude, 1), "morning": morning, "phase": phase(altitude, morning)}
+    rise, sset, _ = sun.sun_for(now_utc.astimezone(TZ).date())
+    return {
+        "altitude": round(altitude, 1),
+        "morning": morning,
+        "phase": phase(altitude, morning),
+        "rise": rise.strftime("%H:%M"),
+        "set": sset.strftime("%H:%M"),
+    }
 
 
 def _observed(weather: WeatherInfo, now_utc: datetime) -> datetime | None:
@@ -58,27 +69,70 @@ def _stamp(observed: datetime | None, source: str) -> dict:
     return {"source": source, "at": observed.astimezone(TZ).strftime("%H:%M") if observed else ""}
 
 
+def _source(weather: WeatherInfo, observed: datetime | None) -> str:
+    """Where the current values come from: the airport report, the forecast, or nowhere (a demo weather, no data)."""
+    if observed:
+        return "metar"
+    return "met-no" if weather.source == "met-no" and weather.forecast_used else ""
+
+
+def _wind(weather: WeatherInfo, stamp: dict) -> dict | None:
+    if weather.wind_from_deg is None or not weather.wind_kmh:
+        return None
+    gust = weather.wind_gust_kmh
+    return {
+        "from_deg": weather.wind_from_deg % 360,
+        "speed_ms": round(weather.wind_kmh / 3.6, 1),
+        "gust_ms": None if gust is None else round(gust / 3.6, 1),
+        **stamp,
+    }
+
+
+def _air(weather: WeatherInfo, observed: datetime | None, stamp: dict) -> dict | None:
+    notice = next((w for w in weather.warnings if w.kind == "nmu" and w.active), None)
+    if notice is not None:
+        return {
+            "kind": "nmu",
+            "source": "kazhydromet",
+            "at": "",
+            "title": notice.title,
+            "url": notice.source_url,
+        }
+    if "smog" in weather.conditions and observed:
+        return {"kind": "smog", **stamp}
+    return None
+
+
+def _hours(utc_now: datetime) -> dict | None:
+    items = [
+        {
+            "at": h.time.astimezone(TZ).strftime("%H:%M"),
+            "temp_c": round(h.temperature_c),
+            "precip_mm": h.precipitation_mm,
+            "sym": h.symbol,
+        }
+        for h in metno.upcoming(utc_now)
+    ]
+    return {"source": "met-no", "items": items} if items else None
+
+
 def _measures(weather: WeatherInfo, now_utc: datetime) -> dict:
     observed = _observed(weather, now_utc)
-    source = (
-        "metar"
-        if observed
-        else "met-no"
-        if weather.source == "met-no" and weather.forecast_used
-        else ""
-    )
+    source = _source(weather, observed)
     stamp = _stamp(observed, source)
-    out: dict = {"wind": None, "sky": None, "precip": None, "air": None}
-    if source and weather.wind_from_deg is not None and weather.wind_kmh:
-        gust = weather.wind_gust_kmh
-        out["wind"] = {
-            "from_deg": weather.wind_from_deg % 360,
-            "speed_ms": round(weather.wind_kmh / 3.6, 1),
-            "gust_ms": None if gust is None else round(gust / 3.6, 1),
+    out: dict = dict.fromkeys(("wind", "sky", "precip", "air", "temp", "vis", "pm25", "hours"))
+    if source and weather.temperature_c is not None:
+        out["temp"] = {
+            "temp_c": round(weather.temperature_c),
+            "feels_c": None if weather.apparent_c is None else round(weather.apparent_c),
             **stamp,
         }
+    if source:
+        out["wind"] = _wind(weather, stamp)
     if source and weather.cloud_pct is not None:
         out["sky"] = {"cloud_pct": round(weather.cloud_pct), **stamp}
+    if observed and weather.visibility_m is not None:
+        out["vis"] = {"m": weather.visibility_m, **stamp}
     if (
         observed
         and weather.precip_now
@@ -86,53 +140,99 @@ def _measures(weather: WeatherInfo, now_utc: datetime) -> dict:
         and now_utc - observed <= PRECIP_MAX_AGE
     ):
         out["precip"] = {"kind": weather.precip_now, "level": weather.precip_level, **stamp}
-    if "nmu" in weather.conditions:
-        out["air"] = {"kind": "nmu", "source": "kazhydromet", "at": ""}
-    elif "smog" in weather.conditions and observed:
-        out["air"] = {"kind": "smog", **stamp}
+    out["air"] = _air(weather, observed, stamp)
+    if weather.pm25 is not None:
+        out["pm25"] = {
+            "value": round(weather.pm25),
+            "source": "open-meteo",
+            "at": weather.fetched_at,
+        }
+    if weather.forecast_used:
+        out["hours"] = _hours(now_utc)
     return out
 
 
-def _fake_weather(spec: str, now_utc: datetime) -> tuple[WeatherInfo, tuple[float, bool] | None]:
-    """A made-up airport observation for `?fake=`: words joined with «+»: snow, rain, heavy, windy, overcast, haze, none and
-    one of night / dawn / golden / dusk / day for the sun."""
+NMU_URL = "https://www.kazhydromet.kz/ru/ecology/ezhednevnyy-byulleten-sostoyaniya-vozdushnogo-basseyna-nmu"
+_FAKE_SYMBOLS = {"snow": "snow", "rain": "rain"}
+
+
+def _fake_hours(now_utc: datetime, kind: str, temp: int) -> dict:
+    """Six made-up hours for a `?fake=` scenario: the precipitation of the scenario falls for the first four."""
+    first = (now_utc + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+    items = []
+    for i in range(6):
+        wet = bool(kind) and i < 4
+        items.append(
+            {
+                "at": (first + timedelta(hours=i)).astimezone(TZ).strftime("%H:%M"),
+                "temp_c": temp - i // 2,
+                "precip_mm": (0.6 + 0.3 * i) if wet else 0.0,
+                "sym": _FAKE_SYMBOLS.get(kind, "") if wet else ("cloud" if i < 2 else "partly"),
+            }
+        )
+    return {"source": "met-no", "items": items}
+
+
+def _fake_weather(
+    spec: str, now_utc: datetime
+) -> tuple[WeatherInfo, tuple[float, bool] | None, dict | None]:
+    """A made-up airport observation for `?fake=`, words joined with «+»: snow, rain, heavy, windy (9 m/s), wind<N>
+    (N m/s), overcast, haze, none and one of night / dawn / golden / dusk / day for the sun."""
     words = set(re.split(r"[+,\s]+", spec.lower()))
     override = next((_FAKE_SUN[w] for w in words if w in _FAKE_SUN), None)
     if "none" in words:
-        return wx.make_weather(), override
+        return wx.make_weather(), override, None
     falling = next((w for w in ("snow", "rain") if w in words), "")
-    windy = bool(falling) or "windy" in words
+    speed = next((float(m[1]) for w in words if (m := re.fullmatch(r"wind(\d+)", w))), None)
+    if speed is None:
+        speed = 9.0 if falling or "windy" in words else 3.0
     cloud = 100.0 if falling or "overcast" in words else 44.0 if "haze" in words else 19.0
     observed = (now_utc - timedelta(minutes=10)).astimezone(TZ).isoformat(timespec="minutes")
-    return wx.make_weather(
+    temp, feels = (-3.0, -8.0) if falling == "snow" else (6.0, 3.0) if falling else (12.0, 10.0)
+    notice = WeatherWarning(
+        kind="nmu",
+        title="Неблагоприятные метеоусловия",
+        text="Ожидается...",
+        source_url=NMU_URL,
+        active=True,
+    )
+    weather = wx.make_weather(
+        temp,
+        feels,
+        round(speed * 3.6, 1),
         0.0,
-        0.0,
-        32.4 if windy else 10.8,
-        0.0,
+        pm25=62.0 if "haze" in words else None,
         source="metar",
         observed_at=observed,
         precip_adverse=False,
-        conditions=("nmu",) if "haze" in words else (),
-        wind_from_deg=315 if windy else 270,
-        wind_gust_kmh=45.0 if windy else None,
+        warnings=(notice,) if "haze" in words else (),
+        wind_from_deg=315,
+        wind_gust_kmh=round(speed * 1.4 * 3.6, 1) if speed >= 5 else None,
         cloud_pct=cloud,
         precip_now=falling,
         precip_level=(3 if "heavy" in words else 2) if falling else 0,
-    ), override
+        visibility_m=3000 if falling == "snow" else 9999,
+        fetched_at=now_utc.astimezone(TZ).strftime("%H:%M"),
+        forecast_used=True,
+    )
+    return weather, override, _fake_hours(now_utc, falling, round(temp))
 
 
 def current(now_utc: datetime | None = None, fake: str = "") -> dict:
     """The payload of `/api/conditions`. `fake` only counts under WALKS_FX_FAKE=1. «known» is False until the first
-    background refresh has finished (the page asks again soon); every effect block is then None."""
+    background refresh has finished (the page asks again soon); every block is then None."""
     now = (now_utc or datetime.now(UTC)).astimezone(UTC)
-    override = None
+    override = hours = None
     weather = wx.refreshed_weather()
     if fake and fx_fake():
-        weather, override = _fake_weather(fake, now)
-    blank = {"wind": None, "sky": None, "precip": None, "air": None}
+        weather, override, hours = _fake_weather(fake, now)
+    blank = dict.fromkeys(("wind", "sky", "precip", "air", "temp", "vis", "pm25", "hours"))
+    measures = blank if weather is None else _measures(weather, now)
+    if hours is not None:
+        measures["hours"] = hours
     return {
         "known": weather is not None,
         "now": now.astimezone(TZ).isoformat(timespec="seconds"),
         "sun": _sun_block(now, override),
-        **(blank if weather is None else _measures(weather, now)),
+        **measures,
     }

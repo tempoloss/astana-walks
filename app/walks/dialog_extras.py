@@ -112,12 +112,17 @@ def _short(text: str) -> str:
 
 _ASTANA = re.compile(r"Астан|Нур-Султан", re.IGNORECASE)
 _SENTENCE = re.compile(r"(?<=[.;!?])\s+")
+_CITY_PREFIX = re.compile(
+    r"^(?:г\.\s*|город\s+)?(?:Астана|Астане|Нур-Султан)\s*[:,—-]\s*", re.IGNORECASE
+)
 
 
 def _storm_text(w: WeatherWarning) -> str:
     """The storm warning shortened to what it says about Astana: the sentences that name the city, else its title."""
     own = [s for s in _SENTENCE.split(" ".join(w.text.split())) if _ASTANA.search(s)]
-    return _short(" ".join(own) or w.title)
+    # «Астана: 19 октября ночью и утром ожидается туман»: the city is already in the heading, say it once
+    text = _CITY_PREFIX.sub("", " ".join(own) or w.title)
+    return _short(text)
 
 
 def _day_of(w: WeatherWarning, lang: str) -> str:

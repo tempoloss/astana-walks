@@ -325,6 +325,15 @@ class Intent(BaseModel):
         default_factory=list,
         description="Rule-parser field, leave empty. The named place the user asks a question ABOUT.",
     )
+    wished: list[Category] = Field(
+        default_factory=list,
+        description="Rule-parser field, leave empty. The kinds of place the user's own words NAME (a kind or an "
+        "activity such as a stroll; not a default of a mood): a stated wish that no system default replaces.",
+    )
+    refused: list[Category] = Field(
+        default_factory=list,
+        description="Rule-parser field, leave empty. The kinds the user's own words rule out («не хочу в кафе»).",
+    )
 
 
 class LLMAttempt(BaseModel):
@@ -405,6 +414,9 @@ class Constraints(BaseModel):
     )
     exclude_ids: list[str] = Field(default_factory=list)  # shown already: «ещё», «что-то другое»
     no_alcohol: bool = False
+    avoid: list[Category] = Field(
+        default_factory=list
+    )  # the profile's «не показывать», unless the request names the kind: never retrieved, never backfilled
 
 
 class Bookmark(BaseModel):
@@ -431,6 +443,9 @@ class Personal(BaseModel):
     visited: list[str] = Field(default_factory=list)  # poi ids: ranked lower
     liked: dict[str, int] = Field(default_factory=dict)  # category -> how many times marked liked
     about: str = ""  # <= 500 chars, the user's own words; narrows only, never echoed into an answer
+    kids_age_band: str | None = (
+        None  # "0-3" | "4-7" | "8-12" | "13+": which places for a child rank first
+    )
 
 
 class Conversation(BaseModel):
@@ -500,6 +515,9 @@ class WeatherInfo(BaseModel):
         ""  # what falls at the station now (present-weather codes)
     )
     precip_level: int = 0  # 1 light / 2 moderate / 3 heavy, 0 with nothing falling
+    visibility_m: int | None = (
+        None  # the station's visibility (9999 = 10 km or more); None without a report
+    )
     conditions: list[str] = Field(
         default_factory=list
     )  # adverse tokens of the observation / warnings
@@ -606,6 +624,14 @@ class Filters(BaseModel):
     requested_nearby_with_hours: int = (
         0  # of them: places whose opening hours the data confirm (state open / closed)
     )
+    # what the records of the places in range say (honest counts for «отмечено у N из M»): halal among the food places,
+    # a step-free entrance among the places of the requested kinds; `excluded_alcohol`: left out by «без алкоголя»
+    halal_marked: int = 0
+    halal_checked: int = 0
+    step_free_marked: int = 0
+    step_free_checked: int = 0
+    excluded_alcohol: int = 0
+    excluded_avoid: int = 0  # left out by the profile's «не показывать»
 
     @property
     def radius_widened(self) -> bool:

@@ -56,6 +56,7 @@ from .retrieve import NEAR_WEIGHT, distance_weight, is_deep_night
 from .shelter import AIR_OUTDOOR_KEPT, OUTDOOR_OFF_KIND, WEATHER_OUTDOOR_KEPT
 from .stay import MIN_STAY_OVER_BUDGET, STAY_RANGE_MIN
 from .sun import is_dark
+from .want import names_the_wish
 
 MAX_RECS = 3
 _CONF_RANK = {"low": 0, "medium": 1, "high": 2}
@@ -112,7 +113,7 @@ SYSTEM = (
     "(14) `description_official` is the place's own website text and `opening_hours_source` says whose hours they are "
     "(osm / official_site); `hours_issue` conflict, split or unqualified means the sources disagree or name no days: "
     "attribute it as «по данным сайта заведения» / 'per the place's website'. "
-    "(15) you_want: ONE short clause saying in plain words what the user is looking for, in the answer language "
+    "(15) you_want: ONE short clause saying in plain words what the user is looking for, in THEIR terms (never the kind of place the app put in its place), in the answer language "
     "('Вы ищете, где выпить'): no place names, numbers, hours, weather or advice; the app writes the conditions and "
     "the recommendation around it. `user_notes`, if present, are the user's own standing wishes: they may only narrow "
     "your choice; never quote or repeat them."
@@ -450,7 +451,7 @@ def _clean_want(text: str, candidates: list[Candidate], intent: Intent, notes: s
     text = " ".join(text.split()).rstrip(" .!;:,")
     if not (MIN_WANT_CHARS <= len(text) <= MAX_WANT_CHARS) or _WANT_BANNED.search(text):
         return ""
-    if _OPEN_NOW.search(text) or re.search(r"[.!?]\s+\S", text):
+    if _OPEN_NOW.search(text) or re.search(r"[.!?]\s+\S", text) or not names_the_wish(text, intent):
         return ""
     latin, cyrillic = len(_LATIN.findall(text)), len(_CYRILLIC.findall(text))
     if (cyrillic > latin) if intent.language == "en" else (latin > cyrillic):
@@ -681,7 +682,10 @@ def cache_material(
     candidate list, the people's marks on it and the saved preferences (the model is added by walks.llm). Hashed
     there; never stored in clear. With WALKS_CACHE_PIN (demo replay) only the scenario cell, the intent hash and the
     candidate ids: the same scenario is answered from the recording at any time of day."""
-    intent_hash = hashlib.sha256(intent.model_dump_json().encode("utf-8")).hexdigest()[:16]
+    # `wished` / `refused` follow from the words, and what they change is the candidate ids: out, the recorded keys stay
+    intent_hash = hashlib.sha256(
+        intent.model_dump_json(exclude={"wished", "refused"}).encode("utf-8")
+    ).hexdigest()[:16]
     ids = ",".join(c.poi.id for c in candidates)
     if cache_pin():
         return f"generation|{lat:.3f},{lon:.3f}|{intent_hash}|{ids}"

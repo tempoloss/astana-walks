@@ -43,8 +43,8 @@ from .presets import PRESETS
 from .profile import (
     Profile,
     adapt_weather,
+    avoided_kinds,
     constraints_for,
-    explain,
     merge_into_intent,
     personal_view,
     preferences_payload,
@@ -148,12 +148,16 @@ def _understand(
             fu, step = decided
         else:
             fu, step = parse_follow_up(text, conversation.intent), None
-            if fu is None:
+            if (
+                fu is None and not parse_rules(text, when).intent.wished
+            ):  # a named wish is a new request
                 fu, step = refine_with_llm(
                     text, conversation.intent, use_llm=use_llm, deadline=deadline
                 )
         if fu is not None:
             intent, constraints = apply_follow_up(conversation, fu, pois)
+            if profile is not None:  # a kind named once lifts «не показывать» for that message only
+                constraints = constraints.model_copy(update={"avoid": list(profile.avoid)})
             if language:
                 intent = intent.model_copy(update={"language": language})
             note = describe(fu, intent, constraints, intent.language)
@@ -189,6 +193,9 @@ def _prepare(
         intent, applied = merge_into_intent(parsed.intent, profile, text)
         constraints, extra = constraints_for(profile)
         applied += extra
+        if avoided := avoided_kinds(intent, profile, text):
+            constraints = constraints.model_copy(update={"avoid": avoided})
+            applied.append("avoid")
         parsed = parsed.model_copy(update={"intent": intent})
     if hints is not None and parsed.intent.refusal == "none":
         parsed = parsed.model_copy(update={"intent": _with_hints(parsed.intent, hints, text)})
@@ -352,7 +359,9 @@ def recommend(
         cands = _unseen(retrieval.candidates) if profile is not None else retrieval.candidates
         way = along or late_home(intent, to_local_naive(when).hour, (lat, lon), bookmarks or [])
         if way is not None:
-            cands = prefer_toward(cands, (lat, lon), way, along=along is not None)
+            cands = prefer_toward(
+                cands, (lat, lon), way, along=along is not None, kinds=frozenset(intent.wished)
+            )
         t_found = clock()
         gen = generate(
             intent,
@@ -481,9 +490,6 @@ def recommend(
         if note := visit_note(r.poi, when, r.travel_min, stay, r.hours_state, intent.language):
             r.notes = f"{r.notes} {note}".strip()
     refresh_why(recs, cands, intent, weather)  # the reasons name the final walking times and stays
-    if profile is not None and (phrase := explain(req.applied, profile, intent.language)):
-        for r in recs:
-            r.why = f"{r.why} {phrase}".strip()
     lrt_note = attach_lrt_hints(pois, lat, lon, recs, intent.mode, intent.language)
     on_the_way = (
         way.name

@@ -15,7 +15,7 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_valida
 
 from walks.feedback import SIGNALS, add_feedback
 from walks.i18n import category_name
-from walks.models import Budget, Category, Language
+from walks.models import Category, Language
 from walks.pipeline import get_pois
 from walks.profile import (
     ABOUT_MAX,
@@ -24,6 +24,7 @@ from walks.profile import (
     Mobility,
     Pace,
     Profile,
+    ProfileBudget,
     clean_about,
     delete_profile,
     forget_item,
@@ -41,7 +42,7 @@ Lang = Literal["kk", "ru", "en"]
 FLAGS = ("with_kids", "quiet", "halal", "no_alcohol")
 CHOICES: dict[str, tuple[str, ...]] = {  # the `remember` keys «name:value»
     "mobility": get_args(Mobility),
-    "budget": get_args(Budget),
+    "budget": get_args(ProfileBudget),
     "language": get_args(Language),
     "kids_age_band": get_args(AgeBand),
     "walk_pace": get_args(Pace),
@@ -99,7 +100,7 @@ class ProfileForm(BaseModel):
     kids_age_band: AgeBand | None = None
     mobility: Mobility = "none"
     quiet: bool = False
-    budget: Budget = "any"
+    budget: ProfileBudget = "any"
     halal: bool = False
     no_alcohol: bool = False
     language: Language | None = None

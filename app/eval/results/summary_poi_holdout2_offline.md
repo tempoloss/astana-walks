@@ -1,13 +1,13 @@
 # Оценка: `poi`, режим `offline`
 
 Набор кейсов: holdout2. Кейсов: 24, рекомендаций: 70.
-Прогон: метка `offline`, режим `offline`, 24 записей, данные `data/poi.json`, git `9fbe2fc`, 2026-10-18T21:56:21+05:00.
+Прогон: метка `offline`, режим `offline`, 24 записей, данные `data/poi.json`, git `29dda4a`, 2026-10-19T00:28:05+05:00.
 
 | метрика | значение |
 |---|---|
 | кейсов | 24 |
 | hallucinated_poi (должно быть 0) | 0 |
-| constraint_ok_rate (рекомендации без нарушений) | 87.1% |
+| constraint_ok_rate (рекомендации без нарушений) | 85.7% |
 | кейсов без единого нарушения | 33.3% |
 | honest_unknown_rate (кейсы) | 100.0% |
 | honest_unknown_rate, кейсы «ночь/праздник» | 100.0% |
@@ -15,9 +15,9 @@
 | diversity (нет дублей сети среди рекомендаций) | 100.0% |
 | top-1 без нарушений ограничений | 95.8% |
 | top-1 с подтверждённым «открыто» | 58.3% |
-| доля рекомендаций с неизвестными часами | 62.9% |
+| доля рекомендаций с неизвестными часами | 64.3% |
 | доля рекомендаций не из OSM-записей | 0.0% |
-| средняя дорога до рекомендации, мин | 6.4 |
+| средняя дорога до рекомендации, мин | 6.7 |
 | padding: рекомендации, добранные расширением радиуса, другой категорией или заменой из-за погоды | 11.4% |
 | … за счёт расширения радиуса (radius_factor > 1) | 0.0% |
 | … за счёт другой категории (back-fill) | 11.4% |
@@ -27,7 +27,7 @@
 | кейсов, где вся цепочка ИИ недоступна (→ шаблон) | н/п |
 | кейсов, где ответ ИИ не прошёл проверку poi_id (→ шаблон) | н/п |
 | latency пайплайна, медиана (шаблон, без ИИ) | 11 мс |
-| latency пайплайна, p90 (шаблон, без ИИ) | 16 мс |
+| latency пайплайна, p90 (шаблон, без ИИ) | 19 мс |
 | latency ответа ИИ, медиана | н/п |
 | latency ответа ИИ, p90 | н/п |
 | honest_unknown_rate по рекомендациям | 100.0% |
@@ -47,6 +47,7 @@
 | over_budget | 15 |
 | category_not_allowed | 5 |
 | outdoor_in_cold_or_smog | 1 |
+| walk_too_long | 1 |
 
 ## Кейсы с нарушениями
 
@@ -60,7 +61,7 @@
 - `h2-13-station-transit-lunch`: over_budget
 - `h2-14-station-cold-wait`: over_budget
 - `h2-15-momyshuly-park-weekend-walk`: category_not_allowed, over_budget
-- `h2-16-momyshuly-park-laptop-work`: category_not_allowed, outdoor_in_cold_or_smog, over_budget
+- `h2-16-momyshuly-park-laptop-work`: category_not_allowed, outdoor_in_cold_or_smog, over_budget, walk_too_long
 - `h2-17-medu-between-classes`: over_budget
 - `h2-19-koktal-private-sector-weekend`: over_budget
 - `h2-22-kokzhiek-street-cold-kids`: category_not_allowed, over_budget

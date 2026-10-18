@@ -171,9 +171,9 @@ def test_indoor_places_offered_for_a_requested_park_in_frost_are_substituted():
 
 
 def test_a_substituted_card_says_so_in_its_notes_and_badge():
-    pois = [_poi("park", 50, "park_garden"), _poi("cafe", 400, "cafe")]
+    pois = [_poi("park", 50, "kids_playground"), _poi("cafe", 400, "cafe")]
     res = recommend(
-        "парк",
+        "детская площадка",
         *ORIGIN,
         WED_NOON,
         use_llm=False,

@@ -27,8 +27,8 @@ from .i18n import (
 from .i18n_cuisine import cuisine_label
 from .models import HOURS_SUFFIX, MUSEUM_REGISTER, Candidate, Intent, Recommendation, WeatherInfo
 from .radius import INFO_ABOUT
-from .shelter import AIR_OUTDOOR_KEPT, OUTDOOR_EXCLUDED, WEATHER_OUTDOOR_KEPT
-from .stay import MIN_STAY_OVER_BUDGET, min_stay
+from .shelter import AIR_OUTDOOR_KEPT, LIT_NEAR, OUTDOOR_EXCLUDED, WEATHER_OUTDOOR_KEPT
+from .stay import MIN_STAY_OVER_BUDGET, NAMED_OVER_BUDGET, min_stay
 from .weather import BAD_PM25, adverse_text, air_driver_text, air_text
 
 MAX_FACTS = 2  # sentences of a `why`
@@ -80,7 +80,7 @@ _HOURS_WORDS = re.compile(
 
 def budget_phrase(c: Candidate, intent: Intent) -> str:
     """Why a place stayed in the list although its usual minimum stay exceeds the time left ('' otherwise)."""
-    if MIN_STAY_OVER_BUDGET not in c.reasons:
+    if MIN_STAY_OVER_BUDGET not in c.reasons and NAMED_OVER_BUDGET not in c.reasons:
         return ""
     return t("budget_over", intent.language, lo=min_stay(c.poi.category))
 
@@ -153,6 +153,8 @@ def weather_notes(c: Candidate, weather: WeatherInfo | None, lang: str) -> list[
                 out.append(t("note_hint_outdoor", lang, reason=air_driver_text(weather, lang)))
     if "dark_outdoor" in c.reasons:
         out.append(t("note_dark_outdoor", lang))
+    if LIT_NEAR in c.reasons:
+        out.append(t("note_lit_near", lang))
     return out
 
 

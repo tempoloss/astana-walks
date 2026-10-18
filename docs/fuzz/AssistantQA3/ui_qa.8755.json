@@ -1,0 +1,280 @@
+{
+ "base": "http://127.0.0.1:8755",
+ "console": [
+  "warning: [.WebGL-0x15ac0041f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+  "warning: [.WebGL-0x15ac0041f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+  "warning: [.WebGL-0x15ac0041f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+  "warning: [.WebGL-0x15ac0041f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+ ],
+ "steps": {
+  "start_fonts": {
+   "lead": [],
+   "card": [],
+   "all_text_sizes": [
+    "10px",
+    "10.5px",
+    "11px",
+    "12px",
+    "12.5px",
+    "14px",
+    "15px"
+   ],
+   "mono": 2,
+   "upper": 1,
+   "striped": [],
+   "overflowX": false
+  },
+  "walk_fonts": {
+   "lead": [
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "15px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.045px",
+     "lh": "21.75px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Не совсем то, что вы просили, но по часа",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    }
+   ],
+   "card": [
+    {
+     "sel": ".card h3, .card .name, .card-title",
+     "text": "Coffee BOOMкафе",
+     "size": "16.38px",
+     "weight": "600",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.1638px",
+     "lh": "21.294px"
+    }
+   ],
+   "all_text_sizes": [
+    "10px",
+    "10.5px",
+    "11px",
+    "11.5px",
+    "12px",
+    "12.5px",
+    "14px",
+    "15px",
+    "15.5px"
+   ],
+   "mono": 18,
+   "upper": 1,
+   "striped": [
+    "mk-state unknown",
+    "unk"
+   ],
+   "overflowX": false
+  },
+  "details_fonts": {
+   "lead": [
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Где прогуляться можно щас?",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "14px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.042px",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "15px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.045px",
+     "lh": "21.75px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Не совсем то, что вы просили, но по часа",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    }
+   ],
+   "card": [
+    {
+     "sel": ".card h3, .card .name, .card-title",
+     "text": "Coffee BOOMкафе",
+     "size": "16.38px",
+     "weight": "600",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.1638px",
+     "lh": "21.294px"
+    }
+   ],
+   "all_text_sizes": [
+    "10px",
+    "10.5px",
+    "11px",
+    "11.5px",
+    "12px",
+    "12.5px",
+    "14px",
+    "15px",
+    "15.5px"
+   ],
+   "mono": 24,
+   "upper": 1,
+   "striped": [
+    "mk-state unknown",
+    "unk",
+    "unk"
+   ],
+   "overflowX": false
+  },
+  "unknown_hours_nodes": [
+   {
+    "cls": "mk-state unknown",
+    "text": "",
+    "bg": "repeating-linear-gradient(45deg, rgba(110, 117, 130, 0.9) 0px, rgba(110, 117, 130, 0.9) 1p"
+   }
+  ],
+  "markup_is_text": {
+   "scriptTags": 0,
+   "boldTags": 1
+  },
+  "long_word_overflowX": false,
+  "maxlength_paste": {
+   "value": 900,
+   "maxlength": 600
+  },
+  "where_dialog": {
+   "marks": "МОИ МЕСТА\n\nДобавить место\n\nОтметьте «Дом», «Работа» или «Учёба»: так я смогу искать «поесть по дороге домой».",
+   "list": "МЕСТА В ГОРОДЕ\n\nEXPO\nMega Silk Way\nБайтерек\nХан Шатыр\nАэропорт",
+   "actions": "Моё местоположение\nВыбрать на карте"
+  },
+  "memory_text": "Что я о вас знаю\n\nДиалог хранится только в этой вкладке и пропадает, когда вы её закрываете.\n\nЗапоминать мои предпочтения\n\nЧтобы не повторять «с ребёнком» или «тихо» в каждом запросе. Всё сохранённое видно здесь, любую строку можно стереть. В ИИ уходят ваши отметки и текст «Расскажите о себе», но не места, где вы были.\n\nВыключено: ничего не читается и не записывается.\n\nОтметки о местах анонимны: только место, отметка, день и часть суток — без имени и координат.",
+  "memory_fonts": {
+   "lead": [
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Где прогуляться можно щас?",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "14px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.042px",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Я именно погулять хочу",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: парк, достопримечат",
+     "size": "14px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.042px",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "<script>alert(1)</script><b>жирный</b> к",
+     "size": "14px",
+     "weight": "400",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "normal",
+     "lh": "20.3px"
+    },
+    {
+     "sel": ".thread .msg-a, .thread .answer, .thread .lead, .thread li p",
+     "text": "Уже темно. Вы ищете: кафе — советую «Cof",
+     "size": "14px",
+     "weight": "500",
+     "family": "Inter, system-ui, -apple-system, \"Segoe ",
+     "transform": "none",
+     "spacing": "-0.042px",
+     "lh": "20.3px"
+    }
+   ],
+   "card": [],
+   "all_text_sizes": [
+    "10px",
+    "10.5px",
+    "11px",
+    "12px",
+    "12.5px",
+    "14px",
+    "15px"
+   ],
+   "mono": 19,
+   "upper": 0,
+   "striped": [
+    "unk",
+    "unk"
+   ],
+   "overflowX": false
+  }
+ }
+}

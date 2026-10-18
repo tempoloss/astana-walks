@@ -153,7 +153,9 @@ def test_a_request_near_a_bookmark_is_searched_there():
     turn = out.turn
     assert turn.kind == "places"
     assert turn.origin == (HOME.lat, HOME.lon)
-    assert "от «Дом»" in turn.reply
+    assert (
+        "пешком от точки «Дом»" in turn.reply
+    )  # the saved name stays as it is, the phrase stays grammatical
     assert all(haversine_m(p.lat, p.lon, HOME.lat, HOME.lon) < 1500 for p in turn.places)
 
 

@@ -69,7 +69,7 @@ DEFAULT_CACHE_PATH = Path(__file__).resolve().parents[1] / ".local" / "llm_cache
 DEMO_CACHE_PATH = Path(__file__).resolve().parents[2] / "data" / "demo_llm_cache.json"
 NOT_CONFIGURED = "ИИ не настроен (нет ключа Gemini и профилей LLM_PROFILE_*)"
 OFFLINE_NOTE = "офлайн-режим (WALKS_OFFLINE): сетевые запросы отключены"
-REPLAY_MISS_NOTE = "этот запрос не записан: в демо ИИ отвечает только записанными ответами"
+REPLAY_MISS_NOTE = "этот запрос не записан: здесь ИИ отвечает только заранее записанными ответами"
 
 _clock = time.monotonic  # tests replace it
 _open_until: dict[str, float] = {}  # link label -> monotonic time until which it is skipped

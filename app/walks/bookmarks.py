@@ -131,10 +131,26 @@ def toward(
 
 
 def prefer_toward(
-    cands: list[Candidate], user: tuple[float, float], target: Bookmark, *, along: bool
+    cands: list[Candidate],
+    user: tuple[float, float],
+    target: Bookmark,
+    *,
+    along: bool,
+    kinds: frozenset[str] = frozenset(),
 ) -> list[Candidate]:
     """The candidates with those toward `target` first (alone when there are enough of them); unchanged when none lies
-    that way, so the answer never claims a way it does not have."""
+    that way, so the answer never claims a way it does not have. The way only orders and narrows the kinds the person
+    NAMED (`kinds`): a place of another kind that lies toward home never takes the place of one they asked for, it
+    only follows them."""
+    named = [c for c in cands if c.poi.category in kinds] if kinds else []
+    if named:
+        return [*_toward_first(named, user, target, along), *(c for c in cands if c not in named)]
+    return _toward_first(cands, user, target, along)
+
+
+def _toward_first(
+    cands: list[Candidate], user: tuple[float, float], target: Bookmark, along: bool
+) -> list[Candidate]:
     on = [c for c in cands if toward(user, target, c.poi.lat, c.poi.lon, along=along)]
     if not on:
         return cands

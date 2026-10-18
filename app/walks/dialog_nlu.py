@@ -450,6 +450,7 @@ _EN_SMALL = frozenset(
     ]
 )
 _CYRILLIC = re.compile(r"[а-яёәіңғүұқөһ]", re.I)
+_RU_ONLY = re.compile(r"[ёъэщ]", re.I)  # letters a kazakh word of its own does not use («ещё»)
 
 
 def detect(text: str, fallback: str) -> str:
@@ -465,7 +466,9 @@ def detect(text: str, fallback: str) -> str:
         return "kk"
     if not _CYRILLIC.search(text):
         return "en" if any(t in _EN_SMALL or t in _EN_WORDS for t in toks) else fallback
-    return fallback if len(toks) <= 2 and small_talk(text) is None else "ru"
+    if fallback != "kk" or _RU_ONLY.search(text) or len(toks) > 2 or small_talk(text) is not None:
+        return "ru"  # a Cyrillic message is never english: «ещё варианты» after «ne to, drugoe» is russian again
+    return fallback  # «другое» in a kazakh dialogue: a short word of both languages keeps the dialogue's
 
 
 # ------------------------------------------------------------------ questions about shown places
@@ -527,7 +530,9 @@ _TOPICS: tuple[tuple[Topic, str, bool], ...] = (
     ("parking", r"\bпарковк\w*|\bстоянк\w*|\bparking\b|\bтурак\w*", False),
     (
         "price",
-        r"\bсколько стоит\b|\bкакие цены\b|\bцены\b|\bцена\b|\bhow much\b|\bprices?\b|\bбагасы\b|\bкандай баг\w*|\bканша тур\w*",
+        r"\bсколько стоит\b|\bкакие цены\b|\bцены\b|\bцена\b|\bhow much\b|\bprices?\b|\bбагасы\b|\bкандай баг\w*|\bканша тур\w*|"
+        r"\bвход\w* (?:платн|бесплатн)\w*|\b(?:платн|бесплатн)\w* вход\w*|\bбилет\w*|\bentry fee\b|\bentrance fee\b|"
+        r"\badmission\b|\btickets?\b|\bкиру акылы\b|\bакылы ма\b",
         False,
     ),
     (

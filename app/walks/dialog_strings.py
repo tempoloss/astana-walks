@@ -21,6 +21,11 @@ STRINGS: dict[str, Entry] = {
         "Новых мест рядом больше нет — поищем подальше?",
         "No new places left nearby — shall we look farther?",
     ),
+    "none_toilet": (
+        "Біздің деректерде жақын жерде дәретхана жоқ — орнында немесе ең жақын сауда орталығынан не кафеден сұраңыз.",
+        "В наших данных туалетов рядом нет — уточните на месте или в ближайшем ТРЦ/кафе.",
+        "Our data has no toilets nearby — ask on the spot or at the nearest mall or café.",
+    ),
     "not_in_data": (
         "Менің деректерімде {what} жоқ: мен тамақтануға, серуендеуге және демалуға орын табуға көмектесемін.",
         "В моих данных нет {what}: я подсказываю, где поесть, погулять и отдохнуть.",
@@ -364,18 +369,126 @@ STRINGS: dict[str, Entry] = {
         "поэтому сначала места в помещении",
         "so indoor places come first",
     ),
-    "ld_outdoor_kept": (
-        "көшедегі орын сұрауыңыз бойынша қалдырылды, серуенді қысқарту жөн",
-        "место на улице оставлено по вашему запросу, прогулку лучше сократить",
-        "the outdoor place you asked for is kept, better keep the walk short",
+    "ld_walk_short": (
+        "серуендеу қысқа болғаны жөн",
+        "гулять лучше недолго",
+        "better keep the walk short",
+    ),
+    "ld_walk_lit": (
+        "алдымен жарықтандырылған көшелердің жанындағы орындар (OpenStreetMap бойынша)",
+        "сначала места у освещённых улиц (по данным OpenStreetMap)",
+        "places beside lit streets come first (per OpenStreetMap)",
+    ),
+    "ld_storm": (
+        "Астанада Қазгидромет дауыл ескертуі күшінде",
+        "в Астане действует штормовое предупреждение Казгидромета",
+        "Kazhydromet has a storm warning in force for Astana",
+    ),
+    # a kind the person asked for that a safety rule left out: said in one sentence, never named as the wish
+    "ld_guard_minor": (
+        "18 жасқа дейін бар мен алкогольді ұсынбаймын.",
+        "Бары и алкоголь до 18 лет не предлагаю.",
+        "I don't suggest bars or alcohol under 18.",
+    ),
+    "ld_guard_no_alcohol": (
+        "Барларды көрсетпеймін: «алкогольсіз» қосулы.",
+        "Бары не показываю: включено «без алкоголя».",
+        "No bars: “no alcohol” is on.",
     ),
     "ld_want": ("Сіз іздеп жатырсыз: {what}", "Вы ищете: {what}", "You are looking for: {what}"),
+    "ld_want_stroll": (
+        "Сіз серуендейтін жер іздеп жатырсыз",
+        "Вы ищете, где прогуляться",
+        "You are looking for a place to walk",
+    ),
+    "ld_want_dog": (
+        "Сіз итпен серуендейтін жер іздеп жатырсыз",
+        "Вы ищете, где погулять с собакой",
+        "You are looking for a place to walk your dog",
+    ),
+    # ---- «what I took into account»: said once, at the end of the lead, only for settings that changed this answer
+    "pl_wrap": (
+        "Сіздің баптауларыңыз ескерілді: {items}.",
+        "Учтены ваши настройки: {items}.",
+        "Your settings are taken into account: {items}.",
+    ),
+    "pl_with_kids": ("баламен", "с ребёнком", "with a child"),
+    "pl_with_kids_age": (
+        "баламен ({band} жас)",
+        "с ребёнком ({band} лет)",
+        "with a child ({band} y.o.)",
+    ),
+    "pl_mobility": ("баспалдақсыз кіру", "вход без ступенек", "step-free access"),
+    "pl_step_some": (
+        "{n}/{m} орында белгіленген, оларды жоғарырақ қойдым",
+        "в данных отмечен у {n} из {m} мест рядом, их ставлю выше",
+        "marked in the data for {n} of {m} places nearby, ranked higher",
+    ),
+    "pl_step_none": (
+        "бұл орындар үшін деректе белгі жоқ, мекемеден нақтылаңыз",
+        "у этих мест в данных об этом ничего нет, уточняйте у заведения",
+        "the data say nothing about it for these places, ask the venue",
+    ),
+    "pl_quiet": ("тыныш орындар", "тихие места", "quiet places"),
+    "pl_budget_low": ("қолжетімді баға", "недорого", "affordable"),
+    "pl_halal": ("халал", "халяль", "halal"),
+    "pl_halal_some": (
+        "{n}/{m} орында белгіленген, оларды бірінші қойдым",
+        "в данных отмечен у {n} из {m} мест рядом, их ставлю первыми",
+        "marked in the data for {n} of {m} places nearby, ranked first",
+    ),
+    "pl_halal_none": (
+        "бұл орындар үшін деректе халал белгісі жоқ, мекемеден нақтылаңыз",
+        "у этих мест в данных о халяль ничего нет, уточняйте у заведения",
+        "the data say nothing about halal for these places, ask the venue",
+    ),
+    "pl_no_alcohol": ("алкогольсіз", "без алкоголя", "no alcohol"),
+    "pl_no_alcohol_n": (
+        "алкогольсіз (алынып тасталды: {n})",
+        "без алкоголя (убрано мест: {n})",
+        "no alcohol ({n} places left out)",
+    ),
+    "pl_pace_slow": (
+        "баяу қадам — радиус аз",
+        "неспешный шаг — радиус меньше",
+        "an unhurried pace — a smaller radius",
+    ),
+    "pl_pace_fast": (
+        "жылдам қадам — радиус үлкен",
+        "быстрый шаг — радиус больше",
+        "a brisk pace — a larger radius",
+    ),
+    "pl_cold_low": (
+        "тоңғыш екеніңіз — аязда үй-жай бірінші",
+        "вы мёрзнете — в холод сначала помещения",
+        "you feel the cold — indoor places first when it is freezing",
+    ),
+    "pl_cold_high": (
+        "суықты оңай көтересіз — аяз ережесі кейінірек қосылады",
+        "холод переносите легко — правило мороза включается позже",
+        "you take the cold easily — the frost rule starts later",
+    ),
+    "pl_avoid": ("көрсетпеймін: {kinds}", "не показываю: {kinds}", "left out: {kinds}"),
+    "pl_liked": (
+        "ұнайтындарыңыз жоғарырақ: {kinds}",
+        "любимое выше: {kinds}",
+        "your favourites higher: {kinds}",
+    ),
+    "pl_about": (
+        "өзіңіз туралы мәтін ЖИ-ге берілді",
+        "ваш текст о себе передан ИИ",
+        "your note about yourself went to the AI",
+    ),
     "ld_pick": (
         "«{name}» жеріне барыңыз, {walk}{tail}",
         "советую «{name}», {walk}{tail}",
         "I suggest {name}, {walk}{tail}",
     ),
-    "ld_from": ("«{bm}» нүктесінен", "от «{bm}»", "from “{bm}”"),
+    "ld_from": (
+        "«{bm}» нүктесінен",
+        "от точки «{bm}»",
+        "from “{bm}”",
+    ),  # «от точки «Дом»»: the name stays as saved
     "ld_more": ("; төменде {more}", "; ниже {more}", "; {more} below"),
     "ld_way_home": (
         "әрі үйге бара жатқан жолда",
