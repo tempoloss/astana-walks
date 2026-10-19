@@ -11,6 +11,7 @@ library; the CLI keeps it in a file under app/.local/ on request (see `walks.cli
 
 from __future__ import annotations
 
+import math
 import re
 from collections.abc import Sequence
 from typing import Literal
@@ -18,8 +19,8 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from .i18n import t
-from .intent import named_categories, parse_time_budget
-from .lexicon import match
+from .intent import named_categories, parse_rules, parse_time_budget
+from .lexicon import match, normalize
 from .llm import (
     INTENT_BUDGET_S,
     INTENT_TIMEOUT_S,
@@ -31,6 +32,8 @@ from .llm import (
 )
 from .models import POI, Constraints, Conversation, Intent, LLMStep, Result
 from .names import same_brand
+from .radius import STROLL_CATEGORIES, haversine_m
+from .variety import priced_kinds
 
 MAX_WORDS = 8  # a longer message is a new request, whatever it contains
 CLOSER_FACTOR = 0.6  # «поближе» with nothing shown yet: the radius shrinks to this share
@@ -38,6 +41,7 @@ CLOSER_SHARE = (
     0.8  # «поближе»: not farther than this share of the farthest place the last answer offered
 )
 MIN_CLOSER_M = 150
+MAX_SEEN = 40  # places of one dialogue remembered as shown (walks.variety): the oldest beyond this are offered again
 LLM_MAX_WORDS = 6
 Tri = Literal["keep", "yes", "no"]
 
@@ -89,6 +93,10 @@ class FollowUp(BaseModel):
     mode: Literal["keep", "walk", "car", "transit"] = Field(
         "keep", description="Change of transport."
     )
+    drop: list[str] = Field(
+        default_factory=list,
+        description="Rule-parser field, leave empty. Kinds of place the message refuses («не торговый центр»).",
+    )
 
     def changes(self) -> bool:
         return any(
@@ -102,6 +110,7 @@ class FollowUp(BaseModel):
                 self.wifi_socket != "keep",
                 self.extra_min,
                 self.mode != "keep",
+                bool(self.drop),
             )
         )
 
@@ -116,9 +125,31 @@ def _named_categories(t: str) -> list[str]:
     return named_categories(t)
 
 
+_KIDS_FILLER_WORDS = (
+    "а и но ну тогда тоже ещё еще да мне нам мы я с со для если можно лучше давай давайте "
+    "and also then for with we i my a the too please what if am is are ал және мен біз үшін де бар ше барсам барса"
+)
+_KIDS_FILLERS = frozenset(normalize(w) for w in _KIDS_FILLER_WORDS.split())
+
+
+def _only_kids_words(t: str) -> bool:
+    """Nothing in the message but the words about a child (and fillers): «с ребёнком», «а если с детьми», «балаларға»."""
+    covered = {w for h in match(t).hits for w in h.text.split()}
+    rest = [
+        w for w in re.findall(r"\w+", normalize(t)) if w not in covered and w not in _KIDS_FILLERS
+    ]
+    return not rest
+
+
+_ASKS_WHERE = re.compile(r"(?:^|\s)(?:где|куда|қайда|кайда|where)(?:\s|$)")
+
+
 def _is_new_request(t: str, prev: Intent) -> bool:
-    """A message that names a kind of place is a new request, except «ещё кафе»: more of what was asked."""
+    """A message that names a kind of place is a new request, except «ещё кафе»: more of what was asked. So is a fresh
+    «где / куда / қайда» question with a wish of its own («где поиграть детям в помещении»): never a chip over the last."""
     named = _named_categories(t)
+    if _ASKS_WHERE.search(t) and match(t).active.keys() - {"kids"}:
+        return True
     return bool(named) and not (set(named) <= set(prev.categories) and re.search(_MORE, t))
 
 
@@ -170,6 +201,18 @@ def parse_follow_up(text: str, prev: Intent) -> FollowUp | None:
         extra_min=extra,
         mode=mode,  # type: ignore[arg-type]
     )
+    only_kids = fu.with_kids == "yes" and not fu.model_copy(update={"with_kids": "keep"}).changes()
+    if only_kids and not _only_kids_words(
+        t
+    ):  # it says more than «с ребёнком»: a request or a question of its own
+        return None
+    refused = list(
+        parse_rules(t).intent.refused
+    )  # also a kind the request never named: it stays out
+    if (
+        refused and not fu.no_alcohol
+    ):  # «жоқ, бұл емес… сауда орталығы емес»: not that kind, other places
+        fu.drop, fu.more = refused, True
     if not fu.changes() and re.search(_MORE, t):
         fu.more = True  # «ещё» alone: other places; next to another change it is only a filler
     return fu if fu.changes() else None
@@ -194,6 +237,7 @@ def narrow(fu: FollowUp) -> FollowUp:
             "budget": "low" if fu.budget == "low" else "keep",
             "extra_min": min(fu.extra_min, 0),
             "mode": "keep",
+            "drop": [],
         }
     )
 
@@ -255,14 +299,34 @@ def apply_follow_up(
     }
     if fu.budget != "keep":
         update["budget"] = fu.budget
+        if kinds := priced_kinds(
+            intent.categories, fu.budget
+        ):  # no prices in the data: the kind of place is the lever
+            update["categories"] = kinds
+    if fu.with_kids == "yes" and intent.categories and set(intent.categories) <= STROLL_CATEGORIES:
+        update["categories"] = [
+            *intent.categories,
+            "kids_playground",
+        ]  # a walk with a child: the playgrounds too
+    if fu.drop:  # «не торговый центр»: the kind is out of the request, and stays out of the search
+        update["categories"] = [
+            c for c in update.get("categories", intent.categories) if c not in fu.drop
+        ]
+        update["wished"] = [c for c in intent.wished if c not in fu.drop]
+        update["refused"] = list(dict.fromkeys([*intent.refused, *fu.drop]))
     if fu.mode != "keep":
         update["mode"] = fu.mode
     if fu.extra_min:
         update["time_budget_min"] = max(15, min(intent.time_budget_min + fu.extra_min, 600))
     cons: dict = {"no_alcohol": constraints.no_alcohol or fu.no_alcohol}
     if fu.closer:
-        if conv.farthest_m:  # closer than what the last answer offered
-            cap = max(MIN_CLOSER_M, round(CLOSER_SHARE * conv.farthest_m))
+        if (
+            conv.farthest_m
+        ):  # closer than what the last answer offered; its nearest place stays a candidate, so that
+            # «ближе нет» shows it first, never a farther one under «ближайшее»
+            shown = [p for p in pois or () if p.id in conv.shown_ids]
+            near = min((haversine_m(conv.lat, conv.lon, p.lat, p.lon) for p in shown), default=0.0)
+            cap = max(MIN_CLOSER_M, round(CLOSER_SHARE * conv.farthest_m), math.ceil(near))
             cons["radius_cap_m"] = min(cap, constraints.radius_cap_m or cap)
         else:
             cons["radius_factor"] = round(constraints.radius_factor * CLOSER_FACTOR, 3)
@@ -306,9 +370,11 @@ def describe(fu: FollowUp, intent: Intent, constraints: Constraints, language: s
 
 
 def conversation_after(prev: Conversation | None, res: Result) -> Conversation:
-    """The state after an answer: what it was built from and every place shown in this dialogue so far."""
+    """The state after an answer: what it was built from and every place shown in this dialogue so far (a new request
+    at the same point keeps the list: the places shown before are not offered again, walks.variety)."""
     carried = prev is not None and res.continued
-    shown = list(prev.shown_ids) if carried and prev else []
+    same_point = prev is not None and (prev.lat, prev.lon) == (res.lat, res.lon)
+    shown = list(prev.shown_ids)[-MAX_SEEN:] if same_point and prev else []
     shown += [r.poi.id for r in res.recs if r.poi.id not in shown]
     now = {
         r.poi.id for r in res.recs

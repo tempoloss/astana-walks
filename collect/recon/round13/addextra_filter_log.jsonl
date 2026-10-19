@@ -1,0 +1,13 @@
+{"run": "2026-10-19", "input_raw": 726, "method": "collect.overpass_poi.dedupe + add_extra same-name<=DEDUP_RADIUS_M(50m) vs existing base (overpass_poi.py:675-687)", "keep": 714, "dropped": 12}
+{"drop": "node/3421210470", "name": "RedMart pharmacy", "category": "pharmacy"}
+{"drop": "node/4519247291", "name": "Мизам", "category": "pharmacy"}
+{"drop": "node/2388769509", "name": "Лиана", "category": "grocery"}
+{"drop": "node/3273260004", "name": "Белес", "category": "grocery"}
+{"drop": "node/3273266929", "name": "Тамерлан", "category": "grocery"}
+{"drop": "node/4506673731", "name": "Керуен", "category": "grocery"}
+{"drop": "node/4893199031", "name": "Магнум", "category": "grocery"}
+{"drop": "node/4965741510", "name": "Дастан", "category": "grocery"}
+{"drop": "node/4965763196", "name": "Встреча", "category": "grocery"}
+{"drop": "node/11978484033", "name": "Sitora", "category": "grocery"}
+{"drop": "node/12095513449", "name": "Аю", "category": "grocery"}
+{"drop": "node/12101882895", "name": "Апрель", "category": "grocery"}

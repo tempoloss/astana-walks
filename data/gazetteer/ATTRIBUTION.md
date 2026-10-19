@@ -32,3 +32,18 @@ one position of it). One Overpass request, `collect/osm_addresses.py`.
   (names of businesses, opening hours, etc.) is kept here.
 - **How it is used:** the search matches what a person types against these names and returns a point inside Astana.
   The query is never logged or kept. `astana_streets.json` (above) only adds spellings of the same streets.
+
+## egov_astana_geonims_live.json / egov_astana_buildings_live.json — the LIVE RCA register (19.10)
+- **Source:** `data.egov.kz/api/detailed/s_geonims` and `/s_buildings`, keyless, the 6 Astana district `s_ats_id`s.
+- **Legal basis:** Law №401-V art.1 p.5 (verbatim in collect/SOURCES.md §21.10): open data may be used, processed and
+  republished freely. House addresses and coordinates are not personal data under the PD law (closed identifier list).
+- **What was taken:** geonims — id, kk/ru names, the `old_path` rename chains, district, `rco`, `modified`; buildings —
+  id, house number, the `s_geonim_id`/`s_ground_id` join keys, district, `modified`. `full_path` was dropped from the
+  buildings file (it is reconstructible by joining geonims; the file stays 11 MB instead of 134 MB).
+- **Freshness & completeness:** edited daily (max `modified` 2026-10-16); harvested with an `id asc` sort cursor ->
+  **85 256 unique rows = the claim** (the first unsorted run: raw 85 256 but 85 058 unique — the floating ES window
+  duplicated ~198 rows and never served ~198 others, «Акмешит 1/3» among them; sort fixes it — supersede note, this
+  section previously stated the 85 058 as a feed property). Street+number resolution via the join (geonim folded name
+  -> `s_geonim_id` -> building number) = 12/12 of the afisha queue; the join form is measured self-sufficient — the
+  trimmed buildings file deliberately has no `full_path`, matching raw text against it returns 0 and is a test bug,
+  not data loss (SOURCES.md §24.10; §24.8 is the POI layer, not this register).

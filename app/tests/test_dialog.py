@@ -13,10 +13,12 @@ import pytest
 from walks import cli
 from walks.dialog import TurnEnv, new_state, take_turn, with_location
 from walks.dialog_chips import MAX_REFINE_CHIPS
-from walks.dialog_nlu import place_question, reset_request, restore, small_talk, tidy
+from walks.dialog_nlu import out_of_data, reset_request, restore, small_talk, tidy
+from walks.dialog_questions import place_question
 from walks.dialog_text import display_name, sentences, short_what, short_why
 from walks.dialog_types import DialogState, Turn
 from walks.followup import FollowUp, narrow, parse_follow_up
+from walks.intent import named_categories
 from walks.models import POI, Candidate, Intent
 from walks.names import same_brand
 from walks.walking import offline_router
@@ -438,15 +440,15 @@ def _rec(poi_id: str, source: str):
 
 
 def test_after_another_the_ai_card_gets_no_template_backfill():
-    from walks.dialog import _one_voice
+    from walks.dialog_change import one_voice
 
     recs = [_rec("ai", "llm"), _rec("t1", "template"), _rec("t2", "template")]
-    assert [r.poi.id for r in _one_voice(recs, "llm", FollowUp(more=True))] == ["ai"]
+    assert [r.poi.id for r in one_voice(recs, "llm", FollowUp(more=True))] == ["ai"]
     assert (
-        len(_one_voice(recs, "llm", None)) == 3
+        len(one_voice(recs, "llm", None)) == 3
     )  # a first answer keeps its cards, each says whose words
-    assert len(_one_voice(recs, "template", FollowUp(more=True))) == 3
-    assert len(_one_voice([_rec("t", "template")], "llm", FollowUp(more=True))) == 1
+    assert len(one_voice(recs, "template", FollowUp(more=True))) == 3
+    assert len(one_voice([_rec("t", "template")], "llm", FollowUp(more=True))) == 1
 
 
 def test_a_requested_kind_dropped_by_the_time_rule_is_said_never_silent():
@@ -501,10 +503,9 @@ def test_night_reason_names_the_real_source_of_the_hours():
         score=1.0,
         reasons=["open_at_night"],
     )
-    assert "OSM" not in _wishes(c, "ru")[0]
-    assert "сайта" in _wishes(c, "ru")[0]
-    osm = c.model_copy(update={"poi": poi.model_copy(update={"field_sources": {}})})
-    assert "OSM" in _wishes(osm, "ru")[0]
+    assert (
+        _wishes(c, "ru") == []
+    )  # «open at night» is the card's own status line (walks.status), never a reason
 
 
 # ------------------------------------------------------------------ CLI
@@ -569,12 +570,8 @@ def test_too_expensive_is_a_request_for_cheaper_never_pricier():
 @pytest.mark.parametrize(
     ("lang", "message"),
     [
-        ("ru", "аптека рядом нужна"),
-        ("ru", "где обменять валюту"),
-        ("ru", "apteka ryadom"),
-        ("kk", "дәріхана қайда"),
-        ("en", "where is a pharmacy"),
-        ("en", "currency exchange near me"),
+        ("ru", "где заправка"),
+        ("en", "petrol station near me"),
     ],
 )
 def test_a_kind_of_place_the_data_does_not_hold_is_said_never_replaced_by_cafes(lang, message):
@@ -583,6 +580,139 @@ def test_a_kind_of_place_the_data_does_not_hold_is_said_never_replaced_by_cafes(
     assert turn.places == []
     assert state.conversation is None
     assert turn.chips
+
+
+@pytest.mark.parametrize(
+    ("message", "kind"),
+    [
+        ("аптека рядом нужна", "pharmacy"),
+        ("дәріхана қайда", "pharmacy"),
+        ("where is a pharmacy", "pharmacy"),
+        ("мини-маркет рядом", "grocery"),
+        ("азық-түлік дүкені қайда", "grocery"),
+        ("where to buy groceries", "grocery"),
+    ],
+)
+def test_pharmacy_and_grocery_are_kinds_of_place_the_data_holds(message, kind):
+    assert kind in named_categories(message)
+    assert out_of_data(message) is None
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "банкомат рядом",
+        "обмен валют где",
+        "где обменять валюту",
+        "где можно снять деньги",
+        "банк рядом",
+        "банкомат қайда",
+        "where is an atm",
+        "currency exchange near me",
+        "cash machine nearby",
+    ],
+)
+def test_money_is_a_kind_of_place_the_data_holds_never_an_apology(message):
+    assert named_categories(message) == ["money"]
+    assert out_of_data(message) is None
+
+
+@pytest.mark.parametrize(
+    "message", ["банкетный зал", "банкет в ресторане", "ақшам кафе", "наличие мест"]
+)
+def test_money_stems_do_not_take_banquet_evening_or_availability(message):
+    assert "money" not in named_categories(message)
+
+
+def test_a_cafe_next_to_a_cash_machine_is_a_cafe_search_not_money_only():
+    (turn,), state = dialogue("ru", "кафе рядом с банкоматом")
+    assert turn.kind == "places"
+    assert "money" not in state.conversation.intent.categories
+    assert "cafe" in state.conversation.intent.categories
+
+
+@pytest.mark.parametrize(
+    ("lang", "message"),
+    [
+        ("ru", "банкомат рядом"),
+        ("ru", "где обменять валюту"),
+        ("kk", "банкомат қайда"),
+        ("en", "where is an atm"),
+    ],
+)
+def test_a_cash_machine_request_is_answered_with_money_cards_only(lang, message):
+    (turn,), state = dialogue(lang, message)
+    assert turn.kind == "places"
+    assert turn.places
+    assert {p.category for p in turn.places} == {"money"}
+    assert state.conversation.intent.categories == ["money"]
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "где переночевать",
+        "хочу в гостиницу",
+        "нужен хостел",
+        "где поселиться",
+        "ночлег нужен",
+        "қонақүй қайда",
+        "түнейтін жер керек",
+        "hotel near me",
+        "where to stay",
+        "where can i sleep",
+    ],
+)
+def test_lodging_is_a_kind_of_place_the_data_holds(message):
+    assert named_categories(message) == ["lodging"]
+    assert out_of_data(message) is None
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "поселок рядом",
+        "поеду в поселок",
+        "форма қалып",
+        "i stayed home",
+        "stay inside",
+        "отелло кафе",
+    ],
+)
+def test_lodging_stems_do_not_take_a_settlement_a_shape_or_staying_in(message):
+    assert "lodging" not in named_categories(message)
+
+
+def test_a_cafe_next_to_a_hotel_is_a_cafe_search_not_lodging():
+    (turn,), state = dialogue("ru", "кафе рядом с отелем")
+    assert turn.kind == "places"
+    assert "lodging" not in state.conversation.intent.categories
+
+
+@pytest.mark.parametrize(
+    ("lang", "message"),
+    [("ru", "где переночевать"), ("kk", "қонақүй қайда"), ("en", "hotel near me")],
+)
+def test_a_lodging_request_is_answered_with_lodging_cards_never_cafes(lang, message):
+    (turn,), state = dialogue(lang, message)
+    assert turn.kind == "places"
+    assert turn.places
+    assert state.conversation.intent.categories == ["lodging"]
+    assert turn.places[0].category == "lodging"
+
+
+def test_a_bare_shop_word_is_still_a_mall_not_a_grocery():
+    assert named_categories("поеду в магазин") == ["mall"]
+
+
+def test_translit_apteka_is_read_as_a_pharmacy_search_not_as_a_kind_the_data_lacks():
+    # named_categories does not widen translit (only the whole intent parse does); since the round-13 backfill the
+    # dataset holds pharmacies, so the translit request is answered with real ones, never cafes in its place
+    (turn,), state = dialogue("ru", "apteka ryadom")
+    assert state.conversation.intent.categories == ["pharmacy"]
+    assert turn.kind == "places"
+    assert turn.places
+    assert turn.places[0].category == "pharmacy"  # retrieval fills up with neighbours below
 
 
 def test_a_kind_the_data_has_next_to_one_it_lacks_is_still_a_search():

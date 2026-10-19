@@ -5,7 +5,6 @@ from __future__ import annotations
 from .lexicon_data import (
     BETWEEN_CLASSES_BUDGET_MIN,
     LONG_VISIT_BUDGET_MIN,
-    QUICK_BUDGET_MIN,
     WAITING_BUDGET_MIN,
     Concept,
 )
@@ -74,7 +73,7 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
             "eat=", "eating", "munchies", "peckish", "chow", "need food", "get some food", "food", "foods", "hungry", "hungr", "starving", "starv", "meal", "something to eat", "place to eat", "feed=", "pizza", "grab food",
         ),
         categories=("restaurant", "cafe", "fast_food"),
-        unless=("eat_full", "eat_quick"),
+        unless=("eat_full", "eat_quick", "grocery"),  # «купить еду», «buy food» is a shop, not a meal
         negation_excludes=(),
     ),
     Concept(
@@ -85,7 +84,7 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
             "сидр", "шампанск", "ночная жизнь", "ночной клуб",
         ),
         kk=(
-            "сыра", "шарап", "арақ", "ішімдік", "алкоголь", "коктейль", "кальян",
+            "сыра", "шарап", "арақ", "ішімдік", "алкоголь", "коктейль", "кальян", "барға=", "барда=", "бардан=", "барды=", "бардың=", "бар= іздеп", "бар= іздеймін", "бар= іздейміз", "бар= іздеу", "бар= табайық", "бар= табу",
         ),
         en=(
             "bar=", "bars=", "pub=", "pubs=", "beer", "wine", "cocktail", "whisky", "whiskey", "vodka", "alcohol", "booze", "lounge", "hookah", "shisha", "brewery", "taproom",
@@ -255,10 +254,10 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
     Concept(
         "playground",
         ru=(
-            "площадк", "горки=", "горка=", "качел", "песочниц", "карусел", "лазилк", "батут", "игровая комната", "игровой комнат", "детская комната", "аниматор", "лабиринт",
+            "площадк", "горки=", "горка=", "качел", "песочниц", "карусел", "лазилк", "аниматор", "лабиринт",
         ),
         kk=(
-            "ойын алаңы", "балалар алаңы", "ойын бөлмесі", "ойнау алаңы", "ойнайтын алаң",
+            "ойын алаңы", "балалар алаңы", "ойнау алаңы", "ойнайтын алаң",
         ),
         en=(
             "playground", "play area", "swings", "swing=", "slide=", "jungle gym", "playroom", "sandbox",
@@ -276,7 +275,7 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
             "ойын сауық", "көңілді", "боулинг", "квест", "аттракцион", "аквапарк",
         ),
         en=(
-            "entertainment", "bowling", "quest", "escape room", "arcade", "amusement", "aquapark", "trampoline", "billiard", "karting", "laser tag", "lasertag", "zoo=", "aquarium",
+            "entertainment", "bowling", "quest", "escape room", "arcade", "amusement", "aquapark", "billiard", "karting", "laser tag", "lasertag", "zoo=", "aquarium",
             "board game", "board games", "fun=", "paintball", "funfair", "theme park", "playstation",
         ),
         categories=("entertainment",),
@@ -296,7 +295,77 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
             "retail", "bargains",
         ),
         categories=("mall",),
+        unless=("grocery",),  # «продуктовый магазин», «азық-түлік дүкені», «grocery store» is no mall
         negation_excludes=("mall",),
+    ),
+    # «магазин» / «купить» alone stay with shopping above (a mall): they are ambiguous (clothes, gifts, a mall), and
+    # only a compound that names food («купить еду», «продуктов») is a grocery. «еду» alone is not a stem: it drowns
+    # in «поеду».
+    Concept(
+        "pharmacy",
+        ru=(
+            "аптек",
+        ),
+        kk=(
+            "дәріхан", "даріхан",
+        ),
+        en=(
+            "pharmacy", "pharmacies", "drugstore", "chemist",
+        ),
+        categories=("pharmacy",),
+        negation_excludes=("pharmacy",),
+    ),
+    Concept(
+        "grocery",
+        ru=(
+            "продуктов", "продукты", "продуктам", "продукт=", "супермаркет", "минимаркет", "мини маркет", "затар", "бакалея", "гастроном", "купить еду",
+            "еду купить", "ночн магазин", "круглосуточн магазин",
+        ),
+        kk=(
+            "азық түлік", "бакалея", "супермаркет", "тамақ алу",
+        ),
+        en=(
+            "grocery", "groceries", "supermarket", "convenience store", "minimarket", "stock up", "buy groceries", "buy food",
+        ),
+        categories=("grocery",),
+        negation_excludes=("grocery",),
+    ),
+    # money: «банк» is exact (a prefix would take «банкет», which belongs to a restaurant), «наличные» exact (a prefix
+    # would take «наличие»), «ақша» minus «ақшам» (evening). A cash machine, a branch and a bureau are one category.
+    Concept(
+        "money",
+        ru=(
+            "банкомат", "банк=", "банке=", "банку=", "банков", "обмен валют", "обменя", "обменник", "снять налич", "снять деньг", "снять денег",
+            "наличные=", "наличку=",
+        ),
+        kk=(
+            "банкомат", "банк=", "ақша", "валюта",
+        ),
+        en=(
+            "atm", "atms", "bank=", "banks=", "cash machine", "cashpoint", "currency exchange", "exchange money", "money exchange", "withdraw cash",
+            "cash office",
+        ),
+        categories=("money",),
+        not_stems=("акшам",),  # the lexicon reads kk letters as ru look-alikes: «ақшам» is «акшам» there
+        negation_excludes=("money",),
+    ),
+    # lodging: «посел» is NOT a stem («поселок»), «қалып» is not («форма»), bare «stay» is not («stay inside», «stayed»);
+    # a hotel is a destination of a trip, so (unlike money) it is a recommendation and may be named next to other kinds.
+    Concept(
+        "lodging",
+        ru=(
+            "переноч", "заноче", "поселить", "ночлег", "ночевк", "гостиниц", "отел", "хостел", "гостев дом", "снять номер", "номер в гостиниц", "жилье на ночь", "апартамент",
+        ),
+        kk=(
+            "қонақүй", "қонақ үй", "түнеу", "түнейтін жер", "хостел",
+        ),
+        en=(
+            "hotel", "hotels", "hostel", "hostels", "lodging", "overnight", "guest house", "guesthouse", "book a room", "sleep=", "place to stay",
+            "somewhere to stay", "where to stay", "where can i stay",
+        ),
+        categories=("lodging",),
+        not_stems=("отелл",),  # «Отелло»
+        negation_excludes=("lodging",),
     ),
     Concept(
         "theatre_cinema",
@@ -378,7 +447,7 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
     Concept(
         "sport_outdoor",
         ru=(
-            "футбол", "баскетбол", "волейбол", "теннис", "бадминтон", "мяч=", "мяча=", "мячи=", "мячик", "бегать", "побегать", "бег=", "бега=", "бегу=", "пробежк", "трусц",
+            "футбол", "баскетбол", "волейбол", "теннис", "бадминтон", "мяч=", "мяча=", "мячи=", "мячик", "бегать", "побегать", "бег=", "бега=", "пробежк", "трусц",
             "размяться", "размять", "поразмять", "подвигаться", "двигаться", "активн отдых", "поиграть в мяч", "пинг понг", "пингпонг",
         ),
         kk=(
@@ -710,90 +779,6 @@ _CORE_CONCEPTS: tuple[Concept, ...] = (
         ),
         flags=("expensive",),
         unless=("plain",),
-    ),
-    Concept(
-        "fast",
-        ru=(
-            "быстр", "срочно", "на скорую", "мигом", "поскорее", "экспресс", "некогда", "нет времени", "мало времени", "в спешке", "спешу", "тороплюсь", "торопл", "на бегу",
-            "на ходу", "оперативно", "в темпе", "времени в обрез", "скоренько", "недолго", "побыстрее", "шустро", "пулей",
-        ),
-        kk=(
-            "тез=", "жылдам", "асығыс", "шұғыл", "тезірек", "асығамын", "уақыт аз",
-        ),
-        en=(
-            "fast=", "quick", "quickly", "asap", "in a hurry", "hurry", "rush", "no time", "short on time", "not much time", "express", "speedy", "fastest", "quicker", "swiftly",
-            "on the go", "right away",
-        ),
-        budget_min=QUICK_BUDGET_MIN,
-        flags=("fast",),
-    ),
-    Concept(
-        "wheelchair",
-        ru=(
-            "инвалид", "колясочник", "кресл коляск", "кресла колясок", "маломобильн", "костыл", "ограниченными возможностями",
-        ),
-        kk=(
-            "мүгедек", "мүмкіндігі шектеулі", "мүгедектер арба", "инвалид арба",
-        ),
-        en=(
-            "wheelchair", "mobility", "disabled", "disability", "handicap", "crutches", "walker=",
-        ),
-        flags=("access",),
-    ),
-    Concept(
-        "step_free",
-        ru=(
-            "доступная среда", "доступное место для", "доступн для", "безбарьерн", "без барьер", "без ступен", "без порог", "пандус", "пожилым", "пожилых", "пожилой", "пожилая", "пожилого",
-            "по лестниц", "без лестниц", "нет лестниц", "лестниц нет", "ступеньк", "тяжело ходить", "трудно ходить", "тяжело подниматься", "плохо хожу", "плохо ходит", "болят ноги", "больные ноги",
-        ),
-        kk=(
-            "бөгетсіз", "пандус", "баспалдақсыз", "баспалдақ жоқ", "баспалдақтарсыз", "кедергісіз", "тосқауылсыз", "пандуспен", "баспалдақ", "жүру қиын", "жүре алмаймын", "аяғым ауырады", "қариялар", "қарт", "егде",
-        ),
-        en=(
-            "accessible", "accessibility", "stepfree", "ramp=", "ramps", "barrier free", "barrierfree", "elderly", "no stairs", "without stairs", "avoid stairs", "stairs are hard", "hard to walk", "difficult to walk", "trouble walking", "bad knees", "mobility issues",
-        ),
-        flags=("access",),
-    ),
-    Concept(
-        "stroller",
-        ru=(
-            "коляск", "колясочк", "прогулочная коляска", "с коляс", "детской коляс",
-        ),
-        kk=(
-            "бала арба", "балалар арба", "баласы арба", "арбамен", "арбалы", "арбалос", "арбас", "коляска",
-        ),
-        en=(
-            "stroller", "strollers", "pram", "prams", "buggy", "pushchair", "baby carriage", "baby buggy", "with a stroller",
-        ),
-        flags=("with_kids", "access"),
-        unless=("wheelchair", "wheelchair_on"),
-    ),
-    Concept(
-        "mode_car",
-        ru=(
-            "на машине", "на авто=", "автомобил", "такси", "за рулем", "на личной машине", "машин", "на тачке", "яндекс го", "индрайв", "парковк", "припаркова", "на колесах",
-            "по пробкам",
-        ),
-        kk=(
-            "көлікпен", "машинамен", "такси", "жүргізіп", "тұрақ", "автокөлікпен",
-        ),
-        en=(
-            "car=", "cars=", "taxi", "uber", "drive=", "driving", "by car", "parking", "park the car", "my car", "rental car", "ride share", "rideshare", "by taxi", "drive there",
-        ),
-        flags=("car",),
-    ),
-    Concept(
-        "mode_transit",
-        ru=(
-            "автобус", "маршрутк", "общественн транспорт", "трамвай", "lrt=", "лрт=", "легкорельс", "электричк", "городской транспорт", "на транспорте",
-        ),
-        kk=(
-            "автобуспен", "қоғамдық көлік", "автобус", "трамвай", "жеңіл рельсті", "аялдама",
-        ),
-        en=(
-            "bus=", "buses", "transit", "public transport", "public transit", "tram=", "trams", "lrt=", "light rail", "by bus", "bus stop", "city transport", "metro=", "subway",
-        ),
-        flags=("transit",),
     ),
 )
 CONCEPTS: tuple[Concept, ...] = (*_CORE_CONCEPTS, *EXTRA_CONCEPTS)

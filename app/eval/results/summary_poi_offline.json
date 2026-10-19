@@ -4,41 +4,41 @@
   "chain": [],
   "cases": 44,
   "cases_with_recs": 44,
-  "recs_total": 115,
+  "recs_total": 119,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 97.4,
-  "case_all_ok_rate": 93.2,
+  "constraint_ok_rate": 98.3,
+  "case_all_ok_rate": 95.5,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
   "coverage": 97.7,
   "diversity": 100.0,
   "top1_ok_rate": 97.7,
-  "top1_open_rate": 59.1,
-  "unknown_hours_rec_share": 47.0,
+  "top1_open_rate": 61.4,
+  "unknown_hours_rec_share": 50.4,
   "non_osm_rec_share": 0.0,
-  "avg_walk_min": 6.1,
-  "wifi_socket_in_data_share": 28.6,
-  "route_stop_closed_cases": 2,
-  "latency_ms_median": 6.5,
-  "latency_ms_p90": 11.0,
+  "avg_walk_min": 6.3,
+  "wifi_socket_in_data_share": 33.3,
+  "route_stop_closed_cases": 1,
+  "latency_ms_median": 7.0,
+  "latency_ms_p90": 12.0,
   "generation_ms_median": 0.0,
-  "generation_ms_p90": 0.0,
+  "generation_ms_p90": 1.0,
   "model_link": {
     "template": 44
   },
   "llm_chain_failed": 0,
   "llm_invalid_answers": 0,
   "violation_cases": {
-    "category_not_allowed": 2,
+    "category_not_allowed": 1,
     "over_budget": 1,
     "walk_too_long": 1
   },
-  "padded_rec_share": 15.7,
-  "expanded_rec_share": 0.9,
-  "backfill_rec_share": 6.1,
-  "substituted_rec_share": 8.7,
-  "padded_case_share": 20.5,
+  "padded_rec_share": 12.6,
+  "expanded_rec_share": 0.8,
+  "backfill_rec_share": 3.4,
+  "substituted_rec_share": 8.4,
+  "padded_case_share": 15.9,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -59,12 +59,6 @@
         "over_budget",
         "walk_too_long"
       ]
-    },
-    {
-      "case_id": "left-wk14-normal-quiet",
-      "violations": [
-        "category_not_allowed"
-      ]
     }
   ],
   "case_set": "main",
@@ -77,8 +71,8 @@
     "cases_file": "cases.json",
     "case_set": "main",
     "records": 44,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:02+05:00"
+    "generated_at": "2026-10-19T10:36:36+05:00"
   }
 }

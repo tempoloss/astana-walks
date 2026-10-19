@@ -10,16 +10,15 @@ from datetime import datetime
 
 import pytest
 
-from walks import dialog, dialog_lead, dialog_strings, llm
+from walks import dialog_change, dialog_lead, dialog_strings, llm
 from walks import generate as gen_mod
 from walks.card_notes import data_notes
 from walks.i18n_weather import tw
 from walks.llm import LLMCall, LLMUnavailable
+from walks.llm_output import LLMOutput, LLMRec
 from walks.models import (
     POI,
     Intent,
-    LLMOutput,
-    LLMRec,
     LLMStep,
     WeatherInfo,
     WeatherWarning,
@@ -32,6 +31,17 @@ from walks.weather import make_weather
 from web import explain as web_explain
 
 AFTERNOON = datetime(2026, 10, 14, 15, 35)
+
+
+@pytest.fixture(autouse=True)
+def _reasons_not_checked_for_facts(monkeypatch):
+    """These tests are about the chain, the cache and the claims: their fake reasons are not checked for a concrete
+    fact of the place (tests/test_answer_quality.py checks that)."""
+    import walks.generate as generation
+
+    monkeypatch.setattr(generation, "vague_ids", lambda *a, **k: [])
+
+
 ORIGIN = (51.0890, 71.4160)
 DEG_M = 111_320.0
 LANGS = ("kk", "ru", "en")
@@ -435,6 +445,6 @@ def test_the_retry_is_in_meta_and_in_the_explain_block(monkeypatch):
     )
     assert res.generation == "llm"
     assert res.generation_retry == "live"
-    assert dialog._meta(res, "").generation_retry == "live"
+    assert dialog_change.meta_of(res, "").generation_retry == "live"
     lines = web_explain._generation_lines(res, "ru")
     assert any("Записанный ответ не подошёл" in line and "заново" in line for line in lines)

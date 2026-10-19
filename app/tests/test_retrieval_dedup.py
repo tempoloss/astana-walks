@@ -7,14 +7,26 @@ from datetime import datetime
 import pytest
 from rapidfuzz import fuzz
 
+from walks.chains import CLUSTER_RADIUS_M
 from walks.generate import generate
 from walks.models import POI, Intent
 from walks.names import NAME_RATIO_MIN, name_key
 from walks.radius import haversine_m
-from walks.retrieve import CLUSTER_RADIUS_M, retrieve
+from walks.retrieve import retrieve
 from walks.stay import MIN_STAY_OVER_BUDGET
 
 WED_NOON = datetime(2026, 10, 14, 12, 0)
+
+
+@pytest.fixture(autouse=True)
+def _reasons_not_checked_for_facts(monkeypatch):
+    """These tests are about the chain, the cache and the claims: their fake reasons are not checked for a concrete
+    fact of the place (tests/test_answer_quality.py checks that)."""
+    import walks.generate as generation
+
+    monkeypatch.setattr(generation, "vague_ids", lambda *a, **k: [])
+
+
 ORIGIN = (51.0890, 71.4160)
 DEG_M = 111_320.0  # metres per degree of latitude
 
@@ -170,7 +182,7 @@ def test_cinema_stays_when_the_budget_allows_it():
 
 def test_cinema_kept_with_a_note_when_it_is_the_only_candidate():
     pois = [_cinema_and_cafe()[0]]
-    intent = Intent(time_budget_min=90, categories=["culture_theatre_cinema"])
+    intent = Intent(time_budget_min=90, time_stated=True, categories=["culture_theatre_cinema"])
     res = retrieve(pois, *ORIGIN, intent, WED_NOON)
     [cand] = res.candidates
     assert cand.poi.id == "node/10"
@@ -183,10 +195,11 @@ def test_cinema_kept_with_a_note_when_it_is_the_only_candidate():
 def test_note_in_why_also_for_llm_text(monkeypatch):
     from walks import generate as gen_mod
     from walks import llm
-    from walks.models import LLMOutput, LLMRec, LLMStep
+    from walks.llm_output import LLMOutput, LLMRec
+    from walks.models import LLMStep
 
     pois = [_cinema_and_cafe()[0]]
-    intent = Intent(time_budget_min=90, categories=["culture_theatre_cinema"])
+    intent = Intent(time_budget_min=90, time_stated=True, categories=["culture_theatre_cinema"])
     res = retrieve(pois, *ORIGIN, intent, WED_NOON)
     out = LLMOutput(
         recommendations=[

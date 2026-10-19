@@ -22,8 +22,8 @@ from .hours import TZ
 from .models import WeatherInfo, WeatherWarning
 
 PRECIP_MAX_AGE = timedelta(
-    minutes=90
-)  # METAR comes every 30 min: a report older than two is not «falling now»
+    minutes=65
+)  # METAR comes every 30 min: a report that two have missed is not «falling now»
 # (altitude of the sun in degrees, before noon) of the scenarios `?fake=` can name
 _FAKE_SUN = {
     "night": (-25.0, False),
@@ -103,6 +103,68 @@ def _air(weather: WeatherInfo, observed: datetime | None, stamp: dict) -> dict |
     return None
 
 
+# What a Kazhydromet notice can warn about, found in its Russian text by word stems, and the part of the day it names. The
+# card writes the title from these codes in the answer language; the notice's own words stay behind its link.
+PHENOMENA = (
+    ("fog", r"туман"),
+    ("smog", r"смог|неблагоприятн\w+ метеоусловия|\bнму\b"),
+    ("thunder", r"гроз|шквал|смерч"),
+    ("wind", r"ветер|ветр|порыв"),
+    ("snow", r"снег|снегопад|метел|пург"),
+    ("ice", r"гололед|гололёд|наледь|изморозь"),
+    ("rain", r"дожд|ливн"),
+    ("hail", r"град\b|градом"),
+    ("dust", r"пыльн|песчан"),
+    ("heat", r"жар[аыуе]|высокая температура"),
+    ("cold", r"мороз|сильный холод|похолодан|низкая температура"),
+)
+PERIODS = (
+    ("night", r"ноч"),
+    ("morning", r"утр"),
+    ("day", r"днем|днём|дневн|в течение дня|в дневное"),
+    ("evening", r"вечер"),
+    ("all", r"в течение суток|круглосуточно|в течение всех суток"),
+)
+
+
+def classify_notice(text: str) -> tuple[list[str], list[str]]:
+    """(phenomena, periods) of a notice's Russian text: the codes in PHENOMENA (in the order the text names them) and
+    PERIODS (in the order of the day). Empty lists when the text names none of them: the card then only names the
+    source."""
+    low = text.lower()
+    found = sorted(
+        (m.start(), code) for code, rx in PHENOMENA if (m := re.search(rx, low)) is not None
+    )
+    periods = [code for code, rx in PERIODS if re.search(rx, low)]
+    return [code for _, code in found], ("all" in periods and ["all"]) or periods
+
+
+def _notice(weather: WeatherInfo) -> dict | None:
+    """The active Kazhydromet storm notice: its phenomenon and period as codes (the card writes them in the visitor's
+    language), the notice's own Russian text for the disclosure behind the link, the link, and how long it holds. What
+    the notice says matters to a person, not that it is formally a «штормовое предупреждение»."""
+    w = next((w for w in weather.warnings if w.kind == "storm" and w.active), None)
+    if w is None:
+        return None
+    until = ""
+    if w.valid_to:
+        end = datetime.fromisoformat(w.valid_to).astimezone(TZ)
+        until = end.strftime("%H:%M %d.%m")
+    text = _PLACE.sub("", w.text.strip()).rstrip(
+        "."
+    )  # «г. Астана: » is the page's own place, the card is about Astana
+    phenomena, periods = classify_notice(text)
+    return {
+        "text": text or w.title,
+        "phenomena": phenomena,
+        "periods": periods,
+        "until": until,
+        "source": "kazhydromet",
+        "at": "",
+        "url": w.source_url,
+    }
+
+
 def _hours(utc_now: datetime) -> dict | None:
     items = [
         {
@@ -120,7 +182,7 @@ def _measures(weather: WeatherInfo, now_utc: datetime) -> dict:
     observed = _observed(weather, now_utc)
     source = _source(weather, observed)
     stamp = _stamp(observed, source)
-    out: dict = dict.fromkeys(("wind", "sky", "precip", "air", "temp", "vis", "pm25", "hours"))
+    out: dict = dict.fromkeys(BLOCKS)
     if source and weather.temperature_c is not None:
         out["temp"] = {
             "temp_c": round(weather.temperature_c),
@@ -141,6 +203,7 @@ def _measures(weather: WeatherInfo, now_utc: datetime) -> dict:
     ):
         out["precip"] = {"kind": weather.precip_now, "level": weather.precip_level, **stamp}
     out["air"] = _air(weather, observed, stamp)
+    out["notice"] = _notice(weather)
     if weather.pm25 is not None:
         out["pm25"] = {
             "value": round(weather.pm25),
@@ -152,6 +215,8 @@ def _measures(weather: WeatherInfo, now_utc: datetime) -> dict:
     return out
 
 
+_PLACE = re.compile(r"^г\.\s*Астан[аы]\s*[:,\-–]\s*", re.IGNORECASE)
+BLOCKS = ("wind", "sky", "precip", "air", "notice", "temp", "vis", "pm25", "hours")
 NMU_URL = "https://www.kazhydromet.kz/ru/ecology/ezhednevnyy-byulleten-sostoyaniya-vozdushnogo-basseyna-nmu"
 _FAKE_SYMBOLS = {"snow": "snow", "rain": "rain"}
 
@@ -176,7 +241,7 @@ def _fake_hours(now_utc: datetime, kind: str, temp: int) -> dict:
 def _fake_weather(
     spec: str, now_utc: datetime
 ) -> tuple[WeatherInfo, tuple[float, bool] | None, dict | None]:
-    """A made-up airport observation for `?fake=`, words joined with «+»: snow, rain, heavy, windy (9 m/s), wind<N>
+    """A made-up airport observation for `?fake=`, words joined with «+»: snow, rain, heavy, clear, fog (a Kazhydromet notice), windy (9 m/s), wind<N>
     (N m/s), overcast, haze, none and one of night / dawn / golden / dusk / day for the sun."""
     words = set(re.split(r"[+,\s]+", spec.lower()))
     override = next((_FAKE_SUN[w] for w in words if w in _FAKE_SUN), None)
@@ -186,7 +251,15 @@ def _fake_weather(
     speed = next((float(m[1]) for w in words if (m := re.fullmatch(r"wind(\d+)", w))), None)
     if speed is None:
         speed = 9.0 if falling or "windy" in words else 3.0
-    cloud = 100.0 if falling or "overcast" in words else 44.0 if "haze" in words else 19.0
+    cloud = (
+        100.0
+        if falling or "overcast" in words
+        else 0.0
+        if "clear" in words
+        else 44.0
+        if "haze" in words
+        else 19.0
+    )
     observed = (now_utc - timedelta(minutes=10)).astimezone(TZ).isoformat(timespec="minutes")
     temp, feels = (-3.0, -8.0) if falling == "snow" else (6.0, 3.0) if falling else (12.0, 10.0)
     notice = WeatherWarning(
@@ -194,6 +267,14 @@ def _fake_weather(
         title="Неблагоприятные метеоусловия",
         text="Ожидается...",
         source_url=NMU_URL,
+        active=True,
+    )
+    storm = WeatherWarning(
+        kind="storm",
+        title="Штормовое предупреждение ОЯ № 17",
+        text="г. Астана: 18 октября ночью и утром ожидается туман.",
+        source_url="https://www.kazhydromet.kz/ru/storm",
+        valid_to=(now_utc + timedelta(hours=7)).astimezone(TZ).isoformat(timespec="minutes"),
         active=True,
     )
     weather = wx.make_weather(
@@ -205,7 +286,7 @@ def _fake_weather(
         source="metar",
         observed_at=observed,
         precip_adverse=False,
-        warnings=(notice,) if "haze" in words else (),
+        warnings=((notice,) if "haze" in words else ()) + ((storm,) if "fog" in words else ()),
         wind_from_deg=315,
         wind_gust_kmh=round(speed * 1.4 * 3.6, 1) if speed >= 5 else None,
         cloud_pct=cloud,
@@ -226,7 +307,7 @@ def current(now_utc: datetime | None = None, fake: str = "") -> dict:
     weather = wx.refreshed_weather()
     if fake and fx_fake():
         weather, override, hours = _fake_weather(fake, now)
-    blank = dict.fromkeys(("wind", "sky", "precip", "air", "temp", "vis", "pm25", "hours"))
+    blank = dict.fromkeys(BLOCKS)
     measures = blank if weather is None else _measures(weather, now)
     if hours is not None:
         measures["hours"] = hours

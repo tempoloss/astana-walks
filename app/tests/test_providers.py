@@ -15,7 +15,8 @@ import httpx
 import pytest
 
 from walks import envcfg, llm, llm_providers, walking
-from walks.models import LLMOutput, load_pois
+from walks.llm_output import LLMOutput
+from walks.models import load_pois
 from walks.pipeline import recommend
 from walks.presets import PRESETS
 from walks.weather import fetch_weather

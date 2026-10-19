@@ -7,22 +7,22 @@
   "recs_total": 66,
   "hallucinated_poi": 0,
   "constraint_ok_rate": 74.2,
-  "case_all_ok_rate": 54.2,
+  "case_all_ok_rate": 58.3,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
-  "coverage": 87.5,
+  "coverage": 83.3,
   "diversity": 100.0,
   "top1_ok_rate": 66.7,
-  "top1_open_rate": 50.0,
-  "unknown_hours_rec_share": 56.1,
-  "non_osm_rec_share": 45.5,
-  "avg_walk_min": 11.6,
+  "top1_open_rate": 45.8,
+  "unknown_hours_rec_share": 59.1,
+  "non_osm_rec_share": 40.9,
+  "avg_walk_min": 11.7,
   "wifi_socket_in_data_share": 100.0,
-  "route_stop_closed_cases": 0,
-  "latency_ms_median": 15.0,
-  "latency_ms_p90": 51.0,
-  "generation_ms_median": 0.0,
+  "route_stop_closed_cases": 1,
+  "latency_ms_median": 18.5,
+  "latency_ms_p90": 56.0,
+  "generation_ms_median": 1.0,
   "generation_ms_p90": 1.0,
   "model_link": {
     "template": 24
@@ -61,12 +61,6 @@
       ]
     },
     {
-      "case_id": "h3-07",
-      "violations": [
-        "walk_too_long"
-      ]
-    },
-    {
       "case_id": "h3-08",
       "violations": [
         "walk_too_long"
@@ -82,7 +76,8 @@
     {
       "case_id": "h3-10",
       "violations": [
-        "category_not_allowed"
+        "category_not_allowed",
+        "walk_too_long"
       ]
     },
     {
@@ -128,8 +123,8 @@
     "cases_file": "holdout3_cases.json",
     "case_set": "holdout3",
     "records": 24,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:08+05:00"
+    "generated_at": "2026-10-19T10:36:43+05:00"
   }
 }

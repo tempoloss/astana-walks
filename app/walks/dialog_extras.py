@@ -13,10 +13,13 @@ from datetime import datetime
 from itertools import pairwise
 
 from . import gov_hours, mobility
+from .chains import distinct
 from .city_layers import MEANINGFUL_SHARE, lit_share, signals_for_poi
+from .dialog_strings import s as say
 from .dialog_types import EventItem, EventsBlock, Notice, Place, Signal, Source, Stop
 from .events import DEFAULT_RADIUS_M, DEFAULT_WINDOW_MIN, load_snapshot, nearby_events
-from .hours import to_local_naive
+from .generate import template_rec
+from .hours import local_now, to_local_naive
 from .i18n_afisha import ta
 from .i18n_events import (
     SOURCE_LABELS,
@@ -31,9 +34,12 @@ from .i18n_events import heading as events_heading
 from .i18n_gov import gt
 from .i18n_notices import MONTHS_OF, tn
 from .i18n_signals import ts
-from .models import POI, WeatherInfo, WeatherWarning
+from .models import POI, Intent, Recommendation, Result, WeatherInfo, WeatherWarning
+from .retrieve import retrieve
+from .shelter import LIT_NEAR
 from .sun import is_dark
 from .walking import WalkingRouter
+from .weather import warned
 
 EVENTS_SHOWN = 2  # the block under a search
 SCAN = 50  # events looked at before a kind is picked out of them
@@ -69,10 +75,12 @@ def events_block(
     window_min: int = DEFAULT_WINDOW_MIN,
     coverage: bool = False,
     only_kind: str | None = None,
+    today: datetime | None = None,
 ) -> EventsBlock | None:
     """«Сегодня рядом»: the events near the point on now or starting inside the window, each with its source link;
     None when there are none (the caller stays silent). `coverage` adds the note that the afisha is only a few sources;
-    `only_kind` keeps one kind of listing («sessions» = the cinema)."""
+    `only_kind` keeps one kind of listing («sessions» = the cinema); `today`: the present the asked day is counted from
+    (the heading says «Завтра рядом» for tomorrow)."""
     local = to_local_naive(when)
     near = nearby_events(
         lat, lon, local, radius_m, limit if only_kind is None else SCAN, window_min
@@ -97,7 +105,41 @@ def events_block(
     notes = [ta("coverage", lang, sources=afisha_sources(lang))] if coverage else []
     if near.stale and near.fetched_at:
         notes.append(stale_note(near.fetched_at, lang))
-    return EventsBlock(heading=events_heading(lang), items=items, note=" ".join(notes))
+    heading = events_heading(lang, local, to_local_naive(today or local_now()))
+    return EventsBlock(heading=heading, items=items, note=" ".join(notes))
+
+
+FAR_VIEW_MIN = 30  # a viewpoint farther on foot than this is «далеко»: the nearest sight to see goes next to it
+
+
+def second_option(
+    recs: list[Recommendation], pois: list[POI], res: Result, lang: str, *, fresh_air: bool
+) -> list[Recommendation]:
+    """A second option next to the first card: «парк, если не холодно» in the cold — the nearest park («если всё же
+    хочется на воздух»); a viewpoint far on foot («огни города ночью», 57 мин) — the first card says it is far and the
+    nearest sight (a lit one first) goes second. The cards as they are otherwise."""
+    first = recs[0]
+    far_view = first.poi.category == "viewpoint" and first.travel_min > FAR_VIEW_MIN
+    if not (fresh_air or far_view):
+        return recs
+    kinds = ["park_garden"] if fresh_air else ["attraction_landmark", "park_garden"]
+    intent = Intent(categories=kinds, wished=kinds, language=lang)  # type: ignore[arg-type]
+    found = [
+        c
+        for c in retrieve(pois, res.lat, res.lon, intent, res.when, weather=res.weather).candidates
+        if c.poi.category in kinds and c.poi.id not in {r.poi.id for r in recs}
+    ]
+    pick = next((c for c in found if LIT_NEAR in c.reasons), found[0] if found else None)
+    if far_view:
+        note = f"{say('note_far_view', lang, n=first.travel_min)} {first.notes}".strip()
+        first = first.model_copy(update={"notes": note})
+    if pick is None:
+        return [first, *recs[1:]]
+    rec = template_rec(pick, intent, res.weather if far_view else None, [pick])
+    rec.notes = (
+        f"{say('note_fresh_air' if fresh_air else 'note_near_sight', lang)} {rec.notes}".strip()
+    )
+    return distinct([first, rec, *recs[1:]])[: max(len(recs), 2)]
 
 
 # ------------------------------------------------------------------ weather
@@ -132,17 +174,22 @@ def _day_of(w: WeatherWarning, lang: str) -> str:
 
 
 def weather_notice(weather: WeatherInfo | None, lang: str) -> Notice | None:
-    """An active official Kazhydromet notice about Astana, short, with the link to its page. What the weather is now
-    is part of the answer's lead sentence, not a notice; a notice that is not about Astana is never shown (the НМУ
-    bulletin names several cities: only Astana's day is kept)."""
+    """An active official Kazhydromet notice about Astana, short, with the link to its page: a storm warning titled by
+    what it warns of in the answer language («Kazhydromet: fog»), its own Russian words behind it (`detail`). What the
+    weather is now is part of the answer's lead sentence, not a notice; a notice that is not about Astana is never
+    shown (the НМУ bulletin names several cities: only Astana's day is kept)."""
     if weather is None:
         return None
     active = [w for w in weather.warnings if w.active]
     if not active:
         return None
     w = active[0]
+    detail = w.title
     if w.kind == "storm":
-        text = tn("wx_warn_storm", lang, text=_storm_text(w))
+        text = tn(
+            "wx_warn_storm", lang, what=warned(weather, lang) or tn("wx_warn_storm_any", lang)
+        )
+        detail = _storm_text(w)
     elif _ASTANA.search(f"{w.title} {w.text}"):
         text = tn("wx_warn_nmu", lang, day=_day_of(w, lang))
     else:
@@ -151,7 +198,7 @@ def weather_notice(weather: WeatherInfo | None, lang: str) -> Notice | None:
         kind="weather",
         text=text,
         source=Source(label=tn("wx_src", lang), url=w.source_url),
-        detail=w.title,
+        detail=detail,
     )
 
 

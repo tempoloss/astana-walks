@@ -14,6 +14,7 @@ const EDGE = 29; // from the bottom of the top bar to the free map
 const MAP_FREE = 250; // the map keeps at least this much between the top bar and the sheet
 const MIN_STEP = 60; // peek and half stay at least this much (and 2×) below full
 const FULL_TOP = 8; // below the status bar
+const MORE_SLACK = 48; // the label of the other places may take this much of the map's room
 const HANDLE_HIT = 44; // the handle's hit area lies this far above the sheet: it never covers the top bar's buttons
 
 const $ = (id) => document.getElementById(id);
@@ -48,7 +49,10 @@ export function answerFit(panel) {
       // the lines under the card (an official notice, the lighting of the way) are part of it: half never ends inside one
       const notes = [...turn.querySelectorAll('.answer > .note, .answer > .route-line')];
       const must = Math.max(bottom(card), ...notes.map((n) => bottom(n) + NOTE_GAP));
-      return { start, peek: bottom(card.querySelector('.c-st')), must, core: bottom(card), cuts: [...rows, chips].filter(Boolean).map(bottom) };
+      const more = turn.querySelector('.sub');
+      const under = chips && more && chips.compareDocumentPosition(more) & Node.DOCUMENT_POSITION_FOLLOWING; // the chips come before the rows
+      const extras = [under ? chips : null, more].filter(Boolean).map(bottom); // what a half sheet adds under the card, in order
+      return { start, peek: bottom(card.querySelector('.c-st')), must, core: bottom(card), extras, cuts: [...rows, chips].filter(Boolean).map(bottom) };
     }
     const asked = [...turn.querySelectorAll('.qa-card')];
     if (asked.length) {
@@ -89,6 +93,12 @@ export function answerFit(panel) {
       const room = availableHeight() - barBottom() - EDGE - MAP_FREE - bar;
       const fitting = b.cuts.map(visible).filter((v) => v <= room);
       let halfV = Math.max(visible(b.must), ...fitting);
+      // the follow-up chips and «Ещё варианты (2)» under the card, each when there is room for it: the cue that the
+      // rest is one pull away, and the main follow-up control within reach
+      for (const y of b.extras ?? []) {
+        if (visible(y) > room + MORE_SLACK) break;
+        halfV = Math.max(halfV, visible(y));
+      }
       const full = availableHeight() - safeTop() - FULL_TOP;
       const below = availableHeight() - barBottom() - HANDLE_HIT; // the tallest a non-full sheet may be
       if (bar + halfV > below) {

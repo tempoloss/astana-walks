@@ -35,6 +35,7 @@ FLAGS = frozenset(
         "expensive",
         "fast",
         "halal",
+        "local_food",
         "no_alcohol",
         "car",
         "transit",
@@ -166,6 +167,8 @@ KK_POSTPOSITIONS = (
     "жанында", "жанына", "жанынан", "жанымда", "қасында", "қасына", "қасынан", "маңында", "маңына", "маңынан", "қарсысында", "айналасында", "жақын",
 )  # fmt: skip
 KK_POSSESSIVE_ENDINGS = ("і", "ы", "сі", "сы")  # kk «парк+і»: the park OF a name, «Момышулы паркі»
+# «кафе жақын жерде» = «a cafe nearby»: the «жақын» before a place word is an adverb of the request, not «near the cafe»
+KK_NEARBY_WORDS = frozenset({"жерде", "жерден", "жерге", "маңда", "маңнан", "арада"})
 
 # multi-word spellings joined before matching so that each has one token (hyphens are spaces by then)
 JOINS = {

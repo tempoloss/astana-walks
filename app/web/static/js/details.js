@@ -180,10 +180,10 @@ function group(title, ...kids) {
 // «Сейчас»: the state, the day, the reason it is unknown when there is one, and whose hours these are
 function nowGroup(place, strip, status) {
   const hrs = place.hours;
-  // unknown: the reason from the data when it has one (the site lists hours without days, a holiday), else the card's
-  // own line about it, else one short ask; said here once, not again under «О месте»
+  // unknown: the reason from the data when it has one (the site lists hours without days, a holiday), else one short ask;
+  // only what concerns the hours lives here (the place's own note is under «О месте»)
   let note = hrs.note;
-  if (hrs.state === 'unknown' && !hrs.issue) note = place.note || (hrs.raw ? hrs.note : tr('hours_check'));
+  if (hrs.state === 'unknown' && !hrs.issue) note = hrs.raw ? hrs.note : tr('hours_check');
   return group(
     tr('d_sec_now'),
     h('div', { class: 'd-status' }, status),
@@ -213,7 +213,7 @@ function aboutGroup(place) {
     place.what_to_do
       ? h('p', { class: 'd-text' }, place.ai_idea ? [h('span', { class: 'tag' }, tr('ai_idea')), ' '] : null, place.what_to_do)
       : null,
-    place.note && place.hours.state !== 'unknown' ? h('p', { class: 'd-text', text: place.note }) : null,
+    place.note ? h('p', { class: 'd-text', text: place.note }) : null,
     price ? h('div', {}, `${tr('d_price')}: ${price.text}`) : null,
     meta.length ? muted(...meta) : null,
     place.stay_min ? muted(`${tr('d_stay')}: ${tr('stay_min', { n: place.stay_min })}`) : null,

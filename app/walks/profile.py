@@ -43,6 +43,7 @@ _UUID = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{1
 _LETTER = re.compile(r"[A-Za-zА-Яа-яЁёәіңғүұқөһӘІҢҒҮҰҚӨҺ]")
 
 AgeBand = Literal["0-3", "4-7", "8-12", "13+"]
+AGE_ORDER: tuple[str, ...] = ("0-3", "4-7", "8-12", "13+")
 Mobility = Literal["none", "stroller", "wheelchair"]
 Pace = Literal["slow", "normal", "fast"]
 Cold = Literal["low", "normal", "high"]
@@ -66,9 +67,23 @@ def clean_about(text: object) -> str:
     return _CONTROL.sub("", _SPACES.sub(" ", text)).strip()
 
 
+def ages_label(bands: list[str], lang: str | None) -> str:
+    """«4–7 лет» for one group, «4–7, 8–12 лет» for several (the unit is said once, after the last)."""
+    if len(bands) == 1:
+        return age_label(bands[0], lang)
+    last = age_label(bands[-1], lang)
+    head = ", ".join(b.replace("-", "–") for b in bands[:-1])
+    return f"{head}, {last}"
+
+
 class Profile(BaseModel):
     with_kids: bool = False
-    kids_age_band: AgeBand | None = None
+    kids_age_band: AgeBand | None = (
+        None  # the youngest of `kids_age_bands` (what the ranking reads); kept for old files
+    )
+    kids_age_bands: list[AgeBand] = Field(
+        default_factory=list
+    )  # every age group of the children, youngest first
     mobility: Mobility = "none"
     quiet: bool = False
     budget: ProfileBudget = "any"
@@ -101,9 +116,15 @@ class Profile(BaseModel):
 
     @model_validator(mode="after")
     def _age_needs_kids(self) -> Profile:
-        """A child's age only means something next to «с детьми»: without it the age is dropped."""
-        if not self.with_kids and self.kids_age_band is not None:
+        """A child's age only means something next to «с детьми»: without it the ages are dropped. The groups are kept
+        once each, youngest first, and the single `kids_age_band` is always the youngest of them."""
+        if not self.with_kids:
             self.kids_age_band = None
+            self.kids_age_bands = []
+            return self
+        bands = {*self.kids_age_bands, *([self.kids_age_band] if self.kids_age_band else [])}
+        self.kids_age_bands = sorted(bands, key=AGE_ORDER.index)
+        self.kids_age_band = self.kids_age_bands[0] if self.kids_age_bands else None
         return self
 
 
@@ -201,7 +222,7 @@ def list_items(
     names = names or {}
     out: list[ProfileItem] = []
     if profile.with_kids:
-        band = f" ({age_label(profile.kids_age_band, lang)})" if profile.kids_age_band else ""
+        band = f" ({ages_label(profile.kids_age_bands, lang)})" if profile.kids_age_bands else ""
         out.append(ProfileItem("with_kids", t("item_with_kids", lang) + band))
     if profile.mobility != "none":
         out.append(ProfileItem("mobility", t(f"item_mobility_{profile.mobility}", lang)))
@@ -255,6 +276,7 @@ def forget_item(profile: Profile, key: str) -> Profile:
     update = {key: getattr(defaults, key)}
     if key == "with_kids":
         update["kids_age_band"] = None
+        update["kids_age_bands"] = []
     return profile.model_copy(update=update)
 
 
@@ -414,6 +436,8 @@ def preferences_payload(profile: Profile) -> dict:
         out["with_kids"] = True
         if profile.kids_age_band:
             out["kids_age_band"] = profile.kids_age_band
+        if len(profile.kids_age_bands) > 1:
+            out["kids_age_bands"] = list(profile.kids_age_bands)
     if profile.mobility != "none":
         out["mobility"] = profile.mobility
     for flag in ("quiet", "halal", "no_alcohol"):

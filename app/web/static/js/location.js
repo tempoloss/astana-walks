@@ -108,7 +108,7 @@ function mine() {
   const status = $('loc-status');
   locate((lat, lon) => {
     status.textContent = tr('loc_privacy');
-    choose({ preset: null, lat, lon });
+    choose({ preset: null, lat, lon, device: true });
   }, (text) => {
     status.textContent = text;
   });
@@ -168,9 +168,18 @@ export function initLocation(ctx, assistantModule) {
   });
   // the map's own button (a laptop) and the top bar's (a phone): the device's place becomes the start, a plain line
   // says when it cannot
-  const here = () => locate((lat, lon) => assistant.setWhere({ preset: null, lat, lon }), flash);
+  const here = () => locate((lat, lon) => assistant.setWhere({ preset: null, lat, lon, device: true }), flash);
   mapView.addLocate(here, tr('loc_mine'));
   $('locate-bar').append(icon('target'));
   $('locate-bar').addEventListener('click', here);
+  // a visitor who has already allowed the location needs no tap on the crosshair: the first search starts from them
+  // (a visitor who has not is never asked on arrival: the dialog's button and the crosshair ask)
+  if (assistant.where().preset && navigator.permissions) {
+    navigator.permissions.query({ name: 'geolocation' }).then((perm) => {
+      if (perm.state === 'granted' && assistant.where().preset) {
+        locate((lat, lon) => assistant.setWhere({ preset: null, lat, lon, device: true }), () => {});
+      }
+    }).catch(() => {});
+  }
   initHints(app, assistant);
 }

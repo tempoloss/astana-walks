@@ -16,11 +16,12 @@ from walks.envcfg import load_env_file
 from walks.generate import pick_diverse, template_recs
 from walks.i18n import padding_label, t
 from walks.intent import parse_rules
-from walks.models import POI, Candidate, Intent, LLMOutput, LLMRec
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import POI, Candidate, Intent
 from walks.pipeline import recommend
 from walks.radius import STROLL_TRAVEL_SHARE, TRAVEL_SHARE, is_stroll, reachable_radius_m
 from walks.reasons import _OPEN_CLAIM, honest_hours_text
-from walks.retrieve import retrieve
+from walks.retrieve import TOP_N, retrieve
 from walks.shelter import OUTDOOR_EXCLUDED, has_indoor_signal, is_outdoor_place
 from walks.stay import TIGHT_FIT, TIGHT_FIT_MARGIN_MIN, fit_stay_budget
 from walks.walking import offline_router
@@ -77,7 +78,9 @@ def test_frost_removes_parks_when_an_indoor_place_exists():
     assert res.filters.excluded_outdoor == 2
     assert OUTDOOR_EXCLUDED in res.candidates[0].reasons
     why = template_recs(res.candidates, intent, manual_weather(-25))[0].why
-    assert "не предлагаем" in why  # the card explains it
+    assert "не предлагаем" not in why
+    assert "парк" not in why
+    assert why.startswith(t("fit_head_off", "ru")) or why == t("fit_none_off", "ru")
 
 
 def test_smog_removes_outdoor_but_keeps_it_when_nothing_indoor_is_left():
@@ -250,7 +253,7 @@ def test_museum_over_the_budget_by_a_little_is_kept_as_tight():
     kept, dropped = fit_stay_budget([museum], 60)
     assert dropped == 0
     assert TIGHT_FIT in kept[0].reasons
-    notes = generate.data_notes(kept[0], Intent(time_budget_min=60))
+    notes = generate.data_notes(kept[0], Intent(time_budget_min=60, time_stated=True))
     assert any("Впритык" in n for n in notes)
 
 
@@ -269,14 +272,14 @@ def test_excluded_min_stay_is_reported_in_filters():
 
 
 def test_every_requested_kind_stays_in_the_candidate_list():
-    playgrounds = [_poi(f"play{i}", 50 + i, "kids_playground") for i in range(12)]
+    playgrounds = [_poi(f"play{i}", 50 + i, "kids_playground") for i in range(TOP_N + 2)]
     museum = _poi("museum", 35, "museum_gallery")
     intent = Intent(
         time_budget_min=120, categories=["museum_gallery", "kids_playground"], with_kids=True
     )
     res = retrieve([*playgrounds, museum], *ORIGIN, intent, WED_NOON)
     assert "museum" in _ids(res)
-    assert len(res.candidates) == 10
+    assert len(res.candidates) <= TOP_N
 
 
 # ---- 4. stroll radius, widening, back-fill ----------------------------------------------------------

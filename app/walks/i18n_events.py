@@ -10,6 +10,8 @@ LOCAL = timezone(timedelta(hours=5))  # Astana time
 
 STRINGS: dict[str, tuple[str, str, str]] = {
     "heading": ("Бүгін жақын жерде", "Сегодня рядом", "Nearby today"),
+    "heading_tomorrow": ("Ертең жақын жерде", "Завтра рядом", "Nearby tomorrow"),
+    "heading_on": ("{date} жақын жерде", "{date} рядом", "Nearby on {date}"),
     "on_now": ("қазір жүріп жатыр", "идёт сейчас", "on now"),
     "open_now": ("қазір ашық", "сейчас открыто", "open now"),
     "until": ("{date} дейін", "до {date}", "until {date}"),
@@ -25,11 +27,19 @@ STRINGS: dict[str, tuple[str, str, str]] = {
     "m": ("{n} м", "{n} м", "{n} m"),
     "km": ("{n} км", "{n} км", "{n} km"),
 }
-MONTHS = {
-    "kk": ("қаң", "ақп", "нау", "сәу", "мам", "мау", "шіл", "там", "қыр", "қаз", "қар", "жел"),
+MONTHS = {  # kk in full: «қар» is «snow», not «қараша»
+    "kk": (
+        "қаңтар", "ақпан", "наурыз", "сәуір", "мамыр", "маусым", "шілде", "тамыз", "қыркүйек", "қазан", "қараша",
+        "желтоқсан",
+    ),
     "ru": ("янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"),
     "en": ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"),
-}
+}  # fmt: skip
+# «29 қарашаға дейін»: the month of an «until» date in the dative
+MONTHS_TO_KK = (
+    "қаңтарға", "ақпанға", "наурызға", "сәуірге", "мамырға", "маусымға", "шілдеге", "тамызға", "қыркүйекке", "қазанға",
+    "қарашаға", "желтоқсанға",
+)  # fmt: skip
 SOURCE_LABELS = {
     "sxodim.com": "Sxodim",
     "inastana.kz": "InAstana",
@@ -47,8 +57,16 @@ def t(key: str, lang: str, **kw) -> str:
     return STRINGS[key][_idx(lang)].format(**kw)
 
 
-def heading(lang: str) -> str:
-    return t("heading", lang)
+def heading(lang: str, day: datetime | None = None, today: datetime | None = None) -> str:
+    """«Сегодня рядом»; for another asked day «Завтра рядом» / «25 окт рядом»."""
+    days = (day.date() - today.date()).days if day is not None and today is not None else 0
+    if days <= 0:
+        return t("heading", lang)
+    return (
+        t("heading_tomorrow", lang)
+        if days == 1
+        else t("heading_on", lang, date=fmt_date(day, lang))
+    )
 
 
 def source_label(source: str) -> str:
@@ -62,6 +80,10 @@ def fmt_date(day: datetime, lang: str) -> str:
     return f"{day.day} {MONTHS.get(lang, MONTHS['ru'])[day.month - 1]}"
 
 
+def _until_date(day: datetime, lang: str) -> str:
+    return f"{day.day} {MONTHS_TO_KK[day.month - 1]}" if lang == "kk" else fmt_date(day, lang)
+
+
 def fmt_distance(m: int, lang: str) -> str:
     return (
         t("km", lang, n=f"{m / 1000:.1f}".replace(".", ",") if lang != "en" else f"{m / 1000:.1f}")
@@ -73,7 +95,7 @@ def fmt_distance(m: int, lang: str) -> str:
 def when_part(hit, lang: str, today: datetime) -> str:
     if hit.kind == "run":
         return (
-            t("until", lang, date=fmt_date(datetime.fromisoformat(hit.until), lang))
+            t("until", lang, date=_until_date(datetime.fromisoformat(hit.until), lang))
             if hit.until
             else t("on_now", lang)
         )

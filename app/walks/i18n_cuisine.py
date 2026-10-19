@@ -9,6 +9,7 @@ CUISINE: dict[str, Entry] = {
     "burger": ("бургер", "бургеры", "burgers"),
     "chicken": ("тауық", "курица", "chicken"),
     "pizza": ("пицца", "пицца", "pizza"),
+    "kazakh": ("қазақ", "казахская", "Kazakh"),
     "regional": ("жергілікті", "местная", "regional"),
     "local": ("жергілікті", "местная", "local"),
     "breakfast": ("таңғы ас", "завтраки", "breakfast"),

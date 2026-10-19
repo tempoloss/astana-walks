@@ -1,11 +1,12 @@
-"""Post-ranking rules of the wishes a record can only partly confirm: the night (what is confirmed open comes first),
-and the honest «no place found has it» for halal and the diets."""
+"""Post-ranking rules of the wishes a record can only partly confirm: the night (what is confirmed open comes first,
+an errand open round the clock next), and the honest «no place found has it» for halal and the diets."""
 
 from __future__ import annotations
 
 from collections import Counter
 from collections.abc import Callable
 
+from .hours import is_24_7
 from .models import Candidate
 
 # unknown hours at 23:00-06:00 are as good as closed for these
@@ -20,6 +21,22 @@ def open_first(ranked: list[Candidate], wished: frozenset[str] = frozenset()) ->
     return sorted(
         ranked,
         key=lambda c: (bool(wished) and c.poi.category not in wished, c.hours_state != "open"),
+    )
+
+
+def round_the_clock_first(
+    ranked: list[Candidate], wished: frozenset[str] = frozenset()
+) -> list[Candidate]:
+    """An errand at night (a pharmacy, a food shop): what the data confirm open now comes first, a round-the-clock one
+    before the rest of them, and one whose hours are unknown after both (its card says so). A stable partition, as
+    `open_first`."""
+    return sorted(
+        ranked,
+        key=lambda c: (
+            bool(wished) and c.poi.category not in wished,
+            c.hours_state != "open",
+            not is_24_7(c.poi.opening_hours),
+        ),
     )
 
 

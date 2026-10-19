@@ -1,0 +1,25 @@
+{
+ "statisticaldataonthepharma": {
+  "totalCount": 0,
+  "fields": []
+ },
+ "birzhadan_tys_operaciyalar2": {
+  "totalCount": 18,
+  "fields": [
+   "_id",
+   "_index",
+   "_type",
+   "amount",
+   "id",
+   "id_oper",
+   "id_res",
+   "kod_curr",
+   "oper_kz",
+   "oper_ru",
+   "period",
+   "rate",
+   "res_kz",
+   "res_ru"
+  ]
+ }
+}

@@ -100,6 +100,16 @@ def test_along_the_way_also_means_a_small_detour():
     assert not toward(user, HOME, 51.145, 71.45, along=True)  # closer to home, 2 km off the line
 
 
+def test_a_place_next_to_the_user_is_not_on_the_way_to_a_far_home():
+    far = HOME.model_copy(update={"lat": HOME.lat + 0.05})  # ~6 km away
+    user = BAITEREK
+    beside = (user[0] + 0.0006, user[1])  # 60 m from the user, a little toward home
+    assert not toward(user, far, *beside, along=False)
+    assert not toward(
+        user, far, user[0], user[1] + 0.02, along=False
+    )  # sideways: a 1.4 km detour off the line
+
+
 def test_the_candidates_toward_home_come_first_and_alone_when_there_are_enough():
     toward_a, toward_b = cand(51.128, 71.45, "a"), cand(51.128, 71.455, "b")
     away = cand(51.128, 71.41, "x")

@@ -100,7 +100,9 @@ def data_notes(c: Candidate, intent: Intent, weather: WeatherInfo | None = None)
     out.extend(_wish_notes(c, intent))
     if c.nearby_anon:
         out.append(unnamed_more(c.nearby_anon, lang))
-    if TIGHT_FIT in c.reasons:
+    if (
+        TIGHT_FIT in c.reasons and intent.time_stated
+    ):  # «впритык по времени»: only against a time the person set
         lo, left = min_stay(c.poi.category), intent.time_budget_min - 2 * c.travel_min
         out.append(t("note_tight", lang, lo=lo, left=max(left, 0)))
     if SHARED_COORD in c.reasons:

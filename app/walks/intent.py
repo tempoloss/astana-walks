@@ -24,6 +24,7 @@ from .llm import (
 from .models import CATEGORIES, Intent, IntentResult, WeatherHint
 from .presets import PRESET_NAMES, PRESETS
 from .quantities import child_age, group_size, price_cap_kzt
+from .radius import ERRAND_KINDS, STROLL_CATEGORIES
 from .safety import clean_text, minor_age
 from .weather import COLD_APPARENT_C
 
@@ -65,6 +66,9 @@ SYSTEM = (
 
 MAX_ABOUT_CHARS = 500  # the user's own notes (profile `about`) that reach the prompts
 DEFAULT_BUDGET_MIN = 60  # time not stated: a plain stroll / coffee / night out
+UNSTATED_REACH_MIN = (
+    90  # ... but the search reaches as far as a 90-min outing would (walks.pipeline): a real choice
+)
 MAX_LLM_BUDGET_MIN = 300  # the model never gives a request more time than this
 LLM_BUDGET_FACTOR = 2  # ... nor more than this many times the time the rules read (or defaulted)
 HEAT_HINT_C = (
@@ -88,6 +92,9 @@ RULES_ONLY_FIELDS = frozenset(
         "info_about",
         "wished",
         "refused",
+        "local_food",
+        "time_stated",
+        "eat",
     }
 )
 _REFUSALS = (("refuse_drugs", "drugs"), ("refuse_sex", "sex"), ("refuse_weapons", "weapons"))
@@ -255,6 +262,14 @@ def _excluded(m: Matches) -> set[str]:
 
 # A generic word of a quiet request never implies these kinds; only a named kind keeps them.
 _LOUD_KINDS = frozenset({"bar_nightlife", "entertainment"})
+_EAT_CONCEPTS = (
+    "eat_full",
+    "eat_quick",
+    "eat_generic",
+)  # «пожрать», «шаурму», «пообедать»: a meal is asked
+_WALK_MOOD_KINDS = STROLL_CATEGORIES | {
+    "kids_playground"
+}  # what a mood may add to a walk: places to walk
 
 
 def _categories(m: Matches, flags: set[str], excluded: set[str], notes: list[str]) -> list[str]:
@@ -287,9 +302,17 @@ def _categories(m: Matches, flags: set[str], excluded: set[str], notes: list[str
     if kinds:
         return kinds
     implied: list[str] = []
+    walk = any(  # «пройтись с девушкой ночью»: the walk is the wish, the mood picks no restaurant or bar for it
+        c.tier == "activity"
+        and c.categories
+        and set(c.categories) <= STROLL_CATEGORIES
+        and m.has(c.name)
+        for c in CONCEPTS
+    )
     for c in CONCEPTS:
         if c.tier in {"mood", "activity"} and c.categories and m.has(c.name):
-            _add(implied, *c.categories)
+            added = [k for k in c.categories if not walk or k in _WALK_MOOD_KINDS]
+            _add(implied, *added)
             notes.append(f"{_WHY.get(c.name, c.name)} → категории по умолчанию")
     dropped = [c for c in implied if c in implied_out - excluded]
     if dropped:
@@ -544,6 +567,10 @@ def parse_rules(text: str, when: datetime | None = None) -> IntentResult:
         weather_hint=hint,
         exclude_categories=sorted(barred, key=CATEGORIES.index),  # type: ignore[arg-type]
         halal="halal" in flags,
+        local_food="local_food" in flags,
+        time_stated=parse_time_budget(text) is not None
+        or _deadline_minutes(text, when) is not None,
+        eat=any(m.has(n) for n in _EAT_CONCEPTS) and not m.has("coffee"),  # «пожрать», not «кофе»
         mode_explicit=mode != "walk",
         minor=minor,
         diets=[d for flag, d in _DIET_FLAGS if flag in flags],  # type: ignore[misc]
@@ -601,10 +628,11 @@ def refine_prompt(text: str, rules: Intent, about: str = "") -> str:
 def llm_dropped(rules: Intent, llm: Intent, text: str) -> list[str]:
     """Categories the LLM refinement proposed that the request's own concepts rule out («прогулка» is not a mall
     or a bar), and, for a stated outdoor wish («погулять», «в парк»), every indoor or food place the model would add
-    next to it: the model only narrows a wish, it never turns a walk into a coffee. A category the rules themselves
-    produced from the text is never dropped."""
+    next to it: the model only narrows a wish, it never turns a walk into a coffee. An errand (a pharmacy, a food
+    shop) comes from the rules' reading of the words only. A category the rules themselves produced from the text is
+    never dropped."""
     m = match(text)
-    forbidden = {f for c in CONCEPTS if m.has(c.name) for f in c.forbids}
+    forbidden = {f for c in CONCEPTS if m.has(c.name) for f in c.forbids} | ERRAND_KINDS
     return [
         c for c in llm.categories if (c in forbidden or c == "other") and c not in rules.categories
     ]
@@ -671,6 +699,9 @@ def merge_intents(rules: Intent, llm: Intent, text: str) -> Intent:
         info_about=rules.info_about,
         wished=rules.wished,
         refused=rules.refused,
+        local_food=rules.local_food,
+        time_stated=rules.time_stated,
+        eat=rules.eat,
     )
 
 

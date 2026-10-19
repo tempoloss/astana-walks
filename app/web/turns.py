@@ -186,15 +186,18 @@ def place_legs(turn: Turn, router: WalkingRouter) -> list[dict]:
 
 def answer_time(out: Outcome, text: str, manual: datetime | None) -> dict:
     """The moment the answer is about (what the day strip of a card marks as «сейчас»): the search's own time, or the
-    one a question about a place was answered at."""
+    one a question about a place was answered at; `day` is how many days ahead of today it is (0 today, 1 tomorrow), so
+    the card says «завтра» for tomorrow. A pinned demo answer is the stage's «now»: day 0."""
+    pinned = out.state.demo_base is not None or demo_pin.pins(text, out.state.demo_base)
     if out.result is not None:
         when = out.result.when
-    elif demo_pin.pins(text, out.state.demo_base):
+    elif pinned:
         when = demo_pin.when_for(text, out.state.demo_base)
     else:
         when = manual or local_now()
     local = to_local_naive(when)
-    return {"time": f"{local:%H:%M}", "date": f"{local:%Y-%m-%d}"}
+    days = 0 if pinned else max((local.date() - to_local_naive(local_now()).date()).days, 0)
+    return {"time": f"{local:%H:%M}", "date": f"{local:%Y-%m-%d}", "day": days}
 
 
 def answer(req: TurnRequest, on_stage: Callable[[str], None] | None = None) -> dict:

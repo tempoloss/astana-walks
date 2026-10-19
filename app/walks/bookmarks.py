@@ -22,6 +22,10 @@ CLOSER_BY_M = (
 ALONG_SLACK = 0.25  # along the way: the detour is at most this share of the user's own way ...
 ALONG_MIN_DETOUR_M = 300  # ... and never stricter than this
 MIN_TOWARD = 2  # with fewer places toward the bookmark the others stay in the list, behind them
+TOWARD_SHARE = (
+    0.15  # «по пути»: the place covers at least this share of the way to the bookmark ...
+)
+LEAN_SLACK = 0.5  # ... and a late request leaning toward home accepts a detour of at most this share of the way
 MIN_NAME_CHARS = 3
 
 _KIND_WORDS = {
@@ -32,7 +36,8 @@ _KIND_WORDS = {
 }
 _NEAR = r"(?<!\w)(?:рядом с|возле|около|поближе к|неподалёку от|недалеко от|у|near|next to|close to|around|by|жанында|маңында)"
 _ALONG = r"(?<!\w)(?:по пути|по дороге|на пути|по дороге к|on the way|on my way|along the way|en route|жолда|жол бойында)"
-_OWN = r"(?:(?:мо\w+|my|менің)\s+)?"
+_OWN = r"(?:(?:мо\w+|my|the|менің)\s+)?"
+_POSSESSIVE_NAME = re.compile(r"^(?:my|the|мой|моя|моё|мое|мои|менің)\s+", re.IGNORECASE)
 _DIRECTION = {  # bare «домой» / «на работу» / «в школу»: the way TO the place
     "home": r"домой|home\b|үйге",
     "work": r"на работу|к работе|с работы|to work|жұмысқа",
@@ -50,6 +55,11 @@ class Ref:
     rest: str
 
 
+def _core(name: str) -> str:
+    """The name without its possessive: «my hotel» is a place called «hotel», said «my hotel», «the hotel»."""
+    return _POSSESSIVE_NAME.sub("", name.strip())
+
+
 def _stem(name: str) -> str:
     low = name.lower().strip()
     return low[:-1] if len(low) >= 5 and low[-1] in "аяыиуюеоьй" else low
@@ -58,19 +68,25 @@ def _stem(name: str) -> str:
 def _patterns(b: Bookmark) -> list[tuple[bool, str]]:
     """(along, regex) pairs of one bookmark, most specific first."""
     words = [_KIND_WORDS[b.kind]] if b.kind in _KIND_WORDS else []
-    if len(b.name.strip()) >= MIN_NAME_CHARS:
-        words.append(re.escape(_stem(b.name)) + r"\w*")
+    core = _core(b.name)
+    if len(core) >= MIN_NAME_CHARS:
+        words.append(re.escape(_stem(core)) + r"\w*")
     out: list[tuple[bool, str]] = []
     for w in words:
-        out.append((True, rf"{_ALONG}\s+(?:домой|до|к|в|на|с|to|from)?\s*{_OWN}(?:{w})"))
+        out.append(
+            (True, rf"{_ALONG}\s+(?:back\s+)?(?:домой|до|к|в|на|с|to|from)?\s*{_OWN}(?:{w})")
+        )
         out.append((False, rf"{_NEAR}\s+{_OWN}(?:{w})"))
         out.append(
             (False, rf"(?:{w})\s+(?:жанында|маңында|қасында|жанынан)")
         )  # kk: «үйдің жанында»
     if b.kind in _DIRECTION:
         out.append((True, rf"(?:{_DIRECTION[b.kind]})"))
-    if len(b.name.strip()) >= MIN_NAME_CHARS:
-        out.append((False, rf"\b{re.escape(_stem(b.name))}\w*"))
+    if len(core) >= MIN_NAME_CHARS:
+        own = (
+            _OWN if core != b.name.strip() else ""
+        )  # a name said with its «my» is found by that «my» too
+        out.append((False, rf"\b{own}{re.escape(_stem(core))}\w*"))
     return out
 
 
@@ -92,6 +108,20 @@ def find_ref(text: str, bookmarks: list[Bookmark]) -> Ref | None:
     _, along, m, b = best
     rest = " ".join(f"{text[: m.start()]} {text[m.end() :]}".split()).strip(" ,.;:-")
     return Ref(bookmark=b, along=along, rest=rest)
+
+
+def named_bookmark(text: str, bookmarks: list[Bookmark]) -> Bookmark | None:
+    """The bookmark the text names anywhere («my hotel», «the hotel», «до дома»): by its name, or by the word of its kind.
+    Only a question about the way to it asks this; a search around it is `find_ref`."""
+    low = text.lower()
+    for b in bookmarks:
+        core = _core(b.name)
+        words = [_KIND_WORDS[b.kind]] if b.kind in _KIND_WORDS else []
+        if len(core) >= MIN_NAME_CHARS:
+            words.append(re.escape(_stem(core)) + r"\w*")
+        if any(re.search(rf"(?<!\w)(?:{w})", low) for w in words):
+            return b
+    return None
 
 
 def home_bookmark(bookmarks: list[Bookmark]) -> Bookmark | None:
@@ -116,18 +146,18 @@ def late_home(
 def toward(
     user: tuple[float, float], target: Bookmark, lat: float, lon: float, *, along: bool
 ) -> bool:
-    """Is the point toward `target` for a user at `user`: closer to it than the user is; for «along the way» also
-    a small detour only."""
+    """Is the point toward `target` for a user at `user`. «Along the way» (the person asked for it): closer to the target
+    than the user and a small detour (ALONG_SLACK) — a place passed at the start counts. A late request that only leans
+    toward home: a real share of the way (TOWARD_SHARE) with a sane detour (LEAN_SLACK); a place next to the user with
+    home 6 km away is not «по пути домой»."""
     own = haversine_m(*user, target.lat, target.lon)
     if own < AT_HOME_M:
         return False
     there = haversine_m(lat, lon, target.lat, target.lon)
-    if there > own - CLOSER_BY_M:
+    if own - there < (CLOSER_BY_M if along else max(CLOSER_BY_M, TOWARD_SHARE * own)):
         return False
-    if not along:
-        return True
     detour = haversine_m(*user, lat, lon) + there - own
-    return detour <= max(ALONG_MIN_DETOUR_M, ALONG_SLACK * own)
+    return detour <= max(ALONG_MIN_DETOUR_M, (ALONG_SLACK if along else LEAN_SLACK) * own)
 
 
 def prefer_toward(

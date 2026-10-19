@@ -306,6 +306,7 @@ main { position: relative; height: 100%; overflow: hidden; }
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
+  overflow-anchor: none; /* sheet-fit.js places the list itself; the browser's anchoring would shift it when a row above changes */
   padding: 12px var(--pad) 8px;
   scrollbar-width: thin;
   scrollbar-color: rgba(16, 24, 40, 0.18) transparent;
@@ -388,6 +389,13 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .when-panel .chips { margin-top: 0; }
 .when-panel .when-time { display: none; }
 .when-panel .label { margin-top: 4px; }
+/* the conditions in force («23:00 ✕»): one accent, a pill each, never hidden behind a closed panel */
+.cond { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.cond-pill { position: relative; display: inline-flex; align-items: center; gap: 4px; min-height: 28px; padding: 0 8px 0 12px; border-radius: var(--r-md); background: var(--accent-tint); box-shadow: inset 0 0 0 1px var(--accent-soft); font-size: var(--fs-sm); font-weight: 500; font-variant-numeric: tabular-nums; color: var(--ink); }
+.cond-pill svg { width: 14px; height: 14px; color: var(--ink-3); }
+.cond-pill:hover { background: var(--accent-soft); }
+.cond-note { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 8px 12px; border-radius: var(--r-md); background: var(--accent-tint); font-size: var(--fs-sm); color: var(--ink-2); }
+.cond-note .link { margin-left: auto; }
 .ask { display: flex; align-items: flex-end; gap: 8px; }
 .ask textarea {
   flex: 1;
@@ -527,6 +535,7 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .c-name { font-size: var(--fs-lg); font-weight: 600; letter-spacing: -0.005em; overflow-wrap: anywhere; }
 .c-kind { margin-left: 8px; color: var(--ink-3); font-size: var(--fs-sm); font-weight: 400; letter-spacing: 0; white-space: nowrap; }
 .c-min { margin-left: auto; padding-top: 1px; font-size: var(--fs-md); font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.c-top .more-b { flex: none; margin: -2px -4px -2px 0; }
 .c-st { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; }
 .c-st .m { margin-left: auto; color: var(--ink-3); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
 .price { font-size: var(--fs-sm); color: var(--ink-2); }
@@ -537,7 +546,6 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .c-src { display: flex; align-items: baseline; gap: 12px; font-size: var(--fs-xs); color: var(--ink-3); }
 .c-src .src { min-width: 0; }
 .c-src .src a { color: var(--ink-2); }
-.c-src .lnk { margin-left: auto; }
 .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 
 .strip { margin-top: 8px; }
@@ -546,8 +554,9 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .hbar b { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; border-radius: 1px; background: var(--ink); }
 .hcap { display: flex; justify-content: space-between; gap: 8px; font-size: var(--fs-xs); font-variant-numeric: tabular-nums; color: var(--ink-3); }
 
-.sub { display: flex; justify-content: space-between; align-items: baseline; margin: 16px 0 0; }
+.sub { display: flex; justify-content: space-between; align-items: center; margin: 16px 0 0; }
 .sub .lbl { color: var(--ink-2); }
+.sub svg { width: 14px; height: 14px; color: var(--ink-3); transform: rotate(180deg); }
 .alts { display: grid; }
 .alt {
   display: grid;
@@ -563,7 +572,7 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .alt:hover, .alt.hot { background: var(--hover); }
 .alt .a-l1 { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
 .alt .a-name { flex: 0 1 auto; font-size: var(--fs-md); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.alt .kd { flex: 0 1 auto; min-width: 0; font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.alt .kd { flex: 0 6 auto; min-width: 0; font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .alt .a-meta { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; min-width: 0; font-size: var(--fs-sm); color: var(--ink-2); }
 .alt .a-meta .st { font-size: var(--fs-sm); }
 .alt .a-meta .m { font-size: var(--fs-xs); color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -973,11 +982,21 @@ ul.queue li { display: grid; gap: 2px; }
   #where-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   #where-change { flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 0 8px; }
   #where-change::after { inset: -2px -2px; } /* 40px of row, 44px for the finger */
-  .opts-toggle { display: none; }
-  body.typing .where { display: none; }
+  .opts-toggle { display: inline-flex; align-items: center; min-height: 40px; padding: 0 8px; }
+  .opts-toggle::after { inset: -2px -2px; } /* 40px of row, 44px for the finger */
+  .opts-toggle[aria-expanded="true"] { color: var(--accent); }
+  body.typing .where, body.typing .cond { display: none; }
+  .cond { margin: 8px 0 8px; } /* the reach of a pill (36px + 4 + 4) must not meet the chips above or the «Где вы?» line below */
+  .composer.opts-open .cond { display: none; } /* the open panel says what is on itself */
+  .cond-pill { min-height: 36px; }
+  .cond-pill::after { content: ""; position: absolute; inset: -4px 0; } /* 36px to look at, 44px for the finger */
+  .cond-note .link { display: inline-flex; align-items: center; min-height: var(--tap); }
+  .cond-note .link::after { display: none; }
   .quick { display: none; padding: 4px var(--pad); margin: 0 calc(-1 * var(--pad)); gap: 8px; }
   body.typing .quick { display: flex; }
-  body:not(.typing) .when-panel { display: none; }
+  body:not(.typing) .composer:not(.opts-open) .when-panel { display: none; }
+  body[data-view="data"] .plate { z-index: 12; } /* the page covers the map and has no sheet over it: the bar (menu, language) stays above it */
+  body:not(.typing) .composer.opts-open .quick { display: none; } /* the panel replaces the ribbon: one list of options, not two */
   .when-panel .when-time { display: block; }
   .ask { gap: 8px; }
   .ask textarea { min-height: var(--tap); font-size: 16px; padding: 10px 12px; } /* 16px: iOS zooms into smaller fields; 44px: a field takes no extension */
@@ -993,7 +1012,7 @@ ul.queue li { display: grid; gap: 2px; }
   .ctxl { display: none; }
   #thread > li:last-child:not(.pending) > .u { display: none; } /* the top bar says what was asked; while the answer is made the bubble stays */
   .answer { gap: 8px; }
-  .answer > .chips { flex-wrap: nowrap; gap: 8px; margin: 4px calc(-1 * var(--pad)) 0; padding: 4px var(--pad); overflow-x: auto; overflow-y: hidden; scrollbar-width: none; touch-action: pan-x; } /* the top margin keeps the row wholly below the edge of a half-open sheet */
+  .answer > .chips { flex-wrap: nowrap; gap: 8px; margin: 16px calc(-1 * var(--pad)) 0; padding: 4px var(--pad); overflow-x: auto; overflow-y: hidden; scrollbar-width: none; touch-action: pan-x; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent); } /* the margin above keeps the row wholly below the edge of a half-open sheet (which ends 12px under the notice above); the fade says there are more to the right */
   .answer > .chips::-webkit-scrollbar { display: none; }
   .answer > .chips .chip { flex: none; white-space: nowrap; }
 
@@ -1006,9 +1025,9 @@ ul.queue li { display: grid; gap: 2px; }
   .c-kind { margin-left: 0; }
   .why.clamp { -webkit-line-clamp: 2; }
   .why-more { display: none !important; }
-  .c-src { align-items: center; gap: 8px; margin-bottom: 0; }
-  .c-src .lnk { display: inline-flex; flex: none; align-items: center; min-height: var(--tap); padding: 0 4px; }
-  .c-src .lnk::after { display: none; }
+  .c-src { align-items: center; gap: 8px; min-height: var(--tap); margin-bottom: 0; }
+  .c-top .more-b { width: var(--tap); height: var(--tap); margin: -10px -12px -10px 0; }
+  .more-b::after { display: none; } /* 44px already: an extension would make neighbouring rows overlap */
   .card .note { margin-bottom: 15px; } /* the links of a note and of the source line each reach 15px past their text: the two must not meet */
   .acts { flex-wrap: nowrap; gap: 8px; margin-top: 4px; }
   .card .acts { margin-top: 0; }
@@ -1040,8 +1059,8 @@ ul.queue li { display: grid; gap: 2px; }
   .lg-toggle::after { display: none; }
   .lg-head .bullet, .lg-attr .dot { display: none; }
   .lg-head .at { display: block; }
-  .lg-attr { display: flex; flex-direction: column; }
-  .lg-attr a, .lg-attr > span:not(.dot) { display: flex; align-items: center; min-height: var(--tap); }
+  .lg-attr { display: flex; flex-flow: row wrap; column-gap: 16px; }
+  .lg-attr a, .lg-attr > span:not(.dot) { display: flex; align-items: center; justify-content: center; min-width: var(--tap); min-height: var(--tap); }
   .lg-foot { font-size: var(--fs-xs); }
 
   .page-inner { padding-top: calc(var(--bar-top) + var(--bar-h) + 16px); }
@@ -1201,9 +1220,11 @@ ul.queue li { display: grid; gap: 2px; }
 }
 
 /* the nudges toward «Мои места» and the menu's last, destructive entry */
-.places-hint { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 4px 8px; margin-top: 12px; font-size: var(--fs-sm, 13px); line-height: 1.45; color: var(--ink-2); }
-.places-hint svg { flex: none; width: 16px; height: 16px; margin-top: 2px; color: var(--ink-3); }
-.places-hint span { flex: 1; min-width: 12em; }
+.places-hint { display: grid; grid-template-columns: 16px minmax(0, 1fr); align-items: start; gap: 0 8px; margin-top: 12px; font-size: var(--fs-sm, 13px); line-height: 1.45; color: var(--ink-2); }
+.places-hint svg { width: 16px; height: 16px; margin-top: 2px; color: var(--ink-3); }
+.places-hint span { min-width: 0; }
+.places-hint .link { grid-column: 2; justify-self: start; display: inline-flex; align-items: center; min-height: var(--tap, 44px); }
+.places-hint .link::after { display: none; }
 .map-menu button.danger { color: var(--closed); }
 .map-menu button.danger svg { color: inherit; }
 .map-menu button.danger::before { content: ""; position: absolute; }

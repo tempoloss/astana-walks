@@ -7,8 +7,8 @@ in walks/ or web/ knows of it):
   * weather: an active Kazhydromet warning (marked as an example in its own text) and a station report with fog;
   * the afisha: three listings near the «EXPO» start point, one of them a cinema session, starting in the next hours
     (a file written into the scratch folder, `walks.events.DEFAULT_PATH` points at it);
-  * an open OpenStreetMap closure note beside the main card of the request `QUERY` (`WALKS_CITY_DIR` points at a
-    scratch folder with that one note).
+  * an open OpenStreetMap closure note beside every place that heads the answer to the request `QUERY` at some half
+    hour of the day (who heads it depends on the clock; `WALKS_CITY_DIR` points at a scratch folder with those notes).
 
     uv run python scripts/ui_tour_fixtures.py PORT SCRATCH_DIR
 """
@@ -115,19 +115,32 @@ def main(port: int, scratch: Path) -> None:
 
     (scratch / "city").mkdir(exist_ok=True)
     (scratch / "city" / "osm_notes.json").write_text("[]", encoding="utf-8")
-    answer = turns.answer(turns.TurnRequest(text=QUERY, lat=lat, lon=lon, lang="ru"))
-    poi = next(p for p in get_pois() if p.id == answer["turn"]["places"][0]["id"])
-    note = {
-        "id": 1,
-        "lat": poi.lat + 0.0001,
-        "lon": poi.lon,
-        "status": "open",
-        "date_created": now.strftime("%Y-%m-%d"),
-        "classification": "closure",
-        "snippet": f"{poi.name}: {EXAMPLE}",
-        "url": "https://www.openstreetmap.org/note/1",
-    }
-    notes = json.dumps([note], ensure_ascii=False)
+    # which place heads the answer depends on the clock (hours decide who is open): sweep the day, and put the note
+    # beside every place that heads it at some half hour, so the tour finds it whenever it runs
+    heads: dict[str, None] = {}
+    for minutes in range(0, 24 * 60, 30):
+        at = f"{minutes // 60:02d}:{minutes % 60:02d}"
+        got = turns.answer(turns.TurnRequest(text=QUERY, lat=lat, lon=lon, lang="ru", at=at))
+        heads.setdefault(got["turn"]["places"][0]["id"])
+    now_answer = turns.answer(turns.TurnRequest(text=QUERY, lat=lat, lon=lon, lang="ru"))
+    heads.setdefault(now_answer["turn"]["places"][0]["id"])
+    by_id = {p.id: p for p in get_pois()}
+    rows = []
+    for i, pid in enumerate(heads, start=1):
+        poi = by_id[pid]
+        rows.append(
+            {
+                "id": i,
+                "lat": poi.lat + 0.0001,
+                "lon": poi.lon,
+                "status": "open",
+                "date_created": now.strftime("%Y-%m-%d"),
+                "classification": "closure",
+                "snippet": f"{poi.name}: {EXAMPLE}",
+                "url": f"https://www.openstreetmap.org/note/{i}",
+            }
+        )
+    notes = json.dumps(rows, ensure_ascii=False)
     (scratch / "city" / "osm_notes.json").write_text(notes, encoding="utf-8")
 
     import uvicorn

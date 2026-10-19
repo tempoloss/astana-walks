@@ -13,7 +13,7 @@ from pathlib import Path
 import pytest
 
 from walks.dialog import TurnEnv, new_state, take_turn
-from walks.dialog_nlu import place_question
+from walks.dialog_questions import place_question
 from walks.dialog_strings import STRINGS, s
 from walks.dialog_types import Turn
 from walks.hours import local_now

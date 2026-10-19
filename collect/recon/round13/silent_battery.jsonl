@@ -1,0 +1,100 @@
+{"phrase": "где поесть", "ood": null, "silent": false, "categories": ["restaurant", "cafe", "fast_food"], "wished": ["restaurant", "cafe", "fast_food"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "кофейня", "ood": null, "silent": false, "categories": ["cafe"], "wished": ["cafe"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "обед", "ood": null, "silent": false, "categories": ["restaurant"], "wished": ["restaurant"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "дешёвый обед", "ood": null, "silent": false, "categories": ["restaurant"], "wished": ["restaurant"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "пиво", "ood": null, "silent": false, "categories": ["bar_nightlife"], "wished": ["bar_nightlife"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "алкоголь", "ood": null, "silent": false, "categories": ["bar_nightlife"], "wished": ["bar_nightlife"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "сигареты", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "табак", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "детский сад", "ood": null, "silent": false, "categories": ["park_garden"], "wished": ["park_garden"], "keywords": ["детск"], "named_places": false, "landmark_refs": false}
+{"phrase": "поликлиника", "ood": "clinic", "silent": false, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "травмпункт", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "сбербанк", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "банк", "ood": null, "silent": false, "categories": ["money"], "wished": ["money"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "банкомат", "ood": null, "silent": false, "categories": ["money"], "wished": ["money"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "перевести деньги", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "почта", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "марка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "отправить посылку", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "грузовое такси", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "остановка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "автобус", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "метро", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "вокзал", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "фонтан", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "скамейка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "лавочка", "ood": null, "silent": false, "categories": ["park_garden"], "wished": ["park_garden"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "туалет", "ood": null, "silent": false, "categories": ["public_toilet"], "wished": ["public_toilet"], "keywords": ["туалет"], "named_places": false, "landmark_refs": false}
+{"phrase": "детская площадка", "ood": null, "silent": false, "categories": ["kids_playground"], "wished": ["kids_playground"], "keywords": ["детск"], "named_places": false, "landmark_refs": false}
+{"phrase": "батут", "ood": null, "silent": false, "categories": ["entertainment"], "wished": ["entertainment"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "верёвочный парк", "ood": null, "silent": false, "categories": ["park_garden", "entertainment"], "wished": ["park_garden", "entertainment"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "зоопарк", "ood": null, "silent": false, "categories": ["entertainment"], "wished": ["entertainment"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "аквариум", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "аттракцион", "ood": null, "silent": false, "categories": ["entertainment"], "wished": ["entertainment"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "кинотеатр", "ood": null, "silent": false, "categories": ["culture_theatre_cinema"], "wished": ["culture_theatre_cinema"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "театр", "ood": null, "silent": false, "categories": ["culture_theatre_cinema"], "wished": ["culture_theatre_cinema"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "концерт", "ood": null, "silent": false, "categories": ["culture_theatre_cinema"], "wished": ["culture_theatre_cinema"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "фестиваль", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "музей", "ood": null, "silent": false, "categories": ["museum_gallery"], "wished": ["museum_gallery"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "галерея", "ood": null, "silent": false, "categories": ["museum_gallery"], "wished": ["museum_gallery"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "библиотека", "ood": null, "silent": false, "categories": ["coworking_library"], "wished": ["coworking_library"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "коворкинг", "ood": null, "silent": false, "categories": ["coworking_library"], "wished": ["coworking_library"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "wifi", "ood": null, "silent": false, "categories": ["cafe", "coworking_library"], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "зарядка", "ood": null, "silent": false, "categories": ["cafe", "coworking_library"], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "розетка", "ood": null, "silent": false, "categories": ["cafe", "coworking_library"], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "кафе с детской комнатой", "ood": null, "silent": false, "categories": ["cafe"], "wished": ["cafe"], "keywords": ["детск"], "named_places": false, "landmark_refs": false}
+{"phrase": "постамат", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ozon", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "wildberries", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "где гулять с собакой", "ood": null, "silent": false, "categories": ["park_garden", "attraction_landmark", "viewpoint"], "wished": ["park_garden", "attraction_landmark", "viewpoint"], "keywords": ["собак", "dog"], "named_places": false, "landmark_refs": false}
+{"phrase": "выгул собак", "ood": null, "silent": false, "categories": ["park_garden"], "wished": ["park_garden"], "keywords": ["собак", "dog"], "named_places": false, "landmark_refs": false}
+{"phrase": "парковка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "платная парковка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "велопрокат", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "самокаты", "ood": null, "silent": false, "categories": ["sport"], "wished": ["sport"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "лыжи", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "каток", "ood": null, "silent": false, "categories": ["sport"], "wished": ["sport"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "бассейн", "ood": null, "silent": false, "categories": ["sport"], "wished": ["sport"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "сауна", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "баня", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "массаж", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "стрижка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "барбершоп", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ногти", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ремонт телефонов", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "фото на документы", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "нотариус", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "адвокат", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ЗАГС", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "суд", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "полиция", "ood": "police", "silent": false, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "МЧС", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "пожарная", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ветклиника", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "передержка животных", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "гостиница", "ood": null, "silent": false, "categories": ["lodging"], "wished": ["lodging"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "апартаменты", "ood": null, "silent": false, "categories": ["lodging"], "wished": ["lodging"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "хостел", "ood": null, "silent": false, "categories": ["lodging"], "wished": ["lodging"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "переночевать", "ood": null, "silent": false, "categories": ["lodging"], "wished": ["lodging"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "экскурсия", "ood": null, "silent": false, "categories": ["attraction_landmark", "viewpoint", "museum_gallery", "park_garden", "cafe"], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "гид", "ood": null, "silent": false, "categories": ["attraction_landmark", "viewpoint", "museum_gallery", "park_garden", "cafe"], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "сувениры", "ood": null, "silent": false, "categories": ["mall"], "wished": ["mall"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "рынок", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ярмарка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "фудкорт", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "аптека", "ood": null, "silent": false, "categories": ["pharmacy"], "wished": ["pharmacy"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "круглосуточная аптека", "ood": null, "silent": false, "categories": ["pharmacy"], "wished": ["pharmacy"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "обмен валют", "ood": null, "silent": false, "categories": ["money"], "wished": ["money"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "ломбард", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "мечеть", "ood": null, "silent": false, "categories": ["attraction_landmark"], "wished": ["attraction_landmark"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "церковь", "ood": null, "silent": false, "categories": ["attraction_landmark"], "wished": ["attraction_landmark"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "синагога", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "кладбище", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "мемориал", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "вечный огонь", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "пантеон", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "байтерек", "ood": null, "silent": false, "categories": [], "wished": [], "keywords": ["Байтерек", "Baiterek"], "named_places": true, "landmark_refs": false}
+{"phrase": "арка", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "набережная", "ood": null, "silent": false, "categories": ["park_garden"], "wished": ["park_garden"], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "эко-тропа", "ood": null, "silent": true, "categories": [], "wished": [], "keywords": [], "named_places": false, "landmark_refs": false}
+{"phrase": "смотровая площадка", "ood": null, "silent": false, "categories": ["viewpoint", "kids_playground"], "wished": ["viewpoint", "kids_playground"], "keywords": [], "named_places": false, "landmark_refs": false}

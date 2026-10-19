@@ -554,7 +554,7 @@ def test_the_form_saves_every_field_and_the_view_offers_its_pickers(client, tmp_
     saved = _save(
         client,
         with_kids=True,
-        kids_age_band="4-7",
+        kids_age_bands=["4-7"],
         halal=True,
         budget="low",
         mobility="stroller",
@@ -570,7 +570,7 @@ def test_the_form_saves_every_field_and_the_view_offers_its_pickers(client, tmp_
     assert set(stored["liked"]) == {"park_garden", "cafe"}
     assert saved["form"]["about"] == stored["about"]
     assert saved["form"]["liked"] == ["cafe", "park_garden"]  # the form's own order
-    assert saved["form"]["kids_age_band"] == "4-7"
+    assert saved["form"]["kids_age_bands"] == ["4-7"]
     keys = {i["key"] for i in saved["items"]}
     assert {"about", "avoid:bar_nightlife", "liked:cafe", "with_kids"} <= keys
     again = client.get(f"/api/profile?id={uid}").json()
@@ -578,25 +578,28 @@ def test_the_form_saves_every_field_and_the_view_offers_its_pickers(client, tmp_
 
 
 def test_a_childs_age_is_refused_without_with_kids_and_cleared_when_the_flag_goes(client, tmp_path):
-    assert _save(client, with_kids=False, kids_age_band="4-7").status_code == 422
+    assert _save(client, with_kids=False, kids_age_bands=["4-7"]).status_code == 422
     assert not (tmp_path / "profiles").exists()
-    uid = _save(client, with_kids=True, kids_age_band="8-12").json()["id"]
+    uid = _save(client, with_kids=True, kids_age_bands=["8-12"]).json()["id"]
+    assert _stored(tmp_path)["kids_age_bands"] == ["8-12"]
     assert _stored(tmp_path)["kids_age_band"] == "8-12"
-    view = _save(client, uid, with_kids=False, kids_age_band=None).json()
+    view = _save(client, uid, with_kids=False, kids_age_bands=[]).json()
     assert _stored(tmp_path)["kids_age_band"] is None
-    assert view["form"]["kids_age_band"] is None
+    assert _stored(tmp_path)["kids_age_bands"] == []
+    assert view["form"]["kids_age_bands"] == []
     forgot = client.post("/api/profile", json={"id": uid, "action": "forget", "key": "with_kids"})
     assert forgot.status_code == 422  # the flag is already off: there is nothing to forget
-    uid = _save(client, uid, with_kids=True, kids_age_band="0-3").json()["id"]
+    uid = _save(client, uid, with_kids=True, kids_age_bands=["0-3"]).json()["id"]
     client.post("/api/profile", json={"id": uid, "action": "forget", "key": "with_kids"})
     assert _stored(tmp_path)["kids_age_band"] is None  # forgetting the flag takes the age with it
+    assert _stored(tmp_path)["kids_age_bands"] == []
 
 
 @pytest.mark.parametrize(
     "form",
     [
         {"about": "я" * 501},
-        {"kids_age_band": "5-6", "with_kids": True},
+        {"kids_age_bands": ["5-6"], "with_kids": True},
         {"liked": ["cafe"], "avoid": ["cafe"]},
         {"liked": ["other"]},
         {"avoid": ["no_such_kind"]},

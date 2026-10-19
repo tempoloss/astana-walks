@@ -7,6 +7,7 @@ import re
 
 from rapidfuzz import fuzz
 
+from .dialog_text import display_name
 from .models import POI
 
 NAME_RATIO_MIN = 85  # rapidfuzz ratio of two normalised names (0-100) that counts as the same chain
@@ -37,8 +38,18 @@ def name_key(name: str) -> str:
 def name_keys(poi: POI) -> set[str]:
     if poi.name_generated:
         return set()  # a name made up from the category ("Кафе") says nothing about the chain
-    keys = {name_key(n) for n in (poi.name, *poi.names.values())}
+    keys = {
+        name_key(display_name(n)) for n in (poi.name, *poi.names.values())
+    }  # the branch's street is no name
     return {k for k in keys if len(k) >= 3}
+
+
+def same_place_name(a: POI, b: POI) -> bool:
+    """Two records a person cannot tell apart on a card: the same name (any category: a café and a «restaurant»
+    record of one Coffee BOOM), or two anonymous records of one kind."""
+    if a.name_generated or b.name_generated:
+        return a.name_generated and b.name_generated and a.category == b.category
+    return best_ratio(name_keys(a), name_keys(b)) >= NAME_RATIO_MIN
 
 
 def best_ratio(a: set[str], b: set[str]) -> float:

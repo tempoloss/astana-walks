@@ -58,14 +58,23 @@ SELECTORS = {
 # man_made=tower+tower:type=observation 0, tourism=viewpoint 1 (unnamed, already in the first set), shop=books 7,
 # club=* 6, amenity=events_venue 1, amenity=fountain 129 (5 named), amenity=community_centre 15,
 # leisure=miniature_golf / adult_gaming_centre / trampoline_park 0. EXTRA_NAME_FILTER keeps out what is not a place to
-# visit (congress halls, book shops without a cafe in the name).
+# visit (congress halls, book shops without a cafe in the name). Practical layers (round 10, nodes+ways, see
+# recon/round10/practical_layers_count.jsonl): amenity=pharmacy 191, shop=supermarket 165, convenience 462,
+# greengrocer 20, butcher 9 (shop=kiosk is left out: anonymous, so it would be dropped anyway; shop=bakery 20 stays
+# with the cafe vocabulary of the app, so it is not collected as grocery). Money (one category `money`, the card
+# name / SUBTYPE tells the three apart; same file): amenity=atm 309, bank 165, bureau_de_change 14. Lodging:
+# tourism=hotel|hostel|guest_house (135 = 97 nodes + 22 ways + 16 relations, SOURCES 24.1).
 EXTRA_SELECTORS = [
     '["leisure"="indoor_play"]',
     '["playground"="indoor"]',
     '["amenity"="planetarium"]',
     '["amenity"="events_venue"]',
     '["amenity"="fountain"]',
+    '["amenity"="pharmacy"]',
+    '["shop"~"^(supermarket|convenience|greengrocer|butcher)$"]',
     '["amenity"="toilets"]',
+    '["amenity"~"^(atm|bank|bureau_de_change)$"]',
+    '["tourism"~"^(hotel|hostel|guest_house)$"]',
     '["amenity"="community_centre"]',
     '["club"]',
     '["shop"="books"]',
@@ -135,6 +144,17 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
     ("amenity", "community_centre", "culture_theatre_cinema"),
     ("amenity", "fountain", "attraction_landmark"),
     ("amenity", "toilets", "public_toilet"),
+    ("amenity", "atm", "money"),
+    ("amenity", "bank", "money"),
+    ("amenity", "bureau_de_change", "money"),
+    ("tourism", "hotel", "lodging"),
+    ("tourism", "hostel", "lodging"),
+    ("tourism", "guest_house", "lodging"),
+    ("amenity", "pharmacy", "pharmacy"),
+    ("shop", "supermarket", "grocery"),
+    ("shop", "convenience", "grocery"),
+    ("shop", "greengrocer", "grocery"),
+    ("shop", "butcher", "grocery"),
     ("club", "sport", "sport"),
     ("shop", "books", "cafe"),
     ("man_made", "tower", "viewpoint"),
@@ -142,8 +162,8 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
 
 CATEGORIES = [
     "cafe", "restaurant", "fast_food", "bar_nightlife", "museum_gallery", "attraction_landmark",
-    "viewpoint", "park_garden", "kids_playground", "entertainment", "mall", "public_toilet",
-    "culture_theatre_cinema", "coworking_library", "sport", "transit_station", "other",
+    "viewpoint", "park_garden", "kids_playground", "entertainment", "mall", "public_toilet", "pharmacy", "grocery",
+    "culture_theatre_cinema", "coworking_library", "sport", "transit_station", "money", "lodging", "other",
 ]
 
 # Unnamed items kept with a generated name (category -> base name).
@@ -152,6 +172,7 @@ GENERATED_NAMES = {
     "viewpoint": "Смотровая площадка",
     "park_garden": "Парк / сквер",
     "public_toilet": "Туалет",
+    "money": "Банкомат",  # unnamed ATMs are most of the 309; the card then reads «Банкомат (улица)»
 }
 
 # `leisure=playground` + `indoor=yes` (8 records in Astana, all inside buildings) is an indoor play area: the app treats
@@ -348,6 +369,17 @@ SUBTYPE_RU = {
     ("amenity", "community_centre"): "Дворец / центр культуры",
     ("amenity", "fountain"): "Фонтан",
     ("amenity", "toilets"): "Публичный туалет",
+    ("amenity", "atm"): "Банкомат",
+    ("amenity", "bank"): "Отделение банка",
+    ("amenity", "bureau_de_change"): "Обмен валют",
+    ("tourism", "hotel"): "Гостиница",
+    ("tourism", "hostel"): "Хостел",
+    ("tourism", "guest_house"): "Гостевой дом",
+    ("amenity", "pharmacy"): "Аптека",
+    ("shop", "supermarket"): "Супермаркет",
+    ("shop", "convenience"): "Магазин у дома",
+    ("shop", "greengrocer"): "Овощной магазин",
+    ("shop", "butcher"): "Мясной магазин",
     ("club", "sport"): "Спортивный клуб",
     ("shop", "books"): "Книжный магазин-кафе",
     ("man_made", "tower"): "Смотровая башня",

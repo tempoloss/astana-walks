@@ -14,15 +14,15 @@
   "coverage": 75.0,
   "diversity": 100.0,
   "top1_ok_rate": 80.0,
-  "top1_open_rate": 60.0,
-  "unknown_hours_rec_share": 67.9,
-  "non_osm_rec_share": 48.2,
-  "avg_walk_min": 8.1,
+  "top1_open_rate": 65.0,
+  "unknown_hours_rec_share": 66.1,
+  "non_osm_rec_share": 55.4,
+  "avg_walk_min": 8.4,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 1,
-  "latency_ms_median": 11.5,
-  "latency_ms_p90": 33.0,
-  "generation_ms_median": 0.0,
+  "latency_ms_median": 15.5,
+  "latency_ms_p90": 72.0,
+  "generation_ms_median": 1.0,
   "generation_ms_p90": 1.0,
   "model_link": {
     "template": 20
@@ -127,8 +127,8 @@
     "cases_file": "holdout_cases.json",
     "case_set": "holdout",
     "records": 20,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:05+05:00"
+    "generated_at": "2026-10-19T10:36:39+05:00"
   }
 }

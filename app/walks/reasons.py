@@ -15,10 +15,11 @@ import re
 from dataclasses import dataclass
 
 from .claims import strip_unbacked
-from .hours import is_24_7
+from .districts import district_of
+from .facts import features, street
 from .i18n import (
     attr_label,
-    category_name,
+    district_name,
     marks,
     source_label,
     t,
@@ -27,7 +28,7 @@ from .i18n import (
 from .i18n_cuisine import cuisine_label
 from .models import HOURS_SUFFIX, MUSEUM_REGISTER, Candidate, Intent, Recommendation, WeatherInfo
 from .radius import INFO_ABOUT
-from .shelter import AIR_OUTDOOR_KEPT, LIT_NEAR, OUTDOOR_EXCLUDED, WEATHER_OUTDOOR_KEPT
+from .shelter import AIR_OUTDOOR_KEPT, LIT_NEAR, WEATHER_OUTDOOR_KEPT
 from .stay import MIN_STAY_OVER_BUDGET, NAMED_OVER_BUDGET, min_stay
 from .weather import BAD_PM25, adverse_text, air_driver_text, air_text
 
@@ -37,6 +38,7 @@ WIKI_SENTENCE_MAX = 220
 _FIT_REASONS = {
     "kids": "fit_kids",
     "halal": "fit_halal",
+    "local_food": "fit_local_food",
     "quiet": "fit_quiet",
     "wifi": "fit_wifi",
     "socket": "fit_socket",
@@ -44,22 +46,7 @@ _FIT_REASONS = {
     "free": "fit_free",
     "pets": "fit_pets",
     INFO_ABOUT: "fit_info",
-    "open_at_night": "fit_night",
 }
-_UNIQUE_KINDS = frozenset(  # a category whose «only one among the selected» is worth saying
-    {
-        "museum_gallery",
-        "attraction_landmark",
-        "viewpoint",
-        "park_garden",
-        "kids_playground",
-        "entertainment",
-        "culture_theatre_cinema",
-        "mall",
-        "sport",
-        "coworking_library",
-    }
-)
 
 # What the eval counts as an unconfirmed «open» claim (eval/metrics.py `_OPEN_CLAIM`; a test keeps them equal).
 # «на открытом воздухе» is a different word and does not match.
@@ -79,8 +66,11 @@ _HOURS_WORDS = re.compile(
 
 
 def budget_phrase(c: Candidate, intent: Intent) -> str:
-    """Why a place stayed in the list although its usual minimum stay exceeds the time left ('' otherwise)."""
-    if MIN_STAY_OVER_BUDGET not in c.reasons and NAMED_OVER_BUDGET not in c.reasons:
+    """Why a place stayed in the list although its usual minimum stay exceeds the time left ('' otherwise, and '' when
+    the person set no time: a default of 60 min is no limit of theirs to explain)."""
+    if not intent.time_stated or (
+        MIN_STAY_OVER_BUDGET not in c.reasons and NAMED_OVER_BUDGET not in c.reasons
+    ):
         return ""
     return t("budget_over", intent.language, lo=min_stay(c.poi.category))
 
@@ -111,22 +101,26 @@ def honest_hours_text(text: str, c: Candidate, lang: str | None = "ru") -> str:
     return " ".join(p for p in parts if p and not claim.search(p)).strip()
 
 
+_OUTDOOR_ASKED = frozenset({"park_garden", "viewpoint", "kids_playground", "attraction_landmark"})
+
+
 def weather_phrase(c: Candidate, intent: Intent, weather: WeatherInfo | None) -> str:
-    """Short clause explaining a choice driven by weather, air or darkness ('' when none of them mattered)."""
-    if weather is None:
+    """Short clause explaining a choice driven by weather, air or darkness ('' when none of them mattered): one clause,
+    never one per condition, and none on a kind the person named (the weather did not choose it, the person did)."""
+    if weather is None or c.poi.category in intent.wished:
         return ""
     lang = intent.language
     parts: list[str] = []
     if "weather_indoor" in c.reasons and weather.adverse:
         parts.append(t("wx_bad", lang, what=adverse_text(weather, lang)))
-    if "air_indoor" in c.reasons and weather.air_bad:
+    if (
+        "air_indoor" in c.reasons and weather.air_bad and not parts
+    ):  # one «место в помещении» is enough
         parts.append(air_text(weather, lang))
     if (
         "dark_indoor" in c.reasons and not parts
     ):  # the weather / air clause already says «место в помещении»
         parts.append(t("wx_dark", lang))
-    if OUTDOOR_EXCLUDED in c.reasons:
-        parts.append(t("wx_outdoor_off", lang))
     return "; ".join(parts)
 
 
@@ -158,12 +152,12 @@ def weather_notes(c: Candidate, weather: WeatherInfo | None, lang: str) -> list[
     return out
 
 
-def people_phrase(c: Candidate, intent: Intent) -> str:
-    """What anonymous marks of people say about sockets / Wi-Fi / noise, always with its source ('' when none)."""
+def _marks(c: Candidate, lang: str, asked: bool) -> str:
+    """What anonymous marks of people say about sockets / Wi-Fi / noise, with its source: the marks the request
+    asked about (`asked`), else every mark the place has ('' when none)."""
     ev = c.people
     if ev is None:
         return ""
-    lang = intent.language
     items = [
         f"{attr_label(code, lang)} ({marks(n, lang)})"
         for code, n in (
@@ -172,11 +166,14 @@ def people_phrase(c: Candidate, intent: Intent) -> str:
             ("people_quiet", ev.quiet),
             ("people_noisy", ev.noisy),
         )
-        if code in c.reasons
+        if (code in c.reasons if asked else n > 0)
     ]
-    if not items:
-        return ""
-    return f"{source_label(ev.demo, lang)}: {', '.join(items)}"
+    return f"{source_label(ev.demo, lang)}: {', '.join(items)}" if items else ""
+
+
+def people_phrase(c: Candidate, intent: Intent) -> str:
+    """What anonymous marks of people say about the sockets / Wi-Fi / noise the request asked about ('' when none)."""
+    return _marks(c, intent.language, asked=True)
 
 
 # ---------------------------------------------------------------- the composer
@@ -208,20 +205,16 @@ def _wishes(c: Candidate, lang: str) -> list[str]:
     out = []
     for r in c.reasons:
         if r in _FIT_REASONS:
-            key = _FIT_REASONS[r]
-            out.append(t(key + _by_site(c) if key == "fit_night" else key, lang))
+            out.append(t(_FIT_REASONS[r], lang))
         elif r.startswith("diet:"):
             out.append(t(f"fit_diet_{r.split(':', 1)[1]}", lang))
-        elif r.startswith("keywords:"):
-            kws = ", ".join(f"“{k}”" for k in r.split(":", 1)[1].split(","))
-            out.append(t("fit_keywords", lang, kws=kws))
     return out
 
 
 def _time_fact(c: Candidate, intent: Intent, trip: Trip) -> str:
     round_trip = 2 * trip.one_way_min
-    if round_trip + trip.stay_min > intent.time_budget_min:
-        return ""
+    if not intent.time_stated or round_trip + trip.stay_min > intent.time_budget_min:
+        return ""  # «в ваши 90 мин»: only a time the person set
     return t(
         "fact_time",
         intent.language,
@@ -229,16 +222,6 @@ def _time_fact(c: Candidate, intent: Intent, trip: Trip) -> str:
         rt=round_trip,
         stay=trip.stay_min,
     )
-
-
-def _is_24_7(c: Candidate) -> bool:
-    return is_24_7(c.poi.opening_hours)
-
-
-def _by_site(c: Candidate) -> str:
-    """Suffix of the i18n key of a sentence about the hours: the website's hours say so, OSM's are the default."""
-    suffix = HOURS_SUFFIX.get(c.poi.hours_source() or "")
-    return f"_{suffix}" if suffix else ""
 
 
 def hours_state_text(state: str, source: str | None, lang: str | None = "ru") -> str:
@@ -280,49 +263,18 @@ def hours_notes(c: Candidate, lang: str | None) -> list[str]:
 def _open_fact(c: Candidate, lang: str) -> str:
     if c.hours_state == "closed" and c.poi.opening_hours and INFO_ABOUT in c.reasons:
         return t("fact_closed_now", lang)  # the user asked about the place: «закрыто» is the answer
-    if c.hours_state != "open" or not c.poi.opening_hours:
-        return ""
-    return t(("fact_open_247" if _is_24_7(c) else "fact_open") + _by_site(c), lang)
+    return ""
 
 
 def _comparison_facts(c: Candidate, peers: list[Candidate], lang: str) -> list[str]:
-    """How the place compares with the other selected candidates (never with the whole city: that is not known)."""
-    cat = category_name(c.poi.category, lang)
-    same = [p for p in peers if p.poi.category == c.poi.category]
-    out = []
-
-    def nearest(group: list[Candidate]) -> bool:
-        return min(group, key=lambda p: (p.distance_m, p.poi.id)).poi.id == c.poi.id
-
-    open_same = [p for p in same if p.hours_state == "open"]
-    if c.hours_state == "open" and len(open_same) >= 2 and nearest(open_same):
-        out.append(t("fact_nearest_open" + _by_site(c), lang, n=len(same), cat=cat))
-    elif len(same) >= 2 and nearest(same):
-        out.append(t("fact_nearest", lang, n=len(same), cat=cat))
-    elif len(peers) >= 3 and len(same) == 1 and c.poi.category in _UNIQUE_KINDS:
-        out.append(t("fact_only", lang, cat=cat))
+    """What the record says about how well known the place is (its Wikipedia article and its views), compared with
+    the other selected candidates only."""
     views = c.poi.popularity_pageviews
     if views:
         rated = [p for p in peers if p.poi.popularity_pageviews]
         top = len(rated) >= 2 and max(p.poi.popularity_pageviews or 0 for p in rated) == views
-        out.append(t("fact_wiki_top" if top else "fact_wiki", lang, n=views))
-    elif c.poi.wikipedia:
-        out.append(t("fact_wiki_plain", lang))
-    return out
-
-
-def _attributes(c: Candidate, weather: WeatherInfo | None, lang: str) -> str:
-    poi, parts = c.poi, []
-    outdoors_ok = (
-        weather is None or not weather.indoor_preferred
-    ) and "dark_outdoor" not in c.reasons
-    if poi.outdoor_seating == "yes" and outdoors_ok:
-        parts.append(t("fact_outdoor", lang).rstrip("."))
-    if poi.internet_access in ("wlan", "yes") and "wifi" not in c.reasons:
-        parts.append(t("fit_wifi", lang))
-    if poi.wheelchair == "yes" and "wheelchair" not in c.reasons:
-        parts.append(t("fit_wheelchair", lang))
-    return _sentence("; ".join(parts))
+        return [t("fact_wiki_top" if top else "fact_wiki", lang, n=views)]
+    return [t("fact_wiki_plain", lang)] if c.poi.wikipedia else []
 
 
 def facts(
@@ -332,36 +284,66 @@ def facts(
     peers: list[Candidate],
     trip: Trip,
 ) -> list[str]:
-    """Every sentence the record's fields can back, the strongest first."""
+    """Every sentence the record's fields can back, the strongest first: the wishes the record confirms, people's
+    marks, the record's own facts (cuisine, features, Wikipedia), the time window. Never a selection note («ближайшее
+    из N подобранных», «категория — как вы просили», «совпадает с …») nor a status (the card's own line says it,
+    walks.status); the conditions only on a card that stands in for the outdoor place asked for, where they are the
+    reason (a café padding a short list of bars is there for the shortage, not for the fog)."""
     lang = intent.language
     out: list[str] = []
     if wishes := _wishes(c, lang):
         out.append(_sentence("; ".join(wishes)))
-    for clause in (people_phrase(c, intent), weather_phrase(c, intent, weather)):
-        if clause:
-            out.append(_sentence(clause))
-    led = bool(
-        out
-    )  # a wish, marks or the weather already say why THIS place; the time window comes after
-    time_fact = _time_fact(c, intent, trip)
-    opened = _open_fact(c, lang)
-    always = (
-        bool(opened) and _is_24_7(c) and c.hours_state == "open"
-    )  # 24/7 is worth more than the comparison
-    if time_fact and not led:
-        out.append(time_fact)
-    if always:
-        out.append(opened)
+    if clause := people_phrase(c, intent):
+        out.append(_sentence(clause))
+    substitute = "off_category" in c.reasons and set(intent.categories) & _OUTDOOR_ASKED
+    if substitute and (wx := weather_phrase(c, intent, weather)):
+        out.append(_sentence(wx))
+    if closed := _open_fact(c, lang):
+        out.append(closed)  # the person asked about this very place: «сейчас закрыто» is the answer
+    if own := _own_facts(c, lang):
+        out.append(own)
     out += _comparison_facts(c, peers, lang)
-    if time_fact and led:
+    if time_fact := _time_fact(c, intent, trip):
         out.append(time_fact)
-    if opened and not always:
-        out.append(opened)
-    if attrs := _attributes(c, weather, lang):
-        out.append(attrs)
-    if "category" in c.reasons:
-        out.append(_sentence(t("fit_category", lang, cat=category_name(c.poi.category, lang))))
     return out
+
+
+def _own_facts(c: Candidate, lang: str) -> str:
+    """The record's own facts in one sentence: the cuisine and the features its tags state (walks.facts)."""
+    cuisine = cuisine_label(c.poi.tag_dict().get("cuisine", ""), lang)
+    line = t("fact_cuisine", lang, c=cuisine) if cuisine else ""
+    price = (c.poi.price_text or "")[:80]
+    parts = (
+        [line.rstrip(".")] if line and _info(c, lang) != line else []
+    )  # «what to do» may say it already
+    parts += [f for f in features(c, lang) if f != price]  # the price has its own line on the card
+    return _sentence("; ".join(parts)) if parts else ""
+
+
+def _brand_fact(c: Candidate, lang: str) -> str:
+    brand = c.poi.tag_dict().get("brand", "").strip()
+    return t("fact_brand", lang, brand=brand) if brand else ""
+
+
+def _where_fact(c: Candidate, lang: str) -> str:
+    """Where the place is, to find it: the street of its address and its district («на улице Туркестан, 34А, район
+    Есиль»); '' without an address."""
+    where = street(c)
+    if not where:
+        return ""
+    district = district_of(c.poi.lat, c.poi.lon)
+    if not district:
+        return t("fact_where", lang, where=where)
+    return t("fact_where_district", lang, where=where, district=district_name(district, lang))
+
+
+def _record_facts(c: Candidate, lang: str, bare: bool) -> list[str]:
+    """What a record without a description still holds, in this order: its brand; for a card with no other fact
+    (`bare`), where it is and what people's marks say."""
+    out = [_brand_fact(c, lang)]
+    if bare:
+        out += [_where_fact(c, lang), _sentence(_marks(c, lang, asked=False))]
+    return [x for x in out if x]
 
 
 def compose_why(
@@ -371,14 +353,27 @@ def compose_why(
     peers: list[Candidate],
     trip: Trip,
 ) -> str:
-    """The `why` of a no-AI card: its two strongest facts (one, when the budget note has to be said)."""
+    """The `why` of a no-AI card: its two strongest facts (one, when the budget note has to be said); what the data
+    says about the place (its article, site, guide, cuisine) first; a record without a description: its cuisine and
+    features, its brand, where it is (street and district), people's marks; '' when the record holds nothing at all
+    (the card then says so honestly), never a selection note."""
     lang = intent.language
     off = "off_category" in c.reasons
     budget = budget_phrase(c, intent)
     found = facts(c, intent, weather, peers, trip)
+    if info := _info(
+        c, lang, address=False
+    ):  # «есть статья в Википедии» says less than the article's own words
+        bare = set(_comparison_facts(c, peers, lang))
+        found = [f for f in found if f not in bare and f != info]
+        found = [*found[:1], info, *found[1:]] if found else [info]
+    else:  # an off-kind card says what it is, never only where it is
+        found += _record_facts(c, lang, bare=not found and not off)
     keep = found[:1] if budget else found[:MAX_FACTS]
-    if not keep:
-        keep = [t("fit_none_off" if off else "fit_none", lang)]
+    if (
+        not keep
+    ):  # the record holds nothing else: said so, never «рядом с вами» (the walk line says how far)
+        keep = [t("fit_none_off" if off else "why_none", lang)]
     elif off:
         keep[0] = t("fit_head_off", lang) + _lower_first(keep[0])
     return " ".join([*keep, budget] if budget else keep)
@@ -399,11 +394,16 @@ def refresh_why(
             r.why = compose_why(c, intent, weather, peers, Trip(one_way, r.time_on_site_min))
 
 
-# spelling / language remarks of an article's first sentence («(по-русски: ошибочно — „Ханский шатёр“ …)»): not what to
-# do there, and not what the record is
+# spelling / language remarks of an article's first sentence («(по-русски: ошибочно — „Ханский шатёр“ …)», «(каз.
+# Қазақстан Республикасының Тұңғыш Президентінің мұражайы)»): not what to do there, and not what the record is; the
+# abbreviation «каз.» would also end the sentence there
 _REMARK = re.compile(
-    r"\s*\([^()]*(?:ошибочн|неправильн|по-русски|правильно|mistaken|sometimes called)[^()]*\)", re.I
+    r"\s*\([^()]*(?:ошибочн|неправильн|по-русски|правильно|mistaken|sometimes called|\bказ\.|\bқаз\.|\bангл\.)[^()]*\)",
+    re.I,
 )
+# the native names an English article puts in brackets («The Nur-Astana Mosque (Kazakh: Нұр-Астана мешіті; …)»)
+_NATIVE = re.compile(r"\s*\([^()]*[А-Яа-яЁёӘәІіҢңҒғҮүҰұҚқӨөҺһ][^()]*\)")
+_CYR = re.compile(r"[А-Яа-яЁёӘәІіҢңҒғҮүҰұҚқӨөҺһ]")
 
 
 def _first_sentence(text: str) -> str:
@@ -419,6 +419,10 @@ def _official_info(c: Candidate, lang: str) -> str:
     sentences = re.split(r"(?<=[.!?])\s+", (c.poi.description_official or "").strip())
     text = " ".join(s for s in sentences if s and not _HOURS_WORDS.search(s))
     text = honest_hours_text(strip_unbacked(text, c)[0], c, lang)
+    if lang == "en" and _CYR.search(
+        text
+    ):  # the site speaks Russian: an English card does not quote it
+        return ""
     return t("info_site", lang, text=_first_sentence(text)) if text else ""
 
 
@@ -438,16 +442,16 @@ def _voyage_info(c: Candidate, lang: str) -> str:
     return t("info_voyage", lang, text=_first_sentence(text)) if text else ""
 
 
-def _info(c: Candidate, lang: str) -> str:
+def _info(c: Candidate, lang: str, *, address: bool = True) -> str:
     """What the data says about the place, in the answer language: the first sentence of its Wikipedia article, a
     human-written OSM description (Russian only: no other language is known), the description on the place's own
     website (quoted, attributed), the Wikivoyage guide (quoted, attributed, same language as the answer), else its
-    cuisine, else its address. The collector's derived description is boilerplate («Кафе «X» в Астане»): it is not
-    used."""
+    cuisine, else (with `address`, for «что делать») its address. The collector's derived description is boilerplate
+    («Кафе «X» в Астане»): it is not used."""
     poi = c.poi
     art = poi.wikipedia.get(lang) or {}
     if poi.description_source == "wikipedia" and art.get("extract"):
-        return _first_sentence(art["extract"])
+        return _first_sentence(_NATIVE.sub("", art["extract"]) if lang == "en" else art["extract"])
     if lang == "ru" and poi.description_source in ("wikipedia", "osm") and poi.description:
         return _first_sentence(honest_hours_text(poi.description, c, lang))
     if official := _official_info(c, lang):
@@ -456,7 +460,7 @@ def _info(c: Candidate, lang: str) -> str:
         return voyage
     if cuisine := cuisine_label(poi.tag_dict().get("cuisine", ""), lang):
         return t("fact_cuisine", lang, c=cuisine)
-    return t("address", lang, a=poi.address) if poi.address else ""
+    return t("address", lang, a=a) if address and (a := street(c)) else ""
 
 
 def template_what(c: Candidate, intent: Intent) -> str:

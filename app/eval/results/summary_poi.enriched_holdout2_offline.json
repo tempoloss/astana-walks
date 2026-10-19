@@ -6,7 +6,7 @@
   "cases_with_recs": 24,
   "recs_total": 70,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 82.9,
+  "constraint_ok_rate": 81.4,
   "case_all_ok_rate": 33.3,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
@@ -14,15 +14,15 @@
   "coverage": 37.5,
   "diversity": 100.0,
   "top1_ok_rate": 91.7,
-  "top1_open_rate": 54.2,
-  "unknown_hours_rec_share": 57.1,
-  "non_osm_rec_share": 42.9,
-  "avg_walk_min": 7.3,
+  "top1_open_rate": 45.8,
+  "unknown_hours_rec_share": 64.3,
+  "non_osm_rec_share": 47.1,
+  "avg_walk_min": 6.8,
   "wifi_socket_in_data_share": 33.3,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 13.5,
-  "latency_ms_p90": 23.0,
-  "generation_ms_median": 0.0,
+  "latency_ms_median": 15.0,
+  "latency_ms_p90": 25.0,
+  "generation_ms_median": 1.0,
   "generation_ms_p90": 1.0,
   "model_link": {
     "template": 24
@@ -31,15 +31,15 @@
   "llm_invalid_answers": 0,
   "violation_cases": {
     "over_budget": 15,
-    "category_not_allowed": 5,
+    "category_not_allowed": 6,
     "walk_too_long": 2,
     "outdoor_in_cold_or_smog": 1
   },
-  "padded_rec_share": 10.0,
+  "padded_rec_share": 8.6,
   "expanded_rec_share": 0.0,
-  "backfill_rec_share": 10.0,
+  "backfill_rec_share": 8.6,
   "substituted_rec_share": 0.0,
-  "padded_case_share": 16.7,
+  "padded_case_share": 12.5,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -88,6 +88,7 @@
     {
       "case_id": "h2-12-astanamall-late-night",
       "violations": [
+        "category_not_allowed",
         "over_budget"
       ]
     },
@@ -162,8 +163,8 @@
     "cases_file": "holdout2_cases.json",
     "case_set": "holdout2",
     "records": 24,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:06+05:00"
+    "generated_at": "2026-10-19T10:36:41+05:00"
   }
 }

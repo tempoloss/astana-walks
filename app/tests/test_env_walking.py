@@ -175,7 +175,9 @@ def test_after_sunset_reason_is_said(pois):
         if r.poi.category in OUTDOOR_CATEGORIES:
             assert "После заката" in r.notes
         elif r.poi.category in {"cafe", "museum_gallery", "mall"}:
-            assert "после заката" in r.why.lower()
+            assert (
+                "после заката" not in r.why.lower()
+            )  # the person named the café: the dark did not choose it
 
 
 # ---- air quality ---------------------------------------------------------------------------------
@@ -193,8 +195,9 @@ def test_polluted_air_prefers_indoor_and_says_why(pois):
         "где переждать на 2 часа", lat, lon, DAY, use_llm=False, pois=pois, weather=smog
     )
     assert rec.recs[0].poi.category not in OUTDOOR_CATEGORIES
-    assert "оздух загрязнён" in rec.recs[0].why
-    assert "PM2.5 80" in rec.recs[0].why
+    assert rec.weather is not None
+    assert rec.weather.air_bad
+    assert "оздух загрязнён" not in rec.recs[0].why  # never repeated on every card
     assert all(
         "загрязнён" in r.notes and r.time_on_site_min <= 20
         for r in rec.recs

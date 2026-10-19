@@ -78,9 +78,17 @@ _ALCOHOL_TAGS = frozenset(
 )
 
 
+_BAR_NAME = re.compile(r"\b(?:bar|pub|lounge|brewery|beer|бар|паб|пивн\w*|лаунж)\b", re.I)
+
+
 def serves_alcohol(poi: POI) -> bool:
-    """«А без алкоголя»: bars / nightlife by category, or a tag that says alcohol is served."""
-    return poi.category == "bar_nightlife" or any(t in _ALCOHOL_TAGS for t in poi.tags)
+    """«А без алкоголя»: bars / nightlife by category, a tag that says alcohol is served, or a name that says it is a
+    bar («Cloud9 Dine and Bar», «Beer Keller»): for «без алкоголя» a doubt counts as alcohol."""
+    return (
+        poi.category == "bar_nightlife"
+        or any(t in _ALCOHOL_TAGS for t in poi.tags)
+        or bool(_BAR_NAME.search(poi.name))
+    )
 
 
 def wheelchair_access(poi: POI) -> str | None:
@@ -108,6 +116,69 @@ def halal_signal(poi: POI) -> bool:
         return True
     text = " ".join([poi.name, *poi.names.values(), poi.real_text()])
     return bool(_HALAL_NAME.search(text))
+
+
+# Kazakh / national food in a record's own words: the cuisine tag, a name or a human-written description («Тайказан»,
+# «Асхана», «бешбармак», «ұлттық тағамдар»); a «regional» cuisine alone is local, not necessarily Kazakh
+_KAZAKH_FOOD = re.compile(
+    r"казах|kazakh|қазақ|национальн|national cuisine|ұлттық|бешбармак|бесбармак|beshbarmak|тайказан|taikazan|"
+    r"асхана|ashana|баурсак|бауырсақ",
+    re.I,
+)
+
+
+def local_food_signal(poi: POI) -> bool:
+    """The record itself says Kazakh or national food: `cuisine=kazakh`, or the word in a name or a description."""
+    if "kazakh" in {v.strip() for v in poi.tag_dict().get("cuisine", "").split(";")}:
+        return True
+    return bool(_KAZAKH_FOOD.search(" ".join([poi.name, *poi.names.values(), poi.real_text()])))
+
+
+_MUSEUM_TAGS = frozenset({"tourism=museum", "overture_category=museum"})
+
+
+def museum_proper(poi: POI) -> bool:
+    """A museum, not a gallery in a mall or an exhibition organiser: the e-museum.kz register holds it, or its own tags
+    say museum (`tourism=museum`, an Overture *museum class)."""
+    if any((v or {}).get("source") == "museum_register" for v in poi.field_sources.values()):
+        return True
+    return bool(_MUSEUM_TAGS & set(poi.tags)) or any(
+        t.startswith("overture_category=") and t.endswith("_museum") for t in poi.tags
+    )
+
+
+_ORGANISER_TAGS = frozenset(
+    {
+        "amenity=community_centre",
+        "amenity=conference_centre",
+        "amenity=exhibition_centre",
+        "overture_category=event_planning",
+        "overture_category=convention_center",
+    }
+)
+
+
+def event_organiser(poi: POI) -> bool:
+    """An organiser or a hall of exhibitions and conferences (Астана-Экспо КС), not a museum to visit."""
+    return bool(_ORGANISER_TAGS & set(poi.tags)) and not museum_proper(poi)
+
+
+_COFFEE_NAME = re.compile(r"coffee|кофе|кофейн|кофехан|espresso|эспрессо", re.I)
+_FOOD_NAME = re.compile(
+    r"food|еда|кухн|grill|гриль|burger|бургер|pizz|пицц|шаурм|kitchen|bistro|бистро|столов", re.I
+)
+
+
+def coffee_shop(poi: POI) -> bool:
+    """A place for a coffee rather than a meal: its cuisine or class says coffee shop, or its name says coffee and not
+    food too («Coffee BOOM», not «Rafe Coffee & Food»)."""
+    tags = poi.tag_dict()
+    if (
+        "coffee_shop" in tags.get("cuisine", "").split(";")
+        or tags.get("overture_category") == "coffee_shop"
+    ):
+        return True
+    return bool(_COFFEE_NAME.search(poi.name)) and not _FOOD_NAME.search(poi.name)
 
 
 # ---------------------------------------------------------------- diets: vegetarian, vegan, gluten-free, kosher

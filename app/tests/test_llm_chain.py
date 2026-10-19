@@ -17,11 +17,23 @@ from walks import generate as gen_mod
 from walks import intent as intent_mod
 from walks import llm, llm_providers
 from walks.intent import parse_intent, parse_rules
-from walks.models import POI, Intent, LLMOutput, LLMRec, LLMStep, load_pois
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import POI, Intent, LLMStep, load_pois
 from walks.presets import PRESETS
 from walks.retrieve import retrieve
 
 FIXTURE = Path(__file__).parent / "fixtures" / "poi_sample.json"
+
+
+@pytest.fixture(autouse=True)
+def _reasons_not_checked_for_facts(monkeypatch):
+    """These tests are about the chain, the cache and the claims: their fake reasons are not checked for a concrete
+    fact of the place (tests/test_answer_quality.py checks that)."""
+    import walks.generate as generation
+
+    monkeypatch.setattr(generation, "vague_ids", lambda *a, **k: [])
+
+
 WED_NOON = datetime(2026, 10, 14, 12, 0)
 EXPO_QUERY = "Я у EXPO, хочу что-то необычное на 1-2 часа, пешком"
 

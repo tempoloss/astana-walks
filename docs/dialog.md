@@ -100,6 +100,40 @@ said once at the end of the lead («Учтены ваши настройки: х
 real counts of the records (`Filters.halal_*`, `step_free_*`, `excluded_alcohol`); nothing is said per card, and halal is
 never said on an answer without a place to eat. The budget setting is «не важно / недорого» only: the data hold no prices,
 so a mid-range or pricier bill could change nothing (a profile saved with one loads as «не важно»).
+
+**The model writes from facts, code checks them.** Each candidate goes to the model as a fact sheet (`walks/facts.py`): name,
+kind, its own description (Wikipedia, Wikivoyage, the official site, OSM), cuisine, the features its tags state (seats outside,
+Wi-Fi, a playground, lit, free entry …), the street, the verified hours and walking minutes, people's marks. A reason must use
+at least one concrete fact of its place and no filler that fits any place («удобно расположено», «в уютной обстановке», «отлично
+подходит для», «Закажите горячие блюда», «Ещё одно кафе»; `walks/specific.py`): a vague card is asked once more (`rewrite`), then
+the template's fact-based card replaces it. Numbers in the model's text are kept only when the record holds them (its walking
+minutes, the times of its hours). The model's `opening` becomes the lead when code can stand behind it (it names the first card,
+the stated wish, only the payload's numbers, no place the answer does not show, the answer language); otherwise the template
+lead. The conditions line is said once per dialogue (`DialogState.told`), not before every answer.
+
+**A status is written by code only, for one moment.** «Открыто до 22:00 / Закрыто, откроется в 10:00 / Открыто круглосуточно»
+come from `walks/status.py`: the state and the next change are read from the record at the same moment (the arrival; a
+card once mixed the state on arrival with the change time on departure and said «Open until 10:00» at 03:10 for a place open
+10:00–21:00), and a close after midnight that is half a day away is said with its day («до 05:00 следующего дня»). The model
+gets that line ready (`status` in the fact sheet, no raw schedule) and any sentence of its reasons or opening that states a
+status or an hour in other words is dropped (`specific.keep_status`). A reason never states the status either: the card's
+hours line does. Template reasons are the record's own facts (wishes it confirms, people's marks, cuisine, features,
+Wikipedia), never a selection note («ближайшее из N подобранных», «категория — как вы просили», «совпадает с …»); with none
+the card says only what the place is. The conditions are said only when they matter for the request: the cold, the sky and
+the dark for a walk, the air only for a stated outdoor wish, the official notice for a walk or a drive, at most two clauses;
+a café answer gets none, and the notice line under it is not shown. «По пути домой» needs real progress toward home (a
+share of the way, `bookmarks.TOWARD_SHARE`) and a sane detour. An English answer shows the record's English name.
+
+**Variety.** A place shown earlier in the dialogue is not offered again while others answer the request, unless the message
+names it (`walks/variety.py`, `Conversation.shown_ids` kept for the whole dialogue at one point); an unnamed record («Парк /
+сквер») comes after the named places of its kind. «Поближе» never widens the radius past its cap. «Подешевле / подороже» exist
+only where the kind of place is the lever (food: fast food and a café are cheaper by nature, a restaurant pricier; the lead says
+«цен в данных нет»); a bar, a cinema or a mall gets no such chip. «С ребёнком» on a walk brings the playgrounds in.
+With no time stated (and no «недалеко / рядом / nearby»), the search reaches as far as a 90-minute outing (`radius_floor_m`,
+~1.1 km, not when the weather or the air caps the walk) while the route is still planned for the default 60 minutes; the
+widening steps stop where the time's own circle would. «Что посмотреть / what should I see / не көруге болады /
+достопримечательности» is a named wish of landmarks, viewpoints and museums (`sights_wish`); the sight the person stands at
+(Байтерек from Байтерек) is offered, not skipped as the starting point.
 `meta.generation_retry` (optional, `""` | `live` | `failed`): a recorded / cached answer left no card
 with the model's own text, so on a stand with live models the chain was asked once more without the cache (`live`: that
 answer is used; `failed`: the models could not answer and the recorded cards stay). Replay-only and offline never retry.
@@ -107,6 +141,72 @@ answer is used; `failed`: the models could not answer and the recorded cards sta
 Questions about places resolve to: an ordinal («второе»), a shown place's name, a plural («они»), the place the last
 question was about, else the main one; a place NAMED in the message is answered wherever it is (distance, hours with
 today's interval and source, or «в данных нет»); a name that is not in the data is said so.
+
+What the data answers about a place (`walks/dialog_facts.py`, topics of `PlaceAnswer.topic`; never a new search, `state.shown`
+unchanged): `entry` — «вход платный», «does it cost money to go in», «киру ақылы ма» — the place's own price wording (the
+museum register's, the site's, Wikivoyage's) with its source and the day it was read («по данным реестра музеев, данные на
+17.10.2026»), else «в данных этого нет»; `menu` / `menu_kazakh` / `menu_kids` — «what do they serve», «is that Kazakh food»,
+«есть детское меню» — the OpenStreetMap `cuisine` tag and the place's own description with its source; a kids' menu and the
+menu itself are in no record and the answer says so; `route` — «how long to walk from here to Baiterek» — minutes from the
+person to the named place, by the streets when the walking router has the leg («по улицам»), else by the straight line; `hours`
+with a day — «а в воскресенье», «is it open tomorrow» — that day's hours with the day named, never «сейчас».
+
+A question about the weather («какая погода», «а че там с погодой», «what's the weather tomorrow, what should I wear», «ауа райы
+қандай», «что надеть», `walks/dialog_weather.py`) is a `place_answer` with `answers[0].topic == "weather"` (the airport
+observation with the MET Norway forecast beside it; for another time the forecast of that hour, or «прогноза на это время в
+данных нет») and, when a Kazhydromet notice for Astana is in force, `answers[1].topic == "weather_notice"` with its link;
+`places` repeats the places shown before (same ids) so the map keeps them; a request with a place kind or «куда / где / что
+делать» in it is still a search.
+
+Time words (`walks/dialog_when.py`): «завтра», «послезавтра», «утром / днём / вечером / ночью», «в воскресенье», «tomorrow
+morning», «lunch tomorrow» (a meal sets the hour only next to a day), «ертең», «кешке», «жексенбіде». They set `env.when`
+for the turn, so open-now, hours and the forecast are for that time, are cut out of the message before it is read, and a
+search reply starts with the time it answers for («Завтра днём, 13:00. …»); a time alone repeats the previous kind as a
+follow-up (the hours of the place when the last answer was about one place). The present is never stamped. A state-service
+request («ЦОН в субботу») keeps its own reading of the day.
+
+Round 2 (`walks/dialog_facts.py`, `dialog_when.py`, `dialog_weather.py`): `socket` — «а тут розетки есть» — the `socket:*` / Wi-Fi tags of the
+record, else «в данных этого нет»; `kids_room` — «ойын бөлмесі бар ма», «детская комната» — the `for_kids` tag or the place's own words, else the
+same; `visit` — «is it worth going up at night or in the morning», «стоит ли» — the hours (with today's interval) and the entry price of the
+named place, the «night / morning» in it being no time word. A saved place is any bookmark name, said with its «my» or not: «how long to walk
+back to my hotel» is a `route` answer from the person to it (the places shown before stay on the map), «something nice to see on my way back to
+the hotel» is a search along the way. A message that names its own kind or asks its own question is never the «С ребёнком» refinement (only a
+bare «с ребёнком / баламен / а если с детьми» is); «на бегу» is `fast` (food on the go), never running. «Суық емес болса …» / «если не
+холодно …» / «if it's not cold …» says whether it is cold at the asked time (the observation, or the MET Norway entry of that hour; cold is a
+feels-like of 5 °C or less): not cold — the street as asked; cold — the same request indoors; no temperature in the data — as asked, said so.
+
+Round 3: a weather follow-up with a comparison («а завтра днём будет теплее?», «will it be warmer», «жылырақ па») is the forecast of that
+time against the present observation, in degrees («Теплее, чем сейчас, на 4 °C»), never a search; every weather question of a dialogue is
+answered. «Щас скучно куда сходить» (bored AND asking where to go; a bare «скучно» is still asked back) is an outing with no café
+(`outing.BORED_KINDS`: entertainment, show or film, sight, park, museum; food kinds refused), the afisha block beside it when it has events.
+A message of mixed Russian and Kazakh is read by its words (`dialog_nlu.language_votes`: a kazakh letter or function word votes kk, a word only
+Russian has votes ru, shared words vote for neither): more words win, a tie goes to the dialogue's (interface) language. For a request with a
+later time the conditions (the lead, the cold verdict, the card) are those of THAT time: the MET Norway entry of the hour in place of the present
+observation (`dialog_weather.weather_at`), the notices that are in force then; no entry - no temperature is claimed. `answer.at.day` (days ahead
+of today, 0 for a pinned demo answer) lets the card say «завтра 10:00–18:00 · завтра 12:00» instead of «сегодня … сейчас».
+
+Round 4: a question about the weather inside a dialogue about a place is still the weather («а на улице щас холодно, мне идти?», «а завтра
+дождь будет?»): the weather's own words (`wx_cold / wx_rain / wx_heat / wx_smog`) are the question, not a wish for a place and not the
+person's report of the weather. «Сколько стоит вход и есть ли там туалет» answers every part (`PlaceQuestion.also`: the topics of the LATER
+parts of the message, split at «и / and / және / ,»): the entry price, the toilet from the record's `toilets` tag or «в данных этого нет».
+«До какого часа он работает / until when» (`closing`) is the hours answer of the card (same source): open now - until when; closed now - the
+next opening and the closing after it. «Мұнда / бұл жерде …» marks a question about the shown place. A kind a follow-up refuses stays refused
+(`Intent.refused`) even when the request never named it. A part of the day or a clock time («вечером», «в 19:00», «at 7 pm») that has gone by
+today is moved to tomorrow and the reply says so («Сегодня вечер уже прошёл — подбираю на завтра»); «вечером» in the small hours is the coming
+evening, said («Сейчас ночь — беру ближайший вечер»).
+
+Round 5: a message with several parts about the shown place («а до скольки он работает и есть ли розетки и вайфай») is read as up to 16 words
+when it asks two topics or more, and «есть» at its end or before «и» marks it a question about the place; «вайфай / wi-fi / wifi / интернет»
+is the `wifi` topic, answered apart from `socket` (a record's `socket:*` tags). A request with a child that wanted a playground and got no
+play place among the places shown says so before the answer (`dialog_facts.all_gaps`, `kids_none_place`: «Детских площадок и игровых мест
+рядом в данных нет …»), never a café or a gallery in the cold passed off as «где поиграть». The comparison of the forecast with now is one
+function (`dialog_weather.compare_clause`): each temperature is rounded once, as the answer shows it, and the difference is of those numbers
+in every language. «Күндіз» is the afternoon (13:00), as «днём».
+
+The kazakh «бар» is «there is» («туалет бар ма», «қай жерде кафе бар»): the search is for the thing asked about; «бар» is the
+bar kind only as a noun («барға барайық», «бар іздеп жүрмін», «pub/bar»). A kind a follow-up refuses («не торговый центр»,
+«жоқ, бұл емес… сауда орталығы емес») leaves the request (`FollowUp.drop`, `Intent.refused`); when nothing is left the
+turn is `clarify` («что ищем вместо?»).
 
 ## Lines from the data layers (optional fields)
 

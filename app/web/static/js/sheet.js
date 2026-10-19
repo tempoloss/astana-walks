@@ -195,6 +195,21 @@ export function makeSheet(panel, { fit, onChange, onBack, initial = 'half' }) {
   scroll.addEventListener('touchend', letGo(false));
   scroll.addEventListener('touchcancel', letGo(true));
 
+  // the height changes over a transition: a list aligned at its start was held back by the taller box of that moment
+  // (the browser keeps a scroll position within what the box could scroll), so it is placed once more when the box is final
+  panel.addEventListener('transitionend', (e) => {
+    if (e.target === panel && e.propertyName === 'height' && !drag && !typing && current !== 'full') fit.align();
+  });
+
+  // a wheel or a trackpad over a half-open sheet opens it (a finger drags it; a mouse has no finger): the rest of the
+  // answer is one scroll away, never only behind the handle
+  panel.addEventListener('wheel', (e) => {
+    if (!live() || locked || typing || quiet || current === 'full' || e.deltaY < 4 || e.target.closest('.composer')) return;
+    heights = fit.targets();
+    place('full');
+    e.preventDefault();
+  }, { passive: false });
+
   // the click that ends a drag is not a press on whatever lies under the finger
   panel.addEventListener('click', (e) => {
     if (quiet) {

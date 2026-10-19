@@ -6,9 +6,9 @@
 
 import { altRow, miniRow, primaryCard, qaCard } from './cards.js';
 import { sourceLinks } from './details.js';
-import { h, icon } from './dom.js';
+import { h, icon, isPhone } from './dom.js';
 import { metres } from './fmt.js';
-import { currentLang, tr } from './i18n.js';
+import { currentLang, tr, withLang } from './i18n.js';
 
 const STEP = { parse: 'step_parse', search: 'step_search', write: 'step_write', route: 'step_route' };
 
@@ -126,7 +126,8 @@ function placeAnswer(turn, ctx) {
 }
 
 // One place is the main card: the selected one (the first until another is chosen), the others are the rows under it.
-function placesBlock(turn, ctx) {
+// `chipsRow`: on a phone the follow-up chips come right under the card, before the rows, so they are never behind the field.
+function placesBlock(turn, ctx, chipsRow) {
   const places = turn.places;
   const byId = new Map(places.map((p, i) => [p.id, { place: p, n: i + 1 }]));
   const lead = places.find((p) => p.id === ctx.sel) || places[0];
@@ -135,9 +136,10 @@ function placesBlock(turn, ctx) {
   if (turn.route && turn.route.kind === 'plan') parts.push(routeLine(turn, byId));
   for (const notice of turn.notices || []) parts.push(noticeLine(notice)); // under the card, never pushing it down
   if (turn.route && turn.route.lighting) parts.push(h('p', { class: 'note lighting' }, icon('info'), turn.route.lighting));
+  if (chipsRow && isPhone()) parts.push(chipsRow);
   if (others.length) {
     parts.push(
-      h('div', { class: 'sub' }, h('span', { class: 'lbl', text: tr('more_options', { n: others.length }) })),
+      h('div', { class: 'sub' }, h('span', { class: 'lbl', text: tr('more_options', { n: others.length }) }), isPhone() ? icon('chevron') : null),
       h('div', { class: 'alts' }, others.map((p) => altRow(p, cardOpts(ctx, byId.get(p.id).n)))),
     );
   }
@@ -148,26 +150,35 @@ function placesBlock(turn, ctx) {
 // ctx: {turnId, at, origin, sel, numberOf(id), walkOf(id) (the way the map shows to a place, or null), profileOn, onProfile, onSelect(id), onHover(id|null), onDetails(id),
 //       onChip(chip), onRemember(chip, btn)}
 export function renderAnswer(resp, ctx) {
+  return withLang(resp.turn.lang, () => drawAnswer(resp, ctx));
+}
+
+function drawAnswer(resp, ctx) {
   const turn = resp.turn;
   const places = turn.places || [];
   const answered = turn.kind === 'place_answer' && turn.answers && turn.answers.length > 0; // the answers say it
   const parts = [];
   if (!answered) parts.push(h('p', { class: 'reply', text: turn.reply }));
   if (!answered && turn.notice) parts.push(h('p', { class: 'reply-note', text: turn.notice })); // what the time rule dropped, plainly
-  if (answered) parts.push(...placeAnswer(turn, ctx));
-  else if (places.length) parts.push(...placesBlock(turn, ctx));
-  else for (const notice of turn.notices || []) parts.push(noticeLine(notice));
-  const events = turn.events;
-  parts.push(eventsBlock(events, Boolean(events) && (!places.length || events.items.length > 2)));
   const chips = (turn.chips || []).map((c) => chipButton(c, ctx.onChip));
   const remember = (resp.remember || []).map((c) =>
     h('button', { type: 'button', class: 'chip remember', onclick: (e) => ctx.onRemember(c, e.currentTarget) }, c.label));
-  if (chips.length || remember.length) parts.push(h('div', { class: 'chips' }, chips, remember));
+  const chipsRow = chips.length || remember.length ? h('div', { class: 'chips' }, chips, remember) : null;
+  if (answered) parts.push(...placeAnswer(turn, ctx));
+  else if (places.length) parts.push(...placesBlock(turn, ctx, chipsRow));
+  else for (const notice of turn.notices || []) parts.push(noticeLine(notice));
+  const events = turn.events;
+  parts.push(eventsBlock(events, Boolean(events) && (!places.length || events.items.length > 2)));
+  if (chipsRow && !parts.includes(chipsRow)) parts.push(chipsRow);
   return h('div', { class: 'answer' }, parts);
 }
 
 // an earlier answer folded: what was said and one row per place; a row opens it again
 export function renderFolded(item, ctx) {
+  return withLang(item.resp && item.resp.turn && item.resp.turn.lang, () => drawFolded(item, ctx));
+}
+
+function drawFolded(item, ctx) {
   const turn = item.resp && item.resp.turn;
   const places = turn && turn.kind !== 'place_answer' && turn.places ? turn.places : [];
   const parts = [];

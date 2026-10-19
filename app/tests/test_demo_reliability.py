@@ -16,10 +16,22 @@ import pytest
 
 from walks import demo_pin, feedback, llm, llm_providers, walking
 from walks.cli import main as cli_main
-from walks.models import Intent, LLMOutput, LLMRec
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import Intent
 from walks.presets import PRESETS, SCENARIOS
 
 APP = Path(__file__).resolve().parents[1]
+
+
+@pytest.fixture(autouse=True)
+def _reasons_not_checked_for_facts(monkeypatch):
+    """These tests are about the chain, the cache and the claims: their fake reasons are not checked for a concrete
+    fact of the place (tests/test_answer_quality.py checks that)."""
+    import walks.generate as generation
+
+    monkeypatch.setattr(generation, "vague_ids", lambda *a, **k: [])
+
+
 sys.path.insert(0, str(APP / "scripts"))
 import warm_cache  # noqa: E402
 

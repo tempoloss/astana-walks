@@ -20,7 +20,13 @@ from .followup import FollowUp, apply_follow_up, describe, parse_follow_up, refi
 from .generate import MAX_RECS, Generation, generate
 from .hours import local_now, to_local_naive
 from .i18n import t
-from .intent import parse_intent, parse_rules, parse_time_budget
+from .intent import (
+    DEFAULT_BUDGET_MIN,
+    UNSTATED_REACH_MIN,
+    parse_intent,
+    parse_rules,
+    parse_time_budget,
+)
 from .lexicon import normalize
 from .llm import Deadline, ai_off_reason
 from .models import (
@@ -49,18 +55,23 @@ from .profile import (
     personal_view,
     preferences_payload,
 )
+from .radius import is_stroll, reachable_radius_m, travel_share
 from .realfit import apply_leg, replace_unreachable, sync_stays
 from .reasons import refresh_why
 from .reqlog import log_request
 from .retrieve import retrieve
-from .route import build_route
+from .route import build_route, route_stops
 from .transit import attach_lrt_hints
+from .variety import fresh_first
 from .visit_hours import visit_note
 from .walking import WalkingRouter, default_router
 from .weather import with_user_hint
 
 COORD_DECIMALS = 3  # ~100 m; the only precision that is ever used, stored or sent anywhere
 PAIR_SIZE = 2  # «вдвоём» next to the input box: two people, nothing more is read into it
+_ASKS_NEAR = re.compile(
+    r"недалеко|рядом|поблизости|близко|поближе|не далеко|nearby|close by|near me|not far|жақын"
+)  # the person's own «not far»: the search is never widened past the time's own circle
 
 
 def round_location(lat: float, lon: float) -> tuple[float, float]:
@@ -112,6 +123,7 @@ def _with_hints(intent: Intent, hints: StartHints | None, text: str) -> Intent:
     update: dict = {}
     if hints.budget_min and parse_time_budget(text) is None:
         update["time_budget_min"] = hints.budget_min
+        update["time_stated"] = True
     if hints.company == "kids":
         update["with_kids"] = True
     elif hints.company == "pair":
@@ -202,6 +214,20 @@ def _prepare(
     if language:
         intent = parsed.intent.model_copy(update={"language": language})
         parsed = parsed.model_copy(update={"intent": intent})
+    intent = parsed.intent
+    near = _ASKS_NEAR.search(
+        text.lower()
+    )  # «недалеко», «рядом», «nearby»: the person's own limit, never widened
+    if (
+        parse_time_budget(text) is None
+        and intent.time_budget_min == DEFAULT_BUDGET_MIN
+        and not near
+    ):
+        # no time stated: the search reaches as far as a 90-min outing would, the route is still planned for 60 min
+        floor = reachable_radius_m(
+            UNSTATED_REACH_MIN, "walk", False, travel_share(is_stroll(intent))
+        )
+        constraints = constraints.model_copy(update={"radius_floor_m": floor})
     return parsed, constraints, applied
 
 
@@ -357,6 +383,11 @@ def recommend(
             personal=personal,
         )
         cands = _unseen(retrieval.candidates) if profile is not None else retrieval.candidates
+        if (
+            constraints.radius_cap_m is None
+        ):  # «поближе» may keep a shown place: nearer beats new (variety)
+            seen = conversation.shown_ids if conversation is not None else []
+            cands = fresh_first(cands, seen, frozenset(intent.wished))
         way = along or late_home(intent, to_local_naive(when).hour, (lat, lon), bookmarks or [])
         if way is not None:
             cands = prefer_toward(
@@ -477,7 +508,7 @@ def recommend(
     route = build_route(
         lat,
         lon,
-        recs,
+        route_stops(recs),
         intent.mode,
         intent.time_budget_min,
         gen.route_order,
@@ -530,6 +561,7 @@ def recommend(
         profile_applied=req.applied,
         private=private,
         lead_want=gen.want,
+        lead_text=gen.opening,
         on_the_way=on_the_way,
         unbacked_claims_removed=sum(len(r.unbacked_claims) for r in recs),
     )

@@ -14,18 +14,19 @@ from .hours import poi_hours
 from .models import POI
 
 OTHER_CATEGORY = "other"
+MONEY_CATEGORY = "money"  # used, not strolled: it counts only when asked for
 
 
 def supply_counts(
     pois_in_radius: Iterable[POI], requested: Iterable[str], local: datetime
 ) -> tuple[int, int]:
     """(places of the requested kinds, of them with confirmed hours). No requested kind: every place except «other»
-    counts. Hours are confirmed when the data give a verdict (open / closed, a public holiday included). The caller
-    leaves transit stations out: they are never recommended."""
+    and money counts. Hours are confirmed when the data give a verdict (open / closed, a public holiday included). The
+    caller leaves transit stations out: they are never recommended."""
     kinds = set(requested)
     total = confirmed = 0
     for p in pois_in_radius:
-        if p.category not in kinds if kinds else p.category == OTHER_CATEGORY:
+        if p.category not in kinds if kinds else p.category in (OTHER_CATEGORY, MONEY_CATEGORY):
             continue
         total += 1
         hours = poi_hours(p, local)

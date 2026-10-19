@@ -19,7 +19,8 @@ import { closePanel, initPanel, makeButton, renderPanel } from './weather-panel.
 const KEY = 'anyq.fx';
 const POLL_MS = 5 * 60 * 1000; // the server refreshes every 10 minutes; the sun moves ~1° in five
 const RETRY_MS = 30 * 1000; // no value yet (the server has just started) or the request failed
-const STALE_MS = 20 * 60 * 1000; // a value this old is not shown: nothing is better than an old sky
+const STALE_MS = 15 * 60 * 1000; // a value this old is not shown: nothing is better than an old sky
+const PRECIP_FRESH_MS = 11 * 60 * 1000; // what falls is only drawn from an answer this young (the server refreshes every 10 min)
 const FRAME_MS = 32;
 const FRAME_S = FRAME_MS / 1000;
 const CAP_DESKTOP = 120;
@@ -30,8 +31,8 @@ const MAX_PIXELS = 1.8e6; // backing store of the precipitation canvas: a retina
 const WIND_PIXELS = 0.9e6; // the wind's: hairlines need no retina, and a canvas redrawn every frame costs by its pixels
 const TAU = Math.PI * 2;
 const LEVEL_SHARE = [0.3, 0.55, 0.8]; // of the particle cap, per intensity (light, moderate, heavy)
-const TURN = 0.3; // rad: how far a particle's heading wanders around the measured one
-const TURN_RATE = 0.9; // rad/s of that wander
+const TURN = 0.5; // rad: how far a particle's heading wanders around the measured one: wisps that curl, not straight slants
+const TURN_RATE = 1.8; // rad/s of that wander
 const HIST = 24; // positions kept per particle: the longest trail, in frames
 const BUCKETS = 5; // a trail is drawn in this many steps, from its faint tail to its head
 const BUCKET_ALPHA = [0.1, 0.24, 0.45, 0.72, 1]; // of the trail's strongest strength
@@ -57,7 +58,7 @@ const SKY_EVENING = [
 const GREY = [196, 202, 210];
 const BEIGE = [196, 176, 146];
 const INK_DAY = [71, 85, 105]; // a desaturated slate: readable on the light basemap without shouting
-const INK_NIGHT = [214, 226, 255];
+const INK_NIGHT = [162, 176, 210]; // after dark: a muted blue-grey, never white (white streaks on a dark map read as rain or snow)
 
 const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
 const lerp = (a, b, t) => a + (b - a) * t;
@@ -326,7 +327,7 @@ function planParticles() {
   const d = fx.data;
   const limit = cap();
   const wind = d && shown() ? d.wind : null;
-  const precip = d && shown() ? d.precip : null;
+  const precip = d && shown() && Date.now() - fx.fetchedAt < PRECIP_FRESH_MS ? d.precip : null;
   fx.nP = precip ? Math.round(limit * LEVEL_SHARE[clamp(precip.level, 1, 3) - 1]) : 0;
   fx.kind = precip ? precip.kind : '';
   fx.level = precip ? precip.level : 0;
@@ -338,7 +339,7 @@ function planParticles() {
     fx.wDx = Math.cos(fx.wTravel);
     fx.wDy = Math.sin(fx.wTravel);
     fx.wSpeed = speed * PX_PER_MS;
-    const length = clamp(18 + 5 * speed, 18, 84); // px a trail reaches behind its head
+    const length = clamp(24 + 6 * speed, 24, 96); // px a trail reaches behind its head
     fx.hist = clamp(Math.ceil(length / (fx.wSpeed * FRAME_S)), 6, HIST);
     fx.wWidth = clamp(1 + speed * 0.03, 1, 1.4);
     fx.nW = Math.min(Math.round(limit * clamp(0.6 + speed / 40, 0.6, 0.9)), limit - fx.nP);
@@ -400,7 +401,7 @@ function paint() {
   fx.sky.style.setProperty('--fx-b', bottom);
   const lum = clamp((d.sun.altitude + 11) / 5, 0, 1); // the trails are slate on a lit map and pale on a night one
   const ink = mixRgb(INK_NIGHT, INK_DAY, lum);
-  const alpha = 0.42 + 0.12 * (1 - lum);
+  const alpha = 0.42 - 0.12 * (1 - lum); // and fainter by night: wind is air, not weather
   for (let b = 0; b < BUCKETS; b += 1) fx.trail[b] = rgba(ink, alpha * BUCKET_ALPHA[b]);
   fx.rain = rgba(ink, 0.45 + 0.1 * (1 - lum));
   fx.edge = rgba(INK_DAY, 0.3 * lum);

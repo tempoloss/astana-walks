@@ -9,7 +9,7 @@ import { detailsView, statusEl } from './cards.js';
 import { updateChrome } from './chrome.js';
 import { h, icon, isPhone } from './dom.js';
 import { count, dayAndTime, minutes, percent, stateOf } from './fmt.js';
-import { currentLang, langFixed, onLang, setLang, tr } from './i18n.js';
+import { currentLang, langFixed, onLang, setLang, tr, withLang } from './i18n.js';
 import * as mapView from './map.js';
 import { renderAnswer, renderError, renderFolded, renderThinking } from './thread.js';
 
@@ -57,6 +57,7 @@ function presetOf(id) {
 
 export function whereName() {
   if (S.where.label) return S.where.label;
+  if (S.where.device) return tr('loc_device');
   const preset = S.where.preset && presetOf(S.where.preset);
   return preset ? preset.names[currentLang()] : tr('loc_point');
 }
@@ -91,12 +92,17 @@ export function state() {
 // ---------------------------------------------------------------- location
 
 export function setWhere(where, { fly = true } = {}) {
+  const before = S.where;
   S.where = where;
   showWhere();
-  mapView.setYou([where.lat, where.lon], tr('you_marker'));
+  paintYou();
   updateChrome();
-  if (fly) mapView.flyTo([where.lat, where.lon], 14.5);
+  // the answer on screen was measured from the old place: when the start moves (not when the page is only opening) the
+  // last question is asked again from the new one, as it is for a new time, so the minutes and the route never disagree
+  const moved = fly && before && lastDone() && (Math.abs(before.lat - where.lat) > 0.0004 || Math.abs(before.lon - where.lon) > 0.0004);
+  if (fly && !moved) mapView.flyTo([where.lat, where.lon], 14.5);
   save();
+  if (moved && !S.items.some((i) => i.status === 'pending')) redoLast();
 }
 
 // «Старт по умолчанию: Байтерек» while the place is one of the app's own (a preset), «Вы здесь: …» once it is the visitor's
@@ -160,6 +166,7 @@ function quickRow() {
       },
     }, icon('cloud'), custom ? whenLabel() : tr('when_other')),
   );
+  condBar();
   save();
 }
 
@@ -168,6 +175,38 @@ function whenLabel() {
   if (S.at) parts.push(S.at);
   if (S.weather !== 'now') parts.push(tr(`wx_${S.weather}`));
   return parts.join(' · ') || tr('when_now');
+}
+
+// what is in force for the next answer, as one small pill each («23:00 ✕», «вдвоём ✕»): the conditions of the panel and
+// of the ribbon stay on until they are changed, so they stay in sight, one tap from gone
+function activeConditions() {
+  const list = [];
+  if (S.at) list.push([S.at, () => { S.at = null; changed(); }]);
+  if (S.budget) list.push([tr(`dur_${S.budget}`), () => { S.budget = null; }]);
+  if (S.company) list.push([tr(`company_${S.company}`), () => { S.company = null; }]);
+  if (S.weather !== 'now') list.push([tr(`wx_${S.weather}`), () => { S.weather = 'now'; }]);
+  return list;
+}
+
+function condBar() {
+  const bar = $('cond-bar');
+  if (!bar) return;
+  const list = activeConditions();
+  const was = bar.hidden;
+  bar.replaceChildren(...list.map(([label, clear]) =>
+    h('button', {
+      type: 'button',
+      class: 'cond-pill',
+      title: tr('cond_clear'),
+      'aria-label': `${label}: ${tr('cond_clear')}`,
+      onclick: () => {
+        clear();
+        whenPanel();
+        quickRow();
+      },
+    }, h('span', { text: label }), icon('close'))));
+  bar.hidden = !list.length;
+  if (was !== bar.hidden && sheet) sheet.refresh();
 }
 
 // the weather (and, on a phone, the time of today: a desktop has the plate's time row) next to the input
@@ -187,13 +226,37 @@ function whenPanel() {
           quickRow();
         },
       }, label(v))));
+  const toggle = (get, set) => (v) => set(get() === v ? null : v); // a second tap on the picked choice lets it go
+  const on = activeConditions();
   panel.append(
+    on.length
+      ? h('div', { class: 'cond-note' },
+        h('span', { text: `${tr('cond_active')}: ${on.map(([label]) => label).join(' · ')}. ${tr('cond_panel_on')}` }),
+        h('button', {
+          type: 'button',
+          class: 'link',
+          onclick: () => {
+            for (const [, clear] of on) clear();
+            whenPanel();
+            quickRow();
+          },
+        }, tr('cond_reset')))
+      : null,
     h('div', { class: 'when-time' },
       h('p', { class: 'label', text: tr('when_time') }),
       pick(['now', '19:00', '23:00'], S.at || 'now', (v) => (v === 'now' ? tr('when_now') : tr('when_at', { t: v })), (v) => {
         S.at = v === 'now' ? null : v;
         changed();
       })),
+    // the field's ribbon has the same two groups, but only while the keyboard is up: a phone gets them here too
+    ...(isPhone()
+      ? [
+        h('p', { class: 'label', text: tr('when_budget') }),
+        pick(BUDGETS, S.budget, (m) => tr(`dur_${m}`), toggle(() => S.budget, (v) => { S.budget = v; })),
+        h('p', { class: 'label', text: tr('when_company') }),
+        pick(COMPANY, S.company, (c) => tr(`company_${c}`), toggle(() => S.company, (v) => { S.company = v; })),
+      ]
+      : []),
     h('p', { class: 'label', text: tr('when_weather') }),
     pick(WEATHER, S.weather, (v) => tr(`wx_${v}`), (v) => {
       S.weather = v;
@@ -229,7 +292,9 @@ function mapItem() {
     const base = lastSearch();
     if (base && turn.places.every((p) => placesOf(base).some((q) => q.id === p.id))) return base;
   }
-  return turn.places.length ? last : null;
+  if (turn.places.length) return last;
+  // a question back, thanks or goodbye take nothing off the map: the places of the last search stay where they were
+  return ['clarify', 'thanks', 'bye'].includes(turn.kind) ? lastSearch() : null;
 }
 
 // the plan's legs, each from the point the previous one ended at: the marker for the first, the place's pin for the rest
@@ -264,14 +329,34 @@ function walkOf(id) {
   return hit ? hit.walk : null;
 }
 
+// where the answer's way starts when that is not the person's own point (an answer «рядом с домом» is measured from
+// the saved place): the turn's origin, when it lies away from the point the question was asked at; else null
+function answerStart(item) {
+  const o = item && item.resp && item.resp.turn && item.resp.turn.origin;
+  const asked = item && item.where;
+  if (!Array.isArray(o) || o.length !== 2 || !Number.isFinite(o[0]) || !Number.isFinite(o[1]) || (!o[0] && !o[1]) || !asked) return null;
+  return Math.abs(o[0] - asked[0]) > 0.0012 || Math.abs(o[1] - asked[1]) > 0.0012 ? o : null;
+}
+
 function originOf(item) {
-  return (item && item.where) || [S.where.lat, S.where.lon];
+  return answerStart(item) || (item && item.where) || [S.where.lat, S.where.lon];
+}
+
+// the marker of the map: «Вы здесь» at the person's point, or at the start of the way of the answer on screen with
+// «от «Дом»», so the line never begins at a point the minutes were not measured from
+function paintYou() {
+  const item = mapItem();
+  const start = answerStart(item);
+  const here = [S.where.lat, S.where.lon];
+  const name = start && item.resp.state && item.resp.state.bookmark;
+  mapView.setYou(start || here, start ? tr(name ? 'route_from' : 'route_from_start', { name }) : tr('you_marker'));
 }
 
 export function showOnMap({ fit = true } = {}) {
   const item = mapItem();
   const places = placesOf(item);
   const origin = originOf(item);
+  paintYou();
   const legs = (item && item.resp.place_legs) || [];
   mapView.setPlaces(
     places.map((p, i) => ({
@@ -372,7 +457,7 @@ function detailsLi() {
   }
   const { place, item } = found;
   const ctx = answerCtx(item);
-  return h('li', { class: 'turn' }, detailsView(place, {
+  return withLang(item.resp.turn.lang, () => h('li', { class: 'turn' }, detailsView(place, {
     n: numberOf(place.id),
     at: item.resp.at,
     origin: ctx.origin,
@@ -380,7 +465,7 @@ function detailsLi() {
     profileOn: ctx.profileOn,
     onProfile: ctx.onProfile,
     onBack: closeDetails,
-  }));
+  })));
 }
 
 // «БАЙТЕРЕК · ПН 14:00»: where and when the answer is about
@@ -517,7 +602,10 @@ export async function send(text, { retry = null, fresh = false } = {}) {
     item.resp = resp;
     item.status = 'done';
     S.dialog = resp.state;
-    if (!langFixed() && resp.turn.lang !== currentLang()) setLang(resp.turn.lang);
+    // the page takes the language of the visitor's first message (when they never picked one); later messages never flip
+    // the interface under a thread already on screen: only the language button does
+    const firstAnswer = !S.items.some((i) => i !== item && i.status === 'done');
+    if (firstAnswer && !langFixed() && resp.turn.lang !== currentLang()) setLang(resp.turn.lang);
     ui.sel = resp.turn.places.length ? resp.turn.places[0].id : null;
     render();
     if (sheet) sheet.snap('half');
@@ -602,7 +690,7 @@ function relang(_lang, { user }) {
   renderFacts();
   if (S.where) {
     showWhere();
-    mapView.setYou([S.where.lat, S.where.lon], tr('you_marker'));
+    paintYou();
   }
   const last = lastDone();
   if (!user || !last) {
@@ -627,11 +715,21 @@ export function initAssistant(ctx, sheetCtl) {
   const area = $('composer-input');
   form.insertBefore(h('div', { class: 'when-panel', id: 'when-panel', hidden: true }), form.querySelector('.ask'));
   form.insertBefore(h('div', { class: 'quick', id: 'quick' }), $('when-panel'));
+  form.insertBefore(h('div', { class: 'cond', id: 'cond-bar', hidden: true, role: 'group', 'aria-label': tr('cond_active') }), form.querySelector('.where'));
+  // a tap on a chip above the keyboard keeps the focus in the field: the ribbon is drawn again after the tap, and a
+  // focused button that disappears would take the keyboard (and the short form of the sheet) away with it
+  for (const id of ['quick', 'when-panel']) $(id).addEventListener('mousedown', (e) => e.target.closest('button') && e.preventDefault());
   $('composer').querySelector('.send').append(icon('send'));
   form.querySelector('.where-icon').append(icon('pin'));
   $('opts-toggle').addEventListener('click', () => {
     const open = form.classList.toggle('opts-open');
     $('opts-toggle').setAttribute('aria-expanded', String(open));
+    if (isPhone()) { // the panel is the options: time, how long, company, weather
+      $('when-panel').hidden = !open;
+      whenPanel();
+      quickRow();
+      if (sheet) sheet.snap(open ? 'full' : 'half'); // the panel is tall: the list above it needs the whole sheet
+    }
     updateChrome();
   });
   form.addEventListener('submit', (e) => {
@@ -650,6 +748,10 @@ export function initAssistant(ctx, sheetCtl) {
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && ui.detail && !document.querySelector('dialog[open]')) closeDetails();
+  });
+  // «Ещё варианты (2) ˄» under the card on a phone: a tap opens the sheet to the rest of the list
+  $('thread').addEventListener('click', (e) => {
+    if (isPhone() && sheet && e.target.closest('.sub')) sheet.snap('full');
   });
   mapView.onHover((id) => {
     for (const el of document.querySelectorAll('#thread [data-pid]')) el.classList.toggle('hot', el.dataset.pid === id);

@@ -14,7 +14,8 @@ from walks.claims import unsupported_wishes
 from walks.generate import _from_llm, keep_required, pick_diverse
 from walks.i18n import t
 from walks.kids import unnamed_more
-from walks.models import POI, Candidate, Intent, IntentResult, LLMOutput, LLMRec
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import POI, Candidate, Intent, IntentResult
 from walks.radius import NEAREST_FAR, km_text, one_way_limit_min
 from walks.realfit import replace_unreachable, sync_stays
 from walks.retrieve import retrieve
@@ -530,7 +531,7 @@ def test_a_kind_that_is_nearby_but_does_not_fit_the_time_is_shown_flagged_not_re
     ]
     res = run(
         pois,
-        Intent(time_budget_min=120, categories=["culture_theatre_cinema"]),
+        Intent(time_budget_min=120, time_stated=True, categories=["culture_theatre_cinema"]),
         monkeypatch=monkeypatch,
     )
     assert [r.poi.id for r in res.recs] == ["cinema"]

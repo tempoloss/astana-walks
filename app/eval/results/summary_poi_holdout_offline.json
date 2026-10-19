@@ -6,22 +6,22 @@
   "cases_with_recs": 20,
   "recs_total": 48,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 70.8,
-  "case_all_ok_rate": 45.0,
+  "constraint_ok_rate": 72.9,
+  "case_all_ok_rate": 50.0,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
   "coverage": 70.0,
   "diversity": 100.0,
-  "top1_ok_rate": 70.0,
+  "top1_ok_rate": 65.0,
   "top1_open_rate": 40.0,
-  "unknown_hours_rec_share": 68.8,
+  "unknown_hours_rec_share": 66.7,
   "non_osm_rec_share": 0.0,
-  "avg_walk_min": 9.1,
+  "avg_walk_min": 9.7,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
   "latency_ms_median": 7.5,
-  "latency_ms_p90": 28.0,
+  "latency_ms_p90": 25.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -31,16 +31,16 @@
   "llm_invalid_answers": 0,
   "violation_cases": {
     "walk_too_long": 5,
-    "category_not_allowed": 5,
-    "category_forbidden": 3,
+    "category_not_allowed": 4,
+    "category_forbidden": 2,
     "over_budget": 2,
     "outdoor_in_cold_or_smog": 1
   },
-  "padded_rec_share": 25.0,
+  "padded_rec_share": 18.8,
   "expanded_rec_share": 4.2,
-  "backfill_rec_share": 20.8,
+  "backfill_rec_share": 14.6,
   "substituted_rec_share": 0.0,
-  "padded_case_share": 50.0,
+  "padded_case_share": 40.0,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -102,13 +102,6 @@
       ]
     },
     {
-      "case_id": "h18-nu-tue-en-read",
-      "violations": [
-        "category_forbidden",
-        "category_not_allowed"
-      ]
-    },
-    {
       "case_id": "h19-hazret-sun-kk-museum",
       "violations": [
         "category_not_allowed"
@@ -131,8 +124,8 @@
     "cases_file": "holdout_cases.json",
     "case_set": "holdout",
     "records": 20,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:04+05:00"
+    "generated_at": "2026-10-19T10:36:38+05:00"
   }
 }

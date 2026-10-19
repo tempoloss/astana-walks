@@ -4,14 +4,22 @@ substitution the system made, and the lead then uses the template composed from 
 
 from __future__ import annotations
 
+import re
+
 from .lexicon import match
 from .lexicon_concepts import CONCEPTS
 from .models import Intent
 
+# the dataset's category said back («заведения категории бар и ночная жизнь», «places of the category …»): a log line,
+# not the person's words
+_ECHO = re.compile(r"категори|\bcategor|санатын|санаттағы|ночная жизнь|nightlife|түнгі өмір", re.I)
+
 
 def names_the_wish(clause: str, intent: Intent) -> bool:
-    """True when there is no stated wish to check against, or the clause says (in any language) one of the kinds or
-    activities the person named."""
+    """True when the clause is no echo of a category and there is no stated wish to check against, or the clause says
+    (in any language) one of the kinds or activities the person named."""
+    if _ECHO.search(clause):
+        return False
     if not intent.wished:
         return True
     said = match(clause)

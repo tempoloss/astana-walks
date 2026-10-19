@@ -9,19 +9,19 @@ letters -> their russian look-alikes), never on fuzzy prefixes: a guard against 
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
 from typing import Literal
 
 from rapidfuzz import fuzz
 
-from .dialog_types import Topic
 from .intent import named_categories, parse_rules
-from .lexicon import match, named_places, normalize, without_durations
+from .lexicon import match, named_places, normalize
 from .models import Intent
 from .names import name_key
 
 Act = Literal["thanks", "bye", "decline", "greeting", "reset"]
-MAX_QUESTION_WORDS = 10
+KK_EXISTS = re.compile(
+    r"\bбар (?:ма|ме|ба|бе|па|пе)\b|\bкай жерде\b.*\bбар\b"
+)  # «туалет бар ма»: is there one?
 NAME_TOKEN_RATIO = 80
 
 _TOKEN = re.compile(r"[^\W_]+", re.UNICODE)
@@ -453,12 +453,13 @@ _CYRILLIC = re.compile(r"[а-яёәіңғүұқөһ]", re.I)
 _RU_ONLY = re.compile(r"[ёъэщ]", re.I)  # letters a kazakh word of its own does not use («ещё»)
 
 
-def detect(text: str, fallback: str) -> str:
-    """ru / kk / en of a message; `fallback` (the dialogue's language) when the message says nothing about it
-    («?», «ок», a number, gibberish)."""
+def _detect_base(text: str, fallback: str) -> str:
+    """The language the lexicon and the letters say (see `detect`, which settles a message of mixed languages)."""
     toks = tokens(text)
     if not toks:
         return fallback
+    if KK_EXISTS.search(" ".join(toks)):
+        return "kk"  # «туалет бар ма»: no kazakh letter in it, and still nothing but kazakh
     m = match(text)
     if m.language != "ru" or m.hits:
         return m.language
@@ -471,148 +472,151 @@ def detect(text: str, fallback: str) -> str:
     return fallback  # «другое» in a kazakh dialogue: a short word of both languages keeps the dialogue's
 
 
-# ------------------------------------------------------------------ questions about shown places
-
-
-@dataclass(frozen=True)
-class PlaceQuestion:
-    topic: Topic
-    ordinal: int | None = None  # 0-based index in the shown places
-    plural: bool = False
-    marked: bool = False  # the message points at «this place» («там», «оно», «есть ли», «?»)
-
-
-_MARK = (
-    r"\b(?:там|тут|оно|он|она|у них|здесь|есть ли|имеется|there|it|does|do they|is there|are there|"
-    r"бар ма|бар ма екен|ол жерде|онда|сонда)\b|\?"
+_KK_LETTERS = re.compile(r"[әіңғүұқөһ]")
+# words only one of the two languages has (kk written with the look-alike letters of `normalize`); «бар», «да», «ал»
+# are in both, and say nothing
+_KK_VOTES = frozenset(
+    normalize(w)
+    for w in [
+        "ма",
+        "ме",
+        "ба",
+        "бе",
+        "па",
+        "пе",
+        "жоқ",
+        "емес",
+        "керек",
+        "бүгін",
+        "ертең",
+        "кешке",
+        "қайда",
+        "қандай",
+        "болады",
+        "болса",
+        "жақын",
+        "жерде",
+        "туралы",
+        "мен",
+        "сен",
+        "біз",
+        "үшін",
+        "және",
+        "немесе",
+        "сіз",
+        "маған",
+        "бізге",
+        "барамын",
+        "келеді",
+        "ашық",
+        "жабық",
+        "бүгін",
+        "қазір",
+    ]
 )
-# (topic, regex, needs a marker of «this place» next to it)
-_TOPICS: tuple[tuple[Topic, str, bool], ...] = (
-    (
-        "hours",
-        r"\bоткрыт[оаы]?\b|\bзакрыт[оаы]?\b|\bработа(?:ет|ют)\b|\bчасы\b|\bдо скольки\b|\bво сколько (?:открыва|закрыва)\w*|"
-        r"\bкогда (?:открыва|закрыва)\w*|\bчасы работы\b|\bрежим работы\b|\bвремя работы\b|\bграфик\b|\bкруглосуточн\w* ли\b|"
-        r"\bли круглосуточ\w*|\bзайти внутрь\b|\bможно (?:ли )?внутрь\b|\bвнутрь\b|"
-        r"\bашык\w*|\bжабык\w*|жумыс (?:истей|уакыт|кестес)|нешеге дейин|нешеде (?:ашыл|жабыл)|кашан (?:ашыл|жабыл)|"
-        r"\bopen\b|\bopens\b|\bclosed?\b|\bclosing\b|\bopening hours\b|\bhours\b|\buntil when\b|\bwhat time\b|"
-        r"\bgo in\b|\bget in\b|\bgo inside\b|\binside\b",
-        False,
-    ),
-    (
-        "address",
-        r"\b(?:это|оно|он|она|там|тут)\s+где\b|\bгде\s+(?:это|оно|он|она|находится|расположен\w*)\b|\bадрес\w*|"
-        r"\bна какой улице\b|\bкайда (?:орналаскан|екен)\b|\bмекенжай\w*|\bол кайда\b|\bбул кайда\b|\bкайда екен\b|"
-        r"\bwhere is (?:it|this|that)\b|\bwhere'?s (?:it|that|this)\b|\baddress\b|\bwhere exactly\b|\bwhat street\b",
-        False,
-    ),
-    (
-        "route",
-        r"\bкак (?:дойти|добраться|пройти|доехать|туда|к нему|к ней)\b|\bдалеко\b|\bсколько (?:идти|минут|ехать|до него|до нее)\b|"
-        r"\bмаршрут\w*|\bпешком дойти\b|\bдалеко ли\b|\bкалай (?:бар|жет)\w*|\bалыс па\b|\bканша минут\b|\bкалай жетемин\b|"
-        r"\bhow (?:do i |can i |to )?(?:get|go|walk|reach)\b|\bhow far\b|\bdirections\b|\bhow long (?:to|does it take)\b|\bwalk there\b|\bhow do i walk\b",
-        False,
-    ),
-    (
-        "phone",
-        r"\bтелефон\w*|\bпозвонить\b|\bзвонить\b|\bсозвониться\b|\bphone\b|\bcall (?:them|it|there)\b|\bномер телефона\b",
-        False,
-    ),
-    (
-        "website",
-        r"\bсайт\w*|\bwebsite\b|\bweb site\b|\bsite\b|\burl\b|\bссылк\w*|\bвебсайт\w*",
-        False,
-    ),
-    (
-        "toilet",
-        r"\bтуалет\w*|\bуборн\w*|\bwc\b|\btoilets?\b|\brestrooms?\b|\bwashrooms?\b|\bдаретхана\b|\bажетхана\b",
-        False,
-    ),
-    ("parking", r"\bпарковк\w*|\bстоянк\w*|\bparking\b|\bтурак\w*", False),
-    (
-        "price",
-        r"\bсколько стоит\b|\bкакие цены\b|\bцены\b|\bцена\b|\bhow much\b|\bprices?\b|\bбагасы\b|\bкандай баг\w*|\bканша тур\w*|"
-        r"\bвход\w* (?:платн|бесплатн)\w*|\b(?:платн|бесплатн)\w* вход\w*|\bбилет\w*|\bentry fee\b|\bentrance fee\b|"
-        r"\badmission\b|\btickets?\b|\bкиру акылы\b|\bакылы ма\b",
-        False,
-    ),
-    (
-        "price",
-        r"\bдорог(?:о|ой|ая|ие)\b|\bexpensive\b|\bкымбат\b",
-        True,
-    ),
-    ("reserve", r"\bброн\w*|\bзабронировать\b|\breserv\w*|\bbook(?:ing)?\b|\bброндау\b", True),
-    ("wifi", r"\bwifi\b|\bwi fi\b|\bвай ?фай\b|\bинтернет\w*|\binternet\b", True),
-    (
-        "wheelchair",
-        r"\bколяск\w*|\bинвалид\w*|\bпандус\w*|\bwheelchair\b|\baccessib\w*|\bstep free\b|\bарба\w*",
-        True,
-    ),
-    (
-        "terrace",
-        r"\bтеррас\w*|\bверанд\w*|\bна улице\b|\boutdoor\b|\bterrace\b|\bpatio\b|\bдалада\b",
-        True,
-    ),
-    (
-        "takeaway",
-        r"\bс собой\b|\bнавынос\b|\btakeaway\b|\btake away\b|\bto go\b|\bалып кету\b",
-        True,
-    ),
-    (
-        "about",
-        r"\bчто (?:там|это|за место)\b|\bрасскажи\w*|\bподробнее\b|\bчто за\b|\bо нем\b|\bпро (?:него|нее|это|оно)\b|"
-        r"\btell me more\b|\bwhat is it\b|\bwhat'?s there\b|\bmore about\b|\bmore details\b|\bтолыгырак\b|\bол не\b",
-        False,
-    ),
+_RU_VOTES = frozenset(
+    [
+        "я",
+        "мы",
+        "вы",
+        "он",
+        "она",
+        "оно",
+        "они",
+        "это",
+        "этот",
+        "эта",
+        "там",
+        "тут",
+        "где",
+        "что",
+        "как",
+        "кто",
+        "когда",
+        "куда",
+        "почему",
+        "можно",
+        "нужно",
+        "надо",
+        "хочу",
+        "хотим",
+        "хочется",
+        "есть",
+        "нет",
+        "ли",
+        "бы",
+        "ещё",
+        "еще",
+        "уже",
+        "сегодня",
+        "завтра",
+        "сейчас",
+        "рядом",
+        "около",
+        "возле",
+        "поближе",
+        "или",
+        "но",
+        "мне",
+        "нам",
+        "меня",
+        "нас",
+        "детьми",
+        "детей",
+        "ребёнком",
+        "ребенком",
+        "открыт",
+        "открыто",
+        "закрыт",
+        "воскресенье",
+        "понедельник",
+        "вторник",
+        "среду",
+        "пятницу",
+        "субботу",
+        "в",
+        "во",
+        "на",
+        "из",
+        "по",
+        "для",
+        "от",
+        "до",
+        "с",
+        "со",
+        "при",
+        "без",
+        "про",
+    ]
 )
-_ORDINALS = (
-    (0, r"\bперв\w+|\bfirst\b|\bбиринш\w*|\bномер (?:один|1)\b|\bnumber (?:one|1)\b"),
-    (1, r"\bвтор\w+|\bsecond\b|\bекинш\w*|\bномер (?:два|2)\b|\bnumber (?:two|2)\b"),
-    (2, r"\bтрет\w+|\bthird\b|\bушинш\w*|\bномер (?:три|3)\b|\bnumber (?:three|3)\b"),
-)
-_PLURAL = re.compile(
-    r"\b(?:они|обе|оба|все они|все места|эти места|все варианты|all of them|both|they|all|екеуи|барлыгы|барлыгынан)\b"
-)
-_COMPILED = tuple((topic, re.compile(rx), marked) for topic, rx, marked in _TOPICS)
-_ORD = tuple((i, re.compile(rx)) for i, rx in _ORDINALS)
-_MARKER = re.compile(_MARK)
-_FOCUS = re.compile(r"\b(?:оно|он|она|там|тут|это место|его|ее|it|there|ол|осы|this|that)\b")
 
 
-def _topic(text: str, question_mark: bool = False) -> Topic | None:
-    marked = question_mark or bool(_MARKER.search(text))
-    for topic, rx, needs_marker in _COMPILED:
-        if rx.search(text) and (marked or not needs_marker):
-            return topic
-    return None
+def language_votes(text: str) -> tuple[int, int]:
+    """(kazakh words, russian words) of a message: a word with a kazakh letter or one of the kazakh function words
+    votes for kk, a word only russian has (a function word, a weekday, a russian-only letter) for ru; a word both
+    languages share («музей», «кафе») votes for neither."""
+    kk = ru = 0
+    for raw in re.findall(r"[^\W\d_]+", text.lower()):
+        if _KK_LETTERS.search(raw) or normalize(raw) in _KK_VOTES:
+            kk += 1
+        elif raw in _RU_VOTES or _RU_ONLY.search(raw):
+            ru += 1
+    return kk, ru
 
 
-def place_question(text: str, *, allow_kind: bool = False) -> PlaceQuestion | None:
-    """The question about places the message asks, else None. Short messages only; a message that names a kind of
-    place is a request, not a question («а там есть кафе» searches), unless `allow_kind` (a named place is the
-    subject: «Национальный музей сейчас открыт?»)."""
-    norm = " ".join(tokens(text))
-    if not norm or len(norm.split()) > MAX_QUESTION_WORDS:
-        return None
-    norm = without_durations(
-        norm
-    )  # «2 hours before the flight» is a time budget, not the «hours» of a place
-    if named_categories(text) and not allow_kind:
-        return None
-    ordinal = next((i for i, rx in _ORD if rx.search(norm)), None)
-    asked = "?" in text
-    topic = _topic(norm, asked)
-    if topic is None and ordinal is None:
-        return None
-    return PlaceQuestion(
-        topic=topic or "about",
-        ordinal=ordinal,
-        plural=bool(_PLURAL.search(norm)) and ordinal is None,
-        marked=asked or bool(_MARKER.search(norm)),
-    )
-
-
-def refers_to_focus(text: str) -> bool:
-    return bool(_FOCUS.search(" ".join(tokens(text))))
+def detect(text: str, fallback: str) -> str:
+    """ru / kk / en of a message; `fallback` (the dialogue's language, the interface's) when the message says nothing
+    about it («?», «ок», a number, gibberish). A message of mixed Russian and Kazakh is read by its words: the language
+    with more of them answers, a tie goes to the dialogue's language."""
+    base = _detect_base(text, fallback)
+    if base not in ("ru", "kk"):
+        return base
+    kk, ru = language_votes(text)
+    if not kk or not ru:
+        return base
+    if kk == ru:
+        return fallback if fallback in ("ru", "kk") else base
+    return "kk" if kk > ru else "ru"
 
 
 def mentioned(text: str, names: list[str]) -> int | None:
@@ -639,12 +643,6 @@ def named_place_refs(text: str) -> list[tuple[str, ...]]:
 # ------------------------------------------------------------------ what the data does not hold at all
 
 _OUT_OF_DATA = {
-    "pharmacy": r"\bаптек\w*|\bдарихана\w*|\bpharmac\w*|\bdrugstores?\b|\bchemist\b",
-    "exchange": (
-        r"\bобмен\w* валют\w*|\bобменник\w*|\bобменять\b|\bобмен денег\b|\bайырбастау\b|"
-        r"\bcurrency exchange\b|\bexchange (?:money|currency)\b|\bmoney exchange\b"
-    ),
-    "bank": r"\bбанкомат\w*|\bбанк(?:а|у|е|и|ом|овск\w*)?\b|\batm\b|\bbank\b|\bcash machine\b",
     "gas": r"\bзаправк\w*|\bазс\b|\bgas station\b|\bpetrol\b|\bfuel\b",
     "school": r"\bшкол\w*|\bмектеп\w*|\bschools?\b",
     "dentist": r"\bстоматолог\w*|\bзубн\w+|\bдантист\w*|\bтис даригер\w*|\bdentists?\b|\bdental\b",
@@ -656,8 +654,8 @@ _OUT_RX = {key: re.compile(rx) for key, rx in _OUT_OF_DATA.items()}
 
 
 def out_of_data(text: str) -> str | None:
-    """The kind of place the message asks for that the dataset does not hold at all (a pharmacy, a currency
-    exchange, a bank, a petrol station, a clinic), else None. A message that also names a kind of place the data has
+    """The kind of place the message asks for that the dataset does not hold at all (a petrol station, a clinic),
+    else None. A message that also names a kind of place the data has
     («кафе рядом с аптекой») is a search, not this."""
     if named_categories(text):
         return None
@@ -670,3 +668,13 @@ def out_of_data(text: str) -> str | None:
 _FOLLOW_WORDS = re.compile(
     r"\b(?:рядом|ближе|поближе|далеко|недалеко|дешевле|подешевле|другое|друг\w+|еще)\b"
 )
+
+
+def signal(text: str) -> tuple[bool, bool, bool]:
+    """(refusal, a kind of place or a named place, anything to search for) as the rules read the text."""
+    intent = parse_rules(text).intent
+    strong = bool(intent.categories or intent.landmark_refs or intent.info_about)
+    wish = (
+        bool(intent.free_text_keywords) or intent.accessibility
+    )  # «на коляске» is a request without a kind
+    return intent.refusal != "none", strong, strong or wish

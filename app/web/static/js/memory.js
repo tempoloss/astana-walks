@@ -11,6 +11,7 @@ import { api } from './api.js';
 import { h, icon } from './dom.js';
 import { currentLang, onLang, tr } from './i18n.js';
 import { placesSection } from './places-panel.js';
+import { forgetRecents, recents } from './address.js';
 
 const ON = 'anyq.profile.on';
 const ID = 'anyq.profile.id';
@@ -56,20 +57,26 @@ export async function act(action) {
   }
 }
 
+// «Забыть всё»: the stored profile and the addresses picked in «Где вы?» (the saved places are a list of their own)
+async function forgetAll() {
+  forgetRecents();
+  await act({ action: 'forget_all' });
+}
+
 // ---- instant saving of the form
 
 // «Сохранено» / «Не удалось сохранить»: one small line at the top of the form, the first one fades away by itself
-function flash(state) {
+function flash(state, turnedOn = false) {
   clearTimeout(statusTimer);
   const el = document.querySelector('#memory-root .mf-status');
   if (!el) return;
   el.dataset.state = state;
-  el.textContent = tr(state === 'saved' ? 'mf_saved' : 'mf_save_fail');
+  el.textContent = tr(state === 'saved' ? (turnedOn ? 'mf_saved_on' : 'mf_saved') : 'mf_save_fail');
   if (state === 'saved') {
     statusTimer = setTimeout(() => {
       el.dataset.state = '';
       el.textContent = '';
-    }, 2000);
+    }, turnedOn ? 6000 : 2000); // the longer line tells something the person did not ask for: it stays long enough to read
   }
 }
 
@@ -94,13 +101,14 @@ function commit(about) {
       return false;
     }
     if (about !== undefined) typedAbout = null;
-    if (!on()) {
+    const turnedOn = !on();
+    if (turnedOn) {
       localStorage.setItem(ON, '1');
       render();
     } else {
       paintItems();
     }
-    flash('saved');
+    flash('saved', turnedOn);
     return true;
   };
   queue = queue.then(run, run);
@@ -206,9 +214,21 @@ function form() {
     draft[key] = v;
     commit();
   };
-  const ageField = segmented(tr('mf_kids_age'),
-    [['', tr('mf_age_none')], ...AGE_BANDS.map((band) => [band, band.replace('-', '–')])],
-    draft.kids_age_band || '', (v) => set('kids_age_band')(v || null), { tpl: 'minmax(0, 1.7fr) repeat(4, minmax(0, 1fr))' });
+  // the children's ages: several groups may be on (a family with a 5- and a 9-year-old), none is «not said»
+  const ageButtons = AGE_BANDS.map((band) => {
+    const btn = h('button', { type: 'button', class: 'mf-chip', 'aria-pressed': String(draft.kids_age_bands.includes(band)), text: band.replace('-', '–') });
+    btn.addEventListener('click', () => {
+      const on_ = !draft.kids_age_bands.includes(band);
+      draft.kids_age_bands = on_ ? [...draft.kids_age_bands, band] : draft.kids_age_bands.filter((b) => b !== band);
+      btn.setAttribute('aria-pressed', String(on_));
+      commit();
+    });
+    return btn;
+  });
+  const ageField = h('div', { class: 'mf-field', role: 'group', 'aria-label': tr('mf_kids_age') },
+    h('span', { class: 'mf-label', text: tr('mf_kids_age') }),
+    h('div', { class: 'mf-chips' }, ageButtons),
+    h('p', { class: 'fine', text: tr('mf_age_many') }));
   ageField.hidden = !draft.with_kids;
 
   const el = h('form', { class: 'mf', novalidate: true },
@@ -217,9 +237,9 @@ function form() {
     section(tr('mf_s_who'),
       toggleRow(tr('mf_kids'), draft.with_kids, (on_) => {
         draft.with_kids = on_;
-        if (!on_) draft.kids_age_band = null; // an age without «с детьми» is meaningless: never sent
+        if (!on_) draft.kids_age_bands = []; // an age without «с детьми» is meaningless: never sent
         ageField.hidden = !on_;
-        if (!on_) for (const b of ageField.querySelectorAll('button')) b.setAttribute('aria-checked', String(b.textContent === tr('mf_age_none')));
+        if (!on_) for (const b of ageButtons) b.setAttribute('aria-pressed', 'false');
         commit();
       }),
       ageField,
@@ -248,6 +268,8 @@ function form() {
 
 function render() {
   const root = document.getElementById('memory-root');
+  const dialog = document.getElementById('memory');
+  const scrolled = dialog.scrollTop; // a redraw (the first setting turns the memory on) keeps the panel where it was
   const enabled = on();
   const toggle = h('input', { type: 'checkbox', role: 'switch', checked: enabled, id: 'mem-toggle' });
   toggle.addEventListener('change', () => {
@@ -255,6 +277,11 @@ function render() {
     render();
   });
   const forms = form(); // the settings are always on offer: flipping one turns the memory on
+  // «Забыть всё»: there while anything is stored (the profile or the recent addresses), with the memory on or off
+  const forget = view.id || recents().length
+    ? [h('button', { type: 'button', class: 'secondary mf-forget', onclick: forgetAll }, tr('mem_forget_all')),
+      h('p', { class: 'fine', text: tr('mem_forget_note') })]
+    : null;
   root.replaceChildren(
     h('header', {}, h('h2', { text: tr('mem_title') }),
       h('button', { type: 'button', class: 'ghost icon', 'aria-label': tr('close'), onclick: () => document.getElementById('memory').close() }, icon('close'))),
@@ -262,11 +289,11 @@ function render() {
     h('p', { class: 'fine', text: tr('mem_dialog_note') }),
     h('label', { class: 'mf-toggle mf-master', for: 'mem-toggle' }, h('span', { text: tr('side_remember') }), toggle),
     h('p', { class: 'fine', text: tr('mem_why') }),
-    enabled ? h('div', { class: 'section' }, h('h2', { text: tr('mem_known') }), h('div', { id: 'mem-items-box' }, itemsList()), forms,
-      view.id ? h('button', { type: 'button', class: 'secondary mf-forget', onclick: () => act({ action: 'forget_all' }) }, tr('mem_forget_all')) : null)
-      : h('div', { class: 'section' }, h('p', { class: 'fine', text: tr('mem_off') }), forms),
+    enabled ? h('div', { class: 'section' }, h('h2', { text: tr('mem_known') }), h('div', { id: 'mem-items-box' }, itemsList()), forms, forget)
+      : h('div', { class: 'section' }, h('p', { class: 'fine', text: tr('mem_off') }), forms, forget),
     h('p', { class: 'fine', text: tr('mem_marks_note') }),
   );
+  dialog.scrollTop = scrolled;
 }
 
 export async function open() {

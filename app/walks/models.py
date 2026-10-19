@@ -27,6 +27,10 @@ CATEGORIES = [
     "culture_theatre_cinema",
     "coworking_library",
     "public_toilet",
+    "pharmacy",
+    "grocery",
+    "money",
+    "lodging",
     "sport",
     "other",
 ]
@@ -46,6 +50,10 @@ Category = Literal[
     "coworking_library",
     "sport",
     "public_toilet",
+    "pharmacy",
+    "grocery",
+    "money",
+    "lodging",
     "other",
 ]
 Mode = Literal["walk", "car", "transit"]
@@ -160,6 +168,14 @@ class POI(BaseModel):
         """A state service centre of the registry layer (ЦОН): a place for an explicit state-service request only,
         never a walking destination."""
         return GOV_SERVICE_TAG in self.tags
+
+    def name_for(self, lang: str | None) -> str:
+        """The name to show in `lang`: an English answer takes the record's English name (OSM `name:en`, else the title
+        of its English Wikipedia article without the bracketed note), every other one the record's `name`."""
+        if lang == "en":
+            title = (self.wikipedia.get("en") or {}).get("title", "").split(" (")[0].strip()
+            return self.names.get("name:en") or title or self.name
+        return self.name
 
     def data_label(self, lang: str | None = "ru") -> str:
         """Where the record comes from, decided by code: 'OSM', 'OSM + Overture', 'OSM + официальный сайт', ..."""
@@ -334,6 +350,17 @@ class Intent(BaseModel):
         default_factory=list,
         description="Rule-parser field, leave empty. The kinds the user's own words rule out («не хочу в кафе»).",
     )
+    local_food: bool = Field(
+        False,
+        description="Rule-parser field, leave false. The user asks for Kazakh / national food.",
+    )
+    time_stated: bool = Field(
+        False,
+        description="Rule-parser field, leave false. The user's words or a tap set the time budget (not a default).",
+    )
+    eat: bool = Field(
+        False, description="Rule-parser field, leave false. Food is asked, not a coffee."
+    )
 
 
 class LLMAttempt(BaseModel):
@@ -411,6 +438,9 @@ class Constraints(BaseModel):
     )
     radius_cap_m: int | None = (
         None  # «а поближе?»: not farther than this (closer than the last answer)
+    )
+    radius_floor_m: int | None = (
+        None  # no time stated: search as wide as a 90-min outing reaches (walks.pipeline)
     )
     exclude_ids: list[str] = Field(default_factory=list)  # shown already: «ещё», «что-то другое»
     no_alcohol: bool = False
@@ -647,34 +677,6 @@ class RetrievalResult(BaseModel):
     filters: Filters
 
 
-class LLMRec(BaseModel):
-    poi_id: str
-    why: str = Field(
-        description="ONE short sentence (up to 16 words): why this place fits THIS request. No distances, times or "
-        "opening hours."
-    )
-    time_on_site_min: int = Field(description="Reasonable minutes to spend there.")
-    what_to_do: str = Field(description="ONE short sentence: a concrete thing to do there.")
-    confidence: Confidence
-    generated_idea: bool = Field(
-        description="true if what_to_do/why go beyond the facts given for this candidate (your own idea)."
-    )
-    notes: str = Field("", description="Optional caveat, e.g. missing data. Empty string if none.")
-
-
-class LLMOutput(BaseModel):
-    you_want: str = Field(
-        "",
-        description="ONE short clause, in the answer language, saying in plain words what the user is looking for "
-        "(ru: 'Вы ищете, где выпить'; en: 'You are looking for a place for a drink'). No place names, numbers, "
-        "hours, weather or advice.",
-    )
-    recommendations: list[LLMRec] = Field(description="1 to 3 recommendations, best first.")
-    route_order: list[str] = Field(
-        default_factory=list, description="Optional visiting order of poi_ids."
-    )
-
-
 class Recommendation(BaseModel):
     poi: POI
     why: str
@@ -748,6 +750,9 @@ class Result(BaseModel):
         ""  # a recorded answer left no card with model text: "live" = the models were asked again and that answer is used, "failed" = they could not answer and the recorded one stays
     )
     lead_want: str = ""  # the model's «what you want» clause, after code's checks ('' = the template composes it)
+    lead_text: str = (
+        ""  # the model's own opening of the reply, after code's checks ('' = the template lead)
+    )
     on_the_way: str = (
         ""  # the name of the bookmark the first place lies toward ('' = not on the way anywhere)
     )

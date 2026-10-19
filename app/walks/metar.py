@@ -64,8 +64,9 @@ CLOUD_PCT = {
     "OVC": 100.0,
     "VV": 100.0,
 }  # mid-oktas
-# present-weather phenomena that fall: snow family and rain family (IC, UP and drifting / blowing snow do not count)
-_SNOWFALL = {"SN", "SG", "GS", "IC"}
+# present-weather phenomena that fall: snow family and rain family (IC, UP and drifting / blowing snow do not count: ice
+# crystals are the diamond dust of a clear frosty sky, not a snowfall)
+_SNOWFALL = {"SN", "SG", "GS"}
 _RAINFALL = {"DZ", "RA", "PL", "GR"}
 _TRENDS = {
     "NOSIG",
@@ -274,7 +275,10 @@ _LEVEL = {"-": 1, "": 2, "+": 3}  # light / moderate / heavy
 def falling_now(obs: Observation) -> tuple[str, int] | None:
     """What falls at the station now: ("snow" | "rain", 1 light / 2 moderate / 3 heavy) from the present-weather groups,
     None when nothing does. Blowing and drifting snow is lifted from the ground, not falling; a mix counts as snow;
-    the level is the strongest of the groups of that kind."""
+    the level is the strongest of the groups of that kind. A report that also says the sky is clear (CAVOK, SKC, CLR, NSC)
+    contradicts itself, since precipitation needs cloud: nothing is then said to fall."""
+    if obs.cloud == "CLR":
+        return None
     best: dict[str, int] = {}
     for intensity, descriptor, phenomena in _groups(obs):
         if descriptor in ("BL", "DR"):

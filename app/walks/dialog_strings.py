@@ -31,9 +31,6 @@ STRINGS: dict[str, Entry] = {
         "В моих данных нет {what}: я подсказываю, где поесть, погулять и отдохнуть.",
         "My data has no {what}: I help with places to eat, walk and relax.",
     ),
-    "ood_pharmacy": ("дәріханалар", "аптек", "pharmacies"),
-    "ood_exchange": ("валюта айырбастау орындары", "обменников валюты", "currency exchanges"),
-    "ood_bank": ("банктер мен банкоматтар", "банков и банкоматов", "banks or cash machines"),
     "ood_gas": ("жанармай бекеттері", "заправок", "petrol stations"),
     "ood_clinic": ("емханалар мен ауруханалар", "больниц и поликлиник", "clinics or hospitals"),
     "ood_school": ("мектептер", "школ", "schools"),
@@ -104,7 +101,11 @@ STRINGS: dict[str, Entry] = {
         "{n} min by public transport",
     ),
     # ---- the card
-    "why_fallback": ("Жақын жердегі {kind}.", "Это {kind} рядом с вами.", "A {kind} close to you."),
+    "note_fresh_air": (
+        "Бәрібір таза ауаға шыққыңыз келсе — ең жақын саябақ.",
+        "Если всё же хочется на воздух — ближайший парк.",
+        "If you still want some fresh air, this is the nearest park.",
+    ),
     "caveat_expanded": ("сәл алысырақ", "чуть дальше", "a bit farther"),
     "caveat_other": ("басқа санат", "другая категория", "another kind of place"),
     "src_osm": ("OpenStreetMap", "OpenStreetMap", "OpenStreetMap"),
@@ -121,6 +122,7 @@ STRINGS: dict[str, Entry] = {
     "h_unknown": ("Жұмыс уақыты белгісіз", "Часы неизвестны", "Hours unknown"),
     "h_at": ("{t}", "в {t}", "at {t}"),
     "h_tomorrow": ("ертең {t}", "завтра в {t}", "tomorrow at {t}"),
+    "h_next_day": ("келесі күні {t}", "{t} следующего дня", "{t} the next day"),
     "h_note_conflict": (
         "Сайт пен картадағы сағаттар сәйкес келмейді — шықпас бұрын нақтылаңыз.",
         "Часы на сайте и на карте расходятся — уточните перед выходом.",
@@ -327,10 +329,34 @@ STRINGS: dict[str, Entry] = {
     "q_new": ("жаңа іздеу", "новый поиск", "new search"),
     # the short name of a change, for the reply of a refined search
     "ch_closer": ("жақынырақ", "поближе", "closer"),
+    "ch_closer_none": (
+        "Жақынырақ мұндай орын жоқ — ең жақыны",
+        "Ближе таких мест нет — ближайшее",
+        "Nothing like this is closer — the nearest",
+    ),
     "ch_more": ("басқа орындар", "другие места", "other places"),
     "ch_no_alcohol": ("алкогольсіз", "без алкоголя", "no alcohol"),
-    "ch_cheaper": ("арзанырақ", "подешевле", "cheaper"),
-    "ch_pricier": ("қымбатырақ", "подороже", "pricier"),
+    "ch_no_alcohol_n": (
+        "Алкогольсіз — бар мен алкоголь бар орындар алынып тасталды ({n})",
+        "Без алкоголя — убрал бары и места с алкоголем ({n})",
+        "No alcohol — bars and places that serve it left out ({n})",
+    ),
+    "ch_wifi_none": (
+        "Wi-Fi деректерде белгіленбеген — жақын орындар",
+        "Wi-Fi в данных не отмечен — ближайшие места",
+        "No Wi-Fi is marked in the data — the nearest places",
+    ),
+    # no prices in the data: the change of the kind of place is said as what it is
+    "ch_cheaper": (
+        "бағалар деректерде жоқ, сондықтан фастфуд пен кафе — әдетте арзанырақ",
+        "цен в данных нет, поэтому фастфуд и кафе — там обычно дешевле",
+        "there are no prices in the data, so fast food and cafés — usually cheaper",
+    ),
+    "ch_pricier": (
+        "бағалар деректерде жоқ, сондықтан мейрамханалар — әдетте қымбатырақ",
+        "цен в данных нет, поэтому рестораны — там обычно дороже",
+        "there are no prices in the data, so restaurants — usually pricier",
+    ),
     "ch_kids_yes": ("баламен", "с ребёнком", "with a child"),
     "ch_kids_no": ("баласыз", "без ребёнка", "without a child"),
     "ch_quiet": ("тыныштау", "потише", "quieter"),
@@ -364,6 +390,11 @@ STRINGS: dict[str, Entry] = {
         "сегодня праздник — {name}",
         "today is a holiday — {name}",
     ),
+    "ld_holiday_on": (
+        "{day} мереке — {name}",
+        "{day} праздник — {name}",
+        "there is a holiday {day} — {name}",
+    ),
     "ld_indoor": (
         "сондықтан алдымен үйдегі орындар",
         "поэтому сначала места в помещении",
@@ -383,6 +414,11 @@ STRINGS: dict[str, Entry] = {
         "Астанада Қазгидромет дауыл ескертуі күшінде",
         "в Астане действует штормовое предупреждение Казгидромета",
         "Kazhydromet has a storm warning in force for Astana",
+    ),
+    "ld_storm_what": (
+        "Қазгидромет ескертеді: {what}",
+        "Казгидромет предупреждает: {what}",
+        "Kazhydromet warns of {what}",
     ),
     # a kind the person asked for that a safety rule left out: said in one sentence, never named as the wish
     "ld_guard_minor": (
@@ -517,3 +553,241 @@ def s(key: str, lang: str | None, **fields: object) -> str:
     entry = STRINGS[key]
     text = entry[LANGS.index(lang) if lang in LANGS else 1]
     return text.format(**fields) if fields else text
+
+
+# ---- the time a message names, the weather, and answers about a place's cuisine, entry fee, other-day hours, street way
+STRINGS.update(
+    {
+        "w_today": ("бүгін", "сегодня", "today"),
+        "w_tomorrow": ("ертең", "завтра", "tomorrow"),
+        "w_part_morning": ("таңертең", "утром", "in the morning"),
+        "w_part_day": ("күндіз", "днём", "in the afternoon"),
+        "w_part_evening": ("кешке", "вечером", "in the evening"),
+        "w_part_night": ("түнде", "ночью", "at night"),
+        "w_stamp": ("{when}. {reply}", "{when}. {reply}", "{when}. {reply}"),
+        "wx_name": ("Ауа райы", "Погода", "Weather"),
+        "wx_now": ("Қазір Астанада {t}", "Сейчас в Астане {t}", "Right now in Astana: {t}"),
+        "wx_at": (
+            "{when}, болжам бойынша Астанада: {t}",
+            "{when}, по прогнозу в Астане: {t}",
+            "{when}, forecast for Astana: {t}",
+        ),
+        "wx_feels": ("сезілуі {f}", "ощущается как {f}", "feels like {f}"),
+        "wx_k_rain": ("жаңбыр", "дождь", "rain"),
+        "wx_k_sleet": ("жаңбыр аралас қар", "мокрый снег", "sleet"),
+        "wx_k_snow": ("қар", "снег", "snow"),
+        "wx_k_thunder": ("найзағай", "гроза", "thunderstorm"),
+        "wx_k_fog": ("тұман", "туман", "fog"),
+        "wx_k_clear": ("ашық аспан", "ясно", "clear sky"),
+        "wx_k_partly": ("ауыспалы бұлтты", "переменная облачность", "partly cloudy"),
+        "wx_k_cloud": ("бұлтты", "облачно", "cloudy"),
+        "wx_wind": ("жел {v} км/сағ", "ветер {v} км/ч", "wind {v} km/h"),
+        "wx_rain_mm": (
+            "сағатына шамамен {mm} мм жауын-шашын",
+            "осадки около {mm} мм за час",
+            "about {mm} mm of precipitation in an hour",
+        ),
+        "wx_dry": ("жауын-шашынсыз", "без осадков", "no precipitation"),
+        "wx_no_forecast": (
+            "Бұл уақытқа ({when}) болжам қазір деректерде жоқ.",
+            "Прогноза на это время ({when}) в данных сейчас нет.",
+            "The data holds no forecast for that time ({when}) right now.",
+        ),
+        "wx_no_data": (
+            "Қазір ауа райы туралы деректер жоқ: метеостанция да, болжам да жауап бермеді.",
+            "Данных о погоде сейчас нет: метеостанция и прогноз не ответили.",
+            "There is no weather data right now: neither the station nor the forecast answered.",
+        ),
+        "wx_wear": ("Не киюге: {what}.", "Что надеть: {what}.", "What to wear: {what}."),
+        "wx_wear_vcold": (
+            "қалың күртеше, бас киім, мойынорағыш, қолғап және жылы іш киім",
+            "пуховик, шапка, шарф, варежки и тёплое бельё",
+            "a down coat, a hat, a scarf, mittens and thermal underwear",
+        ),
+        "wx_wear_cold": (
+            "жылы күртеше, бас киім және қолғап",
+            "тёплая куртка, шапка и перчатки",
+            "a warm jacket, a hat and gloves",
+        ),
+        "wx_wear_chilly": (
+            "жылы күртеше мен бас киім",
+            "тёплая куртка и шапка",
+            "a warm jacket and a hat",
+        ),
+        "wx_wear_cool": ("күртеше", "куртка", "a jacket"),
+        "wx_wear_mild": (
+            "жеңіл күртеше немесе свитер",
+            "лёгкая куртка или свитер",
+            "a light jacket or a sweater",
+        ),
+        "wx_wear_warm": ("жеңіл киім", "лёгкая одежда", "light clothes"),
+        "wx_wear_hot": (
+            "жеңіл киім, бас киім және су",
+            "лёгкая одежда, головной убор и вода",
+            "light clothes, a hat and water",
+        ),
+        "wx_wear_wet": (
+            "қолшатыр не су өтпейтін күртеше алыңыз",
+            "возьмите зонт или непромокаемую куртку",
+            "take an umbrella or a waterproof jacket",
+        ),
+        "a_on_open_iv": (
+            "{name}: {when} ашық, сол күні {iv} ({src}).",
+            "«{name}»: {when} открыто, в этот день {iv} ({src}).",
+            "{name}: open {when}, that day {iv} ({src}).",
+        ),
+        "a_on_open": (
+            "{name}: {when} ашық ({src}).",
+            "«{name}»: {when} открыто ({src}).",
+            "{name}: open {when} ({src}).",
+        ),
+        "a_on_closed_iv": (
+            "{name}: {when} жабық, сол күні {iv} жұмыс істейді ({src}).",
+            "«{name}»: {when} закрыто, в этот день работает {iv} ({src}).",
+            "{name}: closed {when}; that day it is open {iv} ({src}).",
+        ),
+        "a_on_closed": (
+            "{name}: {when} жабық ({src}).",
+            "«{name}»: {when} закрыто ({src}).",
+            "{name}: closed {when} ({src}).",
+        ),
+        "a_on_247": (
+            "{name}: {when} тәулік бойы ашық ({src}).",
+            "«{name}»: {when} открыто круглосуточно ({src}).",
+            "{name}: open 24/7 {when} ({src}).",
+        ),
+        "a_price_on": (
+            "{name}: {price} ({by}, деректер {date} күні алынған).",
+            "«{name}»: {price} ({by}, данные на {date}).",
+            "{name}: {price} ({by}, as of {date}).",
+        ),
+        "w_entry": ("кіру құны", "стоимость входа", "the entry price"),
+        "a_menu_not_food": (
+            "{name} — {kind}: тамақ туралы деректерде ештеңе жоқ.",
+            "«{name}» — это {kind}: про еду в данных ничего нет.",
+            "{name} is a {kind}: the data has nothing about food there.",
+        ),
+        "a_menu_none": (
+            "{name}: асхана түрі де, мәзірі де деректерде жоқ — орнында немесе телефон арқылы нақтылаңыз.",
+            "«{name}»: ни кухни, ни меню в данных нет — лучше уточнить на месте или по телефону.",
+            "{name}: the data has neither the cuisine nor the menu — better check on the spot or by phone.",
+        ),
+        "a_menu_dishes_none": (
+            "Нақты мәзір деректерде жоқ.",
+            "Самого меню в данных нет.",
+            "The menu itself is not in the data.",
+        ),
+        "a_menu_cuisine": (
+            "{name}: асхана — {cuisine} ({by}).",
+            "«{name}»: кухня — {cuisine} ({by}).",
+            "{name}: cuisine — {cuisine} ({by}).",
+        ),
+        "a_menu_site": (
+            "Орынның өз сипаттамасы: «{text}»",
+            "Из описания места: «{text}»",
+            "From the place's own description: “{text}”",
+        ),
+        "a_menu_kids_none": (
+            "{name}: балалар мәзірі туралы деректерде ештеңе жоқ.",
+            "«{name}»: про детское меню в данных ничего нет.",
+            "{name}: the data says nothing about a kids' menu.",
+        ),
+        "a_menu_kazakh_yes": (
+            "{name}: иә, қазақ асханасы ({by}).",
+            "«{name}»: да, казахская кухня ({by}).",
+            "{name}: yes, Kazakh cuisine ({by}).",
+        ),
+        "a_menu_kazakh_no": (
+            "{name}: жоқ, деректерде асхана — {cuisine} ({by}).",
+            "«{name}»: нет, в данных кухня — {cuisine} ({by}).",
+            "{name}: no, the data lists {cuisine} cuisine ({by}).",
+        ),
+        "a_menu_kazakh_unknown": (
+            "{name}: қазақ асханасы екені деректерде тікелей айтылмаған.",
+            "«{name}»: казахская ли кухня, в данных прямо не сказано.",
+            "{name}: the data does not say outright whether it is Kazakh cuisine.",
+        ),
+        "a_route_street": (
+            "{name}: көшелермен шамамен {d}, {walk}.",
+            "«{name}»: по улицам около {d}, {walk}.",
+            "{name}: about {d} by the streets, {walk}.",
+        ),
+        "a_route_street_far": (
+            "{name}: көшелермен шамамен {d}, {walk} — алыстау, көлікпен немесе қоғамдық көлікпен тиімдірек.",
+            "«{name}»: по улицам около {d}, {walk} — это далековато, лучше на транспорте.",
+            "{name}: about {d} by the streets, {walk} — quite far, better take a vehicle.",
+        ),
+        "clarify_dropped": (
+            "Жақсы, оны қоспаймын. Орнына не іздейміз?",
+            "Хорошо, это убираю. Что ищем вместо?",
+            "All right, not that one. What shall we look for instead?",
+        ),
+    }
+)
+
+
+from .dialog_strings_more import MORE_STRINGS  # noqa: E402  (the second half of the table, kept apart for size)
+
+STRINGS.update(MORE_STRINGS)
+
+
+# ---- a time that has gone by, closing hours, a toilet in the tags
+STRINGS.update(
+    {
+        "w_note_passed_morning": (
+            "Бүгінгі таң өтіп кетті — ертеңге таңдаймын.",
+            "Сегодняшнее утро уже прошло — подбираю на завтра.",
+            "This morning is over — I am picking for tomorrow.",
+        ),
+        "w_note_passed_day": (
+            "Бүгінгі күн өтіп кетті — ертеңге таңдаймын.",
+            "Сегодняшний день уже прошёл — подбираю на завтра.",
+            "This afternoon is over — I am picking for tomorrow.",
+        ),
+        "w_note_passed_evening": (
+            "Бүгінгі кеш өтіп кетті — ертеңге таңдаймын.",
+            "Сегодня вечер уже прошёл — подбираю на завтра.",
+            "This evening is over — I am picking for tomorrow.",
+        ),
+        "w_note_passed_clock": (
+            "Бүгін {t} өтіп кетті — ертеңге таңдаймын.",
+            "Сегодня {t} уже прошло — подбираю на завтра.",
+            "{t} has gone by today — I am picking for tomorrow.",
+        ),
+        "w_note_small_hours": (
+            "Қазір түн — ең жақын кешті аламын.",
+            "Сейчас ночь — беру ближайший вечер.",
+            "It is night now — I take the coming evening.",
+        ),
+        "a_close_open": (
+            "{name}: ашық, {t} жабылады ({src}).",
+            "«{name}»: открыто, закрывается в {t} ({src}).",
+            "{name}: open, closes at {t} ({src}).",
+        ),
+        "a_close_later": (
+            "{name}: қазір жабық; {day} {a} ашылып, {b} жабылады ({src}).",
+            "«{name}»: сейчас закрыто; {day} откроется в {a} и закроется в {b} ({src}).",
+            "{name}: closed now; {day} it opens at {a} and closes at {b} ({src}).",
+        ),
+        "a_close_247": (
+            "{name}: тәулік бойы ашық, жабылу уақыты жоқ ({src}).",
+            "«{name}»: открыто круглосуточно, время закрытия нет ({src}).",
+            "{name}: open 24/7, no closing time ({src}).",
+        ),
+        "a_toilet_yes": (
+            "{name}: иә, дәретхана бар ({by}).",
+            "«{name}»: да, туалет есть ({by}).",
+            "{name}: yes, there is a toilet ({by}).",
+        ),
+        "a_toilet_no": (
+            "{name}: деректер бойынша дәретхана жоқ ({by}).",
+            "«{name}»: по данным туалета нет ({by}).",
+            "{name}: per the data there is no toilet ({by}).",
+        ),
+        "kids_none_place": (
+            "Жақын жерде балалар алаңдары мен ойын орындары деректерде жоқ — қолда бар ең жақын нұсқаларды көрсетемін.",
+            "Детских площадок и игровых мест рядом в данных нет — показываю, что подходит для детей из имеющегося.",
+            "The data has no playground or play place near — here is what else suits children.",
+        ),
+    }
+)

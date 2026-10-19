@@ -21,8 +21,12 @@ RADIUS_STEPS = (
 )  # widen the radius by these factors while nothing of the requested kind is in
 STROLL_CATEGORIES = frozenset({"park_garden", "attraction_landmark", "viewpoint"})
 # Back-fill (other categories added when too few requested ones are in range): never these, whatever the intent;
-# a stroll additionally takes only places that fit a walk.
-NEVER_BACKFILL = frozenset({"fast_food", "bar_nightlife", "other"})
+# a stroll additionally takes only places that fit a walk. An errand (a pharmacy, a food shop) fills nothing up, and
+# a request for one takes no other kind instead of it (backfill_ok).
+ERRAND_KINDS = frozenset({"pharmacy", "grocery"})
+NEVER_BACKFILL = (
+    frozenset({"fast_food", "bar_nightlife", "other", "money", "lodging"}) | ERRAND_KINDS
+)
 STROLL_BACKFILL = STROLL_CATEGORIES | {"cafe", "museum_gallery"}
 CIRCUITY = 1.25  # real street distance ~ 1.25 x straight line
 MIN_RADIUS_M = 500  # even a very short budget should see the nearest block
@@ -97,6 +101,10 @@ def declared_radius_m(intent: Intent, adverse: bool, constraints: Constraints) -
     radius = reachable_radius_m(
         intent.time_budget_min, intent.mode, adverse, travel_share(is_stroll(intent))
     )
+    if constraints.radius_floor_m and not adverse and intent.mode == "walk":
+        radius = max(
+            radius, constraints.radius_floor_m
+        )  # no time stated: a wider choice; the route still fits 60 min
     if intent.with_kids and intent.mode == "walk":
         radius = min(radius, kids_walk_radius_m())  # a child's pace: one way is a short walk
     if constraints.radius_factor != 1.0:
@@ -107,10 +115,12 @@ def declared_radius_m(intent: Intent, adverse: bool, constraints: Constraints) -
 
 
 def backfill_ok(category: str, intent: Intent, stroll: bool) -> bool:
-    """May a place outside the requested categories fill up a short list? Never fast food / bars / 'other' (bars
-    only for a night request); a stroll takes only what fits a walk. A state-service request («ЦОН», category
-    `other`) or a toilet is never padded with cafes and parks: a short list is the honest answer."""
-    if "other" in intent.categories or "public_toilet" in intent.categories:
+    """May a place outside the requested categories fill up a short list? Never fast food / bars / 'other' / money /
+    lodging / an errand (bars only for a night request); a stroll takes only what fits a walk. A state-service request
+    («ЦОН», category `other`), a toilet, a cash machine or an errand (a pharmacy, a food shop: a café is neither) is
+    never padded with cafes and parks: a short list is the honest answer. A hotel is a destination, not a utility, so
+    a lodging request may still be padded."""
+    if {"other", "public_toilet", "money", *ERRAND_KINDS} & set(intent.categories):
         return False
     if category in NEVER_BACKFILL and not (category == "bar_nightlife" and intent.night):
         return False

@@ -7,14 +7,15 @@ from __future__ import annotations
 from .dialog_strings import s
 from .dialog_types import Chip, ShownPlace
 from .models import Constraints, Intent
+from .variety import priced_kinds
 
 MAX_REFINE_CHIPS = 4
 MIN_FAR_M = 200  # «поближе» goes to 80% of the farthest shown place, never under 150 m: nearer than this it is moot
 MAX_BUDGET_MIN = 240
-FOOD = frozenset({"cafe", "restaurant", "fast_food", "bar_nightlife"})
 DRINKS = frozenset({"restaurant", "bar_nightlife"})
-PAID_FUN = frozenset({"entertainment", "culture_theatre_cinema", "mall"})
-QUIETABLE = frozenset({"cafe", "park_garden", "coworking_library", "museum_gallery"})
+QUIETABLE = frozenset(
+    {"cafe", "coworking_library", "museum_gallery"}
+)  # a park has no quiet tag to change the answer
 WORKABLE = frozenset({"cafe", "coworking_library"})
 START = ("food", "coffee", "walk", "kids_start", "museum", "unusual")
 
@@ -46,7 +47,9 @@ def _applicable(intent: Intent, constraints: Constraints, shown: list[ShownPlace
         out.append("closer")
     if "other" in cats:  # a state service point (ЦОН): nothing else about it can be refined
         return out
-    if intent.budget != "low" and cats & (FOOD | PAID_FUN):
+    if intent.budget != "low" and priced_kinds(
+        list(cats), "low"
+    ):  # only food has a lever without prices
         out.append("cheaper")
     if not constraints.no_alcohol and cats & DRINKS:
         out.append("no_alcohol")

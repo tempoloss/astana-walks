@@ -13,7 +13,8 @@ from walks import generate as gen_mod
 from walks import intent as intent_mod
 from walks.dialog import TurnEnv, new_state, take_turn
 from walks.generate import _clean_want
-from walks.models import Intent, LLMOutput, LLMRec, LLMStep, Personal
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import Intent, LLMStep, Personal
 from walks.outing import DEFAULT_KINDS
 from walks.presets import PRESETS
 from walks.walking import offline_router
@@ -147,7 +148,7 @@ def test_a_follow_up_the_rules_read_does_not_call_the_model_first(monkeypatch):
 
 @pytest.mark.parametrize("lang", LANGS)
 def test_the_template_lead_has_conditions_wish_and_the_pick_with_the_facts(lang):
-    text = {"ru": "хочу кофе", "en": "i want coffee", "kk": "кофе ішкім келеді"}[lang]
+    text = {"ru": "погулять в парке", "en": "a walk in the park", "kk": "саябақта серуендеу"}[lang]
     out = say(text, lang, use_llm=False, when=None)
     turn = out.turn
     assert turn.kind == "places"
@@ -157,25 +158,31 @@ def test_the_template_lead_has_conditions_wish_and_the_pick_with_the_facts(lang)
     assert dialog_lead.lower_first(first.hours.text) in turn.reply
     assert (
         "+12" in turn.reply
-    )  # the temperature of the weather it was given, said for the real present
+    )  # a walk: the temperature of the weather it was given, said for the real present
     assert turn.reply.count(". ") <= 1  # one or two sentences
+    coffee = {"ru": "хочу кофе", "en": "i want coffee", "kk": "кофе ішкім келеді"}[lang]
+    assert (
+        "+12" not in say(coffee, lang, use_llm=False, when=None).turn.reply
+    )  # a café: the weather does not matter
 
 
 def test_the_lead_says_conditions_wish_and_pick_in_this_order_with_the_models_wish(monkeypatch):
-    Models(monkeypatch, Intent(categories=["cafe"]), want="Вы ищете, где выпить кофе")
+    Models(monkeypatch, Intent(categories=["park_garden"]), want="Вы ищете, где погулять")
     out = say(
-        "куда пойти на кофе, не знаю",
+        "куда пойти погулять, не знаю",
         weather=make_weather(12.0, 12.0, conditions=["nmu"], pm25=10.0, fetched_at="19:00"),
         when=None,
     )
     reply = out.turn.reply
-    assert reply.index("+12") < reply.index("НМУ") < reply.index("Вы ищете, где выпить кофе")
-    assert reply.index("Вы ищете, где выпить кофе") < reply.index("советую")
+    assert reply.index("+12") < reply.index("НМУ") < reply.index("Вы ищете, где погулять")
+    assert reply.index("Вы ищете, где погулять") < reply.index("советую")
     assert out.turn.places[0].name in reply
 
 
 def test_the_temperature_is_not_claimed_for_another_hour(monkeypatch):
-    out = say("хочу кофе", use_llm=False, weather=make_weather(12.0, 12.0, fetched_at="19:00"))
+    out = say(
+        "погулять в парке", use_llm=False, weather=make_weather(12.0, 12.0, fetched_at="19:00")
+    )
     assert (
         "+12" not in out.turn.reply
     )  # the time was set by hand: the weather now says nothing about it

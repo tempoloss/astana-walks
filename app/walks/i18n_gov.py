@@ -64,30 +64,10 @@ GOV_STRINGS: dict[str, tuple[str, str, str]] = {
         "открыто по данным ЦОН (gov4c.kz)",
         "open according to the Public Service Centre (gov4c.kz)",
     ),
-    "fact_open_gov": (
-        "ХҚКО (gov4c.kz) кестесі бойынша осы уақытта ашық.",
-        "По графику ЦОН (gov4c.kz) в это время открыто.",
-        "Open at this time according to the Public Service Centre schedule (gov4c.kz).",
-    ),
-    "fact_open_247_gov": (
-        "ХҚКО (gov4c.kz) деректері бойынша тәулік бойы жұмыс істейді.",
-        "По данным ЦОН (gov4c.kz) работает круглосуточно.",
-        "Open 24/7 according to the Public Service Centre (gov4c.kz).",
-    ),
-    "fact_nearest_open_gov": (
-        "Таңдалған {n} «{cat}» орнының ішінде түзу сызық бойынша ХҚКО (gov4c.kz) кестесі бойынша ашық ең жақыны.",
-        "Ближайшее по прямой из {n} подобранных мест «{cat}», открытое по графику ЦОН (gov4c.kz).",
-        "The nearest in a straight line of the {n} selected “{cat}” places that is open by the Public Service Centre schedule (gov4c.kz).",
-    ),
     "people_vs_gov": (
         "бұл ХҚКО (gov4c.kz) кестесімен сәйкес келмейді, сенімділік төмендетілді",
         "это расходится с графиком ЦОН (gov4c.kz), уверенность снижена",
         "this disagrees with the Public Service Centre schedule (gov4c.kz), confidence lowered",
-    ),
-    "fit_night_gov": (
-        "ХҚКО (gov4c.kz) кестесі бойынша осы уақытта ашық",
-        "по графику ЦОН (gov4c.kz) открыто в это время",
-        "the Public Service Centre schedule (gov4c.kz) says it is open at that time",
     ),
     # a state-service request: the one-sentence reply
     "gov_reply_open": (

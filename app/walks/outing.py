@@ -12,6 +12,19 @@ from .intent import parse_rules
 from .models import IntentResult
 
 DEFAULT_KINDS = ("park_garden", "attraction_landmark", "cafe", "museum_gallery")
+# «щас скучно»: something to do, never a café first: entertainment, a show or a film, a sight, a park, a museum
+BORED_KINDS = (
+    "entertainment",
+    "culture_theatre_cinema",
+    "attraction_landmark",
+    "park_garden",
+    "museum_gallery",
+)
+BORED_REFUSED = (
+    "cafe",
+    "restaurant",
+    "fast_food",
+)  # a bored person is not offered a place to sit and eat first
 _OUTING = re.compile(
     r"\bкуда (?:бы |же |тут |здесь |можно |мне |нам )*(?:сходить|пойти|податься|выбраться|сходим|пойдем|пойдём|идти)\b|"
     r"\bчто (?:есть |тут |здесь |интересного )*(?:рядом|поблизости|вокруг|посмотреть)\b|\bчем (?:бы )?заняться\b|"
@@ -23,9 +36,26 @@ _OUTING = re.compile(
 )
 
 
+_BORED = re.compile(
+    r"\bскучно\b|\bскучаю\b|\bскука\b|\bнечего делать\b|\bзаняться нечем\b|\bbored\b|\bboring\b|\bnothing to do\b|"
+    r"\bзеріктім\b|\bзеріге\w*\b|\bжалықтым\b|\bқызық\w* жоқ\b",
+    re.I,
+)
+
+
+def is_bored(text: str) -> bool:
+    """«щас скучно», «i'm bored», «зеріктім»: the person wants something to do."""
+    return bool(_BORED.search(text.lower()))
+
+
 def is_outing(text: str) -> bool:
     """The message asks where to go without naming a kind of place («куда сходить вечером»)."""
     return bool(_OUTING.search(text.lower()))
+
+
+def is_bored_outing(text: str) -> bool:
+    """«щас скучно куда сходить»: bored AND asking where to go (a bare «скучно» is still asked back)."""
+    return is_bored(text) and is_outing(text)
 
 
 def default_outing(text: str, when: datetime | None = None) -> IntentResult | None:
@@ -37,8 +67,16 @@ def default_outing(text: str, when: datetime | None = None) -> IntentResult | No
     rules = parse_rules(text, when)
     if rules.intent.categories or rules.intent.refusal != "none":
         return None
-    intent = rules.intent.model_copy(update={"categories": list(DEFAULT_KINDS)})
-    note = "; ".join(
-        filter(None, [rules.note, "куда сходить → прогулка, достопримечательность, кафе, музей"])
+    bored = is_bored(text)
+    kinds = BORED_KINDS if bored else DEFAULT_KINDS
+    update: dict = {"categories": list(kinds)}
+    if bored:
+        update["refused"] = [*rules.intent.refused, *BORED_REFUSED]
+    intent = rules.intent.model_copy(update=update)
+    what = (
+        "скучно → развлечения, культура, достопримечательность, парк, музей"
+        if bored
+        else ("куда сходить → прогулка, достопримечательность, кафе, музей")
     )
+    note = "; ".join(filter(None, [rules.note, what]))
     return IntentResult(intent=intent, parser="rules", note=note)

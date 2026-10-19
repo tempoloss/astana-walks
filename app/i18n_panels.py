@@ -15,9 +15,13 @@ PANEL: dict[str, Entry] = {
     "mf_s_who": ("Сіз туралы", "Кто вы", "About you"),
     "mf_kids": ("Балалармен жүремін", "Хожу с детьми", "I walk with children"),
     "mf_kids_age": ("Баланың жасы", "Возраст ребёнка", "Child's age"),
-    "mf_age_none": ("Белгісіз", "Не указан", "Not given"),
     "mf_lang": ("Жауап тілі", "Язык ответов", "Language of the answers"),
-    "mf_lang_as_query": ("Сұраудағыдай", "Как в запросе", "As in the request"),
+    "mf_lang_as_query": ("Сұраныстағыдай", "Как в запросе", "As in the request"),
+    "mf_age_many": (
+        "Бірнешеуін таңдауға болады",
+        "Можно выбрать несколько",
+        "You can pick several",
+    ),
     "mf_s_food": ("Тамақ пен сусын", "Еда и напитки", "Food and drink"),
     "mf_halal": ("Халал керек", "Нужен халяль", "I need halal"),
     "mf_alc": ("Алкогольсіз", "Без алкоголя", "No alcohol"),
@@ -53,7 +57,7 @@ PANEL: dict[str, Entry] = {
     ),
     "mf_s_about": ("Өзіңіз туралы айтыңыз", "Расскажите о себе", "Tell us about yourself"),
     "mf_about_hint": (
-        "Біз білуге тиіс бәрін еркін жазыңыз.",
+        "Біз білуге тиіс нәрсенің бәрін өз сөзіңізбен жазыңыз.",
         "Напишите всё, что нам стоит знать, своими словами.",
         "Write in your own words everything we should know.",
     ),
@@ -70,6 +74,11 @@ PANEL: dict[str, Entry] = {
     "mf_count": ("{n} / {max}", "{n} / {max}", "{n} / {max}"),
     "mf_save": ("Сақтау", "Сохранить", "Save"),
     "mf_saved": ("Сақталды", "Сохранено", "Saved"),
+    "mf_saved_on": (
+        "Сақталды. «Қалауларымды есте сақтау» қосылды: жоғарыдан өшіруге болады.",
+        "Сохранено. «Запоминать мои предпочтения» включено: выключить можно выше.",
+        "Saved. “Remember my preferences” is now on: you can turn it off above.",
+    ),
     "mf_save_fail": (
         "Сақтау мүмкін болмады. Өрістерді тексеріңіз.",
         "Не удалось сохранить. Проверьте поля.",

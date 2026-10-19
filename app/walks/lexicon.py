@@ -29,6 +29,7 @@ from .lexicon_data import (
     JOINS,
     KK_AMBIGUOUS,
     KK_BAR_JOINERS,
+    KK_NEARBY_WORDS,
     KK_POSSESSIVE_ENDINGS,
     KK_POSTPOSITIONS,
     KK_QUESTION,
@@ -181,6 +182,7 @@ class Hit:
         False  # a place kind the user has just come from («только из мечети»): not a wish
     )
     joined: bool = False  # right after a conjunction («кафе немесе бар»): the kk «бар» is the bar, not «there is»
+    asks: bool = False  # the kk «бар ма / бар ме»: «is there?», never a bar, whatever the rest of the message is
 
 
 @dataclass
@@ -305,9 +307,12 @@ def _is_negated(tokens: list[str], start: int, end: int, *, own_without: bool = 
         lo -= 1
         words += tokens[lo] not in DETERMINERS and tokens[lo] not in NEGATION_SKIP
     for k in range(lo, start):
-        if tokens[k] in NEGATORS:
+        if (
+            tokens[k] in NEGATORS and tokens[k] not in POSTFIX_NEGATORS
+        ):  # kk «емес» negates the word BEFORE it
             return not any(t in NEGATION_VOID for t in tokens[k + 1 : start])
-    return end < len(tokens) and tokens[end] in POSTFIX_NEGATORS
+    # «кофе емес», «сауда орталығы емес»: the kk negator follows the word (or the second word of its name)
+    return any(t in POSTFIX_NEGATORS for t in tokens[end : end + 2])
 
 
 def _single_hits(token: str) -> list[_Stem]:
@@ -381,6 +386,7 @@ _WORD_OR_STOP = re.compile(r"\w+|[.!?\n]")
 _LOCATIVES = tuple(tuple(normalize(p).split()) for p in LOCATIVE_BEFORE)
 _POSTPOSITIONS = tuple(normalize(p) for p in KK_POSTPOSITIONS)
 _POSSESSIVE = tuple(normalize(p) for p in KK_POSSESSIVE_ENDINGS)
+_NEARBY = frozenset(normalize(w) for w in KK_NEARBY_WORDS)
 
 
 def _names(text: str) -> _Names:
@@ -423,7 +429,13 @@ def _is_location(tokens: list[str], start: int, end: int, names: _Names, *, kk: 
         j += 1
     if j < len(tokens) and tokens[j] in names.mid:
         return True
-    if end < len(tokens) and tokens[end].startswith(_POSTPOSITIONS):
+    if (
+        end < len(tokens)
+        and tokens[end].startswith(_POSTPOSITIONS)
+        and not (
+            tokens[end] == "жакын" and tokens[end + 1 : end + 2] and tokens[end + 1] in _NEARBY
+        )
+    ):
         return True
     if (
         kk
@@ -491,6 +503,7 @@ def _hit(
         joined=start > 0
         and tokens[start - 1] in KK_BAR_JOINERS
         and not (end < len(tokens) and tokens[end] in KK_QUESTION),
+        asks=end < len(tokens) and tokens[end] in KK_QUESTION,
     )
 
 
@@ -520,8 +533,16 @@ def match(text: str) -> Matches:
     names, kk = _names(text), detect_language(text) == "kk"
     for tokens in _clauses(text):
         hits += _clause_hits(tokens, names, kk=kk)
-    language = detect_language(
-        text, kk_only_hit=any(h.kk_only and not h.fuzzy for h in hits), any_hit=bool(hits)
+    asks = [
+        h for h in hits if h.text in KK_AMBIGUOUS and h.asks
+    ]  # «туалет бар ма»: a kazakh question
+    hits = [h for h in hits if h not in asks]
+    language = (
+        "kk"
+        if asks
+        else detect_language(
+            text, kk_only_hit=any(h.kk_only and not h.fuzzy for h in hits), any_hit=bool(hits)
+        )
     )
     if language == "kk":
         hits = [h for h in hits if h.text not in KK_AMBIGUOUS or h.joined]

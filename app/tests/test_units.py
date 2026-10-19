@@ -12,7 +12,8 @@ from walks import generate as gen_mod
 from walks import llm, llm_providers
 from walks.hours import hours_state
 from walks.intent import parse_rules, parse_time_budget
-from walks.models import Intent, LLMOutput, LLMRec, LLMStep, load_pois
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import Intent, LLMStep, load_pois
 from walks.pipeline import recommend, round_location
 from walks.presets import PRESETS
 from walks.radius import reachable_radius_m
@@ -20,6 +21,17 @@ from walks.retrieve import retrieve
 from walks.route import build_route
 
 FIXTURE = Path(__file__).parent / "fixtures" / "poi_sample.json"
+
+
+@pytest.fixture(autouse=True)
+def _reasons_not_checked_for_facts(monkeypatch):
+    """These tests are about the chain, the cache and the claims: their fake reasons are not checked for a concrete
+    fact of the place (tests/test_answer_quality.py checks that)."""
+    import walks.generate as generation
+
+    monkeypatch.setattr(generation, "vague_ids", lambda *a, **k: [])
+
+
 WED_NOON = datetime(2026, 10, 14, 12, 0)
 WED_23 = datetime(2026, 10, 14, 23, 0)
 
@@ -215,9 +227,9 @@ def test_llm_output_validated(pois, monkeypatch):
             ),
             LLMRec(
                 poi_id="node/12",
-                why="Уютная кофейня. Всего 5 минут пешком. Сейчас открыто.",
+                why="Уютная кофейня. Всего 97 минут пешком. Сейчас открыто.",
                 time_on_site_min=500,
-                what_to_do="Выпейте кофе. Откроется в 08:00.",
+                what_to_do="Выпейте кофе. Откроется в 07:13.",
                 confidence="high",
                 generated_idea=True,
                 notes="Расстояние 120 м",
@@ -243,9 +255,11 @@ def test_llm_output_validated(pois, monkeypatch):
         c.walk_min,
         c.hours_state,
     )  # from code
-    assert r.why == "Уютная кофейня."
-    assert "минут" not in r.why
-    assert "открыто" not in r.why
+    assert r.why.startswith("Уютная кофейня.")
+    assert "минут" not in r.why  # 97 is not the walking time of the record: dropped
+    assert (
+        "Сейчас открыто" not in r.why
+    )  # a status in the model's own words: the card's line says it (walks.status)
     assert r.what_to_do == "Выпейте кофе."
     assert "120" not in r.notes
     assert r.time_on_site_min <= 90  # clamped to the budget

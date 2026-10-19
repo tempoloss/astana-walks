@@ -153,7 +153,7 @@ def test_a_museum_card_with_register_hours_names_the_register():
         note = hours_notes(c, lang)[0]
         assert needle in note
         assert "09:00 - 18:00" in note
-    # the card line names the register too when a day-qualified register schedule decides «open»
+    # a day-qualified register schedule decides «open» on the card's own line; the reason says no status (walks.status)
     open_poi = museum(
         opening_hours="Mo-Su 09:00-18:00",
         price_text=None,
@@ -162,6 +162,5 @@ def test_a_museum_card_with_register_hours_names_the_register():
     c_open = Candidate(
         poi=open_poi, distance_m=400, walk_min=5, travel_min=5, hours_state="open", score=1.0
     )
-    line = _open_fact(c_open, "ru")
-    assert "реестр" in line
-    assert "OSM" not in line
+    assert _open_fact(c_open, "ru") == ""
+    assert open_poi.hours_source() == MUSEUM_REGISTER

@@ -4,7 +4,7 @@
   "chain": [],
   "cases": 8,
   "cases_with_recs": 8,
-  "recs_total": 15,
+  "recs_total": 16,
   "hallucinated_poi": 0,
   "constraint_ok_rate": 100.0,
   "case_all_ok_rate": 50.0,
@@ -15,15 +15,15 @@
   "diversity": 100.0,
   "top1_ok_rate": 100.0,
   "top1_open_rate": 25.0,
-  "unknown_hours_rec_share": 73.3,
-  "non_osm_rec_share": 60.0,
-  "avg_walk_min": 29.7,
+  "unknown_hours_rec_share": 75.0,
+  "non_osm_rec_share": 56.2,
+  "avg_walk_min": 28.7,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 6.0,
-  "latency_ms_p90": 38.0,
+  "latency_ms_median": 7.5,
+  "latency_ms_p90": 44.0,
   "generation_ms_median": 0.0,
-  "generation_ms_p90": 0.0,
+  "generation_ms_p90": 2.0,
   "model_link": {
     "template": 8
   },
@@ -32,10 +32,10 @@
   "violation_cases": {
     "over_budget": 4
   },
-  "padded_rec_share": 60.0,
-  "expanded_rec_share": 40.0,
-  "backfill_rec_share": 0.0,
-  "substituted_rec_share": 20.0,
+  "padded_rec_share": 50.0,
+  "expanded_rec_share": 25.0,
+  "backfill_rec_share": 6.2,
+  "substituted_rec_share": 18.8,
   "padded_case_share": 75.0,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
@@ -69,8 +69,8 @@
     },
     {
       "case_id": "a05-nw-edge-cafe-socket",
-      "n_recs": 2,
-      "labelled_recs": 2,
+      "n_recs": 3,
+      "labelled_recs": 1,
       "silent": {}
     },
     {
@@ -129,8 +129,8 @@
     "cases_file": "abstain_cases.json",
     "case_set": "abstain",
     "records": 8,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:10+05:00"
+    "generated_at": "2026-10-19T10:36:45+05:00"
   }
 }

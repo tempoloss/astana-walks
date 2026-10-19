@@ -15,12 +15,14 @@ from .attributes import (
     has_socket,
     has_wifi,
     keyword_score,
+    local_food_signal,
     meat_place,
     pets_signal,
     requested_diets,
     serves_alcohol,
     wheelchair_access,
 )
+from .chains import collapse_duplicates
 from .city_layers import lit_near
 from .colocated import collapse_shared_coordinates
 from .feedback import FeedbackIndex
@@ -40,7 +42,6 @@ from .marks import Marks, count_marks, supply_nearby
 from .models import (
     POI,
     Candidate,
-    ClusterLog,
     Constraints,
     Filters,
     Intent,
@@ -51,7 +52,9 @@ from .models import (
 )
 from .names import NAME_RATIO_MIN, best_ratio, name_keys, names_place
 from .presets import PRESET_NAMES, PRESETS
+from .price_kind import price_bonus, quick_bonus
 from .radius import (
+    ERRAND_KINDS,
     FOOD_KINDS,
     MAX_RADIUS_M,
     NEAREST_FAR,
@@ -80,14 +83,17 @@ from .shelter import (
 from .stay import fit_stay_budget
 from .sun import is_dark, sun_for
 from .weather import INDOOR_CATEGORIES, OUTDOOR_CATEGORIES
+from .wish_rank import hours_rare, not_for, seen_outside, wish_bonus
 from .wishes import (
     keep_requested_kinds,
     mark_unmet_wishes,
     open_first,
+    round_the_clock_first,
     without_night_dead_ends,
 )
 
 TRANSIT_CATEGORY = "transit_station"
+MONEY_CATEGORY = "money"
 ANCHOR_RADIUS_M = 200  # a request from a starting place's own point comes from that place
 ANCHOR_PLACE_M = (
     1000  # how far the record of that place may sit from the point (a mall, a park, a monument)
@@ -107,10 +113,10 @@ DAYTIME_CATEGORIES = frozenset({"museum_gallery", "coworking_library"})
 MIN_IN_CATEGORY = (
     3  # fewer in-category candidates than this -> fill up with other categories (flagged)
 )
-TOP_N = 10
+TOP_N = (
+    20  # candidates handed to the generation step: the model narrows them to 2-3 for this request
+)
 HALAL_BONUS = 4.0  # a food place the record itself marks halal, for a request that asks for it
-CHEAPER_KINDS = frozenset({"fast_food", "cafe"})
-CHEAPER_BONUS = 1.0
 DIET_BONUS = 4.0  # a food place the record itself marks vegetarian / vegan / gluten-free / kosher, when asked
 MEAT_PENALTY = 3.0  # a meat house for a vegetarian / vegan request
 LANDMARK_BONUS = 3.0  # the place the user described («башня с шаром») by its name
@@ -169,6 +175,8 @@ def _score(
     liked: int = 0,
     deep_night: bool = False,
     kids_band: str | None = None,
+    hours_night: bool
+    | None = None,  # the clock of the arrival is night: «неизвестно» is likely closed
 ) -> tuple[float, list[str]]:
     reasons: list[str] = []
     s = 0.0
@@ -194,6 +202,7 @@ def _score(
         else:
             s -= 1.0
             reasons.append("halal_unverified")
+    s += wish_bonus(poi, intent, reasons)
     if cat in FOOD_KINDS:
         for diet in requested_diets(intent):
             if diet_signal(poi, diet):
@@ -265,22 +274,17 @@ def _score(
             s -= 1.5  # a step-free need is not met by «не указано»: confirmed places come first
             reasons.append("wheelchair_unverified")
     if intent.budget == "low" or getattr(intent, "price_cap_kzt", 0):
-        fee = poi.tag_dict().get("fee")
-        if fee == "no":
-            s += 1.0
-            reasons.append("free")
-        elif fee == "yes":
-            s -= 1.0
-        elif cat in CHEAPER_KINDS:
-            s += CHEAPER_BONUS  # no price data: the kind of place is the only signal (a snack bar costs less)
-        elif cat == "restaurant":
-            s -= 1.5
+        s += price_bonus(poi, reasons)
+    s += quick_bonus(poi, intent)
     if getattr(intent, "pets", False) and pets_signal(poi):
         s += 3.0
         reasons.append("pets")
-    if night:
-        if cat in {"bar_nightlife", "entertainment", "culture_theatre_cinema"}:
-            s += 1.5
+    hours_night = night if hours_night is None else hours_night
+    if night and cat in {"bar_nightlife", "entertainment", "culture_theatre_cinema"}:
+        s += 1.5
+    if (
+        hours_night
+    ):  # «щас уже поздно» at 08:40 is no night for the hours: the clock of the answer is
         if state != "open" and cat in DAYTIME_CATEGORIES:
             s -= 2.0  # a museum / library without confirmed hours is unlikely to be open at night
             reasons.append("daytime_place")
@@ -291,7 +295,7 @@ def _score(
                 s += DEEP_NIGHT_OPEN_BONUS  # 23:00-06:00: «неизвестно» is usually closed
 
     if state == "unknown":
-        s -= _UNKNOWN_PENALTY_NIGHT if night else _UNKNOWN_PENALTY
+        s -= _UNKNOWN_PENALTY_NIGHT if hours_night else _UNKNOWN_PENALTY
         reasons.append("hours_unknown")
         if deep_night and state == "unknown":
             reasons.append("night_unknown")  # the card says it may be closed
@@ -335,7 +339,9 @@ def _score(
                     reasons.append(WEATHER_OUTDOOR_KEPT)
                 if weather.air_bad:
                     reasons.append(AIR_OUTDOOR_KEPT)
-        elif cat in INDOOR_CATEGORIES:
+        elif cat in INDOOR_CATEGORIES or (  # a food request: fast food is eaten inside as a café is
+            cat == "fast_food" and intent.categories and set(intent.categories) <= FOOD_KINDS
+        ):
             s += 2.5
             if weather.adverse:
                 reasons.append("weather_indoor")
@@ -367,41 +373,6 @@ def _score(
     ):
         s -= GYM_OUTDOOR_PENALTY  # «спортзал» / «gym»: a stadium or a ski base is not what was asked for
     return s, reasons
-
-
-# ---------------------------------------------------------------- chain duplicates
-
-CLUSTER_RADIUS_M = 150  # same-chain points this close to the nearest one are one card
-
-
-def collapse_duplicates(cands: list[Candidate]) -> tuple[list[Candidate], list[ClusterLog]]:
-    """One card per chain: a candidate whose normalised name is similar (rapidfuzz ratio >= NAME_RATIO_MIN) to the
-    nearest member's, in the same category and within CLUSTER_RADIUS_M of it, collapses into that nearest member,
-    which records how many others it stands for (`nearby_same`). Also returns what was merged, for the log."""
-    reps: list[tuple[Candidate, set[str]]] = []
-    merged: list[list[str]] = []
-    for c in sorted(cands, key=lambda c: (c.distance_m, c.poi.id)):
-        keys = name_keys(c.poi)
-        for i, (rep, rep_keys) in enumerate(reps):
-            apart = haversine_m(rep.poi.lat, rep.poi.lon, c.poi.lat, c.poi.lon)
-            if rep.poi.category == c.poi.category and apart <= CLUSTER_RADIUS_M:
-                ratio = best_ratio(keys, rep_keys)
-                if ratio >= NAME_RATIO_MIN:
-                    merged[i].append(f"{c.poi.name} ({c.poi.id}, {apart:.0f} м, {ratio:.0f}%)")
-                    break
-        else:
-            reps.append((c, keys))
-            merged.append([])
-    kept = [
-        rep.model_copy(update={"nearby_same": len(m)})
-        for (rep, _), m in zip(reps, merged, strict=True)
-    ]
-    log = [
-        ClusterLog(kept_id=rep.poi.id, kept_name=rep.poi.name, merged=m)
-        for (rep, _), m in zip(reps, merged, strict=True)
-        if m
-    ]
-    return kept, log
 
 
 # ---------------------------------------------------------------- main entry
@@ -482,7 +453,7 @@ def _gather(
         arrival = local + timedelta(minutes=travel)
         hours = poi_hours(p, arrival)
         state = hours.state
-        if state == "closed":
+        if state == "closed" and not seen_outside(p, intent):
             if not requested or p.category in requested:
                 out.closed_in += 1
             else:
@@ -492,6 +463,7 @@ def _gather(
             (intent.accessibility and wheelchair_access(p) == "no")
             or (intent.with_kids and p.category == "bar_nightlife")
             or (intent.minor and p.category == "bar_nightlife")
+            or not_for(p, intent)
         ):
             out.other += 1
             continue
@@ -511,6 +483,7 @@ def _gather(
             ctx.liked.get(p.category, 0),
             deep_night,
             ctx.kids_band,
+            hours_night=night and not NIGHT_END <= arrival.hour < NIGHT_START,
         )
         out.scored.append(
             Candidate(
@@ -626,12 +599,18 @@ def retrieve(
     deep_night = is_deep_night(when)
     sun_info = sun_for(local.date()) if weather is not None else None
 
-    widest = base_radius * RADIUS_STEPS[-1]
-    here = anchor_names(lat, lon)
+    # the widening steps stop where the time's own circle would (a wider search for an unstated time widens no further)
+    own = declared_radius_m(intent, indoor, constraints.model_copy(update={"radius_floor_m": None}))
+    widest = max(base_radius, own * RADIUS_STEPS[-1])
+    here = (
+        set() if "attraction_landmark" in intent.wished else anchor_names(lat, lon)
+    )  # «что посмотреть» at Байтерек
     reachable: list[tuple[POI, float]] = []
     for p in pois:
         if p.category == TRANSIT_CATEGORY:
             continue  # stations are never recommended; they only feed the LRT hint (walks.transit)
+        if p.category == MONEY_CATEGORY and MONEY_CATEGORY not in intent.categories:
+            continue  # money points are used, not strolled: only an explicit request («где банкомат») brings them in
         d = haversine_m(lat, lon, p.lat, p.lon)
         if here and d <= ANCHOR_PLACE_M and normalize(p.name) in here:
             continue  # the place the user is at («рядом с Mega Silk Way») is where the walk starts, not where it goes
@@ -647,13 +626,30 @@ def retrieve(
         substitutes = frozenset(INDOOR_CATEGORIES - member_cats)
         member_cats |= INDOOR_CATEGORIES
 
-    # Widen the radius stepwise while no place of the requested kind is in range; only then back-fill.
-    for factor in RADIUS_STEPS:
-        radius = round(base_radius * factor)
-        in_radius = [(p, d) for p, d in reachable if d <= radius]
+    # Widen the radius stepwise while no place of the requested kind is in range (for «другие места» while fewer than
+    # MIN_IN_CATEGORY: more of the same kind first); «поближе» never widens. Only then back-fill.
+    enough = MIN_IN_CATEGORY if constraints.exclude_ids else 1
+    first = (
+        "fast_food" if intent.wished[:1] == ["fast_food"] else None
+    )  # «шаурму или бургер»: a café is no answer
+    capped = constraints.radius_cap_m is not None
+    for factor in RADIUS_STEPS[:1] if capped else RADIUS_STEPS:
+        radius = round(min(base_radius * factor, widest))
+        in_radius = [
+            (p, d)
+            for p, d in reachable
+            if d <= radius
+            or (intent.local_food and capped and d <= widest and local_food_signal(p))
+        ]  # «поближе» after «бешбармак»: the cap cuts the rest, the Kazakh place stays
         pool = _gather(in_radius, radius, intent, local, night, weather, ctx, deep_night)
-        if not requested or any(
-            is_member(c.poi, member_cats, requested, intent) for c in pool.scored
+        if not requested or (
+            sum(is_member(c.poi, member_cats, requested, intent) for c in pool.scored) >= enough
+            and (first is None or any(c.poi.category == first for c in pool.scored))
+            and (not intent.local_food or any("local_food" in c.reasons for c in pool.scored))
+            and (  # «музей?»: a museum proper, not only a gallery in a mall
+                intent.wished != ["museum_gallery"]
+                or any("museum" in c.reasons for c in pool.scored)
+            )
         ):
             break
 
@@ -666,7 +662,10 @@ def retrieve(
         )
         return (bool(wished) and not named, -c.score, c.distance_m, c.poi.id)
 
-    scored, merged_log = collapse_duplicates(pool.scored)
+    daytime = (
+        NIGHT_END <= local.hour < NIGHT_START
+    )  # a meal by day: the nearer place, not the one with hours
+    scored, merged_log = collapse_duplicates(hours_rare(pool.scored, daytime and intent.eat))
     scored, shared_log = collapse_shared_coordinates(scored)
     merged_log += shared_log
     clustered_away = len(pool.scored) - len(scored)
@@ -693,6 +692,9 @@ def retrieve(
             if is_member(c.poi, member_cats, requested, intent)
             or (
                 backfill_ok(c.poi.category, intent, stroll)
+                and (  # «ещё»: the same kind; «без алкоголя» after it rules the bars out, not the answer
+                    not constraints.exclude_ids or (constraints.no_alcohol and not strict)
+                )
                 and c.distance_m <= base_radius
                 and (
                     not outdoor_request or c.poi.category in OUTDOOR_REQUESTS
@@ -728,7 +730,11 @@ def retrieve(
         chosen = without_night_dead_ends(chosen, wished)
 
     cands = sorted(chosen, key=rank)
-    if deep_night:
+    if night and ERRAND_KINDS & set(
+        requested
+    ):  # an errand at night: open first, round the clock next
+        cands = round_the_clock_first(cands, wished)
+    elif deep_night:
         cands = open_first(cands, wished)
     top = keep_named(cands, keep_requested_kinds(cands, requested, top_n, rank))
     top = [

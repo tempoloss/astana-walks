@@ -326,6 +326,7 @@ function renderSheet() {
       }
     },
     onblur: validName,
+    onfocus: (e) => { if (!draft.touched) e.target.select(); }, // a suggested name is replaced by typing, not added to
   });
   nameInput.value = draft.name; // `value` as an attribute is only the default
   setBox.replaceChildren(

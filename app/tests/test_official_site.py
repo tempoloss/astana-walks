@@ -287,18 +287,12 @@ def test_the_quoted_site_hours_never_read_as_a_claim_of_open_beside_an_unknown_s
     ],
 )
 def test_open_is_attributed_to_the_source_of_the_hours(lang, word, other):
+    """The status and its source are the card's own hours line (walks.status, `hours.source`), never the reason."""
     site = cand("open", opening_hours="Mo-Su 09:00-21:00", field_sources={"opening_hours": SITE})
     said = " ".join(facts(site, intent(lang), None, [site], Trip(5, 30)))
-    assert word in said.lower()
+    assert word not in said.lower()
     assert other not in said
-    osm = cand(
-        "open",
-        opening_hours="Mo-Su 09:00-21:00",
-        field_sources={"opening_hours": {"source": "osm"}},
-    )
-    assert word not in " ".join(facts(osm, intent(lang), None, [osm], Trip(5, 30))).lower()
-    always = cand("open", opening_hours="24/7", field_sources={"opening_hours": SITE})
-    assert word in " ".join(facts(always, intent(lang), None, [always], Trip(5, 30))).lower()
+    assert site.poi.hours_source() == "official_site"
 
 
 # ---------------------------------------------------------------- the website's description
@@ -313,9 +307,9 @@ DESCRIPTION = (
 def test_the_site_description_is_quoted_with_its_source_and_without_its_hours(lang):
     c = cand(description_official=DESCRIPTION, field_sources={"description_official": SITE})
     what = template_what(c, intent(lang))
-    assert (
-        t("info_site", lang, text="Lilou Bar — коктейльный бар-бистро с панорамным видом.") in what
-    )
+    quote = t("info_site", lang, text="Lilou Bar — коктейльный бар-бистро с панорамным видом.")
+    # the site speaks Russian: an English card does not quote it (no Cyrillic in English prose)
+    assert (quote not in what) if lang == "en" else (quote in what)
     assert "15:00" not in what  # hours are the card's own fields
     assert poi(
         description_official=DESCRIPTION, field_sources={"description_official": SITE}
@@ -383,7 +377,9 @@ def test_a_site_hours_card_says_open_by_the_site_and_exposes_the_page(monkeypatc
         "official_site",
         SITE_URL,
     )
-    assert "официального сайта" in rec.why
+    assert (
+        "официального сайта" not in rec.why
+    )  # the card's hours line names the source, the reason does not
     assert "OSM" not in rec.why
 
 

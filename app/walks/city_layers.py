@@ -74,6 +74,19 @@ KIND_WORDS: dict[str, tuple[str, ...]] = {
     "attraction_landmark": ("памятник", "монумент", "достопримеч", "attraction", "монумент"),
     "viewpoint": ("смотров", "viewpoint"),
     "public_toilet": ("туалет", "дәретхана", "toilet", "wc"),
+    "pharmacy": ("аптек", "дәріхан", "pharmac", "drugstore"),
+    "grocery": (
+        "продуктов",
+        "супермаркет",
+        "минимаркет",
+        "мини-маркет",
+        "grocery",
+        "supermarket",
+        "бакалея",
+        "гастроном",
+    ),
+    "money": ("банкомат", "банк", "atm", "обмен", "валют", "avalj"),
+    "lodging": ("гостиниц", "отел", "хостел", "hotel", "hostel", "қонақүй", "guest house"),
     "transit_station": ("остановк", "вокзал", "станци", "station", "bus stop"),
 }
 

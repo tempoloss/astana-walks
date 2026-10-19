@@ -76,6 +76,17 @@ def test_clouds_after_the_temperature_group_are_the_forecast_not_the_sky():
             "METAR UACC 171200Z 30002MPS 9999 BKN026 10/05 Q1025 TEMPO RA",
             None,
         ),  # a trend is not now
+        (
+            "UACC 171200Z 30002MPS 9999 IC SKC M30/M32 Q1040",
+            None,
+        ),  # diamond dust under a clear sky is no snowfall
+        (
+            "UACC 171200Z 30002MPS 9999 -SN SKC M10/M12 Q1040",
+            None,
+        ),  # precipitation needs cloud: a contradiction
+        ("UACC 171200Z 30002MPS 9999 -SN FEW030 M10/M12 Q1040", ("snow", 1)),
+        ("UACC 180300Z 26002MPS 0800 R22/0800 FG VV002 03/03 Q1029", None),  # fog is not rain
+        ("UACC 180500Z 24003MPS 3000 BR OVC002 05/05 Q1030", None),  # mist is not rain
         ("METAR UACC 171200Z 30002MPS 9999 VCSH BKN026 10/05 Q1025", None),  # in the vicinity
     ],
 )
@@ -311,6 +322,7 @@ def test_the_endpoint_reads_the_refreshed_weather_and_never_the_network(client, 
         "sky",
         "precip",
         "air",
+        "notice",
         "temp",
         "vis",
         "pm25",
@@ -427,3 +439,118 @@ def test_the_scenario_wind_speed_and_card_blocks(client, monkeypatch):
     assert (snow["temp"]["temp_c"], snow["vis"]["m"], len(snow["hours"]["items"])) == (-3, 3000, 6)
     none = client.get("/api/conditions?fake=none").json()
     assert none["temp"] is none["hours"] is None
+
+
+# ------------------------------------------------------------------------------------------- what the map may draw
+
+
+def test_a_wrong_precipitation_never_reaches_the_map():
+    """Real nights at UACC: fog and mist (FG, BR, PRFG) under overcast, clear frosty air: none of that is rain or snow."""
+    for raw in (
+        "METAR UACC 180200Z 28003MPS 0800 R22/0800 PRFG OVC003 02/02 Q1029 NOSIG",
+        "METAR UACC 180500Z 24003MPS 3000 BR OVC002 05/05 Q1030 NOSIG",
+        "METAR UACC 180300Z 26002MPS 0800 FG VV002 03/03 Q1029 NOSIG",
+        "METAR UACC 171200Z 30002MPS 9999 IC SKC M30/M32 Q1040 NOSIG",
+    ):
+        obs = metar.parse_metar(raw, datetime(2026, 10, 20, tzinfo=UTC))
+        assert obs is not None
+        assert wx._obs_fields(obs, {})["precip_now"] == "", raw
+
+
+def test_a_report_of_65_minutes_is_no_longer_falling_now(monkeypatch):
+    monkeypatch.setattr(wx, "_latest", _report(minutes_ago=60))
+    assert conditions.current(NOW)["precip"] is not None
+    monkeypatch.setattr(wx, "_latest", _report(minutes_ago=66))
+    assert conditions.current(NOW)["precip"] is None
+
+
+def test_the_forecast_never_makes_the_precipitation(monkeypatch):
+    """3 mm in MET Norway's next hour with no observation: nothing falls on the map."""
+    weather = wx.make_weather(2.0, 0.0, 18.0, 3.0, forecast_used=True, wind_from_deg=90)
+    monkeypatch.setattr(wx, "_latest", weather)
+    out = conditions.current(NOW)
+    assert out["precip"] is None
+    assert out["wind"]["source"] == "met-no"
+
+
+def test_a_storm_notice_is_shown_in_its_own_words(monkeypatch):
+    storm = WeatherWarning(
+        kind="storm",
+        title="Штормовое предупреждение ОЯ № 17 от 17 октября 2026 года",
+        text="г. Астана: 18 октября ночью и утром ожидается туман.",
+        source_url="https://www.kazhydromet.kz/ru/storm",
+        valid_to="2026-10-18T08:00+05:00",
+        active=True,
+    )
+    monkeypatch.setattr(wx, "_latest", _report(warnings=(storm,)))
+    notice = conditions.current(NOW)["notice"]
+    assert notice == {
+        "text": "18 октября ночью и утром ожидается туман",
+        "phenomena": ["fog"],
+        "periods": ["night", "morning"],
+        "until": "08:00 18.10",
+        "source": "kazhydromet",
+        "at": "",
+        "url": "https://www.kazhydromet.kz/ru/storm",
+    }
+    assert conditions.current(NOW)["air"] is None  # a storm notice is not the bad-air flag
+    later = storm.model_copy(update={"active": False})
+    monkeypatch.setattr(wx, "_latest", _report(warnings=(later,)))
+    assert conditions.current(NOW)["notice"] is None
+
+
+def test_the_scenario_word_fog_is_a_storm_notice(client, monkeypatch):
+    monkeypatch.setenv("WALKS_FX_FAKE", "1")
+    fog = client.get("/api/conditions?fake=fog%2Bday").json()
+    assert "туман" in fog["notice"]["text"]
+    assert client.get("/api/conditions?fake=day").json()["notice"] is None
+
+
+@pytest.mark.parametrize(
+    ("text", "phenomena", "periods"),
+    [
+        ("18 октября ночью и утром ожидается туман", ["fog"], ["night", "morning"]),
+        ("Ожидается сильный ветер 15-20 м/с, порывы до 25 м/с, днем", ["wind"], ["day"]),
+        ("Гололёд и снег вечером", ["ice", "snow"], ["evening"]),
+        ("В течение суток сильная жара", ["heat"], ["all"]),
+        ("Ожидаются неблагоприятные метеоусловия", ["smog"], []),
+        ("Грозы, град", ["thunder", "hail"], []),
+        ("Сильный мороз ночью", ["cold"], ["night"]),
+        ("Пыльная буря днем", ["dust"], ["day"]),
+        (
+            "Ожидается нечто необычное",
+            [],
+            [],
+        ),  # no phenomenon we know: the card only names the source
+        ("", [], []),
+    ],
+)
+def test_the_notice_phenomenon_and_period_are_found_in_its_words(text, phenomena, periods):
+    assert conditions.classify_notice(text) == (phenomena, periods)
+
+
+def test_every_phenomenon_and_period_code_has_its_words_in_three_languages():
+    """The card writes the title from the codes: a code without a string would show its key to a visitor."""
+    from i18n import UI
+
+    for code, _ in conditions.PHENOMENA:
+        assert f"fx_ph_{code}" in UI, code
+    for code, _ in conditions.PERIODS:
+        assert f"fx_per_{code}" in UI, code
+    for key in ("fx_notice_title", "fx_notice_fmt", "fx_notice_text", "fx_and"):
+        assert key in UI
+
+
+def test_a_notice_of_an_unknown_phenomenon_has_no_codes(monkeypatch):
+    storm = WeatherWarning(
+        kind="storm",
+        title="ОЯ № 4",
+        text="г. Астана: ожидается нечто необычное.",
+        source_url="https://www.kazhydromet.kz/ru/storm",
+        valid_to="2026-10-18T08:00+05:00",
+        active=True,
+    )
+    monkeypatch.setattr(wx, "_latest", _report(warnings=(storm,)))
+    notice = conditions.current(NOW)["notice"]
+    assert (notice["phenomena"], notice["periods"]) == ([], [])
+    assert notice["url"] == "https://www.kazhydromet.kz/ru/storm"  # the link is what remains

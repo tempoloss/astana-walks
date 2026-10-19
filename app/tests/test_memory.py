@@ -236,15 +236,18 @@ def test_no_alcohol_drops_bars_and_alcohol_tags():
     assert second.intent.intent.budget == first.intent.intent.budget
 
 
-def test_a_new_request_resets_the_dialogue():
+def test_a_new_request_keeps_the_dialogue_s_shown_places_and_shows_new_ones():
     pois = _cafes()
     first = _ask("Кафе", pois)
     conv = conversation_after(None, first)
     fresh = _ask("Кафе с Wi-Fi", pois, conversation=conv)
     assert not fresh.continued
     assert fresh.constraints.exclude_ids == []
+    assert not {r.poi.id for r in first.recs} & {
+        r.poi.id for r in fresh.recs
+    }  # walks.variety: no repeats
     again = conversation_after(conv, fresh)
-    assert again.shown_ids == [r.poi.id for r in fresh.recs]
+    assert again.shown_ids == [*conv.shown_ids, *(r.poi.id for r in fresh.recs)]
     assert again.turns == 1
 
 
@@ -716,6 +719,18 @@ def test_a_childs_age_needs_with_kids():
     assert Profile(with_kids=False, kids_age_band="4-7").kids_age_band is None
     p = remember(Profile(), "kids_age_band:4-7")  # an age alone is not kept either once validated
     assert Profile.model_validate(p.model_dump()).kids_age_band is None
+
+
+def test_several_children_keep_every_age_group_and_the_youngest_drives_the_ranking():
+    p = Profile(with_kids=True, kids_age_bands=["8-12", "4-7"])
+    assert p.kids_age_bands == ["4-7", "8-12"]  # youngest first, once each
+    assert p.kids_age_band == "4-7"
+    assert personal_view(p).kids_age_band == "4-7"
+    again = remember(p, "kids_age_band:0-3")  # a chip adds an age to the others
+    assert Profile.model_validate(again.model_dump()).kids_age_bands == ["0-3", "4-7", "8-12"]
+    line = next(i.label for i in list_items(p, lang="ru") if i.key == "with_kids")
+    assert "4–7, 8–12 лет" in line
+    assert preferences_payload(p)["kids_age_bands"] == ["4-7", "8-12"]
 
 
 def test_avoided_kinds_are_a_hard_constraint_unless_the_request_names_the_kind():

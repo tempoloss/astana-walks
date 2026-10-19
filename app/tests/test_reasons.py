@@ -44,7 +44,7 @@ def cand(pid="p", dist=300, state="unknown", reasons=(), **kw) -> Candidate:
 
 
 def intent(lang="ru", **kw) -> Intent:
-    return Intent(language=lang, time_budget_min=60, **kw)
+    return Intent(language=lang, time_budget_min=60, time_stated=True, **kw)  # «на час»
 
 
 TRIP = Trip(one_way_min=5, stay_min=30)
@@ -65,30 +65,26 @@ def test_the_time_window_fact_carries_the_numbers_of_the_trip_and_only_when_it_f
 
 
 @pytest.mark.parametrize("lang", LANGS)
-def test_open_is_said_only_for_a_confirmed_state_and_24_7_only_for_that_string(lang):
-    always = said(cand(state="open", opening_hours="24/7"), lang=lang)
-    by_hours = said(cand(state="open", opening_hours="Mo-Su 09:00-21:00"), lang=lang)
-    unknown = said(cand(state="unknown", opening_hours="Mo-Su 09:00-21:00"), lang=lang)
-    assert always != by_hours
-    assert "24/7" in said(cand(state="open", opening_hours="24/7"), lang="en")
-    assert "24/7" not in said(cand(state="open", opening_hours="Mo-Su 09:00-21:00"), lang="en")
-    assert "open" not in said(cand(state="unknown"), lang="en").lower()  # never «open» without data
-    assert "открыт" not in unknown
-    assert "работает" not in unknown
+def test_a_reason_never_states_the_status_the_card_line_says_it(lang):
+    for c in (
+        cand(state="open", opening_hours="24/7"),
+        cand(state="open", opening_hours="Mo-Su 09:00-21:00"),
+        cand(state="unknown", opening_hours="Mo-Su 09:00-21:00"),
+    ):
+        text = said(c, lang=lang).lower()
+        for word in ("открыт", "работает", "круглосуточ", "open", "24/7", "ашық", "тәулік"):
+            assert word not in text, (word, text)
 
 
-def test_comparison_facts_need_peers_and_say_how_many():
+def test_no_selection_note_is_a_reason():
     near = cand("near", 100, state="open", opening_hours="Mo-Su 09:00-21:00")
     far = cand("far", 400, state="open", opening_hours="Mo-Su 09:00-21:00")
-    park = cand("park", 250, category="park_garden")
+    park = cand("park", 250, category="park_garden", reasons=["category"])
     peers = [near, far, park]
-    assert "Ближайшее по прямой из 2" in said(near, peers)
-    assert "Ближайшее" not in said(far, peers)
-    assert "Единственное место «парк / сквер»" in said(park, peers)
-    assert "Единственное" not in said(
-        near, [near, far]
-    )  # a cafe is not a rarity, and two peers are too few
-    assert "Единственное" not in said(park, [park, near])  # three candidates at least
+    for c in peers:
+        text = said(c, peers)
+        for note in ("Ближайшее по прямой", "Единственное место", "как вы просили", "Совпадает с"):
+            assert note not in text, text
 
 
 def test_wikipedia_facts_follow_the_fields_and_the_ranking_among_peers():
@@ -112,19 +108,15 @@ def test_wikipedia_facts_follow_the_fields_and_the_ranking_among_peers():
     assert "Википеди" not in said(nothing, peers)
 
 
-def test_attributes_are_said_only_when_the_field_says_so_and_the_weather_allows():
+def test_the_record_s_own_features_are_the_reason():
     tables = cand(outdoor_seating="yes", internet_access="wlan", wheelchair="yes")
-    text = said(tables, lang="en")
-    assert "tables outside" in text
-    assert "Wi-Fi" in text
-    assert "wheelchair" in text
+    text = said(tables, lang="en").lower()
+    assert "outdoor seating" in text
+    assert "wi-fi" in text
+    assert "step-free" in text
     bare = said(cand(outdoor_seating="no"), lang="en")
-    assert "tables outside" not in bare
+    assert "outdoor seating" not in bare
     assert "Wi-Fi" not in bare
-    frost = manual_weather(-30.0)
-    assert "tables outside" not in said(
-        tables, lang="en", weather=frost
-    )  # nobody sits outside at −30
 
 
 def test_wishes_come_first_and_each_one_is_a_reason_code():
@@ -137,14 +129,14 @@ def test_wishes_come_first_and_each_one_is_a_reason_code():
 
 
 @pytest.mark.parametrize("lang", LANGS)
-def test_a_why_has_at_most_two_sentences_and_a_fallback_when_nothing_is_known(lang):
+def test_a_why_has_at_most_two_sentences_and_the_honest_line_when_nothing_is_known(lang):
     c = cand(reasons=["kids", "quiet", "category"], state="open", opening_hours="24/7")
     why = compose_why(c, intent(lang), None, [c], TRIP)
     assert len(re.split(r"(?<=[.!?])\s+", why)) <= MAX_FACTS
     bare = compose_why(
         cand(), intent(lang), None, [cand()], Trip(60, 60)
-    )  # no time fact, nothing else
-    assert bare
+    )  # no time fact, nothing else: no filler, no «рядом с вами», the honest line
+    assert bare == t("why_none", lang)
 
 
 def test_an_off_category_card_says_so_first():
@@ -166,7 +158,9 @@ def test_what_to_do_uses_the_data_and_not_the_collectors_boilerplate():
     assert kk.startswith("Асханасы:")
     assert "в Астане" not in ru
     unknown_cuisine = cand(tags=["cuisine=ethiopian"], address="Астана, ул. Мира 1")
-    assert template_what(unknown_cuisine, intent("ru")).startswith("Адрес: Астана, ул. Мира 1.")
+    assert template_what(unknown_cuisine, intent("ru")).startswith(
+        "Адрес: ул. Мира 1."
+    )  # no city word
     wiki = cand(
         description_source="wikipedia",
         description="Старое описание. Второе предложение.",

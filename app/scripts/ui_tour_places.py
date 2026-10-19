@@ -170,8 +170,8 @@ def locate(t, browser, base: str) -> None:
         fail(s, f"the start after the button: {here}")
     if not (decimals_ok(here["lat"]) and decimals_ok(here["lon"])):
         fail(s, "the start is not rounded to 3 decimals")
-    if "карте" not in page.locator("#where-text").inner_text():
-        fail(s, "the composer does not say it is a point on the map")
+    if "геолокации" not in page.locator("#where-text").inner_text():
+        fail(s, "the composer does not say the start comes from the device's location")
     page.context.close()
 
     # outside Astana: a plain line, the start stays
@@ -509,10 +509,18 @@ def places(t, browser, base: str) -> None:
 
 
 def late_night(t, browser, base: str) -> None:
-    """Late at night «хочу поесть» is answered «по пути домой» when a home is saved; without one a chip offers it."""
+    """Late at night «хочу поесть» is answered «по пути домой» when a home is saved and the place really lies toward it
+    (the server says so only for a place that covers a real share of the way); without a home a chip offers it."""
+    # (where «Дом» is, where the visitor stands, is the first food place on the way home?): the pairs were measured
+    # against the data: from Республики 5 the way to Кенесары 40 passes food places, the way to Мангилик Ел 55 does not
+    night_home(t, browser, base, "Кенесары 40", "Республики 5", on_the_way=True)
+    night_home(t, browser, base, "Мангилик Ел 55", "Республики 5", on_the_way=False)
+
+
+def night_home(t, browser, base: str, home: str, here: str, *, on_the_way: bool) -> None:
     page = t.open(browser, base)
     open_where(t, page)
-    pick_first(page, "#loc-q", "Мангилик Ел 55")
+    pick_first(page, "#loc-q", home)
     page.evaluate(
         "() => { const s = JSON.parse(sessionStorage.getItem('anyq.dialog')); s.at = '23:30';"
         " sessionStorage.setItem('anyq.dialog', JSON.stringify(s)); }"
@@ -540,17 +548,29 @@ def late_night(t, browser, base: str) -> None:
     open_where(
         t, page
     )  # «Дом» is where the visitor stood a moment ago: now they stand somewhere else
-    pick_first(page, "#loc-q", "Кенесары 40")
+    pick_first(page, "#loc-q", here)
     page.wait_for_timeout(800)
     reqs = turn_requests(page)
     t.ask(page, "хочу поесть")
     body = reqs[-1]
-    s = t.shot(page, "night-home", "late at night with «Дом» saved: «по пути домой»")
+    s = t.shot(
+        page,
+        "night-home" if on_the_way else "night-home-far",
+        "late at night with «Дом» saved on the way: «по пути домой»"
+        if on_the_way
+        else "late at night with «Дом» far in another direction: no «по пути домой»",
+    )
     forgive_pins(s)
     if [b["kind"] for b in body.get("bookmarks") or []] != ["home"]:
         fail(s, f"bookmarks of the request: {body.get('bookmarks')}")
-    if "по пути домой" not in page.locator("#thread .turn:last-child .reply").first.inner_text():
-        fail(s, "the late-night answer does not say «по пути домой»")
+    said = "по пути домой" in page.locator("#thread .turn:last-child .reply").first.inner_text()
+    if on_the_way and not said:
+        fail(
+            s,
+            "the late-night answer does not say «по пути домой» although the place lies on the way",
+        )
+    if said and not on_the_way:
+        fail(s, "the late-night answer says «по пути домой» with home far in another direction")
     if page.locator("#thread .turn:last-child .mark-home").count():
         fail(s, "the «Отметить дом» chip stays although a home is saved")
     page.context.close()

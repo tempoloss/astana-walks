@@ -1,0 +1,22 @@
+{"sel": "[\"amenity\"=\"pharmacy\"]", "elements": 188}
+{"sel": "[\"shop\"~\"^(supermarket|convenience|greengrocer|butcher)$\"]", "elements": 641}
+{"added": 726, "dup": 1, "dropped": 102}
+{"sel": "[\"amenity\"=\"pharmacy\"]", "elements": 188}
+{"sel": "[\"shop\"~\"^(supermarket|convenience|greengrocer|butcher)$\"]", "elements": 641}
+{"added": 726, "dup": 1, "dropped": 102}
+{"sel": "[\"amenity\"=\"pharmacy\"]", "elements": 188}
+{"sel": "[\"shop\"~\"^(supermarket|convenience|greengrocer|butcher)$\"]", "elements": 641}
+{"sel": "[\"amenity\"=\"toilets\"]", "elements": 47}
+{"added": 33, "dup": 715, "dropped": 102}
+{"sel": "[\"amenity\"=\"pharmacy\"]", "elements": 188}
+{"sel": "[\"shop\"~\"^(supermarket|convenience|greengrocer|butcher)$\"]", "elements": 641}
+{"sel": "[\"amenity\"=\"toilets\"]", "elements": 47}
+{"added": 33, "dup": 715, "dropped": 102}
+{"sel": "[\"amenity\"~\"^(atm|bank|bureau_de_change)$\"]", "elements": 486}
+{"added": 412, "dup": 0, "dropped": 0}
+{"sel": "[\"tourism\"~\"^(hotel|hostel|guest_house)$\"]", "elements": 140}
+{"added": 126, "dup": 0, "dropped": 11}
+{"sel": "[\"tourism\"~\"^(hotel|hostel|guest_house)$\"]", "elements": 140}
+{"added": 126, "dup": 0, "dropped": 11}
+{"sel": "[\"tourism\"~\"^(hotel|hostel|guest_house)$\"]", "elements": 140}
+{"added": 126, "dup": 0, "dropped": 11}

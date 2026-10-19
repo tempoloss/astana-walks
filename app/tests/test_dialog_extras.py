@@ -31,6 +31,11 @@ NOW = datetime(2026, 10, 17, 19, 0)  # a Saturday evening, Astana local time
 NIGHT = datetime(2026, 10, 17, 21, 0)  # after the sunset of that day
 LANGS = ("ru", "kk", "en")
 COFFEE = {"ru": "хочу кофе", "kk": "кофе ішкім келеді", "en": "i want coffee"}
+WALK = {
+    "ru": "погулять в парке",
+    "kk": "саябақта серуендеу",
+    "en": "a walk in the park",
+}  # the weather matters here
 FLIGHT = {
     "ru": "кофе, до вылета 2 часа",
     "kk": "ұшуға дейін 2 сағат, кофе ішкім келеді",
@@ -254,12 +259,15 @@ def test_ordinary_requests_are_not_taken_for_afisha_or_bus_questions(text):
 
 @pytest.mark.parametrize("lang", LANGS)
 def test_an_active_warning_adds_one_notice_with_its_link(lang):
-    turn, _ = say(COFFEE[lang], lang, weather=make_weather(10.0, 10.0, warnings=[warning()]))
+    turn, _ = say(WALK[lang], lang, weather=make_weather(10.0, 10.0, warnings=[warning()]))
     (notice,) = [n for n in turn.notices if n.kind == "weather"]
     assert notice.source is not None
     assert notice.source.url == "https://www.kazhydromet.kz/ru/storm"
-    assert "ожидается туман" in notice.text  # the official words, as they are
-    assert notice.detail.startswith("Штормовое предупреждение")
+    assert (
+        notice.text
+        == {"kk": "Қазгидромет: тұман", "ru": "Казгидромет: туман", "en": "Kazhydromet: fog"}[lang]
+    )
+    assert "ожидается туман" in notice.detail  # the official words, as they are, behind the title
 
 
 def test_a_warning_that_is_not_active_yet_says_nothing():
@@ -281,9 +289,11 @@ def test_adverse_weather_at_the_station_is_said_in_the_lead_not_as_a_notice(lang
         observed_at="2026-10-17T18:50+05:00",
         precip_adverse=False,
     )
-    turn, _ = say(COFFEE[lang], lang, weather=observed)
+    turn, _ = say(WALK[lang], lang, weather=observed)
     assert turn.notices == []
     assert tw("wx_c_fog", lang).lower() in turn.reply.lower()
+    cafe, _ = say(COFFEE[lang], lang, weather=observed)
+    assert tw("wx_c_fog", lang).lower() not in cafe.reply.lower()  # a café: the fog does not matter
 
 
 @pytest.mark.parametrize("lang", LANGS)
@@ -298,7 +308,7 @@ def test_the_nmu_notice_names_astana_and_the_day_only(lang):
         valid_to="2026-10-19T00:00+05:00",
         active=True,
     )
-    turn, _ = say(COFFEE[lang], lang, weather=make_weather(10.0, 10.0, warnings=[nmu]))
+    turn, _ = say(WALK[lang], lang, weather=make_weather(10.0, 10.0, warnings=[nmu]))
     (notice,) = [n for n in turn.notices if n.kind == "weather"]
     assert notice.source is not None
     assert notice.source.url.endswith("/ru/ecology/nmu")

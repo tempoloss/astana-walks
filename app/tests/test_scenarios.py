@@ -47,7 +47,11 @@ def test_scenario_basics(pois, scenario):
     if intent.with_kids and intent.mode == "walk":
         base = min(base, kids_walk_radius_m())  # a child's walk is capped at 15 minutes one way
     radius = res.retrieval.filters.radius_effective_m
-    assert radius == round(base * res.retrieval.filters.radius_factor)
+    declared = res.retrieval.filters.radius_declared_m
+    assert (
+        declared >= base
+    )  # no time stated: the search reaches as a 90-min outing (walks.pipeline)
+    assert radius == round(declared * res.retrieval.filters.radius_factor)
     for r in res.recs:
         assert (
             haversine_m(lat, lon, r.poi.lat, r.poi.lon) <= radius + 120

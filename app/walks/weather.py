@@ -58,6 +58,18 @@ WEATHER_TOKENS = (
     "wind",
 )
 AIR_TOKENS = ("smog", "nmu")  # smoke / haze at the station, the НМУ of Kazhydromet: the air is bad
+_WET_TOKENS = frozenset({"thunder", "freezing_rain", "rain", "snow", "blowing_snow"})
+
+
+def harsh(w: WeatherInfo | None) -> bool:
+    """Truly harsh conditions, the only ones that move a stated wish to see the sights indoors: frost (apparent
+    temperature at or below COLD_APPARENT_C) or rain / snow falling; fog, smog or +1 °C are advice, not a reason."""
+    if w is None:
+        return False
+    frost = w.apparent_c is not None and w.apparent_c <= COLD_APPARENT_C
+    wet = (w.precipitation_mm or 0) >= HEAVY_PRECIP_MM or bool(_WET_TOKENS & set(w.conditions))
+    return frost or wet
+
 
 # Indoor-friendly vs. outdoor categories, used by retrieval when the weather / air is bad or it is dark.
 INDOOR_CATEGORIES = {
@@ -145,6 +157,31 @@ def with_user_hint(weather: WeatherInfo | None, hint: str) -> WeatherInfo | None
         return base
     return base.model_copy(
         update={"adverse": True, "reason": t(f"wx_hint_{hint}", "ru"), "user_hint": hint}
+    )
+
+
+_WARNED = (  # what a Kazhydromet warning text is about, in kk / ru / en
+    ("туман", ("тұман", "туман", "fog")),
+    ("гололед", ("көктайғақ", "гололёд", "black ice")),
+    ("гололёд", ("көктайғақ", "гололёд", "black ice")),
+    ("метел", ("боран", "метель", "a blizzard")),
+    ("гроз", ("найзағай", "гроза", "a thunderstorm")),
+    ("ветер", ("қатты жел", "сильный ветер", "strong wind")),
+    ("снег", ("қар", "снег", "snow")),
+    ("дожд", ("жаңбыр", "дождь", "rain")),
+    ("жара", ("аптап ыстық", "жара", "heat")),
+    ("мороз", ("аяз", "мороз", "frost")),
+)
+
+
+def warned(w: WeatherInfo, lang: str) -> str:
+    """What the storm warnings warn of, in the answer language («туман», «fog»); '' when no known phenomenon."""
+    text = " ".join(f"{x.title} {x.text}" for x in w.warnings if x.kind == "storm").lower()
+    found = [entry for stem, entry in _WARNED if stem in text]
+    return (
+        ", ".join(dict.fromkeys(e[("kk", "ru", "en").index(lang)] for e in found[:2]))
+        if found
+        else ""
     )
 
 

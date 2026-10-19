@@ -319,7 +319,12 @@ def test_follow_ups_use_the_lexicon(text, field, value):
 def test_a_message_naming_a_kind_is_a_new_request_but_a_negated_kind_is_not():
     prev = Intent(categories=["bar_nightlife"])
     assert parse_follow_up("а теперь кофе", prev) is None
-    assert parse_follow_up("а без бара", prev) is None  # nothing changes: not a refinement we know
+    fu = parse_follow_up(
+        "а без бара", prev
+    )  # not a new request: the kind it refuses leaves the request
+    assert fu is not None
+    assert fu.drop == ["bar_nightlife"]
+    assert fu.more
 
 
 # ---- WALKS_CACHE_PIN ------------------------------------------------------------------------------

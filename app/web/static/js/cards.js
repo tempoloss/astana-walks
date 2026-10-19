@@ -2,9 +2,9 @@
 // an alternative as one compact row, a mini row of a folded answer, and the card under an answer about a place.
 // Every word comes from the turn (walks.dialog `Place`); nothing here decides what a place is.
 
-import { h, icon } from './dom.js';
+import { h, icon, isPhone } from './dom.js';
 import { askBlocks, deepLinks, detailSections, hoursSource, priceParts, sourceLinks, telHref } from './details.js';
-import { hhmm, metres, minutes, stateOf } from './fmt.js';
+import { dayAndTime, hhmm, metres, minutes, stateOf } from './fmt.js';
 import { tr } from './i18n.js';
 
 const STATE_ICON = { open: 'open', closing_soon: 'clock', closed: 'closed' };
@@ -21,6 +21,12 @@ const nowHour = (at) => {
   return hh + mm / 60;
 };
 
+// «сегодня» / «завтра» / «пн»: the day the answer is about (`at.day` days ahead of today), never «today» for tomorrow
+function dayWord(at) {
+  if (!at || !at.day) return tr('h_today');
+  return at.day === 1 ? tr('h_tomorrow') : dayAndTime(at).split(' ')[0];
+}
+
 // the day as a strip: open spans, a tick at the moment of the answer; with no schedule there is no strip at all
 export function hoursStrip(place, at) {
   const spans = place.hours.today;
@@ -28,9 +34,10 @@ export function hoursStrip(place, at) {
   const now = h('b', { style: `left:${(nowHour(at) / 24) * 100}%`, 'aria-hidden': 'true' });
   const bar = h('div', { class: 'hbar' },
     spans.map(([open, close]) => h('i', { style: `left:${(open / 24) * 100}%;width:${((close - open) / 24) * 100}%` })), spans.length ? now : null);
-  const today = spans.length ? spans.map(([o, c]) => `${hhmm(o)}–${hhmm(c)}`).join(', ') : tr('h_today_closed');
+  const closed = at && at.day ? `${dayWord(at)} ${tr('h_closed_word')}` : tr('h_today_closed');
+  const today = spans.length ? spans.map(([o, c]) => `${hhmm(o)}–${hhmm(c)}`).join(', ') : closed;
   return h('div', { class: 'strip' }, bar,
-    h('div', { class: 'hcap' }, h('span', { text: spans.length ? `${tr('h_today')} ${today}` : today }), h('span', { text: `${tr('h_now')} ${at ? at.time : ''}` })));
+    h('div', { class: 'hcap' }, h('span', { text: spans.length ? `${dayWord(at)} ${today}` : today }), h('span', { text: `${at && at.day ? dayWord(at) : tr('h_now')} ${at ? at.time : ''}` })));
 }
 
 function walkTail(place) {
@@ -46,12 +53,15 @@ function out(href, label, primary) {
   return h('a', { class: `btn${primary ? ' pri' : ''}`, href, target: '_blank', rel: 'noopener noreferrer' }, icon('external'), label);
 }
 
+// the way into a place's details: the arrow at the end of its title row (the rows of the other places have the same one)
+function moreButton(place, onDetails) {
+  return h('button', { type: 'button', class: 'more-b card-more', 'aria-label': tr('details'), title: tr('details'), onclick: () => onDetails(place.id) }, icon('next'));
+}
+
 // the source of the hours on a card: whose they are and when they were read; no source, no line (the status says it)
-function sourceLine(place, onDetails) {
+function sourceLine(place) {
   const source = hoursSource(place);
-  return h('div', { class: 'c-src' },
-    source.length ? h('span', { class: 'src' }, ...source) : null,
-    h('button', { type: 'button', class: 'lnk', onclick: () => onDetails(place.id) }, tr('details')));
+  return source.length ? h('div', { class: 'c-src' }, h('span', { class: 'src' }, ...source)) : null;
 }
 
 // a row or a card is the place's handle on the page: it is hovered with its pin and selected with it
@@ -62,7 +72,10 @@ function wire(el, place, o) {
   el.addEventListener('pointerenter', (e) => e.pointerType === 'mouse' && o.onHover(place.id));
   el.addEventListener('pointerleave', (e) => e.pointerType === 'mouse' && o.onHover(null));
   el.addEventListener('click', (e) => {
-    if (!e.target.closest('button, a, summary, details')) o.onSelect(place.id);
+    if (e.target.closest('button, a, summary, details')) return;
+    // the main card is already the chosen place: a tap on it on a phone opens its details
+    if (isPhone() && el.classList.contains('primary') && o.sel === place.id) o.onDetails(place.id);
+    else o.onSelect(place.id);
   });
   return el;
 }
@@ -70,10 +83,11 @@ function wire(el, place, o) {
 // a long reason: three lines, «ещё» opens the rest (the phone's card shows two; the whole text is in the details)
 function whyBlock(text) {
   const p = h('p', { class: 'why clamp', text });
-  const more = h('button', { type: 'button', class: 'link why-more', hidden: true, 'aria-expanded': 'false' }, tr('why_more'));
+  const [moreText, lessText] = [tr('why_more'), tr('why_less')]; // in the answer's language, whenever it is tapped
+  const more = h('button', { type: 'button', class: 'link why-more', hidden: true, 'aria-expanded': 'false' }, moreText);
   more.addEventListener('click', () => {
     const open = p.classList.toggle('clamp') === false;
-    more.textContent = tr(open ? 'why_less' : 'why_more');
+    more.textContent = open ? lessText : moreText;
     more.setAttribute('aria-expanded', String(open));
   });
   new ResizeObserver(() => {
@@ -99,7 +113,8 @@ export function primaryCard(place, o) {
     h('div', { class: 'c-top' },
       num(o.n),
       h('h3', { class: 'c-title' }, h('span', { class: 'c-name', text: place.name }), h('span', { class: 'c-kind', text: place.kind })),
-      h('span', { class: 'c-min', text: minutes(place.walk.minutes, place.walk.method) })),
+      h('span', { class: 'c-min', text: minutes(place.walk.minutes, place.walk.method) }),
+      moreButton(place, o.onDetails)),
     h('div', { class: 'c-st' }, statusEl(place), h('span', { class: 'm', text: walkTail(place) })),
     hoursStrip(place, o.at),
     hoursIssue(place),
@@ -109,7 +124,7 @@ export function primaryCard(place, o) {
       : null,
     place.caveat ? h('p', { class: 'c-note', text: place.caveat }) : null,
     place.why ? whyBlock(place.why) : null,
-    sourceLine(place, o.onDetails),
+    sourceLine(place),
     h('div', { class: 'acts' },
       out(links.gis, tr('open_2gis'), true),
       out(links.yandex, tr('open_yandex_short')),
@@ -151,9 +166,9 @@ export function qaCard(place, o) {
   const card = h(
     'article',
     { class: 'qa-card', id: `place-${o.turnId}-qa` },
-    h('div', { class: 'c-top' }, o.n ? num(o.n) : null, h('b', { text: place.name }), statusEl(place)),
+    h('div', { class: 'c-top' }, o.n ? num(o.n) : null, h('b', { text: place.name }), statusEl(place), moreButton(place, o.onDetails)),
     hoursStrip(place, o.at),
-    sourceLine(place, o.onDetails),
+    sourceLine(place),
   );
   return wire(card, place, o);
 }

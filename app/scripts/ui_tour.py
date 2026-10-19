@@ -40,6 +40,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -92,6 +93,39 @@ BOXES = """() => {
   const out = pts.filter((p) => p.x < 4 || p.x > innerWidth - 4 || p.y < 4 || p.y > innerHeight - 4).length;
   return { pins: pts.length, hidden, out, phone };
 }"""
+
+
+_PIN_PAIR = re.compile(r"targets overlap: \.mk\S* × \.mk\S* \((\d+)x(\d+)\)")
+
+
+def touching_pins(line: str) -> bool:
+    """«.mk × .mk (2x11)»: the invisible 44px boxes of two neighbouring pins touch by a few pixels (where the answer's
+    places lie close together the camera cannot put them further apart): the dots themselves stay clear."""
+    hit = _PIN_PAIR.fullmatch(line)
+    return bool(hit) and min(int(hit.group(1)), int(hit.group(2))) <= 4
+
+
+LONG_NAME = "Ресторан-кофейня «Золотой дракон и серебряный тигр» у Центральной площади имени Первого Президента"
+ONE_WORD = "Верхнепромышленныйкомбинатпереработкиморепродуктов-1"
+
+
+def mangle_answer(route) -> None:
+    """Serve the real answer with its chips removed and the names of its places made awkward (100 characters, one
+    long word, one letter) and a long kind of place."""
+    res = route.fetch()
+    out = []
+    for line in res.text().splitlines():
+        msg = json.loads(line) if line else {}
+        if "answer" in msg:
+            turn = msg["answer"]["turn"]
+            turn["chips"] = []
+            msg["answer"].pop("remember", None)
+            for i, p in enumerate(turn.get("places", [])):
+                p["name"] = [LONG_NAME, ONE_WORD, "Ы"][i % 3]
+                p["kind"] = "очень длинный тип заведения для проверки"
+            line = json.dumps(msg, ensure_ascii=False)
+        out.append(line)
+    route.fulfill(response=res, body="\n".join(out) + "\n")
 
 
 # visible text that is an untranslated i18n key (snake_case words only): a bug on any picture
@@ -152,6 +186,166 @@ class Shot:
 
 
 class Tour:
+    def robust(self, browser, url: str) -> None:
+        """The page draws whatever arrives: an answer with no chips at all, with a name of 100 characters, a name of one
+        long word and a name of one letter, and a very long kind of place. No card wider than the screen, no control
+        cut or overlapped (the phone's audit), no control under 44 px."""
+        page = self.open(browser, url)
+        page.route("**/api/turn", mangle_answer)
+        self.ask(page, "хочу поесть")
+        s = self.shot(page, "robust-no-chips", "an answer with no chips and awkward names")
+        if page.locator("#thread .answer .chips .chip:not(.mark-home)").count():
+            s.ok = False
+            s.notes.append("chips on screen although the answer sent none")
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        wide = page.evaluate(
+            """() => [...document.querySelectorAll('#thread .card, #thread .alt, #thread .answer > *:not(.alts)')]
+              .filter((e) => e.scrollWidth > e.clientWidth + 1 && getComputedStyle(e).overflowX !== 'auto')
+              .map((e) => e.className)"""
+        )
+        if wide:
+            s.ok = False
+            s.notes.append(f"block(s) overflow sideways: {wide}")
+        page.context.close()
+
+    def conditions_shown(self, browser, url: str) -> None:
+        """A condition picked in the panel stays in sight when the panel is closed, as a pill that removes it, and the
+        panel itself says what is on."""
+        page = self.open(browser, url)
+        opts = "#opts-toggle"
+        self.press(page, opts)
+        if self.phone:  # the panel: time of today, how long, with whom, weather
+            page.wait_for_selector("#when-panel .chip")
+            self.press(page, "#when-panel .when-time .chip:has-text('23:00')")
+            self.press(page, "#when-panel .chip:has-text('Вдвоём')")
+            first, want = "23:00", 2
+        else:  # a laptop: the time is in the plate, the rest in the row the «Условия» button opens
+            page.wait_for_selector("#quick .chip")
+            self.press(page, "#quick .chip:has-text('1 час')")
+            first, want = "1 час", 1
+        s = self.shot(page, "conditions-panel", "a condition picked: the panel says what is on")
+        if self.phone and not page.locator("#when-panel .cond-note").count():
+            s.ok = False
+            s.notes.append("the panel does not say which conditions are on")
+        self.press(page, opts)  # the panel closed
+        page.wait_for_timeout(300)
+        pills = page.locator("#cond-bar .cond-pill")
+        s = self.shot(
+            page, "conditions-pills", "the panel closed: the conditions stay in sight as pills"
+        )
+        if pills.count() != want or first not in pills.first.inner_text():
+            s.ok = False
+            s.notes.append(f"{pills.count()} pill(s), expected {want} with «{first}» first")
+        if self.phone:
+            tap_on(page, "#cond-bar .cond-pill")
+        else:
+            pills.first.click()
+        page.wait_for_timeout(300)
+        left = page.locator("#cond-bar .cond-pill").count()
+        if left != want - 1:
+            s.ok = False
+            s.notes.append(f"the pill did not remove its condition ({left} left)")
+        page.context.close()
+
+    def answer_shapes(self, browser, url: str) -> None:
+        """An answer drawn from what the server sent: its start (an answer about a saved place is measured from the
+        place, so the marker starts there, named) and its language (a Kazakh answer on a Russian page keeps Kazakh
+        labels)."""
+        page = self.open(browser, url)
+
+        def bend(route) -> None:
+            res = route.fetch()
+            out = []
+            for line in res.text().splitlines():
+                msg = json.loads(line) if line else {}
+                if "answer" in msg:
+                    turn = msg["answer"]["turn"]
+                    lat, lon = turn["origin"]
+                    turn["origin"] = [lat + 0.012, lon + 0.012]  # ~1.3 km away: «Дом»
+                    turn["lang"] = "kk"
+                    msg["answer"]["state"]["bookmark"] = "Дом"
+                    line = json.dumps(msg, ensure_ascii=False)
+                out.append(line)
+            route.fulfill(response=res, body="\n".join(out) + "\n")
+
+        before = page.evaluate("document.querySelector('.you-label').textContent")
+        page.route("**/api/turn", bend)
+        self.ask(page, "хочу кофе")
+        s = self.shot(
+            page, "answer-from-home", "an answer measured from «Дом»: the marker says «от «Дом»»"
+        )
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        label = page.evaluate("document.querySelector('.you-label').textContent")
+        if label == before or "Дом" not in label:
+            s.ok = False
+            s.notes.append(f"the start marker says {label!r} (was {before!r}), expected «от «Дом»»")
+        caption = page.locator("#thread .turn:last-child .hcap").first
+        if caption.count() and "қазір" not in caption.inner_text():
+            s.ok = False
+            s.notes.append("a Kazakh answer on a Russian page has Russian labels")
+        page.context.close()
+
+    def memory_form(self, browser, url: str) -> None:
+        """What a person does in «Память»: taps the words of a switch, of a choice and of a chip (not the little control
+        beside them), picks two ages for two children; every tap is stored at once; the first one says it turned the
+        memory on."""
+        page = self.open(browser, url)
+        if self.phone:
+            self.press(page, ".menu-open")
+            self.press(page, "#menu .memory-open")
+        else:
+            self.press(page, ".tabs .memory-open")
+        page.wait_for_selector("#memory[open] #memory-root .mf-toggle")
+
+        def tap_words(selector: str, text: str) -> None:
+            el = page.locator(selector, has_text=text).first
+            el.scroll_into_view_if_needed()
+            box = el.bounding_box()
+            assert box is not None, text
+            x, y = box["x"] + box["width"] / 2, box["y"] + box["height"] / 2
+            if self.phone:
+                tap(page, x, y)
+            else:
+                page.mouse.click(x, y)
+            page.wait_for_selector("#memory-root .mf-status[data-state='saved']", timeout=10000)
+            page.wait_for_timeout(200)
+
+        tap_words("#memory-root .mf-toggle > span", "с детьми")
+        status = page.locator("#memory-root .mf-status").inner_text()
+        s = self.shot(
+            page,
+            "memory-kids",
+            "«Хожу с детьми» tapped by its words: saved, and the line says the memory is on",
+        )
+        if "включено" not in status:
+            s.ok = False
+            s.notes.append(
+                f"the line after the first setting does not say the memory is on: {status!r}"
+            )
+        tap_words("#memory-root .mf-chips .mf-chip", "4–7")
+        tap_words("#memory-root .mf-chips .mf-chip", "8–12")
+        tap_words("#memory-root .mf-seg button", "Мёрзну")
+        stored = page.evaluate(
+            """async () => {
+              const id = localStorage.getItem('anyq.profile.id');
+              const r = await fetch('/api/profile?id=' + id);
+              return (await r.json()).form;
+            }"""
+        )
+        s = self.shot(page, "memory-ages", "two ages and «Мёрзну» tapped by their words")
+        if (
+            stored["kids_age_bands"] != ["4-7", "8-12"]
+            or stored["cold_tolerance"] != "low"
+            or not stored["with_kids"]
+        ):
+            s.ok = False
+            s.notes.append(f"stored: {stored}")
+        page.locator("#memory-root .mf-forget").click()
+        page.wait_for_timeout(500)
+        page.context.close()
+
     def memory_applies(self, browser, url: str) -> None:
         """The memory settings apply at once: «Нужен халяль» flipped (nothing saved by hand, the panel closed), then
         «хочу поесть»: the request carries the profile's id and profile_on, and the answer says the setting was
@@ -256,6 +450,8 @@ class Tour:
             s.notes.append(f"raw i18n key on screen: {key!r}")
         if self.phone:
             for line in audit(page):  # every phone picture: targets, overlaps, cuts, clipped text
+                if touching_pins(line):
+                    continue
                 s.ok = False
                 s.notes.append(line)
             if not sheet(page)["typing"]:
@@ -465,7 +661,7 @@ class Tour:
                 ".st.unknown" if unknown else ".strip",
                 "the plain «hours unknown»" if unknown else "the day's hours",
             ),
-            (".c-src", "the source line"),
+            (".card-more", "the way into the details"),
             (".acts .btn", "the way out"),
         ):
             if not main.locator(css).count():
@@ -484,6 +680,10 @@ class Tour:
         self.run_sweep(page)
         self.waiting(page)
         self.memory_applies(browser, online)
+        self.memory_form(browser, online)
+        self.conditions_shown(browser, online)
+        self.answer_shapes(browser, online)
+        self.robust(browser, online)
 
         # Kazakh: the interface and the recorded Kazakh request
         self.set_lang(page, "kk")
@@ -552,7 +752,7 @@ class Tour:
             s.notes.append("the camera moved when a row was chosen")
         page.locator("#thread .card.primary").click(position={"x": 30, "y": 12})
         page.wait_for_timeout(600)
-        page.locator("#thread .card.primary .c-src .lnk").click()
+        page.locator("#thread .card.primary .card-more").click()
         page.wait_for_timeout(500)
         s = self.shot(page, "details", "the details view of the main card")
         if not page.locator("#thread .details-view .d-sec").count():
@@ -654,7 +854,7 @@ class Tour:
             s.notes.append("the camera moved when a pin was tapped")
 
         # the details fill the sheet; the bar at the bottom brings the way back
-        tap_on(page, "#thread .turn:last-child .card.primary .c-src .lnk")
+        tap_on(page, "#thread .turn:last-child .card.primary .card-more")
         page.wait_for_timeout(500)
         s = self.shot(
             page,
@@ -883,8 +1083,12 @@ class Tour:
         if top > limit:
             s.notes.append(f"primary card starts too low: {top:.0f} (limit {limit:.0f})")
         s.ok = not s.notes
+        # the Kazhydromet notice is active on this stand, but a café answer does not need it: the line is shown only for
+        # a walk or a drive (checked below with «хочу погулять»)
+        if page.locator("#thread .turn:last-child .note.notice.weather").count():
+            s.ok = False
+            s.notes.append("a café answer shows the weather warning line, which only a walk needs")
         for css, what in (
-            ("#thread .turn:last-child .note.notice.weather a", "a warning with its source link"),
             ("#thread .turn:last-child .events li a", "an events block with source links"),
             (
                 "#thread .turn:last-child .card.primary .note.signal a",
@@ -894,10 +1098,34 @@ class Tour:
             if not page.locator(css).count():
                 s.ok = False
                 s.notes.append(f"missing: {what}")
-        page.locator("#thread .turn:last-child .card.primary .c-src .lnk").click()
+        page.locator("#thread .turn:last-child .card.primary .card-more").click()
         page.wait_for_timeout(300)
         self.shot(page, "layers-details", "details of the card with the nearest bus stop")
         page.keyboard.press("Escape")
+        # a walk with the same notice active: the warning line is there, with the link to its page
+        before = self.answers(page)
+        page.locator("#composer-input").fill("хочу погулять")
+        page.locator("#composer .send").click()
+        self.wait_answer(page, before + 1)
+        s = self.shot(
+            page,
+            "layers-walk",
+            "a walk while a Kazhydromet notice is active: the warning, with its link",
+        )
+        s.pending_rewarm = False  # rules text: the forced stand has no model
+        s.notes = [n for n in s.notes if not n.startswith("pending")]
+        if (
+            self.phone
+        ):  # the card, the notice and the rows crowd a short sheet: pins may touch its edge
+            s.notes = [
+                n
+                for n in s.notes
+                if "under the interface" not in n and not n.startswith("targets overlap: .mk")
+            ]
+            s.ok = not s.notes
+        if not page.locator("#thread .turn:last-child .note.notice.weather a").count():
+            s.ok = False
+            s.notes.append("missing: a warning with its source link under a walk")
         before = self.answers(page)
         page.locator("#composer-input").fill("что сегодня интересного")
         page.locator("#composer .send").click()

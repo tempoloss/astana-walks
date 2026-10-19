@@ -83,17 +83,17 @@ def test_the_stand_clock_is_the_real_local_time(stand):
 def test_a_recorded_starter_and_its_chip_are_answered_at_the_pinned_moment(stand):
     first = _turn(stand, STARTER.text)
     assert first["pinned"] is True
-    assert first["at"] == {"time": "14:00", "date": "2026-10-19"}
+    assert first["at"] == {"time": "14:00", "date": "2026-10-19", "day": 0}
     follow = _turn(stand, _chip(first, "closer"), state=first["state"])
     assert follow["pinned"] is True
-    assert follow["at"] == {"time": "14:00", "date": "2026-10-19"}
+    assert follow["at"] == {"time": "14:00", "date": "2026-10-19", "day": 0}
     assert follow["state"]["demo_base"] == STARTER.text
 
 
 def test_a_free_request_at_two_at_night_is_answered_at_two_at_night(stand):
     answer = _turn(stand, FREE)
     assert answer["pinned"] is False
-    assert answer["at"] == {"time": "02:00", "date": "2026-10-14"}
+    assert answer["at"] == {"time": "02:00", "date": "2026-10-14", "day": 0}
     assert answer["state"]["demo_base"] is None
     places = answer["turn"]["places"]
     assert places
@@ -108,20 +108,20 @@ def test_a_free_request_after_a_recorded_one_leaves_the_pin(stand):
     assert first["pinned"] is True
     free = _turn(stand, FREE, state=first["state"])
     assert free["pinned"] is False
-    assert free["at"] == {"time": "02:00", "date": "2026-10-14"}
+    assert free["at"] == {"time": "02:00", "date": "2026-10-14", "day": 0}
     assert free["state"]["demo_base"] is None
     follow = _turn(
         stand, _chip(free, "closer"), state=free["state"]
     )  # its follow-up is a free dialogue as well
     assert follow["pinned"] is False
-    assert follow["at"] == {"time": "02:00", "date": "2026-10-14"}
+    assert follow["at"] == {"time": "02:00", "date": "2026-10-14", "day": 0}
 
 
 def test_a_chosen_time_moves_a_free_request_but_never_a_pinned_one(stand):
     free = _turn(stand, FREE, at="19:00")
-    assert free["at"] == {"time": "19:00", "date": "2026-10-14"}
+    assert free["at"] == {"time": "19:00", "date": "2026-10-14", "day": 0}
     pinned = _turn(stand, STARTER.text, at="19:00")
-    assert pinned["at"] == {"time": "14:00", "date": "2026-10-19"}
+    assert pinned["at"] == {"time": "14:00", "date": "2026-10-19", "day": 0}
 
 
 def test_the_live_weather_is_asked_only_by_a_request_that_is_not_pinned(stand, monkeypatch):

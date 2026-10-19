@@ -1,13 +1,133 @@
-"""More concepts of the rule parser's lexicon: weather words, minors, plain / long-stay wishes, celebrations,
-diets, requests the assistant refuses. Data only, appended to `walks.lexicon_concepts.CONCEPTS` (its types and
-shared constants are in lexicon_data)."""
+"""More concepts of the rule parser's lexicon: haste, access needs and the way of travel (first: they close the core
+order of `walks.lexicon_concepts`), weather words, minors, plain / long-stay wishes, celebrations, diets, requests the
+assistant refuses. Data only, appended to `walks.lexicon_concepts.CONCEPTS` (its types and shared constants are in
+lexicon_data)."""
 
 from __future__ import annotations
 
-from .lexicon_data import LONG_STAY_BUDGET_MIN, Concept
+from .lexicon_data import LONG_STAY_BUDGET_MIN, QUICK_BUDGET_MIN, Concept
 
 # fmt: off
 EXTRA_CONCEPTS: tuple[Concept, ...] = (
+    Concept(
+        "fast",
+        ru=(
+            "быстр", "срочно", "на скорую", "мигом", "поскорее", "экспресс", "некогда", "нет времени", "мало времени", "в спешке", "спешу", "тороплюсь", "торопл", "на бегу",
+            "на ходу", "оперативно", "в темпе", "времени в обрез", "скоренько", "недолго", "побыстрее", "шустро", "пулей",
+        ),
+        kk=(
+            "тез=", "жылдам", "асығыс", "шұғыл", "тезірек", "асығамын", "уақыт аз",
+        ),
+        en=(
+            "fast=", "quick", "quickly", "asap", "in a hurry", "hurry", "rush", "no time", "short on time", "not much time", "express", "speedy", "fastest", "quicker", "swiftly",
+            "on the go", "right away",
+        ),
+        budget_min=QUICK_BUDGET_MIN,
+        flags=("fast",),
+    ),
+    Concept(
+        "wheelchair",
+        ru=(
+            "инвалид", "колясочник", "кресл коляск", "кресла колясок", "маломобильн", "костыл", "ограниченными возможностями",
+        ),
+        kk=(
+            "мүгедек", "мүмкіндігі шектеулі", "мүгедектер арба", "инвалид арба",
+        ),
+        en=(
+            "wheelchair", "mobility", "disabled", "disability", "handicap", "crutches", "walker=",
+        ),
+        flags=("access",),
+    ),
+    Concept(
+        "step_free",
+        ru=(
+            "доступная среда", "доступное место для", "доступн для", "безбарьерн", "без барьер", "без ступен", "без порог", "пандус", "пожилым", "пожилых", "пожилой", "пожилая", "пожилого",
+            "по лестниц", "без лестниц", "нет лестниц", "лестниц нет", "ступеньк", "тяжело ходить", "трудно ходить", "тяжело подниматься", "плохо хожу", "плохо ходит", "болят ноги", "больные ноги",
+        ),
+        kk=(
+            "бөгетсіз", "пандус", "баспалдақсыз", "баспалдақ жоқ", "баспалдақтарсыз", "кедергісіз", "тосқауылсыз", "пандуспен", "баспалдақ", "жүру қиын", "жүре алмаймын", "аяғым ауырады", "қариялар", "қарт", "егде",
+        ),
+        en=(
+            "accessible", "accessibility", "stepfree", "ramp=", "ramps", "barrier free", "barrierfree", "elderly", "no stairs", "without stairs", "avoid stairs", "stairs are hard", "hard to walk", "difficult to walk", "trouble walking", "bad knees", "mobility issues",
+        ),
+        flags=("access",),
+    ),
+    Concept(
+        "stroller",
+        ru=(
+            "коляск", "колясочк", "прогулочная коляска", "с коляс", "детской коляс",
+        ),
+        kk=(
+            "бала арба", "балалар арба", "баласы арба", "арбамен", "арбалы", "арбалос", "арбас", "коляска",
+        ),
+        en=(
+            "stroller", "strollers", "pram", "prams", "buggy", "pushchair", "baby carriage", "baby buggy", "with a stroller",
+        ),
+        flags=("with_kids", "access"),
+        unless=("wheelchair", "wheelchair_on"),
+    ),
+    Concept(
+        "mode_car",
+        ru=(
+            "на машине", "на авто=", "автомобил", "такси", "за рулем", "на личной машине", "машин", "на тачке", "яндекс го", "индрайв", "парковк", "припаркова", "на колесах",
+            "по пробкам",
+        ),
+        kk=(
+            "көлікпен", "машинамен", "такси", "жүргізіп", "тұрақ", "автокөлікпен",
+        ),
+        en=(
+            "car=", "cars=", "taxi", "uber", "drive=", "driving", "by car", "parking", "park the car", "my car", "rental car", "ride share", "rideshare", "by taxi", "drive there",
+        ),
+        flags=("car",),
+    ),
+    Concept(
+        "mode_transit",
+        ru=(
+            "автобус", "маршрутк", "общественн транспорт", "трамвай", "lrt=", "лрт=", "легкорельс", "электричк", "городской транспорт", "на транспорте",
+        ),
+        kk=(
+            "автобуспен", "қоғамдық көлік", "автобус", "трамвай", "жеңіл рельсті", "аялдама",
+        ),
+        en=(
+            "bus=", "buses", "transit", "public transport", "public transit", "tram=", "trams", "lrt=", "light rail", "by bus", "bus stop", "city transport", "metro=", "subway",
+        ),
+        flags=("transit",),
+    ),
+    Concept(  # Kazakh / national food: the places whose record says so come first (walks.attributes.local_food_signal)
+        "local_food",
+        ru=(
+            "казахск кухн", "казахскую кухню", "казахская кухня", "казахской кухн", "казахск еда", "казахскую еду", "казахская еда", "казахское", "казахских блюд",
+            "национальн кухн", "национальную кухню", "национальная кухня", "национальн блюд", "национальные блюда", "местн кухн", "местную кухню", "местная кухня",
+            "традиционн кухн", "бешбармак", "бесбармак", "казы=", "куырдак", "баурсак",
+        ),
+        kk=(
+            "қазақ тағам", "қазақша тағам", "қазақ асхана", "ұлттық тағам", "ұлттық ас", "ұлттық асхана", "бешбармақ", "қазы=", "қуырдақ", "бауырсақ", "ет асу",
+        ),
+        en=(
+            "kazakh food", "kazakh cuisine", "kazakh dish", "kazakh dishes", "something kazakh", "kazakh to eat", "kazakh restaurant", "national cuisine", "national dish",
+            "local food", "local cuisine", "traditional food", "beshbarmak", "kazy=", "baursak",
+        ),
+        categories=("restaurant", "cafe"),
+        tier="mood",
+        flags=("local_food",),
+        negation_excludes=(),
+    ),
+    Concept(  # a trampoline hall, a play centre, a kids' room: indoor entertainment for children, not a playground
+        "play_centre",
+        ru=(
+            "батут", "игровой центр", "игрового центр", "игровом центр", "игровая комнат", "игровой комнат", "игровую комнат", "детская комнат", "детский центр",
+            "детский развлекательн", "игровая зона", "игровую зону",
+        ),
+        kk=(
+            "батут", "ойын орталығы", "ойын орталығына", "ойын бөлмесі",
+        ),
+        en=(
+            "trampoline", "play centre", "play center", "indoor play", "soft play", "kids club", "kids' club",
+        ),
+        categories=("entertainment",),
+        flags=("with_kids",),
+        negation_excludes=("entertainment",),
+    ),
     Concept(
         "drink_emoji",
         en=(
@@ -260,6 +380,24 @@ EXTRA_CONCEPTS: tuple[Concept, ...] = (
         ),
         tier="mood",
     ),
+    # «что посмотреть / what should I see»: the person names the sights themselves (a wish, not the tourist mood that
+    # pads them with a café): landmarks, viewpoints and museums, within the budget
+    Concept(
+        "sights_wish",
+        ru=(
+            "что посмотреть", "что стоит посмотреть", "что интересного посмотреть", "что можно посмотреть",
+            "что тут посмотреть", "достопримечательност",
+        ),
+        kk=(
+            "не көруге болады", "көруге тұрарлық", "көрікті жерлер",
+        ),
+        en=(
+            "what should i see", "what to see", "what is worth seeing", "whats worth seeing", "worth seeing",
+            "things to see", "what can i see", "main sights",
+        ),
+        categories=("attraction_landmark", "viewpoint", "museum_gallery"),
+        tier="kind",
+    ),
     # A toilet: the kind `public_toilet` when no other kind is named («где туалет»); next to one («кафе с туалетом») a
     # keyword the dataset holds no facts about, so that the answer can say so
     Concept(
@@ -388,6 +526,22 @@ EXTRA_CONCEPTS: tuple[Concept, ...] = (
         ),
         categories=("other",),
         negation_excludes=("other",),
+    ),
+    # «something nice to see»: the sights themselves, not the cafe the tourist mood also lists
+    Concept(
+        "see_something",
+        ru=(
+            "что нибудь посмотреть", "что нибудь красивое посмотреть", "что нибудь интересное посмотреть", "на что посмотреть", "на что поглядеть", "что нибудь красивое",
+        ),
+        kk=(
+            "көруге тұрарлық", "көретін бір нәрсе", "әдемі жер көргім", "көргім келеді",
+        ),
+        en=(
+            "something nice to see", "something to see", "something beautiful to see", "somewhere nice to see", "anything to see", "something pretty to see", "something interesting to see",
+        ),
+        categories=("attraction_landmark", "viewpoint", "park_garden"),
+        tier="activity",
+        negation_excludes=(),
     ),
 )
 # fmt: on

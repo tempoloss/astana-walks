@@ -121,7 +121,10 @@ def test_a_refused_kind_stays_out_of_every_backfill():
 def test_a_cyrillic_message_is_answered_in_russian_after_an_english_one():
     turn = _turns("еда", "ne to, drugoe", "ещё варианты")
     assert turn.lang == "ru"
-    assert turn.kind == "places"
+    assert turn.kind in {
+        "places",
+        "none_found",
+    }  # «ещё» keeps the kind: no more food places is said so
 
 
 def test_the_dialogue_switches_language_with_the_person():

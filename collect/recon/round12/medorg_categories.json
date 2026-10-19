@@ -1,0 +1,125 @@
+{
+ "file": "_geo/round6_magda/Astana_MEDORG.xlsx",
+ "parsed": "2026-10-19",
+ "parser": "column-link aligned by r=\"REF\" (empty cells never emit <c>); header+sum==423+regex self-test asserts green",
+ "encoding_note": "inlineStr cells store HTML entities; html.unescape mandatory before any cyrillic regex",
+ "top": [
+  [
+   "Клиника",
+   168
+  ],
+  [
+   "Консультативно-диагностический центр в составе многопрофильной больницы",
+   67
+  ],
+  [
+   "Стоматологическая поликлиника (центр, кабинет)",
+   66
+  ],
+  [
+   "Городская поликлиника",
+   22
+  ],
+  [
+   "Медицинский информационно-аналитический центр",
+   12
+  ],
+  [
+   "Аптечный (дистрибьюторский) склад, склад временного хранения лекарственных средств, медицинских изделий",
+   9
+  ],
+  [
+   "Реабилитационный центр",
+   8
+  ],
+  [
+   "Департамент МЗ РК",
+   7
+  ],
+  [
+   "Женская консультация",
+   7
+  ],
+  [
+   "Медицинский пункт",
+   6
+  ],
+  [
+   "Врачебная амбулатория",
+   6
+  ],
+  [
+   "Территориальные управления комитета МЗ РК",
+   5
+  ],
+  [
+   "Центр судебных экспертиз",
+   4
+  ],
+  [
+   "Научный центр",
+   3
+  ],
+  [
+   "Многопрофильная городская больница",
+   3
+  ],
+  [
+   "Комитет медицинского и фармацевтического контроля",
+   3
+  ],
+  [
+   "Военная медицина",
+   3
+  ],
+  [
+   "Фонд социального медицинского страхования",
+   2
+  ],
+  [
+   "Центр планирования семьи и репродуктивного здоровья (центр репродукции человека)",
+   2
+  ],
+  [
+   "Национальный научный центр",
+   2
+  ]
+ ],
+ "pharmacy_catcols": 13,
+ "pharmacy_anycell": 16,
+ "address_nonempty": 2,
+ "load_date": "2024-09-16",
+ "overture": {
+  "primary": 89,
+  "hierarchy": 91,
+  "cat_field": {
+   "other": 89
+  },
+  "primary_counters": {
+   "bank_or_credit_union": 53,
+   "grocery_store": 89,
+   "gas_station": 34,
+   "marketing_agency": 24,
+   "pharmacy": 34,
+   "gastropub": 6,
+   "b2b_advertising_and_marketing_service": 72,
+   "convenience_store": 34,
+   "bank": 8,
+   "internet_marketing_service": 13,
+   "organic_grocery_store": 2,
+   "farmers_market": 2,
+   "b2b_marketing_consultant": 1,
+   "flea_market": 1
+  },
+  "source": "data/overture_places.json, Counter(categories.primary), one local pass 19.10"
+ },
+ "pharmacy_category_breakdown": {
+  "Аптечный (дистрибьюторский) склад, склад временного хранения лекарственных средств, медицинских изделий": 9,
+  "Комитет медицинского и фармацевтического контроля": 3,
+  "Аптека": 1
+ },
+ "address_line_nonempty_values": [
+  "Ж.ТАШЕНОВА 23",
+  "НЕФТЯНИКОВ 36/В"
+ ]
+}

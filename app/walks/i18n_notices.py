@@ -17,11 +17,8 @@ MONTHS_OF = {  # «18 октября»: the day of a notice
 
 NOTICE_STRINGS: dict[str, Entry] = {
     # ---- weather: only what Kazhydromet says about Astana, short, with the link
-    "wx_warn_storm": (
-        "Астана үшін дауыл ескертуі (Қазгидромет, орыс тілінде): {text}",
-        "Штормовое предупреждение для Астаны: {text}",
-        "Storm warning for Astana (Kazhydromet, in Russian): {text}",
-    ),
+    "wx_warn_storm": ("Қазгидромет: {what}", "Казгидромет: {what}", "Kazhydromet: {what}"),
+    "wx_warn_storm_any": ("дауыл ескертуі", "штормовое предупреждение", "storm warning"),
     "wx_warn_nmu": (
         "Астанада {day} НМУ — қолайсыз метеожағдайлар",
         "НМУ в Астане {day}",

@@ -9,7 +9,7 @@
 // switch and the selected state; 694 a missing block is simply absent, a missing value a dash; 700/707 hit areas of 44 px
 // from padding, nothing behind hover; 688 outline icons of one stroke; 709/724 enter 200 ms ease-out, no blocking.
 
-import { h, icon, isPhone } from './dom.js';
+import { h, isPhone } from './dom.js';
 import { currentLang, onLang, tr } from './i18n.js';
 import { wxIcon } from './weather-icons.js';
 
@@ -60,10 +60,18 @@ const SOURCES = {
 };
 const source = (b) => (SOURCES[b.source] || (() => ''))(b);
 
-// the short fact on the button: the wind («СЗ 9 м/с»), or what falls when there is no wind
-export function factText(d) {
-  if (d.wind) return tr('fx_fact', { dir: dirWord(d.wind.from_deg), speed: fmtSpeed(d.wind.speed_ms) });
-  return d.precip ? tr(`fx_${d.precip.kind}_${level(d.precip.level)}`) : '';
+// the face of the button: a small icon of the sky and the temperature («☀ +3°»); the wind is in the card. What falls
+// now outranks the sky; a clear sky is a moon after dark; with no sky and no temperature the neutral wind icon stays
+export function buttonFace(d) {
+  const sign = (t) => (Math.round(t) > 0 ? '+' : '') + fmtTemp(t);
+  const text = d.temp ? sign(d.temp.temp_c) : '';
+  let ic = 'wind';
+  if (d.precip) ic = d.precip.kind;
+  else if (d.sky) {
+    const b = band(d.sky.cloud_pct);
+    ic = b === 0 ? (d.sun.altitude < -0.83 ? 'moon' : 'clear') : b === 1 ? 'partly' : 'cloud';
+  }
+  return { ic, text };
 }
 
 // ---------------------------------------------------------------- the blocks
@@ -103,6 +111,34 @@ function visBlock(v) {
   return block('wx-half', h('h3', { class: 'wx-h', text: tr('fx_vis_title') }), h('p', { class: 'wx-val', text: fmtDistance(v.m) }), meta(source(v)));
 }
 
+// «fog at night and in the morning», written in the visitor's language from the codes of the notice (the server names the
+// phenomenon and the part of the day in its Russian text); '' when the notice names no phenomenon we know
+function noticeTitle(n) {
+  if (!n.phenomena || !n.phenomena.length) return '';
+  const and = ` ${tr('fx_and')} `;
+  const ph = n.phenomena.map((c) => tr(`fx_ph_${c}`)).join(', ');
+  const when = (n.periods || []).map((c) => tr(`fx_per_${c}`)).join(and);
+  return capital(when ? tr('fx_notice_fmt', { ph, when }) : ph);
+}
+
+// the Kazhydromet notice: its phenomenon as a title in the answer language, the link to the notice and how long it holds;
+// the notice's own Russian words only behind a disclosure, and only when the page is not Russian itself. A notice of a
+// phenomenon we do not know is just «Kazhydromet notice» and the link.
+function noticeBlock(n) {
+  const link = h('a', { class: 'wx-link', href: n.url, target: '_blank', rel: 'noopener noreferrer', text: tr('fx_src_kaz') });
+  const title = noticeTitle(n);
+  const orig = title && n.text && currentLang() !== 'ru'
+    ? h('details', { class: 'wx-orig' }, h('summary', { text: tr('fx_notice_text') }), h('p', { lang: 'ru', text: capital(n.text) }))
+    : null;
+  return block(
+    '',
+    h('h3', { class: 'wx-h', text: tr('fx_notice_title') }),
+    title ? h('p', { class: 'wx-val', text: title }) : null,
+    h('p', { class: 'wx-meta' }, link, n.until ? ` · ${tr('fx_until', { t: n.until })}` : ''),
+    orig,
+  );
+}
+
 function airBlock(d) {
   const { air, pm25 } = d;
   if (!air && !pm25) return null;
@@ -137,7 +173,7 @@ function sunBlock(s) {
 
 function blocks(d) {
   const pair = [d.wind && windBlock(d.wind), d.vis && visBlock(d.vis)].filter(Boolean);
-  const out = [nowBlock(d), pair.length ? h('div', { class: 'wx-pair' }, ...pair) : null, airBlock(d), d.hours && hoursBlock(d.hours)].filter(Boolean);
+  const out = [nowBlock(d), pair.length ? h('div', { class: 'wx-pair' }, ...pair) : null, d.notice && noticeBlock(d.notice), airBlock(d), d.hours && hoursBlock(d.hours)].filter(Boolean);
   if (!out.length) return [h('p', { class: 'wx-empty', text: tr('fx_none') })];
   return [...out, sunBlock(d.sun)];
 }
@@ -158,14 +194,17 @@ function renderStatic() {
 }
 
 function renderButtons() {
-  const d = state.effectsOn && state.online ? state.data : null;
-  const fact = d && d.known ? factText(d) : '';
+  const d = state.online && state.data && state.data.known ? state.data : null;
+  const face = d ? buttonFace(d) : { ic: 'wind', text: '' };
   for (const b of buttons) {
-    b.btn.classList.toggle('on', state.effectsOn);
-    b.btn.setAttribute('aria-label', fact ? `${tr('fx_btn')}: ${fact}` : tr('fx_btn'));
+    if (b.shown !== face.ic) {
+      b.ic.replaceChildren(wxIcon(face.ic));
+      b.shown = face.ic;
+    }
+    b.btn.setAttribute('aria-label', face.text ? `${tr('fx_btn')}: ${face.text}` : tr('fx_btn'));
     b.btn.title = tr('fx_title');
-    b.fact.textContent = fact;
-    b.fact.hidden = !fact;
+    b.fact.textContent = face.text;
+    b.fact.hidden = !face.text;
   }
 }
 
@@ -203,9 +242,10 @@ export function closePanel() {
 // kind: 'ctrl' = the map's own corner (a laptop), 'top' = the top bar (a phone); the stylesheet shows one of them
 export function makeButton(kind) {
   const fact = h('span', { class: 'fx-fact', hidden: true });
-  const btn = h('button', { type: 'button', class: kind === 'ctrl' ? 'fx-btn' : 'fx-top', 'aria-haspopup': 'dialog', 'aria-expanded': 'false', 'aria-controls': OPEN_ID }, icon('wind'), fact);
+  const ic = h('span', { class: 'fx-ic' }, wxIcon('wind'));
+  const btn = h('button', { type: 'button', class: kind === 'ctrl' ? 'fx-btn' : 'fx-top', 'aria-haspopup': 'dialog', 'aria-expanded': 'false', 'aria-controls': OPEN_ID }, ic, fact);
   btn.addEventListener('click', () => setOpen(!isOpen, btn));
-  buttons.push({ btn, fact });
+  buttons.push({ btn, fact, ic, shown: 'wind' });
   renderButtons();
   return kind === 'ctrl' ? h('div', { class: 'maplibregl-ctrl fx-wrap' }, h('div', { class: 'maplibregl-ctrl-group fx-group' }, btn)) : btn;
 }

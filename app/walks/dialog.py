@@ -12,56 +12,85 @@ walks.dialog_place; buttons: walks.dialog_chips; sentences: walks.dialog_strings
 from __future__ import annotations
 
 from collections.abc import Callable
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timedelta
 from typing import Literal, NamedTuple
 
 from . import demo_pin, gov_hours
 from .bookmarks import Ref, find_ref
 from .dialog_asks import Ask, airport_answer, events_answer, mentions_travel, read_ask
+from .dialog_change import change_label, closer_order, meta_of, one_voice, route_of
 from .dialog_chips import MAX_BUDGET_MIN, chip, refine_chips, reset_chip, start_chips
-from .dialog_extras import airport_notice, decorate, events_block, lighting_line, weather_notice
-from .dialog_lead import follow_up_lead, lead, taken_into_account
+from .dialog_extras import (
+    airport_notice,
+    decorate,
+    events_block,
+    lighting_line,
+    second_option,
+    weather_notice,
+)
+from .dialog_facts import all_gaps, answer, bookmark_answer
+from .dialog_lead import (
+    conditions_line,
+    follow_up_lead,
+    lead,
+    notice_matters,
+    taken_into_account,
+)
 from .dialog_named import find_named, spells_a_place, unknown_name
 from .dialog_nlu import (
-    PlaceQuestion,
     detect,
     mentioned,
     out_of_data,
-    place_question,
     reset_request,
     restore,
+    signal,
     small_talk,
     strip_fillers,
     tidy,
 )
 from .dialog_place import (
-    answer,
     place_from_poi,
     place_from_rec,
     short_reply,
     shown_of,
 )
+from .dialog_questions import (
+    KIND_SAFE_TOPICS,
+    PlaceQuestion,
+    asks_visit,
+    place_question,
+)
+from .dialog_questions import (
+    targets as shown_targets,
+)
 from .dialog_strings import s
 from .dialog_types import (
     Chip,
     DialogState,
-    Meta,
     Notice,
     Place,
     PlaceAnswer,
-    Route,
     ShownPlace,
     Turn,
     TurnKind,
     Walk,
 )
+from .dialog_weather import (
+    asks_weather,
+    cold_verdict,
+    condition,
+    kept_places,
+    weather_answer,
+    weather_at,
+)
+from .dialog_when import AskedTime, read_condition, read_when, stamp
 from .feedback import FeedbackIndex, load_feedback
 from .followup import FollowUp, conversation_after, parse_follow_up, refine_with_llm
 from .generate import MAX_RECS
 from .gov_hours import is_state_request, request_when
 from .hours import local_now, to_local_naive
-from .i18n import category_name, public_text, t
+from .i18n import category_name, t
 from .intent import named_categories, parse_intent, parse_rules
 from .lexicon import is_info_question
 from .llm import Deadline, ai_off_reason
@@ -75,11 +104,13 @@ from .models import (
     StartHints,
     WeatherInfo,
 )
-from .outing import default_outing, is_outing
+from .outing import default_outing, is_bored_outing, is_outing
 from .pipeline import get_pois, recommend, round_location
 from .profile import Profile, personal_view
+from .radius import ERRAND_KINDS
 from .stay import min_stay
 from .walking import WalkingRouter, default_router
+from .weather import latest_weather
 
 MAX_PLACES = MAX_RECS
 LLM_FOLLOW_UP_MAX_WORDS = (
@@ -107,6 +138,13 @@ class TurnEnv:
         default_factory=list
     )  # the user's own named places, this request only
     on_stage: Callable[[str], None] | None = None  # called with parse / search / write / route
+    preface: str = (
+        ""  # a sentence the reply of this turn starts with (the answer to «if it is not cold»)
+    )
+    asked_time: AskedTime | None = (
+        None  # the time the message names (set by take_turn, never by the caller)
+    )
+    fresh_air: bool = False  # «парк, если не холодно» and it is cold: the nearest park goes second (set by take_turn)
 
 
 class Outcome(NamedTuple):
@@ -196,23 +234,6 @@ def _mode(state: DialogState) -> str:
     return state.conversation.intent.mode if state.conversation else "walk"
 
 
-def _targets(state: DialogState, pq: PlaceQuestion, text: str) -> list[ShownPlace]:
-    """The place(s) a question is about: by ordinal («второе»), by name, plural («они»), the place the last
-    question was about, else the main one."""
-    shown = state.shown
-    if pq.ordinal is not None:
-        return shown[pq.ordinal : pq.ordinal + 1]
-    named = mentioned(text, [p.name for p in shown])
-    if named is not None:
-        return [shown[named]]
-    if pq.plural and shown:
-        return list(shown)
-    if state.asked is not None and (state.focus_id == state.asked.id or not shown):
-        return [state.asked]
-    focus = next((p for p in shown if p.id == state.focus_id), None)
-    return [focus or shown[0]] if shown else []
-
-
 def _question_when(state: DialogState, env: TurnEnv, text: str) -> datetime:
     if demo_pin.pins(text, state.demo_base):
         return demo_pin.when_for(text, state.demo_base)
@@ -233,7 +254,13 @@ def _answer_turn(
     answers: list[PlaceAnswer] = []
     for i, (sp, poi) in enumerate(targets):
         place = place_from_poi(
-            poi, origin=origin, mode=mode, when=when, lang=lang, what=sp.what if sp else ""
+            poi,
+            origin=origin,
+            mode=mode,
+            when=when,
+            lang=lang,
+            what=sp.what if sp else "",
+            router=(env.router or default_router()) if sp is None and pq.topic == "route" else None,
         )
         if sp is not None:
             place.walk = Walk(
@@ -247,11 +274,17 @@ def _answer_turn(
         decorate(place, poi, lang, when)
         places.append(place)
         arrival = to_local_naive(when) + timedelta(minutes=place.walk.minutes)
-        answers.append(answer(pq.topic, place, poi, lang, arrival))
+        last = i == len(targets) - 1  # a line true of every card: said once, under the last
+        for x in (pq.topic, *pq.also):  # «вход и есть ли там туалет»: every part answered
+            answers.append(answer(x, place, poi, lang, arrival, asked=env.asked_time, last=last))
     first = places[0]
     asked = shown_of(first) if len(places) == 1 and not state.shown_has(first.id) else state.asked
     turn = _turn("place_answer", short_reply(answers), lang, state, _refine(state, lang))
     turn.places, turn.answers = places, answers
+    if (
+        env.asked_time is not None and env.asked_time.shifted
+    ):  # «утром»: the hours are of that moment, said so
+        turn.reply = stamp(turn.reply, env.asked_time, lang)
     focus = first.id if len(places) == 1 else None
     new = _after(state, lang, focus_id=focus, asked=asked if focus else None)
     return Outcome(turn, new)
@@ -263,7 +296,7 @@ def _place_question_turn(
     pois = env.pois if env.pois is not None else get_pois()
     by_id = {p.id: p for p in pois}
     when = _question_when(state, env, text)
-    targets = [(sp, by_id[sp.id]) for sp in _targets(state, pq, text) if sp.id in by_id]
+    targets = [(sp, by_id[sp.id]) for sp in shown_targets(state, pq, text) if sp.id in by_id]
     if not targets:
         return _clarify(state, lang, "clarify_no_place") if not state.shown else _which(state, lang)
     return _answer_turn(state, env, lang, pq, targets, when)
@@ -272,6 +305,52 @@ def _place_question_turn(
 def _which(state: DialogState, lang: str) -> Outcome:
     turn = _turn("clarify", s("a_which", lang), lang, state, _refine(state, lang))
     return Outcome(turn, _after(state, lang))
+
+
+def _weather_of(env: TurnEnv) -> WeatherInfo | None:
+    return env.weather() if callable(env.weather) else env.weather
+
+
+def _current_weather(env: TurnEnv) -> WeatherInfo:
+    weather = _weather_of(env)
+    return weather if weather is not None else latest_weather()
+
+
+def _weather_turn(state: DialogState, env: TurnEnv, lang: str, text: str) -> Outcome:
+    """«какая погода», «что надеть»: the present or the forecast of the asked time from the data we hold; the places
+    shown before stay on the map, nothing is searched."""
+    pois = env.pois if env.pois is not None else get_pois()
+    found = weather_answer(
+        state,
+        text,
+        lang,
+        weather=_current_weather(env),
+        asked=env.asked_time,
+        pois=pois,
+        when=env.when or local_now(),
+        mode=_mode(state),
+    )
+    turn = _turn("place_answer", found.reply, lang, state, _refine(state, lang))
+    turn.places, turn.answers, turn.notices = found.places, found.answers, found.notices
+    return Outcome(turn, _after(state, lang))
+
+
+def _time_only(state: DialogState, env: TurnEnv, lang: str, text: str) -> Outcome:
+    """«завтра днём» alone: the hours of the place the last answer was about, for that time; else the previous request
+    again, for that time (nothing to repeat: what to look for?)."""
+    if state.focus_id is not None:
+        return _place_question_turn(state, env, lang, text, PlaceQuestion(topic="hours"))
+    if state.conversation is None:
+        return _clarify(state, lang, "clarify_start")
+    return _search(state, env, lang, text, (FollowUp(), None))
+
+
+def _refused_all(state: DialogState, fu: tuple[FollowUp, LLMStep | None] | None) -> bool:
+    """The follow-up refuses every kind the request was about: nothing is left to search for."""
+    if fu is None or not fu[0].drop or state.conversation is None:
+        return False
+    cats = set(state.conversation.intent.categories)
+    return bool(cats & set(fu[0].drop)) and not cats - set(fu[0].drop)
 
 
 # ------------------------------------------------------------------ search
@@ -294,76 +373,10 @@ def _read_follow_up(
     return (fu, step) if fu is not None else None
 
 
-def _change_label(fu: FollowUp, lang: str) -> str:
-    parts = [
-        *([s("ch_closer", lang)] if fu.closer else []),
-        *([s("ch_more", lang)] if fu.more else []),
-        *([s("ch_no_alcohol", lang)] if fu.no_alcohol else []),
-        *({"low": [s("ch_cheaper", lang)], "high": [s("ch_pricier", lang)]}.get(fu.budget, [])),
-        *([s(f"ch_kids_{fu.with_kids}", lang)] if fu.with_kids != "keep" else []),
-        *([s("ch_quiet", lang)] if fu.quiet == "yes" else []),
-        *([s("ch_wifi", lang)] if fu.wifi_socket == "yes" else []),
-        *([s("ch_longer" if fu.extra_min > 0 else "ch_shorter", lang)] if fu.extra_min else []),
-        *([s("ch_mode", lang)] if fu.mode != "keep" else []),
-    ]
-    text = ", ".join(parts)
-    return text[:1].upper() + text[1:]
-
-
-def _route(res: Result, ids: set[str]) -> Route | None:
-    rt = res.route
-    if rt is None or not set(rt.stops) <= ids:
-        return None
-    return Route(
-        stops=rt.stops,
-        legs_min=rt.legs_min,
-        legs_m=rt.legs_m,
-        stay_min=rt.stay_min,
-        walk_min_total=rt.walk_min_total,
-        return_min=rt.return_min,
-        total_min=rt.total_min,
-        budget_min=rt.budget_min,
-        fits=rt.fits,
-        method=rt.method,
-        kind="plan" if len(rt.stops) > 1 and res.intent.intent.plan_order else "nearest",
-    )
-
-
-def _meta(res: Result, change: str) -> Meta:
-    cached = bool(res.generation_step and res.generation_step.cached) or bool(
-        res.intent.llm_step and res.intent.llm_step.cached
-    )
-    return Meta(
-        parser=res.intent.parser,
-        generation=res.generation,
-        model=public_text(res.model) or None,
-        cached=cached,
-        generation_retry=res.generation_retry,
-        ms=res.timings_ms.get("total", 0),
-        continued=res.continued,
-        change=change,
-        intent=res.intent.intent.model_dump(mode="json"),
-        note=public_text(res.intent.note),
-        radius_m=res.retrieval.filters.radius_effective_m,
-    )
-
-
 def _hints(env: TurnEnv) -> StartHints | None:
     if env.budget_min is None and env.company is None:
         return None
     return StartHints(budget_min=env.budget_min, company=env.company)
-
-
-def _one_voice(
-    recs: list[Recommendation], generation: str, fu: FollowUp | None
-) -> list[Recommendation]:
-    """After «ещё / другое» an answer written by the AI never carries a back-filled card written from a template
-    (another voice, another badge): the template cards are left out. A first answer keeps its cards, each one
-    says by `text_source` whose words it has."""
-    if fu is None or not fu.more or generation != "llm":
-        return recs
-    voiced = [r for r in recs if r.text_source == "llm"]
-    return voiced or recs
 
 
 def _decorate(res: Result, recs: list[Recommendation], places: list[Place], lang: str) -> Result:
@@ -384,8 +397,9 @@ def _decorate(res: Result, recs: list[Recommendation], places: list[Place], lang
 
 
 def _notices(res: Result, text: str, lang: str) -> list[Notice]:
-    """A warning or the station's adverse weather; the last airport bus when the request is about a trip."""
-    found = [weather_notice(res.weather, lang)]
+    """A warning or the station's adverse weather (for a walk or a drive only); the last airport bus when the request
+    is about a trip."""
+    found = [weather_notice(res.weather, lang) if notice_matters(res) else None]
     if mentions_travel(text):
         found.append(airport_notice(to_local_naive(res.when), lang))
     return [n for n in found if n is not None]
@@ -497,7 +511,7 @@ def _search(
             gov_when[0] if gov_when else env.when,
             use_llm=env.use_llm,
             pois=env.pois,
-            weather=env.weather() if callable(env.weather) else env.weather,
+            weather=weather_at(_weather_of(env), env.asked_time),
             router=env.router,
             conversation=conv,
             profile=env.profile,
@@ -512,9 +526,16 @@ def _search(
             anchored=bmode == "near",
             on_stage=env.on_stage,
         )
-    change = _change_label(fu[0], lang) if fu and res.continued else ""
     mode = res.intent.intent.mode
-    recs = _one_voice(res.recs[:MAX_PLACES], res.generation, fu[0] if fu else None)
+    recs = one_voice(res.recs[:MAX_PLACES], res.generation, fu[0] if fu else None)
+    if recs and not (
+        fu and res.continued
+    ):  # a park «если всё же на воздух», a sight near a far viewpoint
+        pois = env.pois if env.pois is not None else get_pois()
+        recs = second_option(recs, pois, res, lang, fresh_air=env.fresh_air)
+    if fu and res.continued and fu[0].closer:
+        recs = closer_order(recs, state.shown, res, lang)
+    change = change_label(fu[0], res, recs, state.shown, lang) if fu and res.continued else ""
     new_conv = conversation_after(conv, res.model_copy(update={"recs": recs}))
     places = [
         place_from_rec(r, primary=i == 0, lang=lang, when=res.when, mode=mode)
@@ -544,12 +565,13 @@ def _search(
         toilet = (
             "public_toilet" in new_conv.intent.wished
         )  # said as the data's absence, never as the street's
+        errand = next((k for k in new_conv.intent.wished if k in ERRAND_KINDS), "")  # the same
         key = "none_new" if res.continued and new_conv.constraints.exclude_ids else "none_found"
-        longer = new_conv.intent.time_budget_min < MAX_BUDGET_MIN and not toilet
+        longer = new_conv.intent.time_budget_min < MAX_BUDGET_MIN and not toilet and not errand
         chips = (
             [chip("longer", lang)] if longer and "other" not in new_conv.intent.categories else []
         )
-        reply = s("none_toilet" if toilet else key, lang)
+        reply = s("none_toilet" if toilet else f"none_{errand}" if errand else key, lang)
         turn = _turn("none_found", reply, lang, state, [*chips, reset_chip(lang)])
     else:
         anchor = bookmark.name if bookmark is not None and bmode == "near" else ""
@@ -559,9 +581,21 @@ def _search(
         else:
             show_temp = env.when is None and not pinned and gov_when is None
             taken = taken_into_account(res, env.profile, lang)
+            now = env.asked_time is None or not env.asked_time.shifted
             reply = lead(
-                res, places, lang, show_temp=show_temp, anchor=anchor, way=way, taken=taken
+                res,
+                places,
+                lang,
+                show_temp=show_temp,
+                anchor=anchor,
+                way=way,
+                taken=taken,
+                told=state.told,
+                later=not now,
             )
+            new.told = conditions_line(res, lang, show_temp=show_temp, later=not now)
+            before, after = all_gaps(res, recs, lang, now=now)  # «детских центров в данных нет»
+            reply = " ".join(x for x in (before, reply, after) if x)
         turn = _turn(
             "places",
             reply,
@@ -570,16 +604,21 @@ def _search(
             refine_chips(new_conv.intent, new_conv.constraints, shown, lang),
         )
         turn.places = places
-        turn.route = _route(res, {p.id for p in places})
+        turn.route = route_of(res, {p.id for p in places})
         if turn.route is not None:
             turn.route.lighting = _lighting(turn, res, env, lang, pinned)
     turn.origin = origin
     turn.notice = _time_notice(res, places, lang, named_categories(text))
     turn.notices = _notices(res, text, lang)
-    turn.events = events_block(res.lat, res.lon, res.when, lang)
-    turn.meta = _meta(res, change)
+    since = env.asked_time.since if env.asked_time is not None else None
+    turn.events = events_block(res.lat, res.lon, res.when, lang, today=since)
+    turn.meta = meta_of(res, change)
     if gov_when is not None and "other" in res.intent.intent.categories:
         _state_reply(turn, recs, res.when, gov_when[1], lang)
+    if env.preface:
+        turn.reply = f"{env.preface} {turn.reply}"
+    if env.asked_time is not None:
+        turn.reply = stamp(turn.reply, env.asked_time, lang)
     return Outcome(turn, new, res)
 
 
@@ -641,14 +680,20 @@ def _named_question(state: DialogState, env: TurnEnv, lang: str, text: str) -> O
     )
 
 
-def _signal(text: str) -> tuple[bool, bool, bool]:
-    """(refusal, a kind of place or a named place, anything to search for) as the rules read the text."""
-    intent = parse_rules(text).intent
-    strong = bool(intent.categories or intent.landmark_refs or intent.info_about)
-    wish = (
-        bool(intent.free_text_keywords) or intent.accessibility
-    )  # «на коляске» is a request without a kind
-    return intent.refusal != "none", strong, strong or wish
+def _bookmark_question(state: DialogState, env: TurnEnv, lang: str, text: str) -> Outcome | None:
+    """«how long to walk back to my hotel», «сколько идти до дома»: minutes from the person to the saved place the
+    message names (any name), never a search; the places shown before stay on the map."""
+    mode = _mode(state)
+    found = bookmark_answer(
+        text, env.bookmarks, (state.lat, state.lon), env.router or default_router(), mode, lang
+    )
+    if found is None:
+        return None
+    turn = _turn("place_answer", found.text, lang, state, _refine(state, lang))
+    pois = env.pois if env.pois is not None else get_pois()
+    turn.answers = [found]
+    turn.places = kept_places(state, pois, env.when or local_now(), mode, lang)
+    return Outcome(turn, _after(state, lang))
 
 
 def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> Outcome:
@@ -665,9 +710,11 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
     is_reset, rest = reset_request(text)
     if is_reset:
         state = new_state(state.lat, state.lon, lang)
-        if not _signal(rest)[2]:
+        if not signal(rest)[2]:
             return _clarify(state, lang, "clarify_new")
         text = rest
+    if (saved_way := _bookmark_question(state, env, lang, text)) is not None:
+        return saved_way
     ref = find_ref(
         text, env.bookmarks
     )  # «рядом с домом», «по пути домой»: the words are not a wish for a place
@@ -675,7 +722,7 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
         if not ref.rest:
             return _clarify(state, lang, "clarify_start")
         text = ref.rest
-    refusal, strong, has_signal = _signal(text)
+    refusal, strong, has_signal = signal(text)
     if refusal:
         refused = _turn("refusal", t("refusal", lang), lang, state, start_chips(lang))
         return Outcome(refused, _after(state, lang))
@@ -687,6 +734,33 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
         reply = s("not_in_data", lang, what=s(f"ood_{missing}", lang))
         chips = start_chips(lang) if state.conversation is None else _refine(state, lang)
         return Outcome(_turn("none_found", reply, lang, state, chips), _after(state, lang))
+    timed = (
+        None
+        if is_state_request(text) or asks_visit(text)
+        else read_when(text, env.when or local_now())
+    )
+    if (
+        timed is not None
+    ):  # «завтра днём», «в воскресенье» (a state office's day has its own reading)
+        env = replace(env, asked_time=timed, when=timed.moment if timed.shifted else env.when)
+        if not timed.rest:
+            return _time_only(state, env, lang, text)
+        text = timed.rest
+        _, strong, has_signal = signal(text)
+    if (
+        cond := read_condition(text)
+    ) is not None:  # «суық емес болса …»: the street, if it is not cold
+        weather = _current_weather(env)
+        preface, text = condition(
+            weather, env.asked_time, lang, cond[0], temp_said=env.when is None
+        )
+        cold = cold_verdict(weather, env.asked_time)[0] is True
+        env = replace(
+            env, preface=preface, fresh_air=cold and cond[0] != text
+        )  # a street wish made indoor
+        _, strong, has_signal = signal(text)
+    if asks_weather(text):
+        return _weather_turn(state, env, lang, text)
     if (named := _named_question(state, env, lang, text)) is not None:
         return named
     pq = (
@@ -696,8 +770,8 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
         priced = place_question(
             text, allow_kind=True
         )  # «сколько стоит капучино там»: a price asked of a shown place
-        pq = priced if priced is not None and priced.topic == "price" else None
-    if pq is not None and (pq.marked or not strong or pq.topic == "price"):
+        pq = priced if priced is not None and priced.topic in KIND_SAFE_TOPICS else None
+    if pq is not None and (pq.marked or not strong or pq.topic in KIND_SAFE_TOPICS):
         if state.shown or state.asked:
             return _place_question_turn(state, env, lang, text, pq)
         if not has_signal or pq.marked:
@@ -706,7 +780,9 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
     model = None
     if fu is None and not has_signal:
         # slang, typos, a phrase with no word the rules know: the model reads it before anything is asked back
-        model = _model_reading(env, text)
+        model = (
+            None if is_bored_outing(text) else _model_reading(env, text)
+        )  # «скучно»: the default outing, not the model's guess
         if model is None:
             outing = default_outing(
                 text, env.when
@@ -715,4 +791,6 @@ def take_turn(state: DialogState, message: str, env: TurnEnv | None = None) -> O
                 key = "clarify_unclear" if state.conversation is None else "clarify_change"
                 return _clarify(state, lang, key)
             model = (outing, Deadline())
+    if _refused_all(state, fu):  # «не торговый центр» after a mall: what instead?
+        return _clarify(state, lang, "clarify_dropped")
     return _search(state, env, lang, text, fu, model, ref)

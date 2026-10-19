@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections.abc import Callable
 
 from .models import Recommendation, RoutePlan
-from .radius import haversine_m, plan_slot, travel_minutes
+from .radius import ERRAND_KINDS, haversine_m, plan_slot, travel_minutes
 
 MAX_STOPS = 3
 MIN_STAY_MIN = 10  # never shrink a stop below this to make the loop fit
@@ -27,6 +27,13 @@ def estimate_leg_fn(mode: str) -> LegFn:
 
 def _pt(r: Recommendation) -> Point:
     return (r.poi.lat, r.poi.lon)
+
+
+def route_stops(recs: list[Recommendation]) -> list[Recommendation]:
+    """The cards a walking route goes through: never an errand (a pharmacy, a food shop). An answer of errands only
+    gets the way to its first one (the place it leads with), not a walk from shop to shop."""
+    walk = [r for r in recs if r.poi.category not in ERRAND_KINDS]
+    return walk if walk else recs[:1]
 
 
 def nearest_neighbour_order(

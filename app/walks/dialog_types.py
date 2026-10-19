@@ -242,6 +242,7 @@ class DialogState(BaseModel):
     )
     bookmark: str = ""  # the name of the bookmark the dialogue searches around / along the way to (from the device)
     bookmark_mode: Literal["", "near", "along"] = ""
+    told: str = ""  # the conditions line the last fresh answer said: the next one does not repeat it word for word
 
     def shown_has(self, place_id: str) -> bool:
         return any(p.id == place_id for p in self.shown)

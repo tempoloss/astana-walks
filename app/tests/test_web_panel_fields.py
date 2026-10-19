@@ -110,7 +110,7 @@ def test_every_place_has_its_way_and_the_answer_says_its_moment(client):
         assert leg["meters"] == place["walk"]["distance_m"]
         assert leg["method"] == place["walk"]["method"]
         assert leg["shape"] is None or len(leg["shape"]) > 1
-    assert set(answer["at"]) == {"time", "date"}
+    assert set(answer["at"]) == {"time", "date", "day"}
     assert len(answer["at"]["time"]) == 5
 
 

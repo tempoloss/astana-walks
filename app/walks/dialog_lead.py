@@ -5,19 +5,23 @@ minutes, names) is inserted by code from a field of the data; the model supplies
 
 from __future__ import annotations
 
+from .attributes import local_food_signal
 from .dialog_strings import s
 from .dialog_types import Place
 from .holidays import holiday_name as holiday_ru
-from .hours import to_local_naive
-from .i18n import category_name, holiday_name, t
+from .hours import local_now, to_local_naive
+from .i18n import category_name, holiday_name, plural_ru, t
+from .i18n_gov import weekday_on
 from .i18n_weather import tw
+from .kids import kids_gap
 from .lexicon import match
 from .lexicon_concepts import CONCEPTS
-from .models import Result, WeatherInfo
+from .models import Recommendation, Result, WeatherInfo
 from .profile import Profile
 from .shelter import LIT_NEAR
 from .sun import is_dark
-from .weather import BAD_PM25, HEAVY_PRECIP_MM
+from .want import names_the_wish
+from .weather import BAD_PM25, HEAVY_PRECIP_MM, warned
 
 FEELS_GAP_C = 3  # «ощущается как» is said when it differs from the temperature by this much
 TRACE_PRECIP_MM = 0.2  # less precipitation than this in the hour is not worth a word
@@ -31,6 +35,10 @@ _SKY = (
     "wind",
 )  # tokens of the station report
 _MAX_WANT_KINDS = 2
+MAX_CLAUSES = (
+    2  # the conditions are one short clause: at most this many parts (a holiday comes on top)
+)
+OUTDOOR_KINDS = frozenset({"park_garden", "viewpoint", "attraction_landmark", "kids_playground"})
 _BAR_CONCEPTS = frozenset(c.name for c in CONCEPTS if "bar_nightlife" in c.categories)
 
 
@@ -81,33 +89,94 @@ def _air(w: WeatherInfo, lang: str) -> str:
     return s("ld_haze", lang) if "smog" in w.conditions else ""
 
 
-def conditions(res: Result, lang: str, *, show_temp: bool) -> tuple[list[str], bool]:
-    """(the clauses about Astana now, whether any of them changes what is offered: weather, air or darkness). The
-    temperature is said only for the real present (or a weather the user set by hand), never for another hour."""
+def conditions(
+    res: Result, lang: str, *, show_temp: bool, later: bool = False
+) -> tuple[list[str], bool]:
+    """(the clauses about Astana now that matter for THIS request, whether any of them changes what is offered): the
+    cold, the sky and the dark for a walk; the air (НМУ) only for a stated outdoor wish; the official notice for a walk
+    or a drive; a holiday always (it moves the hours). At most MAX_CLAUSES of them: one short clause, not a weather
+    report before every café. The temperature is said only for the real present (or a weather set by hand)."""
     w = res.weather
     local = to_local_naive(res.when)
+    intent, f = res.intent.intent, res.retrieval.filters
+    walk = (
+        bool(set(intent.wished) & OUTDOOR_KINDS) or f.outdoor_request
+    )  # a walk the person named, not a default
     clauses: list[str] = []
     drives = False
     if w is not None:
-        if w.user_hint and w.user_hint != "smog":
-            clauses.append(t(f"wx_hint_{w.user_hint}", lang))
-        if show_temp and (temp := _temperature(w, lang)):
-            clauses.append(temp)
-        if sky := _sky(w, lang):
-            clauses.append(sky)
-        if air := _air(w, lang):
-            clauses.append(air)
         drives = w.adverse or w.air_bad
-        if "storm_warning" in w.conditions and not sky:
-            clauses.append(
-                s("ld_storm", lang)
-            )  # the official notice, said once; its own line keeps the link
-    if w is not None and is_dark(w, local):
-        clauses.append(s("ld_dark", lang))
+        if w.user_hint and w.user_hint != "smog":
+            clauses.append(t(f"wx_hint_{w.user_hint}", lang))  # the person's own words or setting
+        sky = _sky(w, lang)
+        if walk and show_temp and (temp := _temperature(w, lang)):
+            clauses.append(temp)
+        if walk and sky:
+            clauses.append(sky)
+        if f.outdoor_request and (air := _air(w, lang)):
+            clauses.append(air)
+        if (walk or intent.mode == "car") and "storm_warning" in w.conditions and not sky:
+            # the official notice, by what it warns of («ожидается туман»), not as a «шторм»
+            what = warned(w, lang)
+            clauses.append(s("ld_storm_what", lang, what=what) if what else s("ld_storm", lang))
+    if (
+        walk and w is not None and is_dark(w, local)
+    ):  # «стемнеет» for a later hour, «уже темно» for now
+        clauses.append(
+            s("ld_dark_later" if later else "ld_dark", lang)
+        )  # `later`: an asked hour ahead
         drives = True
-    if name := holiday_ru(local.date()):
-        clauses.append(s("ld_holiday", lang, name=holiday_name(name, lang)))
+    clauses = clauses[:MAX_CLAUSES]
+    if name := holiday_ru(
+        local.date()
+    ):  # the asked day's holiday, said as that day («в воскресенье»), never «сегодня»
+        days = (local.date() - to_local_naive(local_now()).date()).days
+        holiday = holiday_name(name, lang)
+        if days <= 0:
+            clauses.append(s("ld_holiday", lang, name=holiday))
+        else:
+            day = s("w_tomorrow", lang) if days == 1 else weekday_on(local.weekday(), lang)
+            clauses.append(s("ld_holiday_on", lang, name=holiday, day=day))
     return clauses, drives
+
+
+def honest_gaps(
+    res: Result, recs: list[Recommendation], lang: str, *, now: bool
+) -> tuple[str, str]:
+    """(said before the answer, said after it): a kids' place asked for that the data has none of, Kazakh food no
+    shown place is marked with; and (`now`), when every card's hours are unknown, one short clause after it that more
+    places nearby are closed now («(ещё 2 места рядом сейчас закрыты)»): the cards keep their state, the closed ones are
+    not offered."""
+    intent, pois = res.intent.intent, [r.poi for r in recs]
+    out = [s(f"kids_none_{gap}", lang)] if (gap := kids_gap(intent, pois)) else []
+    if intent.local_food and not any(local_food_signal(p) for p in pois):
+        out.append(s("local_food_none", lang))
+    n = res.retrieval.filters.excluded_closed
+    walk = bool(
+        set(intent.wished) & OUTDOOR_KINDS
+    )  # a park keeps no hours: no such line under a walk
+    if not (now and n and recs and not walk and all(r.hours_state == "unknown" for r in recs)):
+        return " ".join(out), ""
+    one = n % 10 == 1 and n % 100 != 11
+    words = {
+        "ru": {
+            "places": plural_ru(n, "место", "места", "мест"),
+            "closed": "закрыто" if one else "закрыты",
+        },
+        "en": {"places": "place" if n == 1 else "places", "closed": "is" if n == 1 else "are"},
+    }.get(lang, {})
+    return " ".join(out), s("known_hours_closed", lang, n=n, **words)
+
+
+def notice_matters(res: Result) -> bool:
+    """Is the official weather notice worth its own line under this answer: a walk the person asked for (an outdoor kind
+    they named) or a drive (walks.dialog); never under a café, a bar or a toilet found while it is in force."""
+    intent = res.intent.intent
+    return (
+        bool(set(intent.wished) & OUTDOOR_KINDS)
+        or res.retrieval.filters.outdoor_request
+        or intent.mode == "car"
+    )
 
 
 def _walk_advice(res: Result, shown: set[str], lang: str) -> str:
@@ -182,6 +251,20 @@ def pick_clause(
     return s("ld_pick", lang, name=place.name, walk=walk, tail=tail)
 
 
+def conditions_line(res: Result, lang: str, *, show_temp: bool, later: bool = False) -> str:
+    """The clauses about Astana now as one line (the weather, the air, the dark): what a dialogue says once."""
+    return ", ".join(conditions(res, lang, show_temp=show_temp, later=later)[0])
+
+
+def own_opening(res: Result, places: list[Place], anchor: str, way: tuple[str, str] | None) -> str:
+    """The model's own opening when it can be the lead: it names the first card and the person's wish, and no bookmark
+    («рядом с домом», «по пути») is in play (the model does not know them)."""
+    text = res.lead_text
+    if not text or anchor or way is not None or places[0].name.lower() not in text.lower():
+        return ""
+    return text if names_the_wish(text, res.intent.intent) else ""
+
+
 def lead(
     res: Result,
     places: list[Place],
@@ -191,14 +274,22 @@ def lead(
     anchor: str = "",
     way: tuple[str, str] | None = None,
     taken: str = "",
+    told: str = "",
+    later: bool = False,
 ) -> str:
-    """The lead of a fresh search: conditions, what the person wants, the recommendation, how many more are below, and
-    (`taken`) once, what of the person's saved settings this answer took into account."""
-    clauses, drives = conditions(res, lang, show_temp=show_temp)
+    """The lead of a fresh search: the model's own opening when code can stand behind it; else conditions, what the
+    person wants, the recommendation and how many more are below. The conditions are said once per dialogue (`told`:
+    the line said before), not before every answer; (`taken`) once, what of the saved settings this answer used."""
+    guard = guard_clause(res, lang)
+    if own := own_opening(res, places, anchor, way):
+        text = f"{guard} {own}" if guard else own
+        return f"{text} {taken}" if taken else text
+    clauses, drives = conditions(res, lang, show_temp=show_temp, later=later)
+    if ", ".join(clauses) == told:
+        clauses = []  # said in this dialogue already: the answer goes straight to the places
     if clauses and (tail := _tail(res, drives, lang, {p.id for p in places})):
         clauses.append(tail)
     first = ", ".join(clauses)
-    guard = guard_clause(res, lang)
     want = "" if guard else res.lead_want or template_want(res, lang)
     pick = pick_clause(places[0], lang, anchor=anchor, way=way)
     rest = len(places) - 1
@@ -231,7 +322,7 @@ def taken_into_account(res: Result, profile: Profile | None, lang: str) -> str:
     shown = {r.poi.category for r in res.recs}
     items: list[str] = []
     if "with_kids" in applied:
-        band = profile.kids_age_band
+        band = ", ".join(profile.kids_age_bands)
         items.append(s("pl_with_kids_age", lang, band=band) if band else s("pl_with_kids", lang))
     if "mobility" in applied:
         note = _marked(

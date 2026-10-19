@@ -97,7 +97,7 @@ class ProfileForm(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     with_kids: bool = False
-    kids_age_band: AgeBand | None = None
+    kids_age_bands: list[AgeBand] = Field(default_factory=list, max_length=len(get_args(AgeBand)))
     mobility: Mobility = "none"
     quiet: bool = False
     budget: ProfileBudget = "any"
@@ -115,6 +115,11 @@ class ProfileForm(BaseModel):
     def _clean_about(cls, value: object) -> str:
         return clean_about(value)
 
+    @field_validator("kids_age_bands")
+    @classmethod
+    def _ages_once(cls, value: list[AgeBand]) -> list[AgeBand]:
+        return list(dict.fromkeys(value))
+
     @field_validator("liked", "avoid")
     @classmethod
     def _offered_kinds(cls, value: list[Category]) -> list[Category]:
@@ -124,7 +129,7 @@ class ProfileForm(BaseModel):
 
     @model_validator(mode="after")
     def _consistent(self) -> ProfileForm:
-        if self.kids_age_band is not None and not self.with_kids:
+        if self.kids_age_bands and not self.with_kids:
             raise ValueError("the age of a child needs «with kids»")
         if set(self.liked) & set(self.avoid):
             raise ValueError("a kind of place cannot be both liked and left out")
@@ -186,7 +191,8 @@ def _changed(profile: Profile, act: ProfileAction) -> Profile | None:
         form = act.form.model_dump()
         liked = {c: n for c, n in profile.liked.items() if c not in FORM_CATEGORIES}
         liked |= {c: max(profile.liked.get(c, 0), 1) for c in form.pop("liked")}
-        return profile.model_copy(update={**form, "liked": liked})
+        # the form's age groups replace the stored ones: the single youngest age is derived from them again
+        return profile.model_copy(update={**form, "liked": liked, "kids_age_band": None})
     return None
 
 

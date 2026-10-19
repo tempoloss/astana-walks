@@ -22,9 +22,10 @@ from .dialog_types import (
     Topic,
     Walk,
 )
+from .facts import clean_address
 from .feedback import hours_label
-from .hours import is_24_7, poi_hours, to_local_naive
-from .i18n import category_name, source_label, tip
+from .hours import poi_hours, to_local_naive
+from .i18n import category_name, source_label, t, tip
 from .i18n_gov import gt
 from .models import (
     MUSEUM_REGISTER,
@@ -36,7 +37,9 @@ from .models import (
     Recommendation,
 )
 from .radius import haversine_m, travel_minutes
+from .status import TEXT_KEY, hours_facts, next_change
 from .visit_hours import visit_note
+from .walking import WalkingRouter
 
 FAR_WALK_MIN = 25  # from here «как дойти» suggests a vehicle
 _HOURS_WORDS = (
@@ -132,26 +135,6 @@ def _by(poi: POI, lang: str) -> str:
     return s("by_site" if which == OFFICIAL_SITE else "by_osm", lang)
 
 
-def _next_change(poi: POI, local: datetime) -> datetime | None:
-    raw = poi.opening_hours
-    if not raw or not raw.strip():
-        return None
-    try:
-        return OpeningHours(raw).next_change(local)
-    except (ValueError, OverflowError, TypeError):
-        return None
-
-
-def _when_text(moment: datetime, local: datetime, lang: str) -> str:
-    """«в 10:00» today, «завтра в 10:00» the next day; '' farther away."""
-    day = (moment.date() - local.date()).days
-    if day == 0:
-        return s("h_at", lang, t=f"{moment:%H:%M}")
-    if day == 1:
-        return s("h_tomorrow", lang, t=f"{moment:%H:%M}")
-    return ""
-
-
 def dist_text(meters: int, lang: str) -> str:
     """«340 м», «8,6 км» (the english «8.6 km»)."""
     unit_m, unit_km = ("m", "km") if lang == "en" else ("м", "км")
@@ -211,35 +194,10 @@ def closes_soon(poi: POI, state: str, at: datetime) -> bool:
     if state != "open":
         return False
     local = to_local_naive(at)
-    nxt = _next_change(poi, local)
+    nxt = next_change(poi, local)
     return nxt is not None and nxt - local <= timedelta(hours=1)
 
 
-def hours_facts(poi: POI, state: str, at: datetime, lang: str) -> tuple[str, str]:
-    """(what the hours say, its time phrase): 247 / until «22:00» / open / opens «в 10:00» / closed / unknown.
-    The change time is the next one of the record's schedule (the opening_hours library), only when it is near."""
-    if state == "unknown":
-        return "unknown", ""
-    local = to_local_naive(at)
-    nxt = _next_change(poi, local)
-    if state == "open":
-        if is_24_7(poi.opening_hours):
-            return "247", ""
-        if nxt is not None and (nxt - local) < timedelta(hours=20):
-            return "until", f"{nxt:%H:%M}"
-        return "open", ""
-    when = _when_text(nxt, local, lang) if nxt is not None else ""
-    return ("opens", when) if when else ("closed", "")
-
-
-_TEXT_KEY = {
-    "247": "h_open_247",
-    "until": "h_open_until",
-    "open": "h_open",
-    "opens": "h_closed_opens",
-    "closed": "h_closed",
-    "unknown": "h_unknown",
-}
 _ANSWER_KEY = {
     "247": "open_247",
     "until": "open_until",
@@ -252,7 +210,7 @@ _ANSWER_KEY = {
 def hours_block(poi: POI, state: str, issue: str, holiday: str, at: datetime, lang: str) -> Hours:
     """The hours of a place in plain words, its source and the honest caveat (sources disagree, holiday, unknown)."""
     kind, when = hours_facts(poi, state, at, lang)
-    text = s(_TEXT_KEY[kind], lang, t=when)
+    text = s(TEXT_KEY[kind], lang, t=when)
     note = ""
     if issue == "conflict":
         note = s("h_note_conflict", lang)
@@ -315,6 +273,13 @@ def _caveat(padding: str, lang: str) -> str:
     return s("caveat_other", lang) if padding in ("backfill", "substituted") else ""
 
 
+def _unsaid(text: str, said: str) -> str:
+    """`text` without the sentences the card's reason already says (a template reason may lead with the record's
+    own description, which «что делать» starts with too)."""
+    known = {x.strip(" .").lower() for x in sentences(plain(said))}
+    return " ".join(x for x in sentences(plain(text)) if x.strip(" .").lower() not in known)
+
+
 def place_from_rec(
     r: Recommendation, *, primary: bool, lang: str, when: datetime, mode: str
 ) -> Place:
@@ -325,19 +290,20 @@ def place_from_rec(
     visit = visit_note(poi, when, r.travel_min, r.time_on_site_min, r.hours_state, lang)
     if visit and not hours.note:
         hours.note = visit
+    why = short_why(r.why) or t("why_none", lang)  # a model card left with nothing: the honest line
     return Place(
         id=poi.id,
-        name=display_name(poi.name),
+        name=display_name(poi.name_for(lang)),
         kind=kind,
         category=poi.category,
         lat=poi.lat,
         lon=poi.lon,
         primary=primary,
-        why=short_why(r.why) or s("why_fallback", lang, kind=kind),
-        what_to_do=short_what(r.what_to_do) or tip(poi.category, lang),
+        why=why,
+        what_to_do=short_what(_unsaid(r.what_to_do, why)) or tip(poi.category, lang),
         ai_idea=r.generated_idea,
         stay_min=r.time_on_site_min,
-        address=poi.address,
+        address=clean_address(poi.address) or None,
         phone=poi.phone,
         website=poi.website,
         walk=Walk(
@@ -361,31 +327,45 @@ def place_from_rec(
 
 
 def place_from_poi(
-    poi: POI, *, origin: tuple[float, float], mode: str, when: datetime, lang: str, what: str = ""
+    poi: POI,
+    *,
+    origin: tuple[float, float],
+    mode: str,
+    when: datetime,
+    lang: str,
+    what: str = "",
+    router: WalkingRouter | None = None,
 ) -> Place:
-    """A place straight from the dataset (a question about it, no search): distance by the straight line."""
+    """A place straight from the dataset (a question about it, no search): the distance by the straight line, or,
+    with a `router` and on foot, the street leg from the person to the place (the walking time code of the search)."""
     d = haversine_m(origin[0], origin[1], poi.lat, poi.lon)
-    minutes = travel_minutes(d, mode)
-    hrs = poi_hours(poi, to_local_naive(when) + timedelta(minutes=minutes))
+    minutes, method = travel_minutes(d, mode), "estimate"
+    if router is not None and mode == "walk":
+        leg = router.leg(origin, (poi.lat, poi.lon))
+        d, minutes, method = leg.distance_m, leg.minutes, leg.method
+    arrival = to_local_naive(when) + timedelta(minutes=minutes)
+    hrs = poi_hours(
+        poi, arrival
+    )  # the state and its change time of one moment: the arrival (walks.status)
     return Place(
         id=poi.id,
-        name=display_name(poi.name),
+        name=display_name(poi.name_for(lang)),
         kind=poi_kind(poi, lang),
         category=poi.category,
         lat=poi.lat,
         lon=poi.lon,
         what_to_do=what,
-        address=poi.address,
+        address=clean_address(poi.address) or None,
         phone=poi.phone,
         website=poi.website,
         walk=Walk(
             minutes=minutes,
             distance_m=round(d),
-            method="estimate",
+            method=method,  # type: ignore[arg-type]
             mode=mode,  # type: ignore[arg-type]
             text=walk_text(minutes, mode, lang),
         ),
-        hours=hours_block(poi, hrs.state, hrs.issue, hrs.note, when, lang),
+        hours=hours_block(poi, hrs.state, hrs.issue, hrs.note, arrival, lang),
         sources=sources_of(poi, lang),
         data_date=(poi.collected_at or "")[:10] or None,
         price=price_of(poi, lang),
@@ -477,7 +457,7 @@ def _fact(place: Place, topic: str, text: str, known: bool = True) -> PlaceAnswe
     return PlaceAnswer(place_id=place.id, name=place.name, topic=topic, text=text, known=known)
 
 
-def _price_source(poi: POI, lang: str) -> tuple[str, str, str | None, str | None]:
+def price_source(poi: POI, lang: str) -> tuple[str, str, str | None, str | None]:
     """(whose price wording it is, «по данным …», the page, the day the fact was read): every source of `price_text` is named by what it is —
     the venue's site, the ministry's museum register, the Wikivoyage guide, the page of any other first-party layer —
     never as the raw key of `field_sources`, never as OpenStreetMap."""
@@ -502,13 +482,13 @@ def price_of(poi: POI, lang: str) -> Price | None:
     """The card's price line: the place's own wording and whose it is; None when the record has no price."""
     if not poi.price_text:
         return None
-    label, _, url, date = _price_source(poi, lang)
+    label, _, url, date = price_source(poi, lang)
     return Price(text=poi.price_text, source=Source(label=label, url=url), date=date)
 
 
 def _price_answer(place: Place, poi: POI, lang: str) -> PlaceAnswer:
     """The place's own price wording («вход — 1000 тг») with its source; the wording is never parsed into a number."""
-    label, by, url, _ = _price_source(poi, lang)
+    label, by, url, _ = price_source(poi, lang)
     return PlaceAnswer(
         place_id=place.id,
         name=place.name,
@@ -534,7 +514,9 @@ def answer(topic: Topic, place: Place, poi: POI, lang: str, at: datetime) -> Pla
     if topic == "address":
         if poi.address:
             return _fact(
-                place, topic, s("a_address", lang, name=name, address=poi.address, walk=walk)
+                place,
+                topic,
+                s("a_address", lang, name=name, address=clean_address(poi.address), walk=walk),
             )
         return _fact(place, topic, s("a_address_none", lang, name=name, walk=walk), known=False)
     if topic == "route":
@@ -560,4 +542,7 @@ def answer(topic: Topic, place: Place, poi: POI, lang: str, at: datetime) -> Pla
 
 def short_reply(answers: list[PlaceAnswer]) -> str:
     """The reply of an answer turn: the answers themselves, each one sentence (the first one of its text)."""
-    return " ".join(first_sentence(a.text) if len(answers) > 1 else a.text for a in answers)
+    several_places = (
+        len({a.place_id for a in answers}) > 1
+    )  # one place, several questions: each answer whole
+    return " ".join(first_sentence(a.text) if several_places else a.text for a in answers)

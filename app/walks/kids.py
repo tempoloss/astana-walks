@@ -58,6 +58,20 @@ def is_member(poi: POI, member_cats: set[str], requested: list[str], intent: Int
     )
 
 
+def kids_gap(intent: Intent, pois: list[POI]) -> str:
+    """The kids' place the person asked for that no place of the answer is: «entertainment» (a play centre, a trampoline
+    hall), «museum_gallery» (a children's museum); '' when one is shown or none was asked for. The answer then says the
+    data has none nearby instead of passing a conservatory or a gallery off as one."""
+    if not intent.with_kids:
+        return ""
+    asked = [
+        k
+        for k in ("entertainment", "museum_gallery")
+        if k in intent.wished and (k == "entertainment" or "детск" in intent.free_text_keywords)
+    ]
+    return next((k for k in asked if not any(p.category == k and kids_signal(p) for p in pois)), "")
+
+
 NAMED_DETOUR_MIN = (
     15  # a named place counts as an alternative to an anonymous one only within this walk
 )

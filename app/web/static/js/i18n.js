@@ -5,6 +5,7 @@ const INDEX = { kk: 0, ru: 1, en: 2 };
 const KEY = 'anyq.lang';
 let table = {};
 let lang = 'ru';
+let shown = null; // the language a block is being drawn in (withLang); null: the page's
 const listeners = new Set();
 
 export function initStrings(strings) {
@@ -23,7 +24,19 @@ export function initialLang({ followBrowser = true } = {}) {
 }
 
 export function currentLang() {
-  return lang;
+  return shown || lang;
+}
+
+// Draw something in another language than the page's: an answer is in the language of its turn (`turn.lang`), so its
+// labels («сегодня / сейчас», «Источник часов», «Подробнее») agree with its words instead of with the page's menu.
+export function withLang(code, draw) {
+  const before = shown;
+  shown = code in INDEX ? code : null;
+  try {
+    return draw();
+  } finally {
+    shown = before;
+  }
 }
 
 export function langFixed() {
@@ -33,7 +46,7 @@ export function langFixed() {
 export function tr(key, fields) {
   const entry = table[key];
   if (!entry) return key;
-  const text = entry[INDEX[lang]];
+  const text = entry[INDEX[shown || lang]];
   if (!fields) return text;
   return text.replace(/\{(\w+)\}/g, (all, name) => (name in fields ? String(fields[name]) : all));
 }

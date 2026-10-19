@@ -14,7 +14,8 @@ from walks import pipeline
 from walks.claims import CLAIMS, note_keys, strip_unbacked, unbacked_kinds
 from walks.generate import Generation, _from_llm
 from walks.i18n import t
-from walks.models import POI, Candidate, Intent, LLMOutput, LLMRec, PeopleEvidence
+from walks.llm_output import LLMOutput, LLMRec
+from walks.models import POI, Candidate, Intent, PeopleEvidence
 from walks.presets import PRESETS
 
 LANGS = ("kk", "ru", "en")
@@ -181,7 +182,9 @@ def card(c: Candidate, lang: str, why: str, what: str = "", notes: str = "", **i
             )
         ]
     )
-    intent = Intent(language=lang, time_budget_min=90, **intent_kw)
+    intent = Intent(
+        language=lang, time_budget_min=90, time_stated=True, **intent_kw
+    )  # «на полтора часа»
     recs, _ = _from_llm(out, [c], intent)
     return recs[0]
 
@@ -196,6 +199,12 @@ def test_every_claim_has_a_sentence_in_every_language():
         assert set(sentences) == set(LANGS)
 
 
+STATUS_KINDS = {
+    "round_clock",
+    "late_hours",
+}  # a status the model writes in its own words is dropped (walks.status)
+
+
 @pytest.mark.parametrize("lang", LANGS)
 @pytest.mark.parametrize("kind", sorted(CLAIM_TEXT))
 def test_an_unbacked_claim_is_dropped_and_the_card_says_the_data_do_not_state_it(kind, lang):
@@ -204,6 +213,8 @@ def test_an_unbacked_claim_is_dropped_and_the_card_says_the_data_do_not_state_it
     r = card(cand(**setup.get(kind, {})), lang, f"{CLEAN[lang]} {claim}")
     assert claim not in text_of(r)
     assert CLEAN[lang] in r.why  # the rest of the sentences stays
+    if kind in STATUS_KINDS:
+        return  # the status rule took it before the claims: the card's own status line says the hours
     assert kind in r.unbacked_claims
     if NOTE_OF[kind]:
         assert t(NOTE_OF[kind], lang) in r.notes
@@ -254,6 +265,11 @@ def test_a_claim_a_field_backs_is_kept(kind, lang):
     claim = CLAIM_TEXT[kind][lang]
     r = card(cand(reasons=reasons, **spec), lang, f"{CLEAN[lang]} {claim}")
     assert r.unbacked_claims == []
+    if (
+        kind in STATUS_KINDS
+    ):  # backed or not, a status is said only in the words of code (the card's hours line)
+        assert claim not in r.why
+        return
     assert claim in r.why
 
 

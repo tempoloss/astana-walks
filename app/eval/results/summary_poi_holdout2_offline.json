@@ -6,16 +6,16 @@
   "cases_with_recs": 24,
   "recs_total": 70,
   "hallucinated_poi": 0,
-  "constraint_ok_rate": 85.7,
+  "constraint_ok_rate": 80.0,
   "case_all_ok_rate": 33.3,
   "honest_unknown_rate": 100.0,
   "honest_unknown_rate_flagged": 100.0,
   "honest_rec_rate": 100.0,
   "coverage": 37.5,
   "diversity": 100.0,
-  "top1_ok_rate": 95.8,
-  "top1_open_rate": 58.3,
-  "unknown_hours_rec_share": 64.3,
+  "top1_ok_rate": 91.7,
+  "top1_open_rate": 45.8,
+  "unknown_hours_rec_share": 67.1,
   "non_osm_rec_share": 0.0,
   "avg_walk_min": 6.7,
   "wifi_socket_in_data_share": 33.3,
@@ -23,7 +23,7 @@
   "latency_ms_median": 11.0,
   "latency_ms_p90": 19.0,
   "generation_ms_median": 0.0,
-  "generation_ms_p90": 0.0,
+  "generation_ms_p90": 1.0,
   "model_link": {
     "template": 24
   },
@@ -31,15 +31,15 @@
   "llm_invalid_answers": 0,
   "violation_cases": {
     "over_budget": 15,
-    "category_not_allowed": 5,
-    "outdoor_in_cold_or_smog": 1,
-    "walk_too_long": 1
+    "category_not_allowed": 7,
+    "walk_too_long": 2,
+    "outdoor_in_cold_or_smog": 1
   },
-  "padded_rec_share": 11.4,
+  "padded_rec_share": 10.0,
   "expanded_rec_share": 0.0,
-  "backfill_rec_share": 11.4,
+  "backfill_rec_share": 10.0,
   "substituted_rec_share": 0.0,
-  "padded_case_share": 16.7,
+  "padded_case_share": 12.5,
   "padding_derived_recs": 0,
   "padding_missing_fields": [],
   "honest_abstain_rate": null,
@@ -63,7 +63,9 @@
     {
       "case_id": "h2-05-piramida-tourist-hour",
       "violations": [
-        "over_budget"
+        "category_not_allowed",
+        "over_budget",
+        "walk_too_long"
       ]
     },
     {
@@ -87,6 +89,7 @@
     {
       "case_id": "h2-12-astanamall-late-night",
       "violations": [
+        "category_not_allowed",
         "over_budget"
       ]
     },
@@ -114,14 +117,14 @@
       "violations": [
         "category_not_allowed",
         "outdoor_in_cold_or_smog",
-        "over_budget",
-        "walk_too_long"
+        "over_budget"
       ]
     },
     {
       "case_id": "h2-17-medu-between-classes",
       "violations": [
-        "over_budget"
+        "over_budget",
+        "walk_too_long"
       ]
     },
     {
@@ -161,8 +164,8 @@
     "cases_file": "holdout2_cases.json",
     "case_set": "holdout2",
     "records": 24,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:05+05:00"
+    "generated_at": "2026-10-19T10:36:40+05:00"
   }
 }

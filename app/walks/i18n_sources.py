@@ -39,59 +39,13 @@ SOURCE_STRINGS: dict[str, tuple[str, str, str]] = {
         "открыто по данным путеводителя Wikivoyage",
         "open according to the Wikivoyage travel guide",
     ),
-    "fact_open_voyage": (
-        "Wikivoyage путеводительінің сағаттары бойынша осы уақытта ашық.",
-        "По часам путеводителя Wikivoyage в это время открыто.",
-        "Open at this time according to the Wikivoyage travel guide's hours.",
-    ),
-    "fact_open_247_voyage": (
-        "Wikivoyage деректерінше тәулік бойы жұмыс істейді.",
-        "По данным путеводителя Wikivoyage работает круглосуточно.",
-        "Open 24/7 according to the Wikivoyage travel guide.",
-    ),
-    "fact_nearest_open_voyage": (
-        "Таңдалған {n} «{cat}» орнының ішінде түзу сызық бойынша Wikivoyage сағаттары бойынша ашық ең жақыны.",
-        "Ближайшее по прямой из {n} подобранных мест «{cat}», открытое по часам путеводителя Wikivoyage.",
-        "The nearest in a straight line of the {n} selected “{cat}” places that is open by the Wikivoyage travel guide's hours.",
-    ),
     "people_vs_voyage": (
         "бұл Wikivoyage сағаттарымен сәйкес келмейді, сенімділік төмендетілді",
         "это расходится с часами путеводителя Wikivoyage, уверенность снижена",
         "this disagrees with the Wikivoyage travel guide's hours, confidence lowered",
     ),
-    "fit_night_voyage": (
-        "Wikivoyage сағаттары бойынша осы уақытта ашық",
-        "по часам путеводителя Wikivoyage открыто в это время",
-        "the Wikivoyage travel guide's hours say it is open at that time",
-    ),
     "hours_state_closed": ("жабық", "закрыто", "closed"),
     "hours_state_unknown": ("жұмыс уақыты белгісіз", "часы неизвестны", "hours unknown"),
-    # the facts of a no-AI card: «open» says whose hours it is
-    "fact_open_site": (
-        "Ресми сайттың сағаттары бойынша осы уақытта ашық.",
-        "По часам с официального сайта в это время открыто.",
-        "Open at this time according to the official website's hours.",
-    ),
-    "fact_open_247_site": (
-        "Ресми сайт деректері бойынша тәулік бойы жұмыс істейді.",
-        "По данным официального сайта работает круглосуточно.",
-        "Open 24/7 according to the official website.",
-    ),
-    "fact_open_register": (
-        "Мұражайлар реестрінің сағаттары бойынша осы уақытта ашық.",
-        "По часам из реестра музеев в это время открыто.",
-        "Open at this time according to the museum register's hours.",
-    ),
-    "fact_open_247_register": (
-        "Мұражайлар реестрі бойынша тәулік бойы жұмыс істейді.",
-        "По данным реестра музеев работает круглосуточно.",
-        "Open 24/7 according to the museum register.",
-    ),
-    "fact_nearest_open_site": (
-        "Таңдалған {n} «{cat}» орнының ішінде түзу сызық бойынша ресми сайттың сағаттары бойынша ашық ең жақыны.",
-        "Ближайшее по прямой из {n} подобранных мест «{cat}», открытое по часам с официального сайта.",
-        "The nearest in a straight line of the {n} selected “{cat}” places that is open by the official website's hours.",
-    ),
     "people_vs_site": (
         "бұл ресми сайттың сағаттарымен сәйкес келмейді, сенімділік төмендетілді",
         "это расходится с часами официального сайта, уверенность снижена",
@@ -127,16 +81,6 @@ SOURCE_STRINGS: dict[str, tuple[str, str, str]] = {
         "Уикивойаж деректерінше (CC BY-SA 4.0): {text}",
         "по данным путеводителя Wikivoyage (CC BY-SA 4.0): {text}",
         "according to the Wikivoyage travel guide (CC BY-SA 4.0): {text}",
-    ),
-    "fit_night_site": (
-        "ресми сайт сағаттары бойынша осы уақытта ашық",
-        "по часам с официального сайта открыто в это время",
-        "the official website's hours say it is open at that time",
-    ),
-    "fit_night_register": (
-        "мұражайлар реестрі сағаттары бойынша осы уақытта ашық",
-        "по часам из реестра музеев открыто в это время",
-        "the museum register's hours say it is open at that time",
     ),
     "note_opens_by_arrival": (
         "Қазір жабық, бірақ сіз келгенде (шамамен {t}) ашылады.",

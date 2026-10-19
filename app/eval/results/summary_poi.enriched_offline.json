@@ -14,16 +14,16 @@
   "coverage": 97.7,
   "diversity": 100.0,
   "top1_ok_rate": 97.7,
-  "top1_open_rate": 56.8,
+  "top1_open_rate": 59.1,
   "unknown_hours_rec_share": 45.6,
-  "non_osm_rec_share": 59.2,
-  "avg_walk_min": 5.0,
-  "wifi_socket_in_data_share": 28.6,
-  "route_stop_closed_cases": 4,
-  "latency_ms_median": 10.0,
-  "latency_ms_p90": 20.0,
-  "generation_ms_median": 0.0,
-  "generation_ms_p90": 1.0,
+  "non_osm_rec_share": 61.6,
+  "avg_walk_min": 5.3,
+  "wifi_socket_in_data_share": 33.3,
+  "route_stop_closed_cases": 3,
+  "latency_ms_median": 12.5,
+  "latency_ms_p90": 23.0,
+  "generation_ms_median": 1.0,
+  "generation_ms_p90": 2.0,
   "model_link": {
     "template": 44
   },
@@ -62,8 +62,8 @@
     "cases_file": "cases.json",
     "case_set": "main",
     "records": 44,
-    "git": "29dda4a",
+    "git": "4a1b05c+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T00:28:03+05:00"
+    "generated_at": "2026-10-19T10:36:37+05:00"
   }
 }

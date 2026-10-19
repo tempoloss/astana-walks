@@ -23,6 +23,11 @@ export function recents() {
   }
 }
 
+// «Забыть всё» of the memory panel: the addresses picked in «Где вы?» are forgotten with the rest
+export function forgetRecents() {
+  localStorage.removeItem(RECENT_KEY);
+}
+
 function remember(hit) {
   const same = (r) => r.label === hit.label && Math.abs(r.lat - hit.lat) < 1e-4 && Math.abs(r.lon - hit.lon) < 1e-4;
   const next = [hit, ...recents().filter((r) => !same(r))].slice(0, RECENT_MAX);

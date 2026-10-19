@@ -57,7 +57,7 @@ def marks(n: int, lang: str | None) -> str:
     lang = norm(lang)
     if lang == "ru":
         return f"{n} {plural_ru(n, 'отметка', 'отметки', 'отметок')}"
-    return f"{n} белгі" if lang == "kk" else f"{n} marks"
+    return f"{n} белгі" if lang == "kk" else f"{n} mark{'' if n == 1 else 's'}"
 
 
 def points(n: int, lang: str | None) -> str:
@@ -84,9 +84,29 @@ CATEGORY: dict[str, Entry] = {
     "culture_theatre_cinema": ("театр / кино", "театр / кино", "theatre / cinema"),
     "coworking_library": ("коворкинг / кітапхана", "коворкинг / библиотека", "coworking / library"),
     "public_toilet": ("дәретхана", "туалет", "public toilet"),
+    "pharmacy": ("дәріхана", "аптека", "pharmacy"),
+    "grocery": ("азық-түлік дүкені", "продуктовый магазин", "grocery store"),
+    "money": ("банкоматтар мен банктер", "банкоматы и банки", "ATMs and banks"),
+    "lodging": ("қонақүй мен хостелдер", "гостиницы и хостелы", "hotels and hostels"),
     "sport": ("спорт", "спорт", "sport"),
     "other": ("басқа", "другое", "other"),
 }
+# the districts of data/districts.geojson (Russian names there) in every language
+DISTRICT: dict[str, Entry] = {
+    "Сарайшык": ("Сарайшық", "Сарайшык", "Saraishyk"),
+    "Нура": ("Нұра", "Нура", "Nura"),
+    "Есиль": ("Есіл", "Есиль", "Yesil"),
+    "Алматы": ("Алматы", "Алматы", "Almaty"),
+    "Сарыарка": ("Сарыарқа", "Сарыарка", "Saryarka"),
+    "Байконур": ("Байқоңыр", "Байконур", "Baikonur"),
+}
+
+
+def district_name(name: str, lang: str | None) -> str:
+    entry = DISTRICT.get(name)
+    return pick(entry, lang) if entry else name
+
+
 TIP: dict[str, Entry] = {
     "cafe": (
         "Сусын алып, демалыңыз.",
@@ -150,6 +170,26 @@ TIP: dict[str, Entry] = {
         "Бар-жоғы мен тазалығын орнында тексеріңіз.",
         "Наличие и состояние уточняйте на месте.",
         "Check availability and condition on site.",
+    ),
+    "pharmacy": (
+        "Бар-жоғын орнында тексеріңіз.",
+        "Наличие препаратов уточняйте на месте.",
+        "Check stock on site.",
+    ),
+    "grocery": (
+        "Қажетті заттармен қамтыңыз.",
+        "Закупитесь необходимым.",
+        "Stock up on what you need.",
+    ),
+    "money": (
+        "Ақшаны алдын ала жоспарлаңыз.",
+        "Планируйте наличные заранее.",
+        "Plan your cash ahead.",
+    ),
+    "lodging": (
+        "Түнейтін жерді алдын ала таңдаңыз.",
+        "Выбирайте ночлег заранее.",
+        "Book your stay ahead.",
     ),
     "other": ("Айналаңызға қараңыз.", "Осмотритесь на месте.", "Look around."),
 }
@@ -334,24 +374,14 @@ STRINGS: dict[str, Entry] = {
     # generate: the fit sentence of the template
     "fit_head": ("Сұранысыңызға сай: ", "Подходит под запрос: ", "Fits your request: "),
     "fit_head_off": (
-        "Сұралған санат емес, бірақ ",
-        "Не совсем то, что вы просили, но ",
-        "Not quite what you asked for, but ",
+        "Басқа түрдегі ең жақын лайықты орын: ",
+        "Ближайшее подходящее место другого вида: ",
+        "The nearest suitable place of another kind: ",
     ),
     "fit_none_off": (
-        "Сұралған санат емес, бірақ ең жақын лайықты нұсқа.",
-        "Другая категория, но ближайший подходящий вариант.",
-        "Another category, but the closest suitable option.",
-    ),
-    "fit_none": (
-        "Қол жетімділік радиусындағы ең жақын лайықты нұсқа.",
-        "Ближайший подходящий вариант в радиусе доступности.",
-        "The closest suitable option in range.",
-    ),
-    "fit_category": (
-        "«{cat}» санаты — сіз сұрағандай",
-        "категория «{cat}» — как вы просили",
-        "category “{cat}” as requested",
+        "Басқа түрдегі ең жақын лайықты орын.",
+        "Ближайшее подходящее место другого вида.",
+        "The nearest suitable place of another kind.",
     ),
     "fit_kids": ("балаларға лайықты", "подходит для детей", "suitable for children"),
     "fit_quiet": ("әдетте тыныш орын", "обычно спокойное место", "usually a calm place"),
@@ -367,12 +397,6 @@ STRINGS: dict[str, Entry] = {
         "wheelchair access is marked",
     ),
     "fit_free": ("OSM деректері бойынша тегін", "бесплатно по данным OSM", "free according to OSM"),
-    "fit_night": (
-        "OSM сағаттары бойынша осы уақытта ашық",
-        "по часам OSM открыто в это время",
-        "OSM hours say it is open at that time",
-    ),
-    "fit_keywords": ("{kws} сұрауына сәйкес келеді", "совпадает с {kws}", "matches {kws}"),
     "budget_over": (
         "Уақыт шектеулі болса да, одан қысқа нұсқа табылмады, сондықтан орын тізімде қалды: мұнда "
         "әдетте кемінде {lo} мин қажет, ал барып-қайтқаннан кейін уақыт одан аз қалады.",
@@ -407,11 +431,6 @@ STRINGS: dict[str, Entry] = {
         "күн батқаннан кейін — ғимарат ішіндегі орын",
         "после заката — место в помещении",
         "after sunset - an indoor place",
-    ),
-    "wx_outdoor_off": (
-        "мұндай жағдайда саябақ, шолу алаңы және балалар алаңын ұсынбаймыз",
-        "парки, смотровые точки и площадки в таких условиях не предлагаем",
-        "parks, viewpoints and playgrounds are not offered in these conditions",
     ),
     # marks of people
     "people_source": ("адамдардың белгілері бойынша", "по отметкам людей", "by people's marks"),
@@ -491,14 +510,14 @@ STRINGS: dict[str, Entry] = {
         "Opening hours are unknown in the data - check before you go.",
     ),
     "note_off_category": (
-        "Санат сұрауыңыздан тыс: жақын жерде лайықты орын аз.",
-        "Категория вне вашего запроса: подходящих мест рядом мало.",
-        "Outside the requested categories: few matching places in range.",
+        "Санат сұрауыңыздан тыс: басқа түрдегі ең жақын лайықты орын.",
+        "Категория вне вашего запроса: ближайшее подходящее место другого вида.",
+        "Outside the requested categories: the nearest suitable place of another kind.",
     ),
     "note_off_category_weather": (
-        "Санат сұрауыңыздан тыс: қолайсыз жағдайға байланысты ғимарат ішіндегі орын ұсынылды.",
-        "Категория вне вашего запроса: из-за погоды, воздуха или темноты предложено место в помещении.",
-        "Outside the requested categories: an indoor place is offered because of the weather, air or darkness.",
+        "Санат сұрауыңыздан тыс: басқа түрдегі ең жақын лайықты орын, ғимарат ішінде.",
+        "Категория вне вашего запроса: ближайшее подходящее место другого вида, в помещении.",
+        "Outside the requested categories: the nearest suitable place of another kind, indoors.",
     ),
     "note_expanded": (
         "Мәлімделген радиустан алыс: жақын жерде мұндай орын жоқ.",
@@ -548,31 +567,6 @@ STRINGS: dict[str, Entry] = {
         "Одно это место укладывается в ваши {budget} мин: дорога туда и обратно ~{rt} мин и ~{stay} мин на месте.",
         "This place alone fits your {budget} min: ~{rt} min there and back and ~{stay} min on site.",
     ),
-    "fact_open_247": (
-        "OSM деректері бойынша тәулік бойы жұмыс істейді.",
-        "По данным OSM работает круглосуточно.",
-        "Open 24/7 according to OSM.",
-    ),
-    "fact_open": (
-        "OSM сағаттары бойынша осы уақытта ашық.",
-        "По часам OSM в это время открыто.",
-        "Open at this time according to the OSM hours.",
-    ),
-    "fact_nearest_open": (
-        "Таңдалған {n} «{cat}» орнының ішінде түзу сызық бойынша OSM сағаттары бойынша ашық ең жақыны.",
-        "Ближайшее по прямой из {n} подобранных мест «{cat}», открытое по часам OSM.",
-        "The nearest in a straight line of the {n} selected “{cat}” places that is open by the OSM hours.",
-    ),
-    "fact_nearest": (
-        "Таңдалған {n} «{cat}» орнының ішінде түзу сызық бойынша ең жақыны.",
-        "Ближайшее по прямой из {n} подобранных мест «{cat}».",
-        "The nearest in a straight line of the {n} selected “{cat}” places.",
-    ),
-    "fact_only": (
-        "Таңдалғандар арасындағы «{cat}» санатының жалғыз орны.",
-        "Единственное место «{cat}» среди подобранных.",
-        "The only “{cat}” place among those selected.",
-    ),
     "fact_wiki": (
         "Бұл орын туралы Уикипедияда мақала бар (айына ~{n} қаралым).",
         "О месте есть статья в Википедии (~{n} просмотров за месяц).",
@@ -588,12 +582,24 @@ STRINGS: dict[str, Entry] = {
         "О месте есть статья в Википедии.",
         "The place has a Wikipedia article.",
     ),
-    "fact_outdoor": (
-        "Сыртта үстелдер бар (OSM).",
-        "Есть столики на улице (OSM).",
-        "There are tables outside (OSM).",
-    ),
     "fact_cuisine": ("Асханасы: {c}.", "Кухня: {c}.", "Cuisine: {c}."),
+    "why_none": (
+        "Бұл орын туралы деректерде басқа мәлімет жоқ.",
+        "Других сведений о месте в данных нет.",
+        "The data holds nothing more about this place.",
+    ),
+    "fact_brand": ("«{brand}» желісі.", "Сеть «{brand}».", "Part of the {brand} chain."),
+    "fact_where": ("Мекенжайы: {where}.", "Где: {where}.", "Where: {where}."),
+    "fact_where_district": (
+        "Мекенжайы: {where}, {district} ауданы.",
+        "Где: {where}, район {district}.",
+        "Where: {where}, {district} district.",
+    ),
+    "fit_local_food": (
+        "атауында, асханасында немесе сипаттамасында қазақ / ұлттық тағамы аталған",
+        "в названии, кухне или описании указана казахская / национальная кухня",
+        "its name, cuisine or description says Kazakh / national food",
+    ),
     "note_shared_coord": (
         "Бұл жазбаның координаттары Overture-дағы басқа жазбалармен бірдей: орналасуы шамамен, қашықтығы болжамды.",
         "Координаты этой записи совпадают с другими записями Overture: положение приблизительное, расстояние ориентировочное.",
