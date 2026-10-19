@@ -13,6 +13,7 @@ from typing import Literal
 
 from rapidfuzz import fuzz
 
+from .dialog_typos import repair_typos
 from .intent import named_categories, parse_rules
 from .lexicon import match, named_places, normalize
 from .models import Intent
@@ -154,7 +155,8 @@ def _hit_count(text: str) -> int:
 def restore(text: str) -> str:
     """The text, with a transliterated one («gde poest», «kofe», «shashlyk») read as the cyrillic it stands for.
     Only a latin-only text that the lexicon does not read as english is touched, and only when the cyrillic
-    reading is understood better than the latin one."""
+    reading is understood better than the latin one. A typo of a key place word («кофк») is mended first."""
+    text = repair_typos(text)
     if not re.search(r"[A-Za-z]", text) or not _LATIN_ONLY.match(text):
         return text
     words = [w.lower() for w in re.findall(r"[A-Za-z]+", text)]
@@ -472,12 +474,16 @@ def _detect_base(text: str, fallback: str) -> str:
     return fallback  # «другое» in a kazakh dialogue: a short word of both languages keeps the dialogue's
 
 
+KK_QUESTION_WORDS = frozenset({"ма", "ме", "ба", "бе", "па", "пе"})  # the kazakh «?» particle, last
 _KK_LETTERS = re.compile(r"[әіңғүұқөһ]")
 # words only one of the two languages has (kk written with the look-alike letters of `normalize`); «бар», «да», «ал»
 # are in both, and say nothing
 _KK_VOTES = frozenset(
     normalize(w)
     for w in [
+        "айырбастай",
+        "айырбастайды",
+        "айырбастау",
         "ма",
         "ме",
         "ба",
@@ -607,11 +613,22 @@ def language_votes(text: str) -> tuple[int, int]:
 def detect(text: str, fallback: str) -> str:
     """ru / kk / en of a message; `fallback` (the dialogue's language, the interface's) when the message says nothing
     about it («?», «ок», a number, gibberish). A message of mixed Russian and Kazakh is read by its words: the language
-    with more of them answers, a tie goes to the dialogue's language."""
+    with more of them answers; in a kazakh dialogue a close vote (the russian side ahead by one word at most) and a tie go
+    to the dialogue's language."""
     base = _detect_base(text, fallback)
     if base not in ("ru", "kk"):
         return base
     kk, ru = language_votes(text)
+    if (
+        base == "ru"
+        and kk
+        and not ru
+        and tokens(text)[-1:]
+        and tokens(text)[-1] in KK_QUESTION_WORDS
+    ):
+        return "kk"  # «доллар айырбастай ма»: nothing but kazakh words and the question particle
+    if fallback == "kk" and base == "ru" and ru - kk <= 1 and not _RU_ONLY.search(text):
+        return "kk"  # a close vote (one russian function word, a russian phrase of a kazakh dialogue): the dialogue's language
     if not kk or not ru:
         return base
     if kk == ru:
@@ -648,7 +665,9 @@ _OUT_OF_DATA = {
     "dentist": r"\bстоматолог\w*|\bзубн\w+|\bдантист\w*|\bтис даригер\w*|\bdentists?\b|\bdental\b",
     "embassy": r"\bпосольств\w*|\bконсульств\w*|\bелшилик\w*|\bembass(?:y|ies)\b|\bconsulates?\b",
     "police": r"\bполици\w*|\bполиция\b|\bpolice\b",
-    "clinic": r"\bбольниц\w*|\bполиклиник\w*|\bклиник\w*|\bврач\w*|\bhospital\b|\bclinic\b|\bdoctor\b|\bемхана\b",
+    # clinics, polyclinics and doctors ARE in the data (the `clinic` kind); a hospital, an in-patient ward and an
+    # ambulance are not: said, with the number to call
+    "hospital": r"\bбольниц\w*|\bстационар\w*|\bскор(?:ая|ой|ую|ой помощ\w*)\b|\bскорую\b|\bгоспитал\w*|\bhospitals?\b|\bambulance\b|\bemergency room\b|\bаурухана\w*|\bжедел жардем\w*|\bреанимац\w*|\bроддом\w*|\bроддомы\b",
 }
 _OUT_RX = {key: re.compile(rx) for key, rx in _OUT_OF_DATA.items()}
 

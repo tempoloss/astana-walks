@@ -16,12 +16,12 @@
   "top1_ok_rate": 97.7,
   "top1_open_rate": 59.1,
   "unknown_hours_rec_share": 45.6,
-  "non_osm_rec_share": 61.6,
-  "avg_walk_min": 5.3,
+  "non_osm_rec_share": 65.6,
+  "avg_walk_min": 5.4,
   "wifi_socket_in_data_share": 33.3,
-  "route_stop_closed_cases": 3,
-  "latency_ms_median": 12.5,
-  "latency_ms_p90": 23.0,
+  "route_stop_closed_cases": 2,
+  "latency_ms_median": 15.5,
+  "latency_ms_p90": 26.0,
   "generation_ms_median": 1.0,
   "generation_ms_p90": 2.0,
   "model_link": {
@@ -62,8 +62,8 @@
     "cases_file": "cases.json",
     "case_set": "main",
     "records": 44,
-    "git": "4a1b05c+uncommitted",
+    "git": "a007589+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T10:36:37+05:00"
+    "generated_at": "2026-10-19T21:12:44+05:00"
   }
 }

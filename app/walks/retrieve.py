@@ -54,7 +54,6 @@ from .names import NAME_RATIO_MIN, best_ratio, name_keys, names_place
 from .presets import PRESET_NAMES, PRESETS
 from .price_kind import price_bonus, quick_bonus
 from .radius import (
-    ERRAND_KINDS,
     FOOD_KINDS,
     MAX_RADIUS_M,
     NEAREST_FAR,
@@ -82,18 +81,22 @@ from .shelter import (
 )
 from .stay import fit_stay_budget
 from .sun import is_dark, sun_for
+from .supply import UTILITY_KINDS
+from .vibe import vibe_bonus
 from .weather import INDOOR_CATEGORIES, OUTDOOR_CATEGORIES
-from .wish_rank import hours_rare, not_for, seen_outside, wish_bonus
+from .wish_rank import hours_rare, not_for, seen_outside, wish_bonus, wish_found
 from .wishes import (
+    errand,
+    errand_order,
     keep_requested_kinds,
     mark_unmet_wishes,
     open_first,
-    round_the_clock_first,
+    subkind_of,
     without_night_dead_ends,
 )
 
 TRANSIT_CATEGORY = "transit_station"
-MONEY_CATEGORY = "money"
+
 ANCHOR_RADIUS_M = 200  # a request from a starting place's own point comes from that place
 ANCHOR_PLACE_M = (
     1000  # how far the record of that place may sit from the point (a mall, a park, a monument)
@@ -387,6 +390,7 @@ class _Context:
     visited: frozenset[str]
     liked: dict[str, int]
     kids_band: str | None
+    vibe: dict[str, float]  # walks.vibe: re-ranks, never filters ({}: as without one)
     shown: tuple[
         tuple[POI, frozenset[str]], ...
     ]  # places shown earlier in the dialogue, with name keys
@@ -485,6 +489,7 @@ def _gather(
             ctx.kids_band,
             hours_night=night and not NIGHT_END <= arrival.hour < NIGHT_START,
         )
+        score += vibe_bonus(p, people, ctx.vibe, reasons, intent, night)  # 0.0 without a vibe
         out.scored.append(
             Candidate(
                 poi=p,
@@ -538,6 +543,7 @@ def _nearest_requested(
             for p in pois
             if p.category != TRANSIT_CATEGORY
             and is_member(p, member_cats, requested, intent)
+            and not not_for(p, intent)  # eight СДЭК points are no nearest post office
             and (d := haversine_m(lat, lon, p.lat, p.lon)) <= MAX_RADIUS_M
         ),
         key=lambda pd: (pd[1], pd[0].id),
@@ -589,6 +595,7 @@ def retrieve(
         visited=frozenset(personal.visited) if personal else frozenset(),
         liked=dict(personal.liked) if personal else {},
         kids_band=personal.kids_age_band if personal else None,
+        vibe=dict(personal.vibe) if personal else {},
         shown=tuple(
             (by_id[i], frozenset(name_keys(by_id[i])))
             for i in constraints.exclude_ids
@@ -609,8 +616,8 @@ def retrieve(
     for p in pois:
         if p.category == TRANSIT_CATEGORY:
             continue  # stations are never recommended; they only feed the LRT hint (walks.transit)
-        if p.category == MONEY_CATEGORY and MONEY_CATEGORY not in intent.categories:
-            continue  # money points are used, not strolled: only an explicit request («где банкомат») brings them in
+        if p.category in UTILITY_KINDS and p.category not in intent.categories:
+            continue  # used, not strolled: only an explicit request («где банкомат», «аптека») brings them in
         d = haversine_m(lat, lon, p.lat, p.lon)
         if here and d <= ANCHOR_PLACE_M and normalize(p.name) in here:
             continue  # the place the user is at («рядом с Mega Silk Way») is where the walk starts, not where it goes
@@ -645,11 +652,9 @@ def retrieve(
         if not requested or (
             sum(is_member(c.poi, member_cats, requested, intent) for c in pool.scored) >= enough
             and (first is None or any(c.poi.category == first for c in pool.scored))
-            and (not intent.local_food or any("local_food" in c.reasons for c in pool.scored))
-            and (  # «музей?»: a museum proper, not only a gallery in a mall
-                intent.wished != ["museum_gallery"]
-                or any("museum" in c.reasons for c in pool.scored)
-            )
+            and wish_found(
+                pool.scored, intent
+            )  # Kazakh food, a museum proper, a dentist, a play place
         ):
             break
 
@@ -660,7 +665,8 @@ def retrieve(
         named = c.poi.category in wished or (
             not outdoor_request and is_member(c.poi, member_cats, requested, intent)
         )
-        return (bool(wished) and not named, -c.score, c.distance_m, c.poi.id)
+        lead = c.distance_m if capped else -c.score  # «поближе»: the nearer first
+        return (bool(wished) and not named, lead, c.distance_m, c.poi.id)
 
     daytime = (
         NIGHT_END <= local.hour < NIGHT_START
@@ -730,10 +736,8 @@ def retrieve(
         chosen = without_night_dead_ends(chosen, wished)
 
     cands = sorted(chosen, key=rank)
-    if night and ERRAND_KINDS & set(
-        requested
-    ):  # an errand at night: open first, round the clock next
-        cands = round_the_clock_first(cands, wished)
+    if errand(intent.wished or requested):  # the nearest confirmed open first
+        cands = errand_order(cands, wished, local, night, sub=subkind_of(intent))
     elif deep_night:
         cands = open_first(cands, wished)
     top = keep_named(cands, keep_requested_kinds(cands, requested, top_n, rank))

@@ -2,10 +2,11 @@
 //  • the SKY: one full-map gradient above the basemap's canvas (and below the pins and labels), tinted by the computed
 //    position of the sun (night, dawn, golden hour, dusk, day), greyer under an overcast report, hazier under an НМУ
 //    notice or the station's smoke / haze;
-//  • the WIND: fine particles carried along the ONE measured vector (direction and speed of the airport report) with a
-//    small smooth noise per particle, each leaving a soft tapering trail: the look of windy.com / earth.nullschool, but no
-//    field: one station says nothing about how the wind varies over the city. A trail is the particle's last positions,
-//    drawn thinner and fainter with age (a faded-bitmap trail leaves 8-bit residue: a faint permanent haze);
+//  • the WIND: a few thin streamlines drifting along the ONE measured vector (direction and speed of the airport report)
+//    with a small smooth bend of their own, no field: one station says nothing about how the wind varies over the city.
+//    A line is the last positions of a moving point, drawn at one width and fading out at BOTH ends, so it has no head
+//    and no dot (a bright head with a tail reads as a tadpole). A stronger wind is more lines and longer ones, never
+//    thicker or brighter;
 //  • PRECIPITATION: snow or rain particles only while the airport report says it is falling.
 // No data means no effect. The button «Эффекты» opens the weather card (weather-panel.js); the switch in it keeps the
 // visitor's choice in localStorage `anyq.fx`; prefers-reduced-motion starts it off. Nothing is drawn over the offline
@@ -25,18 +26,20 @@ const FRAME_MS = 32;
 const FRAME_S = FRAME_MS / 1000;
 const CAP_DESKTOP = 120;
 const CAP_PHONE = 60;
-const PX_PER_MS = 14; // px/s of drift per m/s of measured wind
+const PX_PER_MS = 8; // px/s of drift per m/s of measured wind: a calm drift, not a rush
 const CALM_MS = 0.5; // below this nothing moves: a light air does not push particles across a city
 const MAX_PIXELS = 1.8e6; // backing store of the precipitation canvas: a retina phone fits, a retina laptop is drawn coarser
 const WIND_PIXELS = 0.9e6; // the wind's: hairlines need no retina, and a canvas redrawn every frame costs by its pixels
 const TAU = Math.PI * 2;
 const LEVEL_SHARE = [0.3, 0.55, 0.8]; // of the particle cap, per intensity (light, moderate, heavy)
-const TURN = 0.5; // rad: how far a particle's heading wanders around the measured one: wisps that curl, not straight slants
-const TURN_RATE = 1.8; // rad/s of that wander
-const HIST = 24; // positions kept per particle: the longest trail, in frames
-const BUCKETS = 5; // a trail is drawn in this many steps, from its faint tail to its head
-const BUCKET_ALPHA = [0.1, 0.24, 0.45, 0.72, 1]; // of the trail's strongest strength
-const BUCKET_WIDTH = [0.6, 0.7, 0.85, 1, 1.1]; // of its width
+const WIND_CAP_DESKTOP = 44; // streamlines at the strongest wind; the calm ones draw about half
+const WIND_CAP_PHONE = 26;
+const TURN = 0.22; // rad: how far a line's heading bends around the measured one: a streamline, not a slant
+const TURN_RATE = 0.45; // rad/s of that bend
+const HIST = 24; // positions kept per line: the longest it can be
+const SAMPLE_MIN_S = 0.08; // positions are kept at least this far apart in time
+const BUCKETS = 7; // a line is drawn in this many pieces, each in the strength of its place along it
+const BUCKET_ALPHA = [0.1, 0.4, 0.8, 1, 0.8, 0.4, 0.1]; // of the line's strongest strength: the same at both ends
 
 // ---------------------------------------------------------------- the sky
 
@@ -125,10 +128,11 @@ const fx = {
   wTravel: 0, // radians, screen direction of travel
   wDx: 0, // its cosine and sine
   wDy: 0,
-  wWidth: 1.2,
-  hist: 12, // frames a trail is long (of HIST), from the measured speed
-  head: 0, // the ring index of the newest position, the same for every particle
-  trail: new Array(BUCKETS).fill(''), // stroke styles of a trail's steps
+  hist: 12, // positions a line holds (of HIST), from the measured speed
+  spacing: 0.1, // seconds between two kept positions
+  since: 0, // seconds since the last kept position
+  head: 0, // the ring index of the newest kept position, the same for every line
+  trail: new Array(BUCKETS).fill(''), // stroke styles of the pieces of a line
   // precipitation
   nP: 0,
   kind: '',
@@ -144,7 +148,7 @@ const fx = {
   life: new Float32Array(CAP_DESKTOP),
   sv: new Float32Array(CAP_DESKTOP), // its own share of the wind speed
   ph: new Float32Array(CAP_DESKTOP), // phase of its heading wander
-  len: new Uint8Array(CAP_DESKTOP), // how much of its trail it shows: it grows at birth and shrinks before it ends
+  len: new Uint8Array(CAP_DESKTOP), // how many kept positions it shows: it grows at birth and shrinks before it ends
   px: new Float32Array(CAP_DESKTOP),
   py: new Float32Array(CAP_DESKTOP),
   pv: new Float32Array(CAP_DESKTOP),
@@ -166,15 +170,16 @@ function respawn(i, spread) {
     fx.hx[i * HIST + k] = x;
     fx.hy[i * HIST + k] = y;
   }
-  fx.life[i] = 2.4 + Math.random() * 3.6;
+  fx.life[i] = 5 + Math.random() * 5;
   fx.age[i] = spread ? Math.random() * fx.life[i] : 0;
 }
 
 function seedWind() {
   fx.head = 0;
+  fx.since = 0;
   for (let i = 0; i < fx.nW; i += 1) {
     respawn(i, true);
-    fx.sv[i] = 0.8 + Math.random() * 0.4;
+    fx.sv[i] = 0.85 + Math.random() * 0.3;
     fx.ph[i] = Math.random() * TAU;
     fx.len[i] = 2;
   }
@@ -183,49 +188,56 @@ function seedWind() {
 
 function stepWind(dt) {
   const { w, h, t, hist } = fx;
-  fx.head = (fx.head + 1) % hist;
+  fx.since += dt;
+  const keep = fx.since >= fx.spacing; // a position is kept every `spacing` seconds, the line is drawn through them
+  if (keep) {
+    fx.since -= fx.spacing;
+    fx.head = (fx.head + 1) % hist;
+  }
   for (let i = 0; i < fx.nW; i += 1) {
     fx.age[i] += dt;
     const u = fx.age[i] / fx.life[i];
     if (u >= 1 || fx.x[i] < -8 || fx.x[i] > w + 8 || fx.y[i] < -8 || fx.y[i] > h + 8) respawn(i, false);
     const ph = fx.ph[i];
-    // a smooth wander of its own around the one measured heading: no two neighbours agree, so no field is implied
+    // a slow bend of its own around the one measured heading: no two neighbours agree, so no field is implied
     const heading = fx.wTravel + TURN * (0.7 * Math.sin(t * TURN_RATE + ph) + 0.3 * Math.sin(t * TURN_RATE * 2.3 + ph * 1.7));
-    const v = fx.wSpeed * fx.sv[i] * (1 + 0.1 * Math.sin(t * 0.7 + ph * 1.3));
+    const v = fx.wSpeed * fx.sv[i];
     const x = fx.x[i] + Math.cos(heading) * v * dt;
     const y = fx.y[i] + Math.sin(heading) * v * dt;
     fx.x[i] = x;
     fx.y[i] = y;
-    fx.hx[i * HIST + fx.head] = x;
-    fx.hy[i * HIST + fx.head] = y;
-    const env = u < 0.2 ? u / 0.2 : u > 0.7 ? (1 - u) / 0.3 : 1; // in at birth, out at the end of its life
+    if (keep) {
+      fx.hx[i * HIST + fx.head] = x;
+      fx.hy[i * HIST + fx.head] = y;
+    }
+    const env = u < 0.25 ? u / 0.25 : u > 0.75 ? (1 - u) / 0.25 : 1; // grows at birth, draws in at the end of its life
     fx.len[i] = Math.max(2, Math.round(hist * env));
   }
 }
 
+// the k-th point of line i, counted from its end that is moving: 0 is where it is now, 1.. the kept positions
+const px_ = (i, k) => (k === 0 ? fx.x[i] : fx.hx[i * HIST + ((fx.head - k + 1 + fx.hist) % fx.hist)]);
+const py_ = (i, k) => (k === 0 ? fx.y[i] : fx.hy[i * HIST + ((fx.head - k + 1 + fx.hist) % fx.hist)]);
+
 function drawWind(dt) {
   const ctx = fx.wctx;
-  const { hist, head } = fx;
   stepWind(dt);
   ctx.clearRect(0, 0, fx.w, fx.h);
+  ctx.lineWidth = 1; // every line has one width: a taper is a head and a tail
   ctx.lineCap = 'butt';
   ctx.lineJoin = 'round';
-  // from the tail (the faintest, the thinnest) to the head: segment `a` joins the position `a` frames ago to the one before it
+  // the line of each particle in BUCKETS pieces; a piece's strength is the same at the two ends, so the line fades out
+  // at its head as it does at its tail
   for (let b = 0; b < BUCKETS; b += 1) {
-    const from = Math.floor(((BUCKETS - 1 - b) * (hist - 1)) / BUCKETS); // the ages of this step, head side first
-    const to = Math.floor(((BUCKETS - b) * (hist - 1)) / BUCKETS);
-    if (to <= from) continue;
     ctx.strokeStyle = fx.trail[b];
-    ctx.lineWidth = fx.wWidth * BUCKET_WIDTH[b];
     ctx.beginPath();
     for (let i = 0; i < fx.nW; i += 1) {
-      const last = Math.min(to, fx.len[i] - 1);
-      if (last <= from) continue;
-      const base = i * HIST;
-      const near = base + ((head - from + hist) % hist); // a step is one straight chord between its two ends
-      const far = base + ((head - last + hist) % hist);
-      ctx.moveTo(fx.hx[far], fx.hy[far]);
-      ctx.lineTo(fx.hx[near], fx.hy[near]);
+      const n = fx.len[i] - 1; // pieces between n + 1 points
+      const from = Math.floor((b * n) / BUCKETS);
+      const to = Math.floor(((b + 1) * n) / BUCKETS);
+      if (to <= from) continue;
+      ctx.moveTo(px_(i, from), py_(i, from));
+      for (let k = from + 1; k <= to; k += 1) ctx.lineTo(px_(i, k), py_(i, k));
     }
     ctx.stroke();
   }
@@ -339,10 +351,11 @@ function planParticles() {
     fx.wDx = Math.cos(fx.wTravel);
     fx.wDy = Math.sin(fx.wTravel);
     fx.wSpeed = speed * PX_PER_MS;
-    const length = clamp(24 + 6 * speed, 24, 96); // px a trail reaches behind its head
-    fx.hist = clamp(Math.ceil(length / (fx.wSpeed * FRAME_S)), 6, HIST);
-    fx.wWidth = clamp(1 + speed * 0.03, 1, 1.4);
-    fx.nW = Math.min(Math.round(limit * clamp(0.6 + speed / 40, 0.6, 0.9)), limit - fx.nP);
+    const length = clamp(70 + 9 * speed, 70, 190); // px a line stretches: longer in a stronger wind
+    const seconds = length / fx.wSpeed; // the time it takes a point to draw it
+    fx.hist = clamp(Math.round(seconds / SAMPLE_MIN_S) + 1, 8, HIST);
+    fx.spacing = seconds / (fx.hist - 1);
+    fx.nW = Math.round((isPhone() ? WIND_CAP_PHONE : WIND_CAP_DESKTOP) * clamp(0.35 + speed / 22, 0.35, 1)); // more lines, not thicker ones
   }
   const signature = `${fx.nW} ${fx.nP} ${fx.kind} ${fx.level} ${fx.wTravel.toFixed(2)} ${fx.wSpeed.toFixed(0)} ${fx.hist} ${fx.w} ${fx.h}`;
   if (signature === fx.seeded) return; // a poll that changed nothing does not make every particle jump
@@ -401,7 +414,7 @@ function paint() {
   fx.sky.style.setProperty('--fx-b', bottom);
   const lum = clamp((d.sun.altitude + 11) / 5, 0, 1); // the trails are slate on a lit map and pale on a night one
   const ink = mixRgb(INK_NIGHT, INK_DAY, lum);
-  const alpha = 0.42 - 0.12 * (1 - lum); // and fainter by night: wind is air, not weather
+  const alpha = 0.5 - 0.1 * (1 - lum); // low: wind is air, not weather; a little lower still by night
   for (let b = 0; b < BUCKETS; b += 1) fx.trail[b] = rgba(ink, alpha * BUCKET_ALPHA[b]);
   fx.rain = rgba(ink, 0.45 + 0.1 * (1 - lum));
   fx.edge = rgba(INK_DAY, 0.3 * lum);

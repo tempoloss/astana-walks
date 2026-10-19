@@ -29,6 +29,14 @@
 Чтобы очистить отметки на уже работающем стенде (файл с сидом остался от прошлого запуска):
 `echo '[]' > /var/lib/anyq/city_feedback.json && systemctl restart anyq`.
 
+### Спутниковый слой: `/etc/anyq/arcgis.key`
+
+Слой «Спутник» всегда есть (плитки EOX кэшируются в `/var/lib/anyq/tiles`, `WALKS_TILE_CACHE`; прогрев — `app/scripts/seed_tiles.py`).
+Более чёткий снимок Esri World Imagery включается файлом `/etc/anyq/arcgis.key` (одна строка — ключ ArcGIS Location Platform,
+`root:anyq`, 0640; в git его нет), на который указывает `Environment=ARCGIS_API_KEY_FILE` в `anyq.service`. Нет файла или он пуст —
+`/api/config` отдаёт `satellite_hd: false`, слой остаётся на EOX. Плитки Esri идут через сервер без диска (условия Esri запрещают
+хранение), ключ браузеру не уходит.
+
 ### Модели: `/etc/anyq/llm.env`
 
 Тексты ответов пишет живая модель по цепочке из необязательного файла `EnvironmentFile=-/etc/anyq/llm.env` (формат

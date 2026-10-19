@@ -149,7 +149,11 @@ def test_where_should_i_go_without_boredom_keeps_its_default_kinds():
     ("text", "fallback", "expected"),
     [
         ("музей сегодня открыт? хочу с детьми в воскресенье", "kk", "ru"),
-        ("кафе с детским меню", "kk", "ru"),
+        (
+            "кафе с детским меню",
+            "kk",
+            "kk",
+        ),  # one russian word at most: a close vote, the kazakh interface's language
         (
             "музей бүгін ашық па, хочу с детьми",
             "kk",
@@ -159,7 +163,7 @@ def test_where_should_i_go_without_boredom_keeps_its_default_kinds():
         ("мұражай ашық па, хочу", "ru", "kk"),  # three kazakh words against one russian
         ("ертең музей қайда", "ru", "kk"),
         ("туалет бар ма", "ru", "kk"),
-        ("хочу кофе", "kk", "ru"),
+        ("хочу кофе", "kk", "kk"),
     ],
 )
 def test_a_message_of_mixed_languages_is_read_by_its_words(text, fallback, expected):

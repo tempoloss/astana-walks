@@ -103,7 +103,11 @@ def test_the_price_is_the_places_own_wording_with_its_source_and_day():
 
 def test_every_place_has_its_way_and_the_answer_says_its_moment(client):
     answer = _turn(client, "хочу кофе")
-    places, legs = answer["turn"]["places"], answer["place_legs"]
+    turn = answer["turn"]
+    places, legs = (
+        [*turn["places"], *turn["more"]],
+        answer["place_legs"],
+    )  # the longer list follows the three
     assert len(legs) == len(places)
     for place, leg in zip(places, legs, strict=True):
         assert leg["minutes"] == place["walk"]["minutes"]

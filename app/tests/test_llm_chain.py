@@ -21,6 +21,7 @@ from walks.llm_output import LLMOutput, LLMRec
 from walks.models import POI, Intent, LLMStep, load_pois
 from walks.presets import PRESETS
 from walks.retrieve import retrieve
+from walks.stay import category_stay
 
 FIXTURE = Path(__file__).parent / "fixtures" / "poi_sample.json"
 
@@ -214,11 +215,63 @@ def test_breaker_not_tripped_by_429(monkeypatch):
     assert fake.calls == ["a", "b", "a", "b"]
 
 
-def test_breaker_opens_on_timeout(monkeypatch):
-    fake = FakeGenai(monkeypatch, {"a": httpx.ReadTimeout("slow"), "b": OK})
+def _status_error(code: int) -> httpx.HTTPStatusError:
+    request = httpx.Request("POST", "https://gw.example/v1/chat/completions")
+    return httpx.HTTPStatusError(
+        str(code), request=request, response=httpx.Response(code, request=request)
+    )
+
+
+@pytest.mark.parametrize(
+    "exc",
+    [
+        httpx.ReadTimeout("slow"),
+        httpx.ConnectTimeout("unroutable"),
+        _api_error(504),
+        _status_error(504),
+    ],
+    ids=["read-timeout", "connect-timeout", "gemini-504", "openai-504"],
+)
+def test_breaker_opens_on_timeout(monkeypatch, exc):
+    """A link that timed out, on our side or behind a gateway (504), is not waited for again for BREAKER_S."""
+    fake = FakeGenai(monkeypatch, {"a": exc, "b": OK})
     _ask(["a", "b"])
     fake.calls.clear()
     _ask(["a", "b"])
+    assert fake.calls == ["b"]
+
+
+def _read(models):
+    """A reading of the message (the Intent schema) over the same fake links."""
+    chain = [f"gemini:{m}" for m in models]
+    return llm.generate_json("p", Intent, system="s", models=chain, timeout_s=1.0)
+
+
+def test_a_slow_reading_leaves_the_link_to_the_answer(monkeypatch):
+    """A timeout says the link is too slow for that prompt within that limit (4 s to read the message): the next
+    reading skips it, the answer (8 s) still asks it."""
+    fake = FakeGenai(monkeypatch, {"a": httpx.ReadTimeout("slow"), "b": Intent()})
+    _read(["a", "b"])
+    fake.script["a"] = OK
+    fake.calls.clear()
+    assert _ask(["a", "b"]).step.model == "gemini:a"
+    fake.calls.clear()
+    _read(["a", "b"])
+    assert fake.calls == ["b"]
+
+
+@pytest.mark.parametrize(
+    "exc",
+    [_api_error(503), _status_error(504), httpx.ConnectTimeout("unroutable")],
+    ids=["503", "504", "connect-timeout"],
+)
+def test_a_failure_of_the_link_itself_closes_it_for_every_role(monkeypatch, exc):
+    """503, a gateway's 504 or a host that takes no connection: the answer does not ask the link the reading lost."""
+    fake = FakeGenai(monkeypatch, {"a": exc, "b": Intent()})
+    _read(["a", "b"])
+    fake.script["b"] = OK
+    fake.calls.clear()
+    assert _ask(["a", "b"]).step.model == "gemini:b"
     assert fake.calls == ["b"]
 
 
@@ -438,7 +491,7 @@ def test_wikipedia_description_counts_in_retrieval_score(pois):
     ],
 )
 def test_category_stay_clamp(category, asked, expected):
-    assert gen_mod.category_stay(asked, category) == expected
+    assert category_stay(asked, category) == expected
 
 
 def test_stay_clamped_by_category_then_budget(pois, monkeypatch):

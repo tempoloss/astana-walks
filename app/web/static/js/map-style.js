@@ -113,16 +113,33 @@ const CONTRIBUTORS = {
   en: '© OpenStreetMap contributors',
 };
 
-// What the legend row names under the map: the basemap's makers (online) and the OpenStreetMap data (ODbL) either way.
-export function attributionLines(lang, kind) {
+// Esri World Imagery's credit, as Esri's licence words it («Powered by Esri» and the style's source line), when the key is configured.
+const ESRI = [
+  { text: 'Powered by Esri', href: 'https://www.esri.com' },
+  { text: 'Source: Esri, Vantor, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community' },
+];
+
+// The satellite imagery's credit (EOX, CC BY 4.0), word for word what EOX asks for, with its links.
+const EOX = [
+  { text: 'Sentinel-2 cloudless', href: 'https://s2maps.eu' },
+  { text: 'EOX IT Services GmbH', href: 'https://eox.at' },
+  { text: 'Contains modified Copernicus Sentinel data 2016' },
+  { text: 'CC BY 4.0', href: 'https://creativecommons.org/licenses/by/4.0/' },
+];
+
+// What the legend row names under the map: the basemap's makers (online), the OpenStreetMap data (ODbL) either way and,
+// while the satellite layer is on, the imagery's credit.
+export function attributionLines(lang, kind, satellite) {
   const osm = [
     { text: CONTRIBUTORS[lang] || CONTRIBUTORS.en, href: OSM },
     { text: 'ODbL', href: 'https://opendatacommons.org/licenses/odbl/1-0/' },
   ];
-  if (kind !== 'online') return osm;
+  const imagery = satellite === 'hd' ? [...ESRI, ...EOX] : satellite ? EOX : [];
+  if (kind !== 'online') return [...osm, ...imagery];
   return [
     { text: 'OpenFreeMap', href: 'https://openfreemap.org' },
     { text: '© OpenMapTiles', href: 'https://openmaptiles.org/' },
     ...osm,
+    ...imagery,
   ];
 }

@@ -12,6 +12,8 @@ JSON endpoints over the core. Run it with `python -m web` (web/__main__.py) or a
     GET  /api/city/export/{name}
     GET  /api/data            sources, coverage, measured honesty                     (web.datainfo)
     GET  /api/districts       district outlines (the map's background without the network)
+    GET  /tiles/s2/{z}/{x}/{y}.jpg   the satellite layer: Sentinel-2 cloudless 2016, a disk-cached same-origin proxy  (web.tiles)
+    GET  /tiles/esri/{z}/{x}/{y}.jpg its sharper imagery: Esri World Imagery through a key kept on the server, not stored  (web.tiles)
     GET  /healthz
 """
 
@@ -46,7 +48,7 @@ from i18n import ui_table
 from walks import conditions, weather
 from walks.envcfg import load_env_file
 from walks.i18n import SIGNAL, norm
-from web import city, datainfo, geocode, memory, turns
+from web import city, datainfo, geocode, memory, tiles, turns
 
 STATIC = Path(__file__).resolve().parent / "static"
 VERSIONED = "/static/v-"  # /static/v-<release>/js/main.js is /static/js/main.js of that release
@@ -180,8 +182,9 @@ async def health(_: Request) -> Response:
     return PlainTextResponse("ok")
 
 
-async def config(_: Request) -> Response:
-    return JSONResponse(turns.config())
+async def config(request: Request) -> Response:
+    # `satellite_hd`: the Esri imagery can be offered (a key is configured); never the key itself
+    return JSONResponse({**turns.config(), "satellite_hd": request.app.state.esri.configured})
 
 
 async def strings(_: Request) -> Response:
@@ -304,10 +307,14 @@ async def http_error(_: Request, exc: HTTPException) -> Response:
 
 
 @contextlib.asynccontextmanager
-async def lifespan(_: Starlette) -> AsyncIterator[None]:
+async def lifespan(app: Starlette) -> AsyncIterator[None]:
     """The weather is refreshed in the background from the start: a request never waits for it (walks.weather)."""
     weather.start_refresher()
-    yield
+    try:
+        yield
+    finally:
+        await app.state.tiles.close()
+        await app.state.esri.close()
 
 
 def create_app() -> Starlette:
@@ -328,11 +335,15 @@ def create_app() -> Starlette:
             Route("/api/data", data),
             Route("/api/conditions", conditions_view),
             Route("/api/districts", districts),
+            Route(tiles.TILE_PATH, tiles.tile_view),
+            Route(tiles.ESRI_PATH, tiles.esri_view),
             Mount("/static", StaticFiles(directory=STATIC), name="static"),
         ],
         exception_handlers={HTTPException: http_error},
     )
     app.state.release = Release(STATIC)
+    app.state.tiles = tiles.TileProxy()
+    app.state.esri = tiles.EsriProxy.from_env()
     app.add_middleware(SecurityHeaders)
     app.add_middleware(VersionedStatic, release=app.state.release)
     return app

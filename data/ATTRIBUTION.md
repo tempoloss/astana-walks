@@ -95,6 +95,18 @@ Runtime-источники (в файлы данных не попадают):
   left on a desktop, the second line of the top bar on a phone; the MapLibre attribution control is off):
   «OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors · ODbL» (links to openfreemap.org, openmaptiles.org,
   https://www.openstreetmap.org/copyright and the ODbL text); offline the row shows «© OpenStreetMap contributors · ODbL».
+- **Satellite layer** (the «Спутник» switch on the map, off by default) — **Sentinel-2 cloudless, the 2016 release**, EOX IT Services GmbH,
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); layer `s2cloudless_3857`, titled by EOX «Sentinel-2 cloudless layer for 2016
+  by EOX - 3857». The later EOX releases (2018 onwards) are CC BY-NC-SA and are not used. While the layer is on, the legend row on the map
+  adds «Sentinel-2 cloudless · EOX IT Services GmbH · Contains modified Copernicus Sentinel data 2016 · CC BY 4.0» (links to
+  https://s2maps.eu, https://eox.at and the CC BY 4.0 text; on a phone the same text rides on the sheet's top edge). The tiles are served
+  from our server's disk cache (`app/web/tiles.py`), which fills from https://tiles.maps.eox.at at most four requests at a time with a
+  User-Agent naming the app; no endorsement by EOX, the European Commission or ESA is implied.
+- **Satellite layer, sharper** (only when the operator configured an ArcGIS Location Platform key, `ARCGIS_API_KEY_FILE`) — **Esri World
+  Imagery** (https://location.arcgis.com/help/licensing-and-attribution/). While the layer is on, the legend row adds «Powered by Esri» and
+  «Source: Esri, Vantor, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community» (and, on a
+  phone, the same text on the sheet's top edge). The tiles are passed through our server (`app/web/tiles.py`, `/tiles/esri/…`) and are
+  never stored by it (Esri's terms); the browser keeps them a day (`Cache-Control: private`). The key stays on the server.
 - **LLM providers** — the text of a query and the facts of the candidates go to the model chain (Google Gemini API
   through `google-genai`, or an OpenAI-compatible endpoint). Terms: unpaid Gemini API quota lets Google use prompts and
   responses to improve its products; only paid quota does not (https://ai.google.dev/gemini-api/terms). The model's

@@ -39,6 +39,56 @@ ROBOTS_TTL_S = 86400.0
 UPCOMING = timedelta(hours=24)  # a notice that starts later than this is not shown yet
 NIGHT_HOURS = ((0, 8), (20, 24))
 
+# What a Kazhydromet notice can warn about, found in its Russian text by word stems, and the part of the day it names. The
+# card writes the title from these codes in the answer language; the notice's own words stay behind its link.
+PHENOMENA = (
+    ("fog", r"туман"),
+    ("smog", r"смог|неблагоприятн\w+ метеоусловия|\bнму\b"),
+    ("thunder", r"гроз|шквал|смерч"),
+    ("wind", r"ветер|ветр|порыв"),
+    ("snow", r"снег|снегопад|метел|пург"),
+    ("ice", r"гололед|гололёд|наледь|изморозь"),
+    ("rain", r"дожд|ливн"),
+    ("hail", r"град\b|градом"),
+    ("dust", r"пыльн|песчан"),
+    ("heat", r"жар[аыуе]|высокая температура"),
+    ("cold", r"мороз|сильный холод|похолодан|низкая температура"),
+)
+PERIODS = (
+    ("night", r"ноч"),
+    ("morning", r"утр"),
+    ("day", r"днем|днём|дневн|в течение дня|в дневное"),
+    ("evening", r"вечер"),
+    ("all", r"в течение суток|круглосуточно|в течение всех суток"),
+)
+
+
+def classify_notice(text: str) -> tuple[list[str], list[str]]:
+    """(phenomena, periods) of a notice's Russian text: the codes in PHENOMENA (in the order the text names them) and
+    PERIODS (in the order of the day). Empty lists when the text names none of them: the card then only names the
+    source."""
+    low = text.lower()
+    found = sorted(
+        (m.start(), code) for code, rx in PHENOMENA if (m := re.search(rx, low)) is not None
+    )
+    periods = [code for code, rx in PERIODS if re.search(rx, low)]
+    return [code for _, code in found], ("all" in periods and ["all"]) or periods
+
+
+# The phenomena that make the street a bad place to be: a storm, wind, snow, ice, downpour, hail, dust, heat or frost.
+# Fog or smog in a notice is advice for a walk, never a reason to move it indoors (walks.weather.make_weather).
+HARSH_PHENOMENA = frozenset(
+    {"thunder", "wind", "snow", "ice", "rain", "hail", "dust", "heat", "cold"}
+)
+
+
+def harsh_notice(text: str) -> bool:
+    """Does a storm notice name a harsh phenomenon (HARSH_PHENOMENA): «туман» alone does not; a notice whose words
+    name no phenomenon the classifier knows still counts (it is a storm warning)."""
+    found = set(classify_notice(text)[0])
+    return not found or bool(HARSH_PHENOMENA & found)
+
+
 _MONTHS = {
     name: number
     for number, name in enumerate(

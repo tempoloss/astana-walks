@@ -31,6 +31,7 @@ from .radius import INFO_ABOUT
 from .shelter import AIR_OUTDOOR_KEPT, LIT_NEAR, WEATHER_OUTDOOR_KEPT
 from .stay import MIN_STAY_OVER_BUDGET, NAMED_OVER_BUDGET, min_stay
 from .weather import BAD_PM25, adverse_text, air_driver_text, air_text
+from .wishes import ERRANDS
 
 MAX_FACTS = 2  # sentences of a `why`
 WIKI_SENTENCE_MAX = 220
@@ -320,18 +321,30 @@ def _own_facts(c: Candidate, lang: str) -> str:
     return _sentence("; ".join(parts)) if parts else ""
 
 
+# a brand that already says it is a chain («Сеть ресторанов ПИНТА»): said as it is, never «Сеть «Сеть ресторанов …»»
+_CHAIN_WORDS = re.compile(r"\bсет[ьи]\b|ресторанов|\bchain\b|желі", re.I)
+
+
 def _brand_fact(c: Candidate, lang: str) -> str:
     brand = c.poi.tag_dict().get("brand", "").strip()
-    return t("fact_brand", lang, brand=brand) if brand else ""
+    if not brand:
+        return ""
+    return f"{brand}." if _CHAIN_WORDS.search(brand) else t("fact_brand", lang, brand=brand)
 
 
 def _where_fact(c: Candidate, lang: str) -> str:
     """Where the place is, to find it: the street of its address and its district («на улице Туркестан, 34А, район
-    Есиль»); '' without an address."""
+    Есиль»); an errand without an address: its district, to find it (a pharmacy card is more than «nothing more»);
+    '' otherwise."""
     where = street(c)
-    if not where:
-        return ""
     district = district_of(c.poi.lat, c.poi.lon)
+    if not where:
+        errand = c.poi.category in ERRANDS
+        return (
+            t("fact_district", lang, district=district_name(district, lang))
+            if errand and district
+            else ""
+        )
     if not district:
         return t("fact_where", lang, where=where)
     return t("fact_where_district", lang, where=where, district=district_name(district, lang))
@@ -344,6 +357,21 @@ def _record_facts(c: Candidate, lang: str, bare: bool) -> list[str]:
     if bare:
         out += [_where_fact(c, lang), _sentence(_marks(c, lang, asked=False))]
     return [x for x in out if x]
+
+
+def _without_repeats(sentences: list[str]) -> list[str]:
+    """The sentences of a `why` without a fragment (a clause between «;») that a sentence before already holds; a
+    sentence left with nothing is dropped, one with nothing repeated stays as it is."""
+    out: list[str] = []
+    for sentence in sentences:
+        said = " ".join(out).lower()
+        parts = re.split(r";\s+", sentence.rstrip("."))
+        new = [p for p in parts if p.strip().lower() not in said]
+        if new == parts:
+            out.append(sentence)
+        elif new:
+            out.append(_sentence("; ".join(new)))
+    return out
 
 
 def compose_why(
@@ -369,6 +397,9 @@ def compose_why(
         found = [*found[:1], info, *found[1:]] if found else [info]
     else:  # an off-kind card says what it is, never only where it is
         found += _record_facts(c, lang, bare=not found and not off)
+    found = _without_repeats(
+        found
+    )  # «…; в OSM указан Wi-Fi. Wi-Fi.»: the feature said by a wish is said once
     keep = found[:1] if budget else found[:MAX_FACTS]
     if (
         not keep

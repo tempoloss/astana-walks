@@ -1,0 +1,184 @@
+{
+ "dentist": {
+  "total": 49,
+  "named": 41
+ },
+ "clinic_urgent": {
+  "total": 91,
+  "named": 90
+ },
+ "rail_station": {
+  "total": 39,
+  "named": 39
+ },
+ "fuel": {
+  "total": 163,
+  "named": 145
+ },
+ "post_office": {
+  "total": 50,
+  "named": 50
+ },
+ "marketplace": {
+  "total": 18,
+  "named": 16
+ },
+ "tobacco": {
+  "total": 12,
+  "named": 12
+ },
+ "bus_stop": {
+  "total": 948,
+  "named": 544
+ },
+ "metro": {
+  "total": 0,
+  "named": 0
+ },
+ "taxi_stand": {
+  "total": 1,
+  "named": 0
+ },
+ "parking": {
+  "total": 1385,
+  "named": 9
+ },
+ "post_box": {
+  "total": 0,
+  "named": 0
+ },
+ "parcel_locker": {
+  "total": 0,
+  "named": 0
+ },
+ "notary": {
+  "total": 14,
+  "named": 8
+ },
+ "lawyer": {
+  "total": 17,
+  "named": 12
+ },
+ "police": {
+  "total": 25,
+  "named": 17
+ },
+ "fire_rescue": {
+  "total": 4,
+  "named": 4
+ },
+ "veterinary": {
+  "total": 3,
+  "named": 3
+ },
+ "shower": {
+  "total": 0,
+  "named": 0
+ },
+ "hairdresser_beauty": {
+  "total": 124,
+  "named": 111
+ },
+ "phone_repair": {
+  "total": 3,
+  "named": 2
+ },
+ "pawn_money": {
+  "total": 69,
+  "named": 64
+ },
+ "cemetery": {
+  "total": 1,
+  "named": 0
+ },
+ "worship": {
+  "total": 26,
+  "named": 17
+ },
+ "bakery_confectionery": {
+  "total": 74,
+  "named": 66
+ },
+ "swim_ski": {
+  "total": 3,
+  "named": 1
+ },
+ "zoo_aquarium": {
+  "total": 2,
+  "named": 2
+ },
+ "viewpoint_picnic": {
+  "total": 4,
+  "named": 2
+ },
+ "museum_core": {
+  "total": 11,
+  "named": 10
+ },
+ "theatre_cinema_core": {
+  "total": 21,
+  "named": 18
+ },
+ "library_core": {
+  "total": 10,
+  "named": 8
+ },
+ "recycling_bins": {
+  "total": 40,
+  "named": 1
+ },
+ "parcel_lockers": {
+  "total": 0,
+  "named": 0
+ },
+ "pet_boarding": {
+  "error": "The read operation timed out"
+ },
+ "laundry_dryclean": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "sauna": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "food_court": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "bicycle_rental_parking": {
+  "total": 85,
+  "named": 52
+ },
+ "ice_rink": {
+  "total": 1,
+  "named": 1
+ },
+ "bench": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "waste_recycling": {
+  "total": 213,
+  "named": 2
+ },
+ "farmers_market": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "nature_playground": {
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "cycle_infra": {
+  "error": "HTTP Error 502: Bad Gateway"
+ },
+ "sport_core": {
+  "error": "HTTP Error 502: Bad Gateway"
+ },
+ "coworking_core": {
+  "total": 0,
+  "named": 0
+ },
+ "bowling_billiard_climbing": {
+  "total": 7,
+  "named": 2
+ },
+ "parking_paid": {
+  "error": "HTTP Error 502: Bad Gateway"
+ }
+}

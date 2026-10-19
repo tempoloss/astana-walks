@@ -13,6 +13,7 @@ import { currentLang, onLang } from './i18n.js';
 import { addCityLayers, setCells as drawCells, setReports as drawReports, showDistricts } from './map-layers.js';
 import * as pins from './map-pins.js';
 import { addRouteLayers, drawRoute, initRoute, placePills } from './map-route.js';
+import * as satellite from './map-satellite.js';
 import { attributionLines as attribution, localStyle, onlineStyle, relabel, TILE_SOURCE } from './map-style.js';
 import { initTip } from './map-tip.js';
 import * as weatherFx from './map-weather.js';
@@ -30,6 +31,8 @@ const ASTANA = { south: 50.98, north: 51.3, west: 71.2, east: 71.7 };
 // The map shows the city and its surroundings, about 2.5 times the city's width and height, so a walk or a trip can be
 // followed past the last block: a pan stops at this box.
 const MAP_BOUNDS = { south: 50.74, north: 51.54, west: 70.83, east: 72.08 };
+// The city box the server serves the satellite's z14-15 tiles for (web/tiles.py CITY_BOX).
+const CITY_BOX = { south: 51.03, north: 51.25, west: 71.28, east: 71.55 };
 
 let map = null;
 let loaded = null;
@@ -57,19 +60,22 @@ export function addLocate(onClick, label) {
   if (map) {
     controls.addLocate(map, onClick, label);
     weatherFx.addToggle();
+    satellite.addToggle();
   }
 }
 
 export const inAstana = (lat, lon) => lat >= ASTANA.south && lat <= ASTANA.north && lon >= ASTANA.west && lon <= ASTANA.east;
 
 export const basemapKind = () => basemap;
+export const satelliteOn = satellite.isOn;
+export const satelliteMode = satellite.mode;
 
 export function onBasemapChange(fn) {
   basemapHandler = fn;
 }
 
 export function attributionLines(lang) {
-  return attribution(lang || currentLang(), basemap);
+  return attribution(lang || currentLang(), basemap, satellite.mode());
 }
 
 // ---------------------------------------------------------------- what is drawn
@@ -130,7 +136,10 @@ function setBasemap(kind) {
   if (basemap === kind) return;
   basemap = kind;
   weatherFx.setBasemapKind(kind);
-  loaded.then(() => showDistricts(kind === 'offline'));
+  loaded.then(() => {
+    showDistricts(kind === 'offline');
+    satellite.apply(); // the local style's district layers join the style here
+  });
   if (basemapHandler) basemapHandler(kind);
 }
 
@@ -151,7 +160,7 @@ function watchTiles() {
   setTimeout(giveUp, TILE_PATIENCE_MS);
 }
 
-export async function initMap(el, { center, offline, lang }) {
+export async function initMap(el, { center, offline, lang, hd }) {
   const style = offline ? null : await onlineStyle(lang);
   basemap = style ? 'online' : 'offline';
   map = new maplibregl.Map({
@@ -175,6 +184,7 @@ export async function initMap(el, { center, offline, lang }) {
   pins.initPins(map, refresh);
   controls.initControls(map);
   weatherFx.initWeather(map, basemap);
+  satellite.initSatellite(map, MAP_BOUNDS, CITY_BOX, Boolean(hd), () => basemapHandler && basemapHandler(basemap)); // the legend's credits follow the switch
   map.on('moveend', () => {
     const c = map.getCenter();
     el.dataset.cam = `${map.getZoom().toFixed(2)} ${c.lat.toFixed(4)} ${c.lng.toFixed(4)}`; // what the tour reads
@@ -185,6 +195,7 @@ export async function initMap(el, { center, offline, lang }) {
     const firstSymbol = map.getStyle().layers.find((l) => l.type === 'symbol');
     addCityLayers(map, firstSymbol && firstSymbol.id);
     addRouteLayers();
+    satellite.styleReady();
     resolve();
   }));
   if (style) watchTiles();

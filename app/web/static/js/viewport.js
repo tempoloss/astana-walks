@@ -69,5 +69,16 @@ export function initViewport({ onTyping, onResize }) {
   document.addEventListener('pointerdown', (e) => {
     if (typing && !e.target.closest('#composer, #sheet-mini')) document.activeElement?.blur();
   }, true);
+  // A dialog that closes leaves the focus on the page itself (on a phone the button that opened it is gone with its
+  // menu) or on the button that opened it (a laptop's «Память» tab), and what is typed then went nowhere: «поле пустое,
+  // ход не создан». A printable key pressed with the focus on no field goes to the composer's: focusing it inside the
+  // keydown makes the very key land there. A space stays with the button that has the focus (it presses it).
+  document.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented || e.isComposing || e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1) return;
+    const on = document.activeElement;
+    if (on && on !== document.body && (/^(INPUT|TEXTAREA|SELECT)$/.test(on.tagName) || on.isContentEditable || e.key === ' ')) return;
+    if (document.querySelector('dialog[open]') || field.offsetParent === null) return;
+    field.focus();
+  });
   update();
 }

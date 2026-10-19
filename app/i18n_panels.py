@@ -513,6 +513,28 @@ PANEL: dict[str, Entry] = {
         "Подложка карты. Без интернета карта показывается без подложки.",
         "The base map. Without the internet the map shows without it.",
     ),
+    "ds_satellite": (
+        "EOX Sentinel-2 cloudless (2016)",
+        "EOX Sentinel-2 cloudless (2016)",
+        "EOX Sentinel-2 cloudless (2016)",
+    ),
+    "ds_satellite_what": (
+        "«Жерсерік» қабаты (картадағы қосқыш): 2016 жылғы Sentinel-2 суреттері, пиксельге 10 м; аудандар "
+        "мен кварталдар көрінеді, жеке үйлер көрінбейді. Суреттерді біздің сервердің кэші береді.",
+        "Слой «Спутник» (переключатель на карте): снимки Sentinel-2 за 2016 год, 10 м на пиксель; видны "
+        "районы и кварталы, отдельные дома — нет. Плитки отдаёт кэш нашего сервера.",
+        "The “Satellite” layer (the switch on the map): Sentinel-2 imagery of 2016, 10 m per pixel; "
+        "districts and blocks show, single houses do not. The tiles are served from our server's cache.",
+    ),
+    "ds_esri": ("Esri World Imagery", "Esri World Imagery", "Esri World Imagery"),
+    "ds_esri_what": (
+        "«Жерсерік» қабатының анық суреті (ArcGIS Location Platform кілті болғанда): Esri World Imagery. "
+        "Суреттер біздің сервер арқылы өтеді, еш жерде сақталмайды.",
+        "Более чёткий снимок слоя «Спутник» (когда настроен ключ ArcGIS Location Platform): Esri World Imagery. "
+        "Плитки идут через наш сервер и нигде не хранятся.",
+        "The sharper imagery of the “Satellite” layer (when an ArcGIS Location Platform key is configured): Esri World Imagery. "
+        "The tiles pass through our server and are stored nowhere.",
+    ),
     "ds_afisha": ("Афиша", "Афиша событий", "Event listings"),
     "ds_afisha_what": (
         "Sxodim, InAstana, YouTicket, Qazaqconcert, Alem.ai және бір ашық Telegram-арна: тек фактілер "
@@ -594,16 +616,34 @@ PANEL: dict[str, Entry] = {
         "Результаты замеров не найдены.",
         "No evaluation results found.",
     ),
+    "data_speed": ("Жауап жылдамдығы", "Скорость ответа", "How fast the answers come"),
+    "dd_speed": (
+        "Жауап уақыты: медиана — {med} с, сұраныстардың 95 %-ы {p95} секундтан тез.",
+        "Время ответа: медиана {med} с, 95 % быстрее {p95} с.",
+        "Response time: median {med} s, 95% faster than {p95} s.",
+    ),
+    "dd_speed_n": (
+        "Стендтің анонимді сұраныстар журналы бойынша: {n}. Уақыт — хабарламадан дайын жауапқа дейін, серверде.",
+        "По анонимному журналу запросов стенда: {n}. Время — от сообщения до готового ответа, на сервере.",
+        "From the stand's anonymous request log: {n}. The time runs from the message to the ready answer, on "
+        "the server.",
+    ),
+    "dd_req_one": ("{n} сұраныс", "{n} запрос", "{n} request"),
+    "dd_req_few": ("{n} сұраныс", "{n} запроса", "{n} requests"),
+    "dd_req_many": ("{n} сұраныс", "{n} запросов", "{n} requests"),
+    "dd_req_other": ("{n} сұраныс", "{n} запроса", "{n} requests"),
+    "dd_speed_none": (
+        "Жауап уақыты әлі өлшенбеген: журналда уақыты жазылған сұраныс жоқ.",
+        "Время ответа ещё не измерено: в журнале нет запросов с записанным временем.",
+        "No response time measured yet: the log holds no request with its time.",
+    ),
     "data_attribution": ("Атрибуция", "Атрибуция", "Attribution"),
     # ---- the «Город» page
     "city_title": ("Қала", "Город", "City"),
     "city_lead": (
-        "Көмекшіні қоректендіретін деректердің өзі — қала мен ғылыми орталыққа арналған. Тек 500 м "
-        "ұяшықтар бойынша жиынтықтар.",
-        "Те же данные, что питают помощника, — для города и научного центра. Только сводки по ячейкам "
-        "500 м.",
-        "The same data that feeds the assistant, for the city and the research centre. Only totals per "
-        "500 m cell.",
+        "Көмекшіні қоректендіретін деректердің өзі — қалаға арналған. Адамдарға емес, 500 × 500 м карта учаскелеріне қараймыз: әрқайсысында қанша сұраныс болды және не жетіспейді.",
+        "Те же данные, что питают помощника, — для города. Смотрим не на людей, а на участки карты 500 × 500 м: сколько в каждом запросов и чего не хватает.",
+        "The same data that feeds the assistant, for the city. We look at map areas of 500 × 500 m, not at people: how many requests each had and what is missing.",
     ),
     "city_tab_demand": ("Сұраныс", "Спрос", "Demand"),
     "city_tab_quality": ("Деректердегі олқылықтар", "Пробелы в данных", "Gaps in the data"),
@@ -611,20 +651,14 @@ PANEL: dict[str, Entry] = {
     "city_src_sim": ("Модельденген сұраныс", "Смоделированный спрос", "Simulated demand"),
     "city_src_real": ("Нақты сұраныстар журналы", "Реальный журнал запросов", "Real request log"),
     "city_sim_banner": (
-        "Бұл — модельденген сұраныс, қала туралы бақылау емес. Нақты трафик әзірге жоқ: сұраныстар "
-        "тұрғын үйлер санына пропорционал нүктелерде жасалған, оларға нағыз конвейер жауап береді. "
-        "Карта мен кесте тұрғындардың қалауын емес, механизмді көрсетеді.",
-        "Это смоделированный спрос, не наблюдение о городе. Реального трафика пока нет: запросы "
-        "нарисованы в точках пропорционально числу жилых домов, и на них отвечает настоящий конвейер. "
-        "Карта и таблица показывают механизм, а не то, чего хотят жители.",
-        "This is simulated demand, not an observation of the city. There is no real traffic yet: "
-        "requests were drawn at points in proportion to the number of residential buildings, and the "
-        "real pipeline answered them. The map and the table show the mechanism, not what residents want.",
+        "Бұл — модельденген сұраныс, қаладағы нақты бақылау емес. Нақты сұраныстар әзірге жоқ: сұраныстар тұрғын үйлер санына пропорционал нүктелерде жасалған, оларға нағыз көмекші жауап берген. Карта мен кесте есептің қалай көрінетінін көрсетеді, тұрғындардың не қалайтынын емес.",
+        "Это смоделированный спрос, а не наблюдение за городом. Реальных запросов пока нет: запросы нарисованы в точках пропорционально числу жилых домов, и на них ответил настоящий помощник. Карта и таблица показывают, как будет выглядеть отчёт, а не чего хотят жители.",
+        "This is simulated demand, not an observation of the city. There are no real requests yet: they were drawn at points in proportion to the number of residential buildings, and the real assistant answered them. The map and the table show what the report will look like, not what residents want.",
     ),
     "city_sim_meta": (
-        "Қайталанады: seed {seed}, {n} сұраныс, {date}.",
-        "Воспроизводимо: seed {seed}, {n} запросов, {date}.",
-        "Reproducible: seed {seed}, {n} requests, {date}.",
+        "Модельденген {n} сұраныс, {date}; жүгіру нөмірі {seed} — нәтижені қайталауға болады.",
+        "Смоделировано {n} запросов, {date}; номер прогона {seed} — по нему результат можно повторить.",
+        "Simulated: {n} requests, {date}; run number {seed} lets you repeat the result.",
     ),
     "city_no_log": (
         "Сұраныстар журналы өшірулі.",
@@ -632,50 +666,69 @@ PANEL: dict[str, Entry] = {
         "The request log is off.",
     ),
     "city_log_empty": (
-        "Журналда әзірге сұраныс жоқ: ол адамдар көмекшіні қолданғанда толады (анонимді жазба: 500 м "
-        "ұяшық, санаттар, есептегіштер).",
-        "В журнале пока нет запросов: он наполняется, когда люди пользуются помощником (анонимная "
-        "запись: ячейка 500 м, категории, счётчики).",
-        "The log has no requests yet: it fills as people use the assistant (an anonymous record: a "
-        "500 m cell, categories, counters).",
+        "Журналда әзірге сұраныс жоқ: адамдар көмекшіні қолданған сайын толады (анонимді жазба: 500 м учаске, санаттар, есептегіштер).",
+        "В журнале пока нет запросов: он наполняется, когда люди пользуются помощником (анонимная запись: участок 500 м, категории, счётчики).",
+        "The log has no requests yet: it fills as people use the assistant (an anonymous record: a 500 m map area, categories, counters).",
     ),
     "city_category": ("Санат", "Категория", "Category"),
     "city_bucket": ("Тәулік уақыты", "Время суток", "Time of day"),
     "city_all": ("Барлығы", "Все", "All"),
     "city_k": (
-        "Топтағы ең аз сұраныс (k, кемінде {min})",
-        "Минимум запросов в группе (k, от {min})",
-        "Smallest group (k, at least {min})",
+        "Көрсету үшін сұраныс кемінде (төмен емес {min})",
+        "Показывать, если запросов не меньше (не ниже {min})",
+        "Show only with at least this many requests (minimum {min})",
     ),
-    "city_k_less": ("k азайту", "Уменьшить k", "Lower k"),
-    "city_k_more": ("k көбейту", "Увеличить k", "Raise k"),
-    "city_m_requests": ("Сұраныстар", "Запросов", "Requests"),
+    "city_k_less": (
+        "Ең аз сұранысты азайту",
+        "Уменьшить минимум запросов",
+        "Lower the minimum",
+    ),
+    "city_k_more": (
+        "Ең аз сұранысты көбейту",
+        "Увеличить минимум запросов",
+        "Raise the minimum",
+    ),
+    "city_k_why": (
+        "Сұраныс {k}-тен аз учаскелер жасырылады: екі-үш сұраныс бойынша оны кім жібергенін болжауға болады.",
+        "Участки, где запросов меньше {k}, скрыты: по двум-трём запросам можно догадаться, кто их задал.",
+        "Areas with fewer than {k} requests are hidden: from two or three requests one could guess who made them.",
+    ),
+    "city_m_requests": (
+        "Барлық сұраныс",
+        "Всего запросов",
+        "Requests in all",
+    ),
     "city_m_no_place": (
-        "Радиуста ондай орын жоқ",
-        "Нет такого места в радиусе",
-        "No such place in reach",
+        "Жақын маңда лайықты орын жоқ",
+        "Без подходящего места рядом",
+        "No suitable place nearby",
     ),
     "city_m_hours_unknown": (
-        "Орын бар, уақыты жоқ",
-        "Место есть, часов нет",
-        "Place exists, no hours",
+        "Орын бар, жұмыс уақыты жоқ",
+        "Место есть, часов работы нет",
+        "Place found, no opening hours",
     ),
-    "city_m_cells_shown": ("Көрсетілген ұяшық", "Ячеек показано", "Cells shown"),
-    "city_m_cells_hidden": ("Жасырылған ұяшық (<k)", "Ячеек скрыто (<k)", "Cells hidden (<k)"),
+    "city_m_cells_shown": (
+        "Көрсетілген учаске",
+        "Участков показано",
+        "Areas shown",
+    ),
+    "city_m_cells_hidden": (
+        "Жасырылған учаске (сұраныс {k}-тен аз)",
+        "Участков скрыто (запросов меньше {k})",
+        "Areas hidden (fewer than {k} requests)",
+    ),
     "city_legend_few": ("аз", "мало", "few"),
     "city_legend_many": ("көп", "много", "many"),
     "city_demand_note": (
-        "Түс — деректерде радиуста қажетті түрдегі орын таппаған сұраныстар саны. Жасыл — ондай "
-        "сұраныс жоқ. {k}-тен аз сұранысы бар ұяшықтар көрсетілмейді.",
-        "Цвет — сколько запросов не нашли в данных места нужного вида в радиусе. Зелёный — таких "
-        "запросов нет. Ячейки, где запросов меньше {k}, не показаны.",
-        "Colour: how many requests found no place of the wanted kind in reach in the data. Green: none. "
-        "Cells with fewer than {k} requests are not shown.",
+        "Учаске түсі — жақын маңда лайықты орын таппаған сұраныс саны. Жасыл — ондай сұраныс жоқ. Сұраныс {k}-тен аз учаскелер көрсетілмейді.",
+        "Цвет участка — сколько запросов не нашли рядом подходящего места. Зелёный — таких запросов нет. Участки, где запросов меньше {k}, не показаны.",
+        "The colour of an area is how many requests found no suitable place nearby. Green: none. Areas with fewer than {k} requests are not shown.",
     ),
     "city_hidden_note": (
-        "Жасырылған ұяшықтардағы сұраныстар: {n}.",
-        "Запросов в скрытых ячейках: {n}.",
-        "Requests in hidden cells: {n}.",
+        "Жасырылған учаскелердегі сұраныс: {n}.",
+        "Запросов на скрытых участках: {n}.",
+        "Requests in hidden areas: {n}.",
     ),
     "city_top_title": (
         "Ең көп жетіспейтін жерлер",
@@ -686,14 +739,18 @@ PANEL: dict[str, Entry] = {
     "city_col_category": ("Санат", "Категория", "Category"),
     "city_col_bucket": ("Уақыт", "Время суток", "Time of day"),
     "city_col_requests": ("Сұраныс", "Запросов", "Requests"),
-    "city_col_no_place": ("Орын жоқ", "Нет места", "No place"),
+    "city_col_no_place": (
+        "Орынсыз",
+        "Без места",
+        "No place",
+    ),
     "city_col_share": ("Үлесі", "Доля", "Share"),
     "city_col_places": ("Орындар", "Мест", "Places"),
     "city_col_with_hours": ("Уақытымен", "С часами", "With hours"),
     "city_merged": (
-        "k={k}-тен кіші топтар орынсыз «басқа» жолына біріктірілді: {g} топтағы {n} сұраныс.",
-        "Группы меньше k={k} слиты в строку «прочее» без места: {n} запросов в {g} группах.",
-        "Groups below k={k} were merged into «other» without a location: {n} requests in {g} groups.",
+        "Сұранысы {k}-тен аз {g} топ бөлек көрсетілмейді: {n} сұраныс мекенжайсыз бір «басқа» жолына жиналған.",
+        "Группы, где запросов меньше {k}, не показаны по отдельности: {n} запросов из {g} групп сложены в одну строку «прочее» без адреса.",
+        "Groups with fewer than {k} requests are not shown one by one: {n} requests from {g} groups are put into one “other” row with no location.",
     ),
     "city_actions_title": (
         "Қалаға не істеу керек",
@@ -714,82 +771,66 @@ PANEL: dict[str, Entry] = {
         "for a gap in the data; if there really is none, it is a candidate site.",
     ),
     "city_actions_none": (
-        "Көрсетілген топтарда (кемінде k сұраныс) мұндай жағдай жоқ.",
-        "В показанных группах (не меньше k запросов) таких случаев нет.",
-        "No such cases in the groups shown (at least k requests).",
+        "Көрсетілген учаскелерде (сұраныс кемінде {k}) мұндай жағдай жоқ.",
+        "На показанных участках (запросов не меньше {k}) таких случаев нет.",
+        "No such cases in the areas shown (at least {k} requests).",
     ),
     "city_padded": (
-        "Жауап сапасы (қала туралы емес): {of} сұраныстың {n}-інде радиусты кеңейтуге немесе басқа "
-        "санат алуға тура келді.",
-        "Качество ответа (не про город): в {n} из {of} запросов пришлось расширить радиус или взять "
-        "другую категорию.",
-        "Answer quality (not about the city): {n} of {of} requests needed a wider radius or another "
-        "category.",
+        "Бұл — көмекші туралы, қала туралы емес: {of} сұраныстың {n}-інде ол іздеу радиусын кеңейтіп немесе басқа санат ұсынды.",
+        "Это про помощника, не про город: в {n} из {of} запросов он расширил радиус поиска или предложил другую категорию.",
+        "This is about the assistant, not the city: in {n} of {of} requests it widened the search radius or offered another category.",
     ),
     "city_how_title": (
-        "Анонимдік және жүктеу",
-        "Анонимность и выгрузка",
-        "Anonymity and export",
+        "Адамдар қалай қорғалады және не жүктеуге болады",
+        "Как мы защищаем людей и что можно скачать",
+        "How people are protected and what you can download",
     ),
     "city_how_1": (
-        "Әр сұраныстан бір жол жазылады: сағат, 500 м ұяшық, санаттар, есептегіштер. Сұраныс мәтіні, "
-        "есімдер, координаттар мен орын id жазылмайды; профильмен берілген жауаптар мүлдем жазылмайды.",
-        "По каждому запросу пишется одна строка: час, ячейка 500 м, категории, счётчики. Без текста "
-        "запроса, имён, координат и id мест; ответы с личным профилем не пишутся вовсе.",
-        "Each request writes one line: the hour, a 500 m cell, categories, counters. No request text, "
-        "names, coordinates or place ids; answers made with a personal profile are not written at all.",
+        "Әр сұраныстан бір жол сақталады: сағат, 500 м учаске, санаттар, есептегіштер. Сұраныс мәтіні, есімдер, координаттар мен орындар сақталмайды; жеке профильмен берілген жауаптар мүлдем жазылмайды.",
+        "По каждому запросу сохраняется одна строка: час, участок 500 м, категории, счётчики. Текст запроса, имена, координаты и места не сохраняются; ответы по личному профилю не записываются совсем.",
+        "Each request saves one line: the hour, a 500 m map area, categories, counters. No request text, names, coordinates or places are saved; answers made with a personal profile are not recorded at all.",
     ),
     "city_how_2": (
-        "Координаттар алдымен ~100 м-ге дейін дөңгелектенеді, содан кейін 500 × 500 м ұяшыққа "
-        "келтіріледі.",
-        "Координаты сначала округляются до ~100 м, затем сводятся к ячейке 500 × 500 м.",
-        "Coordinates are first rounded to ~100 m, then reduced to a 500 × 500 m cell.",
+        "Координаттар алдымен ~100 м-ге дейін дөңгелектенеді, содан кейін 500 × 500 м учаскеге келтіріледі.",
+        "Координаты сначала округляются до ~100 м, потом переводятся в участок 500 × 500 м.",
+        "Coordinates are rounded to ~100 m first, then turned into a 500 × 500 m area.",
     ),
     "city_how_3": (
-        "«Ұяшық × санат × тәулік уақыты» тобы кемінде {k} сұраныс болса ғана көрсетіледі; қалғандары "
-        "орынсыз «басқа» жолына қосылады. Нақты журнал үшін k 5-тен төмен түспейді.",
-        "Группа «ячейка × категория × время суток» показывается, только если в ней не меньше {k} "
-        "запросов; остальные сливаются в «прочее» без места. Для реального журнала k не опускается "
-        "ниже 5.",
-        "A “cell × category × time of day” group is shown only with at least {k} requests; the rest "
-        "merge into “other” without a location. For the real log k never goes below 5.",
+        "«Учаске × санат × тәулік уақыты» тобы кемінде {k} сұраныс болғанда ғана көрсетіледі; қалғандары мекенжайсыз «басқа» жолына қосылады. Нақты сұраныстар үшін шек 5-тен төмен түспейді.",
+        "Группа «участок × категория × время суток» показывается, только если в ней не меньше {k} запросов; остальные складываются в строку «прочее» без места. Для реальных запросов порог не ниже 5.",
+        "An “area × category × time of day” group is shown only with at least {k} requests; the rest go into an “other” row with no location. For real requests the minimum never goes below 5.",
     ),
     "city_how_4": (
-        "Үш көрсеткіш араластырылмайды: радиуста ондай орын жоқ (деректер туралы факт, картада тек "
-        "сол), орын бар бірақ уақыты жоқ (деректер сапасы), жауапты толықтыруға тура келді (рейтинг "
-        "сапасы).",
-        "Три показателя не смешиваются: нет такого места в радиусе (факт о данных, на карте только он), "
-        "место есть, но часов нет (качество данных), ответу пришлось добирать (качество ранжирования).",
-        "Three indicators are never mixed: no such place in reach (a fact about the data, the only one "
-        "on the map), a place exists but no hours (data quality), the answer had to be padded (ranking "
-        "quality).",
+        "Үш сан араластырылмайды: «жақын маңда лайықты орын жоқ» (деректер туралы факт, картада тек сол), «орын бар, жұмыс уақыты жоқ» (деректер сапасы), «жауапқа іздеуді кеңейтуге тура келді» (таңдау сапасы).",
+        "Три числа не смешиваются: «нет подходящего места рядом» (факт о данных, только он на карте), «место есть, часов нет» (качество данных), «ответу пришлось расширить поиск» (качество подбора).",
+        "Three numbers are never mixed: “no suitable place nearby” (a fact about the data, the only one on the map), “place found, no opening hours” (data quality), “the answer had to widen the search” (quality of the choice).",
     ),
     "city_how_5": (
-        "CSV мен GeoJSON тек көрсетілген топтардан және координатсыз «басқа» жолынан жиналады.",
-        "CSV и GeoJSON собираются только из показанных групп и строки «прочее» без координат.",
-        "CSV and GeoJSON are built only from the groups shown and the “other” row without coordinates.",
+        "CSV және GeoJSON тек көрсетілген учаскелерден және координатсыз «басқа» жолынан жиналады.",
+        "Файлы CSV и GeoJSON собираются только из показанных участков и строки «прочее» без координат.",
+        "The CSV and GeoJSON files are built only from the areas shown and the “other” row with no coordinates.",
     ),
     "city_export_title": (
-        "Жүктеу (тек жиынтықтар)",
-        "Выгрузка (только агрегаты)",
-        "Export (totals only)",
+        "Жүктеу (тек жиынтықтар, мекенжайсыз)",
+        "Скачать (только сводки, без адресов)",
+        "Download (totals only, no addresses)",
     ),
     "city_dl_demand_csv": ("CSV: сұраныс", "CSV: спрос", "CSV: demand"),
     "city_dl_demand_geojson": ("GeoJSON: сұраныс", "GeoJSON: спрос", "GeoJSON: demand"),
-    "city_dl_quality_csv": ("CSV: деректер сапасы", "CSV: качество данных", "CSV: data quality"),
+    "city_dl_quality_csv": (
+        "CSV: деректердегі олқылықтар",
+        "CSV: пробелы в данных",
+        "CSV: gaps in the data",
+    ),
     "city_dl_quality_geojson": (
-        "GeoJSON: деректер сапасы",
-        "GeoJSON: качество данных",
-        "GeoJSON: data quality",
+        "GeoJSON: деректердегі олқылықтар",
+        "GeoJSON: пробелы в данных",
+        "GeoJSON: gaps in the data",
     ),
     "city_quality_lead": (
-        "Ұяшықтағы орындардың қандай үлесінде жұмыс уақыты, адам жазған сипаттама және тұрғындар "
-        "белгілері бар. Үлес төмен жерде көмекшінің айтары аз, ал қалаға жинайтыны көп.",
-        "Какая доля мест в ячейке имеет часы работы, описание, написанное человеком, и отметки жителей. "
-        "Где доля низкая, помощнику нечего сказать, а городу — что дособрать.",
-        "What share of the places in a cell has opening hours, a human-written description and "
-        "residents' marks. Where it is low, the assistant has little to say and the city has something "
-        "to collect.",
+        "Карта учаскесіндегі орындардың қандай үлесінде жұмыс уақыты, адам жазған сипаттама және тұрғындар белгілері бар. Үлес төмен жерде көмекшінің айтары аз, ал қалада нені нақтылау керек екені көрінеді.",
+        "Какая доля мест на участке карты имеет часы работы, описание от человека и отметки жителей. Где доля низкая, помощнику нечего сказать, а городу видно, что уточнить.",
+        "What share of the places in a map area has opening hours, a description written by a person and residents' marks. Where it is low, the assistant has little to say and the city can see what to check.",
     ),
     "city_q_places": ("Деректердегі орындар", "Мест в данных", "Places in the data"),
     "city_q_hours": ("жұмыс уақыты", "часы работы", "opening hours"),
@@ -803,9 +844,9 @@ PANEL: dict[str, Entry] = {
     "city_legend_low": ("ешкімде дерлік жоқ", "почти ни у кого", "almost none"),
     "city_legend_high": ("барлығында дерлік бар", "почти у всех", "almost all"),
     "city_worst_title": (
-        "Жұмыс уақыты ең аз санаттар",
-        "Категории с худшим покрытием часами",
-        "Categories with the fewest opening hours",
+        "Қай санатта жұмыс уақыты жиі жоқ",
+        "Где чаще всего нет часов работы (по категориям)",
+        "Categories where opening hours are most often missing",
     ),
     "city_hours_actions_title": (
         "Қай жерден жұмыс уақытын сұрау керек",
@@ -820,18 +861,14 @@ PANEL: dict[str, Entry] = {
         "have them.",
     ),
     "city_hours_actions_note": (
-        "Дерек: орындар деректеріндегі жұмыс уақыты; аудандар — OSM шекаралары.",
-        "Данные: часы работы в наборе мест; районы — границы OSM.",
-        "Data: the opening hours in the place data; districts are OSM borders.",
+        "Негізі: біздің орындар деректеріндегі жұмыс уақыты; аудан шекаралары — OpenStreetMap бойынша.",
+        "Основа: часы работы в наших данных о местах; границы районов — по OpenStreetMap.",
+        "Based on: the opening hours in our place data; district borders from OpenStreetMap.",
     ),
     "city_reports_lead": (
-        "Тұрғындар орын карточкасынан хабарлайды: «жабық», «уақыты басқа», «бәрі дұрыс» және т.б. "
-        "Белгілер анонимді, олар таңдауда бөлек деңгей ретінде ескеріледі және деректерді түзетуге "
-        "көмектеседі.",
-        "Жители сообщают прямо с карточки места: «закрыто», «другие часы», «всё верно» и т.д. Отметки "
-        "анонимны, учитываются в подборе отдельным уровнем и помогают исправить данные.",
-        "Residents report from a place's card: “closed”, “different hours”, “all correct” and so on. "
-        "Marks are anonymous, count in the choice as a separate level and help fix the data.",
+        "Тұрғындар орын карточкасынан хабарлайды: «жабық», «уақыты басқа», «бәрі дұрыс» және т.б. Белгілер анонимді; көмекші оларды картадағы жұмыс уақытынан бөлек көрсетеді және олар деректерді түзетуге көмектеседі.",
+        "Жители сообщают прямо с карточки места: «закрыто», «другие часы», «всё верно» и т.д. Отметки анонимны; помощник показывает их отдельно от часов с карты, и они помогают исправить данные.",
+        "Residents report from a place's card: “closed”, “different hours”, “all correct” and so on. The marks are anonymous; the assistant shows them apart from the hours on the map, and they help fix the data.",
     ),
     "city_r_total": ("Барлық белгі", "Всего отметок", "Marks in all"),
     "city_r_demo": (
@@ -871,22 +908,19 @@ PANEL: dict[str, Entry] = {
         "Marks are not saved in this version.",
     ),
     "city_q_queue_title": (
-        "Тексеру кезегі: OpenStreetMap ескертпелері",
-        "Очередь на проверку: заметки OpenStreetMap",
-        "To check: OpenStreetMap notes",
+        "Нені тексеру керек: картадағы қателер туралы хабарлар",
+        "Что проверить: сообщения об ошибках на карте",
+        "To check: reports of map errors",
     ),
     "city_q_queue_lead": (
-        "Орын жабылды немесе жұмыс уақыты өзгерді деп адамдар жазған ашық ескертпелер. Бұл болжам, дерек емес: "
-        "орнында тексеріп, картаны түзетіңіз.",
-        "Открытые заметки людей о том, что место закрылось или изменило часы. Это подозрение, а не факт: "
-        "проверьте на месте и поправьте карту.",
-        "Open notes where people say a place has closed or changed its hours. A suspicion, not a fact: check on "
-        "the spot and fix the map.",
+        "OpenStreetMap — ашық карта, онда кез келген адам «ескертпе» қалдыра алады: орын жабылды немесе жұмыс уақыты өзгерді деп. Бұл болжам, дерек емес: орнында тексеріп, картаны түзетіңіз.",
+        "OpenStreetMap — открытая карта, где любой может оставить «заметку»: что место закрылось или поменяло часы. Это сигнал, а не факт: проверьте на месте и поправьте карту.",
+        "OpenStreetMap is an open map where anyone can leave a “note”: that a place has closed or changed its hours. A signal, not a fact: check on the spot and fix the map.",
     ),
     "city_q_queue_none": (
-        "Түсірілімде жабылу немесе жұмыс уақыты туралы ашық ескертпе жоқ.",
-        "В снимке нет открытых заметок о закрытии или часах работы.",
-        "The snapshot has no open notes about closures or opening hours.",
+        "Біздің карта түсірілімінде жабылу немесе жұмыс уақыты туралы ашық хабар жоқ.",
+        "В нашем снимке карты нет открытых сообщений о закрытии или часах работы.",
+        "Our map snapshot has no open reports about closures or opening hours.",
     ),
     "city_q_note_closure": ("жабылған болуы мүмкін", "могло закрыться", "may have closed"),
     "city_q_note_hours": (
@@ -894,20 +928,32 @@ PANEL: dict[str, Entry] = {
         "часы могли измениться",
         "hours may have changed",
     ),
-    "city_q_note_open": ("Ескертпені ашу", "Открыть заметку", "Open the note"),
+    "city_q_note_open": (
+        "OpenStreetMap-та ашу",
+        "Открыть на OpenStreetMap",
+        "Open on OpenStreetMap",
+    ),
     "city_q_note_date": ("{date} жазылған", "от {date}", "from {date}"),
     "city_q_constr": (
-        "жол жұмысы учаскелері (OpenStreetMap)",
-        "участков дорожных работ (OpenStreetMap)",
-        "road-works sections (OpenStreetMap)",
+        "карта бойынша жол жұмыстары (OpenStreetMap)",
+        "дорожных работ на карте (OpenStreetMap)",
+        "road works on the map (OpenStreetMap)",
     ),
-    "city_q_notes_open": ("ашық ескертпе", "открытых заметок", "open notes"),
+    "city_q_notes_open": (
+        "картадағы қателер туралы ашық хабар (OpenStreetMap)",
+        "открытых сообщений об ошибках (OpenStreetMap)",
+        "open map-error reports (OpenStreetMap)",
+    ),
     "city_q_layers_none": (
-        "Бұл құрастырмада қала туралы OpenStreetMap деректері жоқ.",
-        "В этой сборке нет данных OpenStreetMap о городе (заметки, стройки).",
-        "This build has no OpenStreetMap city data (notes, road works).",
+        "Бұл құрастырмада қала туралы OpenStreetMap деректері жоқ (карта қателері, жол жұмыстары).",
+        "В этой сборке нет данных OpenStreetMap о городе (сообщения об ошибках, дорожные работы).",
+        "This build has no OpenStreetMap city data (error reports, road works).",
     ),
-    "city_q_events_title": ("Афиша қамтуы", "Охват афиши", "Afisha coverage"),
+    "city_q_events_title": (
+        "Афишадағы іс-шаралар",
+        "События из афиши",
+        "Events from the afisha",
+    ),
     "city_q_events": (
         "Афишада {n} оқиға, {located}-інің картада мекенжайы бар; көздер: {sources}. Жаңартылған: {date}.",
         "В афише {n} событий, у {located} есть адрес на карте; источники: {sources}. Обновлено: {date}.",

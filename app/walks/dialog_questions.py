@@ -17,10 +17,23 @@ from .lexicon import without_durations
 MAX_QUESTION_WORDS = 10
 LONG_QUESTION_WORDS = 16  # «how long does it take to walk from here to Baiterek»
 QuestionTopic = (
-    Topic | Literal["entry", "menu", "menu_kids", "menu_kazakh", "socket", "kids_room", "visit"]
+    Topic
+    | Literal[
+        "entry",
+        "menu",
+        "menu_kids",
+        "menu_kazakh",
+        "socket",
+        "kids_room",
+        "visit",
+        "closing",
+        "atm",
+        "exchange",
+        "round_clock",
+    ]
 )
 KIND_SAFE_TOPICS = frozenset(
-    {"price", "entry", "menu", "menu_kids", "menu_kazakh", "kids_room", "visit"}
+    {"price", "entry", "menu", "menu_kids", "menu_kazakh", "kids_room", "visit", "atm", "exchange"}
 )  # asked of a shown place even when the text names a kind («is that kazakh food?»)
 _LONG_OK = re.compile(  # questions that run long: how far / how long, is it worth ...
     r"\bhow (?:long|many minutes|far)\b|\bсколько (?:минут|времени)\b|\bканша минут\b|\bworth\b|\bстоит ли\b"
@@ -38,6 +51,11 @@ class PlaceQuestion:
     marked: bool = False  # the message points at «this place» («там», «оно», «есть ли», «?»)
     also: tuple[str, ...] = ()  # the other topics the same message asks («… и есть ли там туалет»)
 
+    @property
+    def kind_safe(self) -> bool:
+        """Asked of a shown place even when the text names a kind of place («а там есть банкомат круглосуточно»)."""
+        return bool(KIND_SAFE_TOPICS & {self.topic, *self.also})
+
 
 _MARK = (
     r"\b(?:там|тут|оно|он|она|у них|здесь|есть ли|имеется|there|it|does|do they|is there|are there|"
@@ -47,10 +65,22 @@ _MARK = (
 _TOPICS: tuple[tuple[QuestionTopic, str, bool], ...] = (
     (
         "closing",  # before «hours»: «до какого часа он работает» asks for the closing time, not for open / closed
-        r"\bдо какого (?:часа|времени)\b|\bдо скольки\b|\bво сколько закрыва\w*|\bдо которого часа\b|\bкогда закрыва\w*|"
+        r"\bдо какого (?:часа|времени)\b|\bдо скольки\b|\bдо сколько\b|\bдо которого часа\b|\bкашанга дейин\b|\bкашанга чейин\b|\bво сколько закрыва\w*|\bдо которого часа\b|\bкогда закрыва\w*|"
         r"\buntil (?:when|what time)\b|\bwhat time (?:does|do) (?:it|they|the \w+) (?:close|shut)\b|\bwhen (?:does|do) (?:it|they) close\b|"
         r"\btill what time\b|\bhow late\b|\bнешеге дейін\b|\bнешеде жабыл\w*|\bкашан жабыл\w*",
         False,
+    ),
+    (
+        "exchange",  # a question FORM («меняют ли там доллары»): «где обменять доллары» is a search
+        r"\bменя(?:ют|ет) ли\b|\bобменива(?:ют|ет) ли\b|\bменя(?:ют|ет) (?:там|тут)\b|\bможно (?:ли )?(?:там |тут )?(?:обменять|поменять)\b|"
+        r"\bdo (?:they|you) (?:change|exchange|take|buy)\b|\bcan (?:i|you|we) (?:change|exchange)\b|\bwill they (?:change|exchange)\b|"
+        r"\bайырбастай(?:ды)? ма\b|\bайырбастауга бола ма\b|\bайырбастап бере ме\b",
+        False,
+    ),
+    (
+        "atm",  # only about a place pointed at («есть ли там банкомат»); «где банкомат» is a search
+        r"\bбанкомат\w*|\batms?\b|\bcash machines?\b|\bcash point\b",
+        True,
     ),
     (
         "visit",  # «is it worth going up at night or in the morning»: the hours and the entry together
@@ -106,6 +136,11 @@ _TOPICS: tuple[tuple[QuestionTopic, str, bool], ...] = (
         r"\bашык\w*|\bжабык\w*|жумыс (?:истей|уакыт|кестес)|нешеге дейин|нешеде (?:ашыл|жабыл)|кашан (?:ашыл|жабыл)|"
         r"\bopen\b|\bopens\b|\bclosed?\b|\bclosing\b|\bopening hours\b|\bhours\b|\buntil when\b|\bwhat time\b|"
         r"\bgo in\b|\bget in\b|\bgo inside\b|\binside\b",
+        False,
+    ),
+    (
+        "round_clock",  # after «hours»: «круглосуточно ли» alone is the hours answer, «банкомат круглосуточно» adds it
+        r"\bкруглосуточн\w*|\b24 ?(?:/|на)? ?7\b|\baround the clock\b|\b24 hours\b|\bтаулик бои\b|\bтулик бои\b",
         False,
     ),
     (
@@ -190,33 +225,55 @@ _COVERS = {  # a topic that already answers another one asked in the same messag
     "entry": {"price"},
     "menu_kids": {"menu"},
     "menu_kazakh": {"menu"},
-    "closing": {"hours"},
+    "closing": {"hours", "round_clock"},
     "visit": {"hours", "entry", "price"},
 }
+
+
+_ANCHORED = frozenset({"atm"})  # asked only of a place the message points at (not by the «?» alone)
+_ANCHOR = re.compile(
+    r"\b(?:там|тут|здесь|у них|они|оно|there|they|here|мунда|мында|онда|сонда|бул жерде|осы жерде|ол жерде)\b"
+)
 
 
 def _topics(text: str, question_mark: bool = False) -> list[str]:
     """Every topic the message asks, in the table's order, without the ones another already covers."""
     marked = question_mark or bool(_MARKER.search(text))
-    found = [t for t, rx, needs in _COMPILED if rx.search(text) and (marked or not needs)]
+    pointed = bool(_ANCHOR.search(text))
+    found = [
+        t
+        for t, rx, needs in _COMPILED
+        if rx.search(text) and (marked or not needs) and (pointed or t not in _ANCHORED)
+    ]
     covered = {c for t in found for c in _COVERS.get(t, ())}
     return list(dict.fromkeys(t for t in found if t not in covered))
 
 
-_SEGMENTS = re.compile(r"\s+(?:и|а также|and|also|және|а еще|а ещё)\s+|[,;]")
+_SEGMENTS = re.compile(
+    r"\s+(?:и|а также|and|also|және|жане|а еще|а ещё|а еще)\s+|[,;]"
+)  # `жане`: «және» as `tokens` writes it
 
 
 def _asked_topics(text: str, question_mark: bool = False) -> list[str]:
     """The topic of the message (the first one the table finds in it) and, after it, the topics of its LATER parts
     («сколько стоит вход» и «есть ли там туалет»): one sentence that merely matches two words asks one thing."""
-    topics = _topics(text, question_mark)
-    if not topics:
-        return topics
+    if not _topics(text, question_mark):
+        return []
     marked = question_mark or bool(_MARKER.search(text))
-    parts = _SEGMENTS.split(text)
-    later = {t for part in parts[1:] for t in _topics(part, marked)}
-    covered = {c for t in topics[:1] for c in _COVERS.get(t, ())}
-    return [topics[0], *(t for t in topics[1:] if t in later and t not in covered)]
+    pointed = bool(_ANCHOR.search(text))
+    out: list[str] = []
+    for part in _SEGMENTS.split(
+        text
+    ):  # the message's own order: the first topic of each part, in the order said
+        found = [t for t in _topics(part, marked) if t not in _ANCHORED or pointed]
+        if found:
+            out.append(found[0])
+            if found[0] not in ("hours", "closing") and "round_clock" in found[1:]:
+                out.append("round_clock")  # «банкомат круглосуточно»: one part, two things
+    covered = {c for t in out for c in _COVERS.get(t, ())}
+    return (
+        list(dict.fromkeys(t for t in out if t not in covered)) or _topics(text, question_mark)[:1]
+    )
 
 
 def _topic(text: str, question_mark: bool = False) -> Topic | None:

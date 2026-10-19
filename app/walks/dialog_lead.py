@@ -5,6 +5,8 @@ minutes, names) is inserted by code from a field of the data; the model supplies
 
 from __future__ import annotations
 
+import re
+
 from .attributes import local_food_signal
 from .dialog_strings import s
 from .dialog_types import Place
@@ -22,6 +24,17 @@ from .shelter import LIT_NEAR
 from .sun import is_dark
 from .want import names_the_wish
 from .weather import BAD_PM25, HEAVY_PRECIP_MM, warned
+from .wishes import DAY_END, DAY_START, ERRANDS, errand, of_subkind, subkind_missing
+
+_ERRAND_SUBKINDS = (
+    "atm",
+    "dentist",
+    "kids_doctor",
+)  # the errand records the lead names by what they are
+
+_NIGHT_WORDS = re.compile(
+    r"ночью|ночн|по ночам|түнде|түнгі|at night|tonight|overnight|late[- ]night", re.I
+)
 
 FEELS_GAP_C = 3  # «ощущается как» is said when it differs from the temperature by this much
 TRACE_PRECIP_MM = 0.2  # less precipitation than this in the hour is not worth a word
@@ -115,8 +128,10 @@ def conditions(
             clauses.append(sky)
         if f.outdoor_request and (air := _air(w, lang)):
             clauses.append(air)
-        if (walk or intent.mode == "car") and "storm_warning" in w.conditions and not sky:
-            # the official notice, by what it warns of («ожидается туман»), not as a «шторм»
+        notice = any(x.kind == "storm" and x.active for x in w.warnings)
+        if (walk or intent.mode == "car") and notice and not sky:
+            # the official notice, by what it warns of («ожидается туман»), not as a «шторм»; a fog notice is said
+            # as advice only: it is no harsh weather (kazhydromet.harsh_notice), so nothing moves indoors
             what = warned(w, lang)
             clauses.append(s("ld_storm_what", lang, what=what) if what else s("ld_storm", lang))
     if (
@@ -152,10 +167,10 @@ def honest_gaps(
     if intent.local_food and not any(local_food_signal(p) for p in pois):
         out.append(s("local_food_none", lang))
     n = res.retrieval.filters.excluded_closed
-    walk = bool(
-        set(intent.wished) & OUTDOOR_KINDS
-    )  # a park keeps no hours: no such line under a walk
-    if not (now and n and recs and not walk and all(r.hours_state == "unknown" for r in recs)):
+    quiet = (
+        bool(set(intent.wished) & OUTDOOR_KINDS) or errand(intent.wished or intent.categories)
+    )  # a park keeps no hours; «ещё 5 мест закрыты» under a toilet or a pharmacy names nothing to go to
+    if not (now and n and recs and not quiet and all(r.hours_state == "unknown" for r in recs)):
         return " ".join(out), ""
     one = n % 10 == 1 and n % 100 != 11
     words = {
@@ -265,6 +280,45 @@ def own_opening(res: Result, places: list[Place], anchor: str, way: tuple[str, s
     return text if names_the_wish(text, res.intent.intent) else ""
 
 
+def by_the_clock(text: str, res: Result) -> str:
+    """The model's words, unless they say «ночью» while the asked time is day: «го пожрать, щас уже поздно» at 11:30
+    is a meal now, and the lead then takes the template's words."""
+    hour = to_local_naive(res.when).hour
+    return "" if not text or (DAY_START <= hour < DAY_END and _NIGHT_WORDS.search(text)) else text
+
+
+def errand_pick(
+    res: Result,
+    places: list[Place],
+    lang: str,
+    *,
+    anchor: str = "",
+    way: tuple[str, str] | None = None,
+) -> str:
+    """«Ближайшая аптека — «Улы Дала», 14 мин пешком, часы неизвестны»: an errand is said by what it is, never as «Вы
+    ищете: аптека — советую …». A first card the data confirm open is «ближайшая открытая» (a nearer one may have
+    unknown hours, wishes.errand_order); with none confirmed open the first card is the nearest. '' for any other
+    request, a bookmark or a way in play (their own lead), or a first card of another kind."""
+    intent, first = res.intent.intent, places[0]
+    if not errand(intent.wished or intent.categories) or anchor or way is not None:
+        return ""
+    poi = next((r.poi for r in res.recs if r.poi.id == first.id), None)
+    kind = next(  # «Ближайший банкомат», «Ближайшая стоматология»: what the record is, not only its category
+        (k for k in _ERRAND_SUBKINDS if poi is not None and of_subkind(poi, k)), first.category
+    )
+    if first.category not in ERRANDS:
+        return ""
+    if rest := subkind_missing(intent, poi) if poi is not None else "":
+        # «Стоматологий рядом нет — ближайшая: …» was said before: this card is the nearest of the rest, one lead
+        what = s(f"ld_errand_rest_{rest}", lang)
+    else:
+        what = s(
+            f"ld_errand_open_{kind}" if first.hours.state == "open" else f"ld_errand_{kind}", lang
+        )
+    tail = ", " + lower_first(first.hours.text) if first.hours.text else ""
+    return s("ld_errand_pick", lang, what=what, name=first.name, walk=first.walk.text, tail=tail)
+
+
 def lead(
     res: Result,
     places: list[Place],
@@ -281,7 +335,8 @@ def lead(
     person wants, the recommendation and how many more are below. The conditions are said once per dialogue (`told`:
     the line said before), not before every answer; (`taken`) once, what of the saved settings this answer used."""
     guard = guard_clause(res, lang)
-    if own := own_opening(res, places, anchor, way):
+    nearest = errand_pick(res, places, lang, anchor=anchor, way=way)
+    if not nearest and (own := by_the_clock(own_opening(res, places, anchor, way), res)):
         text = f"{guard} {own}" if guard else own
         return f"{text} {taken}" if taken else text
     clauses, drives = conditions(res, lang, show_temp=show_temp, later=later)
@@ -290,8 +345,8 @@ def lead(
     if clauses and (tail := _tail(res, drives, lang, {p.id for p in places})):
         clauses.append(tail)
     first = ", ".join(clauses)
-    want = "" if guard else res.lead_want or template_want(res, lang)
-    pick = pick_clause(places[0], lang, anchor=anchor, way=way)
+    want = "" if guard or nearest else by_the_clock(res.lead_want, res) or template_want(res, lang)
+    pick = nearest or pick_clause(places[0], lang, anchor=anchor, way=way)
     rest = len(places) - 1
     more = s("ld_more", lang, more=s(f"more_{rest}", lang)) if rest else ""
     second = (f"{up(want)} — {pick}" if want else up(pick)) + more + "."
@@ -314,11 +369,16 @@ def _kinds(kinds: list[str], lang: str) -> str:
 def taken_into_account(res: Result, profile: Profile | None, lang: str) -> str:
     """«Учтены ваши настройки: халяль (в данных отмечен у 1 из 24 мест рядом, их ставлю первыми), без алкоголя.» The
     saved settings that changed THIS answer, each said once, with the real count where the data are thin. A setting that
-    did nothing here (halal for a walk, a pace for «ещё») is not mentioned: nothing is claimed that did not happen."""
+    did nothing here (halal for a walk, a pace for «ещё») is not mentioned: nothing is claimed that did not happen. An
+    errand (a pharmacy, an ATM, a toilet) is the nearest place that works: a child, quiet, a budget, the cold or the
+    words about oneself change nothing there, so only the step-free entrance, the pace and «не показывать» are said."""
     if profile is None or res.continued:
         return ""
     f = res.retrieval.filters
-    applied = set(res.profile_applied)
+    chore = errand(res.intent.intent.wished or res.intent.intent.categories)
+    applied = set(res.profile_applied) - (
+        {"with_kids", "quiet", "budget", "cold_tolerance"} if chore else set()
+    )
     shown = {r.poi.category for r in res.recs}
     items: list[str] = []
     if "with_kids" in applied:
@@ -350,7 +410,7 @@ def taken_into_account(res: Result, profile: Profile | None, lang: str) -> str:
     loved = [c for c in profile.liked if c in shown and not res.intent.intent.wished]
     if loved:
         items.append(s("pl_liked", lang, kinds=_kinds(loved, lang)))
-    if profile.about and res.generation == "llm":
+    if profile.about and res.generation == "llm" and not chore:
         items.append(s("pl_about", lang))
     return s("pl_wrap", lang, items="; ".join(items)) if items else ""
 

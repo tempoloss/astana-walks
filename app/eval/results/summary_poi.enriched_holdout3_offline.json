@@ -16,12 +16,12 @@
   "top1_ok_rate": 66.7,
   "top1_open_rate": 45.8,
   "unknown_hours_rec_share": 59.1,
-  "non_osm_rec_share": 40.9,
-  "avg_walk_min": 11.7,
+  "non_osm_rec_share": 42.4,
+  "avg_walk_min": 11.9,
   "wifi_socket_in_data_share": 100.0,
   "route_stop_closed_cases": 1,
-  "latency_ms_median": 18.5,
-  "latency_ms_p90": 56.0,
+  "latency_ms_median": 20.5,
+  "latency_ms_p90": 58.0,
   "generation_ms_median": 1.0,
   "generation_ms_p90": 1.0,
   "model_link": {
@@ -123,8 +123,8 @@
     "cases_file": "holdout3_cases.json",
     "case_set": "holdout3",
     "records": 24,
-    "git": "4a1b05c+uncommitted",
+    "git": "a007589+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T10:36:43+05:00"
+    "generated_at": "2026-10-19T21:12:50+05:00"
   }
 }

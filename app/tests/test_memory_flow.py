@@ -119,10 +119,17 @@ def test_cli_mark_rejects_an_unknown_signal(sandbox, capsys):
 
 def test_cli_hours_from_people_are_a_separate_level(sandbox, capsys):
     q = ["--lat", BAITEREK[0], "--lon", BAITEREK[1], "--q", "Тихое место с кофе и розеткой"]
-    drinkit = "node/14100100182"  # no hours in OSM
+    # marrone rosso (0.39 км от Байтерек): без часов в OSM и с ПЕРСИСТИРОВАННЫМ промахом каталога
+    # (catalog_match.jsonl: {poi_id: node/11910202470, match:false} — name+150 м, miss без часов навсегда),
+    # часы картинки держатся только на людях; каталог-мёрж дал часы Drinkit (node/14100100182), поэтому
+    # уровень людей проверяем на нём (was_open поднимает его на 1-е место)
+    poi = "node/11910202470"
     assert "люди отмечали" not in _run(capsys, *q)
-    for _ in range(2):
-        _run_mark(capsys, f"{drinkit}:was_open")
+    # 2 × was_open дают уровень часов; розетка/Wi‑Fi/тихо поднимают карточку на 1-е место над Drinkit,
+    # у которого после каталог-мёржа есть часы OSM (исходный node/14100100182 «no hours in OSM» больше не такой)
+    for sig in ("was_open", "has_socket", "has_wifi", "quiet"):
+        for _ in range(2):
+            _run_mark(capsys, f"{poi}:{sig}")
     out = _run(capsys, *q)
     line = next(ln for ln in out.splitlines() if "люди отмечали открыто" in ln)
     assert re.search(

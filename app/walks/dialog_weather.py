@@ -24,6 +24,7 @@ from .intent import parse_rules
 from .lexicon import match
 from .models import POI, WeatherInfo, WeatherWarning
 from .outing import is_outing
+from .symptoms import has_symptom
 from .weather import attribution, make_weather
 
 MAX_WORDS = 14
@@ -76,6 +77,8 @@ class WeatherAnswer:
 def asks_weather(text: str) -> bool:
     """The message asks about the weather itself: a weather word in a short message that names no kind of place and
     does not ask where to go."""
+    if has_symptom(text):
+        return False  # «ребёнок температурит», «ыстықтап жатыр»: a fever, not the weather
     norm = " ".join(tokens(text))
     if (
         not norm
@@ -91,6 +94,23 @@ def asks_weather(text: str) -> bool:
     # («холодно», «теплее») and the child to dress are no wish for a place
     own = set(match(text).active) - WEATHER_CONCEPTS
     return not (intent.wished or own or intent.landmark_refs or intent.info_about)
+
+
+_THEN_WHAT_TO_DO = re.compile(
+    r"\b(?:чем\s+(?:бы\s+)?(?:занять|занимать|заниматься|заняться|развлечь)\w*|что\s+делать|куда\s+(?:пойти|сходить|податься)|"
+    r"where\s+(?:to\s+go|can\s+(?:i|we)\s+go)|what\s+(?:to|can\s+(?:i|we))\s+do|не\s+істеу|қайда\s+бар\w*)\b",
+    re.IGNORECASE,
+)
+
+
+def what_to_do_after_weather(text: str) -> str | None:
+    """«а че там с погодой, и чем занимать себя, если дождь»: a weather question with a request for something to do in
+    it. The part from the request on («чем занимать себя, если дождь») is searched after the weather is answered; None
+    for a plain weather question or a plain request."""
+    m = _THEN_WHAT_TO_DO.search(text)
+    if m is None or not _ASKS.search(" ".join(tokens(text[: m.start()]))):
+        return None
+    return text[m.start() :].strip(" ,;:")
 
 
 def asks_clothes(text: str) -> bool:

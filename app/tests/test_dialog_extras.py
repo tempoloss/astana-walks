@@ -696,10 +696,12 @@ def test_the_new_lines_use_plain_words():
 
 # ------------------------------------------------------------------ what the fuzzing of the dialogue found
 
+# The dentist row left this list for the clinic layer (раунд 26): «где стоматолог» is a search now. What is left
+# are the kinds the data still does not hold (a school, an embassy).
 NOT_IN_DATA = {
-    "ru": ("школа рядом какая", "где стоматолог", "посольство рядом"),
-    "kk": ("жақын жерде мектеп қайда", "тіс дәрігері қайда", "елшілік қайда"),
-    "en": ("where is a school", "dentist nearby", "where is the embassy"),
+    "ru": ("школа рядом какая", "посольство рядом"),
+    "kk": ("жақын жерде мектеп қайда", "елшілік қайда"),
+    "en": ("where is a school", "where is the embassy"),
 }
 
 

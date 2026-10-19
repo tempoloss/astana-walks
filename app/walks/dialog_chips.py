@@ -8,6 +8,7 @@ from .dialog_strings import s
 from .dialog_types import Chip, ShownPlace
 from .models import Constraints, Intent
 from .variety import priced_kinds
+from .wishes import errand
 
 MAX_REFINE_CHIPS = 4
 MIN_FAR_M = 200  # «поближе» goes to 80% of the farthest shown place, never under 150 m: nearer than this it is moot
@@ -45,7 +46,9 @@ def _applicable(intent: Intent, constraints: Constraints, shown: list[ShownPlace
         out.append("more")
     if shown and farthest >= MIN_FAR_M:
         out.append("closer")
-    if "other" in cats:  # a state service point (ЦОН): nothing else about it can be refined
+    if (
+        "other" in cats or errand(intent.wished or intent.categories)
+    ):  # a state service point (ЦОН), an errand: a child, an hour more or cheaper change nothing there
         return out
     if intent.budget != "low" and priced_kinds(
         list(cats), "low"

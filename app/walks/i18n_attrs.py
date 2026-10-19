@@ -50,6 +50,32 @@ ATTR_STRINGS: dict[str, tuple[str, str, str]] = {
         "Рядом нет места «{cat}»: ближайшее — в {km} км.",
         "There is no “{cat}” nearby: the nearest one is {km} km away.",
     ),
+    "note_far_on_foot": (  # the card shows the routed distance; the note is written before the route
+        "Жаяу барсаңыз алыс — көлікпен барған дұрыс.",
+        "Пешком далеко — лучше на транспорте.",
+        "Too far to walk — better take transport.",
+    ),
+    # Wi-Fi / sockets asked, the record confirms one of them (walks.card_notes.work_note); neither: `note_wifi`
+    "note_socket_unverified_wifi": (
+        "Wi-Fi деректерде бар; розеткалар расталмаған.",
+        "Wi-Fi есть по данным; розетки не подтверждены.",
+        "Wi-Fi is in the data; sockets not confirmed.",
+    ),
+    "note_socket_unverified": (
+        "Розеткалар деректерде расталмаған.",
+        "Розетки в данных не подтверждены.",
+        "Sockets not confirmed in the data.",
+    ),
+    "note_wifi_unverified_socket": (
+        "Розеткалар деректерде бар; Wi-Fi расталмаған.",
+        "Розетки есть по данным; Wi-Fi не подтверждён.",
+        "Sockets are in the data; Wi-Fi not confirmed.",
+    ),
+    "note_wifi_unverified": (
+        "Wi-Fi деректерде расталмаған.",
+        "Wi-Fi в данных не подтверждён.",
+        "Wi-Fi not confirmed in the data.",
+    ),
     "note_hint_outdoor": (
         "Ашық аспан астындағы орын, ал {reason}: далада болатын уақыт қысқартылды.",
         "Место на открытом воздухе, а {reason}: время на улице сокращено.",

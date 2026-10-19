@@ -10,8 +10,9 @@ import re
 from datetime import datetime, timedelta
 
 from .claims import unbacked_kinds
+from .districts import district_of
 from .hours import to_local_naive
-from .i18n import Entry, category_name, pick
+from .i18n import Entry, category_name, district_name, pick, t
 from .i18n_cuisine import cuisine_label
 from .models import Candidate, Recommendation, WeatherInfo
 from .specific import opening_ok, states_status, uses_fact, vague_conditions
@@ -171,6 +172,42 @@ def clean_address(addr: str | None) -> str:
 def street(c: Candidate) -> str:
     """The address as a card shows it (`clean_address`), '' when there is none."""
     return clean_address(c.poi.address)
+
+
+# a walk's unnamed record («Парк / сквер»): its name only says its kind, so the card says where it is instead
+_UNNAMED_WALK = frozenset({"park_garden", "viewpoint"})
+
+
+def _unnamed_walk(poi) -> bool:
+    return poi.name_generated and poi.category in _UNNAMED_WALK
+
+
+def unnamed_label(poi, lang: str) -> str:
+    """«Сквер без названия, улица Мереке» (the street of its address), else «…, район Есиль» (its district) for an
+    unnamed park or viewpoint; '' for a named record, one whose generated name already says where («Парк / сквер
+    (улица Мереке)»), or one with neither."""
+    if not _unnamed_walk(poi) or "(" in poi.name:
+        return ""
+    where = clean_address(poi.address)
+    if not where and (district := district_of(poi.lat, poi.lon)):
+        where = t("in_district", lang, d=district_name(district, lang))
+    return t(f"unnamed_{poi.category}", lang, where=where) if where else ""
+
+
+def named_lead(recs: list[Recommendation], lang: str) -> list[Recommendation]:
+    """A walk's cards with a name of their own first: an unnamed park («Парк / сквер») never leads while another card
+    is shown, and one the card cannot even say where it is (`unnamed_label` '') goes last. Errands keep their order
+    (the nearest «Банкомат» is the answer)."""
+    bare = [
+        r
+        for r in recs
+        if _unnamed_walk(r.poi) and "(" not in r.poi.name and not unnamed_label(r.poi, lang)
+    ]
+    out = [r for r in recs if r not in bare] + bare
+    first = next((i for i, r in enumerate(out) if not _unnamed_walk(r.poi)), None)
+    if first:  # 0 or None: a named card leads already, or every card is an unnamed walk place
+        out.insert(0, out.pop(first))
+    return out
 
 
 def sheet(c: Candidate, lang: str, when: datetime | None = None) -> dict:

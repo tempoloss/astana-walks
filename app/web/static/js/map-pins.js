@@ -77,7 +77,7 @@ function build(p, i, onSelect) {
     if (onSelect) onSelect(i);
   });
   el.addEventListener('pointerenter', (e) => {
-    if (e.pointerType !== 'mouse') return;
+    if (e.pointerType !== 'mouse' || !places.some((q) => q.el === el)) return; // a pin that is gone shows no card
     showTip(e, tipNodes(p));
     hoverFromPointer(p.id);
   });

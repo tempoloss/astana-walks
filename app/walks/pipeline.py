@@ -14,10 +14,13 @@ from functools import lru_cache
 from pathlib import Path
 
 from .bookmarks import late_home, prefer_toward, toward
+from .chains import asked_on_the_way, far_subkind, fill_time, walk_order
+from .confident import confident_reading, rules_confident, same_reading
 from .envcfg import cache_pin, replay_only
+from .facts import named_lead
 from .feedback import FeedbackIndex
 from .followup import FollowUp, apply_follow_up, describe, parse_follow_up, refine_with_llm
-from .generate import MAX_RECS, Generation, generate
+from .generate import MAX_RECS, Generation, generate, template_rec
 from .hours import local_now, to_local_naive
 from .i18n import t
 from .intent import (
@@ -27,7 +30,6 @@ from .intent import (
     parse_rules,
     parse_time_budget,
 )
-from .lexicon import normalize
 from .llm import Deadline, ai_off_reason
 from .models import (
     POI,
@@ -38,6 +40,7 @@ from .models import (
     Intent,
     IntentResult,
     LLMStep,
+    Recommendation,
     Result,
     RetrievalResult,
     StartHints,
@@ -55,14 +58,15 @@ from .profile import (
     personal_view,
     preferences_payload,
 )
-from .radius import is_stroll, reachable_radius_m, travel_share
+from .radius import is_stroll, reachable_radius_m, travel_share, with_playground
 from .realfit import apply_leg, replace_unreachable, sync_stays
 from .reasons import refresh_why
 from .reqlog import log_request
-from .retrieve import retrieve
+from .retrieve import is_night, retrieve
 from .route import build_route, route_stops
 from .transit import attach_lrt_hints
 from .variety import fresh_first
+from .vibe_order import vibe_first
 from .visit_hours import visit_note
 from .walking import WalkingRouter, default_router
 from .weather import with_user_hint
@@ -214,6 +218,9 @@ def _prepare(
     if language:
         intent = parsed.intent.model_copy(update={"language": language})
         parsed = parsed.model_copy(update={"intent": intent})
+    parsed = parsed.model_copy(
+        update={"intent": with_playground(parsed.intent)}
+    )  # a walk with a child
     intent = parsed.intent
     near = _ASKS_NEAR.search(
         text.lower()
@@ -240,26 +247,6 @@ def _actionable(intent: Intent) -> bool:
 def _may_speculate() -> bool:
     """Only with live models: a recording, an offline stand or a missing key has nothing to wait for."""
     return not (ai_off_reason(True) or cache_pin() or replay_only())
-
-
-def _stem4(word: str) -> str:
-    return normalize(word)[:4]
-
-
-def _restates(keyword: str, text: str) -> bool:
-    """Does every word of the model's keyword only repeat a word of the user's own message («кофе» for «хочу кофе»)?"""
-    said = {_stem4(w) for w in re.findall(r"\w+", text)}
-    return all(_stem4(w) in said for w in re.findall(r"\w+", keyword))
-
-
-def _same_reading(rules: Intent, final: Intent, text: str) -> bool:
-    """The model's reading adds nothing the rules' reading did not have, apart from keywords that restate the user's
-    own words: the answer prepared for the rules' intent is then the answer."""
-    skip = {"free_text_keywords"}
-    if rules.model_dump(exclude=skip) != final.model_dump(exclude=skip):
-        return False
-    added = [k for k in final.free_text_keywords if k not in rules.free_text_keywords]
-    return all(_restates(k, text) for k in added)
 
 
 @dataclass
@@ -350,7 +337,6 @@ def recommend(
     deadline = (
         deadline or Deadline()
     )  # one time budget for every LLM link of this request (intent + generation)
-    _stage(on_stage, "parse")
     personal = personal_view(profile) if profile is not None else None
     about = personal.about if personal is not None else ""
     private = (
@@ -370,6 +356,7 @@ def recommend(
             # the mode is the user's to change: a model's guess (car, 15 km) never replaces walking + the LRT hint
             intent = intent.model_copy(update={"mode": "walk"})
         wx = with_user_hint(wx, intent.weather_hint)  # «-25, холодно» counts as the weather
+        _stage(on_stage, "search")
         t_start = clock()
         retrieval = retrieve(
             pois,
@@ -382,6 +369,9 @@ def recommend(
             feedback=feedback,
             personal=personal,
         )
+        _stage(
+            on_stage, "hours"
+        )  # each candidate's hours at the arrival: in retrieval and on the model's fact sheet
         cands = _unseen(retrieval.candidates) if profile is not None else retrieval.candidates
         if (
             constraints.radius_cap_m is None
@@ -394,6 +384,7 @@ def recommend(
                 cands, (lat, lon), way, along=along is not None, kinds=frozenset(intent.wished)
             )
         t_found = clock()
+        _stage(on_stage, "write")
         gen = generate(
             intent,
             lat,
@@ -427,7 +418,11 @@ def recommend(
         and _may_speculate()
     ):
         rules = parse_rules(text, when)
-        if rules.intent.refusal == "none" and _actionable(rules.intent):
+        if rules_confident(text, rules, about):
+            # every word names a kind of place or only asks for it: the model reads such a message as the rules do
+            # (walks.confident, eval/results/intent_skip.md), so it is not asked and nothing waits for it
+            understood = confident_reading(rules)
+        elif rules.intent.refusal == "none" and _actionable(rules.intent):
             # the rules read the request: the written answer for THEIR intent is prepared while the model reads it
             # too; it is used when the model changes nothing (the usual case), else made again
             spec_parsed, constraints, _ = _prepare(rules, profile, hints, language, text)
@@ -455,13 +450,12 @@ def recommend(
     constraints = req.constraints
     if intent.refusal != "none":
         return _refused(text, lat, lon, when, req, t0, private)
-    _stage(on_stage, "search")
-    _stage(on_stage, "write")
     chosen = None
-    if speculation is not None and _same_reading(speculation[0], intent, text):
+    if speculation is not None and same_reading(speculation[0], intent, text):
         with contextlib.suppress(Exception):
             chosen = speculation[1].result()
     prepared = chosen or plan(intent, req.applied)
+    t_planned = clock()
     if chosen is not None and profile is not None and adapt_weather(weather, profile)[1]:
         req.applied.append("cold_tolerance")
     intent, weather, retrieval, cands, way, gen = (
@@ -473,13 +467,25 @@ def recommend(
         prepared.gen,
     )
     parsed = parsed.model_copy(update={"intent": intent})
-    t_retrieve = t_intent + prepared.retrieve_ms / 1000
-    t_gen = t_retrieve + prepared.generation_ms / 1000
-    recs = gen.recs
+
+    def make(c: Candidate) -> Recommendation:
+        return template_rec(c, intent, weather, cands)
+
+    # with a vibe set, the best match of the wished kind about as near leads whatever card the model put first; its
+    # opening named another place, so the lead is composed for the card that leads now (walks.dialog_lead)
+    vibe = personal.vibe if personal is not None and along is None else {}
+    led = vibe_first(gen.recs, cands, intent, vibe, make, day=not is_night(intent, when))
+    opening = gen.opening if led is gen.recs else ""
+    recs = fill_time(led, cands, intent, make, MAX_RECS)  # «about an hour»: two or three stops
+    if along is not None:  # «по пути к отелю что посмотреть»: the asked kinds only
+        recs = asked_on_the_way(recs, cands, intent, make)
+    # no dentist / children's clinic / ATM among the cards: the nearest one is the last card, however far (routed below)
+    recs = far_subkind(recs, pois, intent, (lat, lon), to_local_naive(when), make, MAX_RECS)
     padding_by_id = {c.poi.id: c.padding for c in retrieval.candidates}
     for r in recs:
         r.padding = padding_by_id.get(r.poi.id, "none")
 
+    _stage(on_stage, "route")  # the real walking legs to the places, then the route through them
     user = (lat, lon)
     user_public = user in PUBLIC_ORIGINS
     stats: Counter[str] = Counter()
@@ -503,8 +509,9 @@ def recommend(
         )  # a real route that does not fit
     else:
         stats["estimate"] += len(recs)
+    recs = walk_order(recs, intent, to_local_naive(when), is_night(intent, when))
+    recs = named_lead(recs, intent.language)  # «Парк / сквер» never leads a walk
 
-    _stage(on_stage, "route")
     route = build_route(
         lat,
         lon,
@@ -545,11 +552,11 @@ def recommend(
         model=gen.model,  # type: ignore[arg-type]
         generation_step=gen.step,
         generation_retry=gen.retry,
-        timings_ms={
+        timings_ms={  # durations of the steps; the prepared ones may have run while the model read the message
             "intent": round((t_intent - t0) * 1000),
-            "retrieve": round((t_retrieve - t_intent) * 1000),
-            "generation": round((t_gen - t_retrieve) * 1000),
-            "route": round((t_end - t_gen) * 1000),
+            "retrieve": prepared.retrieve_ms,
+            "generation": prepared.generation_ms,
+            "route": round((t_end - t_planned) * 1000),
             "total": round((t_end - t0) * 1000),
         },
         weather=weather,
@@ -561,7 +568,7 @@ def recommend(
         profile_applied=req.applied,
         private=private,
         lead_want=gen.want,
-        lead_text=gen.opening,
+        lead_text=opening,
         on_the_way=on_the_way,
         unbacked_claims_removed=sum(len(r.unbacked_claims) for r in recs),
     )

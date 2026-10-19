@@ -1,0 +1,48 @@
+{"layer": "dentist", "total": 49, "named": 41}
+{"layer": "clinic_urgent", "total": 91, "named": 90}
+{"layer": "rail_station", "total": 39, "named": 39}
+{"layer": "fuel", "total": 163, "named": 145}
+{"layer": "post_office", "total": 50, "named": 50}
+{"layer": "marketplace", "total": 18, "named": 16}
+{"layer": "tobacco", "total": 12, "named": 12}
+{"layer": "bus_stop", "total": 948, "named": 544}
+{"layer": "metro", "total": 0, "named": 0}
+{"layer": "taxi_stand", "total": 1, "named": 0}
+{"layer": "parking", "total": 1385, "named": 9}
+{"layer": "post_box", "total": 0, "named": 0}
+{"layer": "parcel_locker", "total": 0, "named": 0}
+{"layer": "notary", "total": 14, "named": 8}
+{"layer": "lawyer", "total": 17, "named": 12}
+{"layer": "police", "total": 25, "named": 17}
+{"layer": "fire_rescue", "total": 4, "named": 4}
+{"layer": "veterinary", "total": 3, "named": 3}
+{"layer": "shower", "total": 0, "named": 0}
+{"layer": "hairdresser_beauty", "total": 124, "named": 111}
+{"layer": "phone_repair", "total": 3, "named": 2}
+{"layer": "pawn_money", "total": 69, "named": 64}
+{"layer": "cemetery", "total": 1, "named": 0}
+{"layer": "worship", "total": 26, "named": 17}
+{"layer": "bakery_confectionery", "total": 74, "named": 66}
+{"layer": "swim_ski", "total": 3, "named": 1}
+{"layer": "zoo_aquarium", "total": 2, "named": 2}
+{"layer": "viewpoint_picnic", "total": 4, "named": 2}
+{"layer": "museum_core", "total": 11, "named": 10}
+{"layer": "theatre_cinema_core", "total": 21, "named": 18}
+{"layer": "library_core", "total": 10, "named": 8}
+{"layer": "recycling_bins", "total": 40, "named": 1}
+{"layer": "parcel_lockers", "total": 0, "named": 0}
+{"layer": "pet_boarding", "error": "The read operation timed out"}
+{"layer": "laundry_dryclean", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "sauna", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "food_court", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "bicycle_rental_parking", "total": 85, "named": 52}
+{"layer": "ice_rink", "total": 1, "named": 1}
+{"layer": "bench", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "waste_recycling", "total": 213, "named": 2}
+{"layer": "farmers_market", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "nature_playground", "error": "HTTP Error 500: Internal Server Error"}
+{"layer": "cycle_infra", "error": "HTTP Error 502: Bad Gateway"}
+{"layer": "sport_core", "error": "HTTP Error 502: Bad Gateway"}
+{"layer": "coworking_core", "total": 0, "named": 0}
+{"layer": "bowling_billiard_climbing", "total": 7, "named": 2}
+{"layer": "parking_paid", "error": "HTTP Error 502: Bad Gateway"}

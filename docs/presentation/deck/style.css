@@ -1,0 +1,240 @@
+/* Анық deck, v4: the warm paper of v2 (Source Serif claims, one red accent, our own dot maps), no slide chrome.
+   Every slide is 1920 x 1080; the left edge of the text is 120 px. Why it looks this way: style.md. */
+
+:root {
+  --paper: #F2EEE6;
+  --paper-2: #E7E1D5;
+  --card: #FBFAF7;
+  --ink: #161B26;
+  --ink-2: #454B57;
+  --ink-3: #737885;
+  --rule: #CBC3B5;
+  --red: #D8432E;
+  --night: #10141A;
+  --night-2: #1B2129;
+  --night-ink: #EDE8DE;
+  --night-ink-2: #A3ACB8;
+  --night-rule: #2E3641;
+  --night-red: #EA5A43;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'IBM Plex Sans', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: #2B2925; color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+body.present { overflow: hidden; cursor: none; }
+body.present:hover { cursor: default; }
+#deck { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+body.print #deck, body.frame #deck { position: static; }
+
+section.slide {
+  position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden;
+  display: none; background: var(--paper); color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+section.slide.on { display: block; }
+section.slide.night { background: var(--night); color: var(--night-ink); }
+body.print section.slide { display: block; position: relative; break-after: page; page-break-after: always; }
+@page { size: 1920px 1080px; margin: 0; }
+aside.notes, aside.src { display: none; }
+[data-at], [data-step] { opacity: 0; }
+body.print [data-at], body.print [data-step] { opacity: 1; }
+
+/* ---- type ------------------------------------------------------------------------------------------------------ */
+
+.h {
+  position: absolute; left: 120px; top: 96px; margin: 0; width: 1680px;
+  font: 600 72px/1.06 var(--serif); letter-spacing: -0.012em; font-optical-sizing: auto; text-wrap: balance;
+}
+.r { color: var(--red); }
+.night .r { color: var(--night-red); }
+.num { font: 600 1em/0.86 var(--serif); letter-spacing: -0.03em; font-optical-sizing: auto; }
+.num small { font-size: .42em; letter-spacing: 0; margin-left: .06em; }
+.wordmark { font: 600 1em/1 var(--serif); letter-spacing: -0.02em; font-optical-sizing: auto; white-space: nowrap; }
+.wordmark b { color: var(--red); font-weight: 700; }
+.url { font: 500 1em/1 var(--mono); letter-spacing: -0.01em; }
+.osm { position: absolute; right: 30px; bottom: 20px; font: 400 16px/1 var(--sans); color: var(--ink-3); z-index: 6; }
+.night .osm { color: var(--night-ink-2); }
+.nw { white-space: nowrap; }
+
+/* ---- devices --------------------------------------------------------------------------------------------------- */
+
+.phone {
+  position: relative; display: block; padding: 12px; border-radius: 58px; background: #0C0E12;
+  box-shadow: 0 0 0 2px #2B3038 inset, 0 40px 80px -24px rgba(22, 27, 38, .45), 0 12px 26px -12px rgba(22, 27, 38, .35);
+}
+.phone::before {
+  content: ''; position: absolute; top: 19px; left: 50%; width: 96px; height: 26px; margin-left: -48px;
+  border-radius: 14px; background: #0C0E12; z-index: 2;
+}
+/* the screenshots start with the app's own top bar, so the screen gets a status strip for the notch to sit in */
+.phone .scr { display: block; overflow: hidden; border-radius: 46px; background: #fff; position: relative; padding-top: 34px; }
+.phone .scr img { display: block; width: 100%; }
+.phone .shot { display: block; position: relative; }
+.ring {
+  position: absolute; left: 2.5%; width: 95%; border: 4px solid var(--red); border-radius: 12px; opacity: 0;
+  box-shadow: 0 0 0 6px rgba(216, 67, 46, .18);
+}
+.browser {
+  display: block; border-radius: 14px; overflow: hidden; background: #fff;
+  box-shadow: 0 0 0 1px rgba(22, 27, 38, .16), 0 40px 90px -28px rgba(22, 27, 38, .5);
+}
+.browser .bar { height: 44px; display: flex; align-items: center; gap: 9px; padding: 0 18px; background: #ECE8E0; border-bottom: 1px solid #D8D2C6; }
+.browser .bar i { width: 12px; height: 12px; border-radius: 50%; background: #CFC8BB; display: block; }
+.browser .bar .u { margin-left: 18px; width: 420px; height: 26px; border-radius: 7px; background: var(--card); font: 500 15px/26px var(--mono); color: var(--ink-2); padding-left: 12px; }
+.browser img { display: block; width: 100%; }
+
+/* 01 cover: the claim on paper, the city on the right --------------------------------------------------------- */
+.cover .photo { position: absolute; right: 0; top: 0; width: 900px; height: 1080px; overflow: hidden; }
+.cover .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.cover .cv { position: absolute; left: 120px; top: 230px; width: 880px; }
+.cover .wordmark { font-size: 272px; margin-left: -12px; }
+.cover .claim { margin: 54px 0 0; font: 400 52px/1.18 var(--serif); letter-spacing: -0.01em; }
+.cover .url { margin-top: 76px; font-size: 38px; color: var(--red); }
+
+/* 02 the problem: one sentence, the city under it --------------------------------------------------------------- */
+.problem .pr { position: absolute; left: 120px; top: 112px; width: 1690px; margin: 0;
+  font: 600 92px/1.07 var(--serif); letter-spacing: -0.016em; font-optical-sizing: auto; }
+.problem .pr span { display: block; }
+.problem .pr .second { color: var(--ink-2); font-weight: 500; }
+.problem .pr .r { color: var(--red); font-weight: 600; }
+.problem .band { position: absolute; left: 0; right: 0; bottom: 0; height: 520px; overflow: hidden; }
+.problem .band img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* 03 the product: the walk of the live answer on our map, then the stand's screen with it ------------------------ */
+.demo canvas.route { position: absolute; inset: 0; }
+.demo .h { z-index: 3; top: 84px; font-size: 66px; width: 1700px; }
+.demo .shot { position: absolute; left: 600px; top: 292px; width: 1200px; z-index: 4; }
+.demo .tz { position: absolute; left: 120px; top: 760px; width: 420px; margin: 0; z-index: 3;
+  font: 600 48px/1.12 var(--serif); color: var(--red); letter-spacing: -0.01em; }
+
+/* 04 the satellite: the headline in a column, the app's laptop screen with the layer on beside it ------------------ */
+.sat .h { top: 186px; width: 500px; font-size: 66px; line-height: 1.08; }
+.sat .shot { position: absolute; left: 680px; top: 186px; width: 1180px; }
+
+/* 04 three languages ------------------------------------------------------------------------------------------- */
+.langs .row { position: absolute; left: 150px; right: 150px; top: 96px; display: flex; justify-content: space-between; }
+/* the phones run off the bottom edge: the figure ends at the slide's edge and clips them, so that print does not move a
+   phone that crosses the page bottom onto the next page */
+.langs figure { margin: 0; width: 390px; height: 984px; overflow: hidden; }
+.langs h2 { margin: 0; font: 600 76px/1 var(--serif); letter-spacing: -0.015em; }
+.langs .q { margin: 18px 0 30px; height: 70px; font: 400 26px/1.32 var(--sans); color: var(--ink-2); }
+.langs .phone { width: 390px; }
+.langs .osm { top: 22px; bottom: auto; }
+
+/* 05 vibe ------------------------------------------------------------------------------------------------------- */
+.vibe .h { width: 1060px; font-size: 80px; }
+.vibe .quote { position: absolute; left: 120px; top: 410px; width: 960px; margin: 0;
+  font: 400 50px/1.22 var(--serif); color: var(--ink-2); letter-spacing: -0.01em; }
+.vibe .phone { position: absolute; right: 150px; top: 70px; width: 430px; }
+.vibe .call { position: absolute; left: 120px; top: 655px; width: 1040px; margin: 0; }
+.vibe .call b { display: inline-block; font: 600 54px/1.1 var(--serif); color: var(--red); letter-spacing: -0.01em; }
+.vibe .call span { display: block; margin-top: 16px; font: 400 30px/1.35 var(--sans); color: var(--ink-2); }
+.vibe .lead-line { position: absolute; height: 3px; background: var(--red); transform-origin: 0 50%; }
+
+/* 06 trust (night) ---------------------------------------------------------------------------------------------- */
+.trust .h { width: 1560px; }
+.trust .pair { position: absolute; left: 120px; right: 120px; top: 360px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+.trust .pair .num { font-size: 300px; }
+.trust .pair p { margin: 26px 0 0; max-width: 700px; font: 400 36px/1.3 var(--sans); color: var(--night-ink); }
+.trust .cells { position: absolute; left: 120px; top: 870px; display: flex; gap: 4px; }
+.trust .cells i { display: block; width: 10px; height: 26px; background: var(--night-ink); opacity: 0; }
+.trust .model { position: absolute; left: 120px; top: 926px; width: 1680px; margin: 0;
+  font: 400 26px/1.35 var(--sans); color: var(--night-ink-2); }
+
+/* 07 it already works: three lines on the left, the tests as one large number on the right ------------------- */
+.live .h { width: 1500px; }
+.live .ledger { position: absolute; left: 120px; top: 330px; width: 980px; margin: 0; padding: 0; list-style: none;
+  border-top: 2px solid var(--ink); }
+.live .ledger li { padding: 32px 0 34px; border-bottom: 1px solid var(--rule); }
+.live .ledger b { display: block; font: 600 64px/1.08 var(--serif); letter-spacing: -0.012em; }
+.live .ledger b i { font-style: normal; }
+.live .ledger b.u { font: 500 60px/1.12 var(--mono); letter-spacing: -0.01em; }
+.live .ledger li > span { display: block; margin-top: 12px; font: 400 31px/1.3 var(--sans); color: var(--ink-2); }
+.live .tests { position: absolute; left: 1200px; top: 330px; width: 600px; border-top: 2px solid var(--ink); padding-top: 40px; }
+.live .tests .num { font-size: 230px; color: var(--red); }
+.live .tests p { margin: 34px 0 0; font: 400 38px/1.28 var(--sans); color: var(--ink); }
+
+/* 08 speed and reliability ------------------------------------------------------------------------------------- */
+.speed .big { position: absolute; left: 96px; top: 150px; font-size: 470px; color: var(--red); }
+.speed .sp { position: absolute; left: 880px; top: 210px; width: 920px; margin: 0;
+  font: 600 62px/1.1 var(--serif); letter-spacing: -0.012em; }
+.speed .sp2 { position: absolute; left: 880px; top: 470px; width: 920px; margin: 0;
+  font: 400 50px/1.15 var(--serif); color: var(--ink-2); }
+.speed .chain { position: absolute; left: 120px; right: 120px; top: 800px; display: flex; align-items: center; gap: 30px;
+  padding-top: 40px; border-top: 2px solid var(--ink); }
+.speed .chain span { font: 500 46px/1.1 var(--sans); white-space: nowrap; }
+.speed .chain span.d { color: var(--red); font-weight: 600; }
+.speed .chain i { font: 400 50px/1 var(--sans); color: var(--ink-3); font-style: normal; }
+
+/* 09 the city -------------------------------------------------------------------------------------------------- */
+.city .h { width: 760px; font-size: 58px; line-height: 1.1; }
+.city .map { position: absolute; left: 860px; top: 50px; width: 1000px; height: 720px; }
+.city .map canvas { display: block; }
+.city .d-lab { position: absolute; transform: translate(-50%, -50%); font: 600 26px/1 var(--sans); color: var(--ink); white-space: nowrap; opacity: 0;
+  text-shadow: 0 0 8px var(--paper), 0 0 3px var(--paper), 0 0 1px var(--paper); }
+.city .key { position: absolute; left: 960px; top: 800px; display: flex; align-items: center; gap: 14px;
+  font: 500 24px/1 var(--sans); color: var(--ink-2); }
+.city .key i { display: block; width: 220px; height: 14px; background: linear-gradient(90deg, #E2DACB, #46597A); }
+.city .shot { position: absolute; left: 120px; top: 500px; width: 720px; }
+.city .biz { position: absolute; left: 960px; top: 870px; width: 860px; margin: 0; font: 400 30px/1.34 var(--sans); color: var(--ink-2); }
+.city .biz b { color: var(--ink); font-weight: 600; }
+
+/* 10 the data (night) ------------------------------------------------------------------------------------------ */
+.data canvas.dots { position: absolute; left: 940px; top: 0; }
+.data .dt { position: absolute; left: 120px; top: 80px; width: 860px; }
+.data .big { font-size: 236px; color: var(--night-ink); margin-left: -8px; }
+.data .dt-h { margin: 18px 0 0; font: 600 58px/1.08 var(--serif); letter-spacing: -0.01em; }
+.data .pb { position: relative; margin-top: 44px; height: 30px; background: var(--night-2); }
+.data .pb i { position: absolute; top: 0; bottom: 0; display: block; box-shadow: inset -2px 0 0 var(--night); }
+.data .keys { display: flex; flex-wrap: wrap; column-gap: 30px; row-gap: 10px; margin-top: 18px;
+  font: 400 24px/1.25 var(--sans); color: var(--night-ink-2); }
+.data .keys span { white-space: nowrap; }
+.data .keys b { color: var(--night-ink); font-weight: 600; margin-right: 6px; }
+.data .keys em { display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: 0; }
+.data .lines { margin-top: 50px; }
+.data .lines p { margin: 0 0 26px; font: 400 33px/1.3 var(--sans); color: var(--night-ink); max-width: 820px; }
+.data .lines p.lic { margin-top: 34px; font-size: 26px; color: var(--night-ink-2); }
+
+/* 11 risks ---------------------------------------------------------------------------------------------------- */
+.risks .rk { position: absolute; left: 120px; right: 120px; top: 250px; border-top: 2px solid var(--ink); }
+.risks .rk-row { display: grid; grid-template-columns: 520px 120px 1fr; align-items: start;
+  padding: 30px 0 28px; border-bottom: 1px solid var(--rule); }
+.risks .rk-row b { font: 600 42px/1.12 var(--serif); letter-spacing: -0.01em; }
+.risks .rk-row i { display: block; position: relative; height: 3px; width: 54px; margin: 22px 0 0 26px; background: var(--red); }
+.risks .rk-row i::after { content: ''; position: absolute; right: -4px; top: -7px; border-left: 13px solid var(--red);
+  border-top: 8.5px solid transparent; border-bottom: 8.5px solid transparent; }
+.risks .rk-row span { padding-top: 4px; font: 400 32px/1.34 var(--sans); color: var(--ink-2); }
+
+/* 12 the next step (night) ----------------------------------------------------------------------------------- */
+.next .h { font-size: 88px; width: 1500px; }
+.next .steps { position: absolute; left: 120px; right: 120px; top: 500px; margin: 0; padding: 0; list-style: none;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 70px; }
+.next .steps li { border-top: 2px solid var(--night-rule); padding-top: 30px; }
+.next .steps b { display: block; font: 600 190px/0.82 var(--serif); color: var(--night-red); letter-spacing: -0.03em; }
+.next .steps span { display: block; margin-top: 34px; font: 500 46px/1.16 var(--serif); color: var(--night-ink); text-wrap: balance; }
+
+/* 13 thanks ---------------------------------------------------------------------------------------------------- */
+.thanks { background: var(--night); }
+.thanks .bleed { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; }
+.thanks .ty { position: absolute; left: 112px; top: 70px; font: 600 230px/1 var(--serif); color: var(--night-ink);
+  letter-spacing: -0.025em; text-shadow: 0 6px 40px rgba(0, 0, 0, .45); }
+.thanks .card { position: absolute; left: 120px; bottom: 96px; display: flex; align-items: center; gap: 36px;
+  padding: 26px 40px 26px 26px; background: var(--paper); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .6); }
+.thanks .card img { display: block; width: 210px; height: 210px; }
+.thanks .card .url { font-size: 46px; color: var(--ink); }
+
+/* 14 sources --------------------------------------------------------------------------------------------------- */
+.sources .h { font-size: 60px; top: 70px; }
+.sources ol { position: absolute; left: 120px; right: 120px; top: 180px; margin: 0; padding: 0 0 0 30px;
+  columns: 2; column-gap: 70px; font: 400 21px/1.4 var(--sans); color: var(--ink-2); }
+.sources li { break-inside: avoid; margin: 0 0 12px; padding-left: 4px; }
+.sources li b { color: var(--ink); font-weight: 600; }
+.sources .photos { position: absolute; left: 120px; right: 120px; bottom: 56px; display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; padding-top: 22px; border-top: 1.5px solid var(--ink); }
+.sources .photos figure { margin: 0; display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: start; }
+.sources .photos img { display: block; width: 150px; height: 100px; object-fit: cover; }
+.sources .photos figcaption { font: 400 18.5px/1.36 var(--sans); color: var(--ink-2); overflow-wrap: anywhere; }
+.sources .photos figcaption b { display: block; color: var(--ink); font-weight: 600; }

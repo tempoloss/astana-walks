@@ -74,9 +74,9 @@ def test_a_card_describes_one_moment_even_when_the_question_names_the_morning():
     assert night.hours.text == "Closed, opens at 10:00"
 
 
-def test_an_overnight_close_is_said_with_its_day():
-    assert status_text(OVERNIGHT, "open", _at(21, 13, 0), "ru") == "Открыто до 05:00 следующего дня"
-    assert status_text(OVERNIGHT, "open", _at(21, 13, 0), "en") == "Open until 05:00 the next day"
+def test_an_overnight_close_is_said_as_the_morning():
+    assert status_text(OVERNIGHT, "open", _at(21, 13, 0), "ru") == "Открыто до 05:00 утра"
+    assert status_text(OVERNIGHT, "open", _at(21, 13, 0), "en") == "Open until 5 am"
     assert (
         status_text(OVERNIGHT, "open", _at(21, 23, 0), "ru") == "Открыто до 05:00"
     )  # tonight it is plain
@@ -110,7 +110,7 @@ def test_an_opening_with_a_status_not_of_code_is_not_used():
         checked_opening("«Sultani» работает до 05:00, можно поесть.", recs, [c], None, "ru", when)
         == ""
     )
-    good = "«Sultani» рядом — открыто до 05:00 следующего дня."
+    good = "«Sultani» рядом — открыто до 05:00 утра."
     assert checked_opening(good, recs, [c], None, "ru", when) == good
 
 

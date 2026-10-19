@@ -16,6 +16,9 @@ TZ = ZoneInfo("Asia/Almaty")  # Astana has used this zone since March 2024 (UTC+
 
 # Constructs whose result we cannot compute without extra data (location, free-text rules).
 _UNTRUSTED = ("||", "sunrise", "sunset", "dawn", "dusk", "easter", "week ", "unknown")
+# «Mo-Su 09:00-09:00» (Почта №17): opens and closes at the same minute, a slip of the record, not a day and a night;
+# «00:00-00:00» stays the whole day, the way mappers write it
+_SAME_MINUTE = re.compile(r"\b(?!00:00)(\d\d:\d\d)-\1\b")
 
 
 def local_now() -> datetime:
@@ -34,7 +37,7 @@ def _plain_state(raw: str | None, local: datetime) -> HoursState:
     if not raw or not raw.strip():
         return "unknown"
     low = raw.lower()
-    if any(m in low for m in _UNTRUSTED):
+    if any(m in low for m in _UNTRUSTED) or _SAME_MINUTE.search(low):
         return "unknown"
     try:
         state, _comment = OpeningHours(raw).state(local)

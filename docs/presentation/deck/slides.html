@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Анық · Build with AI 2026</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="deck">
+
+<section class="slide cover" data-title="Анық">
+  <div class="photo"><img src="photos/nurzhol.jpg" alt="Бульвар Нуржол и Хан Шатыр с Байтерека"></div>
+  <div class="cv">
+    <div class="wordmark" data-at="0.2">Анық<b>.</b></div>
+    <p class="claim" data-at="0.6">Куда пойти в&nbsp;Астане прямо&nbsp;сейчас.<br>Только реальные места.</p>
+    <div class="url" data-at="1.0">anyq.an8kk.dev</div>
+  </div>
+  <aside class="notes">Сәлеметсіздер ме! Я Ануар, это Анық — по-казахски «ясно». Он подсказывает, куда пойти в Астане прямо сейчас, и советует только реальные места из открытых данных. Анық уже работает: адрес на экране, его можно открыть с телефона прямо сейчас.</aside>
+  <aside class="src">«Только реальные места»: app/eval/results/canonical.md, 0 выдуманных мест на 120 тестовых сценариях. Фото: Bernard Gagnon, CC0 (слайд «Источники»).</aside>
+</section>
+
+<section class="slide problem" data-title="Проблема">
+  <h1 class="pr" data-at="0.2"><span>Найти место рядом легко.</span><span class="second">Понять, открыто&nbsp;ли оно, успеешь&nbsp;ли и&nbsp;подойдёт&nbsp;ли оно тебе,&nbsp;— <span class="r">нет.</span></span></h1>
+  <div class="band"><img src="photos/khan_shatyr.jpg" alt="Вход в Хан Шатыр"></div>
+  <aside class="notes">Найти кафе или парк рядом сегодня легко: любой справочник покажет точки на карте. Трудно понять другое: открыто ли место прямо сейчас, успеешь ли дойти за своё время и подойдёт ли оно именно тебе. На эти три вопроса и отвечает Анық.</aside>
+  <aside class="src">Фото: Dauren Nabijan, CC0 (слайд «Источники»).</aside>
+</section>
+
+<section class="slide demo" data-anim="demo" data-title="План за секунды">
+  <canvas class="route"></canvas>
+  <h1 class="h" data-at="0.2">Пишешь, что хочешь — Анық за&nbsp;секунды даёт план: куда, сколько идти и&nbsp;почему.</h1>
+  <div class="browser shot"><div class="bar"><i></i><i></i><i></i><span class="u">anyq.an8kk.dev</span></div><img src="img/hero_walk_steps.jpg" alt="Ответ стенда: «Японский сад», 17 минут пешком"></div>
+  <p class="tz" data-at="6.0">Все пять сценариев из&nbsp;ТЗ работают.</p>
+  <div class="osm">© OpenStreetMap contributors</div>
+  <aside class="notes">Вот первый сценарий из задания на живом стенде: человек у Mega Silk Way пишет «Хочу погулять час на свежем воздухе». Анық учёл погоду и предупреждение Казгидромета, выбрал «Японский сад» и провёл путь пешком по улицам — 17 минут, а запасной вариант, NU Park, в восьми минутах. Время, погода и ответ настоящие, ничего не закреплено. И так проходят все пять сценариев из задания — без единого нарушения в нашей проверке.</aside>
+  <aside class="src">Кадр hero_walk: shots/shots.jsonl (19.10.2026 19:08, старт Mega Silk Way), проверка — shots/factcheck.md; линия пути на карте — place_legs[0].shape того же ответа. Пять сценариев ТЗ (tz1–tz5) без нарушений: app/eval/results/runs_poi.enriched_offline.jsonl и canonical.md, «ИИ-режим».</aside>
+</section>
+
+<section class="slide sat" data-title="Город как на ладони">
+  <h1 class="h" data-at="0.2">Город как на&nbsp;ладони: спутник и&nbsp;маршрут по&nbsp;настоящим улицам.</h1>
+  <div class="browser shot" data-at="0.5"><div class="bar"><i></i><i></i><i></i></div><img src="img/sat_walk.jpg" alt="Слой «Спутник»: маршрут от Байтерека до Водно-Зелёного бульвара"></div>
+  <div class="osm">© OpenStreetMap contributors · Powered by Esri</div>
+  <aside class="notes">В Анық появился слой «Спутник» — снимки Esri World Imagery, на них видна каждая дорожка бульвара. Тот же запрос «Хочу погулять час на свежем воздухе», теперь у Байтерека: Анық ведёт до Водно-Зелёного бульвара, восемь минут пешком, по настоящим улицам и бульвару Нуржол, а не по прямой.</aside>
+  <aside class="src">Кадр sat_walk: shots/shots.jsonl — запуск приложения из ветки со слоем «Спутник» в боевом режиме (python -m web, без флагов WALKS_*), 19.10.2026 22:50, камера z17 над Байтереком; проверка — shots/factcheck.md, раздел «Кадры не со стенда». Imagery: Powered by Esri · Source: Esri, Vantor, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community.</aside>
+</section>
+
+<section class="slide langs" data-title="Қазақша, English, русский">
+  <div class="row">
+    <figure data-at="0.2"><h2>Қазақша,</h2><p class="q">«Балаға қайда баруға болады?» у&nbsp;EXPO</p><div class="phone"><div class="scr"><img src="img/kids_kk.jpg" alt=""></div></div></figure>
+    <figure data-at="0.6"><h2>English,</h2><p class="q">«Quiet cafe to work for an&nbsp;hour» у&nbsp;Байтерека</p><div class="phone"><div class="scr"><img src="img/cafe_en.jpg" alt=""></div></div></figure>
+    <figure data-at="1.0"><h2>русский.</h2><p class="q">«Куда сходить с&nbsp;ребёнком на&nbsp;час?» у&nbsp;Хан Шатыра</p><div class="phone"><div class="scr"><img src="img/kids_ru.jpg" alt=""></div></div></figure>
+  </div>
+  <div class="osm">© OpenStreetMap contributors</div>
+  <aside class="notes">Анық отвечает на языке вопроса. По-казахски у EXPO спросили, куда сходить с ребёнком, — и он советует музей в двух минутах. По-английски — тихое кафе, где можно час поработать, по-русски — детский центр у Хан Шатыра, открытый до 22:00.</aside>
+  <aside class="src">Кадры kids_kk, cafe_en, kids_ru: shots/shots.jsonl, проверка — shots/factcheck.md.</aside>
+</section>
+
+<section class="slide vibe" data-anim="ring" data-title="Не «что рядом», а «что подходит вам»">
+  <h1 class="h">Не «что рядом», а&nbsp;«что подходит вам».</h1>
+  <p class="quote" data-at="0.4">«Я интроверт: люблю тишину, книги и&nbsp;парки»</p>
+  <div class="phone" data-at="0.1"><div class="scr"><span class="shot"><img src="img/vibe.jpg" alt=""><i class="ring" style="top:63.2%;height:3.8%"></i></span></div></div>
+  <div class="call" data-at="1.5"><b>Под ваш вайб: тихо (парк)</b><span>Основание — из&nbsp;данных о&nbsp;самом месте.</span></div>
+  <i class="lead-line"></i>
+  <div class="osm">© OpenStreetMap contributors</div>
+  <aside class="notes">Справочник отвечает, что есть рядом. Анық — что подходит именно вам. Человек пишет о себе своими словами, и под местом появляется строка, почему оно подходит: «Под ваш вайб: тихо». Это основание из данных о самом месте, а не догадка модели.</aside>
+  <aside class="src">Кадр vibe: shots/shots.jsonl, проверка — shots/factcheck.md; строка основания — app/walks/vibe.py (place_evidence).</aside>
+</section>
+
+<section class="slide trust night" data-anim="trust" data-title="Куда идти, решает код">
+  <h1 class="h">Куда идти, решает код. ИИ&nbsp;объясняет, код&nbsp;проверяет.</h1>
+  <div class="pair">
+    <div data-at="0.3"><div class="num">0</div><p>выдуманных мест на&nbsp;120 проверочных запросах</p></div>
+    <div data-at="0.7"><div class="num r" data-count="100">100<small>%</small></div><p>честных ответов, когда данных нет</p></div>
+  </div>
+  <div class="cells" data-n="120"></div>
+  <p class="model" data-at="2.0">Gemma&nbsp;4 (открытые веса Google) через API, Gemini запасной; проверка — 120 тестовых сценариев.</p>
+  <aside class="notes">Как это устроено: куда идти, решает код — радиус из вашего времени, часы на момент прихода, погода. ИИ только объясняет выбор и не может добавить место: ответ с несуществующим местом отклоняется проверкой. Поэтому на 120 тестовых сценариях — ни одного выдуманного места, а когда данных нет, Анық прямо пишет «неизвестно». Модель — Gemma 4 с открытыми весами Google через API, запасная — Gemini.</aside>
+  <aside class="src">app/eval/results/canonical.md, прогоны 19.10.2026, база poi.enriched: 120 кейсов, hallucinated_poi 0, honest_unknown_rate 100 % на всех наборах. Место не из кандидатов отбрасывается — app/walks/generate.py; строка «ответ ИИ не прошёл проверку poi_id (→ шаблон)» — canonical.md. Модель и запасная: app/README.md; приложение работает на нашем сервере.</aside>
+</section>
+
+<section class="slide live" data-anim="live" data-title="Уже работает">
+  <h1 class="h">Уже работает: живой стенд и&nbsp;первые пользователи</h1>
+  <ul class="ledger">
+    <li data-at="0.3"><b class="u">anyq.an8kk.dev</b><span>живой стенд</span></li>
+    <li data-at="0.6"><b>Исправлено в&nbsp;тот&nbsp;же&nbsp;день</b><span>по&nbsp;отзывам первых пользователей</span></li>
+    <li data-at="0.9"><b><i data-int="7">7</i> раундов проверки</b><span>смоделированными пользователями (ИИ-персоны)</span></li>
+  </ul>
+  <div class="tests" data-at="1.2"><div class="num"><span data-int="3000">3&#8239;000</span>+</div><p>автотестов<br>и&nbsp;120 тестовых сценариев</p></div>
+  <aside class="notes">Анық уже работает на живом стенде, и у него есть первые пользователи: по их отзывам я исправлял ответы в тот же день. Ещё семь раундов стенд проверяли смоделированные пользователи — это ИИ-персоны, не люди. На коде проходят 3 000+ автотестов, а качество ответов мы меряем на 120 тестовых сценариях.</aside>
+  <aside class="src">Отзывы первых пользователей 19.10.2026; ИИ-персоны, 7 раундов — docs/dialog.md; 3 000+ автотестов — pytest 19.10.2026 (ворота на main: 3 010 и больше); 120 сценариев — canonical.md.</aside>
+</section>
+
+<section class="slide speed" data-anim="speed" data-title="Ход ответа через 0,3 с">
+  <div class="big num" data-count="0,3">0,3<small>с</small></div>
+  <h1 class="sp" data-at="0.3">Ход ответа виден через 0,3&nbsp;с, сам&nbsp;ответ&nbsp;— за&nbsp;секунды.</h1>
+  <p class="sp2" data-at="0.7">Работает, даже если ИИ недоступен.</p>
+  <div class="chain">
+    <span data-at="1.1">Gemma&nbsp;4</span><i data-at="1.3">→</i><span data-at="1.5">Gemini</span><i data-at="1.7">→</i><span class="d" data-at="1.9">ответ из&nbsp;тех&nbsp;же данных без&nbsp;ИИ</span>
+  </div>
+  <aside class="notes">Через треть секунды на экране уже виден ход ответа, а сам ответ приходит за секунды. Ответ пишет Gemma 4, запасная — Gemini, а если недоступны обе, Анық всё равно отвечает — из тех же данных и с теми же местами, потому что их выбирает код. Так было 16 октября, когда у ключа кончилась квота: Анық отвечал из данных, и выдуманных мест не было.</aside>
+  <aside class="src">0,3 с — app/web/static/js/assistant.js, WAIT_SHAPE = 300 мс; цепочка Gemma 4 → Gemini → ответ из данных без ИИ — app/README.md, «Цепочка звеньев», порядок звеньев на стенде сверен 19.10.2026; 16.10 — canonical.md, «Исторический стресс-прогон».</aside>
+</section>
+
+<section class="slide city" data-anim="city" data-title="Городу">
+  <h1 class="h">Городу — карта спроса и&nbsp;качества данных по&nbsp;районам: что ищут люди и&nbsp;где обновить сведения.</h1>
+  <div class="browser shot" data-at="1.0"><div class="bar"><i></i><i></i><i></i><span class="u">anyq.an8kk.dev/#/city</span></div><img src="img/city.jpg" alt=""></div>
+  <div class="map"><canvas width="1000" height="720"></canvas></div>
+  <div class="key" data-at="1.6"><span>сведения о&nbsp;местах: беднее</span><i></i><span>полнее</span></div>
+  <p class="biz" data-at="2.0"><b>Бесплатно для&nbsp;жителей и&nbsp;туристов.</b> Акимат, Visit Astana и&nbsp;НИЦ могут получать эту карту с&nbsp;выгрузкой CSV и&nbsp;GeoJSON.</p>
+  <div class="osm">© OpenStreetMap contributors</div>
+  <aside class="notes">Те же данные работают на город. Страница «Город» показывает по районам и участкам 500 на 500 метров, что ищут люди и где сведения о местах пора обновить. Для жителей и туристов Анық бесплатен, а акимат, Visit Astana и НИЦ могут получать эту карту спроса и качества данных с выгрузкой в CSV и GeoJSON.</aside>
+  <aside class="src">Кадр city: shots/shots.jsonl; участок 500 м — app/walks/reqlog.py (CELL_M), группы от 5 запросов — app/walks/demand.py (K_DEFAULT); выгрузка — app/web/city.py; возможные заказчики — docs/qa.md, вопрос 12; закраска районов — доля мест с часами работы, страница «Данные» (coverage.districts) 19.10.2026.</aside>
+</section>
+
+<section class="slide data night" data-anim="data" data-title="4 170 мест из открытых источников">
+  <canvas class="dots" width="980" height="1080"></canvas>
+  <div class="dt">
+    <div class="big num" data-int="4170">4&#8239;170</div>
+    <h1 class="dt-h">мест из&nbsp;открытых источников.</h1>
+    <div class="pb"><i data-src="0"></i><i data-src="1"></i><i data-src="2"></i><i data-src="3"></i><i data-src="4"></i></div>
+    <div class="keys">
+      <span><em data-src="0"></em><b>2&#8239;970</b>OpenStreetMap</span>
+      <span><em data-src="1"></em><b>643</b>Overture Maps</span>
+      <span><em data-src="2"></em><b>412</b>госреестры</span>
+      <span><em data-src="3"></em><b>133</b>сайты заведений</span>
+      <span><em data-src="4"></em><b>12</b>Wikidata</span>
+    </div>
+    <div class="lines">
+      <p data-at="2.6">Пишем «открыто»&nbsp;— называем источник и&nbsp;дату. Не&nbsp;знаем&nbsp;— пишем «неизвестно».</p>
+      <p data-at="3.0">Сбор автоматический: базу собирают скрипты, афиша на&nbsp;стенде обновляется сама каждые 6&nbsp;часов.</p>
+      <p class="lic" data-at="3.4">Лицензии всех источников — в&nbsp;репозитории.</p>
+    </div>
+  </div>
+  <div class="osm">© OpenStreetMap contributors</div>
+  <aside class="notes">В базе 4 170 мест, и все из открытых источников: OpenStreetMap, Overture Maps, госреестры, сайты заведений; на карте каждое место окрашено по своему источнику. Сбор автоматический: базу собирают скрипты, а афиша на стенде обновляется сама каждые шесть часов. Если Анық пишет «открыто», на карточке видно, откуда часы и на какую дату; если не знает — так и пишет.</aside>
+  <aside class="src">Страница «Данные» 19.10.2026 17:15 (coverage.places); data/poi.enriched.json, поле source, места без остановок; сбор — collect/ (python -m collect.build, слои — collect/SOURCES.md §24); афиша — collect/events, таймер deploy/vps/anyq-events.timer; источник и дата часов на карточке — app/walks/models.py (hours_source); лицензии — data/NOTICE.md, docs/licensing.md.</aside>
+</section>
+
+<section class="slide risks" data-title="Риски">
+  <h1 class="h">Риски — и&nbsp;что мы с&nbsp;ними сделали</h1>
+  <div class="rk">
+    <div class="rk-row" data-at="0.3"><b>Неполные данные: часы есть у&nbsp;трети мест</b><i></i><span>Без данных «открыто» не&nbsp;пишем, ставим «часы неизвестны».</span></div>
+    <div class="rk-row" data-at="0.6"><b>Ошибка ИИ</b><i></i><span>Место выбирает код, ИИ только объясняет.</span></div>
+    <div class="rk-row" data-at="0.9"><b>ИИ недоступен</b><i></i><span>Ответ из&nbsp;тех&nbsp;же данных без&nbsp;ИИ.</span></div>
+    <div class="rk-row" data-at="1.2"><b>Приватность</b><i></i><span>Точка округляется до&nbsp;~100&nbsp;м, текст запроса и&nbsp;точные координаты не&nbsp;хранятся. Статистика — участками 500&nbsp;м, только группы от&nbsp;5&nbsp;запросов. Профиль — по&nbsp;желанию, удаляется кнопкой «Забыть&nbsp;всё».</span></div>
+    <div class="rk-row" data-at="1.5"><b>Качество казахского</b><i></i><span>Эксперт по&nbsp;казахскому NLP и&nbsp;тест-набор в&nbsp;пилоте.</span></div>
+  </div>
+  <aside class="notes">Теперь о рисках и о том, что мы с ними сделали. Данные неполные — часы есть у трети мест, поэтому без данных Анық не пишет «открыто»; ошибку ИИ страхует код, а без ИИ ответ собирается из тех же данных. Точку мы округляем до ста метров и не храним ни текст запроса, ни координаты; город видит только группы от пяти запросов, а профиль удаляется одной кнопкой. Казахский усилим в пилоте вместе с экспертом по казахскому NLP.</aside>
+  <aside class="src">Часы у 31,8 % мест — страница «Данные» 19.10.2026 (coverage.hours); canonical.md: honest_unknown_rate 100 %, hallucinated_poi 0 на 120 кейсах; README.md, «Приватность»; app/walks/reqlog.py, app/walks/demand.py, app/walks/profile.py («Забыть всё»); эксперт — docs/qa.md, вопрос 15.</aside>
+</section>
+
+<section class="slide next night" data-title="Следующий шаг">
+  <h1 class="h">Следующий шаг — пилот с&nbsp;НИЦ Smart&nbsp;City.</h1>
+  <ol class="steps">
+    <li data-at="0.4"><b>1</b><span>Пилот 4&nbsp;недели в&nbsp;районе или&nbsp;кампусе</span></li>
+    <li data-at="0.8"><b>2</b><span>Подключение данных города: часы, адреса</span></li>
+    <li data-at="1.2"><b>3</b><span>Отчёт по&nbsp;метрикам</span></li>
+  </ol>
+  <aside class="notes">Следующий шаг — пилот с НИЦ Smart City: четыре недели в одном районе или на кампусе. Подключаем данные города — часы и адреса, — а в конце даём отчёт по метрикам. Стенд и проверка ответов уже готовы, так что мерить можно с первого дня пилота.</aside>
+  <aside class="src">docs/qa.md, вопрос 15; срок 4 недели — значение по умолчанию.</aside>
+</section>
+
+<section class="slide thanks" data-title="Рақмет!">
+  <img class="bleed" src="photos/esil_night.jpg" alt="Есильский район и Байтерек ночью">
+  <div class="ty" data-at="0.2">Рақмет!</div>
+  <div class="card" data-at="0.6"><img src="img/qr.svg" alt="QR anyq.an8kk.dev"><div class="url">anyq.an8kk.dev</div></div>
+  <aside class="notes">Рақмет! Анық работает уже сейчас: наведите камеру на код или откройте anyq.an8kk.dev. Готов ответить на вопросы.</aside>
+  <aside class="src">Фото: Matti Blume, CC BY-SA 4.0 (слайд «Источники»).</aside>
+</section>
+
+<section class="slide sources" data-title="Источники">
+  <h1 class="h">Источники</h1>
+  <ol>
+    <li><b>Задача</b>: «ИИ-помощник по прогулкам в городе Астана», НИЦ Smart City, Build with AI 2026, раздел 1.</li>
+    <li><b>Стенд anyq.an8kk.dev</b>, страница «Данные», снимок 19.10.2026 17:15 (deck/data/api_data_2026-10-19.json): 4&#8239;170 мест, часы у 31,8&nbsp;%, доли по районам.</li>
+    <li><b>База data/poi.enriched.json</b>: происхождение мест — OpenStreetMap 2&#8239;970, Overture Maps 643, госреестры 412, сайты заведений 133, Wikidata 12; районы — data/districts.geojson.</li>
+    <li><b>Оценка app/eval/results/canonical.md</b>, прогоны 19.10.2026: 120 тестовых сценариев, 0 выдуманных мест, честное «неизвестно» в 100&nbsp;%; пять сценариев ТЗ (tz1–tz5) без нарушений — runs_poi.enriched_offline.jsonl и «ИИ-режим» 17.10.</li>
+    <li><b>Тесты</b>: 3&#8239;000+ автотестов, pytest 19.10.2026; 7 раундов смоделированных пользователей (ИИ-персоны) — docs/dialog.md.</li>
+    <li><b>Модель</b>: Gemma&nbsp;4 (открытые веса Google) через API, запасная Gemini; приложение работает на нашем сервере — app/README.md.</li>
+    <li><b>Скорость</b>: ход ответа через 0,3&nbsp;с — app/web/static/js/assistant.js; ответ без ИИ — app/README.md; квота 16.10 — canonical.md, «Исторический стресс-прогон».</li>
+    <li><b>Приватность</b>: README.md, «Приватность»; участки 500&nbsp;м — app/walks/reqlog.py; группы от 5 запросов — app/walks/demand.py; «Забыть всё» — app/walks/profile.py.</li>
+    <li><b>Город</b>: выгрузка CSV и GeoJSON — app/web/city.py; возможные заказчики — docs/qa.md, вопрос 12.</li>
+    <li><b>Сбор</b>: скрипты collect/ (python -m collect.build, слои — collect/SOURCES.md §24); афиша каждые 6 часов — collect/events, deploy/vps/anyq-events.timer; источник и дата часов на карточке — app/walks/models.py.</li>
+    <li><b>Скриншоты</b>: свежие ответы живого стенда 19.10.2026 без закреплённого демо; слой «Спутник» (слайд 4) — запуск той же версии приложения со слоем в боевом режиме, 22:50; запросы и ответы целиком — deck/shots/shots.jsonl, проверка — deck/shots/factcheck.md.</li>
+    <li><b>Карты и данные</b>: © OpenStreetMap contributors (ODbL); подложка приложения — OpenMapTiles, OpenFreeMap; Overture Maps (CDLA-Permissive-2.0), Wikidata (CC0). Лицензии всех источников — data/NOTICE.md, docs/licensing.md.</li>
+    <li><b>Спутник</b>: Imagery: Powered by Esri · Source: Esri, Vantor, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community.</li>
+    <li><b>Шрифты</b>: Source Serif 4, IBM Plex Sans, IBM Plex Mono — SIL Open Font License 1.1.</li>
+  </ol>
+  <div class="photos">
+    <figure><img src="photos/nurzhol.jpg" alt=""><figcaption><b>Bernard Gagnon, «Nurjol Boulevard, Astana»</b>CC0 · слайд 1, кадрировано<br>commons.wikimedia.org/wiki/File:Nurjol_Boulevard,_Astana.jpg</figcaption></figure>
+    <figure><img src="photos/khan_shatyr.jpg" alt=""><figcaption><b>Dauren Nabijan, «Khan-Shatyr shopping mall»</b>CC0 · слайд 2, кадрировано<br>commons.wikimedia.org/wiki/File:Khan-Shatyr_shopping_mall.jpg</figcaption></figure>
+    <figure><img src="photos/esil_night.jpg" alt=""><figcaption><b>Matti Blume, «Night at Esil District, Astana (P1190721)»</b>CC BY-SA 4.0 · слайд 14, кадрировано<br>commons.wikimedia.org/wiki/File:Night_at_Esil_District,_Astana_(P1190721).jpg</figcaption></figure>
+  </div>
+  <aside class="notes">Запасной слайд: откуда каждое число, каждый кадр и каждая фотография. Показываю, если спросят про источники.</aside>
+  <aside class="src">Лицензии фото: CC0 — creativecommons.org/publicdomain/zero/1.0; CC BY-SA 4.0 — creativecommons.org/licenses/by-sa/4.0. Кадрированные фото — photos/fetch.py по photos/credits.json.</aside>
+</section>
+
+</div>
+<script src="data/geo.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

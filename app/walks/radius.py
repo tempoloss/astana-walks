@@ -7,6 +7,7 @@ from __future__ import annotations
 import math
 
 from .models import Constraints, Intent
+from .supply import UTILITY_KINDS
 
 SPEED_KMH = {"walk": 4.5, "transit": 15.0, "car": 25.0}  # door-to-door averages
 TRAVEL_SHARE = 0.4  # share of the time budget reserved for getting there AND back
@@ -20,19 +21,23 @@ RADIUS_STEPS = (
     1.5,
 )  # widen the radius by these factors while nothing of the requested kind is in
 STROLL_CATEGORIES = frozenset({"park_garden", "attraction_landmark", "viewpoint"})
+# Errands (a pharmacy, a food shop, a cash machine, a clinic, a post office, a bed for the night): a person goes to one
+# to do one thing, so none is a stop of a walk (route.route_stops), the model never adds one (intent.llm_dropped), the
+# nearest one the data confirm open comes first (wishes.errand_order), and none in the data is said, not padded over.
+ERRAND_KINDS = UTILITY_KINDS | {"lodging"}
+# A request for one of these is never padded with other kinds: a short list is the honest answer. A hotel is a
+# destination, not a utility, so a lodging request may still be padded.
+UNPADDED_KINDS = frozenset({"other", "public_toilet"}) | UTILITY_KINDS
 # Back-fill (other categories added when too few requested ones are in range): never these, whatever the intent;
-# a stroll additionally takes only places that fit a walk. An errand (a pharmacy, a food shop) fills nothing up, and
-# a request for one takes no other kind instead of it (backfill_ok).
-ERRAND_KINDS = frozenset({"pharmacy", "grocery"})
-NEVER_BACKFILL = (
-    frozenset({"fast_food", "bar_nightlife", "other", "money", "lodging"}) | ERRAND_KINDS
-)
+# a stroll additionally takes only places that fit a walk.
+NEVER_BACKFILL = frozenset({"fast_food", "bar_nightlife", "other"}) | ERRAND_KINDS
 STROLL_BACKFILL = STROLL_CATEGORIES | {"cafe", "museum_gallery"}
 CIRCUITY = 1.25  # real street distance ~ 1.25 x straight line
 MIN_RADIUS_M = 500  # even a very short budget should see the nearest block
 MAX_RADIUS_M = 15000
 NEAREST_FAR = "nearest_far"  # reason code: the requested kind is absent nearby; this is the nearest one in the city
 INFO_ABOUT = "info_about"  # reason code: the user asked ABOUT this place (hours, «стоит ли»): its card comes first
+FAR_ON_FOOT = "far_on_foot"  # reason code: the nearest of the sub-kind asked, too far to walk (walks.chains.far_subkind)
 ADVERSE_WALK_CAP_M = 600  # max straight-line walking radius when it is freezing / pouring / smoggy
 # Product assumption (детская выносливость пешком ~15 мин в одну сторону), not a measurement and not set by data of
 # residents. 15 was introduced in caf7692 after two main-set kids cases failed their walking limit, and was chosen
@@ -91,6 +96,15 @@ def is_stroll(intent: Intent) -> bool:
     )
 
 
+def with_playground(intent: Intent) -> Intent:
+    """A walk with a child (the words or the memory): the playgrounds too, so the one 150 m away is offered next to
+    the park 900 m away; the park the person named still leads (walks.retrieve: a named kind first)."""
+    cats = intent.categories
+    if not (intent.with_kids and cats and set(cats) <= STROLL_CATEGORIES):
+        return intent
+    return intent.model_copy(update={"categories": [*cats, "kids_playground"]})
+
+
 def travel_share(stroll: bool) -> float:
     return STROLL_TRAVEL_SHARE if stroll else TRAVEL_SHARE
 
@@ -115,12 +129,11 @@ def declared_radius_m(intent: Intent, adverse: bool, constraints: Constraints) -
 
 
 def backfill_ok(category: str, intent: Intent, stroll: bool) -> bool:
-    """May a place outside the requested categories fill up a short list? Never fast food / bars / 'other' / money /
-    lodging / an errand (bars only for a night request); a stroll takes only what fits a walk. A state-service request
-    («ЦОН», category `other`), a toilet, a cash machine or an errand (a pharmacy, a food shop: a café is neither) is
-    never padded with cafes and parks: a short list is the honest answer. A hotel is a destination, not a utility, so
-    a lodging request may still be padded."""
-    if {"other", "public_toilet", "money", *ERRAND_KINDS} & set(intent.categories):
+    """May a place outside the requested categories fill up a short list? Never fast food / bars / 'other' / an
+    errand (bars only for a night request); a stroll takes only what fits a walk. A state-service request («ЦОН»,
+    category `other`), a toilet or an errand other than lodging (a pharmacy, a food shop, a cash machine, a clinic, a
+    post office: a café is none of them) is never padded with cafes and parks (UNPADDED_KINDS)."""
+    if UNPADDED_KINDS & set(intent.categories):
         return False
     if category in NEVER_BACKFILL and not (category == "bar_nightlife" and intent.night):
         return False
@@ -141,13 +154,12 @@ def one_way_limit_min(intent: Intent) -> float:
 
 # Kinds that still answer a wish when the requested kind is absent from the whole radius: the only back-fill allowed
 # then (a church or a mall does not answer «кино»). A kind that is not listed has no substitute: the nearest place of
-# the kind itself is shown instead («рядом нет X; ближайшее — N км»).
+# the kind itself is shown instead («рядом нет X; ближайшее — N км»): a museum is never answered with a cinema.
 RELATED_KINDS: dict[str, frozenset[str]] = {
     "restaurant": frozenset({"restaurant", "cafe", "fast_food", "mall"}),
     "cafe": frozenset({"restaurant", "cafe", "fast_food", "mall"}),
     "fast_food": frozenset({"restaurant", "cafe", "fast_food", "mall"}),
     "culture_theatre_cinema": frozenset({"entertainment"}),
-    "museum_gallery": frozenset({"culture_theatre_cinema"}),
     "entertainment": frozenset({"culture_theatre_cinema", "mall", "kids_playground"}),
     "kids_playground": frozenset(
         {"park_garden", "entertainment", "museum_gallery", "cafe", "restaurant", "mall"}

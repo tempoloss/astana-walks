@@ -2,14 +2,15 @@
 
 * residents' marks - POST /api/report: one anonymous mark of a place into the city feedback store (walks.feedback:
   no user id, no coordinates, a day and a part of the day); the «Город» page shows them;
-* the opt-in personal profile - /api/profile: «Что я о вас знаю», each item deletable, «Забыть всё», the
-  «Запомнить: …?» chips, «Был здесь» / «Понравилось». The browser keeps only the random id of the profile file."""
+* the opt-in profile - /api/profile: «Что я о вас знаю», each item deletable, «Забыть всё», the
+  «Запомнить: …?» chips, «Был здесь» / «Понравилось», «Мой вайб» (walks.vibe: the axis and the chips are saved at once,
+  the free text is read into facets on save, walks.vibe_judge). The browser keeps only the random id of the profile file."""
 
 from __future__ import annotations
 
 from datetime import date
 from functools import cache
-from typing import Literal, get_args
+from typing import Annotated, Literal, get_args
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator, model_validator
 
@@ -37,6 +38,9 @@ from walks.profile import (
     save_profile,
     valid_id,
 )
+from walks.vibe import facet_name
+from walks.vibe_data import FACETS, VIBE_TEXT_MAX, Facet
+from walks.vibe_judge import read_vibe
 
 Lang = Literal["kk", "ru", "en"]
 FLAGS = ("with_kids", "quiet", "halal", "no_alcohol")
@@ -109,8 +113,10 @@ class ProfileForm(BaseModel):
     liked: list[Category] = Field(default_factory=list, max_length=len(FORM_CATEGORIES))
     avoid: list[Category] = Field(default_factory=list, max_length=len(FORM_CATEGORIES))
     about: str = Field("", max_length=ABOUT_MAX)
+    vibe: dict[Facet, Annotated[float, Field(ge=0.0, le=1.0)]] = Field(default_factory=dict)
+    vibe_text: str = Field("", max_length=VIBE_TEXT_MAX)
 
-    @field_validator("about", mode="before")
+    @field_validator("about", "vibe_text", mode="before")
     @classmethod
     def _clean_about(cls, value: object) -> str:
         return clean_about(value)
@@ -157,7 +163,7 @@ def _form_of(profile: Profile) -> dict:
 
 def view(uid: str | None, lang: str) -> dict:
     """What the «Память» panel shows: the id (None: nothing stored), every item, the form's values and what the
-    form's pickers offer (kinds of place named in the language, the length limit of the text)."""
+    form's pickers offer (kinds of place and the vibe's facets named in the language, the length limits of the texts)."""
     profile = (load_profile(uid) if valid_id(uid) else None) or Profile()
     names = {pid: name for pid, (name, _cat) in _places().items()}
     return {
@@ -166,6 +172,8 @@ def view(uid: str | None, lang: str) -> dict:
         "form": _form_of(profile),
         "categories": [{"key": c, "name": category_name(c, lang)} for c in FORM_CATEGORIES],
         "about_max": ABOUT_MAX,
+        "vibe_facets": [{"key": f, "name": facet_name(f, lang).capitalize()} for f in FACETS],
+        "vibe_text_max": VIBE_TEXT_MAX,
     }
 
 
@@ -191,6 +199,10 @@ def _changed(profile: Profile, act: ProfileAction) -> Profile | None:
         form = act.form.model_dump()
         liked = {c: n for c, n in profile.liked.items() if c not in FORM_CATEGORIES}
         liked |= {c: max(profile.liked.get(c, 0), 1) for c in form.pop("liked")}
+        if form["vibe_text"] and form["vibe_text"] != profile.vibe_text:
+            form["vibe"] = read_vibe(
+                form["vibe_text"]
+            ).weights  # new words: what they ask for replaces the chips
         # the form's age groups replace the stored ones: the single youngest age is derived from them again
         return profile.model_copy(update={**form, "liked": liked, "kids_age_band": None})
     return None

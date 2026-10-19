@@ -26,7 +26,9 @@ from .presets import PRESET_NAMES, PRESETS
 from .quantities import child_age, group_size, price_cap_kzt
 from .radius import ERRAND_KINDS, STROLL_CATEGORIES
 from .safety import clean_text, minor_age
+from .symptoms import is_not_a_report, sick_who
 from .weather import COLD_APPARENT_C
+from .wishes import asked_subkind, asked_work_needs
 
 GROUP_MIN_TABLE = (
     3  # a party of this size or more, naming no kind of place, wants somewhere to sit together
@@ -95,6 +97,9 @@ RULES_ONLY_FIELDS = frozenset(
         "local_food",
         "time_stated",
         "eat",
+        "subkind",
+        "sick",
+        "work_needs",
     }
 )
 _REFUSALS = (("refuse_drugs", "drugs"), ("refuse_sex", "sex"), ("refuse_weapons", "weapons"))
@@ -309,7 +314,12 @@ def _categories(m: Matches, flags: set[str], excluded: set[str], notes: list[str
         and m.has(c.name)
         for c in CONCEPTS
     )
+    errand = m.has(
+        "wish_toilet"
+    )  # «дәретхана бар ма, балам сұранып жатыр»: the child is the reason, the toilet the wish
     for c in CONCEPTS:
+        if errand and c.name != "wish_toilet":
+            continue
         if c.tier in {"mood", "activity"} and c.categories and m.has(c.name):
             added = [k for k in c.categories if not walk or k in _WALK_MOOD_KINDS]
             _add(implied, *added)
@@ -421,6 +431,8 @@ def weather_hint(text: str, flags: set[str]) -> WeatherHint:
     """The weather the user's own words state: a temperature (frost from the weather module's threshold, heat from
     +30) or a word (cold, rain, heat, smog). Retrieval treats any hint as adverse even when the live weather is
     unknown or mild."""
+    if is_not_a_report(text) and not stated_temperatures(text):
+        return "none"
     temps = stated_temperatures(text)
     if any(t <= COLD_APPARENT_C for t in temps):
         return "cold"
@@ -500,6 +512,18 @@ def parse_rules(text: str, when: datetime | None = None) -> IntentResult:
     categories = _categories(m, flags, excluded, notes)
     had_bars = "bar_nightlife" in categories
     categories = [c for c in categories if c not in barred]
+    sick = sick_who(text, child="with_kids" in flags or young_child)
+    if sick and not _named_wish(
+        m, categories
+    ):  # «ребёнок температурит»: nobody asked for a kind, the illness is the request
+        categories = ["clinic", "pharmacy"]
+        notes.append("болезнь в запросе → клиника и аптека")
+    if "with_kids" in flags and categories and set(categories) <= ERRAND_KINDS | {"public_toilet"}:
+        flags = flags - {
+            "with_kids"
+        }  # «аптека нужна, ребёнок заболел»: a reason for the errand, not a wish for kids' places
+        young_child = False
+        notes.append("ребёнок — причина поручения, а не желание: детские места не нужны")
     if young_child and not categories:
         categories = ["kids_playground", "museum_gallery"]
     if minor and had_bars:
@@ -520,7 +544,10 @@ def parse_rules(text: str, when: datetime | None = None) -> IntentResult:
         notes.append("вечер + выпить/потанцевать → ночной режим")
     if typos := m.typos():
         notes.append(f"опечатки: {', '.join(typos)}")
-    hint = weather_hint(text, flags)
+    errand_only = bool(categories) and set(categories) <= ERRAND_KINDS | {"public_toilet"}
+    hint = (
+        "none" if sick and errand_only else weather_hint(text, flags)
+    )  # «ыстықтап жатыр» is a fever, not the heat
     if hint != "none":
         notes.append(f"погода из слов запроса: {hint}")
 
@@ -571,6 +598,9 @@ def parse_rules(text: str, when: datetime | None = None) -> IntentResult:
         time_stated=parse_time_budget(text) is not None
         or _deadline_minutes(text, when) is not None,
         eat=any(m.has(n) for n in _EAT_CONCEPTS) and not m.has("coffee"),  # «пожрать», not «кофе»
+        subkind=asked_subkind(text, categories),  # «банкомат», «стоматолог», a doctor, Kazpost
+        sick=sick,
+        work_needs=asked_work_needs(text) if "wifi" in flags else "",  # sockets / Wi-Fi / both
         mode_explicit=mode != "walk",
         minor=minor,
         diets=[d for flag, d in _DIET_FLAGS if flag in flags],  # type: ignore[misc]
@@ -702,6 +732,9 @@ def merge_intents(rules: Intent, llm: Intent, text: str) -> Intent:
         local_food=rules.local_food,
         time_stated=rules.time_stated,
         eat=rules.eat,
+        subkind=rules.subkind,
+        sick=rules.sick,
+        work_needs=rules.work_needs,
     )
 
 

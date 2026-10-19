@@ -502,7 +502,7 @@ def _kazhydromet_routes(**extra: str | Exception) -> dict[str, str | Exception]:
     return routes
 
 
-def test_an_active_storm_warning_and_nmu_make_the_conditions_adverse(evening):
+def test_an_active_fog_notice_is_no_storm_and_the_nmu_makes_the_air_bad(evening):
     calls: list = []
     w, sleeps = _fetch(_kazhydromet_routes(), calls)
     assert [(x.kind, x.active) for x in w.warnings] == [
@@ -516,10 +516,10 @@ def test_an_active_storm_warning_and_nmu_make_the_conditions_adverse(evening):
     assert storm.source_url == "https://www.kazhydromet.kz/ru/storm"
     assert w.adverse
     assert "жара" not in w.reason
-    assert "штормовое предупреждение Казгидромета" in w.reason
+    assert "штормовое предупреждение Казгидромета" not in w.reason  # a fog notice is no storm
     assert w.air_bad  # the night НМУ of 17 October
     assert "неблагоприятные метеоусловия (НМУ)" in w.air_reason
-    assert w.conditions == ["storm_warning", "nmu"]
+    assert w.conditions == ["nmu"]
     assert len(sleeps) >= 3  # at most one request per second to Kazhydromet
     posted = [c for c in calls if c[0] == "POST"]
     assert len(posted) == 1
@@ -540,9 +540,12 @@ def test_the_storm_warning_text_names_the_source_in_every_language(evening):
     ):
         assert head in wx.warning_text(storm, lang)
     assert "https://www.kazhydromet.kz/ru/storm" in wx.warning_text(storm, "kk")
-    assert "штормовое предупреждение" in wx.adverse_text(w, "ru")
-    assert "дауыл" in wx.adverse_text(w, "kk")
-    assert "storm warning" in wx.adverse_text(w, "en")
+    assert "штормовое предупреждение" not in wx.adverse_text(w, "ru")  # fog: advice, never a storm
+    wind = storm.model_copy(update={"text": "г. Астана: ожидается сильный ветер, порывы 18 м/с."})
+    windy = wx.make_weather(5.0, 0.0, 40.0, 0.0, warnings=[wind])
+    assert "штормовое предупреждение" in wx.adverse_text(windy, "ru")
+    assert "дауыл" in wx.adverse_text(windy, "kk")
+    assert "storm warning" in wx.adverse_text(windy, "en")
     assert "НМУ" in wx.air_text(w, "ru")
 
 

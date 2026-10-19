@@ -1,0 +1,41 @@
+{
+  "nurzhol": {
+    "commons": "File:Nurjol Boulevard, Astana.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nurjol_Boulevard,_Astana.jpg",
+    "title": "Nurjol Boulevard, Astana",
+    "subject": "бульвар Нуржол и Хан Шатыр с Байтерека",
+    "author": "Bernard Gagnon",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "date": "2023-09-19",
+    "crop": [0.0, 0.035, 1.0, 0.735],
+    "size": [1150, 1350],
+    "slide": "обложка"
+  },
+  "khan_shatyr": {
+    "commons": "File:Khan-Shatyr shopping mall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Khan-Shatyr_shopping_mall.jpg",
+    "title": "Khan-Shatyr shopping mall",
+    "subject": "вход в Хан Шатыр",
+    "author": "Dauren Nabijan",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "date": "2024-07-26",
+    "crop": [0.0, 0.5725, 1.0, 0.979],
+    "size": [1920, 520],
+    "slide": "проблема"
+  },
+  "esil_night": {
+    "commons": "File:Night at Esil District, Astana (P1190721).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Night_at_Esil_District,_Astana_(P1190721).jpg",
+    "title": "Night at Esil District, Astana (P1190721)",
+    "subject": "Есильский район и Байтерек ночью",
+    "author": "Matti Blume",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "date": "2024-08-16",
+    "crop": [0.0, 0.0, 1.0, 0.75],
+    "size": [1920, 1080],
+    "slide": "спасибо"
+  }
+}

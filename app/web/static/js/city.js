@@ -115,8 +115,9 @@ function demandBody(d) {
       metric(n(t.no_place), tr('city_m_no_place')),
       metric(n(t.hours_unknown), tr('city_m_hours_unknown')),
       metric(n(t.cells_shown), tr('city_m_cells_shown')),
-      metric(n(t.cells_hidden), tr('city_m_cells_hidden'))),
+      metric(n(t.cells_hidden), tr('city_m_cells_hidden', { k: d.k }))),
     legend(UNMET, tr('city_legend_few'), tr('city_legend_many')),
+    h('p', { class: 'fine', text: tr('city_k_why', { k: d.k }) }),
     h('p', { class: 'fine', text: tr('city_demand_note', { k: d.k }) + (t.cells_hidden ? ` ${tr('city_hidden_note', { n: n(t.requests_hidden) })}` : '') }),
   );
   if (d.top.length) {
@@ -135,7 +136,7 @@ function demandBody(d) {
     d.simulated ? h('p', { class: 'fine', text: tr('city_actions_sim') }) : null,
     d.actions.length
       ? h('ol', { class: 'acts' }, d.actions.map((a) => h('li', { text: tr('city_act_supply', { district: a.district, n: n(a.count), of: n(a.of), cat: a.category }) })))
-      : h('p', { class: 'fine', text: tr('city_actions_none') }),
+      : h('p', { class: 'fine', text: tr('city_actions_none', { k: d.k }) }),
     h('p', { class: 'fine', text: tr('city_padded', { n: n(t.padded), of: n(t.requests) }) }),
     h('details', { class: 'disclosure' }, h('summary', {}, tr('city_how_title'), icon('chevron')),
       h('div', { class: 'lines' }, ['city_how_1', 'city_how_2', 'city_how_3', 'city_how_4', 'city_how_5'].map((key) => h('p', { text: tr(key, { k: d.k }) })))),

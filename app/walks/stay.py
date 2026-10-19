@@ -1,9 +1,10 @@
-"""Time on site: the typical stay per category, and the budget check that drops (or flags) places whose minimum
-stay does not fit what is left after the round trip."""
+"""Time on site: the typical stay per category, the clamps of a card's stay (its category's range, then the route
+budget), and the budget check that drops (or flags) places whose minimum stay does not fit what is left after the
+round trip."""
 
 from __future__ import annotations
 
-from .models import Candidate
+from .models import Candidate, Intent
 
 # Typical time on site per category, minutes (lo, hi): the generation step clamps the model's value into this
 # range, and retrieval drops places whose lo does not fit the budget that is left after the round trip.
@@ -38,6 +39,23 @@ NAMED_OVER_BUDGET = (
 
 def min_stay(category: str) -> int:
     return STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])[0]
+
+
+def category_stay(minutes: int, category: str) -> int:
+    """Clamp the LLM's time on site into the typical range of the place's category (decided by code)."""
+    lo, hi = STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])
+    return max(lo, min(minutes, hi))
+
+
+def typical_stay(category: str) -> int:
+    lo, hi = STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])
+    return (lo + hi) // 2
+
+
+def clamp_stay(minutes: int, c: Candidate, intent: Intent) -> int:
+    """The route budget is the last word: travel there and back and the stay must fit."""
+    ceiling = max(10, intent.time_budget_min - 2 * c.travel_min)
+    return int(max(5, min(minutes, ceiling)))
 
 
 def fit_stay_budget(

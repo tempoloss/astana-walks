@@ -15,8 +15,8 @@
 | top-1 без нарушений ограничений | 66.7% | 66.7% | +0.0 п.п. |
 | top-1 с подтверждённым «открыто» | 50.0% | 45.8% | -4.2 п.п. |
 | доля рекомендаций с неизвестными часами | 56.2% | 59.1% | +2.9 п.п. |
-| доля рекомендаций не из OSM-записей | 0.0% | 40.9% | +40.9 п.п. |
-| средняя дорога до рекомендации, мин | 12.4 | 11.7 | -0.7 |
+| доля рекомендаций не из OSM-записей | 0.0% | 42.4% | +42.4 п.п. |
+| средняя дорога до рекомендации, мин | 12.4 | 11.9 | -0.5 |
 | padding: рекомендации, добранные расширением радиуса, другой категорией или заменой из-за погоды | 14.1% | 12.1% | -2.0 п.п. |
 | … за счёт расширения радиуса (radius_factor > 1) | 1.6% | 3.0% | +1.4 п.п. |
 | … за счёт другой категории (back-fill) | 10.9% | 7.6% | -3.3 п.п. |
@@ -25,8 +25,8 @@
 | honest_abstain_rate (нет рекомендаций или каждое несовпадение помечено) | — | — | — |
 | кейсов, где вся цепочка ИИ недоступна (→ шаблон) | н/п | н/п | н/п |
 | кейсов, где ответ ИИ не прошёл проверку poi_id (→ шаблон) | н/п | н/п | н/п |
-| latency пайплайна, медиана (шаблон, без ИИ) | 12 мс | 18 мс | +7 мс |
-| latency пайплайна, p90 (шаблон, без ИИ) | 32 мс | 56 мс | +24 мс |
+| latency пайплайна, медиана (шаблон, без ИИ) | 14 мс | 20 мс | +7 мс |
+| latency пайплайна, p90 (шаблон, без ИИ) | 34 мс | 58 мс | +24 мс |
 | latency ответа ИИ, медиана | н/п | н/п | н/п |
 | latency ответа ИИ, p90 | н/п | н/п | н/п |
 | honest_unknown_rate по рекомендациям | 100.0% | 100.0% | +0.0 п.п. |
@@ -37,14 +37,16 @@
 - poi: {'template': 24}
 - poi.enriched: {'template': 24}
 
-## Кейсы, где изменился top-1 (7 из 24)
+## Кейсы, где изменился top-1 (9 из 24)
 
 | кейс | poi | poi.enriched |
 |---|---|---|
 | `h3-06` | Эфир · cafe · osm · open · 10 мин | Happy Cake · cafe · official_site · open · 6 мин |
 | `h3-07` | Сквер · park_garden · osm · unknown · 8 мин | Водно-Зеленый Бульвар · park_garden · overture · unknown · 7 мин |
 | `h3-11` | Парк Астана · park_garden · osm · unknown · 5 мин | Central Park Astana · park_garden · overture · unknown · 4 мин |
+| `h3-12` | Библиотека Первого Президента · coworking_library · osm · unknown · 1 мин | Назарбаев Орталығы / Назарбаев Центр · coworking_library · overture · unknown · 3 мин |
 | `h3-14` | Bambino · cafe · osm · unknown · 5 мин | Vista Restaurant and Bar · restaurant · overture · unknown · 5 мин |
 | `h3-15` | Canele · cafe · osm · open · 12 мин | Grand Hall · restaurant · overture · unknown · 13 мин |
 | `h3-20` | У Аркадия · cafe · osm · open · 10 мин | Happy Cake · cafe · official_site · open · 7 мин |
-| `h3-22` | vanilla · cafe · osm · unknown · 5 мин | Coffee BOOM, Тұран даңғылы, 18 · cafe · official_site · unknown · 2 мин |
+| `h3-22` | Starbucks · cafe · osm · unknown · 6 мин | Coffee BOOM, Тұран даңғылы, 18 · cafe · official_site · unknown · 2 мин |
+| `h3-24` | Президентский парк · park_garden · osm · unknown · 6 мин ⚠ category_not_allowed, category_forbidden | Президентский парк (Нур-Султан) · park_garden · wikidata · unknown · 9 мин ⚠ category_not_allowed, category_forbidden |

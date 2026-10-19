@@ -46,7 +46,7 @@ function walkTail(place) {
 }
 
 function num(n) {
-  return h('span', { class: 'num', text: String(n) });
+  return h('span', { class: n > 9 ? 'num long' : 'num', text: String(n) });
 }
 
 function out(href, label, primary) {
@@ -123,6 +123,7 @@ export function primaryCard(place, o) {
       ? h('p', { class: 'note signal' }, icon('info'), h('span', {}, place.signal.text, ' · ', ...sourceLinks([place.signal.source])))
       : null,
     place.caveat ? h('p', { class: 'c-note', text: place.caveat }) : null,
+    place.vibe ? h('p', { class: 'c-vibe', text: place.vibe }) : null,
     place.why ? whyBlock(place.why) : null,
     sourceLine(place),
     h('div', { class: 'acts' },
@@ -141,6 +142,7 @@ export function altRow(place, o) {
     num(o.n),
     h('span', { class: 'a-l1' }, h('span', { class: 'a-name', text: place.name }), h('span', { class: 'kd', text: place.kind })),
     h('span', { class: 'a-meta' }, statusEl(place), h('span', { class: 'm', text: walkTail(place) })),
+    place.vibe ? h('span', { class: 'a-vibe', text: place.vibe }) : null,
     h('span', { class: 'a-end' },
       h('span', { class: 'a-min', text: minutes(place.walk.minutes, place.walk.method) }),
       h('button', { type: 'button', class: 'more-b', 'aria-label': tr('details'), onclick: () => o.onDetails(place.id) }, icon('next'))),

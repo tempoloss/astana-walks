@@ -411,7 +411,7 @@ def test_stages_are_reported_in_order():
         "хочу кофе",
         TurnEnv(when=NOW, use_llm=False, on_stage=stages.append),
     )
-    assert stages == ["parse", "search", "write", "route"]
+    assert stages == ["parse", "search", "hours", "write", "route"]
 
 
 def test_state_is_json_never_mutated_and_holds_no_request_text():

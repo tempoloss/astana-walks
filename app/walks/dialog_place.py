@@ -9,6 +9,7 @@ from urllib.parse import urlsplit
 
 from opening_hours import OpeningHours
 
+from .card_notes import WORK_NOTES
 from .dialog_strings import s
 from .dialog_text import display_name, first_sentence, plain, sentences, short_what, short_why
 from .dialog_types import (
@@ -22,7 +23,7 @@ from .dialog_types import (
     Topic,
     Walk,
 )
-from .facts import clean_address
+from .facts import clean_address, unnamed_label
 from .feedback import hours_label
 from .hours import poi_hours, to_local_naive
 from .i18n import category_name, source_label, t, tip
@@ -33,6 +34,7 @@ from .models import (
     POI,
     STATE_REGISTRY,
     WIKIVOYAGE,
+    Candidate,
     PeopleEvidence,
     Recommendation,
 )
@@ -40,8 +42,8 @@ from .radius import haversine_m, travel_minutes
 from .status import TEXT_KEY, hours_facts, next_change
 from .visit_hours import visit_note
 from .walking import WalkingRouter
+from .wishes import ERRANDS, FAR_WALK_MIN
 
-FAR_WALK_MIN = 25  # from here «как дойти» suggests a vehicle
 _HOURS_WORDS = (
     "час", "hour", "сағат", "праздник", "holiday", "мереке", "osm", "сайт", "website",
     "откро", "закро", "ашыл", "жабыл", "opens", "closes",
@@ -68,6 +70,14 @@ def lower_first(text: str) -> str:
 
 def walk_text(minutes: int, mode: str, lang: str) -> str:
     return s(f"walk_{mode}", lang, n=minutes)
+
+
+def card_walk_text(r: Recommendation, mode: str, lang: str) -> str:
+    """The walk an errand card says: «18 мин пешком», and from FAR_WALK_MIN on foot «пешком далеко: 6,9 км — лучше на
+    транспорте», never the minutes of a walk nobody takes."""
+    if mode == "walk" and r.poi.category in ERRANDS and r.walk_min >= FAR_WALK_MIN:
+        return s("walk_far", lang, d=dist_text(r.distance_m, lang))
+    return walk_text(r.travel_min, mode, lang)
 
 
 # ------------------------------------------------------------------ sources and hours
@@ -258,10 +268,13 @@ def _people(ev: PeopleEvidence | None, lang: str) -> PeopleMarks | None:
     )
 
 
-def _note(r: Recommendation) -> str:
+def _note(r: Recommendation, lang: str) -> str:
     """The first sentence of the card's notes that is not about hours (those are `hours.note`): an honest caveat
-    about weather, an unverified wish, a place of another kind."""
-    for sentence in sentences(plain(r.notes)):
+    about weather, an unverified wish, a place of another kind; what of the Wi-Fi / sockets asked the record does not
+    confirm comes first, whatever note the model or a chain put before it."""
+    found = sentences(plain(r.notes))
+    work = {t(k, lang) for k in WORK_NOTES}
+    for sentence in [*(x for x in found if x in work), *found]:
         if not any(w in sentence.lower() for w in _HOURS_WORDS):
             return sentence
     return ""
@@ -293,7 +306,8 @@ def place_from_rec(
     why = short_why(r.why) or t("why_none", lang)  # a model card left with nothing: the honest line
     return Place(
         id=poi.id,
-        name=display_name(poi.name_for(lang)),
+        name=unnamed_label(poi, lang)
+        or display_name(poi.name_for(lang)),  # «Сквер без названия, район Есиль»
         kind=kind,
         category=poi.category,
         lat=poi.lat,
@@ -311,15 +325,48 @@ def place_from_rec(
             distance_m=r.distance_m,
             method=r.walk_method,
             mode=mode,  # type: ignore[arg-type]
-            text=walk_text(r.travel_min, mode, lang),
+            text=card_walk_text(r, mode, lang),
         ),
         hours=hours,
         people=_people(r.people, lang),
         caveat=_caveat(r.padding, lang),
-        note=_note(r),
+        note=_note(r, lang),
         text_source=r.text_source,
         padding=r.padding,
         lrt_hint=r.lrt_hint,
+        sources=sources_of(poi, lang),
+        data_date=(poi.collected_at or "")[:10] or None,
+        price=price_of(poi, lang),
+    )
+
+
+def place_from_candidate(c: Candidate, *, lang: str, when: datetime, mode: str) -> Place:
+    """A place of the longer list under an answer («Ещё N мест рядом»): the candidate as retrieval ranked it, with the
+    state of its hours at the arrival time (the same check as the cards), minutes and metres from the retrieval (a
+    modelled estimate: no street leg was asked for it). No reason and no tip: no model wrote for it."""
+    poi = c.poi
+    arrival = to_local_naive(when) + timedelta(minutes=c.travel_min)
+    return Place(
+        id=poi.id,
+        name=display_name(poi.name_for(lang)),
+        kind=poi_kind(poi, lang),
+        category=poi.category,
+        lat=poi.lat,
+        lon=poi.lon,
+        address=clean_address(poi.address) or None,
+        phone=poi.phone,
+        website=poi.website,
+        walk=Walk(
+            minutes=c.travel_min,
+            distance_m=c.distance_m,
+            method="estimate",
+            mode=mode,  # type: ignore[arg-type]
+            text=walk_text(c.travel_min, mode, lang),
+        ),
+        hours=hours_block(poi, c.hours_state, c.hours_issue, c.hours_note, arrival, lang),
+        people=_people(c.people, lang),
+        caveat=_caveat(c.padding, lang),
+        padding=c.padding,
         sources=sources_of(poi, lang),
         data_date=(poi.collected_at or "")[:10] or None,
         price=price_of(poi, lang),

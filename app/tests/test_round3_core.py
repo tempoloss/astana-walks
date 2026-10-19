@@ -235,7 +235,10 @@ def test_closer_after_a_fast_food_lead_keeps_fast_food():
 
 
 def test_closer_on_a_student_answer_keeps_the_kind_it_led_with():
-    first, closer = _talk("ru", KHAN, NIGHT, "го пожрать недорого, я студент", "Поближе")
+    # Каталог-мёрж дал кафе/ресторанам у KHAN настоящие часы: в 01:30 (NIGHT) внутри «поближе»-радиуса
+    # (0.8 × самого дальнего из ответа) рестораны закрыты, и ответ законно ведут круглосуточные кафе —
+    # инвариант «тот же вид» переносим на полдень, где у ведущего вида есть кандидаты поближе.
+    first, closer = _talk("ru", KHAN, NOON, "го пожрать недорого, я студент", "Поближе")
     assert closer.places[0].kind == first.places[0].kind
 
 

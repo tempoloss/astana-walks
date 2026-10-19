@@ -338,10 +338,6 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .hello h1 { margin: 0; font-size: var(--fs-xl); }
 .hello p { color: var(--ink-2); }
 .hello .label { margin-top: 8px; color: var(--ink-3); }
-.facts { margin-top: 16px; padding-top: 12px; box-shadow: inset 0 1px 0 var(--hair); }
-.facts .row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px; margin-top: 8px; color: var(--ink); }
-.facts .row b { font-weight: 600; font-size: var(--fs-md); font-variant-numeric: tabular-nums; }
-.facts .cov { margin-top: 8px; font-size: var(--fs-sm); color: var(--ink-3); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .chip {
@@ -437,7 +433,7 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 }
 @keyframes fadein { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 
-/* waiting: nothing for the first 300 ms, then the shape of the answer to come, and honest steps after 3 s */
+/* waiting: nothing for the first 300 ms, then the honest steps the core reports over the shape of the answer to come */
 .thinking { display: grid; gap: 12px; }
 .thinking .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: var(--fs-sm); }
 .thinking .steps li { display: flex; align-items: center; gap: 8px; color: var(--ink-3); }
@@ -558,6 +554,13 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
 .sub .lbl { color: var(--ink-2); }
 .sub svg { width: 14px; height: 14px; color: var(--ink-3); transform: rotate(180deg); }
 .alts { display: grid; }
+/* «Ещё N мест рядом»: one full-width button under the alternatives, the further rows open beneath it */
+.num.long { font-size: 10px; letter-spacing: -0.4px; } /* «10» in the same 18px circle: the list of further places runs on to ten */
+.more-places { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; min-height: 44px; margin-top: 12px; padding: 8px 12px; border-radius: var(--r-md); background: var(--hover); color: var(--ink); font-size: var(--fs-md); font-weight: 500; line-height: 1.3; text-align: left; }
+.more-places span { min-width: 0; }
+.more-places svg { flex: none; width: 14px; height: 14px; color: var(--ink-3); transform: rotate(180deg); }
+.more-places[aria-expanded="true"] svg { transform: none; }
+.alts.more { margin-top: 4px; }
 .alt {
   display: grid;
   grid-template-columns: 18px minmax(0, 1fr) auto;
@@ -570,8 +573,8 @@ body[data-view="data"] .legend { display: none; } /* the page names its sources 
   transition: background var(--t-hover);
 }
 .alt:hover, .alt.hot { background: var(--hover); }
-.alt .a-l1 { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
-.alt .a-name { flex: 0 1 auto; font-size: var(--fs-md); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.alt .a-l1 { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; min-width: 0; }
+.alt .a-name { flex: 0 1 auto; max-width: 100%; font-size: var(--fs-md); font-weight: 500; line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; } /* a long name wraps to a second line, never «3D Den…» */
 .alt .kd { flex: 0 6 auto; min-width: 0; font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .alt .a-meta { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; min-width: 0; font-size: var(--fs-sm); color: var(--ink-2); }
 .alt .a-meta .st { font-size: var(--fs-sm); }
@@ -716,7 +719,9 @@ dialog.sheet-dialog {
 }
 dialog.sheet-dialog::backdrop { background: rgba(16, 24, 40, 0.3); }
 .dialog-inner { display: grid; gap: 12px; padding: 14px 16px 18px; }
-.dialog-inner > header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+/* a long dialog scrolls under its header: the way out stays in reach (the cross used to scroll away with the top, and
+   a dialog left open is modal: the page behind it, the composer included, takes no input) */
+.dialog-inner > header { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: -14px -16px 0; padding: 14px 16px 6px; background: var(--surface); }
 .dialog-inner h2 { font-size: var(--fs-head); }
 
 /* ---- memory (memory-v2): the «Память» panel and its form «Изменить вручную» ---------------------------- */
@@ -764,6 +769,14 @@ details.mf-box[open] > summary { box-shadow: inset 0 -1px 0 var(--hair); }
 /* the one quiet line of instant saving: its place is reserved, so nothing jumps when «Сохранено» shows */
 .mf-status { position: sticky; top: 0; z-index: 2; min-height: 24px; margin: -4px 0 0; padding: 4px 0; background: var(--surface); text-align: right; font-size: var(--fs-sm); line-height: 16px; color: var(--open); }
 .mf-status[data-state="failed"] { color: var(--closed); }
+/* «Мой вайб» (vibe-form.js): the sentence why, the reading of the free text; the line of evidence of a card and a row */
+.vb-why { font-size: var(--fs-body); font-weight: 500; color: var(--ink); }
+.vb-text { min-height: 88px; }
+.vb-read { font-size: var(--fs-sm); color: var(--ink-2); }
+.vb-read:empty, .vb-go[hidden] { display: none; }
+.vb-go { min-height: 44px; justify-self: start; padding: 0 16px; }
+.c-vibe { font-size: var(--fs-sm); color: var(--ink-2); }
+.alt .a-vibe { grid-column: 2; min-width: 0; font-size: var(--fs-xs); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 760px) {
   .mf-about { font-size: 16px; } /* 16px: a phone keyboard does not zoom the page in */
 }
@@ -844,7 +857,7 @@ ul.acts { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: var
 .bar .track { height: 8px; border-radius: 4px; background: rgba(16, 24, 40, 0.07); overflow: hidden; }
 .bar .fill { height: 100%; min-width: 2px; border-radius: 4px; background: var(--accent); }
 .bar .v { text-align: right; font: 500 var(--fs-sec) var(--mono); font-variant-numeric: tabular-nums; color: var(--ink-2); }
-.dd-hon { margin: 0; padding: 12px 16px; border-radius: var(--r-card); background: var(--accent-tint); box-shadow: inset 0 0 0 1px var(--accent-soft); font-size: var(--fs-reply); line-height: 1.55; }
+.dd-hon, .dd-speed { margin: 0; padding: 12px 16px; border-radius: var(--r-card); background: var(--accent-tint); box-shadow: inset 0 0 0 1px var(--accent-soft); font-size: var(--fs-reply); line-height: 1.55; }
 .dd-attr { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; font-size: var(--fs-sec); line-height: 1.5; color: var(--ink-2); }
 .dd-attr li { padding-left: 12px; box-shadow: inset 2px 0 0 var(--hair-2); overflow-wrap: anywhere; }
 .dd-inline { display: inline; color: var(--ink); }
@@ -876,7 +889,7 @@ ul.queue li { display: grid; gap: 2px; }
   .chips.phone-only { display: flex; }
 
   /* the top bar: pills over the map (the brand, or what was asked; the languages; the menu) */
-  .plate { z-index: 4; left: 12px; right: 12px; top: var(--bar-top); width: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; pointer-events: none; } /* under the sheet: a full sheet covers the bar */
+  .plate { z-index: 4; left: 12px; right: 12px; top: var(--bar-top); width: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; pointer-events: none; } /* a full sheet stops under the bar (sheet-fit.js fullHeight): the menu, the language and the place stay in reach */
   .plate.menu-on { z-index: 12; }
   header.top { height: var(--bar-h); gap: 8px; padding: 0; }
   .brand, .qpill, .menu-open {
@@ -917,6 +930,10 @@ ul.queue li { display: grid; gap: 2px; }
   .menu:not([hidden]) { display: flex !important; }
   .menu a, .menu button { display: flex; align-items: center; min-height: var(--tap); padding: 0 12px; border-radius: var(--r-md); color: var(--ink); text-decoration: none; text-align: left; font-size: var(--fs-md); }
   .menu a:hover, .menu button:hover { background: var(--hover); }
+  .menu .menu-sat { gap: 8px; border-top: 1px solid var(--hair); border-radius: 0 0 var(--r-md) var(--r-md); } /* the map's own switch below the pages */
+  .menu .menu-sat svg { width: 16px; height: 16px; flex: none; }
+  .menu .menu-sat .sat-state { margin-left: auto; color: var(--accent); }
+  .menu .menu-sat[aria-pressed='true'] { font-weight: 600; }
   .menu a[aria-current="page"] { font-weight: 600; }
   .plate-body { display: none; }
   .map-note { top: calc(var(--bar-top) + var(--bar-h) + 8px); left: 12px; right: 12px; max-width: none; transform: none; white-space: normal; }
@@ -941,6 +958,7 @@ ul.queue li { display: grid; gap: 2px; }
     transition: bottom var(--t-sheet) var(--ease), opacity 150ms;
   }
   .map-attr.off { opacity: 0; }
+  .map-attr.sat { white-space: normal; text-overflow: clip; } /* the imagery's credit is longer: it wraps */
 
   /* the sheet: pinned to the bottom (or the keyboard), its height is set by sheet.js */
   .panel {
@@ -1007,7 +1025,6 @@ ul.queue li { display: grid; gap: 2px; }
   .hello { gap: 8px; padding: 4px 0 0; }
   .hello .chips { gap: 8px; margin-top: 4px; }
   .hello .chip { max-width: 100%; }
-  .facts { display: none; }
   .thread { gap: 12px; }
   .ctxl { display: none; }
   #thread > li:last-child:not(.pending) > .u { display: none; } /* the top bar says what was asked; while the answer is made the bubble stays */

@@ -17,6 +17,10 @@ Environment=WALKS_REQUEST_LOG=/var/lib/anyq/requests.jsonl
 Environment=WALKS_PROFILE_DIR=/var/lib/anyq/profiles
 Environment=WALKS_LLM_CACHE=/var/lib/anyq/llm_cache.json
 Environment=WALKS_WALK_CACHE=off
+# The satellite layer's tile cache (app/web/tiles.py); deploy/vps/remote.sh seeds it as anyq.
+Environment=WALKS_TILE_CACHE=/var/lib/anyq/tiles
+# the Esri imagery key (one line, root:anyq 0640); a missing file simply means no HD layer
+Environment=ARCGIS_API_KEY_FILE=/etc/anyq/arcgis.key
 # Pedestrian legs that are not in data/walk_cache.json come from the own Valhalla container (deploy/vps/valhalla),
 # never from the public FOSSGIS server. Down: the leg is the straight line, retried after a minute.
 Environment=WALKS_VALHALLA_URL=http://127.0.0.1:8002/route

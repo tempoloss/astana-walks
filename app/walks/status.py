@@ -19,7 +19,7 @@ UNTIL_NEAR = timedelta(
 )  # «до 22:00» only when the change is this near; farther it is plain «открыто»
 NEXT_DAY_AFTER = timedelta(
     hours=12
-)  # a close after midnight this far ahead is said with its day («до 05:00 следующего дня» at 13:00)
+)  # a close after midnight this far ahead is said as the morning («до 05:00 утра» at 13:00)
 TEXT_KEY = {
     "247": "h_open_247",
     "until": "h_open_until",
@@ -50,6 +50,19 @@ def when_text(moment: datetime, local: datetime, lang: str) -> str:
     return ""
 
 
+def close_text(nxt: datetime, local: datetime, lang: str) -> str:
+    """When an open place closes, as a person says it: «полуночи» for 00:00, «05:00 утра» for a close after midnight
+    this far ahead (NEXT_DAY_AFTER: at 13:00 «до 05:00» alone reads as today's morning), «22:00» otherwise."""
+    if (nxt.hour, nxt.minute) == (0, 0):
+        return s("h_midnight", lang)
+    if nxt.date() > local.date() and nxt - local > NEXT_DAY_AFTER:
+        if nxt.hour >= 12:
+            return s("h_next_day", lang, t=f"{nxt:%H:%M}")
+        hour = f"{nxt.hour}" + (f":{nxt.minute:02d}" if nxt.minute else "")
+        return s("h_next_morning", lang, t=hour if lang == "en" else f"{nxt:%H:%M}")
+    return f"{nxt:%H:%M}"
+
+
 def hours_facts(poi: POI, state: str, at: datetime, lang: str) -> tuple[str, str]:
     """(what the hours say at `at`, its time phrase): 247 / until «22:00» / open / opens «в 10:00» / closed / unknown.
     `state` only says whether the record's hours are known; the state itself is read again at `at`, so the state and
@@ -65,10 +78,7 @@ def hours_facts(poi: POI, state: str, at: datetime, lang: str) -> tuple[str, str
         if is_24_7(poi.opening_hours):
             return "247", ""
         if nxt is not None and nxt - local < UNTIL_NEAR:
-            until = f"{nxt:%H:%M}"
-            if nxt.date() > local.date() and nxt - local > NEXT_DAY_AFTER:
-                until = s("h_next_day", lang, t=until)  # an overnight close belongs to the next day
-            return "until", until
+            return "until", close_text(nxt, local, lang)
         return "open", ""
     when = when_text(nxt, local, lang) if nxt is not None else ""
     return ("opens", when) if when else ("closed", "")

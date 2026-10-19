@@ -25,7 +25,7 @@ LOG = Path(__file__).with_name("backfill_log.jsonl")
 COLLECTED_AT = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 UA = {"User-Agent": "astana-walks-recon/1.0", "Accept": "*/*"}
 AREA = 'area["boundary"="administrative"]["name"="Астана"]'
-LAYER_KEYS = ('pharmacy', 'supermarket', 'toilets', 'atm', 'hotel')
+LAYER_KEYS = ('pharmacy', 'supermarket', 'toilets', 'atm', 'hotel', 'fountain', 'pawnbroker', 'dentist', 'clinic', 'post_office')
 SELECTORS = [s for s in EXTRA_SELECTORS if any(k in s for k in LAYER_KEYS)]
 
 
@@ -55,6 +55,7 @@ def main() -> None:
     for r in base_recs:
         by_name.setdefault(r["name"].casefold(), []).append(r)
     added, skipped_dup, unnamed, skipped_near = [], 0, 0, 0
+    per_sel: dict[str, tuple] = {}  # per-selector deltas: the aggregate 237 hid the fountains (review fix)
     # Lodging: an existing record that Overture files as a hotel-family place AND whose name says hotel (the one
     # «hotel_bar» «Айша Биби Отель», listed as a bar) is a hotel: reclassified, not duplicated, so the count in the
     # base and the count the answers can find agree.
@@ -68,6 +69,7 @@ def main() -> None:
         els = fetch(sel)
         LOG.open("a", encoding="utf-8").write(json.dumps({"sel": sel, "elements": len(els)}) + "\n")
         print(sel, "->", len(els), "elements", flush=True)
+        mark = (len(added), skipped_dup, unnamed, skipped_near)
         for el in els:
             try:
                 rec = normalize(el, COLLECTED_AT, extra=True)
@@ -90,6 +92,9 @@ def main() -> None:
             existing.add(rec["id"])
             by_name.setdefault(rec["name"].casefold(), []).append(rec)
             added.append(rec)
+        a_, d_, u_, n_ = mark
+        per_sel[sel] = dict(elements=len(els), d_added=len(added) - a_, d_dup=skipped_dup - d_,
+                            d_dropped=unnamed - u_, d_same_name_near=skipped_near - n_)
     print(f"added={len(added)} dup={skipped_dup} dropped(unnamed/geo-invalid)={unnamed} same-name-near={skipped_near}")
     for o in reclassified.values():
         print("reclassify ->lodging:", o["id"], o["name"], o["category"], o["tags"])
@@ -97,6 +102,9 @@ def main() -> None:
     print("categories:", Counter(r["category"] for r in added))
     print("with hours:", sum(1 for r in added if r.get("opening_hours")))
     LOG.open("a", encoding="utf-8").write(json.dumps({"added": len(added), "dup": skipped_dup, "dropped": unnamed}) + "\n")
+    for sel, d in per_sel.items():
+        LOG.open("a", encoding="utf-8").write(json.dumps({"sel_delta": sel, **d}) + "\n")
+        print("delta", sel, d, flush=True)
     if dry or not (added or reclassified):
         Path(__file__).with_name("backfill_preview.json").write_text(json.dumps(added[:80], ensure_ascii=False, indent=1), encoding="utf-8")
         print("DRY: preview saved, base untouched")

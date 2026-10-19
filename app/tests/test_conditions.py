@@ -12,7 +12,7 @@ from conftest import MET_RECORDED, MetServer, met_doc
 from starlette.testclient import TestClient
 
 from tests.test_weather_obs import _fetch, _routes
-from walks import conditions, metar, metno, sun
+from walks import conditions, kazhydromet, metar, metno, sun
 from walks import weather as wx
 from walks.hours import TZ
 from walks.models import WeatherWarning
@@ -526,16 +526,16 @@ def test_the_scenario_word_fog_is_a_storm_notice(client, monkeypatch):
     ],
 )
 def test_the_notice_phenomenon_and_period_are_found_in_its_words(text, phenomena, periods):
-    assert conditions.classify_notice(text) == (phenomena, periods)
+    assert kazhydromet.classify_notice(text) == (phenomena, periods)
 
 
 def test_every_phenomenon_and_period_code_has_its_words_in_three_languages():
     """The card writes the title from the codes: a code without a string would show its key to a visitor."""
     from i18n import UI
 
-    for code, _ in conditions.PHENOMENA:
+    for code, _ in kazhydromet.PHENOMENA:
         assert f"fx_ph_{code}" in UI, code
-    for code, _ in conditions.PERIODS:
+    for code, _ in kazhydromet.PERIODS:
         assert f"fx_per_{code}" in UI, code
     for key in ("fx_notice_title", "fx_notice_fmt", "fx_notice_text", "fx_and"):
         assert key in UI

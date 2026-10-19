@@ -11,7 +11,7 @@ from datetime import datetime
 from .attributes import has_socket, local_food_signal
 from .bookmarks import named_bookmark
 from .dialog_lead import honest_gaps
-from .dialog_place import _by, dist_text, price_source, today_intervals
+from .dialog_place import _by, card_walk_text, dist_text, price_source, today_intervals
 from .dialog_place import answer as place_answer
 from .dialog_questions import place_question
 from .dialog_strings import s
@@ -21,18 +21,20 @@ from .dialog_when import AskedTime
 from .hours import is_24_7, poi_hours, to_local_naive
 from .i18n_cuisine import cuisine_label
 from .i18n_gov import weekday_on
+from .intent import parse_rules
 from .kids import is_kids_place
+from .lexicon import match
 from .models import POI, Bookmark, Recommendation, Result
 from .radius import haversine_m, travel_minutes
 from .status import hours_facts, next_change
 from .walking import WalkingRouter
+from .wishes import FAR_WALK_MIN, of_subkind, subkind_missing
 
 FOOD_KINDS = frozenset({"restaurant", "cafe", "fast_food", "bar_nightlife"})
 LOCAL_CUISINES = frozenset(
     {"regional", "local", "central_asian"}
 )  # local, and not necessarily Kazakh
 MAX_DESCRIPTION_CHARS = 180
-FAR_WALK_MIN = 25
 STREET = "valhalla"
 
 
@@ -332,6 +334,49 @@ def _toilet(place: Place, poi: POI, lang: str) -> PlaceAnswer:
     return _fact(place, "toilet", s("a_unknown", lang, name=place.name, what=what), known=False)
 
 
+_CURRENCIES = ("USD", "EUR", "RUB", "CNY", "KZT", "GBP")
+
+
+def _atm(place: Place, poi: POI, lang: str) -> PlaceAnswer:
+    """A cash machine: the record IS one (`amenity=atm`) or says it has one (`atm=yes`, OpenStreetMap), else «в данных
+    этого нет»; never a guess from «bank»."""
+    tags = poi.tag_dict()
+    src = Source(label=s("src_osm", lang))
+    if tags.get("amenity") == "atm" or tags.get("atm") == "yes":
+        text = s("a_atm_yes", lang, name=place.name, by=s("by_osm", lang))
+        return _fact(place, "atm", text, source=src)
+    return _fact(place, "atm", s("a_atm_unknown", lang, name=place.name), known=False)
+
+
+def _exchange(place: Place, poi: POI, lang: str) -> PlaceAnswer:
+    """Changing currency: a `bureau_de_change`, a `currency:USD=yes` tag, an `exchange` tag; else the honest «в данных
+    этого нет — уточните в отделении»."""
+    tags = poi.tag_dict()
+    src, by, name = Source(label=s("src_osm", lang)), s("by_osm", lang), place.name
+    cur = [c for c in _CURRENCIES if tags.get(f"currency:{c}") == "yes"]
+    if cur:
+        text = s("a_exchange_currency", lang, name=name, cur=", ".join(cur), by=by)
+        return _fact(place, "exchange", text, source=src)
+    if tags.get("amenity") == "bureau_de_change" or tags.get("exchange") == "yes":
+        return _fact(place, "exchange", s("a_exchange_yes", lang, name=name, by=by), source=src)
+    return _fact(place, "exchange", s("a_exchange_unknown", lang, name=name), known=False)
+
+
+def _round_clock(place: Place, poi: POI, lang: str, at: datetime) -> PlaceAnswer:
+    """«Круглосуточно?»: yes when the record's schedule is 24/7, no with the day's interval when it is another
+    schedule, else the plain hours answer (unknown stays unknown)."""
+    h = place.hours
+    if h.state == "unknown":
+        return place_answer("hours", place, poi, lang, at)
+    src, name = _by(poi, lang), place.name
+    if is_24_7(poi.opening_hours):
+        return _fact(place, "hours", s("a_round_yes", lang, name=name, src=src), source=h.source)
+    iv = today_intervals(poi, to_local_naive(at))
+    if not iv:
+        return place_answer("hours", place, poi, lang, at)
+    return _fact(place, "hours", s("a_round_no", lang, name=name, iv=iv, src=src), source=h.source)
+
+
 def answer(
     topic: str,
     place: Place,
@@ -348,6 +393,12 @@ def answer(
         return _entry(place, poi, lang)
     if topic in ("menu", "menu_kids", "menu_kazakh"):
         return _menu(topic, place, poi, lang, tail=last)
+    if topic == "atm":
+        return _atm(place, poi, lang)
+    if topic == "exchange":
+        return _exchange(place, poi, lang)
+    if topic == "round_clock":
+        return _round_clock(place, poi, lang, at)
     if topic == "closing":
         return _closing(place, poi, lang, at)
     if topic == "toilet":
@@ -365,23 +416,56 @@ def answer(
     return place_answer(topic, place, poi, lang, at)  # type: ignore[arg-type]
 
 
-# ------------------------------------------------------------------ what a kids' request lacks
+# ------------------------------------------------------------------ what a request lacks
 
 
-def all_gaps(res: Result, recs: list[Recommendation], lang: str, *, now: bool) -> tuple[str, str]:
-    """What the answer lacks, (said before it, said after it) as `dialog_lead.honest_gaps` gives them, plus, for a
-    request with a child that wanted a playground, that the data holds no play place near when none of the places shown
-    is one, said before: a café or a gallery in the cold is never passed off as «где поиграть»."""
+def subkind_gap(res: Result, recs: list[Recommendation], pois: list[POI], lang: str) -> str:
+    """«Стоматологий рядом в данных нет — ближайшая: «EliteStom», пешком далеко: 1,6 км — лучше на транспорте.»: the
+    kind inside a category the person asked for (a dentist among the clinics, a children's clinic, a cash machine
+    among the banks) that the first card is not. The nearest one is a card of its own (walks.chains.far_subkind) and
+    is said by the walk its card says: from FAR_WALK_MIN on foot a distance and the transport, never the minutes. One
+    sentence: the first card has its own (walks.dialog_lead.errand_pick). '' when the first card is one."""
+    if not recs or not (sub := subkind_missing(res.intent.intent, recs[0].poi)):
+        return ""
+    if card := next((r for r in recs if of_subkind(r.poi, sub)), None):
+        walk = card_walk_text(card, res.intent.intent.mode, lang)
+        return s(f"sub_far_{sub}", lang, name=card.poi.name_for(lang), walk=walk)
+    far = [(haversine_m(res.lat, res.lon, p.lat, p.lon), p) for p in pois if of_subkind(p, sub)]
+    if not far:
+        return s(f"sub_none_{sub}", lang)
+    meters, near = min(
+        far, key=lambda x: x[0]
+    )  # not a card (a follow-up's cards): said by its distance
+    walk = s("walk_far", lang, d=dist_text(round(meters), lang))
+    return s(f"sub_far_{sub}", lang, name=near.name_for(lang), walk=walk)
+
+
+def all_gaps(
+    res: Result, recs: list[Recommendation], pois: list[POI], lang: str, *, now: bool
+) -> tuple[str, str]:
+    """What the answer lacks, (said before it, said after it) as `dialog_lead.honest_gaps` gives them, plus a sub-kind
+    no card is (`subkind_gap`), and, when the person's own words asked for a place for a child to play (not a child
+    from the memory or the model, not «балалармен» next to a coffee), that the data holds no play place near when none
+    of the places shown is one, said before: a café or a gallery is never passed off as «где поиграть». Asked indoors
+    («в помещении»), the line is about indoor play places: an outdoor playground nearby is no «нет площадок»."""
     before, after = honest_gaps(res, recs, lang, now=now)
-    intent = res.intent.intent
+    before = " ".join(x for x in (before, subkind_gap(res, recs, pois, lang)) if x)
+    asked = parse_rules(res.query).intent  # the words' own reading
+    indoor = match(res.query).has("shelter_from_weather")  # «где поиграть детям в помещении»
+    play = [
+        r
+        for r in recs
+        if is_kids_place(r.poi) and not (indoor and r.poi.category == "kids_playground")
+    ]
     if (
-        intent.with_kids
-        and "kids_playground" in intent.categories
-        and not any(is_kids_place(r.poi) for r in recs)
+        asked.with_kids
+        and "kids_playground" in asked.categories
+        and (not asked.wished or "kids_playground" in asked.wished)
+        and not play  # indoors: an outdoor playground shown is the alternative, not the indoor place asked
         and recs
         and not any(
             s(k, lang) in before for k in ("kids_none_entertainment", "kids_none_museum_gallery")
         )
     ):
-        before = f"{before} {s('kids_none_place', lang)}".strip()
+        before = f"{before} {s('kids_none_indoor' if indoor else 'kids_none_place', lang)}".strip()
     return before, after

@@ -1,0 +1,1241 @@
+[
+ {
+  "set": "main",
+  "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с EXPO, прогулка 30–60 мин",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с Mega Silk Way, прогулка 30–60 мин",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с Байтерек, прогулка 30–60 мин",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с Хан Шатыр, прогулка 30–60 мин",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с LRT Аэропорт, прогулка 30–60 мин",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Рядом с домом, прогулка 30–60 мин",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Тихое место с кофе и розеткой",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Необычная ночная активность",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Мне нужно доступное место для коляски: кофе и посидеть, недалеко",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Турист, 2 часа до вылета",
+  "when": "2026-10-20T19:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "С ребёнком: площадка или интерактивный музей",
+  "when": "2026-10-20T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Где прогуляться можно щас?",
+  "when": "2026-10-20T21:42:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "Я именно погулять хочу",
+  "when": "2026-10-20T21:42:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "main",
+  "query": "хочу погулять",
+  "when": "2026-10-20T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "Хочу поесть бешбармак",
+  "when": "2026-10-20T13:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "У меня час до поезда, где быстро перекусить рядом",
+  "when": "2026-10-23T17:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "куда пойти с девушкой вечером",
+  "when": "2026-10-24T19:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "гулять с коляской и без алкоголя",
+  "when": "2026-10-18T11:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "где переждать дождь",
+  "when": "2026-10-20T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "я первый раз в Астане, хочу погулять часа два, что посмотреть",
+  "when": "2026-10-24T12:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "where can I work with a laptop",
+  "when": "2026-10-26T15:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "баламен қайда баруға болады",
+  "when": "2026-10-21T10:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "кде паесть дешево и быстра",
+  "when": "2026-10-22T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "хочу выпить и потанцевать",
+  "when": "2026-10-23T22:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "где погреться и выпить горячего чая",
+  "when": "2026-12-16T14:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "хочу пройтись по свежему воздуху",
+  "when": "2026-10-18T15:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "куда пойти ночью, я только приехал и голодный",
+  "when": "2026-10-20T23:30:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "выгулять собаку",
+  "when": "2026-10-21T08:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "где можно поиграть в футбол или побегать",
+  "when": "2026-10-24T16:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "где красиво смотреть на закат",
+  "when": "2026-10-20T16:45:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "holdout",
+  "query": "Где здесь можно кофе выпить",
+  "when": "2026-10-20T12:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "quiet place to read, open late",
+  "when": "2026-10-20T20:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout",
+  "query": "Музей немесе көрмеге барғым келеді",
+  "when": "2026-10-18T11:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "У меня час до пар, куда можно сходить рядом с мечетью, прогуляться",
+  "when": "2026-10-20T08:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "halal dinner for 4 people nearby, preferably not fast food",
+  "when": "2026-10-24T19:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "балалармен демалыс күні неде өткіземіз, жақын жерде",
+  "when": "2026-10-25T13:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Мороз −22, где погреться и поужинать рядом, только не далеко идти",
+  "when": "2026-10-22T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Пирамида маңында екі сағатта не көруге болады, жаяу жүріп",
+  "when": "2026-10-20T13:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "гуляю с коляской, нужно без лестниц и с пандусами, куда пойти рядом",
+  "when": "2026-10-21T15:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Жаңбыр жауып тұр, Ұлттық музей маңында қайда бірер сағат отырып күтемін?",
+  "when": "2026-10-23T14:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Date tonight but no bars please, somewhere calm and pretty near the National Museum",
+  "when": "2026-10-23T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "В Астане дикая ветрища, где спрятаться от ветра и пообедать недалеко от бульвара",
+  "when": "2026-10-20T13:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Ауа лас болып тұр, ноутбукпен үш сағат жұмыс істеуге қолайлы кафе керек, жақын жерде",
+  "when": "2026-10-26T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "кде паесть дешево и быстра рядом с Астана Молл",
+  "when": "2026-10-20T13:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "что вообще открыто в 11 вечера воскресенья рядом, поесть или погулять",
+  "when": "2026-10-25T23:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Пойызға дейін бір сағат уақытым бар, вокзал маңында тез тамақтанатын жер қайда?",
+  "when": "2026-10-22T13:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Рано утром на морозе жду поезд, где можно погреться с кофе недалеко от вокзала",
+  "when": "2026-10-21T08:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Куда сходить с ребёнком в субботу днём, чтобы и погулять, и поесть рядом",
+  "when": "2026-10-24T11:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Need a quiet place to work on my laptop for about three hours tonight near Momyshuly park, ideally with a socket",
+  "when": "2026-10-21T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Жұлдызаралық уақытта арзан әрі дәмді тамақтанатын жер қайда, университет маңында?",
+  "when": "2026-10-20T13:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Воздух ужасный, куда пойти вечером в помещении рядом, не сидеть в общаге",
+  "when": "2026-10-26T19:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Живём в частном секторе на Коктале, куда выбраться с семьёй в субботу, не очень далеко",
+  "when": "2026-10-24T10:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Бесінбі күні кешке жақсы кешкі ас ішейтін жер керек, Көктал маңында тұрамын",
+  "when": "2026-10-23T19:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "Сегодня праздник, выходной. Куда сходить днём недалеко, погулять и поесть",
+  "when": "2026-10-28T13:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "It is minus 22 outside and my kid is bored, where can we go somewhere warm and indoor nearby?",
+  "when": "2026-10-25T15:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "I am staying near the botanical garden, where can I take a nice walk and grab breakfast for cheap?",
+  "when": "2026-10-24T10:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "holdout2",
+  "query": "чё открито в 11 рядом с Азией парком, жрать хоцца ченить",
+  "when": "2026-10-22T23:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "abstain",
+  "query": "Хочу в музей",
+  "when": "2026-10-21T03:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "abstain",
+  "query": "Тихое кафе с розеткой, поработать",
+  "when": "2026-10-21T23:30:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "abstain",
+  "query": "Хочу в музей",
+  "when": "2026-10-21T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "abstain",
+  "query": "Бассейн рядом",
+  "when": "2026-10-21T19:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "abstain",
+  "query": "Кофе и розетка, поработать",
+  "when": "2026-10-21T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "abstain",
+  "query": "Хочу в музей с коляской",
+  "when": "2026-10-21T15:00:00",
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "abstain",
+  "query": "Хочу в музей",
+  "when": "2026-10-21T14:00:00",
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "abstain",
+  "query": "Прогулка с ребёнком, площадка",
+  "when": "2026-10-21T14:00:00",
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "хочу поесть",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "кофе рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "погулять хочу просто",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "аптека рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "что посмотреть",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "куда сходить с ребёнком",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "баламен қайда баруға болады",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "what should i see",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "где поужинать недорого",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "хочу в парк",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "музей",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "банкомат рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "продуктовый магазин рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "куда пойти вечером с друзьями",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "categories",
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "кофе с wifi поработать",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "кофе ішкім келеді",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "a quiet place to read",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "coffee nearby",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "где погулять с собакой",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "где поужинать",
+  "when": null,
+  "measured": true,
+  "same": false,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "ресторан рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "бар рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "кинотеатр рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "торговый центр",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "супермаркет рядом",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": [
+   "free_text_keywords"
+  ]
+ },
+ {
+  "set": "typical",
+  "query": "аптека и банкомат",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "where is a pharmacy",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "museum nearby",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "дәріхана қайда",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "жақын жерде кафе",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ },
+ {
+  "set": "typical",
+  "query": "мұражай",
+  "when": null,
+  "measured": true,
+  "same": true,
+  "changed": []
+ }
+]

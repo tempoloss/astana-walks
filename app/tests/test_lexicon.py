@@ -10,6 +10,7 @@ import pytest
 
 from walks import generate as gen_mod
 from walks import llm
+from walks.dialog_nlu import named_categories
 from walks.followup import parse_follow_up
 from walks.intent import detect_language, parse_rules, parse_time_budget
 from walks.lexicon import match
@@ -368,7 +369,7 @@ def asked(monkeypatch):
     """generate_json with a scripted model; `calls` counts the requests that reached it."""
     calls: list[str] = []
     monkeypatch.setattr(llm, "_usable", lambda spec: True)
-    monkeypatch.setattr(llm, "_skip_reason", lambda spec: (SimpleNamespace(label=spec), None))
+    monkeypatch.setattr(llm, "_skip_reason", lambda spec, role: (SimpleNamespace(label=spec), None))
 
     def ask(link, prompt, system, schema, timeout_s):
         calls.append(link.label)
@@ -798,3 +799,53 @@ def test_a_wheelchair_is_step_free_without_a_child(text):
 def test_a_stroller_does_not_make_a_long_visit():
     assert parse_rules("с коляской").intent.time_budget_min == 60
     assert parse_rules("с ребёнком").intent.time_budget_min == 120
+
+
+@pytest.mark.parametrize(
+    ("message", "category"),
+    [
+        ("мемориал рядом", "attraction_landmark"),
+        ("вечный огонь", "attraction_landmark"),
+        ("пантеон где", "attraction_landmark"),
+        ("арка", "attraction_landmark"),
+        ("фонтан рядом", "attraction_landmark"),
+        ("аквариум где", "entertainment"),
+        ("перевести деньги", "money"),
+        ("переведи деньги на карту", "money"),
+    ],
+)
+def test_generic_words_of_shipped_layers_are_recognized(message, category):
+    assert category in named_categories(message)
+
+
+@pytest.mark.parametrize(
+    "message",
+    ["ищу аркан", "торговый центр аркада", "переведи текст", "документ переведён", "вечернее кафе"],
+)
+def test_the_new_stems_do_not_swallow_neighbours(message):
+    cats = named_categories(message)
+    assert cats == [] or ("attraction_landmark" not in cats and "money" not in cats)
+
+
+@pytest.mark.parametrize(
+    "message", ["где купить продукты", "продукты рядом", "нужны продукты", "купить продукты"]
+)
+def test_food_shopping_words_reach_the_grocery_layer(message):
+    assert "grocery" in named_categories(message)
+
+
+@pytest.mark.parametrize("message", ["магазин одежды", "купить подарок", "сувениры рядом"])
+def test_buying_a_non_food_thing_stays_a_mall(message):
+    assert named_categories(message) == ["mall"]
+
+
+@pytest.mark.parametrize("message", ["кондитерская рядом", "торт купить", "детский городок где"])
+def test_the_cheap_supply_backed_words_land(message):
+    c = named_categories(message)
+    assert c
+    assert "cafe" in c or "kids_playground" in c
+
+
+@pytest.mark.parametrize("message", ["магазин у дома", "у дома продукты"])
+def test_the_corner_store_compound_is_grocery_not_a_mall(message):
+    assert "grocery" in named_categories(message)

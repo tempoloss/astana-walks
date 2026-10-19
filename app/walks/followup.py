@@ -11,7 +11,6 @@ library; the CLI keeps it in a file under app/.local/ on request (see `walks.cli
 
 from __future__ import annotations
 
-import math
 import re
 from collections.abc import Sequence
 from typing import Literal
@@ -32,7 +31,7 @@ from .llm import (
 )
 from .models import POI, Constraints, Conversation, Intent, LLMStep, Result
 from .names import same_brand
-from .radius import STROLL_CATEGORIES, haversine_m
+from .radius import STROLL_CATEGORIES
 from .variety import priced_kinds
 
 MAX_WORDS = 8  # a longer message is a new request, whatever it contains
@@ -322,14 +321,17 @@ def apply_follow_up(
     if fu.closer:
         if (
             conv.farthest_m
-        ):  # closer than what the last answer offered; its nearest place stays a candidate, so that
-            # «ближе нет» shows it first, never a farther one under «ближайшее»
-            shown = [p for p in pois or () if p.id in conv.shown_ids]
-            near = min((haversine_m(conv.lat, conv.lon, p.lat, p.lon) for p in shown), default=0.0)
-            cap = max(MIN_CLOSER_M, round(CLOSER_SHARE * conv.farthest_m), math.ceil(near))
+        ):  # closer than what the last answer offered. The cap is a straight line and never
+            # shorter than the walk to its nearest card: that card and every place nearer on foot stay candidates,
+            # so the card order and «ближе нет» compare the walking metres the cards show
+            cap = max(MIN_CLOSER_M, round(CLOSER_SHARE * conv.farthest_m), conv.nearest_m)
             cons["radius_cap_m"] = min(cap, constraints.radius_cap_m or cap)
         else:
             cons["radius_factor"] = round(constraints.radius_factor * CLOSER_FACTOR, 3)
+        if (
+            not fu.more
+        ):  # «поближе» after «другие места»: the nearest of all, a place shown before included
+            cons["exclude_ids"] = []
     if fu.more:
         shown = _brand_ids(conv.shown_ids, pois)
         cons["exclude_ids"] = list(dict.fromkeys([*constraints.exclude_ids, *shown]))
@@ -387,6 +389,7 @@ def conversation_after(prev: Conversation | None, res: Result) -> Conversation:
         farthest_m=max(
             (c.distance_m for c in res.retrieval.candidates if c.poi.id in now), default=0
         ),
+        nearest_m=min((r.distance_m for r in res.recs), default=0),  # the walk the card shows
         lat=res.lat,
         lon=res.lon,
         turns=prev.turns + 1 if carried and prev else 1,

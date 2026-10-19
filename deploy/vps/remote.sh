@@ -17,6 +17,11 @@ runuser -u anyq -- env HOME="$state" UV_CACHE_DIR="$state/uv-cache" UV_PYTHON_DO
 # the afisha collector (collect/) has its own, small environment at the release root
 runuser -u anyq -- env HOME="$state" UV_CACHE_DIR="$state/uv-cache" UV_PYTHON_DOWNLOADS=never \
   bash -c "cd '$rel' && uv sync --frozen --no-dev --python 3.12"
+# the satellite layer's tile cache (app/web/tiles.py): filled once here, as the service user, so a down upstream never
+# leaves the layer empty; a repeated run asks only for missing tiles
+install -d -o anyq -g anyq -m 0750 "$state/tiles"
+runuser -u anyq -- env HOME="$state" WALKS_TILE_CACHE="$state/tiles" \
+  bash -c "cd '$rel/app' && .venv/bin/python scripts/seed_tiles.py" || echo "tile seed incomplete: the layer fills on demand"
 
 install -m 0644 "$rel/deploy/vps/anyq.service" /etc/systemd/system/anyq.service
 install -m 0644 "$rel/deploy/vps/cloudflared-anyq.service" /etc/systemd/system/cloudflared-anyq.service

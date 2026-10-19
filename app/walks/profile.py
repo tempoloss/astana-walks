@@ -3,7 +3,8 @@
 Off by default (the UI toggle «запоминать мои предпочтения»). A profile is one JSON file,
 app/.local/profiles/<random-uuid>.json (WALKS_PROFILE_DIR redirects it): flags {with_kids + age band, mobility,
 quiet, budget, halal, no_alcohol, language, walk_pace, cold_tolerance}, the kinds of place to leave out (`avoid`),
-the user's own free text for the AI (`about`), the places the user marked visited ([poi_id, day]) and how many
+the user's own free text for the AI (`about`), the vibe (a weight per facet, walks.vibe, and the person's own words
+about it), the places the user marked visited ([poi_id, day]) and how many
 times each category was marked liked. The uuid is random, kept in the session (and optionally in the `?u=` query
 parameter for a demo) and means nothing outside this machine.
 
@@ -11,8 +12,9 @@ Write path: after an answer the UI offers chips «Запомнить: с реб�
 saved only on a click. Read path (`merge_into_intent`): flags are merged into the Intent of a NEW request and the
 request itself wins; visited places are ranked lower; the answer says «вы отмечали, что …».
 
-What leaves this module towards a model: the flags (`preferences_payload`) and the user's own text (`about`, via
-`personal_view`; the UI says so next to the field). Never the visited list, the liked counts or the avoided kinds.
+What leaves this module towards a model: the flags and the vibe's facets (`preferences_payload`) and the user's own
+text (`about`, via `personal_view`; the UI says so next to the field). Never the visited list, the liked counts or the
+avoided kinds; the vibe's own words go to a model only to be read into facets (walks.vibe_judge), on save.
 A request that used a profile is not written to the request log (Result.private) and nothing here ever reaches
 data/city_feedback.json.
 """
@@ -32,6 +34,8 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 from .i18n import LANG_SELF, Entry, age_label, category_name, pick, t
 from .intent import kinds_named_alone
 from .models import Category, Constraints, Intent, Language, Personal, WeatherInfo
+from .vibe import facets_text, is_focused, ranked_facets, top_facets
+from .vibe_data import VIBE_TEXT_MAX, clean_weights
 from .weather import HEAVY_PRECIP_MM
 
 DEFAULT_DIR = Path(__file__).resolve().parents[1] / ".local" / "profiles"
@@ -94,6 +98,8 @@ class Profile(BaseModel):
     cold_tolerance: Cold = "normal"
     avoid: list[Category] = Field(default_factory=list)
     about: str = Field("", max_length=ABOUT_MAX)
+    vibe: dict[str, float] = Field(default_factory=dict)  # facet -> 0..1 (walks.vibe)
+    vibe_text: str = Field("", max_length=VIBE_TEXT_MAX)  # own words, read into `vibe`
     visited: list[VisitedPlace] = Field(default_factory=list)
     liked: dict[str, int] = Field(default_factory=dict)
 
@@ -104,10 +110,15 @@ class Profile(BaseModel):
             value if value in ("any", "low") else "any"
         )  # a file saved with a level the form no longer offers
 
-    @field_validator("about", mode="before")
+    @field_validator("about", "vibe_text", mode="before")
     @classmethod
     def _clean_about(cls, value: object) -> str:
         return clean_about(value)
+
+    @field_validator("vibe", mode="before")
+    @classmethod
+    def _known_facets(cls, value: object) -> dict[str, float]:
+        return clean_weights(value)
 
     @field_validator("avoid")
     @classmethod
@@ -197,16 +208,26 @@ class ProfileItem:
     label: str
 
 
-# the stored-item lines of the free text and of the kinds left out (the older lines live in walks.i18n)
+# the stored-item lines of the free text, the kinds left out and the vibe (the older lines live in walks.i18n)
 _ITEM: dict[str, Entry] = {
     "liked_once": ("ұнады: {cat}", "понравилось: {cat}", "liked: {cat}"),
     "avoid": ("көрсетпеу: {cat}", "не показывать: {cat}", "leave out: {cat}"),
     "about": ("сіздің мәтініңіз: «{text}»", "ваш текст: «{text}»", "your text: “{text}”"),
+    "vibe": ("сіздің вайбыңыз: {facets}", "ваш вайб: {facets}", "your vibe: {facets}"),
+    "vibe_text": (
+        "вайб туралы мәтініңіз: «{text}»",
+        "ваш текст о вайбе: «{text}»",
+        "your vibe in your words: “{text}”",
+    ),
 }
 
 
 def _item(key: str, lang: str, **fields: object) -> str:
     return pick(_ITEM[key], lang).format(**fields)
+
+
+def _short(text: str) -> str:
+    return text if len(text) <= 60 else text[:59].rstrip() + "…"
 
 
 def _liked_label(cat: str, n: int, lang: str) -> str:
@@ -252,8 +273,14 @@ def list_items(
     for cat in profile.avoid:
         out.append(ProfileItem(f"avoid:{cat}", _item("avoid", lang, cat=category_name(cat, lang))))
     if profile.about:
-        text = profile.about if len(profile.about) <= 60 else profile.about[:59].rstrip() + "…"
-        out.append(ProfileItem("about", _item("about", lang, text=text)))
+        out.append(ProfileItem("about", _item("about", lang, text=_short(profile.about))))
+    if profile.vibe:
+        facets = facets_text(ranked_facets(profile.vibe), lang)
+        out.append(ProfileItem("vibe", _item("vibe", lang, facets=facets)))
+    if profile.vibe_text:
+        out.append(
+            ProfileItem("vibe_text", _item("vibe_text", lang, text=_short(profile.vibe_text)))
+        )
     return out
 
 
@@ -418,19 +445,23 @@ def adapt_weather(weather: WeatherInfo | None, profile: Profile) -> tuple[Weathe
 
 
 def personal_view(profile: Profile) -> Personal:
-    """What retrieval reads: visited ids and liked counts, and `about`, the user's own text the core hands to the
-    intent and generation prompts (the one profile field that may reach a model besides the flags)."""
+    """What retrieval reads: visited ids, liked counts and the vibe's weights, and `about`, the user's own text the
+    core hands to the intent and generation prompts (the one profile field that may reach a model besides the flags)."""
     return Personal(
         visited=[v.poi_id for v in profile.visited],
         liked=dict(profile.liked),
         about=profile.about,
         kids_age_band=profile.kids_age_band if profile.with_kids else None,
+        vibe=dict(profile.vibe),
     )
 
 
 def preferences_payload(profile: Profile) -> dict:
-    """The only part of a profile that may go to the LLM: the flags that are set. No visited list, no liked
-    counts, no ids."""
+    """The only part of a profile that may go to the LLM: the flags that are set and, for a «под мой вайб» search only
+    (walks.vibe.is_focused), the facets the vibe plainly asks for. An ordinary answer tells the model no vibe: it sees
+    the `vibe:<facets>` codes of the places the data back, so a card it leads with for the vibe always shows its line
+    (a model told «night» led «кофе» with a café open all night that no data call nightlife). No visited list, no
+    liked counts, no ids, never the vibe's own words."""
     out: dict = {}
     if profile.with_kids:
         out["with_kids"] = True
@@ -451,4 +482,6 @@ def preferences_payload(profile: Profile) -> dict:
         out["walk_pace"] = profile.walk_pace
     if profile.cold_tolerance != "normal":
         out["cold_tolerance"] = profile.cold_tolerance
+    if is_focused(profile.vibe) and (facets := top_facets(profile.vibe)):
+        out["vibe"] = facets
     return out

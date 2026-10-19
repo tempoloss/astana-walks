@@ -287,12 +287,15 @@ def make_weather(
     visibility_m: int | None = None,
 ) -> WeatherInfo:
     """The conditions with their verdict. `conditions` are the adverse tokens read off the airport report; an active
-    Kazhydromet storm warning adds «storm_warning», an active НМУ adds «nmu» (the air is then bad). With
+    Kazhydromet storm warning that names a harsh phenomenon (kazhydromet.harsh_notice: a storm, wind, snow, ice,
+    downpour, heat, frost; not fog alone) adds «storm_warning», an active НМУ adds «nmu» (the air is then bad). With
     `precip_adverse=False` the amount of precipitation is only shown (the station says what falls, not how much)."""
     tokens = list(conditions)
     for w in warnings:
-        if w.active:
-            tokens.append("storm_warning" if w.kind == "storm" else "nmu")
+        if w.active and w.kind == "nmu":
+            tokens.append("nmu")
+        elif w.active and kazhydromet.harsh_notice(w.text):
+            tokens.append("storm_warning")
     precip = precipitation_mm if precip_adverse else None
     adverse, reason = assess(apparent_c, precip, tokens)
     air_bad, air_reason = assess_air(pm25, tokens)

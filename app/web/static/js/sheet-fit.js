@@ -2,7 +2,7 @@
 //   peek  down to the status line of the main card (the name, whether it is open, the minutes)
 //   half  the longest content boundary that still leaves the map its room, and never above the end of the main card:
 //         the sheet is cut between a card and a row, never through one
-//   full  from just under the status bar to the field
+//   full  from just under the top bar (the menu, the language and the place stay in sight and in reach) to the field
 // The content of the latest turn starts the visible part; earlier turns are above it and come into view at «full».
 
 import { availableHeight, safeTop } from './viewport.js';
@@ -14,10 +14,22 @@ const EDGE = 29; // from the bottom of the top bar to the free map
 const MAP_FREE = 250; // the map keeps at least this much between the top bar and the sheet
 const MIN_STEP = 60; // peek and half stay at least this much (and 2×) below full
 const FULL_TOP = 8; // below the status bar
+const FULL_GAP = 30; // the map strip between the top bar and a full sheet (the handle's hit area above the sheet stays on it)
 const MORE_SLACK = 48; // the label of the other places may take this much of the map's room
 const HANDLE_HIT = 44; // the handle's hit area lies this far above the sheet: it never covers the top bar's buttons
 
 const $ = (id) => document.getElementById(id);
+
+const barBottom = () => {
+  let bottom = $('plate').getBoundingClientRect().bottom;
+  const note = $('map-note');
+  if (!note.hidden) bottom = Math.max(bottom, note.getBoundingClientRect().bottom);
+  return bottom;
+};
+
+// «full» is the whole screen under the top bar: the bar (the menu, the language, the place) stays in sight and in reach,
+// and the handle's hit area, which reaches above the sheet, lies on the map strip left between them
+const fullHeight = () => availableHeight() - Math.max(barBottom() + FULL_GAP, safeTop() + FULL_TOP);
 
 export function answerFit(panel) {
   const scroll = panel.querySelector('.scroll');
@@ -76,12 +88,6 @@ export function answerFit(panel) {
     return sum;
   }
 
-  const barBottom = () => {
-    let bottom = $('plate').getBoundingClientRect().bottom;
-    const note = $('map-note');
-    if (!note.hidden) bottom = Math.max(bottom, note.getBoundingClientRect().bottom);
-    return bottom;
-  };
 
   return {
     // heights in px for peek, half, full
@@ -99,7 +105,7 @@ export function answerFit(panel) {
         if (visible(y) > room + MORE_SLACK) break;
         halfV = Math.max(halfV, visible(y));
       }
-      const full = availableHeight() - safeTop() - FULL_TOP;
+      const full = fullHeight();
       const below = availableHeight() - barBottom() - HANDLE_HIT; // the tallest a non-full sheet may be
       if (bar + halfV > below) {
         // too tall for the top bar: end at the card (or a row) that still fits, never through the notice under it
@@ -119,7 +125,7 @@ export function answerFit(panel) {
 export function shareFit() {
   return {
     targets() {
-      const full = availableHeight() - safeTop() - FULL_TOP;
+      const full = fullHeight();
       return { peek: Math.round(full * 0.3), half: Math.round(full * 0.55), full };
     },
     align() {},

@@ -8,15 +8,15 @@ import * as bookmarks from './bookmarks.js';
 import { detailsView, statusEl } from './cards.js';
 import { updateChrome } from './chrome.js';
 import { h, icon, isPhone } from './dom.js';
-import { count, dayAndTime, minutes, percent, stateOf } from './fmt.js';
+import { dayAndTime, minutes, stateOf } from './fmt.js';
 import { currentLang, langFixed, onLang, setLang, tr, withLang } from './i18n.js';
 import * as mapView from './map.js';
 import { renderAnswer, renderError, renderFolded, renderThinking } from './thread.js';
 
 const STORE = 'anyq.dialog';
 const BUDGETS = [30, 60, 120];
-const WAIT_SHAPE = 300; // ms before the skeleton of the answer shows
-const WAIT_STEPS = 3000; // ms before the steps do
+const WAIT_SHAPE = 300; // ms before the steps and the shape of the answer show
+const SAVE_WAIT = 5000; // ms a turn waits for a profile save in flight
 const COMPANY = ['solo', 'pair', 'kids'];
 const WEATHER = ['now', 'frost', 'rain', 'smog'];
 
@@ -272,7 +272,7 @@ function lastDone() {
   return null;
 }
 
-const placesOf = (item) => (item && item.resp && item.resp.turn.places) || [];
+const placesOf = (item) => (item && item.resp ? [...item.resp.turn.places, ...(item.moreOpen ? item.resp.turn.more || [] : [])] : []);
 
 function lastSearch() {
   for (let i = S.items.length - 1; i >= 0; i -= 1) {
@@ -390,6 +390,10 @@ function select(id) {
   render(); // the chosen place becomes the main card, the one it replaces falls back to a row
   const card = isPhone() ? null : document.querySelector(`#thread .card.primary[data-pid="${CSS.escape(id)}"]`);
   if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  if (mapItem()?.resp.turn.more?.some((p) => p.id === id)) { // a place of the longer list: the camera goes to it
+    if (isPhone() && sheet) sheet.snap('half');
+    showOnMap();
+  }
 }
 
 function hover(id) {
@@ -414,6 +418,14 @@ export function closeDetails() {
 
 // ---------------------------------------------------------------- the conversation
 
+// «Ещё N мест рядом»: the further places open under the alternatives and onto the map (a phone's sheet goes full)
+function openMore(item, on) {
+  item.moreOpen = on;
+  showOnMap({ fit: !isPhone() });
+  render();
+  if (on && isPhone() && sheet) sheet.snap('full');
+}
+
 function answerCtx(item) {
   return {
     turnId: item.id,
@@ -425,6 +437,8 @@ function answerCtx(item) {
     profileOn: app.memory.on(),
     onProfile: (act) => app.memory.act(act),
     onSelect: (id) => select(id),
+    moreOpen: Boolean(item.moreOpen),
+    onMore: (on) => openMore(item, on),
     onHover: hover,
     onDetails: openDetails,
     onChip: (chip) => (chip.kind === 'reset' ? newSearch() : send(chip.send)),
@@ -582,22 +596,23 @@ export async function send(text, { retry = null, fresh = false } = {}) {
   render();
   scrollToTurn(item);
   setBusy(true);
-  // the wait: nothing for 300 ms (a quick answer never flashes a placeholder), then the shape of the answer, after 3 s the steps
+  // the wait: nothing for 300 ms (a quick answer never flashes a placeholder), then the steps over the shape of the answer
   const refresh = () => {
     const el = document.getElementById(`thinking-${item.id}`);
     if (el) el.replaceWith(renderThinking(`thinking-${item.id}`, item.stages, item.phase));
     if (sheet) sheet.refresh();
   };
-  const timers = [[WAIT_SHAPE, 1], [WAIT_STEPS, 2]].map(([ms, phase]) =>
-    setTimeout(() => {
-      item.phase = phase;
-      refresh();
-    }, ms));
+  const timer = setTimeout(() => {
+    item.phase = 1;
+    refresh();
+  }, WAIT_SHAPE);
   const onStage = (stage) => {
     item.stages.push(stage);
     refresh();
   };
   try {
+    // a profile save still in flight: this turn goes out with what it stores (a save that hangs holds it up at most SAVE_WAIT)
+    await Promise.race([app.memory.settled(), new Promise((done) => setTimeout(done, SAVE_WAIT))]);
     const resp = await api.turn(payload(clean, item), onStage);
     item.resp = resp;
     item.status = 'done';
@@ -616,7 +631,7 @@ export async function send(text, { retry = null, fresh = false } = {}) {
     render();
   } finally {
     setBusy(false);
-    for (const t of timers) clearTimeout(t);
+    clearTimeout(timer);
     save();
   }
 }
@@ -667,27 +682,11 @@ function suggestionChips() {
   );
 }
 
-// «В данных»: how much there is and how much of it has hours (the honest share, from /api/data)
-export function renderFacts() {
-  const box = $('facts');
-  const cov = app.coverage;
-  if (!cov) {
-    box.replaceChildren();
-    return;
-  }
-  box.replaceChildren(
-    h('p', { class: 'lbl', text: tr('facts_in_data') }),
-    h('p', { class: 'row' }, h('b', { class: 'tnum', text: count(cov.places) }), ` ${tr('facts_places', { n: '' }).trim()}`, ' · ', tr('facts_hours', { p: '' }).trim(), ' ', h('b', { class: 'tnum', text: percent(cov.hours) })),
-    h('p', { class: 'cov', text: tr('facts_note') }),
-  );
-}
-
 // The language selector: the last answer is asked again in the chosen language (it replaces that answer).
 function relang(_lang, { user }) {
   suggestionChips();
   quickRow();
   whenPanel();
-  renderFacts();
   if (S.where) {
     showWhere();
     paintYou();

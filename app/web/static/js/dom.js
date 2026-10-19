@@ -60,6 +60,7 @@ const PATHS = {
   plus: ['M12 5v14', 'M5 12h14'],
   edit: ['M4 20h4L19 9l-4-4L4 16z', 'M13.5 6.5l4 4'],
   trash: ['M4 7h16', 'M9 7V4h6v3', 'M6 7l1 13h10l1-13', 'M10 11v6', 'M14 11v6'],
+  layers: ['M12 3l9 5-9 5-9-5z', 'M3 12.5l9 5 9-5', 'M3 16.5l9 5 9-5'],
 };
 
 export function icon(name, extraClass) {

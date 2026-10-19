@@ -18,6 +18,7 @@ import { initPlate } from './plate.js';
 import { answerFit, shareFit } from './sheet-fit.js';
 import { makeSheet } from './sheet.js';
 import { initViewport } from './viewport.js';
+import { mountVibeChip } from './vibe-form.js';
 
 const app = { config: null, coverage: null, memory, sheet: null, showMapNote: () => {} };
 const sheets = [];
@@ -164,10 +165,12 @@ async function boot() {
     center: [start.lat, start.lon],
     offline: config.mode.offline,
     lang: currentLang(),
+    hd: config.satellite_hd,
   });
   mapNote();
   await memory.initMemory();
   assistant.initAssistant(app, sheetA);
+  mountVibeChip(memory, (text) => assistant.send(text, { fresh: true }));
   initPlate(app, assistant);
   initLocation(app, assistant);
   initBookmarks({
@@ -197,7 +200,6 @@ async function boot() {
   // the share of places with hours is the legend's honest line; it arrives after the page is usable
   api.data(currentLang()).then((d) => {
     app.coverage = d.coverage;
-    assistant.renderFacts();
     renderLegend();
   }).catch(() => {});
 }

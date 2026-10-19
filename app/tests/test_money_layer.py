@@ -126,3 +126,10 @@ def test_the_lodging_category_is_known_to_the_app_in_every_language():
     kk, ru, en = CATEGORY["lodging"]
     assert len({kk, ru, en}) == 3
     assert "lodging" in TIP
+
+
+def test_pawnshop_words_reach_money():
+    from walks.dialog_nlu import named_categories
+
+    assert "money" in named_categories("ломбард рядом")
+    assert "money" in named_categories("сдать в заклад")

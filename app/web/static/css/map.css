@@ -202,7 +202,7 @@
 /* below a laptop the zoom buttons give way to the fingers; the location button stays. On a phone the whole corner is
    given up: the top bar has its own location button, and no pin is ever under a control of the map */
 @media (max-width: 899px) {
-  .maplibregl-ctrl-top-right .maplibregl-ctrl-group:not(.locate-ctrl) { display: none; }
+  .maplibregl-ctrl-top-right .maplibregl-ctrl-group:not(.locate-ctrl, .sat-group) { display: none; }
   .maplibregl-ctrl-top-right .maplibregl-ctrl.locate-ctrl { margin-top: 0; }
 }
 @media (max-width: 760px) {
@@ -254,6 +254,8 @@
   transition: opacity 1.2s ease;
 }
 .fx-sky.on { opacity: 1; }
+/* over the satellite imagery (already dark where it is dark) the full night sky would sink the route into it: a lighter wash */
+#map[data-sat='on'] .fx-sky.on { opacity: 0.55; }
 .fx-canvas[hidden], .fx-fact[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) { .fx-sky { transition: none; } }
 
@@ -298,6 +300,16 @@
 /* no room for the temperature beside the query pill of an answer, nor on the narrowest phones: the icon stays, the card says it */
 @media (max-width: 760px) { body.has-thread .fx-top .fx-fact { display: none; } }
 @media (max-width: 340px) { .fx-top .fx-fact { display: none; } }
+
+/* the satellite switch (map-satellite.js): one icon button in the map's corner under the weather button (a laptop). A phone has no
+   corner: its switch is a row of the menu (#sat-menu, app.css). Pressed = the imagery is on: the accent colour. */
+.maplibregl-ctrl-top-right .maplibregl-ctrl.sat-wrap { margin-top: 8px; }
+.sat-btn { display: inline-grid; place-items: center; border: 0; padding: 0; color: var(--m-ink-2, #4b5263); cursor: pointer; }
+.maplibregl-ctrl-group .sat-btn { width: 28px; height: 28px; background: none; }
+@media (pointer: coarse) { .maplibregl-ctrl-group .sat-btn { width: 44px; height: 44px; } }
+.sat-btn svg { width: 16px; height: 16px; }
+.maplibregl-ctrl-group .sat-btn.on { color: var(--m-accent, var(--accent)); background: rgba(15, 157, 118, 0.12); }
+.sat-btn:focus-visible { outline: 2px solid var(--m-accent, var(--accent)); outline-offset: -2px; }
 
 /* the weather card: a popover under the button on a laptop, a small sheet on a phone. Page tokens, type and radii of the page's
    own scale (fallbacks for when they are not defined); one shadow, on the card itself; hairlines instead of boxes. */

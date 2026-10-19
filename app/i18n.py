@@ -7,6 +7,7 @@ case quote; the Kazakh is literary, in short standard sentences (a test keeps th
 from __future__ import annotations
 
 from i18n_panels import PANEL
+from i18n_vibe import VIBE
 from walks.i18n import Entry, norm, pick
 from walks.walking import own_router
 
@@ -286,9 +287,14 @@ UI: dict[str, Entry] = {
     # ---- the answer
     "step_parse": ("Сұранысты талдап жатырмын", "Разбираю запрос", "Reading the request"),
     "step_search": (
-        "Жақын орындарды іздеп, жұмыс уақытын тексеріп жатырмын",
-        "Ищу места рядом и проверяю часы работы",
-        "Looking for places nearby and checking their hours",
+        "Жақын орындарды іздеп жатырмын",
+        "Ищу места рядом",
+        "Looking for places nearby",
+    ),
+    "step_hours": (
+        "Жұмыс уақытын тексеріп жатырмын",
+        "Проверяю часы работы",
+        "Checking the opening hours",
     ),
     "step_write": ("Жауап жазып жатырмын", "Пишу ответ", "Writing the answer"),
     "step_route": ("Жолды салып жатырмын", "Прокладываю путь", "Laying out the way"),
@@ -299,6 +305,29 @@ UI: dict[str, Entry] = {
     ),
     "retry": ("Қайталау", "Повторить", "Try again"),
     "more_options": ("Тағы {n} нұсқа", "Ещё варианты ({n})", "More options ({n})"),
+    "more_places_one": (
+        "Жақын жерде тағы {n} орын",
+        "Ещё {n} место рядом",
+        "{n} more place nearby",
+    ),
+    "more_places_few": (
+        "Жақын жерде тағы {n} орын",
+        "Ещё {n} места рядом",
+        "{n} more places nearby",
+    ),
+    "more_places_many": (
+        "Жақын жерде тағы {n} орын",
+        "Ещё {n} мест рядом",
+        "{n} more places nearby",
+    ),
+    "more_places_other": (
+        "Жақын жерде тағы {n} орын",
+        "Ещё {n} места рядом",
+        "{n} more places nearby",
+    ),
+    "more_places_less": ("Тізімді жасыру", "Свернуть список", "Hide the list"),
+    "more_order_distance": ("қашықтық бойынша", "по расстоянию", "by distance"),
+    "more_order_open_first": ("алдымен ашықтары", "сначала открытые", "open first"),
     "best_pick": ("Ең қолайлысы", "Лучший вариант", "Best pick"),
     "ai_idea": ("ЖИ идеясы", "Идея ИИ", "AI idea"),
     "ctx_indoor": (
@@ -440,14 +469,6 @@ UI: dict[str, Entry] = {
     "opts_toggle": ("Шарттар", "Условия", "Options"),
     "when_hour": ("Бір сағаттан соң", "Через час", "In an hour"),
     "when_evening": ("Кешке", "Вечером", "This evening"),
-    "facts_in_data": ("Деректерде", "В данных", "In the data"),
-    "facts_places": ("{n} орын", "{n} мест", "{n} places"),
-    "facts_hours": ("жұмыс уақыты белгілі: {p}", "часы известны у {p}", "hours known for {p}"),
-    "facts_note": (
-        "Жұмыс уақыты жоқ жерде көмекші «жұмыс уақыты белгісіз» деп жазады және ешқашан «ашық» демейді.",
-        "Где часов нет, помощник пишет «часы неизвестны» и никогда не говорит «открыто».",
-        "Where there are no hours, the assistant says “hours unknown” and never says “open”.",
-    ),
     "turn_open": ("Жауапты ашу", "Открыть ответ", "Open the answer"),
     # answer-ux: the details of a place by task, «n events», a short ask when the hours are unknown
     "d_sec_now": ("Қазір", "Сейчас", "Now"),
@@ -598,6 +619,13 @@ UI: dict[str, Entry] = {
         "Отметить дом — подскажу места по пути",
         "Mark home — I'll suggest places on the way",
     ),
+    # the satellite layer's switch on the map (map-satellite.js)
+    "sat_btn": ("Жерсерік", "Спутник", "Satellite"),
+    "sat_title": (
+        "Картадағы спутниктік сурет: Sentinel-2, 2016 жыл, пиксельге 10 м.",
+        "Спутниковый снимок на карте: Sentinel-2, 2016 год, 10 м на пиксель.",
+        "Satellite imagery on the map: Sentinel-2, 2016, 10 m per pixel.",
+    ),
     # weather-fx: the weather card behind «Эффекты» and the map's effects (weather-panel.js, map-weather.js)
     "fx_btn": ("Эффекттер", "Эффекты", "Effects"),
     "fx_title": (
@@ -696,6 +724,7 @@ UI: dict[str, Entry] = {
     "fx_src_openmeteo": ("Open-Meteo", "Open-Meteo", "Open-Meteo"),
     "fx_src_calc": ("есептеу", "расчёт", "computed"),
 } | PANEL
+UI |= VIBE  # «Мой вайб» (i18n_vibe.py)
 
 # The wording that names the public FOSSGIS router. With WALKS_VALHALLA_URL naming one's own (the public stand),
 # the data page says so instead: `tr` and `ui_table` swap these entries in.

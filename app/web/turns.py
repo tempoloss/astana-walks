@@ -9,13 +9,14 @@ from __future__ import annotations
 from collections.abc import Callable
 from datetime import datetime, time
 from itertools import pairwise
+from time import perf_counter
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
 from i18n import tr
 from walks import demo_pin
-from walks.dialog import Outcome, TurnEnv, new_state, take_turn, with_location
+from walks.dialog import Outcome, TurnEnv, new_state, with_location
 from walks.dialog_types import DialogState, Turn
 from walks.envcfg import offline, replay_only
 from walks.feedback import feedback_path, load_feedback
@@ -27,11 +28,14 @@ from walks.models import Bookmark as CoreBookmark
 from walks.pipeline import round_location
 from walks.presets import DEMO_REQUESTS, PRESETS, SCENARIOS, preset_name
 from walks.profile import Profile, load_profile, suggest_chips, valid_id
+from walks.reqlog import held, write_held
+from walks.vibe_turn import take_vibe_turn
 from walks.walking import WalkingRouter, default_router
 from walks.weather import (
     latest_weather as fetch_weather,  # the last value of the background refresh; never waits
 )
 from walks.weather import manual_weather
+from web import geocode
 from web.explain import explain
 
 START_PRESET = "EXPO"
@@ -166,13 +170,19 @@ def route_shape(turn: Turn, router: WalkingRouter) -> list[list[list[float]] | N
 
 
 def place_legs(turn: Turn, router: WalkingRouter) -> list[dict]:
-    """For every place of the answer the way from the origin to it, in the order of `turn.places`: the minutes and
-    metres the card says, how they were obtained and the street line [[lat, lon], ...] (None: the router has none,
-    the map draws a faint straight line). The line comes from the router's cache, or from a router of one's own;
-    the shared public server is never asked here."""
+    """For every place of the answer the way from the origin to it, in the order of `turn.places` then `turn.more`: the
+    minutes and metres the card says, how they were obtained and the street line [[lat, lon], ...] (None: the router
+    has none, the map draws a faint straight line). The line of a place comes from the router's cache, or from a
+    router of one's own; the shared public server is never asked here. The longer list («Ещё N мест рядом») takes
+    the cached line only: seven more lookups would slow every answer."""
     legs: list[dict] = []
-    for p in turn.places:
-        line = router.line(turn.origin, (p.lat, p.lon)) if p.walk.mode == "walk" else None
+    for i, p in enumerate([*turn.places, *turn.more]):
+        if p.walk.mode != "walk":
+            line = None
+        elif i < len(turn.places):
+            line = router.line(turn.origin, (p.lat, p.lon))
+        else:
+            line = router.shape(turn.origin, (p.lat, p.lon))
         legs.append(
             {
                 "minutes": p.walk.minutes,
@@ -200,7 +210,23 @@ def answer_time(out: Outcome, text: str, manual: datetime | None) -> dict:
     return {"time": f"{local:%H:%M}", "date": f"{local:%Y-%m-%d}", "day": days}
 
 
+def _target(query: str, lang: str) -> tuple[float, float, str] | None:
+    """«в сторону Мангилик Ел»: the first point of the local address search (nothing leaves the server, nothing is logged)."""
+    found = geocode.search(query, lang)
+    return (found[0]["lat"], found[0]["lon"], found[0]["label"]) if found else None
+
+
 def answer(req: TurnRequest, on_stage: Callable[[str], None] | None = None) -> dict:
+    """One turn for the page. The anonymous request log gets the time of the whole turn, from the message to the ready
+    answer (walks.reqlog.held), not only the pipeline's own part of it."""
+    t0 = perf_counter()
+    with held() as records:
+        body = _answer(req, on_stage)
+    write_held(records, round((perf_counter() - t0) * 1000))
+    return body
+
+
+def _answer(req: TurnRequest, on_stage: Callable[[str], None] | None) -> dict:
     lat, lon = round_location(req.lat, req.lon)
     state = req.state
     if state is None:
@@ -222,8 +248,11 @@ def answer(req: TurnRequest, on_stage: Callable[[str], None] | None = None) -> d
         company=req.company,
         on_stage=on_stage,
         bookmarks=[CoreBookmark.model_validate(b.model_dump()) for b in req.bookmarks],
+        geocode=lambda q: _target(q, req.lang),
     )
-    out = take_turn(state, req.text, env=env)
+    out = take_vibe_turn(
+        state, req.text, env=env
+    )  # walks.dialog's turn, with the person's vibe when one is set
     pinned = (
         out.state.demo_base is not None
     )  # the core pinned this turn: a recorded request or a follow-up of one

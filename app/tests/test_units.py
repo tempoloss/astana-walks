@@ -555,6 +555,7 @@ def test_request_log_is_anonymous(pois, tmp_path, monkeypatch):
         "candidates",
         "recs",
         "hours_state_counts",
+        "total_ms",  # how long the answer took: a number, nothing about the person
     }
     assert row["ts_hour"] == "2026-10-14T12:00"
     assert row["recs"] == len(res.recs)

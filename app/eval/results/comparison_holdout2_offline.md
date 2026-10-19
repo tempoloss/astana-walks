@@ -14,9 +14,9 @@
 | diversity (нет дублей сети среди рекомендаций) | 100.0% | 100.0% | +0.0 п.п. |
 | top-1 без нарушений ограничений | 91.7% | 91.7% | +0.0 п.п. |
 | top-1 с подтверждённым «открыто» | 45.8% | 45.8% | +0.0 п.п. |
-| доля рекомендаций с неизвестными часами | 67.1% | 64.3% | -2.8 п.п. |
+| доля рекомендаций с неизвестными часами | 67.1% | 62.9% | -4.2 п.п. |
 | доля рекомендаций не из OSM-записей | 0.0% | 47.1% | +47.1 п.п. |
-| средняя дорога до рекомендации, мин | 6.7 | 6.8 | +0.1 |
+| средняя дорога до рекомендации, мин | 6.7 | 6.9 | +0.2 |
 | padding: рекомендации, добранные расширением радиуса, другой категорией или заменой из-за погоды | 10.0% | 8.6% | -1.4 п.п. |
 | … за счёт расширения радиуса (radius_factor > 1) | 0.0% | 0.0% | +0.0 п.п. |
 | … за счёт другой категории (back-fill) | 10.0% | 8.6% | -1.4 п.п. |
@@ -25,8 +25,8 @@
 | honest_abstain_rate (нет рекомендаций или каждое несовпадение помечено) | — | — | — |
 | кейсов, где вся цепочка ИИ недоступна (→ шаблон) | н/п | н/п | н/п |
 | кейсов, где ответ ИИ не прошёл проверку poi_id (→ шаблон) | н/п | н/п | н/п |
-| latency пайплайна, медиана (шаблон, без ИИ) | 11 мс | 15 мс | +4 мс |
-| latency пайплайна, p90 (шаблон, без ИИ) | 19 мс | 25 мс | +6 мс |
+| latency пайплайна, медиана (шаблон, без ИИ) | 12 мс | 18 мс | +6 мс |
+| latency пайплайна, p90 (шаблон, без ИИ) | 21 мс | 28 мс | +7 мс |
 | latency ответа ИИ, медиана | н/п | н/п | н/п |
 | latency ответа ИИ, p90 | н/п | н/п | н/п |
 | honest_unknown_rate по рекомендациям | 100.0% | 100.0% | +0.0 п.п. |
@@ -37,13 +37,12 @@
 - poi: {'template': 24}
 - poi.enriched: {'template': 24}
 
-## Кейсы, где изменился top-1 (6 из 24)
+## Кейсы, где изменился top-1 (5 из 24)
 
 | кейс | poi | poi.enriched |
 |---|---|---|
 | `h2-02-hazret-halal-dinner` | Lапша Tokyo · restaurant · osm · open · 10 мин | Rabiya · restaurant · overture+official_site · open · 11 мин |
 | `h2-04-asiapark-cold-indoor` | Кишлак · restaurant · osm · open · 5 мин | Cafeteria · restaurant · official_site · open · 2 мин |
-| `h2-09-nurzhol-wind-shelter` | Asai Restaurant Astana · restaurant · osm · open · 3 мин | Саксаул · restaurant · osm+overture+wikivoyage · open · 2 мин |
+| `h2-08-natmuseum-evening-date` | Блэкбери · cafe · osm · open · 10 мин | Coffee BOOM, Шәмші Қалдаяқов көшесі, 3 · cafe · official_site · open · 12 мин |
 | `h2-16-momyshuly-park-laptop-work` | Парк имени Бауыржана Момышулы · park_garden · osm · unknown · 1 мин ⚠ category_not_allowed, outdoor_in_cold_or_smog | Астана, Ул. Ташенова · park_garden · overture · unknown · 41 мин ⚠ category_not_allowed, walk_too_long, outdoor_in_cold_or_smog |
 | `h2-19-koktal-private-sector-weekend` | Kazakh food · cafe · osm · open · 13 мин | Батутный парк KANGO Астана · entertainment · overture · unknown · 14 мин |
-| `h2-24-asiapark-mixed-typo-night` | KFC · fast_food · osm · open · 1 мин | Papa Johns Pizza · fast_food · overture+official_site · open · 1 мин |

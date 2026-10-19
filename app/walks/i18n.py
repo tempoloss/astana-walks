@@ -88,6 +88,8 @@ CATEGORY: dict[str, Entry] = {
     "grocery": ("азық-түлік дүкені", "продуктовый магазин", "grocery store"),
     "money": ("банкоматтар мен банктер", "банкоматы и банки", "ATMs and banks"),
     "lodging": ("қонақүй мен хостелдер", "гостиницы и хостелы", "hotels and hostels"),
+    "clinic": ("клиникалар мен стоматологиялар", "клиники и стоматологи", "clinics and dentists"),
+    "post": ("пошта бөлімшелері", "почтовые отделения", "post offices"),
     "sport": ("спорт", "спорт", "sport"),
     "other": ("басқа", "другое", "other"),
 }
@@ -191,6 +193,16 @@ TIP: dict[str, Entry] = {
         "Выбирайте ночлег заранее.",
         "Book your stay ahead.",
     ),
+    "clinic": (
+        "Қабылдау уақытын алдын ала анықтаңыз.",
+        "Часы приёма уточняйте заранее.",
+        "Check visiting hours ahead.",
+    ),
+    "post": (
+        "Жұмыс уақытын алдын ала тексеріңіз.",
+        "График работы уточняйте заранее.",
+        "Check opening hours ahead.",
+    ),
     "other": ("Айналаңызға қараңыз.", "Осмотритесь на месте.", "Look around."),
 }
 
@@ -276,6 +288,14 @@ PRIVATE_LINK: Entry = (
     "резервная модель (частный профиль)",
     "backup model (private profile)",
 )
+# a private link that serves Gemma 4 (the stand's first generation link, through an API gateway): named by the model
+# and its open weights, as the slides say, never by the vendor, the profile, the gateway or the raw model id
+GEMMA4_LINK: Entry = (
+    "Gemma 4 (Google-дың ашық салмақтары)",
+    "Gemma 4 (открытые веса Google)",
+    "Gemma 4 (Google open weights)",
+)
+_GEMMA4 = re.compile(r"gemma-?4(?!\d)", re.I)
 # a model name may hold colons of its own («openai:vendor-model:31b@PROFILE»): one followed by a name character belongs
 # to the link, one followed by a space («…@PROFILE: ok») ends it
 _LINK_SPEC = re.compile(r"\b([a-z][a-z0-9_-]*):((?:[\w./@-]|:(?=[\w./@-]))+)")
@@ -283,12 +303,15 @@ _LINK_SPEC = re.compile(r"\b([a-z][a-z0-9_-]*):((?:[\w./@-]|:(?=[\w./@-]))+)")
 
 def public_text(text: str | None, lang: str | None = "ru") -> str:
     """`text` as the user may see it: every model link that is not Google's (`openai:<model>@<PROFILE>`, anything
-    with a private profile) is replaced by one fixed label; `gemini:*` links stay. The real names live only in the
-    environment and the debug logs, never on screen."""
+    with a private profile) is replaced by a fixed label: «Gemma 4 (открытые веса Google)» when its model is Gemma 4,
+    PRIVATE_LINK otherwise; `gemini:*` links stay. The real names live only in the environment and the debug logs,
+    never on screen."""
 
     def replace(m: re.Match[str]) -> str:
-        private = m.group(1) == "openai" or "@" in m.group(2)
-        return pick(PRIVATE_LINK, lang) if private else m.group(0)
+        if not (m.group(1) == "openai" or "@" in m.group(2)):
+            return m.group(0)
+        model = m.group(2).split("@", 1)[0]  # a profile named «gemma4gw» says nothing of the model
+        return pick(GEMMA4_LINK if _GEMMA4.search(model) else PRIVATE_LINK, lang)
 
     return _LINK_SPEC.sub(replace, text or "")
 
@@ -594,6 +617,22 @@ STRINGS: dict[str, Entry] = {
         "Мекенжайы: {where}, {district} ауданы.",
         "Где: {where}, район {district}.",
         "Where: {where}, {district} district.",
+    ),
+    "fact_district": (
+        "Орналасқан жері: {district} ауданы.",
+        "Где: район {district}.",
+        "Where: {district} district.",
+    ),
+    "in_district": ("{d} ауданы", "район {d}", "{d} district"),
+    "unnamed_park_garden": (
+        "Атауы жоқ саябақ, {where}",
+        "Сквер без названия, {where}",
+        "Unnamed park, {where}",
+    ),
+    "unnamed_viewpoint": (
+        "Атауы жоқ шолу алаңы, {where}",
+        "Смотровая площадка без названия, {where}",
+        "Unnamed viewpoint, {where}",
     ),
     "fit_local_food": (
         "атауында, асханасында немесе сипаттамасында қазақ / ұлттық тағамы аталған",

@@ -24,6 +24,9 @@ than the screen, no leg label on top of a pin or of «Вы здесь», no scri
 real data has nothing to say about at a given moment: the «Сегодня рядом» block, a weather warning, a card with an
 OpenStreetMap note, the answer to «что сегодня интересного». A request that is not in the recording yet
 (data/demo_llm_cache.json is re-warmed by scripts/warm_cache.py) is reported as «pending re-warm», not as a failure.
+scripts/ui_tour_satellite.py adds the «Спутник» layer: off by default, switched on, a recorded walk over the imagery (day sky and
+night sky), the EOX credit in the legend row, the choice kept over a reload, off again; and once on the offline stand
+(`--satellite-only` runs just this step).
 Exit code 1 = a UI check failed.
 
 Run from `app/` (Playwright is not a project dependency):
@@ -52,11 +55,15 @@ from pathlib import Path
 from playwright.sync_api import Page, sync_playwright
 from ui_tour_phone import KEYBOARD_INIT, audit, keyboard, sheet, swipe, tap, tap_on, warm
 from ui_tour_places import run_places
+from ui_tour_satellite import run_satellite
+from ui_tour_vibe import run_vibe
 
 APP = Path(__file__).resolve().parents[1]
 OUT = APP / ".local" / "ui-shots"
 SCRATCH = APP / ".local" / "ui-tour"
 SEED_MARKS = APP.parent / "data" / "city_feedback.json"
+
+AITU = (51.0906, 71.4180)  # the university the friends asked about: «не всё возле уника показал»
 
 SIZES = {
     "laptop": (1440, 900, 1),
@@ -342,6 +349,159 @@ class Tour:
         ):
             s.ok = False
             s.notes.append(f"stored: {stored}")
+        page.locator("#memory-root .mf-forget").click()
+        page.wait_for_timeout(500)
+        page.context.close()
+
+    def memory_pause_then_type(self, browser, url: str) -> None:
+        """The round-7 report: in Kazakh the memory settings are changed and «Жад» is closed with the cross; five seconds
+        later the visitor types «үйдің жанында балаларға ойнайтын жер бар ма» without touching the field first and presses
+        Enter. The page has put the focus on nothing (the opener is gone with its menu): the first keys must still land in
+        the field, and a turn must appear (the old page lost the whole message: empty field, no turn)."""
+        page = self.open(browser, url)
+        self.set_lang(page, "kk")
+        if self.phone:
+            self.press(page, ".menu-open")
+            self.press(page, "#menu .memory-open")
+        else:
+            self.press(page, ".tabs .memory-open")
+        page.wait_for_selector("#memory[open] #memory-root .mf-toggle")
+        for selector, text in (
+            ("#memory-root .mf-toggle > span", "Балалармен"),
+            ("#memory-root .mf-chips .mf-chip", "4–7"),
+        ):
+            el = page.locator(selector, has_text=text).first
+            el.scroll_into_view_if_needed()
+            box = el.bounding_box()
+            assert box is not None, text
+            x, y = box["x"] + box["width"] / 2, box["y"] + box["height"] / 2
+            if self.phone:
+                tap(page, x, y)
+            else:
+                page.mouse.click(x, y)
+            page.wait_for_selector("#memory-root .mf-status[data-state='saved']", timeout=10000)
+            page.wait_for_timeout(300)
+        self.press(page, "#memory-root > header button")
+        page.wait_for_selector("#memory:not([open])", state="attached", timeout=3000)
+        page.wait_for_timeout(5000)
+        before = self.answers(page)
+        turns_before = page.locator("#thread > li.turn").count()
+        sentence = "үйдің жанында балаларға ойнайтын жер бар ма"
+        # no tap on the field first. The first letter goes in as a keyboard's key (keydown with its text): a letter outside
+        # the US layout is otherwise inserted as plain text, and text typed into nothing goes nowhere
+        cdp = page.context.new_cdp_session(page)
+        for kind in ("keyDown", "keyUp"):
+            cdp.send(
+                "Input.dispatchKeyEvent",
+                {
+                    "type": kind,
+                    "key": sentence[0],
+                    "text": sentence[0] if kind == "keyDown" else "",
+                },
+            )
+        page.keyboard.type(sentence[1:])
+        typed = page.locator("#composer-input").input_value()
+        with page.expect_response(lambda r: r.url.endswith("/api/turn"), timeout=20000) as sent:
+            page.keyboard.press("Enter")
+        self.wait_answer(page, before + 1)
+        body = sent.value.request.post_data_json
+        s = self.shot(
+            page,
+            "memory-pause-type",
+            "five seconds after closing «Жад»: typing at once makes a turn",
+        )
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if typed != "үйдің жанында балаларға ойнайтын жер бар ма":
+            s.ok = False
+            s.notes.append(f"the keys did not land in the field: {typed!r}")
+        if page.locator("#thread > li.turn").count() != turns_before + 1:
+            s.ok = False
+            s.notes.append("no new turn in the feed after the first message")
+        if body.get("profile_on") is not True or not body.get("profile_id"):
+            s.ok = False
+            s.notes.append(f"the request lost the profile: {body}")
+        page.evaluate("import('/static/js/memory.js').then((m) => m.open())")
+        page.wait_for_selector("#memory-root .mf-forget")
+        page.locator("#memory-root .mf-forget").click()
+        page.wait_for_timeout(500)
+        page.context.close()
+
+    def memory_then_ask(self, browser, url: str) -> None:
+        """The round-6 report: in Kazakh, «Жад», «Балалармен жүремін», the chips 4–7 and 8–12, the dialog closed at once
+        (the saves still on their way: the network is slowed down), then «кафе жақын жерде» typed and sent with the
+        keyboard: the dialog is really closed, a new turn stands in the feed, and the request carries the kids setting
+        (it waited for the saves instead of overtaking them)."""
+        page = self.open(browser, url)
+        page.add_init_script(
+            """(() => { const f = window.fetch; window.fetch = async (u, o) => {
+              if (String(u).includes('/api/profile') && o && o.method === 'POST') await new Promise((r) => setTimeout(r, 700));
+              return f(u, o); }; })();"""
+        )
+        page.reload()
+        page.wait_for_selector("body[data-ready='1']", timeout=60000)
+        self.set_lang(page, "kk")
+        if self.phone:
+            self.press(page, ".menu-open")
+            self.press(page, "#menu .memory-open")
+        else:
+            self.press(page, ".tabs .memory-open")
+        page.wait_for_selector("#memory[open] #memory-root .mf-toggle")
+
+        def tap_words(selector: str, text: str) -> None:
+            el = page.locator(selector, has_text=text).first
+            el.scroll_into_view_if_needed()
+            box = el.bounding_box()
+            assert box is not None, text
+            x, y = box["x"] + box["width"] / 2, box["y"] + box["height"] / 2
+            if self.phone:
+                tap(page, x, y)
+            else:
+                page.mouse.click(x, y)
+
+        tap_words("#memory-root .mf-toggle > span", "Балалармен")
+        tap_words("#memory-root .mf-chips .mf-chip", "4–7")
+        tap_words("#memory-root .mf-chips .mf-chip", "8–12")
+        self.press(page, "#memory-root > header button")  # at once: the first save is not back yet
+        page.wait_for_selector("#memory:not([open])", state="attached", timeout=3000)
+        before = self.answers(page)
+        turns_before = page.locator("#thread > li.turn").count()
+        if self.phone:
+            tap_on(page, "#composer-input")
+        else:
+            page.locator("#composer-input").click()
+        page.keyboard.type("кафе жақын жерде")
+        with page.expect_response(lambda r: r.url.endswith("/api/turn"), timeout=20000) as sent:
+            page.keyboard.press("Enter")
+        self.wait_answer(page, before + 1)
+        body = sent.value.request.post_data_json
+        s = self.shot(
+            page,
+            "memory-then-ask",
+            "the first message after closing «Жад»: a turn, with the kids setting",
+        )
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if page.locator("#thread > li.turn").count() != turns_before + 1:
+            s.ok = False
+            s.notes.append("no new turn in the feed after the first message")
+        if page.locator("#composer-input").input_value():
+            s.ok = False
+            s.notes.append("the text stays in the field")
+        if body.get("profile_on") is not True or not body.get("profile_id"):
+            s.ok = False
+            s.notes.append(f"the request overtook the saves: {body}")
+        stored = page.evaluate(
+            """async () => {
+              const id = localStorage.getItem('anyq.profile.id');
+              return (await (await fetch('/api/profile?id=' + id)).json()).form;
+            }"""
+        )
+        if stored["kids_age_bands"] != ["4-7", "8-12"]:
+            s.ok = False
+            s.notes.append(f"the saves lost an age group: {stored['kids_age_bands']}")
+        page.evaluate("import('/static/js/memory.js').then((m) => m.open())")
+        page.wait_for_selector("#memory-root .mf-forget")
         page.locator("#memory-root .mf-forget").click()
         page.wait_for_timeout(500)
         page.context.close()
@@ -670,6 +830,117 @@ class Tour:
 
     # ------------------------------------------------------------ the tour
 
+    def more_places(self, browser, url: str) -> None:
+        """«хочу поесть» at AITU: under the alternatives a button opens at least five more places of the same wish, one
+        row each with status, minutes and metres; a tap on a row makes it the main card and its pin the selected one."""
+        page = self.open(browser, url, geo=AITU)
+        self.press(page, "#locate-bar" if self.phone else ".locate")
+        page.wait_for_timeout(2500)
+        self.ask(page, "хочу поесть")
+        button = page.locator("#thread .turn:last-child .more-places")
+        s = self.shot(
+            page,
+            "more-closed",
+            "«хочу поесть» at AITU: the button «Ещё N мест рядом» under the rows",
+        )
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if button.count() != 1 or not re.search(r"\d", button.inner_text()):
+            s.ok = False
+            s.notes.append("no button «Ещё N мест рядом» with a number under the answer")
+            page.context.close()
+            return
+        if "по расстоянию" not in button.inner_text():
+            s.ok = False
+            s.notes.append(f"the button does not say the order: {button.inner_text()!r}")
+        button.scroll_into_view_if_needed()
+        self.press(page, "#thread .turn:last-child .more-places")
+        page.wait_for_timeout(600)
+        rows = page.locator("#thread .turn:last-child .alts.more .alt")
+        rows.last.scroll_into_view_if_needed()
+        page.wait_for_timeout(500)
+        s = self.shot(
+            page, "more-open", "the further places open: rows with status, minutes, metres"
+        )
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        if rows.count() < 5:
+            s.ok = False
+            s.notes.append(f"only {rows.count()} more rows, expected at least 5")
+        mins = [
+            int(re.search(r"\d+", t).group())
+            for t in rows.locator(".a-min").all_inner_texts()
+            if re.search(r"\d+", t)
+        ]
+        if mins != sorted(mins):
+            s.ok = False
+            s.notes.append(f"the further rows are not nearest first: {mins}")
+        for i in range(rows.count()):
+            row = rows.nth(i)
+            if not (
+                row.locator(".st").inner_text().strip()
+                and row.locator(".a-min").inner_text().strip()
+            ):
+                s.ok = False
+                s.notes.append(f"row {i + 1} has no status or minutes")
+        pins = page.locator(".mk").count()
+        if pins < 3 + rows.count():
+            s.ok = False
+            s.notes.append(f"{pins} pins on the map, expected {3 + rows.count()}")
+        if self.phone:  # the sheet stops under the top bar: a tap on the menu reaches the menu, not the sheet's handle
+            hit = page.evaluate(
+                """() => {
+                  const r = document.querySelector('.menu-open').getBoundingClientRect();
+                  const on = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+                  const sheet = document.getElementById('view-assistant').getBoundingClientRect();
+                  return {menu: Boolean(on && on.closest('.menu-open')), gap: sheet.top - r.bottom};
+                }"""
+            )
+            if not hit["menu"] or hit["gap"] < 8:
+                s.ok = False
+                s.notes.append(f"the full sheet covers the top bar: {hit}")
+            self.press(page, ".menu-open")
+            if page.locator("#menu").is_hidden():
+                s.ok = False
+                s.notes.append("a tap on the menu with the long list open did not open the menu")
+            else:
+                self.press(page, ".menu-open")
+        row = rows.nth(2)
+        row.scroll_into_view_if_needed()
+        name = row.locator(".a-name").inner_text()
+        if self.phone:
+            tap_on(page, "#thread .turn:last-child .alts.more .alt:nth-child(3)")
+        else:
+            row.click()
+        page.wait_for_timeout(1500)
+        s = self.shot(page, "more-card", f"a tap on a further row: «{name}» is the main card")
+        s.notes = [n for n in s.notes if not n.startswith("targets overlap: .mk")]
+        s.ok = not s.notes
+        card = page.locator("#thread .turn:last-child .card.primary .c-name")
+        if card.count() != 1 or card.inner_text().strip() != name.strip():
+            s.ok = False
+            s.notes.append(f"the main card is not «{name}»: {card.all_inner_texts()}")
+        if not page.locator(".mk.sel").count():
+            s.ok = False
+            s.notes.append("no selected pin on the map for the chosen place")
+        # a new search clears every pin, those of the longer list too, and the card of a hovered one
+        if not self.phone:
+            page.locator(".mk .mk-dot").nth(5).hover()
+            page.wait_for_timeout(300)
+            page.locator("#thread .chip.reset").click()
+        else:
+            self.press(page, "#q-new")
+        page.wait_for_timeout(1200)
+        s = self.shot(
+            page, "more-new-search", "«Новый поиск» with the longer list open: no pin, no card left"
+        )
+        left = page.locator(".mk").count()
+        tip = page.locator(".map-tip.on").count()
+        if left or tip:
+            s.ok = False
+            s.notes.append(f"after a new search {left} pin(s) and {tip} card(s) stay on the map")
+        page.context.close()
+
     def run(self, browser, online: str, offline: str) -> None:
         page = self.open(browser, online)
         self.shot(page, "first", "first screen")
@@ -681,6 +952,11 @@ class Tour:
         self.waiting(page)
         self.memory_applies(browser, online)
         self.memory_form(browser, online)
+        self.memory_then_ask(browser, online)
+        self.memory_pause_then_type(browser, online)
+        self.more_places(browser, online)
+        run_vibe(self, browser, online)
+        run_satellite(self, browser, online, offline)
         self.conditions_shown(browser, online)
         self.answer_shapes(browser, online)
         self.robust(browser, online)
@@ -964,8 +1240,8 @@ class Tour:
 
     def waiting(self, page: Page) -> None:
         """The wait for an answer on a stream made slow: the message is there at once, nothing for the first 300 ms (a
-        quick answer never flashes a placeholder), then the shape of the answer (a lead and one card), after 3 s the
-        steps the core reports; never a spinner alone."""
+        quick answer never flashes a placeholder), then at once the steps the core reports over the shape of the answer
+        (a lead and one card); never a spinner alone."""
         text = self.config(page)["starters"]["ru"][1]["text"]
         page.evaluate(
             "() => { window.__skel = false; new MutationObserver(() => { if (document.querySelector('#thread .skel')) window.__skel = true; }).observe(document.getElementById('thread'), { childList: true, subtree: true }); }"
@@ -995,11 +1271,11 @@ class Tour:
             page.locator("#thread .skel .skel-lead i").count()
             and page.locator("#thread .skel .skel-card").count()
         )
-        early_steps = page.locator("#thread .steps").count()
+        early_steps = page.locator("#thread .steps li").count()
         s = self.shot(
             page,
             "waiting-shape",
-            "waiting: the message and the shape of the answer, a lead and one card",
+            "waiting 0.6 s: the message, the first step and the shape of the answer",
         )
         if not message:
             s.ok = False
@@ -1010,16 +1286,18 @@ class Tour:
         if not shape:
             s.ok = False
             s.notes.append("no skeleton in the shape of the answer after 300 ms")
-        if early_steps:
+        if not early_steps:
             s.ok = False
-            s.notes.append("steps before 3 s")
+            s.notes.append("no step over the shape after 300 ms")
         page.wait_for_timeout(1900)
         steps = page.locator("#thread .steps li").count()
         dots = page.locator("#thread .thinking .dots").count()
-        s = self.shot(page, "waiting-steps", "waiting 4 s: honest steps above the shape")
+        s = self.shot(
+            page, "waiting-steps", "waiting 2.5 s: the steps done so far, the current one"
+        )
         if steps < 2:
             s.ok = False
-            s.notes.append("no steps after 3 s of waiting")
+            s.notes.append("fewer than two steps after 2.5 s of waiting")
         if dots:
             s.ok = False
             s.notes.append("a spinner of dots is on the page")
@@ -1188,6 +1466,7 @@ def _env(offline: bool) -> dict[str, str]:
         WALKS_LLM_CACHE=str(SCRATCH / "llm_cache.json"),
         WALKS_FEEDBACK=str(marks),
         WALKS_REQUEST_LOG="off",
+        WALKS_FX_FAKE="1",
         PYTHONIOENCODING="utf-8",
     )
     if offline:
@@ -1240,6 +1519,7 @@ def main() -> int:
     ap.add_argument(
         "--places-only", action="store_true", help="only the language, map and saved-places steps"
     )
+    ap.add_argument("--satellite-only", action="store_true", help="only the satellite layer step")
     args = ap.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -1257,6 +1537,15 @@ def main() -> int:
             browser = p.chromium.launch()
             for size in sizes:
                 tour = Tour(f"http://127.0.0.1:{args.port}", size, out)
+                if args.satellite_only:
+                    run_satellite(
+                        tour,
+                        browser,
+                        f"http://127.0.0.1:{args.port}/",
+                        f"http://127.0.0.1:{args.port + 1}/",
+                    )
+                    tours.append(tour)
+                    continue
                 if not args.places_only:
                     tour.run(
                         browser,

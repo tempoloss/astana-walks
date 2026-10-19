@@ -68,6 +68,10 @@ def test_extra_mode_filters_by_name_and_drops_unmapped():
     assert overpass_poi.normalize(el({"shop": "books", "name": "Меломан"}), "t", extra=True) is None
     book_cafe = overpass_poi.normalize(el({"shop": "books", "name": "Books & Coffee"}), "t", extra=True)
     assert book_cafe["category"] == "cafe"
+    # pawnbrokers join money (round 25): named in, nameless out - «Банкомат» would lie on a pawnshop card
+    pawn = overpass_poi.normalize(el({"shop": "pawnbroker", "name": "Актив ломбард"}), "t", extra=True)
+    assert pawn["category"] == "money" and "shop=pawnbroker" in pawn["tags"]
+    assert overpass_poi.normalize(el({"shop": "pawnbroker"}), "t", extra=True) is None  # unnamed
 
 
 def test_extra_records_never_override_first_request():

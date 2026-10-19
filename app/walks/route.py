@@ -30,10 +30,14 @@ def _pt(r: Recommendation) -> Point:
 
 
 def route_stops(recs: list[Recommendation]) -> list[Recommendation]:
-    """The cards a walking route goes through: never an errand (a pharmacy, a food shop). An answer of errands only
-    gets the way to its first one (the place it leads with), not a walk from shop to shop."""
+    """The cards a walking route goes through: never an errand (a pharmacy, a food shop, a cash machine, a hotel). An
+    answer of errands, or of an errand and the places that only pad it, gets the way to its first errand: not a walk
+    from shop to shop, nor one to the padding."""
     walk = [r for r in recs if r.poi.category not in ERRAND_KINDS]
-    return walk if walk else recs[:1]
+    errands = [r for r in recs if r.poi.category in ERRAND_KINDS]
+    if errands and all(r.padding == "backfill" for r in walk):
+        return errands[:1]
+    return walk
 
 
 def nearest_neighbour_order(

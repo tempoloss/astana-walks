@@ -6,7 +6,9 @@ Contains ONLY: timestamp rounded to the hour,
 the id of a ~500 m grid cell (derived from the already-rounded location; never raw coordinates), the parsed
 intent categories/flags, the declared and the searched radius, how many places of the requested kinds the dataset
 holds inside the time-budget radius (and how many of them have confirmed hours), candidate and recommendation
-counts (also split by padding: none / expanded / backfill / substituted), and hours_state counts.
+counts (also split by padding: none / expanded / backfill / substituted), hours_state counts, and how long the answer
+took (`total_ms`: the pipeline's own time, or, for a request of the web page, the whole turn from the message to the
+ready answer, see `held`).
 No free text, no names, no POI ids. Answers that used a personal profile (Result.private) are not logged at all.
 
 Set WALKS_REQUEST_LOG=off to disable, or to a file path to redirect.
@@ -21,9 +23,14 @@ import json
 import math
 import os
 from collections import Counter
+from collections.abc import Iterator
+from contextlib import contextmanager
+from contextvars import ContextVar
 from pathlib import Path
 
 from .models import Result
+
+_HELD: ContextVar[list[dict] | None] = ContextVar("reqlog_held", default=None)
 
 DEFAULT_PATH = Path(__file__).resolve().parents[1] / ".local" / "requests.jsonl"
 MAX_LOG_BYTES = 5_000_000
@@ -93,7 +100,25 @@ def record_for(res: Result) -> dict:
             "candidates": dict(Counter(c.hours_state for c in res.retrieval.candidates)),
             "recs": dict(Counter(r.hours_state for r in res.recs)),
         },
+        "total_ms": res.timings_ms.get("total"),
     }
+
+
+@contextmanager
+def held() -> Iterator[list[dict]]:
+    """Inside, the records of the served requests wait in the yielded list instead of the file: the caller (the web
+    turn) knows how long the whole answer took and writes them with that time (`write_held`)."""
+    records: list[dict] = []
+    token = _HELD.set(records)
+    try:
+        yield records
+    finally:
+        _HELD.reset(token)
+
+
+def write_held(records: list[dict], total_ms: int) -> None:
+    for record in records:
+        _write({**record, "total_ms": total_ms})
 
 
 def log_request(res: Result) -> None:
@@ -101,6 +126,17 @@ def log_request(res: Result) -> None:
         return  # a profile was involved: personal data is never written to the log
     if not in_astana(res.lat, res.lon):
         return  # outside the city: not demand for Astana
+    if log_path() is None:
+        return
+    record = record_for(res)
+    waiting = _HELD.get()
+    if waiting is not None:
+        waiting.append(record)
+        return
+    _write(record)
+
+
+def _write(record: dict) -> None:
     path = log_path()
     if path is None:
         return
@@ -109,6 +145,6 @@ def log_request(res: Result) -> None:
         if path.exists() and path.stat().st_size >= MAX_LOG_BYTES:
             os.replace(path, path.with_name(path.name + ".1"))
         with path.open("a", encoding="utf-8") as fh:
-            fh.write(json.dumps(record_for(res), ensure_ascii=False) + "\n")
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
     except OSError:
         pass  # logging must never break serving

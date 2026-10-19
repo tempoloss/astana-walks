@@ -20,10 +20,10 @@
   "avg_walk_min": 9.7,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 7.5,
-  "latency_ms_p90": 25.0,
+  "latency_ms_median": 8.5,
+  "latency_ms_p90": 27.0,
   "generation_ms_median": 0.0,
-  "generation_ms_p90": 1.0,
+  "generation_ms_p90": 2.0,
   "model_link": {
     "template": 20
   },
@@ -124,8 +124,8 @@
     "cases_file": "holdout_cases.json",
     "case_set": "holdout",
     "records": 20,
-    "git": "4a1b05c+uncommitted",
+    "git": "a007589+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T10:36:38+05:00"
+    "generated_at": "2026-10-19T21:12:45+05:00"
   }
 }

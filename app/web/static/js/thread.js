@@ -1,7 +1,7 @@
 // One turn of the conversation on the page: the user's bubble and what came back (a `Turn` of walks.dialog plus the
 // page's extras). The latest turn is open, earlier ones fold into their places as mini rows. The user's bubble shows at
-// once; while the answer is being made the page waits quietly for 300 ms, then shows the shape of the answer to come,
-// and after 3 s the steps the core reports; a shown set of cards is never swapped for another.
+// once; while the answer is being made the page waits quietly for 300 ms, then shows the steps the core reports above
+// the shape of the answer to come; a shown set of cards is never swapped for another.
 // The answer to a follow-up about a place is a sentence and that place's card, in the thread under the folded answer.
 
 import { altRow, miniRow, primaryCard, qaCard } from './cards.js';
@@ -10,7 +10,20 @@ import { h, icon, isPhone } from './dom.js';
 import { metres } from './fmt.js';
 import { currentLang, tr, withLang } from './i18n.js';
 
-const STEP = { parse: 'step_parse', search: 'step_search', write: 'step_write', route: 'step_route' };
+const STEP = { parse: 'step_parse', search: 'step_search', hours: 'step_hours', write: 'step_write', route: 'step_route' };
+
+// The steps in the order the core entered them. A step entered again (the model read the message otherwise and the
+// places are searched anew) drops the ones after it: the list never shows more as done than is done.
+function stepsSoFar(stages) {
+  const seq = [];
+  for (const s of stages) {
+    if (!STEP[s]) continue;
+    const at = seq.indexOf(s);
+    if (at >= 0) seq.length = at;
+    seq.push(s);
+  }
+  return seq;
+}
 
 // The route as one line of words, in walking order: «Старт → 4 мин → 1 Degirmen → 6 мин → 2 Фаттуш» (a plan only).
 function routeLine(turn, byId) {
@@ -125,13 +138,23 @@ function placeAnswer(turn, ctx) {
   return [h('div', { class: 'qa' }, rows), ...cards];
 }
 
+// «Ещё 7 мест рядом — по расстоянию»: the plural form of the language, then the order the rows are in
+function morePlacesLabel(n, order) {
+  const rule = new Intl.PluralRules(currentLang()).select(n);
+  const text = tr(`more_places_${['one', 'few', 'many'].includes(rule) ? rule : 'other'}`, { n });
+  return order ? `${text} — ${tr(`more_order_${order}`)}` : text;
+}
+
 // One place is the main card: the selected one (the first until another is chosen), the others are the rows under it.
+// Under them one button opens the further places of the same wish (`turn.more`, ranked, no text of the model): they are
+// rows like the others, numbered on from the answer's own places, and a tap on one makes it the main card.
 // `chipsRow`: on a phone the follow-up chips come right under the card, before the rows, so they are never behind the field.
 function placesBlock(turn, ctx, chipsRow) {
-  const places = turn.places;
+  const more = turn.more || [];
+  const places = ctx.moreOpen ? [...turn.places, ...more] : turn.places;
   const byId = new Map(places.map((p, i) => [p.id, { place: p, n: i + 1 }]));
-  const lead = places.find((p) => p.id === ctx.sel) || places[0];
-  const others = places.filter((p) => p !== lead);
+  const lead = places.find((p) => p.id === ctx.sel) || turn.places[0];
+  const others = turn.places.filter((p) => p !== lead);
   const parts = [primaryCard(lead, cardOpts(ctx, byId.get(lead.id).n))];
   if (turn.route && turn.route.kind === 'plan') parts.push(routeLine(turn, byId));
   for (const notice of turn.notices || []) parts.push(noticeLine(notice)); // under the card, never pushing it down
@@ -142,6 +165,12 @@ function placesBlock(turn, ctx, chipsRow) {
       h('div', { class: 'sub' }, h('span', { class: 'lbl', text: tr('more_options', { n: others.length }) }), isPhone() ? icon('chevron') : null),
       h('div', { class: 'alts' }, others.map((p) => altRow(p, cardOpts(ctx, byId.get(p.id).n)))),
     );
+  }
+  if (more.length) {
+    const open = Boolean(ctx.moreOpen);
+    parts.push(h('button', { type: 'button', class: 'more-places', 'aria-expanded': String(open), onclick: () => ctx.onMore(!open) },
+      h('span', { text: open ? tr('more_places_less') : morePlacesLabel(more.length, turn.more_order) }), icon('chevron')));
+    if (open) parts.push(h('div', { class: 'alts more' }, more.filter((p) => p !== lead).map((p) => altRow(p, cardOpts(ctx, byId.get(p.id).n)))));
   }
   if (turn.route && turn.route.kind === 'plan') parts.push(routeBlock(turn, byId));
   return parts;
@@ -209,12 +238,13 @@ function skeleton() {
 }
 
 // The wait for an answer. phase 0: the first 300 ms, nothing (a quick answer never flashes a placeholder); phase 1: the
-// shape of the answer; phase 2 (after 3 s): the steps the core reported so far (walks.dialog on_stage), the done ones
-// ticked, the current one marked. Never a spinner alone.
+// steps the core reported so far (walks.pipeline on_stage), the done ones ticked, the current one marked, above the shape
+// of the answer. Never a spinner alone.
 export function renderThinking(id, stages, phase = 0) {
-  const known = stages.filter((s) => STEP[s]);
+  const known = stepsSoFar(stages);
   const box = h('div', { class: 'thinking', id, role: 'status' });
-  if (phase >= 2 && known.length) {
+  if (phase < 1) return box;
+  if (known.length) {
     box.setAttribute('aria-label', tr(STEP[known[known.length - 1]]));
     box.append(h(
       'ol',
@@ -224,6 +254,6 @@ export function renderThinking(id, stages, phase = 0) {
         : h('li', { class: 'done' }, icon('check'), tr(STEP[s])))),
     ));
   }
-  if (phase >= 1) box.append(skeleton());
+  box.append(skeleton());
   return box;
 }

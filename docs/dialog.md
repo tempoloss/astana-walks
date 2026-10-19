@@ -23,7 +23,9 @@ state = with_location(state, lat, lon)                 # the user moved the poin
   `pois`, `language` (fixed by the user; None = detected per message, sticky for messages with no signal),
   `budget_min` (30 / 60 / 120) and `company` («solo» / «pair» / «kids») — taps next to the input box, applied to a NEW
   search only, the words of the message win, `bookmarks` (the user's own named places from their device, ≤ 10, see below),
-  `on_stage(name)` called with `parse`, `search`, `write`, `route`.
+  `on_stage(name)` called as the core enters each step: `parse` (the turn starts reading the message), then for a search
+  `search`, `hours`, `write` (once per reading searched: a model reading that differs from the rules' one searches
+  again) and `route`.
 * **Bookmarks** (`TurnEnv.bookmarks`, `POST /api/turn` `bookmarks[{name ≤ 40, kind home|work|study|other, lat, lon}]`):
   rounded to 3 decimals, used for this request only, never stored or logged (a request that carries any is never written to
   the request log). A message that names one — «рядом с домом», «возле школы», its own name — is searched around it
@@ -105,11 +107,13 @@ so a mid-range or pricier bill could change nothing (a profile saved with one lo
 kind, its own description (Wikipedia, Wikivoyage, the official site, OSM), cuisine, the features its tags state (seats outside,
 Wi-Fi, a playground, lit, free entry …), the street, the verified hours and walking minutes, people's marks. A reason must use
 at least one concrete fact of its place and no filler that fits any place («удобно расположено», «в уютной обстановке», «отлично
-подходит для», «Закажите горячие блюда», «Ещё одно кафе»; `walks/specific.py`): a vague card is asked once more (`rewrite`), then
-the template's fact-based card replaces it. Numbers in the model's text are kept only when the record holds them (its walking
-minutes, the times of its hours). The model's `opening` becomes the lead when code can stand behind it (it names the first card,
-the stated wish, only the payload's numbers, no place the answer does not show, the answer language); otherwise the template
-lead. The conditions line is said once per dialogue (`DialogState.told`), not before every answer.
+подходит для», «Закажите горячие блюда», «Ещё одно кафе»; `walks/specific.py`): a vague card is asked once more (`rewrite`) when
+the first answer came within 5.5 s of the request (`walks/llm.REWRITE_CUTOFF_S`), then the template's fact-based card replaces
+what is still vague; a later answer skips the rewrite and gets the template's card at once. Numbers in the model's text are
+kept only when the record holds them (its walking minutes, the times of its hours). The model's `opening` becomes the lead when
+code can stand behind it (it names the first card, the stated wish, only the payload's numbers, no place the answer does not
+show, the answer language); otherwise the template lead. The conditions line is said once per dialogue (`DialogState.told`),
+not before every answer.
 
 **A status is written by code only, for one moment.** «Открыто до 22:00 / Закрыто, откроется в 10:00 / Открыто круглосуточно»
 come from `walks/status.py`: the state and the next change are read from the record at the same moment (the arrival; a
@@ -203,6 +207,31 @@ play place among the places shown says so before the answer (`dialog_facts.all_g
 function (`dialog_weather.compare_clause`): each temperature is rounded once, as the answer shows it, and the difference is of those numbers
 in every language. «Күндіз» is the afternoon (13:00), as «днём».
 
+Round 6: a message's parts are read in the order they are said (`dialog_questions._asked_topics`: the first topic of each part split at «и / and /
+және / ,»), so «сколько стоит вход и до сколько работает» is `entry` then `closing` («до сколько», «қашанға дейін» are the closing time). New
+topics: `atm` (only of a place the message points at — «есть ли там банкомат»; «где банкомат» is a search): `amenity=atm` / `atm=yes` or «в данных
+этого нет — уточните в отделении»; `exchange` (a question FORM: «меняют ли там доллары», «do they change dollars», «доллар айырбастай ма»):
+`amenity=bureau_de_change`, `currency:USD=yes`, an `exchange` tag, else the same honest line; `round_clock` («банкомат круглосуточно»): yes when
+the schedule is 24/7, no with the day's interval otherwise. `PlaceQuestion.kind_safe`: a question about a shown place even when its text names a
+kind. A child next to an errand kind (pharmacy, money, grocery, lodging, toilet) is the reason, not a wish: `with_kids` is dropped and no kids'
+places are offered. A Kazakh message that is only kazakh words ending in the question particle («доллар айырбастай ма») is answered in Kazakh.
+Kazakh lead: ««X» барыңыз», «Іздегеніңіз: …».
+
+Friends' feedback: a kind of place our categories cannot represent (`walks/dialog_unmapped.py`: a PS / computer club, hookah, sauna / bath,
+karaoke, billiards, bowling, a quest, massage / spa) is said, not swapped: the search runs for the closest represented kind with the kind's
+own words as keywords and NO padding (every other category is refused), and the reply starts with «Игровых клубов … в наших данных рядом нет.
+Показываю ближайшее по смыслу.» unless a place of the answer carries the kind's own words in its name or tags (`Gap.found_in`). Code, homework, maths
+and translation requests (`dialog_scope.off_topic`) get one scope line and no place, unless the message also names a kind, an outing or asks «где /
+рядом». A message of steps («… и потом …», `split_refusal`) whose one step is refused (sexual services, now also «массаж с окончанием») is refused in
+that step in one sentence and the other steps are answered; a pizza is its own kind (`pizza` concept: keywords «пицца / pizza», so «Додо Пицца» and
+`cuisine=pizza` rise). Typos of key place words (`walks/dialog_typos.py`: «кофк», «прак», «паерк»; one edit from exactly one key word, 4+ letters, 5+ in
+English, never a word the lexicon already reads or a real word of `REAL_WORDS`; a test runs every word of the dataset's own texts and expects none
+mended). «В сторону X по пути» (`walks/dialog_toward.py`, `TurnEnv.geocode` = the stand's local address search) searches along the way to the geocoded
+target and says so («Ищу по пути в сторону «…»»); a target that is not found is said and the search is near the start. `TurnEnv` and `Outcome` live in
+`walks/dialog_env.py` and are re-exported by `walks.dialog`.
+
+Wave 9 (round 7 of the personas). *Illness is no weather* (`walks/symptoms.py`: `has_symptom`, `sick_who`): «температурит», «жар», «ыстықтап жатыр», «қызуы көтерілді», «заболел», «кашель», «fever» never go to the weather answer (`asks_weather` is False) and never give a weather hint when an errand kind is asked («Өзіңіздің айтуыңызша, ыстық» is gone). A sick person is a clinic / pharmacy wish: `Intent.sick` = `"child"` / `"adult"` (rules only; in `RULES_ONLY_FIELDS` and `generate._WORD_FIELDS`, so the prompt and the cache keys stay as recorded), the child is the reason (`with_kids` dropped, never a playground), no kind named → `clinic` + `pharmacy`; «поликлиника», «педиатр», «терапевт», «балалар емханасы» are clinics, a hospital / in-patient ward / ambulance is honestly missing («нет больниц и скорой помощи») with «при угрозе жизни звоните 103». *Language*: in a kazakh dialogue a close word-vote (the russian side ahead by one word at most) answers in kazakh. *Scope*: jokes, sports results, news, trivia and chit-chat get the scope line that says what the app does, unless the message also asks for a place («where to watch the champions league» → bars with the honest «matches are not marked» line). Unmapped: PS / Xbox / computer clubs. *Areas*: a river or a district («в сторону Есиля», Ишим, Нура, Сарыарка, Байконур, «район Алматы») resolves to the district centre, never to a same-named street. *Weather + what to do*: «а че там с погодой, и чем занимать себя, если дождь» answers the weather and then searches indoors; «если дождь» is a condition, not a report of rain.
+
 The kazakh «бар» is «there is» («туалет бар ма», «қай жерде кафе бар»): the search is for the thing asked about; «бар» is the
 bar kind only as a noun («барға барайық», «бар іздеп жүрмін», «pub/bar»). A kind a follow-up refuses («не торговый центр»,
 «жоқ, бұл емес… сауда орталығы емес») leaves the request (`FollowUp.drop`, `Intent.refused`); when nothing is left the
@@ -266,11 +295,22 @@ All optional, ignored by an old client; each is absent (or `None`) when the data
 * `Route.kind` — `plan` when the user listed stops in an order (`Intent.plan_order`) and the route runs through at least
   two of them; `nearest` otherwise (the nearest-first loop that only sets the minutes of the legs, not a path to walk). The
   map draws the whole route for a `plan` and only the way to the selected place for `nearest`.
-* `place_legs` in the page's answer (`web.turns.answer`, beside `turn`, one entry per `turn.places`, in order): `place_legs[i]` =
+* `Turn.more` — «Ещё N мест рядом» (`walks/dialog_more.py`): on a `places` turn up to **seven** further places of the same
+  wish that the answer did not show, **nearest first** by the walking minutes the row says (then metres; the three cards
+  are the ranking's pick, the list is read by distance and its label says so), as `Place`s
+  built by code only (`place_from_candidate`): the state of the hours at the arrival time is the retrieval's own check
+  (the same as a card's), minutes and metres are the retrieval's estimate (`walk.method` is `estimate`), no `why` and no
+  `what_to_do` because no model wrote for them. Candidates retrieval padded in (`backfill`, `substituted`) never appear,
+  an errand (pharmacy, cash machine, shop, lodging) lists only its own kinds, **confirmed open first** and the nearest
+  within each group, a request with `plan_order` has none. `Turn.more_order` is `distance` or `open_first` (`''` with no
+  rows): the page's button reads «Ещё N мест рядом — по расстоянию» / «— сначала открытые». It is built after the
+  generation step: the model payload and the first three places are unchanged, and `state.shown` is still the three.
+* `place_legs` in the page's answer (`web.turns.answer`, beside `turn`, one entry per `turn.places`, then one per `turn.more`, in order): `place_legs[i]` =
   `{minutes, meters, method, shape}`, the way from the turn's origin to that place. The minutes, metres and method are
   the place's `walk` (`valhalla` | `straight` | `estimate`); `shape` is the street line `[[lat, lon], …]` or `null` (the
   map then draws a faint straight line, with «≈» before the minutes). The line comes from the router's cache, or from one
   request to a router of one's own (`WALKS_VALHALLA_URL`, kept in memory); the shared public server is never asked for a line.
+  The places of `turn.more` take the cached line only (seven more lookups would slow every answer).
 * `at` in the page's answer — `{time: "HH:MM", date: "YYYY-MM-DD"}`, the moment the answer is about (what the day strip
   marks as «сейчас»); `GET /api/config` has `now`, the stand's clock (`YYYY-MM-DDTHH:MM`, the pinned moment in a demo).
 

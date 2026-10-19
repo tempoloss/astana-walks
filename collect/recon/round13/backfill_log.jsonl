@@ -20,3 +20,33 @@
 {"added": 126, "dup": 0, "dropped": 11}
 {"sel": "[\"tourism\"~\"^(hotel|hostel|guest_house)$\"]", "elements": 140}
 {"added": 126, "dup": 0, "dropped": 11}
+{"sel": "[\"amenity\"=\"fountain\"]", "elements": 129}
+{"sel": "[\"amenity\"=\"pharmacy\"]", "elements": 188}
+{"sel": "[\"shop\"~\"^(supermarket|convenience|greengrocer|butcher)$\"]", "elements": 641}
+{"sel": "[\"amenity\"=\"toilets\"]", "elements": 47}
+{"sel": "[\"amenity\"~\"^(atm|bank|bureau_de_change)$\"]", "elements": 486}
+{"sel": "[\"tourism\"~\"^(hotel|hostel|guest_house)$\"]", "elements": 140}
+{"added": 0, "dup": 1291, "dropped": 237}
+{"sel": "[\"amenity\"=\"fountain\"]", "elements": 129}
+{"added": 0, "dup": 5, "dropped": 124}
+{"sel": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131}
+{"sel": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143}
+{"added": 168, "dup": 86, "dropped": 15}
+{"sel_delta": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131, "d_added": 119, "d_dup": 0, "d_dropped": 10, "d_same_name_near": 2}
+{"sel_delta": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143, "d_added": 49, "d_dup": 86, "d_dropped": 5, "d_same_name_near": 3}
+{"sel": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131}
+{"sel": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143}
+{"added": 168, "dup": 86, "dropped": 15}
+{"sel_delta": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131, "d_added": 119, "d_dup": 0, "d_dropped": 10, "d_same_name_near": 2}
+{"sel_delta": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143, "d_added": 49, "d_dup": 86, "d_dropped": 5, "d_same_name_near": 3}
+{"sel": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131}
+{"sel": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143}
+{"added": 168, "dup": 86, "dropped": 15}
+{"sel_delta": "[\"amenity\"~\"^(dentist|clinic)$\"]", "elements": 131, "d_added": 119, "d_dup": 0, "d_dropped": 10, "d_same_name_near": 2}
+{"sel_delta": "[\"healthcare\"~\"^(dentist|clinic|doctor|centre|laboratory)$\"]", "elements": 143, "d_added": 49, "d_dup": 86, "d_dropped": 5, "d_same_name_near": 3}
+{"sel": "[\"amenity\"=\"post_office\"]", "elements": 50}
+{"added": 50, "dup": 0, "dropped": 0}
+{"sel_delta": "[\"amenity\"=\"post_office\"]", "elements": 50, "d_added": 50, "d_dup": 0, "d_dropped": 0, "d_same_name_near": 0}
+{"sel": "[\"amenity\"=\"post_office\"]", "elements": 50}
+{"added": 50, "dup": 0, "dropped": 0}
+{"sel_delta": "[\"amenity\"=\"post_office\"]", "elements": 50, "d_added": 50, "d_dup": 0, "d_dropped": 0, "d_same_name_near": 0}

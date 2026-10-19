@@ -14,17 +14,19 @@ from datetime import datetime
 from typing import Literal
 
 from .attributes import requested_diets
-from .card_notes import data_notes
-from .chains import distinct, lead_order
-from .claims import note_keys, strip_unbacked
+from .card_notes import claim_notes, data_notes
+from .chains import distinct, lead_order, without_twins
+from .claims import strip_unbacked
 from .colocated import SHARED_COORD
 from .envcfg import cache_pin, replay_only
 from .facts import allowed_numbers, card_status, checked_opening, sheet, vague_ids
 from .hours import to_local_naive
-from .i18n import LLM_LANGUAGE, norm, t
+from .i18n import LLM_LANGUAGE, norm
 from .kids import allowed_unnamed, is_near_named
 from .llm import (
     GENERATION_TIMEOUT_S,
+    REWRITE_CUTOFF_S,
+    TOTAL_DEADLINE_S,
     Deadline,
     LLMCall,
     LLMUnavailable,
@@ -55,14 +57,21 @@ from .reasons import (
 )
 from .retrieve import NEAR_WEIGHT, distance_weight, is_deep_night
 from .shelter import AIR_OUTDOOR_KEPT, OUTDOOR_OFF_KIND, OUTDOOR_REQUESTS, WEATHER_OUTDOOR_KEPT
-from .specific import keep_status, numbers_ok, without_interest
-from .stay import MIN_STAY_OVER_BUDGET, STAY_RANGE_MIN
+from .specific import (
+    OPEN_NOW,
+    keep_status,
+    strip_unverified_claims,
+    without_filler,
+)
+from .stay import MIN_STAY_OVER_BUDGET, category_stay, clamp_stay, typical_stay
 from .sun import is_dark
 from .want import names_the_wish
-from .wish_rank import evening_sight
+from .wish_rank import errand_first, evening_sight, evidence_first
 
 MAX_RECS = 3
-_WORD_FIELDS = frozenset({"wished", "refused", "local_food", "time_stated", "eat"})
+_WORD_FIELDS = frozenset(
+    {"wished", "refused", "local_food", "time_stated", "eat", "subkind", "sick", "work_needs"}
+)
 _CONF_RANK = {"low": 0, "medium": 1, "high": 2}
 OUTDOOR_STAY_CAP_MIN = 20
 NEARER_MIN_M = 300  # a «nearer twin» is at least this much closer ...
@@ -81,34 +90,7 @@ _STRONG_REASONS = {"category", "kids", "wifi", "socket", "keywords", "wheelchair
 MAX_WHY_SENTENCES = 2  # the card shows «почему» in at most two sentences
 
 
-_NUMERIC_CLAIM = re.compile(
-    r"\d+(?:[.,]\d+)?\s*(?:м|км|метр\w*|мин\w*|час\w*|ч|сағат\w*|сағ|шақырым\w*|m|km|meters?|metres?|min\w*|hours?|h)(?![\w])"
-    r"|\d{1,2}:\d{2}",
-    re.I,
-)
-_OPEN_NOW = re.compile(
-    r"(?:сейчас|now|қазір).{0,20}(?:открыт|работает|open|ашық)|(?:открыт\w*|работает|open|ашық).{0,20}(?:сейчас|now|қазір)",
-    re.I,
-)
-
-
 # ---------------------------------------------------------------- shared helpers
-
-
-def strip_unverified_claims(
-    text: str, allowed: frozenset[str] = frozenset(), open_now: bool = False
-) -> str:
-    """Drop sentences that state distances / times / hours the record does not hold (`allowed`: the walking minutes and
-    the times written in its hours) or «open now» of a place that is not open by its hours."""
-    parts = re.split(r"(?<=[.!?])\s+", text.strip())
-    keep = [
-        p
-        for p in parts
-        if p
-        and not (_NUMERIC_CLAIM.search(p) and not numbers_ok(p, set(allowed)))
-        and not (_OPEN_NOW.search(p) and not open_now)
-    ]
-    return " ".join(keep).strip()
 
 
 def _data_confidence(c: Candidate) -> Confidence:
@@ -129,23 +111,6 @@ def _data_confidence(c: Candidate) -> Confidence:
 
 def _min_conf(a: str, b: str) -> Confidence:
     return a if _CONF_RANK[a] <= _CONF_RANK[b] else b  # type: ignore[return-value]
-
-
-def category_stay(minutes: int, category: str) -> int:
-    """Clamp the LLM's time on site into the typical range of the place's category (decided by code)."""
-    lo, hi = STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])
-    return max(lo, min(minutes, hi))
-
-
-def typical_stay(category: str) -> int:
-    lo, hi = STAY_RANGE_MIN.get(category, STAY_RANGE_MIN["other"])
-    return (lo + hi) // 2
-
-
-def clamp_stay(minutes: int, c: Candidate, intent: Intent) -> int:
-    """The route budget is the last word: travel there and back and the stay must fit."""
-    ceiling = max(10, intent.time_budget_min - 2 * c.travel_min)
-    return int(max(5, min(minutes, ceiling)))
 
 
 def _trip(c: Candidate, intent: Intent, stay: int) -> Trip:
@@ -299,7 +264,7 @@ def _clean(text: str, c: Candidate, lang: str, removed: list[str], status: str =
     text = honest_hours_text(
         strip_unverified_claims(text, allowed, c.hours_state == "open"), c, lang
     )
-    text = without_interest(keep_status(text, status))
+    text = without_filler(keep_status(text, status))
     text, kinds = strip_unbacked(text, c)
     removed.extend(kinds)
     return text
@@ -373,7 +338,9 @@ def _from_llm(
             )
         data = data_notes(c, intent, weather)
         notes = [_clean(r.notes, c, lang, removed, status) if own_text else "", extra_note, *data]
-        notes += [n for n in (t(key, lang) for key in note_keys(removed)) if n not in data]
+        notes += claim_notes(
+            removed, data, lang
+        )  # what the model claimed and the record does not back
         recs.append(
             _to_recommendation(
                 c,
@@ -416,7 +383,7 @@ def _clean_want(text: str, candidates: list[Candidate], intent: Intent, notes: s
     text = " ".join(text.split()).rstrip(" .!;:,")
     if not (MIN_WANT_CHARS <= len(text) <= MAX_WANT_CHARS) or _WANT_BANNED.search(text):
         return ""
-    if _OPEN_NOW.search(text) or re.search(r"[.!?]\s+\S", text) or not names_the_wish(text, intent):
+    if OPEN_NOW.search(text) or re.search(r"[.!?]\s+\S", text) or not names_the_wish(text, intent):
         return ""
     latin, cyrillic = len(_LATIN.findall(text)), len(_CYRILLIC.findall(text))
     if (cyrillic > latin) if intent.language == "en" else (latin > cyrillic):
@@ -565,9 +532,9 @@ def required_cards(candidates: list[Candidate], intent: Intent) -> list[Candidat
             (c for c in candidates if mark in c.reasons and not _breaks_rules(c)), None
         ):
             out.append(pick)
-    out += [
-        c for c in (evening_sight(candidates, intent),) if c is not None
-    ]  # Байтерек lit until 21:00
+    out += [  # Байтерек lit until 21:00; the nearest pharmacy / ATM that works
+        c for c in (evening_sight(candidates, intent), errand_first(candidates, intent)) if c
+    ]
     seen: set[str] = set()
     return [c for c in out if not (c.poi.id in seen or seen.add(c.poi.id))]
 
@@ -596,13 +563,14 @@ def keep_required(
         ) is not None:
             out[slot] = new
     asked = {c.poi.id for c in need if INFO_ABOUT in c.reasons}
-    return sorted(out, key=lambda r: r.poi.id not in asked)
+    return sorted(without_twins(out, need), key=lambda r: r.poi.id not in asked)
 
 
 def template_recs(
     candidates: list[Candidate], intent: Intent, weather: WeatherInfo | None = None
 ) -> list[Recommendation]:
-    picked = [template_rec(c, intent, weather, candidates) for c in pick_diverse(candidates)]
+    known = evidence_first(candidates)  # about as near: the better known first, no rating claimed
+    picked = [template_rec(c, intent, weather, candidates) for c in pick_diverse(known)]
     recs = cover_plan(
         keep_required(picked, candidates, intent, weather), candidates, intent, weather
     )
@@ -741,14 +709,15 @@ def generate(
         replay_only() or cache_pin()
     )  # a recorded demo answer is the director's: never re-asked or rewritten
     if recs and not recorded and (vague := vague_ids(final, candidates, norm(intent.language))):
-        # a reason that names no fact of its place («удобно расположено», «отлично подходит»): asked once more, then the
-        # card that is still vague is the template's own, fact-based one
-        with contextlib.suppress(LLMUnavailable):
-            again = _ask({**payload, "rewrite": vague}, None, deadline)
-            fresh, fresh_order = _from_llm(again.value, candidates, intent, weather, when)
-            if fresh:
-                call, recs, order = again, fresh, fresh_order
-                final = _finish(fresh, candidates, intent, weather)
+        # a reason that names no fact of its place («удобно расположено», «отлично подходит»): asked once more while the
+        # request is within REWRITE_CUTOFF_S, then the card still vague is the template's own; the rewrite is cached too
+        if deadline is None or TOTAL_DEADLINE_S - deadline.remaining() <= REWRITE_CUTOFF_S:
+            with contextlib.suppress(LLMUnavailable):
+                again = _ask({**payload, "rewrite": vague}, f"{key}|rewrite|{vague}", deadline)
+                fresh, fresh_order = _from_llm(again.value, candidates, intent, weather, when)
+                if fresh:
+                    call, recs, order = again, fresh, fresh_order
+                    final = _finish(fresh, candidates, intent, weather)
         still = set(vague_ids(final, candidates, norm(intent.language)))
         by_id = {c.poi.id: c for c in candidates}
         final = [

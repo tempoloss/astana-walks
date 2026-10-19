@@ -1,7 +1,8 @@
 """A reason of the model must say something about THIS place: at least one concrete fact of its sheet (walks.facts), and
 none of the filler that fits any place («удобно расположено», «в уютной обстановке», «отлично подходит для», «Закажите
 горячие блюда», «Ещё одно кафе»). The opening of the reply may use only the numbers of the payload, name no place the
-answer does not show, and is written in the answer language. Pure text checks: no data, no model."""
+answer does not show, and is written in the answer language. A sentence that states a distance, a time or «open now»
+the record does not hold is dropped. Pure text checks: no data, no model."""
 
 from __future__ import annotations
 
@@ -54,7 +55,9 @@ def states_status(text: str) -> bool:
     return bool(_STATUS.search(text))
 
 
-_OTHER_DAY = re.compile(r"следующ|завтра|next day|tomorrow|келесі|ертең", re.I)
+# a status line that names another day or the coming morning («до 05:00 утра», «until 5 am»): a bare «до 05:00» of
+# the model next to it leaves the day out
+_OTHER_DAY = re.compile(r"следующ|завтра|next day|tomorrow|келесі|ертең|утра|\bam\b|таңғы", re.I)
 
 
 def _same_hours(sentence: str, status: str) -> bool:
@@ -139,11 +142,26 @@ def _stems(text: str, skip: set[str]) -> set[str]:
     return {w[:STEM] for w in _WORD.findall(norm(text)) if w not in _STOP and w[:STEM] not in skip}
 
 
+# the letters of both scripts on one key, so that «гриль» is the «Grill» of «ПИНТА Bar & Grill» and «кофе» its «Coffee»
+_LATIN = str.maketrans(
+    "абвгдезийклмнопрстуфхцыэәғқңөұүһіюяcw",
+    "abvgdeziiklmnoprstufhcyeagknouuhiuakv",
+    "ьъ",
+) | str.maketrans({"ж": "zh", "ч": "ch", "ш": "sh", "щ": "sh"})
+
+
+def _key(word: str) -> str:
+    """A word's first sounds in Latin letters, doubled letters as one: «гриль» / «grill» -> «gril»."""
+    return re.sub(r"(.)\1+", r"\1", norm(word).translate(_LATIN))[:4]
+
+
 def uses_fact(text: str, facts: list[str], name: str) -> bool:
     """Does `text` use at least one of `facts` (a word of it, an hour of the record, the walking minutes)? Words of the
-    place's own name do not count: the name is not a fact about the place."""
+    place's own name do not count, in either script: the name is not a fact about the place («ПИНТА Bar & Grill, где
+    гриль»)."""
     said = norm(text)
-    words = {w[:STEM] for w in _WORD.findall(said)}
+    named = {_key(w) for w in _WORD.findall(norm(name))}
+    words = {w[:STEM] for w in _WORD.findall(said) if _key(w) not in named}
     skip = _stems(name, set())
     for fact in facts:
         hours = re.findall(r"\d{1,2}:\d{2}", fact)
@@ -175,18 +193,52 @@ _INTEREST = re.compile(
     r"вы любите|қызығушылығыңыз|сізді қызықтыр",
     re.I,
 )
+# a reason taken from the place's own name («где в названии указан гриль», «as its name says»): the name is no fact
+_NAME_TALK = re.compile(
+    r"названи|называет|\bin (?:its|the) name\b|\bits name\b|\bthe name (?:says|suggests|tells)|\bas the name\b|"
+    r"атауы|атауын|деп аталат",
+    re.I,
+)
 
 
-def without_interest(text: str) -> str:
+def without_filler(text: str) -> str:
     """A model's text without the sentences that tell the person what they like («This gallery fits your interest in
-    museums»): the request says what was asked, and the model may not invent it. Every other sentence stays; a card
-    with no fact of its place at all is rewritten as a whole (walks.facts.vague_ids)."""
-    return " ".join(p for p in _sentences(text) if not _INTEREST.search(p))
+    museums») or that argue from the place's own name («где в названии указан гриль»): the request says what was
+    asked, and the name is no fact. Every other sentence stays; a card with no fact of its place at all is rewritten
+    as a whole, then is the template's (walks.facts.vague_ids)."""
+    return " ".join(
+        p for p in _sentences(text) if not (_INTEREST.search(p) or _NAME_TALK.search(p))
+    )
 
 
 def numbers_ok(text: str, allowed: set[str]) -> bool:
     """Every number of `text` is one the payload holds (a temperature, a walking time, an hour of a record)."""
     return all(n in allowed or n.lstrip("0") in allowed for n in _NUM.findall(text))
+
+
+_NUMERIC_CLAIM = re.compile(
+    r"\d+(?:[.,]\d+)?\s*(?:м|км|метр\w*|мин\w*|час\w*|ч|сағат\w*|сағ|шақырым\w*|m|km|meters?|metres?|min\w*|hours?|h)(?![\w])"
+    r"|\d{1,2}:\d{2}",
+    re.I,
+)
+OPEN_NOW = re.compile(
+    r"(?:сейчас|now|қазір).{0,20}(?:открыт|работает|open|ашық)|(?:открыт\w*|работает|open|ашық).{0,20}(?:сейчас|now|қазір)",
+    re.I,
+)
+
+
+def strip_unverified_claims(
+    text: str, allowed: frozenset[str] = frozenset(), open_now: bool = False
+) -> str:
+    """Drop sentences that state distances / times / hours the record does not hold (`allowed`: the walking minutes and
+    the times written in its hours) or «open now» of a place that is not open by its hours."""
+    keep = [
+        p
+        for p in _sentences(text)
+        if not (_NUMERIC_CLAIM.search(p) and not numbers_ok(p, set(allowed)))
+        and not (OPEN_NOW.search(p) and not open_now)
+    ]
+    return " ".join(keep).strip()
 
 
 def in_script(text: str, lang: str) -> bool:
@@ -196,14 +248,15 @@ def in_script(text: str, lang: str) -> bool:
 
 
 def opening_ok(text: str, lang: str, allowed: set[str], others: list[str]) -> bool:
-    """A natural opening of the reply: short, in the answer language, no filler, only the payload's numbers, no name of
-    a place the answer does not show (`others`)."""
+    """A natural opening of the reply: short, in the answer language, no filler (nor a reason taken from the name),
+    only the payload's numbers, no name of a place the answer does not show (`others`)."""
     said = norm(text)
     return (
         0 < len(text) <= 360
         and len(re.findall(r"[.!?](?:\s|$)", text)) <= 3
         and in_script(text, lang)
         and not is_generic(text)
+        and not _NAME_TALK.search(text)
         and numbers_ok(text, allowed)
         and not any(len(n) >= 4 and norm(n) in said for n in others)
     )

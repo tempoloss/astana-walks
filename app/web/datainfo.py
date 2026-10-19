@@ -20,6 +20,7 @@ from walks.models import MUSEUM_REGISTER, OFFICIAL_SITE, POI, STATE_REGISTRY, WI
 from walks.pipeline import get_pois
 from walks.retrieve import TRANSIT_CATEGORY
 from walks.walking import own_router
+from web import speed
 
 RESULTS = Path(__file__).resolve().parents[1] / "eval" / "results"
 # (key on the page, summary file of app/eval/results); the held-out set written after the fixes is the honest one
@@ -100,6 +101,20 @@ _CARDS: tuple[tuple[str, str, str | None, tuple[str, ...], tuple[tuple[str, str]
         None,
         ("https://openfreemap.org",),
         (ODBL, ("OpenMapTiles", "https://openmaptiles.org/")),
+    ),
+    (
+        "satellite",
+        "moving",
+        None,
+        ("https://s2maps.eu",),
+        (CC_BY,),
+    ),
+    (
+        "esri",
+        "moving",
+        None,
+        ("https://location.arcgis.com/help/licensing-and-attribution/",),
+        (),
     ),
     (
         "afisha",
@@ -303,6 +318,7 @@ def _summary(lang: str) -> dict:
 
 
 def data_info(lang: str) -> dict:
-    """The page's numbers; the cards are assembled per call because whose router it is depends on the environment."""
+    """The page's numbers; the cards are assembled per call because whose router it is depends on the environment, the
+    response time because the request log grows."""
     summary = _summary(lang)
-    return summary | {"cards": _cards(summary["sources"])}
+    return summary | {"cards": _cards(summary["sources"]), "speed": speed.answer_times()}

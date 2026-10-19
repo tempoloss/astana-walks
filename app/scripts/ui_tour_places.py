@@ -91,7 +91,16 @@ def first_screen(t, browser, base: str) -> None:
     if page.locator("#tiles, .tile").count():
         fail(s, "scenario tiles are still on the page")
     chips = page.locator("#starters [data-suggest]").all_inner_texts()
-    if chips != ["Поесть", "Кофе", "Погулять", "С детьми", "Музей", "Вечером куда сходить"]:
+    expected = [
+        "Под мой вайб",
+        "Поесть",
+        "Кофе",
+        "Погулять",
+        "С детьми",
+        "Музей",
+        "Вечером куда сходить",
+    ]
+    if chips != expected:
         fail(s, f"first-screen chips: {chips}")
     cfg = t.config(page)
     start = next(p for p in cfg["presets"] if p["id"] == cfg["start"])

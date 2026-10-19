@@ -5,13 +5,14 @@
 // free text for the AI. Every switch, choice and chip applies at once (flipped on the screen first, rolled back with a
 // short line when the server refuses); only the free text has a «Сохранить» of its own. The server refuses what
 // contradicts itself, the form does not offer it (a child's age shows only next to «с детьми», a kind of place is
-// either liked or left out).
+// either liked or left out). «Мой вайб» is a section of the form after «Какие места» (web/static/js/vibe-form.js).
 
 import { api } from './api.js';
 import { h, icon } from './dom.js';
 import { currentLang, onLang, tr } from './i18n.js';
 import { placesSection } from './places-panel.js';
 import { forgetRecents, recents } from './address.js';
+import { vibeSection } from './vibe-form.js';
 
 const ON = 'anyq.profile.on';
 const ID = 'anyq.profile.id';
@@ -19,6 +20,7 @@ const AGE_BANDS = ['0-3', '4-7', '8-12', '13+'];
 const LANGUAGE_NAME = { kk: 'қазақша', ru: 'русский', en: 'English' };
 let view = { id: null, items: [], form: null, categories: [], about_max: 500 };
 let formOpen = false;
+let vibeWhy = false; // opened by «Под мой вайб» with no vibe: the block says why, once
 let draft = null; // the form's values on screen (what the controls show right now)
 let typedAbout = null; // the free text as typed and not yet saved: it survives a redraw
 let queue = Promise.resolve(); // the saves, one after another: each sends the form as it is when its turn comes
@@ -30,6 +32,19 @@ export function on() {
 
 export function id() {
   return localStorage.getItem(ID);
+}
+
+// resolves when every save started so far is done (never rejects): a turn asked meanwhile waits for it and goes out with
+// the profile the person has just set
+export function settled() {
+  return queue.catch(() => undefined);
+}
+
+// a vibe the next turn would use: the memory is on and the stored profile has one
+export async function hasVibe() {
+  if (!on()) return false;
+  await refresh();
+  return Boolean(view.form && Object.keys(view.form.vibe || {}).length);
 }
 
 function setId(next) {
@@ -57,9 +72,11 @@ export async function act(action) {
   }
 }
 
-// «Забыть всё»: the stored profile and the addresses picked in «Где вы?» (the saved places are a list of their own)
+// «Забыть всё»: the stored profile and the addresses picked in «Где вы?» (the saved places are a list of their own), and
+// «Запоминать мои предпочтения» back off (a setting saved again turns it on again, as the vibe block says)
 async function forgetAll() {
   forgetRecents();
+  localStorage.setItem(ON, '0');
   await act({ action: 'forget_all' });
 }
 
@@ -86,12 +103,12 @@ function paintItems() {
   if (box) box.replaceChildren(itemsList());
 }
 
-// Save the form as it is on the screen. `about`: the free text to store (the stored one stays when a switch is flipped).
-// The first setting ever flipped creates the profile and turns «Запоминать мои предпочтения» on. A refusal puts the
-// screen back to what is stored and says so. Resolves to whether it was stored.
-function commit(about) {
+// Save the form as it is on the screen. `about` / `vibeText`: the free text to store (the stored one stays when a switch
+// is flipped). The first setting ever flipped creates the profile and turns «Запоминать мои предпочтения» on. A refusal
+// puts the screen back to what is stored and says so. Resolves to whether it was stored.
+function commit(about, vibeText) {
   const run = async () => {
-    const form = { ...draft, about: about ?? view.form.about };
+    const form = { ...draft, about: about ?? view.form.about, vibe_text: vibeText ?? view.form.vibe_text };
     try {
       view = await api.profileAction({ id: id(), lang: currentLang(), action: 'save', form });
       setId(view.id);
@@ -102,12 +119,8 @@ function commit(about) {
     }
     if (about !== undefined) typedAbout = null;
     const turnedOn = !on();
-    if (turnedOn) {
-      localStorage.setItem(ON, '1');
-      render();
-    } else {
-      paintItems();
-    }
+    if (turnedOn) localStorage.setItem(ON, '1');
+    paintOn();
     flash('saved', turnedOn);
     return true;
   };
@@ -209,7 +222,7 @@ function aboutField(max) {
 
 function form() {
   if (!view.form) return null;
-  draft = { ...view.form, liked: [...view.form.liked], avoid: [...view.form.avoid] };
+  draft = { ...view.form, liked: [...view.form.liked], avoid: [...view.form.avoid], vibe: { ...view.form.vibe } };
   const set = (key) => (v) => {
     draft[key] = v;
     commit();
@@ -258,6 +271,7 @@ function form() {
       segmented(tr('mf_pace'), ['slow', 'normal', 'fast'].map((v) => [v, tr(`mf_p_${v}`)]), draft.walk_pace, set('walk_pace')),
       segmented(tr('mf_cold'), ['low', 'normal', 'high'].map((v) => [v, tr(`mf_c_${v}`)]), draft.cold_tolerance, set('cold_tolerance'))),
     section(tr('mf_s_kinds'), kindPickers(view.categories)),
+    vibeSection({ draft: () => draft, view: () => view, commit, why: vibeWhy, close: () => document.getElementById('memory').close() }),
     section(tr('mf_s_about'), aboutField(view.about_max)),
   );
   el.addEventListener('submit', (e) => e.preventDefault());
@@ -266,22 +280,32 @@ function form() {
   return box;
 }
 
+// The dialog is drawn once per opening and then only painted: a save that comes back while the person taps (the first
+// one turns the memory on) must never replace the buttons under their finger: a tap on a control that was replaced
+// between its press and its release is lost, and so was the tap on «Закрыть» (the dialog stayed open, modal, and the
+// composer behind it dead).
+function paintOn() {
+  const enabled = on();
+  const at = (id) => document.getElementById(id);
+  if (at('mem-toggle')) at('mem-toggle').checked = enabled;
+  if (at('mem-off')) at('mem-off').hidden = enabled;
+  for (const id of ['mem-known-h', 'mem-items-box']) if (at(id)) at(id).hidden = !enabled;
+  // «Забыть всё»: there while anything is stored (the profile or the recent addresses), with the memory on or off
+  const stored = Boolean(view.id || recents().length);
+  for (const id of ['mem-forget', 'mem-forget-note']) if (at(id)) at(id).hidden = !stored;
+  paintItems();
+}
+
 function render() {
   const root = document.getElementById('memory-root');
   const dialog = document.getElementById('memory');
-  const scrolled = dialog.scrollTop; // a redraw (the first setting turns the memory on) keeps the panel where it was
-  const enabled = on();
-  const toggle = h('input', { type: 'checkbox', role: 'switch', checked: enabled, id: 'mem-toggle' });
+  const scrolled = dialog.scrollTop; // a redraw keeps the panel where it was
+  const toggle = h('input', { type: 'checkbox', role: 'switch', checked: on(), id: 'mem-toggle' });
   toggle.addEventListener('change', () => {
     localStorage.setItem(ON, toggle.checked ? '1' : '0');
-    render();
+    paintOn();
   });
   const forms = form(); // the settings are always on offer: flipping one turns the memory on
-  // «Забыть всё»: there while anything is stored (the profile or the recent addresses), with the memory on or off
-  const forget = view.id || recents().length
-    ? [h('button', { type: 'button', class: 'secondary mf-forget', onclick: forgetAll }, tr('mem_forget_all')),
-      h('p', { class: 'fine', text: tr('mem_forget_note') })]
-    : null;
   root.replaceChildren(
     h('header', {}, h('h2', { text: tr('mem_title') }),
       h('button', { type: 'button', class: 'ghost icon', 'aria-label': tr('close'), onclick: () => document.getElementById('memory').close() }, icon('close'))),
@@ -289,10 +313,16 @@ function render() {
     h('p', { class: 'fine', text: tr('mem_dialog_note') }),
     h('label', { class: 'mf-toggle mf-master', for: 'mem-toggle' }, h('span', { text: tr('side_remember') }), toggle),
     h('p', { class: 'fine', text: tr('mem_why') }),
-    enabled ? h('div', { class: 'section' }, h('h2', { text: tr('mem_known') }), h('div', { id: 'mem-items-box' }, itemsList()), forms, forget)
-      : h('div', { class: 'section' }, h('p', { class: 'fine', text: tr('mem_off') }), forms, forget),
+    h('div', { class: 'section' },
+      h('p', { class: 'fine', id: 'mem-off', text: tr('mem_off') }),
+      h('h2', { id: 'mem-known-h', text: tr('mem_known') }),
+      h('div', { id: 'mem-items-box' }, itemsList()),
+      forms,
+      h('button', { type: 'button', class: 'secondary mf-forget', id: 'mem-forget', onclick: forgetAll }, tr('mem_forget_all')),
+      h('p', { class: 'fine', id: 'mem-forget-note', text: tr('mem_forget_note') })),
     h('p', { class: 'fine', text: tr('mem_marks_note') }),
   );
+  paintOn();
   dialog.scrollTop = scrolled;
 }
 
@@ -301,6 +331,17 @@ export async function open() {
   formOpen = view.items.length === 0; // nothing stored yet: the form is what the person came for
   render();
   document.getElementById('memory').showModal();
+}
+
+// «Под мой вайб» with no vibe: the form open at «Мой вайб», with the sentence why
+export async function openVibe() {
+  await refresh();
+  formOpen = true;
+  vibeWhy = true;
+  render();
+  vibeWhy = false;
+  document.getElementById('memory').showModal();
+  document.getElementById('vibe-sec')?.scrollIntoView({ block: 'start' });
 }
 
 export async function initMemory() {

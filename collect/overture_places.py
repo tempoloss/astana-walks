@@ -191,14 +191,26 @@ def clean(s: str | None) -> str | None:
     return s or None
 
 
+# Overture carries some place names as social-media handles / slugified strings («kafel_laminat_astana»,
+# «towerpub_lordloft») - underscores are not walking-map typography: split them into words. Not a rename of real
+# names: only `_`/`-` runs are touched, so «KFC - Астана» keeps its dash and «Nurlyzhol_vokzaly» becomes readable.
+def denormalize(s: str | None) -> str | None:
+    if not s:
+        return None
+    if "_" not in s:
+        return s
+    out = re.sub(r"[_]+", " ", s).strip()
+    return out or None
+
+
 def to_record(row: tuple, cols: list[str]) -> dict:
     r = dict(zip(cols, row))
     addresses = [
         {k: clean(a.get(k)) for k in ("freeform", "locality", "postcode", "region", "country") if clean(a.get(k))}
         for a in (r["addresses"] or [])
     ]
-    names = {"primary": clean(r["name_primary"]), "ru": clean(r["name_ru"]), "kk": clean(r["name_kk"]),
-             "en": clean(r["name_en"])}
+    names = {"primary": denormalize(clean(r["name_primary"])), "ru": denormalize(clean(r["name_ru"])),
+             "kk": denormalize(clean(r["name_kk"])), "en": denormalize(clean(r["name_en"]))}
     name = names["primary"] or names["ru"] or names["en"] or names["kk"]
     category, rule, for_kids = classify(r["tax_primary"], list(r["tax_hierarchy"] or []), name)
     return {

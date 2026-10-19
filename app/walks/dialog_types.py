@@ -118,6 +118,7 @@ class Place(BaseModel):
     signal: Signal | None = None
     stop: Stop | None = None
     price: Price | None = None
+    vibe: str = ""  # «Под ваш вайб: тихо (по отметкам людей), природа (парк)» (walks.vibe); '' without a vibe
 
 
 class Chip(BaseModel):
@@ -204,6 +205,12 @@ class Turn(BaseModel):
     lang: Lang = "ru"
     reply: str
     places: list[Place] = Field(default_factory=list)
+    more: list[Place] = Field(
+        default_factory=list
+    )  # «Ещё N мест рядом»: further places of the same wish, nearest first, no text of the model (see walks.dialog_more)
+    more_order: Literal["", "distance", "open_first"] = (
+        ""  # how `more` is ordered, for its label: «по расстоянию» / «сначала открытые» ('' = no rows)
+    )
     answers: list[PlaceAnswer] = Field(default_factory=list)
     chips: list[Chip] = Field(default_factory=list)
     notices: list[Notice] = Field(default_factory=list)

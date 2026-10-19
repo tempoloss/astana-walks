@@ -1,14 +1,113 @@
 [
  {
-  "id": "node/2641242425",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.2638559,
-  "lon": 71.3673334,
-  "category": "public_toilet",
+  "id": "node/1764015252",
+  "name": "Городское отделение почтовой связи №4",
+  "name_generated": false,
+  "names": {
+   "name:ru": "Городское отделение почтовой связи №4",
+   "name": "Городское отделение почтовой связи №4"
+  },
+  "lat": 51.1992313,
+  "lon": 71.3685439,
+  "category": "post",
   "tags": [
-   "amenity=toilets"
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 09:00-17:00; Sa 09:00-14:00",
+   "website=http://www.kazpost.kz",
+   "phone=+7 (7172) 41 76 96",
+   "operator=АО Казпочта"
+  ],
+  "opening_hours": "Mo-Fr 09:00-17:00; Sa 09:00-14:00",
+  "website": "http://www.kazpost.kz",
+  "phone": "+7 (7172) 41 76 96",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «Городское отделение почтовой связи №4» (оператор: АО Казпочта) в Астане. Часы работы: Mo-Fr 09:00-17:00; Sa 09:00-14:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/2158757214",
+  "name": "Центральный почтамт",
+  "name_generated": false,
+  "names": {
+   "name": "Центральный почтамт"
+  },
+  "lat": 51.1677241,
+  "lon": 71.4238154,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 09:00-20:00; Sa 09:00-16:00; PH,Su off",
+   "operator=Казпочта"
+  ],
+  "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-16:00; PH,Su off",
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «Центральный почтамт» (оператор: Казпочта) в Астане. Часы работы: Mo-Fr 09:00-20:00; Sa 09:00-16:00; PH,Su off.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/2158757216",
+  "name": "Почта №17",
+  "name_generated": false,
+  "names": {
+   "name": "Почта №17"
+  },
+  "lat": 51.1300773,
+  "lon": 71.4386684,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 09:00-09:00",
+   "website=https://post.kz/",
+   "operator=Қазпошта"
+  ],
+  "opening_hours": "Mo-Su 09:00-09:00",
+  "website": "https://post.kz/",
+  "phone": null,
+  "address": "Астана, Қонаев көшесі, 35",
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «Почта №17» (оператор: Қазпошта) по адресу Астана, Қонаев көшесі, 35. Часы работы: Mo-Su 09:00-09:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/2388769511",
+  "name": "Казпочта, отделение 3",
+  "name_generated": false,
+  "names": {
+   "name": "Казпочта, отделение 3"
+  },
+  "lat": 51.1983656,
+  "lon": 71.3944108,
+  "category": "post",
+  "tags": [
+   "amenity=post_office"
   ],
   "opening_hours": null,
   "website": null,
@@ -18,298 +117,27 @@
   "internet_access": null,
   "outdoor_seating": null,
   "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_auto": "Объект «Казпочта, отделение 3» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
   "description_source": "derived",
   "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
+  "collected_at": "2026-10-19T08:18:23Z",
   "sources": [
    "osm"
   ]
  },
  {
-  "id": "node/4113161965",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1614446,
-  "lon": 71.4184004,
-  "category": "public_toilet",
+  "id": "node/2477271020",
+  "name": "Отделение №11",
+  "name_generated": false,
+  "names": {
+   "name": "Отделение №11"
+  },
+  "lat": 51.1898382,
+  "lon": 71.4122471,
+  "category": "post",
   "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/4117912511",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1712593,
-  "lon": 71.4269331,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/4666749589",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.2463285,
-  "lon": 71.3792598,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/4903616230",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1492455,
-  "lon": 71.4454061,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/4929123079",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1385821,
-  "lon": 71.4452747,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "opening_hours=Mo-Su 07:00-21:00"
-  ],
-  "opening_hours": "Mo-Su 07:00-21:00",
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Часы работы: Mo-Su 07:00-21:00.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/5040418122",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.127514,
-  "lon": 71.4343465,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "opening_hours=Mo-Su 08:00-00:00"
-  ],
-  "opening_hours": "Mo-Su 08:00-00:00",
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Часы работы: Mo-Su 08:00-00:00.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/5881714278",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.2323189,
-  "lon": 71.3849893,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/5969068685",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1336397,
-  "lon": 71.4400958,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/6227959925",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.2643137,
-  "lon": 71.3689701,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/6227959926",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.2636156,
-  "lon": 71.3692785,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/12133625876",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1657424,
-  "lon": 71.4163694,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "wheelchair=no",
-   "fee=no"
+   "amenity=post_office",
+   "wheelchair=no"
   ],
   "opening_hours": null,
   "website": null,
@@ -319,57 +147,1389 @@
   "internet_access": null,
   "outdoor_seating": null,
   "description": null,
-  "description_auto": "Публичный туалет в Астане. Не приспособлено для колясок, вход бесплатный.",
+  "description_auto": "Объект «Отделение №11» в Астане. Не приспособлено для колясок.",
   "description_source": "derived",
   "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
+  "collected_at": "2026-10-19T08:18:23Z",
   "sources": [
    "osm"
   ]
  },
  {
-  "id": "node/12947068529",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1751888,
-  "lon": 71.4117013,
-  "category": "public_toilet",
+  "id": "node/3704030870",
+  "name": "Почта №16",
+  "name_generated": false,
+  "names": {
+   "name": "Почта №16"
+  },
+  "lat": 51.1213977,
+  "lon": 71.4309074,
+  "category": "post",
   "tags": [
-   "amenity=toilets",
-   "wheelchair=yes",
-   "fee=no"
+   "amenity=post_office"
   ],
   "opening_hours": null,
   "website": null,
   "phone": null,
   "address": null,
-  "wheelchair": "yes",
+  "wheelchair": null,
   "internet_access": null,
   "outdoor_seating": null,
   "description": null,
-  "description_auto": "Публичный туалет в Астане. Доступно для колясок, вход бесплатный.",
+  "description_auto": "Объект «Почта №16» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
   "description_source": "derived",
   "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
+  "collected_at": "2026-10-19T08:18:23Z",
   "sources": [
    "osm"
   ]
  },
  {
-  "id": "node/12948785330",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1777114,
-  "lon": 71.4108591,
-  "category": "public_toilet",
+  "id": "node/4933998221",
+  "name": "Главное управление казпочты",
+  "name_generated": false,
+  "names": {
+   "name": "Главное управление казпочты"
+  },
+  "lat": 51.1769788,
+  "lon": 71.4178517,
+  "category": "post",
   "tags": [
-   "amenity=toilets",
-   "wheelchair=limited",
-   "fee=no"
+   "amenity=post_office"
   ],
   "opening_hours": null,
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «Главное управление казпочты» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/5776631777",
+  "name": "Казпочта",
+  "name_generated": false,
+  "names": {
+   "name": "Казпочта"
+  },
+  "lat": 51.1524372,
+  "lon": 71.4667484,
+  "category": "post",
+  "tags": [
+   "amenity=post_office"
+  ],
+  "opening_hours": null,
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «Казпочта» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595529313",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.171715,
+  "lon": 71.398489,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 747 778 4435",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533418",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.093889,
+  "lon": 71.4255095,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 775 144 0264;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533421",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.178459,
+  "lon": 71.421617,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 717 239 6664;+7 778 294 8910",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533423",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.1884269,
+  "lon": 71.4110658,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 701 940 7377",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533424",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.14462,
+  "lon": 71.4224249,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 775 333 2589",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533426",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1614911,
+  "lon": 71.45551,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 717 277 9279;+7 778 701 0081",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533444",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.1243946,
+  "lon": 71.4242944,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\"",
+   "brand=СДЭК",
+   "brand:wikidata=Q28665980"
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 700 000 4242;+7 717 264 2233",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533451",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1614255,
+  "lon": 71.417452,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=24/7",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "24/7",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 000 4242;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Работает круглосуточно.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533466",
+  "name": "CDEK",
+  "name_generated": false,
+  "names": {
+   "name": "CDEK"
+  },
+  "lat": 51.0940457,
+  "lon": 71.4203274,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00",
+  "website": "https://cdek.ru/",
+  "phone": "+7 775 144 0264",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «CDEK» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00;Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/8595533483",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.144787,
+  "lon": 71.475259,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 707 127 0100;+7 7172 56 50 55;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/10824200759",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1184954,
+  "lon": 71.4240879,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 706 675 5721;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/10824200766",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1386444,
+  "lon": 71.3692903,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz/",
+  "phone": "+7 702 689 2300;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/10929166522",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1223531,
+  "lon": 71.4994736,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-21:00; Sa-Su 10:00-19:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-21:00; Sa-Su 10:00-19:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 747 900 2578;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-21:00; Sa-Su 10:00-19:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11149656980",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1180408,
+  "lon": 71.5133839,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 747 029 9031",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11159730405",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1399976,
+  "lon": 71.47036,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "internet_access=wlan",
+   "opening_hours=Mo-Fr 10:00-20:00; Su,Sa 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Su,Sa 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+77006419555",
+  "address": "Тәуелсіздік даңғылы, 34/9",
+  "wheelchair": null,
+  "internet_access": "wlan",
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") по адресу Тәуелсіздік даңғылы, 34/9. Есть Wi-Fi, часы работы: Mo-Fr 10:00-20:00; Su,Sa 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11250699156",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1163639,
+  "lon": 71.4335292,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 942 3030;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-22:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693786",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1365811,
+  "lon": 71.4202523,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 777 280 3618",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693796",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1847771,
+  "lon": 71.463173,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-20:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 000 4242",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-20:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693797",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1216606,
+  "lon": 71.4148557,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-22:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-22:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 000 4242;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-22:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693812",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1363118,
+  "lon": 71.3842464,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 777 533 7770;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693813",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1526778,
+  "lon": 71.501754,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 337 3432;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693815",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1217111,
+  "lon": 71.485151,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-22:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-22:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 000 4242;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-22:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693820",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1177344,
+  "lon": 71.480103,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 705 437 1107",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693823",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.0957167,
+  "lon": 71.4361096,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\"",
+   "brand=СДЭК",
+   "brand:wikidata=Q28665980"
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 337 3432;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693837",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1114067,
+  "lon": 71.3954367,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 705 776 8974;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693839",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1205494,
+  "lon": 71.3985961,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-22:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-22:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 700 000 4242;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-22:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693853",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.129189,
+  "lon": 71.433347,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 707 979 0303;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11385693858",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1293268,
+  "lon": 71.3745691,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 747 718 1800;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11443129381",
+  "name": "КСЭ",
+  "name_generated": false,
+  "names": {
+   "name": "КСЭ"
+  },
+  "lat": 51.1916696,
+  "lon": 71.4165723,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 09:00-18:00"
+  ],
+  "opening_hours": "Mo-Fr 09:00-18:00",
+  "website": "https://www.cse.ru",
+  "phone": "+7 7172 64 22 01",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «КСЭ» в Астане. Часы работы: Mo-Fr 09:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11505939092",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1337704,
+  "lon": 71.4284493,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz/",
+  "phone": "+7 700 337 3432;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11505939094",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.0835767,
+  "lon": 71.4426112,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-20:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "website": "https://cdek.kz/",
+  "phone": "+7 777 870 7170",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-20:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11564307259",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.180177,
+  "lon": 71.4212072,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 778 491 0938;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11668897213",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.16795,
+  "lon": 71.435834,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 771 905 7774;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11668897214",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.0992944,
+  "lon": 71.4048886,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-20:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 705 103 3055;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-20:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11801658417",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1628451,
+  "lon": 71.4011228,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-20:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 778 493 1525;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-20:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11801658419",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1108342,
+  "lon": 71.4262819,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Su 10:00-20:00",
+   "operator=УК \"СДЭК\"",
+   "brand=СДЭК",
+   "brand:wikidata=Q28665980"
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "website": "https://cdek.kz",
+  "phone": "+7 707 453 7299;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Su 10:00-20:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11951889669",
+  "name": "КазПост",
+  "name_generated": false,
+  "names": {
+   "name:ru": "КазПост",
+   "name": "KAZPOST"
+  },
+  "lat": 51.1236767,
+  "lon": 71.431515,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "operator=Қазпошта"
+  ],
+  "opening_hours": null,
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «КазПост» (оператор: Қазпошта) в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11953773121",
+  "name": "СДЭК",
+  "name_generated": false,
+  "names": {
+   "name:ru": "СДЭК",
+   "name": "CDEK"
+  },
+  "lat": 51.1938649,
+  "lon": 71.4097622,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "opening_hours=Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+   "operator=УК \"СДЭК\""
+  ],
+  "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
+  "website": "https://cdek.kz/",
+  "phone": "+7 778 257 9800;+7 800 0701405",
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «СДЭК» (оператор: УК \"СДЭК\") в Астане. Часы работы: Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/11968915669",
+  "name": "YM TRANS",
+  "name_generated": false,
+  "names": {
+   "name": "YM TRANS"
+  },
+  "lat": 51.1237241,
+  "lon": 71.431535,
+  "category": "post",
+  "tags": [
+   "amenity=post_office"
+  ],
+  "opening_hours": null,
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «YM TRANS» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/12076835969",
+  "name": "BeePost",
+  "name_generated": false,
+  "names": {
+   "name": "BeePost"
+  },
+  "lat": 51.1289892,
+  "lon": 71.381694,
+  "category": "post",
+  "tags": [
+   "amenity=post_office"
+  ],
+  "opening_hours": null,
+  "website": null,
+  "phone": null,
+  "address": null,
+  "wheelchair": null,
+  "internet_access": null,
+  "outdoor_seating": null,
+  "description": null,
+  "description_auto": "Объект «BeePost» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_source": "derived",
+  "source": "osm",
+  "collected_at": "2026-10-19T08:18:23Z",
+  "sources": [
+   "osm"
+  ]
+ },
+ {
+  "id": "node/12102568001",
+  "name": "YM TRANS",
+  "name_generated": false,
+  "names": {
+   "name": "YM TRANS"
+  },
+  "lat": 51.1767622,
+  "lon": 71.4176803,
+  "category": "post",
+  "tags": [
+   "amenity=post_office",
+   "wheelchair=limited",
+   "opening_hours=Mo-Su 10:00-20:00"
+  ],
+  "opening_hours": "Mo-Su 10:00-20:00",
   "website": null,
   "phone": null,
   "address": null,
@@ -377,53 +1537,26 @@
   "internet_access": null,
   "outdoor_seating": null,
   "description": null,
-  "description_auto": "Публичный туалет в Астане. Частично доступно для колясок, вход бесплатный.",
+  "description_auto": "Объект «YM TRANS» в Астане. Частично доступно для колясок, часы работы: Mo-Su 10:00-20:00.",
   "description_source": "derived",
   "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
+  "collected_at": "2026-10-19T08:18:23Z",
   "sources": [
    "osm"
   ]
  },
  {
-  "id": "node/12973394493",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1595336,
-  "lon": 71.414468,
-  "category": "public_toilet",
+  "id": "node/12208424401",
+  "name": "Jana Post",
+  "name_generated": false,
+  "names": {
+   "name": "Jana Post"
+  },
+  "lat": 51.1586429,
+  "lon": 71.4310972,
+  "category": "post",
   "tags": [
-   "amenity=toilets",
-   "wheelchair=limited",
-   "fee=no"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": "limited",
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Частично доступно для колясок, вход бесплатный.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/12973398800",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1619769,
-  "lon": 71.4218979,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
+   "amenity=post_office"
   ],
   "opening_hours": null,
   "website": null,
@@ -433,490 +1566,10 @@
   "internet_access": null,
   "outdoor_seating": null,
   "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
+  "description_auto": "Объект «Jana Post» в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
   "description_source": "derived",
   "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "node/13909570702",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1584815,
-  "lon": 71.4194522,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/236542827",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.0369542,
-  "lon": 71.4760352,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/236542832",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.0407222,
-  "lon": 71.4739048,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1089447306",
-  "name": "Туалет (Сарайшық көшесі)",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.136289,
-  "lon": 71.4401516,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана, Сарайшық көшесі, 13/3",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана, Сарайшық көшесі, 13/3. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1101541157",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1274184,
-  "lon": 71.4575897,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1108448978",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1573492,
-  "lon": 71.4130382,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "fee=no",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Вход бесплатный.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1147610795",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1090491,
-  "lon": 71.4225628,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1191771138",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1373586,
-  "lon": 71.4453424,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "fee=no",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Вход бесплатный.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449295070",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1327199,
-  "lon": 71.4032852,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449301364",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1323007,
-  "lon": 71.4027717,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449301367",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1320022,
-  "lon": 71.4042832,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449301380",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.132822,
-  "lon": 71.4046539,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "wheelchair=yes",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": "yes",
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Доступно для колясок.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449301392",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1331669,
-  "lon": 71.4037099,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1449317892",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1321787,
-  "lon": 71.4035003,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "indoor=room"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": null,
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет в Астане. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1462136139",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1101336,
-  "lon": 71.4136683,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1469723586",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1020305,
-  "lon": 71.4201069,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "wheelchair=limited",
-   "access=yes",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": "limited",
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Частично доступно для колясок.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
-  "sources": [
-   "osm"
-  ]
- },
- {
-  "id": "way/1469742303",
-  "name": "Туалет",
-  "name_generated": true,
-  "names": {},
-  "lat": 51.1642377,
-  "lon": 71.4227177,
-  "category": "public_toilet",
-  "tags": [
-   "amenity=toilets",
-   "building=yes"
-  ],
-  "opening_hours": null,
-  "website": null,
-  "phone": null,
-  "address": "Астана",
-  "wheelchair": null,
-  "internet_access": null,
-  "outdoor_seating": null,
-  "description": null,
-  "description_auto": "Публичный туалет по адресу Астана. Подробности (часы работы, контакты) в OpenStreetMap не указаны.",
-  "description_source": "derived",
-  "source": "osm",
-  "collected_at": "2026-10-19T04:57:58Z",
+  "collected_at": "2026-10-19T08:18:23Z",
   "sources": [
    "osm"
   ]

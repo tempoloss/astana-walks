@@ -19,6 +19,7 @@ from . import metar, metno, sun
 from . import weather as wx
 from .envcfg import fx_fake
 from .hours import TZ
+from .kazhydromet import classify_notice
 from .models import WeatherInfo, WeatherWarning
 
 PRECIP_MAX_AGE = timedelta(
@@ -101,42 +102,6 @@ def _air(weather: WeatherInfo, observed: datetime | None, stamp: dict) -> dict |
     if "smog" in weather.conditions and observed:
         return {"kind": "smog", **stamp}
     return None
-
-
-# What a Kazhydromet notice can warn about, found in its Russian text by word stems, and the part of the day it names. The
-# card writes the title from these codes in the answer language; the notice's own words stay behind its link.
-PHENOMENA = (
-    ("fog", r"туман"),
-    ("smog", r"смог|неблагоприятн\w+ метеоусловия|\bнму\b"),
-    ("thunder", r"гроз|шквал|смерч"),
-    ("wind", r"ветер|ветр|порыв"),
-    ("snow", r"снег|снегопад|метел|пург"),
-    ("ice", r"гололед|гололёд|наледь|изморозь"),
-    ("rain", r"дожд|ливн"),
-    ("hail", r"град\b|градом"),
-    ("dust", r"пыльн|песчан"),
-    ("heat", r"жар[аыуе]|высокая температура"),
-    ("cold", r"мороз|сильный холод|похолодан|низкая температура"),
-)
-PERIODS = (
-    ("night", r"ноч"),
-    ("morning", r"утр"),
-    ("day", r"днем|днём|дневн|в течение дня|в дневное"),
-    ("evening", r"вечер"),
-    ("all", r"в течение суток|круглосуточно|в течение всех суток"),
-)
-
-
-def classify_notice(text: str) -> tuple[list[str], list[str]]:
-    """(phenomena, periods) of a notice's Russian text: the codes in PHENOMENA (in the order the text names them) and
-    PERIODS (in the order of the day). Empty lists when the text names none of them: the card then only names the
-    source."""
-    low = text.lower()
-    found = sorted(
-        (m.start(), code) for code, rx in PHENOMENA if (m := re.search(rx, low)) is not None
-    )
-    periods = [code for code, rx in PERIODS if re.search(rx, low)]
-    return [code for _, code in found], ("all" in periods and ["all"]) or periods
 
 
 def _notice(weather: WeatherInfo) -> dict | None:

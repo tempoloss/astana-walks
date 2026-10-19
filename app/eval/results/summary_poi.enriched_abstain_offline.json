@@ -17,11 +17,11 @@
   "top1_open_rate": 25.0,
   "unknown_hours_rec_share": 75.0,
   "non_osm_rec_share": 56.2,
-  "avg_walk_min": 28.7,
+  "avg_walk_min": 28.8,
   "wifi_socket_in_data_share": 0.0,
   "route_stop_closed_cases": 0,
-  "latency_ms_median": 7.5,
-  "latency_ms_p90": 44.0,
+  "latency_ms_median": 9.0,
+  "latency_ms_p90": 49.0,
   "generation_ms_median": 0.0,
   "generation_ms_p90": 2.0,
   "model_link": {
@@ -129,8 +129,8 @@
     "cases_file": "abstain_cases.json",
     "case_set": "abstain",
     "records": 8,
-    "git": "4a1b05c+uncommitted",
+    "git": "a007589+uncommitted",
     "walking": "straight",
-    "generated_at": "2026-10-19T10:36:45+05:00"
+    "generated_at": "2026-10-19T21:12:53+05:00"
   }
 }

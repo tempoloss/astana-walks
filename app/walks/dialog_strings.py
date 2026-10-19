@@ -32,7 +32,7 @@ STRINGS: dict[str, Entry] = {
         "My data has no {what}: I help with places to eat, walk and relax.",
     ),
     "ood_gas": ("жанармай бекеттері", "заправок", "petrol stations"),
-    "ood_clinic": ("емханалар мен ауруханалар", "больниц и поликлиник", "clinics or hospitals"),
+    "ood_hospital": ("ауруханалар", "больниц и скорой помощи", "hospitals or ambulances"),
     "ood_school": ("мектептер", "школ", "schools"),
     "ood_dentist": ("тіс дәрігерлері", "стоматологов", "dentists"),
     "ood_embassy": ("елшіліктер", "посольств", "embassies"),
@@ -431,7 +431,7 @@ STRINGS: dict[str, Entry] = {
         "Бары не показываю: включено «без алкоголя».",
         "No bars: “no alcohol” is on.",
     ),
-    "ld_want": ("Сіз іздеп жатырсыз: {what}", "Вы ищете: {what}", "You are looking for: {what}"),
+    "ld_want": ("Іздегеніңіз: {what}", "Вы ищете: {what}", "You are looking for: {what}"),
     "ld_want_stroll": (
         "Сіз серуендейтін жер іздеп жатырсыз",
         "Вы ищете, где прогуляться",
@@ -515,8 +515,8 @@ STRINGS: dict[str, Entry] = {
         "ваш текст о себе передан ИИ",
         "your note about yourself went to the AI",
     ),
-    "ld_pick": (
-        "«{name}» жеріне барыңыз, {walk}{tail}",
+    "ld_pick": (  # kk: no verb that governs a case, a quoted foreign name is never declined («Туалетке»)
+        "«{name}», {walk}{tail}",
         "советую «{name}», {walk}{tail}",
         "I suggest {name}, {walk}{tail}",
     ),

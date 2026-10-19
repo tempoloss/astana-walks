@@ -79,12 +79,19 @@ EXTRA_SELECTORS = [
     '["club"]',
     '["shop"="books"]',
     '["man_made"="tower"]["tower:type"~"observation|viewing"]',
+    '["shop"="pawnbroker"]',  # 32 ломбарда Астаны (раунд 25): деньги без налички - pawn; name-regex дублирует нетегированные
+    '["amenity"~"^(dentist|clinic)$"]',  # клиники и стоматологии (раунд 26): census 2026-10-19 - dentist 49, clinic 91
+    '["healthcare"~"^(dentist|clinic|doctor|centre|laboratory)$"]',  # то же по тегу healthcare (в т.ч. кабинеты врача)
+    '["amenity"="post_office"]',  # почтовые отделения (раунд 26): census 2026-10-19 - post_office 50/50 named
 ]
 EXTRA_NAME_FILTER = {
     ("amenity", "community_centre"): re.compile(r"дворец|сарай|мәдениет|культур|палас|palace|cultur", re.I),
     ("shop", "books"): re.compile(r"coffee|кофе|cafe|кафе", re.I),
     # members-only gyms and boxing clubs are not a place to visit; ski bases, rinks, riding and rowing clubs are
     ("club", "sport"): re.compile(r"лыж|\bski\b|каток|\bskat|\bice\b|конн|\bhorse|яхт|\byacht|гребн|\browing", re.I),
+    # a pawnshop without a name cannot be told apart from the bank/ATM cards of the same category, and the
+    # generated "Банкомат" would lie about it: keep only named ones (the 32 of round 25 all carry names)
+    ("shop", "pawnbroker"): re.compile(r".+", re.S),
 }
 
 # Railway / LRT / train stations (kept for routing, not for recommendations).
@@ -147,6 +154,16 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
     ("amenity", "atm", "money"),
     ("amenity", "bank", "money"),
     ("amenity", "bureau_de_change", "money"),
+    ("shop", "pawnbroker", "money"),  # 32 ломбарда (раунд 25): деньги без налички; card name says which subtype
+    # клиники и стоматологии (раунд 26): именованный слой — безымянные (GENERATED_NAMES нет) normalizer выбрасывает
+    ("amenity", "dentist", "clinic"),
+    ("amenity", "clinic", "clinic"),
+    ("healthcare", "dentist", "clinic"),
+    ("healthcare", "clinic", "clinic"),
+    ("healthcare", "doctor", "clinic"),
+    ("healthcare", "centre", "clinic"),  # медцентр по тегу healthcare; спорт-«центр» ловит leisure=*, а не healthcare
+    ("healthcare", "laboratory", "clinic"),
+    ("amenity", "post_office", "post"),  # почтовые отделения (раунд 26): census 50/50 named, безымянных нет
     ("tourism", "hotel", "lodging"),
     ("tourism", "hostel", "lodging"),
     ("tourism", "guest_house", "lodging"),
@@ -163,7 +180,7 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
 CATEGORIES = [
     "cafe", "restaurant", "fast_food", "bar_nightlife", "museum_gallery", "attraction_landmark",
     "viewpoint", "park_garden", "kids_playground", "entertainment", "mall", "public_toilet", "pharmacy", "grocery",
-    "culture_theatre_cinema", "coworking_library", "sport", "transit_station", "money", "lodging", "other",
+    "culture_theatre_cinema", "coworking_library", "sport", "transit_station", "money", "lodging", "clinic", "post", "other",
 ]
 
 # Unnamed items kept with a generated name (category -> base name).

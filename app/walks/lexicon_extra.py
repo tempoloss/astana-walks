@@ -1,7 +1,7 @@
-"""More concepts of the rule parser's lexicon: haste, access needs and the way of travel (first: they close the core
-order of `walks.lexicon_concepts`), weather words, minors, plain / long-stay wishes, celebrations, diets, requests the
-assistant refuses. Data only, appended to `walks.lexicon_concepts.CONCEPTS` (its types and shared constants are in
-lexicon_data)."""
+"""More concepts of the rule parser's lexicon: halal and price, haste, access needs and the way of travel (first: they
+close the core order of `walks.lexicon_concepts`), weather words, minors, plain / long-stay wishes, celebrations,
+diets, requests the assistant refuses. Data only, appended to `walks.lexicon_concepts.CONCEPTS` (its types and shared
+constants are in lexicon_data)."""
 
 from __future__ import annotations
 
@@ -9,6 +9,64 @@ from .lexicon_data import LONG_STAY_BUDGET_MIN, QUICK_BUDGET_MIN, Concept
 
 # fmt: off
 EXTRA_CONCEPTS: tuple[Concept, ...] = (
+    # a pizza: a meal of its own kind, and the cuisine the ranking looks for in a name or a tag («Додо Пицца», cuisine=pizza)
+    Concept(
+        "pizza",
+        ru=("пицц", "пиццери", "пицу"),
+        kk=("пицца",),
+        en=("pizza=", "pizzas=", "pizzeria"),
+        categories=("restaurant", "cafe", "fast_food"),
+        keywords=("пицца", "pizza"),
+        negation_excludes=("restaurant", "cafe", "fast_food"),
+    ),
+    Concept(
+        "halal",
+        ru=(
+            "халяль", "халал", "мусульманск",
+        ),
+        kk=(
+            "халал", "халал тамақ",
+        ),
+        en=(
+            "halal", "muslim friendly", "muslim",
+        ),
+        categories=("restaurant", "cafe", "fast_food"),
+        tier="mood",
+        flags=("halal",),
+        keywords=("halal", "халяль"),
+        negation_excludes=(),
+    ),
+    Concept(
+        "cheap",
+        ru=(
+            "бесплатн", "недорог", "не дорог", "дешев", "бюджетн", "подешевл", "эконом", "копейк", "задешево", "по карману", "без переплат", "без больших трат", "мало денег",
+            "небольшой бюджет", "ограниченный бюджет", "по скромному", "демократичн", "недороже", "сэкономить", "скромный бюджет",
+        ),
+        kk=(
+            "тегін", "арзан", "арзанырақ", "үнемді", "қымбат емес", "тиімді", "арзандау",
+        ),
+        en=(
+            "cheap", "cheaply", "inexpensive", "budget", "affordable", "low cost", "lowcost", "economical", "bargain", "on a budget", "free=", "not expensive", "dirt cheap",
+            "thrifty", "pocket friendly", "cheapest", "for free", "no cost", "student budget",
+        ),
+        flags=("cheap",),
+    ),
+    Concept(
+        "expensive",
+        ru=(
+            "дорого=", "дорогой ресторан", "дорогие=", "дорогое=", "дороговат", "премиум", "премиальн", "люкс", "роскошн", "фешенебельн", "элитн", "статусн", "пафосн",
+            "высокой кухн", "дорогостоящ",
+        ),
+        kk=(
+            "қымбат", "сәнді", "люкс", "премиум", "жоғары деңгей",
+        ),
+        en=(
+            "fine dining", "luxury", "expensive", "upscale", "premium", "high end", "highend", "exclusive", "posh", "fancy", "pricey", "gourmet", "michelin", "swanky", "splurge",
+            "treat myself",
+        ),
+        flags=("expensive",),
+        unless=("plain",),
+    ),
     Concept(
         "fast",
         ru=(
@@ -481,14 +539,14 @@ EXTRA_CONCEPTS: tuple[Concept, ...] = (
         "refuse_sex",
         ru=(
             "проститут", "шлюх", "интим услуг", "интим салон", "эскорт", "секс услуг", "секс за деньги", "купить секс", "индивидуалк", "путан", "девочки по вызову",
-            "девочек по вызову", "девушки по вызову", "снять девочк", "снять девушк", "эротическ массаж", "бордель", "публичн дом", "жрица любви",
+            "девочек по вызову", "девушки по вызову", "снять девочк", "снять девушк", "эротическ массаж", "массаж с окончан", "массажк с окончан", "массаж с хеппи энд", "массаж с счастлив концовк", "бордель", "публичн дом", "жрица любви",
         ),
         kk=(
             "жезөкше", "интим қызмет",
         ),
         en=(
             "prostitut", "escort=", "escorts=", "hooker", "hookers=", "brothel", "sex worker", "sex services", "call girl", "callgirl", "paid sex", "erotic massage",
-            "happy ending",
+            "happy ending", "massage with ending",
         ),
         tier="mood",
         unless=("museum",),

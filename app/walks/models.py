@@ -31,6 +31,8 @@ CATEGORIES = [
     "grocery",
     "money",
     "lodging",
+    "clinic",
+    "post",
     "sport",
     "other",
 ]
@@ -54,6 +56,8 @@ Category = Literal[
     "grocery",
     "money",
     "lodging",
+    "clinic",
+    "post",
     "other",
 ]
 Mode = Literal["walk", "car", "transit"]
@@ -361,6 +365,20 @@ class Intent(BaseModel):
     eat: bool = Field(
         False, description="Rule-parser field, leave false. Food is asked, not a coffee."
     )
+    subkind: str = Field(
+        "",
+        description="Rule-parser field, leave empty. A kind inside a category: atm, dentist, doctor, "
+        "kids_doctor, kazpost, play.",
+    )
+    sick: Literal["", "child", "adult"] = Field(
+        "",
+        description="Rule-parser field, leave empty. Somebody is ill (a fever, a cough, «заболел»): a clinic or a pharmacy "
+        "is wanted for them (`child`: a child is the sick one, so a children's or general clinic comes before a dentist).",
+    )
+    work_needs: str = Field(
+        "",
+        description="Rule-parser field, leave empty. What a work wish names: wifi, socket or both.",
+    )
 
 
 class LLMAttempt(BaseModel):
@@ -476,6 +494,7 @@ class Personal(BaseModel):
     kids_age_band: str | None = (
         None  # "0-3" | "4-7" | "8-12" | "13+": which places for a child rank first
     )
+    vibe: dict[str, float] = Field(default_factory=dict)  # facet -> weight (walks.vibe)
 
 
 class Conversation(BaseModel):
@@ -488,6 +507,7 @@ class Conversation(BaseModel):
     constraints: Constraints
     shown_ids: list[str] = Field(default_factory=list)
     farthest_m: int = 0  # farthest place the last answer offered: «поближе» goes closer than this
+    nearest_m: int = 0  # walking metres of its nearest card, as shown: a «поближе» search reaches at least that far
     lat: float  # the last origin, already rounded
     lon: float
     turns: int = 1

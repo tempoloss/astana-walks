@@ -3,9 +3,11 @@
 A chain is a comma-separated env list of `provider:model[@profile]` links (LLM_CHAIN for the recommendation
 text, LLM_INTENT_CHAIN for intent refinement); the providers themselves are in walks.llm_providers. Each call
 walks the chain in order. A link that answers 429 / 5xx / times out / returns a body that is not valid JSON for
-the schema is abandoned at once (no backoff: the next link is the retry). A link that answered 503 or timed out
-is skipped for BREAKER_S seconds by every later call in the process (circuit breaker). Only when the whole chain
-fails does the caller get LLMUnavailable and switch to the no-AI path.
+the schema is abandoned at once (no backoff: the next link is the retry). Circuit breaker: a link that answered 503
+or 504 (a gateway's timeout) or took no connection is skipped for BREAKER_S seconds by every later call in the
+process; a link that timed out, only by the later calls of the same schema (its role: a reading of the message that
+took over 4 s does not take the link from the answer, which has 8 s). Only when the whole chain fails does the
+caller get LLMUnavailable and switch to the no-AI path.
 
 Successful answers are cached on disk (app/.local/llm_cache.json) under a sha256 of the caller's key material
 and the chain, so replaying a demo scenario costs no API call.
@@ -26,6 +28,7 @@ import time
 from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
 import httpx
 from pydantic import BaseModel
@@ -52,15 +55,23 @@ DEFAULT_INTENT_CHAIN = (
     "gemini:gemini-3.1-flash-lite",
     "gemini:gemma-4-26b-a4b-it",
 )
-GENERATION_TIMEOUT_S = (
-    8.0  # per link attempt: the fast links answer in 2-3 s, a hung one gives way to the next
-)
+# Per link attempt. Measured 19.10 on the demo chain (scripts/time_turns.py, 4 runs of 25 turns): its first live link
+# answered the generation payload in p50 3.5 s, p95 6.2 s, at most 7.65 s (208 answers, 4 of them over 7 s; one timeout):
+# a shorter limit would cut healthy answers and hand the turn to a slower link; a hung one still gives way to the next.
+GENERATION_TIMEOUT_S = 8.0
 INTENT_TIMEOUT_S = 4.0
 TOTAL_DEADLINE_S = (
     15.0  # hard cap per request over ALL links of intent + generation; then the template
 )
 INTENT_BUDGET_S = (
     5.0  # of which the intent step may use at most this much, the rest is for the generation
+)
+# Measured 19.10 on the same 4 runs: of 96 first answers with a vague card, 71 were in at 1.4-5.3 s of the request, 25 at
+# 5.6-9.5 s (they had waited for the model's reading, or the link itself took 5.6 s or more); a rewrite took p50 3.45 s,
+# p95 5.7 s, up to 7.65 s. The cutoff falls in that gap: the usual answer keeps its rewrite, a late one shows the
+# template's card of the vague place at once.
+REWRITE_CUTOFF_S = (
+    5.5  # the vague-card rewrite (walks.generate) is asked only within this much of the request
 )
 MIN_ATTEMPT_S = 1.0  # a link is not started with less time than this left
 BREAKER_S = 120.0
@@ -72,7 +83,10 @@ OFFLINE_NOTE = "офлайн-режим (WALKS_OFFLINE): сетевые запр
 REPLAY_MISS_NOTE = "этот запрос не записан: здесь ИИ отвечает только заранее записанными ответами"
 
 _clock = time.monotonic  # tests replace it
-_open_until: dict[str, float] = {}  # link label -> monotonic time until which it is skipped
+ALL_ROLES = "*"  # the role of a breaker opened for every role
+# (link label, role) -> monotonic time until which the link is skipped; the role is the schema's name (Intent and
+# FollowUp read the message, LLMOutput writes the answer)
+_open_until: dict[tuple[str, str], float] = {}
 
 
 class Deadline:
@@ -158,31 +172,37 @@ def reset_breakers() -> None:
     _open_until.clear()
 
 
-def _breaker_left_s(label: str) -> int:
-    return max(0, round(_open_until.get(label, 0.0) - _clock()))
+def _breaker_left_s(label: str, role: str) -> int:
+    until = max(_open_until.get((label, ALL_ROLES), 0.0), _open_until.get((label, role), 0.0))
+    return max(0, round(until - _clock()))
 
 
-def _classify(exc: Exception) -> tuple[str, bool]:
-    """(short error text for the attempt log, whether the link should be skipped for a while).
+def _classify(exc: Exception) -> tuple[str, Literal["", "role", "link"]]:
+    """(short error text for the attempt log, the breaker the failure opens: "" none, "role" the link for the later
+    calls of the same schema, "link" the link for every role).
 
-    The text never carries a URL or a key: only an HTTP status, a keyword or the exception class."""
+    A timeout says the link is too slow for that prompt within that call's limit, not that it is down: only its own
+    role skips it. A 503, a gateway's 504 and a connection the host never took are the link's own failure. The text
+    never carries a URL or a key: only an HTTP status, a keyword or the exception class."""
     from google.genai import errors
 
     if isinstance(exc, errors.APIError):
         code = getattr(exc, "code", None)
-        return str(code), code == 503
+        return str(code), "link" if code in (503, 504) else ""
     if isinstance(exc, httpx.HTTPStatusError):
         code = exc.response.status_code
-        return str(code), code == 503
+        return str(code), "link" if code in (503, 504) else ""
+    if isinstance(exc, httpx.ConnectTimeout):
+        return "timeout", "link"
     if isinstance(
         exc, TimeoutError | httpx.TimeoutException
     ):  # TimeoutError: raised by _with_deadline
-        return "timeout", True
+        return "timeout", "role"
     if isinstance(exc, httpx.TransportError):
-        return "network", False
+        return "network", ""
     if isinstance(exc, ValueError):  # pydantic.ValidationError is a ValueError
-        return "ответ не разобран", False
-    return type(exc).__name__, False
+        return "ответ не разобран", ""
+    return type(exc).__name__, ""
 
 
 # ---------------------------------------------------------------- cache
@@ -279,15 +299,15 @@ def _cached_call[T: BaseModel](
     return LLMCall(value, step)
 
 
-def _skip_reason(spec: str) -> tuple[Link | None, LLMAttempt | None]:
-    """The parsed link, or the attempt record explaining why this entry is not called."""
+def _skip_reason(spec: str, role: str) -> tuple[Link | None, LLMAttempt | None]:
+    """The parsed link, or the attempt record explaining why this entry is not called for this role."""
     try:
         link = parse_link(spec)
     except ValueError as exc:
         return None, LLMAttempt(model=spec, status="error", detail=str(exc))
     if why := not_ready(link):
         return None, LLMAttempt(model=link.label, status="skipped", detail=why)
-    if left := _breaker_left_s(link.label):
+    if left := _breaker_left_s(link.label, role):
         return None, LLMAttempt(
             model=link.label, status="skipped", detail=f"недавний сбой, ещё {left} с"
         )
@@ -327,6 +347,7 @@ def generate_json[T: BaseModel](
     # the public stand: a request that is not in the recording never reaches a model
     if replay_only():
         raise ReplayMiss(REPLAY_MISS_NOTE)
+    role = schema.__name__
     attempts: list[LLMAttempt] = []
     for spec in chain:
         left = timeout_s if deadline is None else min(timeout_s, deadline.remaining())
@@ -335,7 +356,7 @@ def generate_json[T: BaseModel](
                 LLMAttempt(model=spec, status="skipped", detail="бюджет времени запроса исчерпан")
             )
             break
-        link, skipped = _skip_reason(spec)
+        link, skipped = _skip_reason(spec, role)
         if link is None:
             attempts.append(skipped)  # type: ignore[arg-type]
             continue
@@ -347,7 +368,9 @@ def generate_json[T: BaseModel](
         except Exception as exc:
             detail, trip = _classify(exc)
             if trip:
-                _open_until[link.label] = _clock() + BREAKER_S
+                _open_until[(link.label, role if trip == "role" else ALL_ROLES)] = (
+                    _clock() + BREAKER_S
+                )
             attempts.append(
                 LLMAttempt(
                     model=link.label,

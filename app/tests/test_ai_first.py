@@ -237,7 +237,7 @@ def test_the_notes_of_the_user_reach_the_prompts_but_never_the_answer(monkeypatc
 
 def test_no_notes_no_field(monkeypatch):
     models = Models(monkeypatch, Intent(categories=["cafe"]))
-    say("хочу кофе")
+    say("тихое кафе")  # a modifier: the rules are not sure of it, so the intent model is asked too
     assert "user_notes" not in json.loads(models.gen_prompts[0])
     assert "User notes" not in models.intent_prompts[0]
 

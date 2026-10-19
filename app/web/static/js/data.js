@@ -129,6 +129,21 @@ function honesty(e) {
   ];
 }
 
+// «124 запроса», «124 сұраныс», «124 requests»: the plural form of the language
+function requestsCount(count) {
+  const rule = new Intl.PluralRules(currentLang()).select(count);
+  return tr(`dd_req_${['one', 'few', 'many'].includes(rule) ? rule : 'other'}`, { n: n(count) });
+}
+
+// «Время ответа: медиана 2,1 с, 95 % быстрее 6,3 с» and how many logged answers it is based on (web.speed)
+function speed(s) {
+  if (!s || !s.requests) return h('p', { class: 'fine', text: tr('dd_speed_none') });
+  return [
+    h('p', { class: 'dd-speed', text: tr('dd_speed', { med: n(s.median_s), p95: n(s.p95_s) }) }),
+    h('p', { class: 'fine', text: tr('dd_speed_n', { n: requestsCount(s.requests) }) }),
+  ];
+}
+
 // the credits as the licences ask for them: one item per source, the addresses are links
 function linkify(text) {
   const out = [];
@@ -160,6 +175,7 @@ async function render() {
       h('div', { class: 'section' }, h('h2', { text: tr('data_sources') }), sources(d)),
       h('div', { class: 'section' }, h('h2', { text: tr('data_coverage') }), coverage(d.coverage)),
       h('div', { class: 'section' }, h('h2', { text: tr('data_honesty') }), honesty(d.eval)),
+      h('div', { class: 'section', id: 'data-speed' }, h('h2', { text: tr('data_speed') }), speed(d.speed)),
       h('div', { class: 'section' }, h('h2', { text: tr('data_attribution') }), attribution()),
     );
   } catch {

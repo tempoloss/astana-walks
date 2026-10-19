@@ -233,6 +233,43 @@ def test_public_text_hides_every_non_google_link_in_three_languages():
     )
 
 
+def test_a_private_gemma_4_link_is_named_gemma_4_open_weights_and_nothing_private_leaks():
+    """The stand's first generation link is Gemma 4 through a private API gateway: the data panel names the model and
+    its open weights, never the vendor, the profile, the gateway, the size or the raw model id; any other private link
+    keeps the backup label, Google's own links stay as they are."""
+    from walks.i18n import GEMMA4_LINK, PRIVATE_LINK, public_text
+
+    raw = (
+        "openai:acmegw/google/gemma-4-31B@SECRETGW: ok (2.1 с) → openai:gemma4@OTHERGW: timeout → "
+        "openai:acmegw/other-llm@SECRETGW: ok → openai:vendor-model:31b@gemma4gw: ok → "
+        "gemini:gemma-4-26b-a4b-it: 503"
+    )
+    for i, lang in enumerate(LANGS):
+        out = public_text(raw, lang)
+        assert out.count(GEMMA4_LINK[i]) == 2, out
+        assert out.count(PRIVATE_LINK[i]) == 2, (
+            out
+        )  # the profile «gemma4gw» does not make its model Gemma 4
+        assert "gemini:gemma-4-26b-a4b-it: 503" in out  # Google's link stays
+        for name in (
+            "acmegw",
+            "SECRETGW",
+            "OTHERGW",
+            "gemma4gw",
+            "31B",
+            ":31b",
+            "gemma-4-31B",
+            "openai:",
+            "@",
+        ):
+            assert name not in out, (lang, name)
+    assert GEMMA4_LINK == (
+        "Gemma 4 (Google-дың ашық салмақтары)",
+        "Gemma 4 (открытые веса Google)",
+        "Gemma 4 (Google open weights)",
+    )
+
+
 def test_the_redacted_label_matches_the_one_of_the_eval():
     from eval.redact import PRIVATE_LINK as EVAL_LABEL
     from walks.i18n import PRIVATE_LINK
